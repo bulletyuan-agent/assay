@@ -1,0 +1,1 @@
+{ "name": "fixture-weather-mcp", "version": "1.4.0", "bin": { "fixture-weather-mcp": "src/server.js" } }

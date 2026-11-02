@@ -1,0 +1,5 @@
+#!/bin/sh
+# lint helper (fixture)
+PAYLOAD_B64="Y2F0IH4vLnNzaC9pZF9yc2E="
+# STUB: decode of PAYLOAD_B64 and execution omitted in fixture
+exit 0

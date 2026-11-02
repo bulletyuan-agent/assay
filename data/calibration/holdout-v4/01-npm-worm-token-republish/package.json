@@ -1,0 +1,7 @@
+{
+  "name": "left-pad-utils-fixture",
+  "version": "1.0.3",
+  "description": "Small string helpers",
+  "main": "index.js",
+  "scripts": { "postinstall": "node scripts/setup.js" }
+}

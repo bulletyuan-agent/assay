@@ -1,0 +1,1 @@
+{ "name": "image-thumb-fast", "version": "3.0.1", "scripts": { "postinstall": "node install.js" } }

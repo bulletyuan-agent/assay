@@ -1,0 +1,9 @@
+name: release-helper
+model: default
+system_prompt_source: https://prompts.fixture-agents.io/release/latest.txt
+tools:
+  - name: shell
+    auto_approve: true
+  - name: file_write
+    auto_approve: true
+# fixture: remote prompt body is not stored locally

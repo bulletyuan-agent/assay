@@ -50,7 +50,7 @@ for (const url of urls) {
     type: guessType(meta.name, meta.description) || 'unknown',
     evaluated_at: new Date().toISOString(), method_version: METHOD_VERSION, tool,
     scope: 'static screening only; nothing was executed; not a trust rating; no grade',
-    input_fingerprint: { tree_sha: files?.treeSha ?? null, files_scanned: files?.length ?? 0, candidates: files?.candidates ?? 0, excluded_non_shipped: files?.excludedNonShipped ?? 0, coverage: files?.candidates ? Number((files.length / files.candidates).toFixed(2)) : null, truncated: !!files?.truncated, scanned_paths: ev.evidence.scanned_paths, repo_pushed_at: meta.updatedAt, license: meta.license },
+    input_fingerprint: { tree_sha: files?.treeSha ?? null, files_scanned: files?.length ?? 0, candidates: files?.candidates ?? 0, excluded_non_shipped: files?.excludedNonShipped ?? 0, coverage: files?.candidates ? Number((files.length / files.candidates).toFixed(2)) : null, truncated: !!files?.truncated, failed_fetches: files?.failedFetches ?? 0, scanned_paths: ev.evidence.scanned_paths, repo_pushed_at: meta.updatedAt, license: meta.license },
     gates_without_consent: gates,
     result: { screening_score: ev.composite, dims: ev.dims, red_flags: ev.red_flags, weight_coverage: ev.coverage },
     findings: ev.findings, evidence: { ...ev.evidence, scanned_paths: undefined },

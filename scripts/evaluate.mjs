@@ -85,6 +85,7 @@ export async function githubFiles(t, branch = 'HEAD') {
   const picked = candidates.slice(0, BUDGET);
   const excludedNonShipped = tree.data.tree.filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path)) && NON_SHIPPED.test(x.path)).length;
   // Fetch with a small worker pool; results are placed by index so the order (and the score) never depends on timing.
+  let failedFetches = 0;
   const slots = new Array(picked.length).fill(null);
   let next = 0;
   async function worker() {
@@ -95,7 +96,9 @@ export async function githubFiles(t, branch = 'HEAD') {
       const cachePath = join(CACHE, `${f.sha}`);
       let text = existsSync(cachePath) ? readFileSync(cachePath, 'utf8') : null;
       if (text === null) {
-        const r = await http(`https://raw.githubusercontent.com/${t.id}/${branch}/${f.path}`, { json: false });
+        let r = await http(`https://raw.githubusercontent.com/${t.id}/${branch}/${f.path}`, { json: false });
+        for (let a = 0; !r.ok && a < 2; a++) { await new Promise((x) => setTimeout(x, 500 * (a + 1))); r = await http(`https://raw.githubusercontent.com/${t.id}/${branch}/${f.path}`, { json: false }); }
+        if (!r.ok) failedFetches++;
         if (r.ok) { text = r.data; try { mkdirSync(CACHE, { recursive: true }); writeFileSync(cachePath, text); } catch { /* cache is optional */ } }
       }
       if (text !== null) slots[i] = { path: f.path, sha: f.sha, text };
@@ -107,7 +110,9 @@ export async function githubFiles(t, branch = 'HEAD') {
   out.treeSha = tree.data.sha;
   out.candidates = candidates.length;
   out.excludedNonShipped = excludedNonShipped;
-  out.truncated = candidates.length > picked.length || !!tree.data.truncated;
+  out.failedFetches = failedFetches;
+  out.candidates = candidates.length;
+  out.truncated = candidates.length > out.length || !!tree.data.truncated; // failed fetches count as unscanned
   return out;
 }
 

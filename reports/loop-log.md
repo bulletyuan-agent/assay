@@ -70,3 +70,6 @@ My round-8 entry reported 6/28 flagged, read from a run that was still in progre
 
 ## Round 9 · failed-fetch audit of good-set-v2 run (no method change)
 The 9 failed network calls in `run-20261102T154949Z` fall on three repos: Doriandarko/claude-engineer (4 of 33), anthropics/claude-code (1 of 403), daytonaio/daytona (4 of 8, only 1 file scanned). Failed file fetches are dropped silently, and `coverage` is computed against files fetched, so a repo can report coverage 1 while part of its tree was never read. That overstates coverage and understates findings. Required fix before any release: count failed fetches as unscanned, retry, and mark the result PARTIAL. These three results are unreliable. No gate figure changed; G1 and G2 remain failed.
+
+## Round 10 · fetch-failure fix (method 0.5.1, no detector change)
+File fetches are retried twice; remaining failures are recorded as `failed_fetches` and the result is marked truncated (PARTIAL) so coverage can no longer be overstated. Not yet re-run on the three affected repos. No gate figure changed: G1 20.8%, G2 26.3%, G6 not run. The blocker is unchanged and needs a user decision (dynamic observation vs. repositioning).

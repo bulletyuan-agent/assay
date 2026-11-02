@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T141913Z",
+  "target": {
+    "source": "github",
+    "id": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "name": "skills"
+  },
+  "type": "skill",
+  "evaluated_at": "2026-11-02T14:21:51.632Z",
+  "method_version": "0.1.2",
+  "tool": {
+    "assay_commit": "6477721f5bea0f0efa4a5cb20636d1e7c8b3ab6f",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.1.2"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "ca45fc496a3436251f191354091d557da31c15b5",
+    "files_scanned": 80,
+    "candidates": 262,
+    "truncated": true,
+    "repo_pushed_at": "2026-10-28T19:20:39Z",
+    "license": null
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": false,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 5
+  },
+  "network": {
+    "calls": 87,
+    "failed": 4,
+    "ms": 26844
+  },
+  "duration_ms": 26847
+}

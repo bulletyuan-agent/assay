@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T141913Z",
+  "target": {
+    "source": "github",
+    "id": "microsoft/playwright-mcp",
+    "url": "https://github.com/microsoft/playwright-mcp",
+    "name": "playwright-mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:20:43.889Z",
+  "method_version": "0.1.2",
+  "tool": {
+    "assay_commit": "6477721f5bea0f0efa4a5cb20636d1e7c8b3ab6f",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.1.2"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "ec572ee8354015293bed67145db21eed386e876d",
+    "files_scanned": 37,
+    "candidates": 37,
+    "truncated": false,
+    "repo_pushed_at": "2026-11-01T23:12:55Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 93,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "cli.js",
+      "line": 9,
+      "snippet": "* http://www.apache.org/licenses/LICENSE-2.0",
+      "host": "www.apache.org",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "utils/docker/publish_docker.sh",
+      "line": 46,
+      "snippet": "# Following the advice in https://portal.microsofticm.com/imp/v3/incidents/incident/476783820/summary",
+      "host": "portal.microsofticm.com",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 30,
+    "files_excluded": 7,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "www.apache.org",
+      "portal.microsofticm.com"
+    ],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 1
+  },
+  "network": {
+    "calls": 40,
+    "failed": 0,
+    "ms": 12832
+  },
+  "duration_ms": 12833
+}

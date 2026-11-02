@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T141913Z",
+  "target": {
+    "source": "github",
+    "id": "makenotion/notion-mcp-server",
+    "url": "https://github.com/makenotion/notion-mcp-server",
+    "name": "notion-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:21:24.784Z",
+  "method_version": "0.1.2",
+  "tool": {
+    "assay_commit": "6477721f5bea0f0efa4a5cb20636d1e7c8b3ab6f",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.1.2"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "cf16e5c20bfbfb98ecec1227f210ef0ae3abebe5",
+    "files_scanned": 41,
+    "candidates": 41,
+    "truncated": false,
+    "repo_pushed_at": "2026-10-29T16:10:22Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 93,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 75,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "src/openapi-mcp-server/openapi/parser.ts",
+      "line": 353,
+      "snippet": "// const zodSchema = eval(zodSchemaStr) as z.ZodType",
+      "deduction": 25
+    }
+  ],
+  "evidence": {
+    "files_scanned": 27,
+    "files_excluded": 14,
+    "danger_hits": 1,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 4
+  },
+  "network": {
+    "calls": 44,
+    "failed": 0,
+    "ms": 14110
+  },
+  "duration_ms": 14112
+}

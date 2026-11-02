@@ -7,20 +7,120 @@
     "bad": "Only with a verifiable public source: advisory, CVE, takedown notice or vendor post-mortem. Add the source URL before the entry is counted."
   },
   "items": [
-    { "id": "good-mcp-clean", "label": "good", "kind": "synthetic", "type": "mcp", "path": "fixtures/good-mcp-clean" },
-    { "id": "good-skill-clean", "label": "good", "kind": "synthetic", "type": "skill", "path": "fixtures/good-skill-clean" },
-    { "id": "bad-pipe-shell", "label": "bad", "kind": "synthetic", "type": "mcp", "path": "fixtures/bad-pipe-shell", "plants": "curl|sh and rm -rf" },
-    { "id": "bad-env-exfil", "label": "bad", "kind": "synthetic", "type": "mcp", "path": "fixtures/bad-env-exfil", "plants": "env exfiltration and eval" },
-    { "id": "bad-egress-hosts", "label": "bad", "kind": "synthetic", "type": "mcp", "path": "fixtures/bad-egress-hosts", "plants": "6 undeclared hosts" },
-    { "id": "bad-injection-skill", "label": "bad", "kind": "synthetic", "type": "skill", "path": "fixtures/bad-injection-skill", "plants": "prompt injection" },
-    { "id": "bad-destructive", "label": "bad", "kind": "synthetic", "type": "mcp", "path": "fixtures/bad-destructive", "plants": "os.system rm and pipe to bash" },
-    { "id": "g-servers", "label": "good", "kind": "real", "type": "mcp", "url": "https://github.com/modelcontextprotocol/servers" },
-    { "id": "g-github-mcp", "label": "good", "kind": "real", "type": "mcp", "url": "https://github.com/github/github-mcp-server" },
-    { "id": "g-chrome-devtools", "label": "good", "kind": "real", "type": "mcp", "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp" },
-    { "id": "g-playwright", "label": "good", "kind": "real", "type": "mcp", "url": "https://github.com/microsoft/playwright-mcp" },
-    { "id": "g-firecrawl", "label": "good", "kind": "real", "type": "mcp", "url": "https://github.com/firecrawl/firecrawl-mcp-server" },
-    { "id": "g-notion", "label": "good", "kind": "real", "type": "mcp", "url": "https://github.com/makenotion/notion-mcp-server" },
-    { "id": "g-anthropic-skills", "label": "good", "kind": "real", "type": "skill", "url": "https://github.com/anthropics/skills" }
+    {
+      "id": "good-mcp-clean",
+      "label": "good",
+      "kind": "synthetic",
+      "type": "mcp",
+      "path": "fixtures/good-mcp-clean"
+    },
+    {
+      "id": "good-skill-clean",
+      "label": "good",
+      "kind": "synthetic",
+      "type": "skill",
+      "path": "fixtures/good-skill-clean"
+    },
+    {
+      "id": "bad-pipe-shell",
+      "label": "bad",
+      "kind": "synthetic",
+      "type": "mcp",
+      "path": "fixtures/bad-pipe-shell",
+      "plants": "curl|sh and rm -rf"
+    },
+    {
+      "id": "bad-env-exfil",
+      "label": "bad",
+      "kind": "synthetic",
+      "type": "mcp",
+      "path": "fixtures/bad-env-exfil",
+      "plants": "env exfiltration and eval"
+    },
+    {
+      "id": "bad-egress-hosts",
+      "label": "bad",
+      "kind": "synthetic",
+      "type": "mcp",
+      "path": "fixtures/bad-egress-hosts",
+      "plants": "6 undeclared hosts"
+    },
+    {
+      "id": "bad-injection-skill",
+      "label": "bad",
+      "kind": "synthetic",
+      "type": "skill",
+      "path": "fixtures/bad-injection-skill",
+      "plants": "prompt injection"
+    },
+    {
+      "id": "bad-destructive",
+      "label": "bad",
+      "kind": "synthetic",
+      "type": "mcp",
+      "path": "fixtures/bad-destructive",
+      "plants": "os.system rm and pipe to bash"
+    },
+    {
+      "id": "g-servers",
+      "label": "good",
+      "kind": "real",
+      "type": "mcp",
+      "url": "https://github.com/modelcontextprotocol/servers"
+    },
+    {
+      "id": "g-github-mcp",
+      "label": "good",
+      "kind": "real",
+      "type": "mcp",
+      "url": "https://github.com/github/github-mcp-server"
+    },
+    {
+      "id": "g-chrome-devtools",
+      "label": "good",
+      "kind": "real",
+      "type": "mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    },
+    {
+      "id": "g-playwright",
+      "label": "good",
+      "kind": "real",
+      "type": "mcp",
+      "url": "https://github.com/microsoft/playwright-mcp"
+    },
+    {
+      "id": "g-firecrawl",
+      "label": "good",
+      "kind": "real",
+      "type": "mcp",
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server"
+    },
+    {
+      "id": "g-notion",
+      "label": "good",
+      "kind": "real",
+      "type": "mcp",
+      "url": "https://github.com/makenotion/notion-mcp-server"
+    },
+    {
+      "id": "g-anthropic-skills",
+      "label": "good",
+      "kind": "real",
+      "type": "skill",
+      "url": "https://github.com/anthropics/skills"
+    },
+    {
+      "id": "blind-postmark-reconstructed",
+      "label": "bad",
+      "kind": "reconstructed",
+      "blind": true,
+      "type": "mcp",
+      "path": "fixtures/blind-postmark-reconstructed",
+      "source": "https://snyk.io/blog/malicious-mcp-server-on-npm-postmark-mcp-harvests-emails/",
+      "plants": "hidden Bcc exfiltration to a hard-coded email address (real incident, reconstructed from the public diff)",
+      "note": "BLIND: not used to tune any rule. Reported separately."
+    }
   ],
   "todo_real_bad": "No verified real-world bad items yet. Collect public incidents (malicious packages, advisories) with source URLs before counting them."
 }

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T141913Z",
+  "target": {
+    "source": "github",
+    "id": "ChromeDevTools/chrome-devtools-mcp",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "name": "chrome-devtools-mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:20:31.056Z",
+  "method_version": "0.1.2",
+  "tool": {
+    "assay_commit": "6477721f5bea0f0efa4a5cb20636d1e7c8b3ab6f",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.1.2"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "aade3be8f65d8afc941c97b498b9752ef562f181",
+    "files_scanned": 80,
+    "candidates": 334,
+    "truncated": true,
+    "repo_pushed_at": "2026-11-02T13:32:53Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 93,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "eslint.config.js",
+      "line": 448,
+      "snippet": "// see https://v8.dev/blog/fast-async.",
+      "host": "v8.dev",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "rollup.config.js",
+      "line": 9,
+      "snippet": "*     http://www.apache.org/licenses/LICENSE-2.0",
+      "host": "www.apache.org",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 70,
+    "files_excluded": 10,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "v8.dev",
+      "www.apache.org"
+    ],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 24997
+  },
+  "duration_ms": 25001
+}

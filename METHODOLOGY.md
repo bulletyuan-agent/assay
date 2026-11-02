@@ -27,3 +27,21 @@ Respect terms of service. Authors get a notice period before negative findings a
 
 ## 中文要点
 范围:办公场景的 MCP server 与 Skill。来源:GitHub 为主,辅以 npm / PyPI 与官方注册表。抽样规则测试前公开,分层抽样,首批 20 到 30 个深测。测试内容覆盖安装、行为一致性、权限、外发、稳定性、任务成功率。每份结果注明模型、版本、日期;负面结论发布前给作者通知期。
+
+---
+
+## What the static screen checks (method 0.3.x) · 静态初筛检查项
+
+The screen reads files; it never executes anything. It is a **hygiene and known-pattern check, not a security guarantee and not a trust rating.** Unknown, obfuscated or dynamically assembled attacks can pass. A result is a screening score plus a list of findings, each with file, line and snippet.
+
+Dimensions (score = 100 minus the deductions of its findings): maintenance, install documentation, dangerous patterns, egress, instruction hygiene. Any severe finding caps the score at 49 and sets a red flag.
+
+Severe findings include: destructive deletes; piping a download into a shell or `source`; `eval` of decoded content; encrypted archives; encoded PowerShell; asking the user to paste a command into a terminal (in a SKILL.md); install hooks in package.json that fetch or run code; sending data to capture or staging services (webhook.site and similar) or to undeclared chat webhooks; reading credential files in code that can reach the network; dumping the whole environment next to a network call; persistence (cron, launchd, shell rc files); hard-coded copy/forward email recipients; prompt-injection phrases; hidden Unicode tag characters; natural-language instructions to send data to a URL together with concealment; tool-poisoning markers together with concealment.
+
+Weak signals (small capped deductions): `eval`, `os.system`, `shell=True`, undeclared hosts, a URL a skill sends data to.
+
+Not scanned as shipped behaviour: tests, mocks, examples, docs, CI configuration and similar. Hosts mentioned in the README are treated as declared.
+
+Coverage: the screen reads up to 80 files per repository, spending the budget on install hooks and entry points first. Results state how many shipped files were read. Partial coverage is flagged on every result.
+
+Every result stores: method version, tool commit, tree sha of the scanned repository, scanned file paths with blob shas, findings, network log and run log. `scripts/verify-run.mjs` recomputes the score from the findings.

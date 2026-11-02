@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T151957Z",
+  "target": {
+    "source": "github",
+    "id": "docker/mcp-gateway",
+    "url": "https://github.com/docker/mcp-gateway",
+    "name": "mcp-gateway"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:23:10.965Z",
+  "method_version": "0.3.4",
+  "tool": {
+    "assay_commit": "c928e6db511071812527413858335a6118b96224",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.4"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": null,
+    "files_scanned": 0,
+    "candidates": 0,
+    "excluded_non_shipped": 0,
+    "coverage": null,
+    "truncated": false,
+    "scanned_paths": [],
+    "repo_pushed_at": "2026-10-26T18:57:04Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": null,
+      "egress": null,
+      "instruction_hygiene": null
+    },
+    "red_flags": [],
+    "weight_coverage": 0.3
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 0,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 7
+  },
+  "network": {
+    "calls": 3,
+    "failed": 1,
+    "ms": 21582
+  },
+  "duration_ms": 21584
+}

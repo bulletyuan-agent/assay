@@ -1,0 +1,370 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T151957Z",
+  "target": {
+    "source": "github",
+    "id": "exa-labs/exa-mcp-server",
+    "url": "https://github.com/exa-labs/exa-mcp-server",
+    "name": "exa-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:21:03.424Z",
+  "method_version": "0.3.4",
+  "tool": {
+    "assay_commit": "c928e6db511071812527413858335a6118b96224",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.4"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "26fbca1aae6de256e794a71c2d053a3285c5e83e",
+    "files_scanned": 75,
+    "candidates": 75,
+    "excluded_non_shipped": 23,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "a0af94112e97213898fb4f0147dc0e64d69ea689"
+      },
+      {
+        "path": "skills/exa-agent/SKILL.md",
+        "sha": "2654082c69949fca4a73ac1e224ea35281120520"
+      },
+      {
+        "path": "skills/search/SKILL.md",
+        "sha": "e70c99cc46a8550eede16407bc3064015aa3d84f"
+      },
+      {
+        "path": "package.json",
+        "sha": "43a3e185babf4dea65c3d53fedf6641ac23c41fb"
+      },
+      {
+        "path": "plugins/exa/skills/exa-agent/SKILL.md",
+        "sha": "2654082c69949fca4a73ac1e224ea35281120520"
+      },
+      {
+        "path": "plugins/exa/skills/search/SKILL.md",
+        "sha": "e70c99cc46a8550eede16407bc3064015aa3d84f"
+      },
+      {
+        "path": "src/mcp-handler.ts",
+        "sha": "5455eb74c60384daa9642240b1783a4cf95eae8c"
+      },
+      {
+        "path": "src/runtime-server.ts",
+        "sha": "c5fca4e43fae8ec062bfcac865da77531076f73d"
+      },
+      {
+        "path": "src/stdio-cli.ts",
+        "sha": "cdd5a49e2cb58cc481d9baa3411d99cf8088b2d0"
+      },
+      {
+        "path": "src/stdio.ts",
+        "sha": "abdad2edee95bbb8dd89a37b091d92ecae400941"
+      },
+      {
+        "path": "src/toolRegistry.ts",
+        "sha": "e85565449be9e6a962fb4a9db9355eed8ed23da1"
+      },
+      {
+        "path": "src/types.ts",
+        "sha": "9100b753de7e401d9dff014c58d752b12e210d90"
+      },
+      {
+        "path": ".prettierrc.json",
+        "sha": "855650c03fd7e3aaddcce5a5d5d8b40fe1c38737"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "c32f8458f8529ad4a0cdce67427d6cb52f49dc09"
+      },
+      {
+        "path": "mcp.json",
+        "sha": "584e474b06d671fbe0a14fe34a8a3545d1e8a22a"
+      },
+      {
+        "path": "plugin.json",
+        "sha": "e26729e43cce5899cf248a217c8a2591e2b8edcc"
+      },
+      {
+        "path": "README.md",
+        "sha": "2c4d32cc0b8f1e99e711ba634f4a23b33ca5fa85"
+      },
+      {
+        "path": "src/tools/agentProgress.ts",
+        "sha": "6593e517939c83fac0aeb5f30a48eec8224b5ffd"
+      },
+      {
+        "path": "src/tools/agentRun.ts",
+        "sha": "ef53c6e86362104e29058fb76a9af43540f4b76e"
+      },
+      {
+        "path": "src/tools/agentSchemaTemplates.ts",
+        "sha": "b131f6bf5dadade497bd2b33830c3229f997d1cf"
+      },
+      {
+        "path": "src/tools/companyResearch.ts",
+        "sha": "c5e97ae7e953551b559fc38cd0ca465a98953275"
+      },
+      {
+        "path": "src/tools/config.ts",
+        "sha": "bce7293ce76efaf49b59b3e3e5201638223adc54"
+      },
+      {
+        "path": "src/tools/deepResearchCheck.ts",
+        "sha": "d79a30411ce13c7429ecdc1ffa4fdbd1146d7170"
+      },
+      {
+        "path": "src/tools/deepResearchStart.ts",
+        "sha": "516008677c8beaa3296103236c4353f8ec25d47f"
+      },
+      {
+        "path": "src/tools/deepSearch.ts",
+        "sha": "4ad11ab81b44f535a69a961ced62531451272381"
+      },
+      {
+        "path": "src/tools/exaCode.ts",
+        "sha": "f0591dad43440992c6307613b048ff8595d9f791"
+      },
+      {
+        "path": "src/tools/linkedInSearch.ts",
+        "sha": "9bd3ed61621bf4bce7a41369f4c59149792f63ee"
+      },
+      {
+        "path": "src/tools/peopleSearch.ts",
+        "sha": "4733d431185b7cf8f17e589d5ee299de78ea9023"
+      },
+      {
+        "path": "src/tools/searchNotes.ts",
+        "sha": "301eec0d5eb0f2520459a8b0b7fba9e9fa338eaf"
+      },
+      {
+        "path": "src/tools/searchType.ts",
+        "sha": "27112499de8387345d5e308d87360c25f56590ba"
+      },
+      {
+        "path": "src/tools/validation.ts",
+        "sha": "1da1fcfcd17f8db802a58f72b5f03c848dbb4877"
+      },
+      {
+        "path": "src/tools/webFetch.ts",
+        "sha": "6819e812ec3987edf0441e0f320c12c56b50ce4c"
+      },
+      {
+        "path": "src/tools/webSearch.ts",
+        "sha": "32ef4446ff797be21e2a25904338ef0913b01890"
+      },
+      {
+        "path": "src/tools/webSearchAdvanced.ts",
+        "sha": "3aaaefb0f4ad4008e2089620f38e10aaa4ef7e97"
+      },
+      {
+        "path": "src/utils/agentErrorHandler.ts",
+        "sha": "47303837c49dfa84faa5a38c7a95bb5ec256a100"
+      },
+      {
+        "path": "src/utils/agentSkill.ts",
+        "sha": "69a5cfb78702a12bd409a29420cefc79e5e12b67"
+      },
+      {
+        "path": "src/utils/auth.ts",
+        "sha": "965b4907b1c6938a5ef7b0f5c941cbdc2623c30e"
+      },
+      {
+        "path": "src/utils/errorHandler.ts",
+        "sha": "17e7597569c333fcb3b17222913865b38e10c9d3"
+      },
+      {
+        "path": "src/utils/exaResponseSanitizer.ts",
+        "sha": "43acb8da86a023b051f660b83bdb4b317e91ee79"
+      },
+      {
+        "path": "src/utils/logger.ts",
+        "sha": "13d6a68ba4ab104c12b885c72cf233fc6b708813"
+      },
+      {
+        "path": "src/utils/mcpClientMetadata.ts",
+        "sha": "a8b5bd1d15dd1353b1a797de928b95e4220c22ad"
+      },
+      {
+        "path": "src/utils/response.ts",
+        "sha": "058d44586f430cfb5f1ed37ac835472c7c67e3ee"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "8a0668541f7552567040f71b0a41bcda11c9e7cd"
+      },
+      {
+        "path": "vercel.json",
+        "sha": "b59c2177cc71206f46793b7f53e5012cf4350bf3"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "9be4e449bf7cdc80cce286afed07f0a0c193cbcc"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "f703f3e9c065c9753a8dd6e02446bdfc9ca61452"
+      },
+      {
+        "path": ".claude-plugin/plugin.json",
+        "sha": "86ad3acfed307c1fed1f9da00ba225a07c079574"
+      },
+      {
+        "path": "api/mcp-oauth.ts",
+        "sha": "7f07809b9708e8dda8c9fda4984bddac363e9b9e"
+      },
+      {
+        "path": "api/mcp.ts",
+        "sha": "f9f1bc45dce1eb2832b45090c342d2820cfbff03"
+      },
+      {
+        "path": "api/well-known-mcp-config.ts",
+        "sha": "b2d0eee3f0aadfb626cf62a02c6da72694ec7d04"
+      },
+      {
+        "path": "api/well-known-oauth-protected-resource.ts",
+        "sha": "d54be04b6add29a0caa162189b658486fe1d358a"
+      },
+      {
+        "path": "api/well-known-openai-apps-challenge.ts",
+        "sha": "b80924cb854dc2025df7888db6f10bdb12f27d34"
+      },
+      {
+        "path": "plugins/exa/.claude-plugin/plugin.json",
+        "sha": "258173ad0d3c0a553bed491951368e835b327816"
+      },
+      {
+        "path": "skills/search/references/extraction.md",
+        "sha": "64167825988e529b65c94e3190c5c889eced60c3"
+      },
+      {
+        "path": "skills/search/references/filtering.md",
+        "sha": "afa4c08188fb0cc70f452a46c49648e6394e5b1a"
+      },
+      {
+        "path": "skills/search/references/patterns-code.md",
+        "sha": "3204646cf8b6e3c8b23e50aae0c001748ed6e9aa"
+      },
+      {
+        "path": "skills/search/references/patterns-companies.md",
+        "sha": "25ba8f3dddf38fc8200516590e1861a31d78606b"
+      },
+      {
+        "path": "skills/search/references/patterns-news.md",
+        "sha": "328348ccd672d875a7a546fcaf5eee541aea43c0"
+      },
+      {
+        "path": "skills/search/references/patterns-papers.md",
+        "sha": "60b9c00e7a134e4daa62b8c747f8056f37797b38"
+      },
+      {
+        "path": "skills/search/references/patterns-people.md",
+        "sha": "9fa45a5738c678baa1dba2e75e8ad2a762f2f5b1"
+      },
+      {
+        "path": "skills/search/references/patterns-relationships.md",
+        "sha": "875c78f82e83eee6c0e1edd68dbdfec363390654"
+      },
+      {
+        "path": "skills/search/references/searching.md",
+        "sha": "daa271a78b81aabfc16b84ac7aeb1b51a1b17e60"
+      },
+      {
+        "path": "skills/search/references/source-quality.md",
+        "sha": "ca578178ef8c25a6f2f3004ca2e25a6f0c2f1d97"
+      },
+      {
+        "path": "skills/search/references/synthesis.md",
+        "sha": "d94451671744521663941358f10cfee7ec8ba2bd"
+      },
+      {
+        "path": "plugins/exa/skills/search/references/extraction.md",
+        "sha": "64167825988e529b65c94e3190c5c889eced60c3"
+      },
+      {
+        "path": "plugins/exa/skills/search/references/filtering.md",
+        "sha": "afa4c08188fb0cc70f452a46c49648e6394e5b1a"
+      },
+      {
+        "path": "plugins/exa/skills/search/references/patterns-code.md",
+        "sha": "3204646cf8b6e3c8b23e50aae0c001748ed6e9aa"
+      },
+      {
+        "path": "plugins/exa/skills/search/references/patterns-companies.md",
+        "sha": "25ba8f3dddf38fc8200516590e1861a31d78606b"
+      },
+      {
+        "path": "plugins/exa/skills/search/references/patterns-news.md",
+        "sha": "328348ccd672d875a7a546fcaf5eee541aea43c0"
+      },
+      {
+        "path": "plugins/exa/skills/search/references/patterns-papers.md",
+        "sha": "60b9c00e7a134e4daa62b8c747f8056f37797b38"
+      },
+      {
+        "path": "plugins/exa/skills/search/references/patterns-people.md",
+        "sha": "9fa45a5738c678baa1dba2e75e8ad2a762f2f5b1"
+      },
+      {
+        "path": "plugins/exa/skills/search/references/patterns-relationships.md",
+        "sha": "875c78f82e83eee6c0e1edd68dbdfec363390654"
+      },
+      {
+        "path": "plugins/exa/skills/search/references/searching.md",
+        "sha": "daa271a78b81aabfc16b84ac7aeb1b51a1b17e60"
+      },
+      {
+        "path": "plugins/exa/skills/search/references/source-quality.md",
+        "sha": "ca578178ef8c25a6f2f3004ca2e25a6f0c2f1d97"
+      },
+      {
+        "path": "plugins/exa/skills/search/references/synthesis.md",
+        "sha": "d94451671744521663941358f10cfee7ec8ba2bd"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T01:26:06Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 75,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 1
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1917
+  },
+  "duration_ms": 1935
+}

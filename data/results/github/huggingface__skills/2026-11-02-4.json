@@ -1,0 +1,863 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T151957Z",
+  "target": {
+    "source": "github",
+    "id": "huggingface/skills",
+    "url": "https://github.com/huggingface/skills",
+    "name": "skills"
+  },
+  "type": "skill",
+  "evaluated_at": "2026-11-02T15:22:28.122Z",
+  "method_version": "0.3.4",
+  "tool": {
+    "assay_commit": "c928e6db511071812527413858335a6118b96224",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.4"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "25910b3d0ba31a2ba102f901cdc9e008c278a69c",
+    "files_scanned": 186,
+    "candidates": 186,
+    "excluded_non_shipped": 12,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "skills/hf-cli/SKILL.md",
+        "sha": "2a01cd0f144f19d283196b02f3d5726a37733293"
+      },
+      {
+        "path": "skills/hf-cloud-aws-context-discovery/SKILL.md",
+        "sha": "fbf62203595b187ea833904f67ca0ae2fdaf39a6"
+      },
+      {
+        "path": "skills/hf-cloud-python-env-setup/SKILL.md",
+        "sha": "462a6b99e7767576e1ba6c39c1456873d020de92"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-deployment-planner/SKILL.md",
+        "sha": "c8e1b321698a3f6ede5cb607cf73cdd2dfc0e63a"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-iam-preflight/SKILL.md",
+        "sha": "ca0fe8b8dfb0e7b307b1b3f0dc612f3da279750d"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/SKILL.md",
+        "sha": "0161c21c4a12e0f79ff231d3e04871fa61e15bc7"
+      },
+      {
+        "path": "skills/hf-cloud-serving-image-selection/SKILL.md",
+        "sha": "1709fff53a6fe3005a3bc3120f91019482cd0e23"
+      },
+      {
+        "path": "skills/hf-mem/SKILL.md",
+        "sha": "fadc48b0e2a510e21345e3860c69ac799255d9c0"
+      },
+      {
+        "path": "skills/huggingface-best/SKILL.md",
+        "sha": "766c5d84ee8fa5e5b0dfc51411ea3e62cf0a8f9f"
+      },
+      {
+        "path": "skills/huggingface-community-evals/SKILL.md",
+        "sha": "a68b2e79958930b3913cb8e7667e07000031e40b"
+      },
+      {
+        "path": "skills/huggingface-datasets/SKILL.md",
+        "sha": "abafddcbe62bd6e549c095ee9ce23b921081fe22"
+      },
+      {
+        "path": "skills/huggingface-gradio/SKILL.md",
+        "sha": "81dfb05834ab34a13cb0171a2fb03e4557b1e148"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/SKILL.md",
+        "sha": "74ad29af05eee633fb4c04376118f751c24cdd5e"
+      },
+      {
+        "path": "skills/huggingface-local-models/SKILL.md",
+        "sha": "ece849559de75eaa8e9709a51e0e957e6ae630d3"
+      },
+      {
+        "path": "skills/huggingface-lora-space-builder/SKILL.md",
+        "sha": "c1d0cbbfa60999ced1f97e136af5010ab86c814c"
+      },
+      {
+        "path": "skills/huggingface-paper-publisher/SKILL.md",
+        "sha": "01b7db0cb9e30912eda8aa2b73a744c17ab1e176"
+      },
+      {
+        "path": "skills/huggingface-papers/SKILL.md",
+        "sha": "e65fc90acabc30208883238ec89a27c4cdc1b57e"
+      },
+      {
+        "path": "skills/huggingface-spaces/SKILL.md",
+        "sha": "bbae4511df2dac10581bf2ab5ef7eb4d8ecb9f22"
+      },
+      {
+        "path": "skills/huggingface-tool-builder/SKILL.md",
+        "sha": "0634af706451240f82faf0871a15b0faac5f39a2"
+      },
+      {
+        "path": "skills/huggingface-trackio/SKILL.md",
+        "sha": "df231aa06d661bf031aaad00dfa286ca83df4940"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/SKILL.md",
+        "sha": "5a2c554b04218a9c411c184fd749ffb6eb0daabe"
+      },
+      {
+        "path": "skills/huggingface-zerogpu/SKILL.md",
+        "sha": "7171d2b71c94eab597cbd8a4b38ba5ca489276af"
+      },
+      {
+        "path": "skills/train-sentence-transformers/SKILL.md",
+        "sha": "e7d1b49f0907be1d41aeed7b0b00dbb2df622643"
+      },
+      {
+        "path": "skills/transformers-js/SKILL.md",
+        "sha": "bc62aa1a63bc31ea9aea9456fed65b334e5010bd"
+      },
+      {
+        "path": "skills/trl-training/SKILL.md",
+        "sha": "9046f03f975bcc061234266e70cb56ab43892526"
+      },
+      {
+        "path": "hf-mcp/skills/hf-mcp/SKILL.md",
+        "sha": "eb717f2c916d6a03f4322272b0a51fb10963b349"
+      },
+      {
+        "path": "apps/evals-leaderboard/app.py",
+        "sha": "ff3850b042b063158fa3856039bcb32283a81a95"
+      },
+      {
+        "path": "apps/hackers-leaderboard/app.py",
+        "sha": "59e32f422f0204d64252d915aa319a09544608c8"
+      },
+      {
+        "path": "scripts/AGENTS_TEMPLATE.md",
+        "sha": "c6bd117bcba7d74556341665440ac6e3007862a6"
+      },
+      {
+        "path": "scripts/build_skill_distribution.py",
+        "sha": "0c9f606aabc60eeb4b5aa1ba8215ac02513e1c7c"
+      },
+      {
+        "path": "scripts/build_skills_index.py",
+        "sha": "4c9fa1579e0138e64c387e2120253131e379980e"
+      },
+      {
+        "path": "scripts/generate_agents.py",
+        "sha": "90ac76849672da0aef7cf9a5b52154d11ce547f4"
+      },
+      {
+        "path": "scripts/generate_cursor_plugin.py",
+        "sha": "3b519e3e2ac07ac15b89e436a30612365e171188"
+      },
+      {
+        "path": "scripts/plugin_versions.py",
+        "sha": "807e53b9421a75af72a9d3ae55db400d38a10692"
+      },
+      {
+        "path": "scripts/publish.sh",
+        "sha": "93f13a0eb7b55fece7955b073a14ff6785d87999"
+      },
+      {
+        "path": "scripts/run_skills_help.py",
+        "sha": "eb8be228008863b001dc31dc39ec1f53d57f4680"
+      },
+      {
+        "path": "scripts/skills_index_queries.json",
+        "sha": "eeffda9e37b1d4b70e33b1868e97dbd013c6d3e9"
+      },
+      {
+        "path": "scripts/UV_RULES.md",
+        "sha": "b2f0c3dad1d885a9ef83f224226fe1655e4f2647"
+      },
+      {
+        "path": ".mcp.json",
+        "sha": "a9a3c69b4c75e04c07e53f9f865804ee29173e97"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "1ef8d0e9cb7a8d9d68ab44aef596f07c2bc8ff61"
+      },
+      {
+        "path": "README.md",
+        "sha": "203d082a1f626cc91073f7202b0c3f0c52145285"
+      },
+      {
+        "path": ".claude-plugin/marketplace-internal.json",
+        "sha": "966685bcd1a2d8243664da919c147e0ff6f497dc"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "239389bea792c4769edb01ca127ac7297d8b1faf"
+      },
+      {
+        "path": ".claude-plugin/plugin.json",
+        "sha": "6617d0c3ddc251dbb0515205500ee466502349cc"
+      },
+      {
+        "path": ".cursor-plugin/marketplace.json",
+        "sha": "239389bea792c4769edb01ca127ac7297d8b1faf"
+      },
+      {
+        "path": ".cursor-plugin/plugin.json",
+        "sha": "81f266ed6c1a8b8733e858ea77f402b3f3121ac8"
+      },
+      {
+        "path": "agentsmd/AGENTS.md",
+        "sha": "bf7386b9952008b3cce64790edddb758e898cabf"
+      },
+      {
+        "path": "apps/evals-leaderboard/collect_evals.py",
+        "sha": "a2e2a7721d794dad382412024467bbe2c9ad1b9a"
+      },
+      {
+        "path": "apps/evals-leaderboard/requirements.txt",
+        "sha": "64affda844b262e0facc7c3ea07e79cb72d66eb0"
+      },
+      {
+        "path": "apps/hackers-leaderboard/collect_points.py",
+        "sha": "e8ea5bf5ba47cf0633e0e09042b0dea9df42d61b"
+      },
+      {
+        "path": "apps/hackers-leaderboard/README.md",
+        "sha": "6011c67a18a77bd68403e3891452df22f97b11cf"
+      },
+      {
+        "path": "apps/hackers-leaderboard/requirements.txt",
+        "sha": "49503c5461f571d9f8097bf5f9d47758de791347"
+      },
+      {
+        "path": "apps/quests/02_evaluate-hub-model.md",
+        "sha": "b3cff82c0ccb76fc58288e7495f4636dcc107ee7"
+      },
+      {
+        "path": "apps/quests/03_publish-hub-dataset.md",
+        "sha": "8486a0c72153e5d7d270829fe756a7e5aa1386de"
+      },
+      {
+        "path": "apps/quests/04_sft-finetune-hub.md",
+        "sha": "4a8f2c478c3a4f7f96f93b7bd1e13b1a0a16bf33"
+      },
+      {
+        "path": "apps/quests/README.md",
+        "sha": "f8585932973b57b5fba7649331ccb388ace22bf7"
+      },
+      {
+        "path": "skills/hf-cloud-python-env-setup/requirements.txt",
+        "sha": "461cf1f933013fd99a24220efbfe0f303bb0e083"
+      },
+      {
+        "path": "skills/huggingface-gradio/examples.md",
+        "sha": "b48c4cdc6dddbef128d026c1ec47442ebca51788"
+      },
+      {
+        "path": "skills/huggingface-spaces/README.md",
+        "sha": "4c8197f4861879178b95c0788d66bad558db4842"
+      },
+      {
+        "path": "skills/hf-cloud-python-env-setup/scripts/check_versions.py",
+        "sha": "c863f8dd5caabfd1f45dcd9f918c7c0858176fe4"
+      },
+      {
+        "path": "skills/hf-cloud-python-env-setup/scripts/setup_env.py",
+        "sha": "c1f164ab29c162b74e956165fca714d4d94cbcbf"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-iam-preflight/references/minimum-permissions.json",
+        "sha": "e0c6e1dca9607ce192716d4d17790d1eaf839029"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-iam-preflight/references/trust-policy.json",
+        "sha": "459fa5217ca2a73c39993a4945f59a3f7beb4550"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-iam-preflight/scripts/check_role.py",
+        "sha": "1744158c05f33ff1bfc5aae0da408670539fb8e4"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-iam-preflight/scripts/create_role.py",
+        "sha": "608483ac2c4803b5feed9bb9016c3a19cce7bb18"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/references/deployment-template.md",
+        "sha": "c2b52bfdf53a7fc0084919047a4836fc5b410c9c"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/_common.py",
+        "sha": "c4f13ce80dbfba9ec3395e3e5ac689440457aaf6"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/deploy_async.py",
+        "sha": "779a301b6d10c1f6fabff3b4bdef0c17682d0ac5"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/deploy_ic.py",
+        "sha": "223801574e42beae53d164aab3e323bf60f40d4e"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/deploy.py",
+        "sha": "f870cc5fb0bd2c82f875c818152060f54ef91e27"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/invoke_endpoint.py",
+        "sha": "08245d39cb3651abf873b7c6280a930aedbc2275"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/teardown.py",
+        "sha": "c85b230bf3f543bc088ee843e2bcc9ae859870ba"
+      },
+      {
+        "path": "skills/hf-cloud-serving-image-selection/references/model-to-image.md",
+        "sha": "09d3888d73a979308b61eac364815b88ed97eab1"
+      },
+      {
+        "path": "skills/hf-cloud-serving-image-selection/scripts/mirror_image.py",
+        "sha": "e3eab00d9bd828c8964f74a11735e387d79b67c3"
+      },
+      {
+        "path": "skills/huggingface-community-evals/scripts/inspect_eval_uv.py",
+        "sha": "d398bc60b0bf4dcb5571ae144ce5fef5226d2467"
+      },
+      {
+        "path": "skills/huggingface-community-evals/scripts/inspect_vllm_uv.py",
+        "sha": "f1454c5a6e2cd2934a60eeab8d5826f6075e102a"
+      },
+      {
+        "path": "skills/huggingface-community-evals/scripts/lighteval_vllm_uv.py",
+        "sha": "91ba83b33f68d8b0705c6f9abe089ecf97cbb9d5"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/gguf_conversion.md",
+        "sha": "a99ea0e888a24895ab2017bc8fdab3d809f66f88"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/hardware_guide.md",
+        "sha": "22eba945ad61b93725d547a94bd130c422f98b27"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/hub_saving.md",
+        "sha": "734e49b51de8b0224a3e2ee91084432a2fdb5a76"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/local_training_macos.md",
+        "sha": "fdf5dede51aaf47c3bd31cc9b45fd36e3a8faa24"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/reliability_principles.md",
+        "sha": "bf2f745878edd6a4a7b51b68e806b43ac6e6d856"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/trackio_guide.md",
+        "sha": "dc569c7d2f109cd9be5d11353f85ad53b757e9d4"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/training_methods.md",
+        "sha": "2393d7731cb2c9d1b4c3029f5fbc635d3beba49f"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/training_patterns.md",
+        "sha": "2101e12a766ea675ee0577b2c4d46f6b5277f7a7"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/troubleshooting.md",
+        "sha": "430816ce5340022f7f7422ba5ca4fbc39a8baf8c"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/unsloth.md",
+        "sha": "83e1e116e54106709eafc3ff4273419a5512c8a6"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/scripts/convert_to_gguf.py",
+        "sha": "db42069a8366a4b460b2615e56eca6600f01aafc"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/scripts/dataset_inspector.py",
+        "sha": "e29aed3e239f8d6f6fa9038724b77078e93f5ad6"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/scripts/estimate_cost.py",
+        "sha": "fff8e4eb38ca93356867f11aead4259dbf895cfe"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/scripts/hf_benchmarks.py",
+        "sha": "60e840c1e1d2709e48aeaae268a5377d2b32a0bc"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/scripts/train_dpo_example.py",
+        "sha": "84c66f996b06d92a66a34f035de3984cf5d8cb98"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/scripts/train_grpo_example.py",
+        "sha": "db6bcbd839a7009aec169b290fc6583cf37162cb"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/scripts/train_sft_example.py",
+        "sha": "e20233be552794829a2a8d37aef071b6d2500cbd"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/scripts/unsloth_sft_example.py",
+        "sha": "7ee9fc2ba5a59274c53fae5414882eec8f608840"
+      },
+      {
+        "path": "skills/huggingface-local-models/references/hardware.md",
+        "sha": "33c15b41a23df195d4a5cb4ebe25c479fb8a6210"
+      },
+      {
+        "path": "skills/huggingface-local-models/references/hub-discovery.md",
+        "sha": "4f286ef4a14e078b98dda09561b720fd02c5bbd2"
+      },
+      {
+        "path": "skills/huggingface-local-models/references/quantization.md",
+        "sha": "2099976e25b87074b0d879a9dec82e2bd19f6002"
+      },
+      {
+        "path": "skills/huggingface-lora-space-builder/references/adapting-to-the-lora.md",
+        "sha": "d6749ece222e7d284908f06a156fc485559664b0"
+      },
+      {
+        "path": "skills/huggingface-lora-space-builder/references/creative-mode.md",
+        "sha": "46017253efd9a31ad6b343347631da09aafbae7e"
+      },
+      {
+        "path": "skills/huggingface-lora-space-builder/references/tasks.md",
+        "sha": "e2d2bbc9334174d95141921c1a90278d2da5154a"
+      },
+      {
+        "path": "skills/huggingface-lora-space-builder/references/zerogpu-and-publishing.md",
+        "sha": "05df4dd444302902fe8ce7c9eea96fe3d85a4b14"
+      },
+      {
+        "path": "skills/huggingface-paper-publisher/references/quick_reference.md",
+        "sha": "8bf8a417572a3b64b67abbc5308c424fd4a6378f"
+      },
+      {
+        "path": "skills/huggingface-paper-publisher/scripts/paper_manager.py",
+        "sha": "1fcf0922e6a894ea46b14fa06635279c9d7bb484"
+      },
+      {
+        "path": "skills/huggingface-paper-publisher/templates/arxiv.md",
+        "sha": "c003030399cc9cb8ba1a09e71266acb4de292ee6"
+      },
+      {
+        "path": "skills/huggingface-paper-publisher/templates/ml-report.md",
+        "sha": "f39a5fe1851f09ff7645aabdd3f82c400f89d2d2"
+      },
+      {
+        "path": "skills/huggingface-paper-publisher/templates/modern.md",
+        "sha": "bf84e55455d4393e78593cf02c07240116fb8c9e"
+      },
+      {
+        "path": "skills/huggingface-paper-publisher/templates/standard.md",
+        "sha": "d35ff043b1977cf2ef7d49d02bcde64b524e6e93"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/3d-cuda-extensions.md",
+        "sha": "58b79f152f954d9bc7fcdf001b5183d5eb7434c7"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/3d-generation.md",
+        "sha": "76f7db8395b5e09914b806ac3b45b38d2cad0102"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/3d-gsplat.md",
+        "sha": "00121b940ea78576ffe249ec98724b4983442906"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/3d-models.md",
+        "sha": "cbd20785c42a7c3afbb3e39d2a34c74c83645252"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/3d-outputs.md",
+        "sha": "d33c807c41683216ab11c50154389b2ff6cc44be"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/buckets.md",
+        "sha": "24bf08c78ef6766f31efc78e5d8fd79344c65f53"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/debugging.md",
+        "sha": "dcb77f0e642fd87df09eb5c427fdc38572e13d77"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/gradio.md",
+        "sha": "b888fec4bb3f695238514e7e2765169718384114"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/grants.md",
+        "sha": "d5f744ffde01a88071d73a6e51151c4c6f114579"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/inference-providers.md",
+        "sha": "1654e5e7755c796f19155297c01bc1a5f9c35715"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/known-errors.md",
+        "sha": "871d80e2c615025a3061425df8f706d623a8c882"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/requirements.md",
+        "sha": "ecc1faaa4091b38280bd0a94cbe323c8f598b3dd"
+      },
+      {
+        "path": "skills/huggingface-spaces/references/zerogpu.md",
+        "sha": "d25cbf7c43bff28fdae4e167899d547c9dbe99a9"
+      },
+      {
+        "path": "skills/huggingface-tool-builder/references/baseline_hf_api.py",
+        "sha": "fa5b9bdfbbab1dd411d24f9fb2189ebb1f396ef5"
+      },
+      {
+        "path": "skills/huggingface-tool-builder/references/baseline_hf_api.sh",
+        "sha": "2d4d5f289cb0d339ab26907b2d48ccdd470468f3"
+      },
+      {
+        "path": "skills/huggingface-tool-builder/references/baseline_hf_api.tsx",
+        "sha": "3f273718220dcd8949280ccc1332988b4538132b"
+      },
+      {
+        "path": "skills/huggingface-tool-builder/references/find_models_by_paper.sh",
+        "sha": "93e923a9e9be10f56d54868f837e163095e9d87f"
+      },
+      {
+        "path": "skills/huggingface-tool-builder/references/hf_enrich_models.sh",
+        "sha": "877088160b3acb3fb632e9b61ae8313b28e3526a"
+      },
+      {
+        "path": "skills/huggingface-tool-builder/references/hf_model_card_frontmatter.sh",
+        "sha": "ded41c12de4e0910acfca52d48ddc5fead66fecb"
+      },
+      {
+        "path": "skills/huggingface-tool-builder/references/hf_model_papers_auth.sh",
+        "sha": "fcd5b1f85d7c7d95c19386969018e320d1ed2cef"
+      },
+      {
+        "path": "skills/huggingface-trackio/references/alerts.md",
+        "sha": "d2d46a1fd3b15aa9d87e1891599baa66017fb81b"
+      },
+      {
+        "path": "skills/huggingface-trackio/references/logging_metrics.md",
+        "sha": "1bd5e437270921de4f39490c5469942e4ab725e6"
+      },
+      {
+        "path": "skills/huggingface-trackio/references/retrieving_metrics.md",
+        "sha": "0a144047fa2a43e0acb05f369947995463533ba9"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/references/finetune_sam2_trainer.md",
+        "sha": "1cff003682c7fff725dc6cde1be7402b10f0a081"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/references/hub_saving.md",
+        "sha": "269a48b403e8c86cf665a098f448d6f390f5847f"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/references/image_classification_training_notebook.md",
+        "sha": "04a412802dda1498e5548abea563121aa3a82a32"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/references/object_detection_training_notebook.md",
+        "sha": "8f506d07eef1d6b25787a07ecec9eb2805fc5d1c"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/references/reliability_principles.md",
+        "sha": "223d4b6d8e77a8e02b13e5a85eb272b5b7f9ddf1"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/references/timm_trainer.md",
+        "sha": "046afc42b972e8dfe9ef193ee8dd3c80e08a46fa"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/scripts/dataset_inspector.py",
+        "sha": "b7207b8ee69ece6d88a72f9898bf78a5d4b46837"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/scripts/estimate_cost.py",
+        "sha": "f8c1a45172c5f686ddeac4e43efb2cded0b85970"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/scripts/image_classification_training.py",
+        "sha": "df5f913bf6338bff1d0b168b10bf71b13526baee"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/scripts/object_detection_training.py",
+        "sha": "63345332e8890b00134f48fbb29dc0b37f65290d"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/scripts/sam_segmentation_training.py",
+        "sha": "0b544db52f1b5c31a4c14cfa1b5bbec8e54d2c21"
+      },
+      {
+        "path": "skills/huggingface-zerogpu/references/concurrency.md",
+        "sha": "f4c49cc2b076b67f1381b5968cea36161cf51ac8"
+      },
+      {
+        "path": "skills/huggingface-zerogpu/references/cuda-and-deps.md",
+        "sha": "9a36319de830ce63a16ecbf933d0b68b7568cf3c"
+      },
+      {
+        "path": "skills/huggingface-zerogpu/references/how-quota-works.md",
+        "sha": "4aeea42864b61464354cb168b1adfd8b02af76a1"
+      },
+      {
+        "path": "skills/huggingface-zerogpu/references/how-zerogpu-works.md",
+        "sha": "2cfcee6b66b97fe4ece4204ffee9309524b96f12"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/base_model_selection.md",
+        "sha": "a9524b6da638ae8281ed53152e241eb036f67878"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/dataset_formats.md",
+        "sha": "b60fa494b3b765b7fbbc2654a871f10814482328"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/evaluators_cross_encoder.md",
+        "sha": "e0abc98b7892a601f923b932cd11170a891e7a7b"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/evaluators_multi_vector_encoder.md",
+        "sha": "22567655573fc1cce39864106d1eeab34bb70c3a"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/evaluators_sentence_transformer.md",
+        "sha": "1a349a145702488e6ce6d53cd145a8a77a7b07bd"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/evaluators_sparse_encoder.md",
+        "sha": "88119a2851f5477fe7810324b84452ed272a4e55"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/hardware_guide.md",
+        "sha": "8b6926188e500e1178691a876f5a87eddacf3413"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/hf_jobs_execution.md",
+        "sha": "a8ed3095fb39431eb739f4d265c692d34359f5eb"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/losses_cross_encoder.md",
+        "sha": "6a9a2835af9ba8438c67e3d9af3ea775083c684f"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/losses_multi_vector_encoder.md",
+        "sha": "c207163dfd0d3be55703c40484ce992045c3a2fe"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/losses_sentence_transformer.md",
+        "sha": "17c2ff84d40df2b5e9ee6efe1918c2c415c9c79e"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/losses_sparse_encoder.md",
+        "sha": "938b65b650c80af4cc70176c1b7acd301c3af57c"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/model_architectures.md",
+        "sha": "4ef3717eacd35211ba0531188b540ca4896f2d68"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/prompts_and_instructions.md",
+        "sha": "5c2071e4dbd68c1c802aa92c19fd50c77ed1893a"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/training_args.md",
+        "sha": "21696046557edf5e3d162280fad9810796d2989d"
+      },
+      {
+        "path": "skills/train-sentence-transformers/references/troubleshooting.md",
+        "sha": "63df48fd4ad4294e2fea54da6cedb5d2dd7697f3"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/mine_hard_negatives.py",
+        "sha": "3bbb1a8c20e6ab116fd1f6346f2f11c74dc7980b"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_cross_encoder_distillation_example.py",
+        "sha": "7edf4d85f799ed741d70d422e4c27a4b1176f33c"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_cross_encoder_example.py",
+        "sha": "9ee21998f852b751dbc6f7b1f08aad0a2e268095"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_cross_encoder_listwise_example.py",
+        "sha": "82181727ad280319317253b0df1120e3509eac0e"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_multi_vector_encoder_example.py",
+        "sha": "afd8d137983fcad7347320d96379e826420035f4"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_sentence_transformer_distillation_example.py",
+        "sha": "2f0ddc8b7d41818a4141e4828f63d9007465bfcd"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_sentence_transformer_example.py",
+        "sha": "a0699fdab0f81fda54ac2927cec2766aebff8224"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_sentence_transformer_make_multilingual_example.py",
+        "sha": "e48a36c70ea235af17b7604c86e6f9318e3b09f6"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_sentence_transformer_matryoshka_example.py",
+        "sha": "8461cf6fcaa59e249324e0a07588bec9b41eecc4"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_sentence_transformer_multi_dataset_example.py",
+        "sha": "23db32dc5aa3b6c605d1ab51a4250dffc20a0cc7"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_sentence_transformer_static_embedding_example.py",
+        "sha": "0d9b0cd1aa64ace86085774a0b7df1531668e911"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_sentence_transformer_with_lora_example.py",
+        "sha": "320de4034352842dbcad12038f8cb497b09d7ae5"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_sparse_encoder_distillation_example.py",
+        "sha": "1ff5cb7336f84b7e5cb4780078acf960b6064bdd"
+      },
+      {
+        "path": "skills/train-sentence-transformers/scripts/train_sparse_encoder_example.py",
+        "sha": "2f857097361742902cb161da08432daf93b3dfee"
+      },
+      {
+        "path": "skills/transformers-js/references/CACHE.md",
+        "sha": "6f97b2cdd54b256df3d874f9372b2890341b44c4"
+      },
+      {
+        "path": "skills/transformers-js/references/CONFIGURATION.md",
+        "sha": "77c40a5e647e574d183a0cf3fbefa5a5216aab54"
+      },
+      {
+        "path": "skills/transformers-js/references/EXAMPLES.md",
+        "sha": "b254d863f6060c49c25be577d4c479a31de26866"
+      },
+      {
+        "path": "skills/transformers-js/references/MODEL_ARCHITECTURES.md",
+        "sha": "5660913316b7e60fe7fe721f61e7b5f3e856524e"
+      },
+      {
+        "path": "skills/transformers-js/references/MODEL_REGISTRY.md",
+        "sha": "763fd674e1cd04a361604ffee5ddd7ee8b0e97f2"
+      },
+      {
+        "path": "skills/transformers-js/references/PIPELINE_OPTIONS.md",
+        "sha": "80e9bbbe73f57d1a3252c5dc119915cb61e4a25e"
+      },
+      {
+        "path": "skills/transformers-js/references/TEXT_GENERATION.md",
+        "sha": "d99f6d2ff101d6545e4001a8f7f79848692266c0"
+      },
+      {
+        "path": "skills/huggingface-lora-space-builder/references/base-models/krea-2.md",
+        "sha": "085c69e72cc80f00ef6368cc38fce88f85bb6531"
+      },
+      {
+        "path": "skills/huggingface-lora-space-builder/references/base-models/ltx.md",
+        "sha": "c3f30d95a6447a5f7e6a628711fba1899dc9f0b8"
+      },
+      {
+        "path": "skills/huggingface-lora-space-builder/references/base-models/qwen-image.md",
+        "sha": "77a58c2c399ebc5f7135493d58996f8fdfac44a9"
+      }
+    ],
+    "repo_pushed_at": "2026-10-30T14:12:53Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 84,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 70,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "skills/huggingface-paper-publisher/scripts/paper_manager.py",
+      "line": 107,
+      "snippet": "\"arxiv_url\": f\"https://arxiv.org/abs/{arxiv_id}\"",
+      "host": "arxiv.org",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "skills/huggingface-paper-publisher/scripts/paper_manager.py",
+      "line": 352,
+      "snippet": "api_url = f\"https://export.arxiv.org/api/query?id_list={arxiv_id}\"",
+      "host": "export.arxiv.org",
+      "deduction": 15
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "skills/hf-cli/SKILL.md",
+      "line": 6,
+      "snippet": "Install: `curl -LsSf https://hf.co/cli/install.sh | bash -s`.",
+      "deduction": 25
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "apps/quests/README.md",
+      "line": 68,
+      "snippet": "curl -LsSf https://hf.co/cli/install.sh | bash",
+      "deduction": 5
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "skills/train-sentence-transformers/references/hf_jobs_execution.md",
+      "line": 9,
+      "snippet": "- Access to the `hf_jobs()` MCP tool, or the `hf` CLI (`curl -LsSf https://hf.co/cli/install.sh | bash -s`).",
+      "deduction": 0
+    }
+  ],
+  "evidence": {
+    "files_scanned": 186,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "arxiv.org",
+      "export.arxiv.org"
+    ],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 3
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 3446
+  },
+  "duration_ms": 3501
+}

@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T151957Z",
+  "target": {
+    "source": "github",
+    "id": "ClickHouse/mcp-clickhouse",
+    "url": "https://github.com/ClickHouse/mcp-clickhouse",
+    "name": "mcp-clickhouse"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:23:44.470Z",
+  "method_version": "0.3.4",
+  "tool": {
+    "assay_commit": "c928e6db511071812527413858335a6118b96224",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.4"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "059d50aef9e94bdbaea68c6ffcb2a9638bba8527",
+    "files_scanned": 26,
+    "candidates": 26,
+    "excluded_non_shipped": 32,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "f95e0e16ca902bdc473ecc6860f03f16f3ec716f"
+      },
+      {
+        "path": "mcp_clickhouse/main.py",
+        "sha": "9f5d476b64f207865e1a7c7ecfc8f650e728d6dc"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "c60268780e0a536250524cf6f783ded1a5a292bb"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "4fb94b1d8fc648668f3ee952e2ca2f2ad29b4fae"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "2799cf1adc4f46274dfddc5473f905aec23d8ccf"
+      },
+      {
+        "path": "example_middleware.py",
+        "sha": "8345613d0fb8cede7af0d5bcdc29ed393a4ad6e4"
+      },
+      {
+        "path": "fastmcp.json",
+        "sha": "6bbb3e7754dc71ab66d47f30357fdfee14f0b764"
+      },
+      {
+        "path": "README.md",
+        "sha": "ac5264927e5bc1b841020d40f576058069438f8d"
+      },
+      {
+        "path": "mcp_clickhouse/__init__.py",
+        "sha": "549195c328ba6409b511246476c02f1e57508c26"
+      },
+      {
+        "path": "mcp_clickhouse/auth.py",
+        "sha": "d9003fbc252e6c84f47981cfb3a9e45c5f22d02b"
+      },
+      {
+        "path": "mcp_clickhouse/chdb_backend.py",
+        "sha": "a11d152c62ed002ed1c6b239ae60b05c3c98001b"
+      },
+      {
+        "path": "mcp_clickhouse/chdb_prompt.py",
+        "sha": "1ab510d0dcf96a90a7f9427837e8d0ea9472b13f"
+      },
+      {
+        "path": "mcp_clickhouse/clients.py",
+        "sha": "0c5818c581b0dfc8d742049f96d6bbf9f7a527ff"
+      },
+      {
+        "path": "mcp_clickhouse/executors.py",
+        "sha": "d557dda8e7cb08c41ebab85c34f18f1f494c76b2"
+      },
+      {
+        "path": "mcp_clickhouse/health.py",
+        "sha": "64f0c58dd3f85bad723c665a820e3b46ae5c9717"
+      },
+      {
+        "path": "mcp_clickhouse/http_security.py",
+        "sha": "e196481be69ddbbf0cc2eab8cb00dae9555a6792"
+      },
+      {
+        "path": "mcp_clickhouse/mcp_env.py",
+        "sha": "f4917b8273acb51e199a6127ffd1866656196e59"
+      },
+      {
+        "path": "mcp_clickhouse/mcp_middleware_hook.py",
+        "sha": "08ba4e8c084836c810fdf011c1293c36f5f4a14d"
+      },
+      {
+        "path": "mcp_clickhouse/mcp_server.py",
+        "sha": "8023562759ef3ec88eb71ae6946fe18bdd1e98e6"
+      },
+      {
+        "path": "mcp_clickhouse/metadata.py",
+        "sha": "0e40fec9933e224e35c239192c6a0cf297ea8fb7"
+      },
+      {
+        "path": "mcp_clickhouse/queries.py",
+        "sha": "d4c81c36cfc7172633499a8a8cce1dd08720811a"
+      },
+      {
+        "path": "mcp_clickhouse/serialization.py",
+        "sha": "f8d5869c08c84d2b3f35c955d9131912c107de10"
+      },
+      {
+        "path": "mcp_clickhouse/skills_advisor.py",
+        "sha": "da5921b4d5e62c298d1ebb0b02aa9949b85a9473"
+      },
+      {
+        "path": "mcp_clickhouse/transport.py",
+        "sha": "13f2fb95609909eb20af326c9583fe8a3d4ae79f"
+      },
+      {
+        "path": "test-services/docker-compose.yaml",
+        "sha": "8accc0e198e9e73e1b24cf9681b875ee0cf6d760"
+      },
+      {
+        "path": ".claude/agents/docs-drift-reviewer.md",
+        "sha": "972a8180491aa60291133ceea78cc1497fbd8abc"
+      }
+    ],
+    "repo_pushed_at": "2026-11-01T22:13:17Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 26,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 1
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 4475
+  },
+  "duration_ms": 4491
+}

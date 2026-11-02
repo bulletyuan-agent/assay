@@ -1,0 +1,1691 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T151957Z",
+  "target": {
+    "source": "github",
+    "id": "modelcontextprotocol/python-sdk",
+    "url": "https://github.com/modelcontextprotocol/python-sdk",
+    "name": "python-sdk"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:21:40.417Z",
+  "method_version": "0.3.4",
+  "tool": {
+    "assay_commit": "c928e6db511071812527413858335a6118b96224",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.4"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "d7845c073a2b9ba5ab2817ecf93d3e45ef24cd14",
+    "files_scanned": 400,
+    "candidates": 1038,
+    "excluded_non_shipped": 649,
+    "coverage": 0.39,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".claude/skills/test-quality/SKILL.md",
+        "sha": "d27fbb6e4d2ee3f0414b2f96dcd52548479c7202"
+      },
+      {
+        "path": "i18n/de/pages/get-started/installation.md",
+        "sha": "28f67185e3647a5ef9d264498a75b926bfc0cd54"
+      },
+      {
+        "path": "i18n/es/pages/get-started/installation.md",
+        "sha": "0e3ca1b1b12ac3fd06c5c1289ccc47298d76d20f"
+      },
+      {
+        "path": "i18n/fr/pages/get-started/installation.md",
+        "sha": "610c6253a5945200eb993a5ab08bdd3b563c2b20"
+      },
+      {
+        "path": "i18n/hi/pages/get-started/installation.md",
+        "sha": "b8460135ea45882f30f2a17da532bf0ee4a3f8b6"
+      },
+      {
+        "path": "i18n/ja/pages/get-started/installation.md",
+        "sha": "0a63a8af9eeb20fcd03acbcf05e277463cac130b"
+      },
+      {
+        "path": "i18n/ko/pages/get-started/installation.md",
+        "sha": "023991873c788f91b07ae17a8ca6ded673374215"
+      },
+      {
+        "path": "i18n/pt/pages/get-started/installation.md",
+        "sha": "533d1d8892404ac527611bd09574e10b345c83fe"
+      },
+      {
+        "path": "i18n/ru/pages/get-started/installation.md",
+        "sha": "a5c61f11c6d1d9902b142d71c7932b662740db80"
+      },
+      {
+        "path": "i18n/tr/pages/get-started/installation.md",
+        "sha": "b696c2ca5041d523207bd39add33d50559790a5c"
+      },
+      {
+        "path": "i18n/uk/pages/get-started/installation.md",
+        "sha": "e560423d7b17cb42e4cb0e87d0595089cf9df641"
+      },
+      {
+        "path": "i18n/zh-hant/pages/get-started/installation.md",
+        "sha": "c81972db1eed05c529c9ffc2186ae314b4b97879"
+      },
+      {
+        "path": "i18n/zh/pages/get-started/installation.md",
+        "sha": "5bf588d5c59c2f3bc929b078e026d04582bda7df"
+      },
+      {
+        "path": "src/mcp/cli/cli.py",
+        "sha": "203034c6efff034a60399f4c6b83b3d9f14c92bc"
+      },
+      {
+        "path": "scripts/build-docs.sh",
+        "sha": "f0991b759bf29bb6969c49e1c18a88b494cf7fd2"
+      },
+      {
+        "path": "scripts/gen_surface_types.py",
+        "sha": "230e7046820578e32de1b2260fc01c5d51d669c4"
+      },
+      {
+        "path": "scripts/serve-docs.sh",
+        "sha": "df32e915cf5f453359c338c72efbfd7273d90e21"
+      },
+      {
+        "path": "scripts/update_readme_snippets.py",
+        "sha": "aa0b70d2b445f953d98221e68a0450b18f63e194"
+      },
+      {
+        "path": "src/mcp/server/lowlevel/server.py",
+        "sha": "cbcf103d01f94bf6addacdac0ed14ce985bf0b69"
+      },
+      {
+        "path": "src/mcp/server/mcpserver/server.py",
+        "sha": "7efa29108d9504974cb38e7619d3403b14c4d53a"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "94fc4cf1520caf94d3f36885d588f65d126cb3ea"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "4a94783bea501b7f3d2a8a0c9611f9fbdb1fd280"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "985a28566c0c986d2a6317a2ea4abe0083193900"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "005cf2360d66b484bc811241a3b43c83cba0e456"
+      },
+      {
+        "path": "DEPENDENCY_POLICY.md",
+        "sha": "961157b3781262876b1d5faf8718244e6b174bf9"
+      },
+      {
+        "path": "i18n/de/pages/index.md",
+        "sha": "744c99c40e5275758d640afa10d278fbd8650dc5"
+      },
+      {
+        "path": "i18n/es/pages/index.md",
+        "sha": "145c89d4213251917ba405b441e544edefdbcb57"
+      },
+      {
+        "path": "i18n/fr/pages/index.md",
+        "sha": "99a02571665ec7a434449a6e134da143bea80b57"
+      },
+      {
+        "path": "i18n/hi/pages/index.md",
+        "sha": "ab70b31a7e4118a3cc03ecb0c49b183ce1113268"
+      },
+      {
+        "path": "i18n/ja/pages/index.md",
+        "sha": "554e24f66a8e7150860ee6f7fd6dea7abfcdcb7f"
+      },
+      {
+        "path": "i18n/ko/pages/index.md",
+        "sha": "06d21eb5d6b7d2a8fd14e81c2b4354eeb9f3a28b"
+      },
+      {
+        "path": "i18n/pt/pages/index.md",
+        "sha": "4305076473a4ead234577b2041e1209827e4339b"
+      },
+      {
+        "path": "i18n/ru/pages/index.md",
+        "sha": "15bda0c117ecc730ee9ddabe72af8c6980600fa8"
+      },
+      {
+        "path": "i18n/tr/pages/index.md",
+        "sha": "1faafb77851e6f5fb87ac142007f5d0beb7534a5"
+      },
+      {
+        "path": "i18n/uk/pages/index.md",
+        "sha": "0089a48c47246c416c325c77cf7071a0b04658ee"
+      },
+      {
+        "path": "i18n/zh-hant/pages/index.md",
+        "sha": "f94c586b96346ff7c87a66a0f8722c34851aa2cd"
+      },
+      {
+        "path": "i18n/zh/pages/index.md",
+        "sha": "7de9370fd308e1f3ce57b16335d99e496c638f84"
+      },
+      {
+        "path": "mkdocs.yml",
+        "sha": "62f064036637bf6a395e94db17d55f71e446598a"
+      },
+      {
+        "path": "README.md",
+        "sha": "50ea0ed227b72de82917d67d678d1d24783ab2e9"
+      },
+      {
+        "path": "RELEASE.md",
+        "sha": "cada37480cb810a1fa3be653e06e4a0160e7e764"
+      },
+      {
+        "path": "ROADMAP.md",
+        "sha": "dfdcc41a479c1297c14a888f37cd59286dc32701"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "5a69875124adf2ab3a8d5bccc58f6545b0c9712a"
+      },
+      {
+        "path": "src/mcp-types/README.md",
+        "sha": "910a9e8f386ca428d15aeda1341d69b67d4fac7d"
+      },
+      {
+        "path": "src/mcp/__init__.py",
+        "sha": "28bc4703edeae63396eddd08415b254a45b871b2"
+      },
+      {
+        "path": "VERSIONING.md",
+        "sha": "bc80d51aef1d31003d5352db08df5d3ef173c016"
+      },
+      {
+        "path": "docs_src/__init__.py",
+        "sha": "d19acbc088b685f5c9e79c5e53a5c28e6a24c8f1"
+      },
+      {
+        "path": "i18n/de/pages/advanced/index.md",
+        "sha": "b58c2abf327967bcf22b20ffc0e9dd7866c76c45"
+      },
+      {
+        "path": "i18n/de/pages/client/index.md",
+        "sha": "a3ce8240de66b294f1eee91f0ab135c34bd812ec"
+      },
+      {
+        "path": "i18n/de/pages/get-started/index.md",
+        "sha": "4cdc309e508a0a48b78519d13e9ad796f11ccaed"
+      },
+      {
+        "path": "i18n/de/pages/handlers/index.md",
+        "sha": "9bf191c81b04afffd186d212d0a5b68df3a179d3"
+      },
+      {
+        "path": "i18n/de/pages/run/index.md",
+        "sha": "031fbdd524475b585be3421e77984a869f949095"
+      },
+      {
+        "path": "i18n/de/pages/servers/index.md",
+        "sha": "45be37e5dcd924c36d068ad1214d6a1094899494"
+      },
+      {
+        "path": "i18n/de/pages/servers/tools.md",
+        "sha": "a0ee259aa5b57f07c1f2aaefcef563479f8abf3e"
+      },
+      {
+        "path": "i18n/es/pages/advanced/index.md",
+        "sha": "5cf0d9e5888574acd6de7f94ee6226bf779fb8ad"
+      },
+      {
+        "path": "i18n/es/pages/client/index.md",
+        "sha": "a61c710402d34bfa2a1270f83307f70018879514"
+      },
+      {
+        "path": "i18n/es/pages/get-started/index.md",
+        "sha": "150b2ccef88b47cbe715d7403dc29aa37719689e"
+      },
+      {
+        "path": "i18n/es/pages/handlers/index.md",
+        "sha": "5cb1b939ba6618a5cebf0ea8109be0573eb1e90d"
+      },
+      {
+        "path": "i18n/es/pages/run/index.md",
+        "sha": "8dd948d07deae812adc1714e51afeebf3dd5e26d"
+      },
+      {
+        "path": "i18n/es/pages/servers/index.md",
+        "sha": "e021f74248bef327663684ad2d1eee0b7ff83329"
+      },
+      {
+        "path": "i18n/es/pages/servers/tools.md",
+        "sha": "95bc35aff9e255978c2bc7193bd5fd5ffe6134b5"
+      },
+      {
+        "path": "i18n/fr/pages/advanced/index.md",
+        "sha": "f6d9e0637b1ba083f0087d62278672cb7f47ebe4"
+      },
+      {
+        "path": "i18n/fr/pages/client/index.md",
+        "sha": "291933a44c5de0bd10c82d8c1c8949ebea82c496"
+      },
+      {
+        "path": "i18n/fr/pages/get-started/index.md",
+        "sha": "1374233b24391a8d614813452780deffcf0daa03"
+      },
+      {
+        "path": "i18n/fr/pages/handlers/index.md",
+        "sha": "294b26aebd8b34095601168ef756981ccc48b5ec"
+      },
+      {
+        "path": "i18n/fr/pages/run/index.md",
+        "sha": "d528c3752965639f875e1b42446bcf40f5c35aa9"
+      },
+      {
+        "path": "i18n/fr/pages/servers/index.md",
+        "sha": "462d9bc87a025c82a209d9ed073f303f01521b9d"
+      },
+      {
+        "path": "i18n/fr/pages/servers/tools.md",
+        "sha": "edb030a1e0ac856e181d8b84ee6a28a872639aa6"
+      },
+      {
+        "path": "i18n/general-prompt.md",
+        "sha": "b585cf0acf4720789d8c4bbfc457acc476137b88"
+      },
+      {
+        "path": "i18n/hi/pages/advanced/index.md",
+        "sha": "3ecafc2e38a26d50cc7213133f9a044bee5edf45"
+      },
+      {
+        "path": "i18n/hi/pages/client/index.md",
+        "sha": "eb85cb863cafc132eb035f5ca87faa8109a15956"
+      },
+      {
+        "path": "i18n/hi/pages/get-started/index.md",
+        "sha": "c3e55b6149a1cdb0bb3de7a6f384fa1ec4d75d5a"
+      },
+      {
+        "path": "i18n/hi/pages/handlers/index.md",
+        "sha": "a142c2d8cf21ba989e5a5fdb6e67a53d07d50732"
+      },
+      {
+        "path": "i18n/hi/pages/run/index.md",
+        "sha": "3c99980f3bace6b6babe8ce4a73749a6e1b8d908"
+      },
+      {
+        "path": "i18n/hi/pages/servers/index.md",
+        "sha": "4051a71659f6e9f9f3dd2f9901b0b51dbc324cb4"
+      },
+      {
+        "path": "i18n/hi/pages/servers/tools.md",
+        "sha": "52fe69fa3203e7b63e94213bec009a6b33234abd"
+      },
+      {
+        "path": "i18n/ja/pages/advanced/index.md",
+        "sha": "0b7ae52e724325f8af87a77b55157061bd2bd97f"
+      },
+      {
+        "path": "i18n/ja/pages/client/index.md",
+        "sha": "7e53cc2050c6d1927e6d1b2ab84ff111248bd048"
+      },
+      {
+        "path": "i18n/ja/pages/get-started/index.md",
+        "sha": "e3832c6d4d6c1081232d4ccaf60bfa82bcb69419"
+      },
+      {
+        "path": "i18n/ja/pages/handlers/index.md",
+        "sha": "0c2b19c814b6dea91c7df53823af96c5e1c25e41"
+      },
+      {
+        "path": "i18n/ja/pages/run/index.md",
+        "sha": "7dc38bee550f7d7ea304fee19bdf8c5f508ced3f"
+      },
+      {
+        "path": "i18n/ja/pages/servers/index.md",
+        "sha": "ee267460cd73702d530273a397b29d9c15d2be94"
+      },
+      {
+        "path": "i18n/ja/pages/servers/tools.md",
+        "sha": "b7c252941d3e90bf2e0ac2338cc266d34a22aa89"
+      },
+      {
+        "path": "i18n/ko/pages/advanced/index.md",
+        "sha": "56678e34e63401459c692781903fd47128cc52f3"
+      },
+      {
+        "path": "i18n/ko/pages/client/index.md",
+        "sha": "51c1e151d5cd4549f31fe6798853a910eab10629"
+      },
+      {
+        "path": "i18n/ko/pages/get-started/index.md",
+        "sha": "d85a42d3f9d8e27a5cf78bf1813422e692d147e5"
+      },
+      {
+        "path": "i18n/ko/pages/handlers/index.md",
+        "sha": "1fcad31ebfb3878e958040b3ea7c73d1156dfba0"
+      },
+      {
+        "path": "i18n/ko/pages/run/index.md",
+        "sha": "32590892c7cf73cec9afbc0c3cc9bbb0625762ec"
+      },
+      {
+        "path": "i18n/ko/pages/servers/index.md",
+        "sha": "19b726836dd0f93863a80360483e33d61c55bc92"
+      },
+      {
+        "path": "i18n/ko/pages/servers/tools.md",
+        "sha": "e967494b9de4ae482f6ce7e1f43fbdd938814d65"
+      },
+      {
+        "path": "i18n/languages.yml",
+        "sha": "9e01802eefbd4e697b8bf2c1fdeef52b8b0bab94"
+      },
+      {
+        "path": "i18n/notices.md",
+        "sha": "08bf98e4d12a3e8763c9e198939f0ab7e3293459"
+      },
+      {
+        "path": "i18n/pt/pages/advanced/index.md",
+        "sha": "8e480f10169ecfc2cd6c8fed6200f0e087e0d56b"
+      },
+      {
+        "path": "i18n/pt/pages/client/index.md",
+        "sha": "72c13cdf8126dcf62261cc18ee70b17c395f632f"
+      },
+      {
+        "path": "i18n/pt/pages/get-started/index.md",
+        "sha": "c6840ba418b5d6b14b896cc2fc040b327c322d36"
+      },
+      {
+        "path": "i18n/pt/pages/handlers/index.md",
+        "sha": "173853a8f93833103ce57ab959667b282dcc4208"
+      },
+      {
+        "path": "i18n/pt/pages/run/index.md",
+        "sha": "f190bd5cfd9480bdccedbe4c7e3d5c29def41c69"
+      },
+      {
+        "path": "i18n/pt/pages/servers/index.md",
+        "sha": "5c8635cd6801c3d89bbc3fe82e995dc77261442c"
+      },
+      {
+        "path": "i18n/pt/pages/servers/tools.md",
+        "sha": "8bbd22ac15b8532fe6a1382657cc7a0021edb20c"
+      },
+      {
+        "path": "i18n/README.md",
+        "sha": "948e95cc14f1b8978d2475782e4f65d04ae2bbd6"
+      },
+      {
+        "path": "i18n/ru/pages/advanced/index.md",
+        "sha": "b67d5060a1d9a0f899e4591816df312ac36cb081"
+      },
+      {
+        "path": "i18n/ru/pages/client/index.md",
+        "sha": "d653c88674a90fa21e9eae2fc51bf2163105b3aa"
+      },
+      {
+        "path": "i18n/ru/pages/get-started/index.md",
+        "sha": "499a62085f8f84f8e7d66380cb7f2fe06d108c6d"
+      },
+      {
+        "path": "i18n/ru/pages/handlers/index.md",
+        "sha": "8bf898a3377b6028d16145ff4bcda34b9f6a77a5"
+      },
+      {
+        "path": "i18n/ru/pages/run/index.md",
+        "sha": "a4ad8692aa01e50224370a33f4efc7fb73970814"
+      },
+      {
+        "path": "i18n/ru/pages/servers/index.md",
+        "sha": "fc6f3b3d54c72bb152dc15deb2e7d6359ab38fa6"
+      },
+      {
+        "path": "i18n/ru/pages/servers/tools.md",
+        "sha": "f5fae369c38e6141928cdb599701a5d721cd31af"
+      },
+      {
+        "path": "i18n/tr/pages/advanced/index.md",
+        "sha": "0c525d53f3cba8f5b924252695952a9260a2f400"
+      },
+      {
+        "path": "i18n/tr/pages/client/index.md",
+        "sha": "47b945d78f48f10cff5bd9d31edafe2c43219bb1"
+      },
+      {
+        "path": "i18n/tr/pages/get-started/index.md",
+        "sha": "9685ff868b9477cf7d17d2556ebfe9f166c1c127"
+      },
+      {
+        "path": "i18n/tr/pages/handlers/index.md",
+        "sha": "0eb8f38e236f7bd614ef7b4da84ed4683b2e57ac"
+      },
+      {
+        "path": "i18n/tr/pages/run/index.md",
+        "sha": "fe5c4147b6e754ddcdf2a8b8eba02c9c48488d46"
+      },
+      {
+        "path": "i18n/tr/pages/servers/index.md",
+        "sha": "2f222380b303b05c0f69485b46e4d2bcaaf998cd"
+      },
+      {
+        "path": "i18n/tr/pages/servers/tools.md",
+        "sha": "27aa9c7a375f5598e07c0cdeaab3b638f50f88f0"
+      },
+      {
+        "path": "i18n/uk/pages/advanced/index.md",
+        "sha": "5db0f1fe5c18e5a8b6c1ebe3fd72a57599349f3a"
+      },
+      {
+        "path": "i18n/uk/pages/client/index.md",
+        "sha": "4fc9f8faa6496d1aa29197d82f44df523277b81d"
+      },
+      {
+        "path": "i18n/uk/pages/get-started/index.md",
+        "sha": "f5a13e844520ffa6d4501128bdc63803c9eb5219"
+      },
+      {
+        "path": "i18n/uk/pages/handlers/index.md",
+        "sha": "5d728a0fca2f5e2f61421cfedbec39beef9b3cf7"
+      },
+      {
+        "path": "i18n/uk/pages/run/index.md",
+        "sha": "5d4f90c89b576428d49af2bc449ab9b5bb3335d0"
+      },
+      {
+        "path": "i18n/uk/pages/servers/index.md",
+        "sha": "31092009d8367b69978400060d9895812a14de40"
+      },
+      {
+        "path": "i18n/uk/pages/servers/tools.md",
+        "sha": "d07334869e2f0aeb52faed79d65f92990931cf6f"
+      },
+      {
+        "path": "i18n/zh-hant/pages/advanced/index.md",
+        "sha": "0aefa257d4f23a4a7eb7ae03f7f16046ac4b801d"
+      },
+      {
+        "path": "i18n/zh-hant/pages/client/index.md",
+        "sha": "8e88f950caf0a17cd6d0330a3f9356b84340485b"
+      },
+      {
+        "path": "i18n/zh-hant/pages/get-started/index.md",
+        "sha": "534adce26e019f0a537bcc60aea2d5e947c94804"
+      },
+      {
+        "path": "i18n/zh-hant/pages/handlers/index.md",
+        "sha": "9e4b4e56518db829ef20d607a2c68c38f532ae51"
+      },
+      {
+        "path": "i18n/zh-hant/pages/run/index.md",
+        "sha": "2d4afdafd677b386a603338ccfd3f9a8e9213b56"
+      },
+      {
+        "path": "i18n/zh-hant/pages/servers/index.md",
+        "sha": "afdd150db0446c4f3f8a7df47a1c2af6b66dde99"
+      },
+      {
+        "path": "i18n/zh-hant/pages/servers/tools.md",
+        "sha": "cdb38ed1667e98ae3ddfb5ee3f613c54c930b3e4"
+      },
+      {
+        "path": "i18n/zh/pages/advanced/index.md",
+        "sha": "4c3448ece3f8f4edbb49ea22037397f329c36c9d"
+      },
+      {
+        "path": "i18n/zh/pages/client/index.md",
+        "sha": "aa421db5cb88ef99d215d9ae0469a1a2bf20a6d3"
+      },
+      {
+        "path": "i18n/zh/pages/get-started/index.md",
+        "sha": "6b7b6a857ac572523178bd9e6ccaddaeedc0e26a"
+      },
+      {
+        "path": "i18n/zh/pages/handlers/index.md",
+        "sha": "fd598a8f8bf58974e79daf353c505aefad7c92d2"
+      },
+      {
+        "path": "i18n/zh/pages/run/index.md",
+        "sha": "b2914c111c7be734e863424dadfd74e40ae067fd"
+      },
+      {
+        "path": "i18n/zh/pages/servers/index.md",
+        "sha": "ef997ed704a47185d113f211188960664d43966c"
+      },
+      {
+        "path": "i18n/zh/pages/servers/tools.md",
+        "sha": "eb7b330b9f323d74a0e5da19456e2c318e0f46fe"
+      },
+      {
+        "path": "schema/PINNED.json",
+        "sha": "1c3e2c235a25ba9dc54c1ea69b867b5388427d6b"
+      },
+      {
+        "path": "schema/README.md",
+        "sha": "9f855f6f3299b730a22f7b520c638973bfe6cf48"
+      },
+      {
+        "path": "src/mcp-types/mcp_types/__init__.py",
+        "sha": "41cec2edf32b8846b1fbfe08f29bc13cf82d7199"
+      },
+      {
+        "path": "src/mcp-types/mcp_types/_types.py",
+        "sha": "e91fdcc3b970cf43508f6734b48fcc57977882a7"
+      },
+      {
+        "path": "src/mcp-types/mcp_types/_wire_base.py",
+        "sha": "69254a850b14816010a392a1ddb10f84f117cf94"
+      },
+      {
+        "path": "src/mcp-types/mcp_types/jsonrpc.py",
+        "sha": "e9c6db96b46980b73da0936f4792a8405c8dff96"
+      },
+      {
+        "path": "src/mcp-types/mcp_types/methods.py",
+        "sha": "41959c56d7425b0a69cb06f49031e1491419d4bd"
+      },
+      {
+        "path": "src/mcp-types/mcp_types/version.py",
+        "sha": "e2f7e1ac86e453e3fa7ea04a7626d5c7225695e1"
+      },
+      {
+        "path": "src/mcp/cli/__init__.py",
+        "sha": "daf07c0a13863e0855364c030e22b904e1079348"
+      },
+      {
+        "path": "src/mcp/cli/claude.py",
+        "sha": "f3ba726f38d381b01dc8a38e8d26094b5de8cd76"
+      },
+      {
+        "path": "src/mcp/client/__init__.py",
+        "sha": "d6b07045ce685219532cd429f441dfa19757d18d"
+      },
+      {
+        "path": "src/mcp/client/__main__.py",
+        "sha": "60e3b0239089ab5216d58d67a8dbb98c3cbc41a3"
+      },
+      {
+        "path": "src/mcp/client/_input_required.py",
+        "sha": "fe3f59e175461154cfd187c460f4954b081b5496"
+      },
+      {
+        "path": "src/mcp/client/_memory.py",
+        "sha": "187131e380ec20feee97b26e07cff676dd8af32e"
+      },
+      {
+        "path": "src/mcp/client/_probe.py",
+        "sha": "0e46ae57d98b69f48f5da9e0cc1eaa185763cd3d"
+      },
+      {
+        "path": "src/mcp/client/_transport.py",
+        "sha": "0163fef950273adf49ce880f34e429007f2a49e4"
+      },
+      {
+        "path": "src/mcp/client/caching.py",
+        "sha": "a464accd164f4e404620cd26266272b1d5637a54"
+      },
+      {
+        "path": "src/mcp/client/client.py",
+        "sha": "099dcbb874fe1b49137bc2fe5667b0c81338d33b"
+      },
+      {
+        "path": "src/mcp/client/context.py",
+        "sha": "aecd29527fee5eb22d50ce9dec4de2d42804130d"
+      },
+      {
+        "path": "src/mcp/client/extension.py",
+        "sha": "59d08b1bfcbcd5b0e35a4a53e6bd4aa96716de8d"
+      },
+      {
+        "path": "src/mcp/client/session_group.py",
+        "sha": "13d8928ed4cc28725c841a39615c1516782fd88f"
+      },
+      {
+        "path": "src/mcp/client/session.py",
+        "sha": "35cae2d314e5c68959309911486d8c02f57412cc"
+      },
+      {
+        "path": "src/mcp/client/sse.py",
+        "sha": "f72ff273a94e37cacdd228e4bfa6a5a9e43c32f8"
+      },
+      {
+        "path": "src/mcp/client/stdio.py",
+        "sha": "6a3ad121115006f25739e073d409349ed55265d7"
+      },
+      {
+        "path": "src/mcp/client/streamable_http.py",
+        "sha": "053f1f10a93c9bbfb5bd398a13d034cdfd113669"
+      },
+      {
+        "path": "src/mcp/client/subscriptions.py",
+        "sha": "27283909be1591ef796aba5a9df190d7780033e6"
+      },
+      {
+        "path": "src/mcp/os/__init__.py",
+        "sha": "fa5dbc809c114248f9fbd29fdc7402ddfcaf3fe3"
+      },
+      {
+        "path": "src/mcp/server/__init__.py",
+        "sha": "5897e8aa8b6a3c1fd7b1043c12bdc63205a3ae06"
+      },
+      {
+        "path": "src/mcp/server/__main__.py",
+        "sha": "4305b87e22aaf2ee669fd71a41ad029653c7db8d"
+      },
+      {
+        "path": "src/mcp/server/_otel.py",
+        "sha": "ff722eb9036a908814e48fb9c052d5536d88d263"
+      },
+      {
+        "path": "src/mcp/server/_streamable_http_modern.py",
+        "sha": "ad4257319d3f6082415c1722617032a259009d24"
+      },
+      {
+        "path": "src/mcp/server/apps.py",
+        "sha": "583e203ac0bc0d2a5a2a3776355f15cb04dd8978"
+      },
+      {
+        "path": "src/mcp/server/caching.py",
+        "sha": "5e99303159672b03f277d2c5451c8782a412afcd"
+      },
+      {
+        "path": "src/mcp/server/connection.py",
+        "sha": "99ba2da48185259979ef8ec9a5a112810cd8f097"
+      },
+      {
+        "path": "src/mcp/server/context.py",
+        "sha": "bfcb9c9ca4c16a51ba639f6e4637bb4da3a19893"
+      },
+      {
+        "path": "src/mcp/server/elicitation.py",
+        "sha": "650378886b4c971bb9a84ed3c3f6f1d8d9b40993"
+      },
+      {
+        "path": "src/mcp/server/extension.py",
+        "sha": "6205a7033d05c95e1c5c22e22b23219c33a128c6"
+      },
+      {
+        "path": "src/mcp/server/fastmcp.py",
+        "sha": "7dd4646dc0a03ce77e721231a6a69a0dfd5570b5"
+      },
+      {
+        "path": "src/mcp/server/models.py",
+        "sha": "6b129165a129e6ad2f401949cb272d66c706eda6"
+      },
+      {
+        "path": "src/mcp/server/request_state.py",
+        "sha": "ad1abe8c36101e4381696c14cc25b8707be2ec8a"
+      },
+      {
+        "path": "src/mcp/server/runner.py",
+        "sha": "26e8efbe57199cd9f599eda0b8fc3d1b989a7815"
+      },
+      {
+        "path": "src/mcp/server/session.py",
+        "sha": "bb446415e8b879d957b4417d992e406d4842b192"
+      },
+      {
+        "path": "src/mcp/server/skills.py",
+        "sha": "36eee9fa5c4f73ffba8e0d1000c1f399123c3234"
+      },
+      {
+        "path": "src/mcp/server/sse.py",
+        "sha": "d71ef250041c7fa35595884416e3a5036efbdf21"
+      },
+      {
+        "path": "src/mcp/server/stdio.py",
+        "sha": "de8bbae5f18f31de5ee419776f64e23ea4d92d4c"
+      },
+      {
+        "path": "src/mcp/server/streamable_http_manager.py",
+        "sha": "a7efac3fbc6f215516fb7b9bb10a205af8c90e87"
+      },
+      {
+        "path": "src/mcp/server/streamable_http.py",
+        "sha": "416dd9e2b4217470e703dbbabbd8fb417147fd14"
+      },
+      {
+        "path": "src/mcp/server/subscriptions.py",
+        "sha": "c535c1078d3691043aecf1381ed1dc77cfc4af79"
+      },
+      {
+        "path": "src/mcp/server/transport_security.py",
+        "sha": "91b5fa7edb545f1668db68632c11cb959bc1d15b"
+      },
+      {
+        "path": "src/mcp/server/validation.py",
+        "sha": "a281f4d08f22635ec8abfd956b334583d12f6363"
+      },
+      {
+        "path": "src/mcp/shared/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/mcp/shared/_callable_inspection.py",
+        "sha": "0e89e446f8d82a525c88364b8f65a3fd46d61a2d"
+      },
+      {
+        "path": "src/mcp/shared/_compat.py",
+        "sha": "88d50ba20ae26ac81d9eb488117d607a6946fdd7"
+      },
+      {
+        "path": "src/mcp/shared/_context_streams.py",
+        "sha": "04c33306d925e60943ebe0bab323bdcee1451af3"
+      },
+      {
+        "path": "src/mcp/shared/_httpx_utils.py",
+        "sha": "7107e5e535e591e56fa1c7c7b78fb812d7cb0f4b"
+      },
+      {
+        "path": "src/mcp/shared/_otel.py",
+        "sha": "b7b05b11ab1d79ab06026d5ba0bc62c72bc9d51a"
+      },
+      {
+        "path": "src/mcp/shared/_request_clock.py",
+        "sha": "5b9ad91e5523b3c0c609e85e43a8b869fa359c2b"
+      },
+      {
+        "path": "src/mcp/shared/_stream_protocols.py",
+        "sha": "c6d4952efc35120af3b051910e2cd8062b41d65c"
+      },
+      {
+        "path": "src/mcp/shared/auth_utils.py",
+        "sha": "3ba880f40dd6b019dd057929e91bbf9319658272"
+      },
+      {
+        "path": "src/mcp/shared/auth.py",
+        "sha": "881379d381e30d834a66355f634fb0e5bbda4b4b"
+      },
+      {
+        "path": "src/mcp/shared/context.py",
+        "sha": "13c145be5bb57b4a8f0e58b2f2c8b5e31984c9e1"
+      },
+      {
+        "path": "src/mcp/shared/direct_dispatcher.py",
+        "sha": "e844f73d07716875fb679ba3d7654956b8561e3b"
+      },
+      {
+        "path": "src/mcp/shared/dispatcher.py",
+        "sha": "c09d7a98636224a3549b837b846a7b6b34ec8dfa"
+      },
+      {
+        "path": "src/mcp/shared/exceptions.py",
+        "sha": "c2a7fd44e72072d33134c3b9e84efab52dbd3e6d"
+      },
+      {
+        "path": "src/mcp/shared/extension.py",
+        "sha": "283e9ba89b2bda448604ffc0811318a919279504"
+      },
+      {
+        "path": "src/mcp/shared/inbound.py",
+        "sha": "e33d6f502f6ac25c61d0f183ed9bec044acd049c"
+      },
+      {
+        "path": "src/mcp/shared/jsonrpc_dispatcher.py",
+        "sha": "223373da0f69df50c94a15fd970b04ad3e433192"
+      },
+      {
+        "path": "src/mcp/shared/memory.py",
+        "sha": "01cab77c85546a7457b1fe1411d798f729b380ad"
+      },
+      {
+        "path": "src/mcp/shared/message.py",
+        "sha": "31e51e7128958fab37443d5809a32febc40e520f"
+      },
+      {
+        "path": "src/mcp/shared/metadata_utils.py",
+        "sha": "b6461334779804d7af59b246e3a2de895837c2cd"
+      },
+      {
+        "path": "src/mcp/shared/path_security.py",
+        "sha": "abe810dcfaa05e9ca1d5ca3c4d82797ace45fe18"
+      },
+      {
+        "path": "src/mcp/shared/peer.py",
+        "sha": "14e8fe1c299adbca2dc8362c3dd881b83a38fd1a"
+      },
+      {
+        "path": "src/mcp/shared/skills.py",
+        "sha": "0a0d1f1f85b1e9e7155aa1d6b2cbc9e5ce420e1e"
+      },
+      {
+        "path": "src/mcp/shared/subscriptions.py",
+        "sha": "30449a82ff552e2e533085b9f2422920470d8806"
+      },
+      {
+        "path": "src/mcp/shared/tool_name_validation.py",
+        "sha": "96c34f7826808a9c005d53136460ca4c620ade0c"
+      },
+      {
+        "path": "src/mcp/shared/transport_context.py",
+        "sha": "8d15a2eaa2e644bac950fabb171e4c3816935e6a"
+      },
+      {
+        "path": "src/mcp/shared/uri_template.py",
+        "sha": "20d6fa9c2e70d4670cab58cfef549dd4e629fad1"
+      },
+      {
+        "path": "src/mcp/types/__init__.py",
+        "sha": "9bdfa06a564ca6475b30f89e0740e43359d182e0"
+      },
+      {
+        "path": "src/mcp/types/jsonrpc.py",
+        "sha": "a76b74ee26feff9bbd4e1262832f77636d7d0030"
+      },
+      {
+        "path": "src/mcp/types/methods.py",
+        "sha": "4b01fcc6cf37fb703e4dfbaf0378304bac5b4708"
+      },
+      {
+        "path": "src/mcp/types/version.py",
+        "sha": "857c53f0f8fb0b82317d78c79e3af3eb4b13fb2d"
+      },
+      {
+        "path": ".claude/commands/review-pr.md",
+        "sha": "114c1e3d5f77db542bfd60a30dda96e2059687ff"
+      },
+      {
+        "path": "docs_src/apps/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/apps/tutorial001_client.py",
+        "sha": "dae52b4f0e3836443ee7bf181a800163882846b1"
+      },
+      {
+        "path": "docs_src/apps/tutorial001.py",
+        "sha": "f62e3016a34e93845e210febde84e23d6e17b6a8"
+      },
+      {
+        "path": "docs_src/apps/tutorial002.py",
+        "sha": "11393285b0e294eb88e485fc774b031a12d7c176"
+      },
+      {
+        "path": "docs_src/apps/tutorial003.py",
+        "sha": "e3aed3ef784b759bae3b3f5c38f4a2e0bf347b0a"
+      },
+      {
+        "path": "docs_src/asgi/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/asgi/tutorial001.py",
+        "sha": "800f19b5f216bfe7af41611c4aebcca9e83afdda"
+      },
+      {
+        "path": "docs_src/asgi/tutorial002.py",
+        "sha": "15e53883013248fac45a6442f7bbcd347c4b2642"
+      },
+      {
+        "path": "docs_src/asgi/tutorial003.py",
+        "sha": "cea736ec2d0857e326e3462ef710b142682900ab"
+      },
+      {
+        "path": "docs_src/asgi/tutorial004.py",
+        "sha": "785a808b28a7c79138c9e65c7d4a7954c48205e8"
+      },
+      {
+        "path": "docs_src/asgi/tutorial005.py",
+        "sha": "abd627512e9d177992415603787517fa09084b53"
+      },
+      {
+        "path": "docs_src/asgi/tutorial006.py",
+        "sha": "a3554ec443b40eb3b0ef15aae7531e52818e3c3f"
+      },
+      {
+        "path": "docs_src/authorization/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/authorization/tutorial001.py",
+        "sha": "d1a9db874fe8a2e5453a41188b1950539d3061ca"
+      },
+      {
+        "path": "docs_src/authorization/tutorial002.py",
+        "sha": "c088442a6c1113e8bd13c48ff795188477e943ba"
+      },
+      {
+        "path": "docs_src/caching/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/caching/tutorial001.py",
+        "sha": "73e686db9f32223b82ab202bccaa2be4fe10b47e"
+      },
+      {
+        "path": "docs_src/caching/tutorial002.py",
+        "sha": "acd95f2d28a388c0678e3af37e7f5274a06fe6ef"
+      },
+      {
+        "path": "docs_src/caching/tutorial003.py",
+        "sha": "f2495babe6d34b37fe9106e9550799e8044b9543"
+      },
+      {
+        "path": "docs_src/cancellation/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/cancellation/tutorial001.py",
+        "sha": "258d255d2fd4c708f79a1c616a62798aa81dc210"
+      },
+      {
+        "path": "docs_src/cancellation/tutorial002.py",
+        "sha": "4aedec982d6c86def6c85b29aeab329da906efbb"
+      },
+      {
+        "path": "docs_src/client_callbacks/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/client_callbacks/tutorial001.py",
+        "sha": "154bc4dd81916efd4511e8a5866b945d7c137559"
+      },
+      {
+        "path": "docs_src/client_callbacks/tutorial002.py",
+        "sha": "a37fbd635b8f382b4b1eba6e9838aa5b8a5b39e2"
+      },
+      {
+        "path": "docs_src/client_callbacks/tutorial003.py",
+        "sha": "0ce615a6fff116b674177a02b4056bba3ee694a6"
+      },
+      {
+        "path": "docs_src/client_callbacks/tutorial004.py",
+        "sha": "1c5fc2a6013168a81660ff71ba28541a4b059fa1"
+      },
+      {
+        "path": "docs_src/client_transports/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/client_transports/tutorial001.py",
+        "sha": "5920f3d92b82eb293bcab5eb9de18a4d3f8d16fa"
+      },
+      {
+        "path": "docs_src/client_transports/tutorial002.py",
+        "sha": "8350a90556a59143cf8939416ed831d1ea32e04b"
+      },
+      {
+        "path": "docs_src/client_transports/tutorial003.py",
+        "sha": "488737dc893984cceaaea520c6148e85c461fcec"
+      },
+      {
+        "path": "docs_src/client_transports/tutorial004.py",
+        "sha": "a521d12a217e0945e502b9245e27e4c7a9b5d804"
+      },
+      {
+        "path": "docs_src/client_transports/tutorial005.py",
+        "sha": "b7fd2f75385bc449847c395b6ebc198fcd5880cf"
+      },
+      {
+        "path": "docs_src/client/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/client/tutorial001_client.py",
+        "sha": "faf06506a5f5965718c2713a68d4eee039525ba3"
+      },
+      {
+        "path": "docs_src/client/tutorial001.py",
+        "sha": "e7645509c727aca290a42a4b68c5bb1b2e83d54c"
+      },
+      {
+        "path": "docs_src/client/tutorial002.py",
+        "sha": "68fc7a6b264de2283aee5f80a70e14850c97714c"
+      },
+      {
+        "path": "docs_src/client/tutorial003.py",
+        "sha": "f104205a5af864af72010c063ed9cabf9e5a8f07"
+      },
+      {
+        "path": "docs_src/client/tutorial004.py",
+        "sha": "35acc3d0fb229be34d6c7e9baf20afe7f5cfb88f"
+      },
+      {
+        "path": "docs_src/client/tutorial005.py",
+        "sha": "18e4d4983560b278c15a382d810371a01964a356"
+      },
+      {
+        "path": "docs_src/client/tutorial006.py",
+        "sha": "5410e3b118f4869c45edd5cb64911f138c9e136c"
+      },
+      {
+        "path": "docs_src/client/tutorial007.py",
+        "sha": "85580114a839157d3dd6dab1f4ba7814976e4b03"
+      },
+      {
+        "path": "docs_src/completions/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/completions/tutorial001.py",
+        "sha": "8326a65e841cb08cce52d7205103e74c36de5e9d"
+      },
+      {
+        "path": "docs_src/completions/tutorial002.py",
+        "sha": "01ec02c5cbe7657feec12151516484dd6843eeec"
+      },
+      {
+        "path": "docs_src/completions/tutorial003.py",
+        "sha": "13897a5e3a2ba3168eff6e473264c5c666606b10"
+      },
+      {
+        "path": "docs_src/context/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/context/tutorial001.py",
+        "sha": "1666ca5d22633bae7b1267f7fa32751e44483714"
+      },
+      {
+        "path": "docs_src/context/tutorial002.py",
+        "sha": "f85caf00f2b39c35f976438cb1d2ea67a8d4a538"
+      },
+      {
+        "path": "docs_src/context/tutorial003.py",
+        "sha": "d3a741d3c232032020baa9fb95eec3fb88556afd"
+      },
+      {
+        "path": "docs_src/dependencies/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/dependencies/tutorial001.py",
+        "sha": "182b54414e7b1f74d8eb162387f56b80b0d6a484"
+      },
+      {
+        "path": "docs_src/dependencies/tutorial002.py",
+        "sha": "3f24e2ceb518cd6f46ece116e340192067483f4e"
+      },
+      {
+        "path": "docs_src/dependencies/tutorial003.py",
+        "sha": "51252668ec61627e9da08fb4c07e0de7b81a916c"
+      },
+      {
+        "path": "docs_src/dependencies/tutorial004.py",
+        "sha": "d08cc53b40e277cb5803b104aaef83885aae9aaf"
+      },
+      {
+        "path": "docs_src/deploy/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/deploy/tutorial001.py",
+        "sha": "7b002593657a923acdba6582646787a77bd3aac0"
+      },
+      {
+        "path": "docs_src/deploy/tutorial002.py",
+        "sha": "bb92fd9099196c86c71e6c6bde5b47acd00aff60"
+      },
+      {
+        "path": "docs_src/deploy/tutorial003.py",
+        "sha": "f7ffc2e2a164a63e70f316e029ae9c217b08e507"
+      },
+      {
+        "path": "docs_src/deploy/tutorial004.py",
+        "sha": "5f32c65bb90bd3b7d0996a1bca015d7960fe7720"
+      },
+      {
+        "path": "docs_src/elicitation/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/elicitation/tutorial001.py",
+        "sha": "083194833cb59a49e851f5fd913f2054e790e06f"
+      },
+      {
+        "path": "docs_src/elicitation/tutorial002.py",
+        "sha": "b8e3456b0cddfd89726a022c682d1a28e0769a1f"
+      },
+      {
+        "path": "docs_src/elicitation/tutorial003.py",
+        "sha": "c63c3e00b7f844612c86310d2d754c35e54bc1f8"
+      },
+      {
+        "path": "docs_src/elicitation/tutorial004.py",
+        "sha": "1edec06cf4a67aa6d2c253c7edb0848de1358e8d"
+      },
+      {
+        "path": "docs_src/extensions/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/extensions/tutorial001.py",
+        "sha": "1e5a1f9076a000cea2ddb993122db9e32e92b2e5"
+      },
+      {
+        "path": "docs_src/extensions/tutorial002.py",
+        "sha": "87b59bd23a84032a0c1c72f30fb59d5fca0fb2bb"
+      },
+      {
+        "path": "docs_src/extensions/tutorial003_client.py",
+        "sha": "3d1b47b8ccd9011b8efc9c29f015971c1493e968"
+      },
+      {
+        "path": "docs_src/extensions/tutorial003.py",
+        "sha": "882e5e73e542589846e3ad6f9bf85bc0918398ba"
+      },
+      {
+        "path": "docs_src/extensions/tutorial004_client.py",
+        "sha": "fdfcddc8460aced7e0b01afe693cc28fa9b6f381"
+      },
+      {
+        "path": "docs_src/extensions/tutorial004.py",
+        "sha": "01cb3d8e19a7baba1a2fe54a3155324fca6e1f57"
+      },
+      {
+        "path": "docs_src/extensions/tutorial005.py",
+        "sha": "05b5210c79ddb168653b146be29799c03e0affa1"
+      },
+      {
+        "path": "docs_src/extensions/tutorial006_client.py",
+        "sha": "11c655ca724dc9acbc938b7abbddf2f03cdae553"
+      },
+      {
+        "path": "docs_src/extensions/tutorial006.py",
+        "sha": "9d9f996682342a1c7a29e62b116a2e01cbd1e538"
+      },
+      {
+        "path": "docs_src/extensions/tutorial007_client.py",
+        "sha": "0f7d7961ac78d0bc89cd42be11936244e9072a54"
+      },
+      {
+        "path": "docs_src/extensions/tutorial007.py",
+        "sha": "659c728fa2bedc528346f1873fa5f055d6dfb326"
+      },
+      {
+        "path": "docs_src/first_steps/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/first_steps/tutorial001_client.py",
+        "sha": "f0ba92ff11ccd995bb77f1b3ae12cba971d62397"
+      },
+      {
+        "path": "docs_src/first_steps/tutorial001.py",
+        "sha": "7c3e7a5a1ead2e208eac435e7f945d4ccb7570d0"
+      },
+      {
+        "path": "docs_src/handling_errors/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/handling_errors/tutorial001.py",
+        "sha": "9676a1007521c230b2eaa97df7786ffa6c1fdcf0"
+      },
+      {
+        "path": "docs_src/handling_errors/tutorial002.py",
+        "sha": "52c3a261de97477ffc20870677b9b8bd1beac02a"
+      },
+      {
+        "path": "docs_src/handling_errors/tutorial003.py",
+        "sha": "55f2c4f07fb55080029a78e5a600d312016b3e77"
+      },
+      {
+        "path": "docs_src/handling_errors/tutorial004.py",
+        "sha": "baca11d666d6d6804af5b2cd27ac3eb40ef2ebf9"
+      },
+      {
+        "path": "docs_src/header_parameters/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/header_parameters/tutorial001.py",
+        "sha": "c7a5c52ede7f6cab61094b994fe4e91713b75e0c"
+      },
+      {
+        "path": "docs_src/header_parameters/tutorial002.py",
+        "sha": "147d5234c57b453840b7b97f17ad8a22d289f3c5"
+      },
+      {
+        "path": "docs_src/header_parameters/tutorial003.py",
+        "sha": "a93506de1901dd408f82b8986b7e30affd42e9ac"
+      },
+      {
+        "path": "docs_src/identity_assertion/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/identity_assertion/tutorial001.py",
+        "sha": "195d2348546e7401e065c4ed2597db38d1d671fc"
+      },
+      {
+        "path": "docs_src/identity_assertion/tutorial002.py",
+        "sha": "8b0dd599b06dc9546e4c11c6f918f96480ad180e"
+      },
+      {
+        "path": "docs_src/index/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/index/tutorial001.py",
+        "sha": "d975940fefb06abaad3e8766b0500ffeb7211c8c"
+      },
+      {
+        "path": "docs_src/legacy_clients/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/legacy_clients/tutorial001_client.py",
+        "sha": "afe0981e815208a93235588237743054a6aa06db"
+      },
+      {
+        "path": "docs_src/legacy_clients/tutorial001.py",
+        "sha": "998444de0940c1d3d112d66acb94932b214a27eb"
+      },
+      {
+        "path": "docs_src/legacy_clients/tutorial002.py",
+        "sha": "53c6475a46d05f47329dc41eda945642816e6621"
+      },
+      {
+        "path": "docs_src/legacy_clients/tutorial003.py",
+        "sha": "52f8f1ea66762f21116e3bbee757cb6f1bfdd71d"
+      },
+      {
+        "path": "docs_src/lifespan/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/lifespan/tutorial001.py",
+        "sha": "9b7ba3db5470f425a1092df0dda6a3ad8601dbe5"
+      },
+      {
+        "path": "docs_src/lifespan/tutorial002.py",
+        "sha": "6ed3c6a37455ae92ada008be235e3dc9d9565f9f"
+      },
+      {
+        "path": "docs_src/logging/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/logging/tutorial001.py",
+        "sha": "ee90d220c17310708ff4c30e7f25ece0f5fd2240"
+      },
+      {
+        "path": "docs_src/lowlevel/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/lowlevel/tutorial001.py",
+        "sha": "ac705a2e02ee70851e461f67113af4e81fc6eb2e"
+      },
+      {
+        "path": "docs_src/lowlevel/tutorial002.py",
+        "sha": "97eb4c4a6ae6d9a6adb58bd6b6a46a82253bd476"
+      },
+      {
+        "path": "docs_src/lowlevel/tutorial003.py",
+        "sha": "682848588fc03ab5014ae8ce902d577d88789e3a"
+      },
+      {
+        "path": "docs_src/lowlevel/tutorial004.py",
+        "sha": "cb8dfe4e26815e78bb008743a6037053bc54444b"
+      },
+      {
+        "path": "docs_src/lowlevel/tutorial005.py",
+        "sha": "69e58024b65162b6fb7580fb1b1284766616b1f6"
+      },
+      {
+        "path": "docs_src/lowlevel/tutorial006.py",
+        "sha": "158dca506da52d176663b14b2efe271dc9d27164"
+      },
+      {
+        "path": "docs_src/lowlevel/tutorial007.py",
+        "sha": "4c0a1b32d67e9d402df281ccd2a712ca061c9c78"
+      },
+      {
+        "path": "docs_src/media/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/media/tutorial001.py",
+        "sha": "d5ff77dee7c2fb4dd66d727e1ab5c49e000635f1"
+      },
+      {
+        "path": "docs_src/media/tutorial002.py",
+        "sha": "1d0dfe8c7d164f76733b311a52939a80f7dcbacf"
+      },
+      {
+        "path": "docs_src/media/tutorial003.py",
+        "sha": "d698e98e50fd43b6c9531304a3273a55723f1a5d"
+      },
+      {
+        "path": "docs_src/media/tutorial004.py",
+        "sha": "d0b717c86656831354852b23ae7137a1b9b6b57f"
+      },
+      {
+        "path": "docs_src/media/tutorial005.py",
+        "sha": "c73acd676e9f5fa298d9c7e5a8c3187be0f769b6"
+      },
+      {
+        "path": "docs_src/middleware/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/middleware/tutorial001.py",
+        "sha": "0c26c48201602ef86ae19b46797ea56964150843"
+      },
+      {
+        "path": "docs_src/middleware/tutorial002.py",
+        "sha": "bfc72c692077f52830f4698d4c3ecacf5464751b"
+      },
+      {
+        "path": "docs_src/mrtr/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/mrtr/tutorial001.py",
+        "sha": "9175ca4e28e1aa5014a778a35342d3254bc8c3e9"
+      },
+      {
+        "path": "docs_src/mrtr/tutorial002.py",
+        "sha": "23cc1b19f457d1962d70fe4d65ec2afa87ddaf92"
+      },
+      {
+        "path": "docs_src/mrtr/tutorial003.py",
+        "sha": "6d7af85d9c7e30b9f9187b3c54ea1af5b069081b"
+      },
+      {
+        "path": "docs_src/mrtr/tutorial004.py",
+        "sha": "8cf90bee5aa832d2d2abcc6f36b86727da070789"
+      },
+      {
+        "path": "docs_src/mrtr/tutorial005.py",
+        "sha": "a8588b250fc074a434cf7f799d77008d67bfe0d2"
+      },
+      {
+        "path": "docs_src/oauth_clients/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/oauth_clients/tutorial001.py",
+        "sha": "0f8ff41e93d7163b26227a143a13ba341ea11165"
+      },
+      {
+        "path": "docs_src/oauth_clients/tutorial002.py",
+        "sha": "1a97f03697a7bd3765a86bb699984cabae29eb9c"
+      },
+      {
+        "path": "docs_src/opentelemetry/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/opentelemetry/tutorial001.py",
+        "sha": "3e66e908443c692e91676917fbbaa6b1c78d400d"
+      },
+      {
+        "path": "docs_src/pagination/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/pagination/tutorial001.py",
+        "sha": "d1dc7c2ade9bc8597ac9ff37b76c4554f731d3e0"
+      },
+      {
+        "path": "docs_src/pagination/tutorial002.py",
+        "sha": "61e40bc7dcafe0f4be150725897b7e11aefcf789"
+      },
+      {
+        "path": "docs_src/progress/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/progress/tutorial001.py",
+        "sha": "afa9d496cf9a38d26a0fa0330521902a64df7819"
+      },
+      {
+        "path": "docs_src/progress/tutorial002.py",
+        "sha": "270d9fc97a6df9008975e31ab4f0847b139a4c74"
+      },
+      {
+        "path": "docs_src/prompts/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/prompts/tutorial001.py",
+        "sha": "8ae504225cb5f23841d61c5a5e4450c152e32dea"
+      },
+      {
+        "path": "docs_src/prompts/tutorial002.py",
+        "sha": "3db7862b884d7cba49f48d49254fcdab7f62b4c5"
+      },
+      {
+        "path": "docs_src/prompts/tutorial003.py",
+        "sha": "63600c6180d7d9ed063434c7182fa014c29f572f"
+      },
+      {
+        "path": "docs_src/prompts/tutorial004.py",
+        "sha": "cfe7b3c98621bf60ee965eb9da454161d0381fd7"
+      },
+      {
+        "path": "docs_src/prompts/tutorial005.py",
+        "sha": "17b2746e45768a7d8947ec65a5a4310782188618"
+      },
+      {
+        "path": "docs_src/prompts/tutorial006.py",
+        "sha": "c6857da49252319e47444cdc6dccaa9487227673"
+      },
+      {
+        "path": "docs_src/protocol_versions/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/protocol_versions/tutorial001.py",
+        "sha": "1da11030f1321724ed280f92a7256a29a751a6ba"
+      },
+      {
+        "path": "docs_src/protocol_versions/tutorial002.py",
+        "sha": "d43ebb7b0b67e41e906806e859e01b3242c498d5"
+      },
+      {
+        "path": "docs_src/protocol_versions/tutorial003.py",
+        "sha": "e5ca3ca4728090d22888af19a73382f996e12e2e"
+      },
+      {
+        "path": "docs_src/protocol_versions/tutorial004.py",
+        "sha": "36087769552385112008eced7a24713dc3c1da96"
+      },
+      {
+        "path": "docs_src/real_host/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/real_host/tutorial001.py",
+        "sha": "aef76a81ab5e1a208b865da7fbc3cfaebb37cdb8"
+      },
+      {
+        "path": "docs_src/resources/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/resources/tutorial001.py",
+        "sha": "99c6d890500ea1d6819245775698ad870420e064"
+      },
+      {
+        "path": "docs_src/resources/tutorial002.py",
+        "sha": "557fa9241044d3048d3d6b25a976c2cf08369a7c"
+      },
+      {
+        "path": "docs_src/resources/tutorial003.py",
+        "sha": "10881d3a4bd665784bccbed7bca04c34a4218c72"
+      },
+      {
+        "path": "docs_src/run/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/run/tutorial001.py",
+        "sha": "c8cd92854ea0cb8c02af1cb390c9bc77cf539f00"
+      },
+      {
+        "path": "docs_src/run/tutorial002.py",
+        "sha": "686dc44296ef70e97a66bec0bf517ba23614402e"
+      },
+      {
+        "path": "docs_src/run/tutorial003.py",
+        "sha": "19a9c11a690a55e786e9eb2f49ff06743f854085"
+      },
+      {
+        "path": "docs_src/sampling_and_roots/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/sampling_and_roots/tutorial001.py",
+        "sha": "406d48d3addb8dc6190837d91d036d00d7792a3d"
+      },
+      {
+        "path": "docs_src/sampling_and_roots/tutorial002.py",
+        "sha": "1646d432b0a113793147c935d01f806ad1f552c6"
+      },
+      {
+        "path": "docs_src/session_groups/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/session_groups/tutorial001.py",
+        "sha": "08bec6d66e3e610229ab0e2d8bbe252bed7c510a"
+      },
+      {
+        "path": "docs_src/session_groups/tutorial002.py",
+        "sha": "154c279c051941ffd8fea8e5c1640a5be7c9a01e"
+      },
+      {
+        "path": "docs_src/session_groups/tutorial003.py",
+        "sha": "f4360f5cb7904241ae69286fc09207f71edd7b3c"
+      },
+      {
+        "path": "docs_src/session_groups/tutorial004.py",
+        "sha": "88fcec9cd14ba78512b82d9efae2e686e0f59371"
+      },
+      {
+        "path": "docs_src/skills/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/skills/tutorial001_client.py",
+        "sha": "27f51fd2f15adb188449864277d115cf799dbffe"
+      },
+      {
+        "path": "docs_src/skills/tutorial001.py",
+        "sha": "61cc43c2e8aa0fd85d7e3cb10e06868ae12e5d47"
+      },
+      {
+        "path": "docs_src/structured_output/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/structured_output/tutorial001.py",
+        "sha": "191c9bd8fd6bef16f1eee1e53757b7136cda81c6"
+      },
+      {
+        "path": "docs_src/structured_output/tutorial002.py",
+        "sha": "8ea0ef998bf6bbd0a2a003686943719ea354f2ae"
+      },
+      {
+        "path": "docs_src/structured_output/tutorial003.py",
+        "sha": "783dc40316b36adab7fbfef764dfa8836cb53477"
+      },
+      {
+        "path": "docs_src/structured_output/tutorial004.py",
+        "sha": "fb4c6e29d7b2b311d8bcf49857b717e6a20039d0"
+      },
+      {
+        "path": "docs_src/structured_output/tutorial005.py",
+        "sha": "7bbaae500fd376e62d6c5121ec51bad4c91a9807"
+      },
+      {
+        "path": "docs_src/structured_output/tutorial006.py",
+        "sha": "205abd2c1763870b0ec3de06f2409e7112c1f60f"
+      },
+      {
+        "path": "docs_src/structured_output/tutorial007.py",
+        "sha": "c889a302c0970d473db3fcbe013067651ddfcdd5"
+      },
+      {
+        "path": "docs_src/structured_output/tutorial008.py",
+        "sha": "b0e992398d03df30e1d571e9071d94ce7cfe6315"
+      },
+      {
+        "path": "docs_src/structured_output/tutorial009.py",
+        "sha": "c5a2d17d0e1afeaa05778550db54961692156157"
+      },
+      {
+        "path": "docs_src/subscriptions/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "docs_src/subscriptions/tutorial001.py",
+        "sha": "45c858f4944339c1f28965fc120515361422c3a9"
+      }
+    ],
+    "repo_pushed_at": "2026-11-01T16:26:38Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 93,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 90,
+      "egress": 85,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "subprocess-shell",
+      "severe": false,
+      "file": "src/mcp/cli/cli.py",
+      "line": 48,
+      "snippet": "subprocess.run([cmd, \"--version\"], check=True, capture_output=True, shell=True)",
+      "deduction": 10
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/mcp/shared/exceptions.py",
+      "line": 15,
+      "snippet": "Reference: https://sethmlarson.dev/deprecations-via-warnings-dont-work-for-python-libraries",
+      "host": "sethmlarson.dev",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 1,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "sethmlarson.dev"
+    ],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 1
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 4975
+  },
+  "duration_ms": 5041
+}

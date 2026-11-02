@@ -1,0 +1,660 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T151957Z",
+  "target": {
+    "source": "github",
+    "id": "sooperset/mcp-atlassian",
+    "url": "https://github.com/sooperset/mcp-atlassian",
+    "name": "mcp-atlassian"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:20:52.398Z",
+  "method_version": "0.3.4",
+  "tool": {
+    "assay_commit": "c928e6db511071812527413858335a6118b96224",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.4"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "0a5d2427144d72f5aade07d4fabd385421cec401",
+    "files_scanned": 142,
+    "candidates": 142,
+    "excluded_non_shipped": 234,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/mcp_atlassian/servers/main.py",
+        "sha": "df5e32c7f472b9d71aef68282fdfffc3e82e2d46"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/tools.py",
+        "sha": "462941643ae7f381d1527ab214c908c71f9e8f81"
+      },
+      {
+        "path": "scripts/generate_tool_docs.py",
+        "sha": "901a5b31433a867438cc8c0341b96d37ae437efb"
+      },
+      {
+        "path": "scripts/mcp_wire_probe.py",
+        "sha": "5b54ee6a3b6b685c16d229aa56390463a1322d58"
+      },
+      {
+        "path": "scripts/oauth_authorize.py",
+        "sha": "c23bf086cb1980c03deb4f62239dc90c3cbfcf3e"
+      },
+      {
+        "path": "scripts/test_with_real_data.sh",
+        "sha": "dd1030adfaba197026b292009826c0a3190fc920"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "66ee278b62c1f9c8aba6cc860dcfe2299a552c3f"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "683bb8e410d2e8d4fd086e84bda1ceef1a20c9f8"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "a6c3cdb271a293e19e4f5676b8c113a54c03503f"
+      },
+      {
+        "path": "docs.json",
+        "sha": "7a183dd3c55066048bfea14d81710e4a477d33a1"
+      },
+      {
+        "path": "README.md",
+        "sha": "99a6fa3f4d8d0576d77166722efeb47640054e1d"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "45ac5cf4c1cff952bd73c63cdc66d8c82a522125"
+      },
+      {
+        "path": "smithery.yaml",
+        "sha": "91e5fe8120be5f767fa6bc32d2473a8c6970cc30"
+      },
+      {
+        "path": "src/mcp_atlassian/__init__.py",
+        "sha": "ec94a10776e088bc1ed9b11420b83190ff70a6e2"
+      },
+      {
+        "path": "src/mcp_atlassian/exceptions.py",
+        "sha": "9ba291263284b40aff7455b6b35abdeefaf2f282"
+      },
+      {
+        "path": ".claude/settings.json",
+        "sha": "9b82e92e3e3cb17e401c2ac331606e961257a361"
+      },
+      {
+        "path": "helm/Chart.yaml",
+        "sha": "c01b6557b70a1d61041d7bd42431a30232ac40ae"
+      },
+      {
+        "path": "helm/README.md",
+        "sha": "d7d6e92b58f8de4ee7862c2d7e2eec35d9a08d7b"
+      },
+      {
+        "path": "helm/values.yaml",
+        "sha": "f843b22a177fb49b04075bc10442f6a10c63a3f7"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/__init__.py",
+        "sha": "ee28382ae89bee80d95f18f958b5f995915edfb5"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/analytics.py",
+        "sha": "ae52eee05bbf0b158c539b3ed32ce802aba8d1b0"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/attachments.py",
+        "sha": "bc722fafc686ff5680749af7406f6cad2ba9d7a2"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/client.py",
+        "sha": "aec92066c2930402b0cbbec9cbcc116fcf87a05b"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/comments.py",
+        "sha": "7d8c935c23df626af8573e6cf826a64a12320ba7"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/config.py",
+        "sha": "ea5267803959eab24cd665c4e018a25659af4f20"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/constants.py",
+        "sha": "d7fb3aa000393582e721b318f69d7943b8d9090c"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/labels.py",
+        "sha": "89bc0e270a2845165115ac10499771b6671dbc37"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/pages.py",
+        "sha": "f581dbe5eeea2d0923d117ca7ea818bffae5c494"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/permissions.py",
+        "sha": "65937894806a069901f46309c398e746d6c0517a"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/protocols.py",
+        "sha": "2bb1191cbf45c0e5a4d3c4ffb8a66446561a3c45"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/restrictions.py",
+        "sha": "942dd0dc598f52e6ffaa70f308af730c9701191c"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/search.py",
+        "sha": "012d83b5b421bae7fe5845f7f2c4b30ec96d915f"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/spaces.py",
+        "sha": "b253435a7fef3afd722c65ebff7f45a50b2d0087"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/templates.py",
+        "sha": "b4e7de95796cbd22e4396250e667490813205b0c"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/users.py",
+        "sha": "69794de0a426591aaed65085c1584381940011b0"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/utils.py",
+        "sha": "85fa961d0a3016f721e36e61b834e369272c7115"
+      },
+      {
+        "path": "src/mcp_atlassian/confluence/v2_adapter.py",
+        "sha": "9a1bb581199c5f54f5aee05bea7342075f209ef1"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/__init__.py",
+        "sha": "0dc5fa990653e11c95d1710017dcd243c460283e"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/attachments.py",
+        "sha": "66351d74e2c998d937c3899bcd436f34963e8f2b"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/boards.py",
+        "sha": "9b24d6303da2783b179fd7582d9f30aa2b91fde6"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/client.py",
+        "sha": "ef99498b06e8ef293899538f534f4c185fed2cce"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/comments.py",
+        "sha": "f2ce5a315bf156db3ec4bfc8e7f679509d13d71a"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/config.py",
+        "sha": "b05ad98a217cdd9ea9722ea2d2db81437e36b40f"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/constants.py",
+        "sha": "2fdfb87970cbaf168fa11414dfae8de296e18188"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/customer_requests.py",
+        "sha": "1002f41f23ab1f6cbcb65298eea6df36a54b3375"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/development.py",
+        "sha": "6597b19e8f12a5626ec29b4a0aa8437243047f99"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/epics.py",
+        "sha": "fb76e7c75f684eed19570a9975113ad32890e8cb"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/field_options.py",
+        "sha": "06d0c692149d5d34805a0e487bcdaf5eb9e82924"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/fields.py",
+        "sha": "39e6750f68b3d0defd66ff9f8aff4e0624e46439"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/formatting.py",
+        "sha": "0354c8b50452844d841ef07ab336b9533c5b9259"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/forms_api.py",
+        "sha": "f8668a88b6a977d05d9cb700e9bc777ac48abb26"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/forms_common.py",
+        "sha": "fe679428634598f28ea2c0b9d41baf3a3a3ab62f"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/forms.py",
+        "sha": "231ceb62e99f1fcd5843362519b4d1cc2e598328"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/issues.py",
+        "sha": "734eb135bbd66bd4a256c32d1ea73cd53dc0109c"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/links.py",
+        "sha": "f67d8dbb0092b4555c71a36d56fc3cb91207bd1b"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/metrics.py",
+        "sha": "6f9759d5434f50028bf58443e2d742f288403f89"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/project_analysis.py",
+        "sha": "ff13b0329908138176cfeea995ed5fb150f28e7e"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/projects.py",
+        "sha": "6fd285484bb036240538a0572024ca48b5c79e29"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/protocols.py",
+        "sha": "26840c68f8b7a80259a332271cacf7c9cf76803f"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/queues.py",
+        "sha": "8acb0a59b0ab662ebd1bd98ac270b4b6d9a05d48"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/search.py",
+        "sha": "f69bba9fc7ca29db628a58d260e3125e0ba10b72"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/sla.py",
+        "sha": "7f7b686fd409a7645064d6b70822cafbf769e85f"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/sprints.py",
+        "sha": "07a345cc833057e3b8f9312a87f239cfdec63366"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/transitions.py",
+        "sha": "0cebad420881917e6f8fddfb6bb423320291d926"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/users.py",
+        "sha": "caa1c42ad7a6846389385d8f7bc41285bc7b9633"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/utils.py",
+        "sha": "5df402da85fd6546665dbb999700b1bd9e174803"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/watchers.py",
+        "sha": "5484d11ec81e2f8a20470dd971cb2683507b8741"
+      },
+      {
+        "path": "src/mcp_atlassian/jira/worklog.py",
+        "sha": "99696ef7d3bcfa0b28af8491cf1923b9bb60fb93"
+      },
+      {
+        "path": "src/mcp_atlassian/models/__init__.py",
+        "sha": "901ce6a2e82962fd9825f50e94bd02ae439fa40c"
+      },
+      {
+        "path": "src/mcp_atlassian/models/base.py",
+        "sha": "1341022dcdf178959b0543439fb38d6ef82202af"
+      },
+      {
+        "path": "src/mcp_atlassian/models/constants.py",
+        "sha": "ead3f969b2801ad01d08029e84b8721174b67b26"
+      },
+      {
+        "path": "src/mcp_atlassian/preprocessing/__init__.py",
+        "sha": "bc891c005b934e1dbe0314354106340a1488d74d"
+      },
+      {
+        "path": "src/mcp_atlassian/preprocessing/base.py",
+        "sha": "934ec744b99bc372367f0d8783cc769b42fb576c"
+      },
+      {
+        "path": "src/mcp_atlassian/preprocessing/confluence.py",
+        "sha": "57d71f05bfb4f12a1f333309b0760f0be67c74a9"
+      },
+      {
+        "path": "src/mcp_atlassian/preprocessing/jira.py",
+        "sha": "616583aa057011addc53532afe17ba3e2466518a"
+      },
+      {
+        "path": "src/mcp_atlassian/servers/__init__.py",
+        "sha": "e2e4b1f62e88ff7b57d476debd3fb2262254a500"
+      },
+      {
+        "path": "src/mcp_atlassian/servers/async_utils.py",
+        "sha": "e7c1397bd8203f962587d4583c5283176109c030"
+      },
+      {
+        "path": "src/mcp_atlassian/servers/client_storage.py",
+        "sha": "4636c1d2e75775b8a5e7c730ed5b7de56c3ce7c0"
+      },
+      {
+        "path": "src/mcp_atlassian/servers/confluence.py",
+        "sha": "5c5b3a18c5ae7ae7e6dfb9a8b69badb6333edb06"
+      },
+      {
+        "path": "src/mcp_atlassian/servers/context.py",
+        "sha": "9467670f875a8a54357fd085c4d6fa4f809d4e09"
+      },
+      {
+        "path": "src/mcp_atlassian/servers/dependencies.py",
+        "sha": "59d52734ba3838f9a3729e3d33d112828d4f7385"
+      },
+      {
+        "path": "src/mcp_atlassian/servers/error_handling.py",
+        "sha": "7c0bbb016285c7fea2687fd43ea3066fdeea546e"
+      },
+      {
+        "path": "src/mcp_atlassian/servers/helpers.py",
+        "sha": "f1e821a4faae9cb9f7172c3f4a07bfe4017c3d22"
+      },
+      {
+        "path": "src/mcp_atlassian/servers/oauth_proxy.py",
+        "sha": "a519fdd8359ae4c7021618d36f397039d35c7734"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/__init__.py",
+        "sha": "8f21d889346188d3a9f98df8699b933b5f2cbe31"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/date.py",
+        "sha": "76035f8567bb449133141c2c688f6e608373221a"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/decorators.py",
+        "sha": "fa322b2e17379c3703c1e4070da58cdfe1515855"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/env.py",
+        "sha": "b92059506133cfb5041d5a539530685bc98dea88"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/environment.py",
+        "sha": "03b5d40280c1485debc4680df7175dd1ee8ae451"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/http.py",
+        "sha": "ebd74ae5d2398dd47d9285512288e584b782ea8d"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/io.py",
+        "sha": "4a6ae6b020cb8733435873feecb95e4c1e4c115e"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/lifecycle.py",
+        "sha": "1fce1902a8a5f2c6e4abd923a1045e439107f847"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/logging.py",
+        "sha": "a6c3bfbdc2195d22ee5cd195a00e4daa6bcdf9eb"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/media.py",
+        "sha": "0c8d9128f24203fd1be6781fe99f7c010d94a55f"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/oauth_setup.py",
+        "sha": "fbe9b4a358dec7d4687b009d3a4d7d42b5d4a06a"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/oauth.py",
+        "sha": "8c74b618de2ce73f15eca5df78ec7565b31b86f7"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/pagination.py",
+        "sha": "5677e7792292d990ab6b9bf0970305870db16aec"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/proxy.py",
+        "sha": "e25af622def2219edcbb33ef63ed6e3c28a06280"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/ssl.py",
+        "sha": "bba8669109e5dcc27ea0296ca9a6198e8233a9e0"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/ssrf_adapter.py",
+        "sha": "17600ecc42610501053552784d409b918eff9e13"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/token_verifier.py",
+        "sha": "619f2a46a97bfe420c370200e7bbed260db0720e"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/toolsets.py",
+        "sha": "069d673eb86f7d80123b9676732d75d4def9f367"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/urls.py",
+        "sha": "2478b61b580f02a67d3ef07ddc63f9e93ebc11ab"
+      },
+      {
+        "path": "src/mcp_atlassian/utils/user_agent.py",
+        "sha": "e584e9c57dbf9408cb7bad96cd5ab8e4c4f617b9"
+      },
+      {
+        "path": "helm/templates/configmap.yaml",
+        "sha": "6a02641f31808a506f160aa9d2b0d5f81da15ab5"
+      },
+      {
+        "path": "helm/templates/deployment.yaml",
+        "sha": "eed0c14353df7dec362dc6a6b119f0c895fced63"
+      },
+      {
+        "path": "helm/templates/hpa.yaml",
+        "sha": "2a196f72042f5024e2d457041caba19a226bb56e"
+      },
+      {
+        "path": "helm/templates/ingress.yaml",
+        "sha": "45428cc7d4981a468f224131e66c412a543fec01"
+      },
+      {
+        "path": "helm/templates/NOTES.txt",
+        "sha": "4803128093e66c4bc9790ed5ce995418d3b23567"
+      },
+      {
+        "path": "helm/templates/pvc.yaml",
+        "sha": "419a547d5fba275cd10ac08366dcb398e35e1278"
+      },
+      {
+        "path": "helm/templates/rbac.yaml",
+        "sha": "341340480a274334feabfce4221ff729a0471a83"
+      },
+      {
+        "path": "helm/templates/secret.yaml",
+        "sha": "d2a431ca67cbd8aafb86dd253a9b088650f2ef8b"
+      },
+      {
+        "path": "helm/templates/service.yaml",
+        "sha": "854a5c500c30e5ab73c075a0a34cd3802eae0398"
+      },
+      {
+        "path": "helm/templates/serviceaccount.yaml",
+        "sha": "63c86a73ac8f58073f320482ece6d6fbcb587075"
+      },
+      {
+        "path": "src/mcp_atlassian/models/confluence/__init__.py",
+        "sha": "693b95f43b0e4caa31f309a5800874760f71bebe"
+      },
+      {
+        "path": "src/mcp_atlassian/models/confluence/analytics.py",
+        "sha": "f66f1b6ec2bb5c7ada283fb006ac15a3bad2e7ae"
+      },
+      {
+        "path": "src/mcp_atlassian/models/confluence/comment.py",
+        "sha": "15b4216ec7e267623df3e40b8de1ed5cbf17edf9"
+      },
+      {
+        "path": "src/mcp_atlassian/models/confluence/common.py",
+        "sha": "116bde318b1893fb3757b0760b70df8523306c98"
+      },
+      {
+        "path": "src/mcp_atlassian/models/confluence/label.py",
+        "sha": "814044459cf852d6d5f9e21f343d389325a4a966"
+      },
+      {
+        "path": "src/mcp_atlassian/models/confluence/page.py",
+        "sha": "5918872bccf09bb11188cbaef906f54f7a437b5a"
+      },
+      {
+        "path": "src/mcp_atlassian/models/confluence/search.py",
+        "sha": "2a3d6c30e9dd1981c6a69f4a66990311739ae19e"
+      },
+      {
+        "path": "src/mcp_atlassian/models/confluence/space.py",
+        "sha": "4abbb338224f69cb65c093779c079bd85d81c2e7"
+      },
+      {
+        "path": "src/mcp_atlassian/models/confluence/user_search.py",
+        "sha": "2a29b9bab5fa385400abf1cda9f057880380ea60"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/__init__.py",
+        "sha": "e909fafb2eacd56930c8eb475e32a565fa71dcb7"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/adf.py",
+        "sha": "b09da8bbfdbe992542d66b8b0382abc9beed160e"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/agile.py",
+        "sha": "a2a83b12a861e0ed67d20bf115ebb96610a2f142"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/comment.py",
+        "sha": "ba6006f843de4cc3550b3c4b87a51af4b1705a32"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/common.py",
+        "sha": "afaff22cac77a71dcced7c00bd3dee00ef217f6c"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/field_option.py",
+        "sha": "2ce64ab2910393fc7da5d78889d9f7b83d657b13"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/forms.py",
+        "sha": "aa86533a924e26cae3de8cecdaa5cbc52df43bf9"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/issue.py",
+        "sha": "19d3447fd0e8c00e7b021ff024df3861ba222198"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/link.py",
+        "sha": "6acbabdaa79dc54aab6e0a6212341004d418c7e3"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/metrics.py",
+        "sha": "407dcce4a5126daac9f4d554dd635932fb4c0dac"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/project.py",
+        "sha": "d2cf5299f5e0e7055615f2de8286738093076d96"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/queue.py",
+        "sha": "a2d36e908fa9cd44b0cd7270d755b9309da85bba"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/request.py",
+        "sha": "d45587663897b5b7c6c62a4ae67904eea5a0d4ce"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/search.py",
+        "sha": "7010172e8e60b5d697dfb0af803aab6e75402af5"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/sla.py",
+        "sha": "415790f83302c3d18fc9fa0cf3415e9090e873f8"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/version.py",
+        "sha": "24e155fbcd5a18f9f2fc024582077d76e033bf70"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/workflow.py",
+        "sha": "29247f8139b53f779bda4e7a494ca84c61943b75"
+      },
+      {
+        "path": "src/mcp_atlassian/models/jira/worklog.py",
+        "sha": "4b754183ed272cf18c127cb4ae45565e2c8a1ad5"
+      }
+    ],
+    "repo_pushed_at": "2026-09-19T10:20:14Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 90,
+    "dims": {
+      "maintenance": 85,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/mcp_atlassian/servers/main.py",
+      "line": 57,
+      "snippet": "\"https://chatgpt.com/connector_platform_oauth_redirect\",",
+      "host": "chatgpt.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/mcp_atlassian/servers/main.py",
+      "line": 58,
+      "snippet": "\"https://chat.openai.com/connector_platform_oauth_redirect\",",
+      "host": "chat.openai.com",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 142,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "chatgpt.com",
+      "chat.openai.com"
+    ],
+    "declared_hosts": 5,
+    "install_detected": true,
+    "age_days": 44
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 2948
+  },
+  "duration_ms": 3006
+}

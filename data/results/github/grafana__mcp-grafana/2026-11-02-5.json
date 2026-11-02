@@ -1,0 +1,1294 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T151957Z",
+  "target": {
+    "source": "github",
+    "id": "grafana/mcp-grafana",
+    "url": "https://github.com/grafana/mcp-grafana",
+    "name": "mcp-grafana"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:20:49.392Z",
+  "method_version": "0.3.4",
+  "tool": {
+    "assay_commit": "c928e6db511071812527413858335a6118b96224",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.4"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "3b5666b6dc762b123cb523554855dcb0ef98ed9e",
+    "files_scanned": 306,
+    "candidates": 306,
+    "excluded_non_shipped": 278,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".claude-plugin/install-binary.mjs",
+        "sha": "8793bda51e777af52647b521bcb76d4dedd94a64"
+      },
+      {
+        "path": "server.json",
+        "sha": "c189b743b3a5065e017ce1b00d66e78c21d4d0dc"
+      },
+      {
+        "path": "tools.go",
+        "sha": "47f37a1f146422ea252e7258b47be4311d93ad42"
+      },
+      {
+        "path": ".claude/skills/draft-release/SKILL.md",
+        "sha": "f864eb2b41e9c0f276b9b900a877803570deb4a4"
+      },
+      {
+        "path": "tools/app.go",
+        "sha": "af10736a37b31e4ce56f3157620a4f289b9108bc"
+      },
+      {
+        "path": "cmd/mcp-grafana/main.go",
+        "sha": "276f6900ee48224539253e66dda93e9f0f55df7b"
+      },
+      {
+        "path": "scripts/build-mcpb.mjs",
+        "sha": "46c362266377ee6512b6257a40ecc9840b58c5fe"
+      },
+      {
+        "path": ".golangci.yaml",
+        "sha": "0abee80383d90f2fe02b3f963148d9aa6e676482"
+      },
+      {
+        "path": ".goreleaser.yaml",
+        "sha": "2b66c3abd551c58f97db2b0eb9cb8ebb9f90caf9"
+      },
+      {
+        "path": "caller_auth.go",
+        "sha": "d64a6d57677aacb5db9d5508c15c95101c9ab987"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "0943db2bb1f73f5bb864595cee1f09b6b114728b"
+      },
+      {
+        "path": "client_cache.go",
+        "sha": "72521a00f2472e8ff4b6901a44782f5bfb8019ea"
+      },
+      {
+        "path": "cmd/linters/jsonschema/main.go",
+        "sha": "6941566cb846a8345081bb36895355cba2aa2c6d"
+      },
+      {
+        "path": "cmd/linters/openapi/main.go",
+        "sha": "c33dde151d3e6ba67c6ec2d1645157c88e37bc93"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "6ae850079dcd80242c8eb0b72e21b8d286d5f012"
+      },
+      {
+        "path": "DEVELOPING.md",
+        "sha": "d607b976aa449699b3a765de99868a54a206fff0"
+      },
+      {
+        "path": "docker-compose.yaml",
+        "sha": "fe1771c640d2c0343561209030aa39f4f4f3eb7e"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "3083dd31047c5883ec59f836f09547e8fae4a2cc"
+      },
+      {
+        "path": "grafana_url_override.go",
+        "sha": "2b9e814d274f8e0808d657f9a12ae1dc4d8bd61d"
+      },
+      {
+        "path": "http_security.go",
+        "sha": "045cbadab3166e56da1a5190dbfd547533246cad"
+      },
+      {
+        "path": "incident_status.go",
+        "sha": "25efc511df1516e7211d9dabf137e3784b7c78cc"
+      },
+      {
+        "path": "k8s_client.go",
+        "sha": "5312e3c24e7fba37bd7259cdd5ba567f8ab214ce"
+      },
+      {
+        "path": "k8s_resource.go",
+        "sha": "8c51d6e3dc8bd3e8100917703d4d83e311bf29eb"
+      },
+      {
+        "path": "mcpgrafana.go",
+        "sha": "37020612f3dc5198ad2b24b986ef7c4e1844ce9d"
+      },
+      {
+        "path": "orgid.go",
+        "sha": "9bca1fbe4137c90d551a7209b8db1c200c726f3b"
+      },
+      {
+        "path": "permissions.go",
+        "sha": "01a87a9efb0b1e438490c3493f77d5f1634ff743"
+      },
+      {
+        "path": "redirect_guard.go",
+        "sha": "abffc5a19598053cb176b98b5dabca0ba6116f28"
+      },
+      {
+        "path": "renovate.json",
+        "sha": "932f0b5ecd51c20eb3191f3f077430814106cd6d"
+      },
+      {
+        "path": "socks5_proxy.go",
+        "sha": "966200925bec3d33010e986955025aea2e845824"
+      },
+      {
+        "path": "tools_param_validation.go",
+        "sha": "ea4835e04efdbd401055f8683fce154172529b2d"
+      },
+      {
+        "path": "ui_apps.go",
+        "sha": "121004f575ba17f88c438fb400fa148584a6b071"
+      },
+      {
+        "path": "ui_embed.go",
+        "sha": "aa0a1da1ec355eb6c8aa844c1dd39efd6d0ffcc7"
+      },
+      {
+        "path": "ui_grafana.go",
+        "sha": "9a06870e1b81cd87db1cf5434176f5e3b19170a1"
+      },
+      {
+        "path": "ui/mcp-apps/app/app.tsx",
+        "sha": "e0e0f7ed979cd4577dcabd722e79dc89a4317b04"
+      },
+      {
+        "path": "ui/mcp-apps/preview/main.tsx",
+        "sha": "c870a19a2119791984751a0ca65e0f93cb9df422"
+      },
+      {
+        "path": "ui/mcp-apps/src/index.ts",
+        "sha": "167457ba05a6eb58360fc287e6c4760d0f17f84c"
+      },
+      {
+        "path": "validate_url.go",
+        "sha": "95b5d0a898fae3061645c4a4d25be8399bee2c31"
+      },
+      {
+        "path": "ui/mcp-apps/package.json",
+        "sha": "a05188c01612ebdf7be75a7ed5d353dbe82a8545"
+      },
+      {
+        "path": "ui/panel-viewer/package.json",
+        "sha": "d36466cb15d522ac4530ab4e18934576c81933d7"
+      },
+      {
+        "path": ".claude-plugin/plugin.json",
+        "sha": "570853c5d29e04534705d6d43d35282297811f27"
+      },
+      {
+        "path": "lokiguard/humanize.go",
+        "sha": "69f897e2fd9fee510fcffd80372a4e7acf2df546"
+      },
+      {
+        "path": "lokiguard/lokiguard.go",
+        "sha": "a053fe0dcce35ae5653def093384deafbb52f266"
+      },
+      {
+        "path": "lokiguard/README.md",
+        "sha": "4f752d38624587c571ea0e3091f6c735aaa85d81"
+      },
+      {
+        "path": "lokiguard/regex.go",
+        "sha": "c9e80690af31c9c631ef4d3dd48a3a6884434c69"
+      },
+      {
+        "path": "lokiguard/scan.go",
+        "sha": "22491ba039dedeb7351b7cd1ca58de05037f0431"
+      },
+      {
+        "path": "mcpb/launch.sh",
+        "sha": "fe59406370aa0a2580a67ac7cc2caaa4fdda6183"
+      },
+      {
+        "path": "mcpb/manifest.template.json",
+        "sha": "1f75fd6311428f223da056fda65cecf17c74770f"
+      },
+      {
+        "path": "mcpb/README.md",
+        "sha": "280e249b7ac9b1fdfe008a923b53a6764d26b032"
+      },
+      {
+        "path": "observability/logs.go",
+        "sha": "480dc54321459140626d1f7e77430832b86328a1"
+      },
+      {
+        "path": "observability/observability.go",
+        "sha": "cea642678b1e49a720121ac74f5184d47aee9846"
+      },
+      {
+        "path": "observability/semconv.go",
+        "sha": "af11c45dff902e22f7ac9fbb1bba91d387ca59a7"
+      },
+      {
+        "path": "resources/datasources.go",
+        "sha": "0f23efecc8c367ee951b46f9acbc9f5c07010ba7"
+      },
+      {
+        "path": "testdata/alertmanager.yml",
+        "sha": "e5458017399531ae7b76ea04de9f9107b4bb7a13"
+      },
+      {
+        "path": "testdata/elasticsearch-seed.sh",
+        "sha": "efa45ae69cb274a1085060b81b7f8a2faf2d0bb5"
+      },
+      {
+        "path": "testdata/graphite-seed.sh",
+        "sha": "f623f1438d15676c41d2f18cb35462f90ba7a916"
+      },
+      {
+        "path": "testdata/influxdb-seed.sh",
+        "sha": "0f36fa57b6b798f731f8b6527c2c5de5d30137a4"
+      },
+      {
+        "path": "testdata/localstack-init.sh",
+        "sha": "7dcd6a7d892f5cbdd105f6e0b6c14f89c8a6b19b"
+      },
+      {
+        "path": "testdata/loki-config.yml",
+        "sha": "d6a966f7029fb316248855b567b4e28e031ce1ce"
+      },
+      {
+        "path": "testdata/loki-rules.yml",
+        "sha": "fe4ca8f826070e1df38762f69f87d169dd61b0dc"
+      },
+      {
+        "path": "testdata/opensearch-seed.sh",
+        "sha": "a1cf5bc4740e406f62e05512fa8bcd48bfeebae4"
+      },
+      {
+        "path": "testdata/orgs-seed.sh",
+        "sha": "ec968a5dc76f98c5b7153527fbd99ab216e58318"
+      },
+      {
+        "path": "testdata/prometheus-entrypoint.sh",
+        "sha": "8d7ec4033dce12aa72b20adae4a190d6f96cf354"
+      },
+      {
+        "path": "testdata/prometheus-seed.yml",
+        "sha": "080a7f7b0f8b63034c216142835af5310325267e"
+      },
+      {
+        "path": "testdata/prometheus.yml",
+        "sha": "03740333f30de7ddaac8dab4a1b2b607aa6c9a94"
+      },
+      {
+        "path": "testdata/promtail-config.yml",
+        "sha": "3bd5a9d8343ef3d90a7fccf475f1b5a37b1ca28d"
+      },
+      {
+        "path": "testdata/provisioning-repo-seed.sh",
+        "sha": "6a9294c8f9d2f7974149af2fabbcfaa869858435"
+      },
+      {
+        "path": "testdata/quickwit-seed.sh",
+        "sha": "ce61631c31d686a8a64f61357deb05f8d3a637f6"
+      },
+      {
+        "path": "testdata/tempo-config.yaml",
+        "sha": "9db5acb53064c0476a6de8f6276e723f35b7f1dd"
+      },
+      {
+        "path": "tools/admin.go",
+        "sha": "ffacbf0a576dcd6ccfc0418d741900fd7dc118d0"
+      },
+      {
+        "path": "tools/agento11y_agents.go",
+        "sha": "8a8c1d464e01ee3d71542204d79a5000fa4c5d3b"
+      },
+      {
+        "path": "tools/agento11y_eval_collections_handlers.go",
+        "sha": "da3b9567de6fed6be43069274e32dd5ae5d896fb"
+      },
+      {
+        "path": "tools/agento11y_eval_collections_types.go",
+        "sha": "932a6696b74586b35885b3c0d6eb5565f12615dd"
+      },
+      {
+        "path": "tools/agento11y_eval_handlers.go",
+        "sha": "847332a526c4d510ed8a550e3914412c559e2db3"
+      },
+      {
+        "path": "tools/agento11y_eval_types.go",
+        "sha": "d13c20a8808a676eebeb4d5c2dea7f8d72a60588"
+      },
+      {
+        "path": "tools/agento11y_experiments_handlers.go",
+        "sha": "dd69d4117916173690eb1bdbab690fc726d6706c"
+      },
+      {
+        "path": "tools/agento11y_experiments_types.go",
+        "sha": "d9a07b98518f1410fb785ea48959a5fed3a4f32a"
+      },
+      {
+        "path": "tools/agento11y_test_suites_handlers.go",
+        "sha": "f8c3118e6cf9c39b42a40e117389b74d9081dd7e"
+      },
+      {
+        "path": "tools/agento11y_test_suites_types.go",
+        "sha": "3fa3d134745246a23c1479135d6beea4e895a939"
+      },
+      {
+        "path": "tools/agento11y.go",
+        "sha": "362944f60cdf5a87e85bd35fc84706de01260cc8"
+      },
+      {
+        "path": "tools/alerting_client.go",
+        "sha": "0c6b0ee6f0e65a5c1814c0d550d0abd93e4de029"
+      },
+      {
+        "path": "tools/alerting_contact_points.go",
+        "sha": "478c8acdb6da2fc71b03557ba185af0fbaff3865"
+      },
+      {
+        "path": "tools/alerting_external_contact_points.go",
+        "sha": "c656b11522e40ab56dc4d483d66c08e4f46e34d9"
+      },
+      {
+        "path": "tools/alerting_external_rules.go",
+        "sha": "5f1fc1128ff31c878c589b89f6f166c8384cfdf5"
+      },
+      {
+        "path": "tools/alerting_external_write.go",
+        "sha": "6c23b6f7193dde8e944806c0da8aebdb19444e26"
+      },
+      {
+        "path": "tools/alerting_manage_rules_datasource.go",
+        "sha": "9b6ed070ef6dbaf10a36ece7f8c07ca394f0419e"
+      },
+      {
+        "path": "tools/alerting_manage_rules_handlers.go",
+        "sha": "7fdb66a34541d72b4e7e5266ed1296c2381b2fc5"
+      },
+      {
+        "path": "tools/alerting_manage_rules_types.go",
+        "sha": "350ff1d0dfbf0da49da09591dd03f955b17963f4"
+      },
+      {
+        "path": "tools/alerting_routing.go",
+        "sha": "e9ed629bc848cafdc9604e63ae2cdc0c0b14d8fb"
+      },
+      {
+        "path": "tools/alerting_silences.go",
+        "sha": "a4c24cc26d1888b8ffa061223f1319edf2d60b40"
+      },
+      {
+        "path": "tools/alerting.go",
+        "sha": "05e0ed2051588152d803ccce7394b2bad4a5b2d3"
+      },
+      {
+        "path": "tools/annotations.go",
+        "sha": "37b6870ddc7a4e3be2a1b190523898defd8a6f01"
+      },
+      {
+        "path": "tools/api.go",
+        "sha": "2cc082c2a6098cac94d86684c877e99820057ffb"
+      },
+      {
+        "path": "tools/asserts.go",
+        "sha": "23c744d55f66c4c0131e6b54eaf98884da582821"
+      },
+      {
+        "path": "tools/assistant.go",
+        "sha": "05d93340d4cdc84d89f850d94483bee1974fb42f"
+      },
+      {
+        "path": "tools/cloud_testing_utils.go",
+        "sha": "b84344b964b2abf7928d335c8294316d2bf7ca41"
+      },
+      {
+        "path": "tools/cloudlogging.go",
+        "sha": "18249a1e07e051ff0f26c63b13a76399629e894e"
+      },
+      {
+        "path": "tools/cloudwatch_logs.go",
+        "sha": "c59523459c739bd344003c60e9e3d182c962cb3e"
+      },
+      {
+        "path": "tools/cloudwatch.go",
+        "sha": "48d0d89f1fecc5b298fb1361c6575c8cabde4808"
+      },
+      {
+        "path": "tools/config.go",
+        "sha": "dda499b497ebf2ec344bd19257fb3c4dc302a4ab"
+      },
+      {
+        "path": "tools/dashboard_helpers.go",
+        "sha": "62d8cc7c58e5bedf7feac7dde2bb9e254e7670d5"
+      },
+      {
+        "path": "tools/dashboard_query_preparation.go",
+        "sha": "f95af25aa6b29af57d0b19aeba11e633d81ad034"
+      },
+      {
+        "path": "tools/dashboard_v2.go",
+        "sha": "488bf51ded7d3883d220869ff82e3b52607ca7ff"
+      },
+      {
+        "path": "tools/dashboard_versions.go",
+        "sha": "1126a157c513066bdd1fc563f74a489eb023af05"
+      },
+      {
+        "path": "tools/dashboard.go",
+        "sha": "f036811f96718a8298f9f42fd84e2e094ca77e8f"
+      },
+      {
+        "path": "tools/datasources.go",
+        "sha": "0c1d617d7605d4765101fe8ca0a489d724994d93"
+      },
+      {
+        "path": "tools/docs.go",
+        "sha": "3fa38ffb0aee67380df4ef2ce0a678513ec6bdbc"
+      },
+      {
+        "path": "tools/ds_query.go",
+        "sha": "fd18461a1d9d05a43c1527e09d25305a30c1f339"
+      },
+      {
+        "path": "tools/elasticsearch.go",
+        "sha": "7f74f0f132b91a410f723469fb2718f2963edf5f"
+      },
+      {
+        "path": "tools/es_backend_opensearch.go",
+        "sha": "63a387c868f5eba2042948c080308c776c4dc5a1"
+      },
+      {
+        "path": "tools/es_backend.go",
+        "sha": "6e324d20df3f618fcbaf6ee778a855f1968551e7"
+      },
+      {
+        "path": "tools/examples.go",
+        "sha": "3664c235ccacdd76c3fd59299ad27e2fde58faf5"
+      },
+      {
+        "path": "tools/fallback_transport.go",
+        "sha": "c9e5ac2f023a027daa0fcec359cbdda09882bd0e"
+      },
+      {
+        "path": "tools/folder.go",
+        "sha": "0bbf16bf44144a389fe3d54fb12b05a2a10e67f7"
+      },
+      {
+        "path": "tools/graphite.go",
+        "sha": "77bfb5035ae8928cccb856b5443a18fbf83d6674"
+      },
+      {
+        "path": "tools/hints.go",
+        "sha": "c387f7f3210eead5d173f7e7990f321625afe3bd"
+      },
+      {
+        "path": "tools/http_redirect.go",
+        "sha": "029bbfdf012070095b26aa8de562d4145e2c65c3"
+      },
+      {
+        "path": "tools/incident_custom_fields.go",
+        "sha": "ece9e79a849e844c916c6ddebdeae5b183dce808"
+      },
+      {
+        "path": "tools/incident.go",
+        "sha": "02ab2649ef7885a339f761be8845f586f6dfc24a"
+      },
+      {
+        "path": "tools/influxdb.go",
+        "sha": "ee142fe07b6513aadbded7190629289ae9688415"
+      },
+      {
+        "path": "tools/loki_backend_victorialogs.go",
+        "sha": "a4ee66a2b25ad5bcb40d559bf8281c384f4e07c8"
+      },
+      {
+        "path": "tools/loki_backend.go",
+        "sha": "56cecebda1a67e30b54cde1d7f1a2c87cc5882b7"
+      },
+      {
+        "path": "tools/loki_enforce.go",
+        "sha": "8d7bbd06b6b56fd2160e177abe65850c7f6c0eb8"
+      },
+      {
+        "path": "tools/loki_guardrail_metrics.go",
+        "sha": "1c29396d9820a969ab64c9cd97ba511152178b25"
+      },
+      {
+        "path": "tools/loki_guardrail.go",
+        "sha": "49d9fc24e24af71ac58a86ac3c080886a62ffc10"
+      },
+      {
+        "path": "tools/loki_label_analyzer.go",
+        "sha": "ed545e3b4cd49b518b4c27758d2f27d92a1b11dc"
+      },
+      {
+        "path": "tools/loki.go",
+        "sha": "93036103ef64e813cdfcf56a4d1c68db68e4117e"
+      },
+      {
+        "path": "tools/navigation.go",
+        "sha": "106d6860c68a48a6d3fb9bcc705bcd72839bd864"
+      },
+      {
+        "path": "tools/oncall_proxy.go",
+        "sha": "95c850ed6780e9c724bd01942db32fdcc9c41d85"
+      },
+      {
+        "path": "tools/oncall_types.go",
+        "sha": "f87314250f373741aa74d01acbc39f291d84c9d0"
+      },
+      {
+        "path": "tools/oncall.go",
+        "sha": "518aa42a2f07e6562adc06598c8d9f7af50682b3"
+      },
+      {
+        "path": "tools/plugins.go",
+        "sha": "453f699db8156a8a6b9edaa5612234d9413ba915"
+      },
+      {
+        "path": "tools/prom_backend_cloudmonitoring.go",
+        "sha": "3ca6f77010f69b60e6e7db7ed06b7bc2bbef2c56"
+      },
+      {
+        "path": "tools/prom_backend.go",
+        "sha": "b6b3872221ace87d8a05929117ef1df355c3d969"
+      },
+      {
+        "path": "tools/prometheus_guardrail_metrics.go",
+        "sha": "787b56a20b1061e102b91419beac78257c8dc82c"
+      },
+      {
+        "path": "tools/prometheus_guardrail.go",
+        "sha": "09cd92ac634f7f3383e95fea90f3c433baf2ac32"
+      },
+      {
+        "path": "tools/prometheus_metrics.go",
+        "sha": "233aca96b2f762f1e3db38d5a4e9b35bb7801035"
+      },
+      {
+        "path": "tools/prometheus_response_limit.go",
+        "sha": "6cfaf0863807a3c69467ea4b9fe7e462b015f784"
+      },
+      {
+        "path": "tools/prometheus.go",
+        "sha": "e576206292090a3ccc2d274800cc05e3a01c97ef"
+      },
+      {
+        "path": "tools/provisioning.go",
+        "sha": "b8bc0cc871c8c7635657cea40303e369d94248da"
+      },
+      {
+        "path": "tools/pyroscope.go",
+        "sha": "6af0b46e3f698206774274fb534ea81f63f19a4b"
+      },
+      {
+        "path": "tools/quickwit.go",
+        "sha": "aef8a0e68aab1635b9f6c7a88f285b01e8e5f34c"
+      },
+      {
+        "path": "tools/rbac.go",
+        "sha": "9ab0163da1360d18e1639a8497765ec4140921e6"
+      },
+      {
+        "path": "tools/rendering.go",
+        "sha": "86bb693eaf0f8698c1a5d7440d7379113482f38b"
+      },
+      {
+        "path": "tools/response_utils.go",
+        "sha": "ee163764a4191ee4a5df1ab934dcc5c4546ba338"
+      },
+      {
+        "path": "tools/run_panel_query.go",
+        "sha": "14dea25c159c4a7c45e4e7e605fa26006130faf3"
+      },
+      {
+        "path": "tools/search.go",
+        "sha": "4888833636278a9febb3163c97e403ca8e3b0e04"
+      },
+      {
+        "path": "tools/snapshot.go",
+        "sha": "db5d80663539d9647d12629fea4d31746f1a3f31"
+      },
+      {
+        "path": "tools/sql_tools.go",
+        "sha": "16bffe8d2b05dea557ee685293ae07e7917aece4"
+      },
+      {
+        "path": "tools/tempo_ds_query.go",
+        "sha": "e3d1467745e98a6f54523947124e61d9c03f0f54"
+      },
+      {
+        "path": "tools/tempo_trace_view.go",
+        "sha": "f845e6c580a423732c3fa612ae07a9c0dd9ac93f"
+      },
+      {
+        "path": "tools/tempo.go",
+        "sha": "cc49fbbbf0688c5064a732519e5ad71181816287"
+      },
+      {
+        "path": "tools/time_helpers.go",
+        "sha": "d136ee36960da383bfcef02233878cc3fcff1455"
+      },
+      {
+        "path": "tools/url_helpers.go",
+        "sha": "7d5831eb3e682cee1b88ebe6c0a72904608297e1"
+      },
+      {
+        "path": "tools/user.go",
+        "sha": "df099bde3140881cfd25dee7480440ea274edd76"
+      },
+      {
+        "path": "tools/variable_interpolator.go",
+        "sha": "83e8a60e584703dbe69f9c23b3379e700df593d1"
+      },
+      {
+        "path": "usagestats/event.go",
+        "sha": "6f62e6c1c0e72e016a66068111cf342d1a9c7706"
+      },
+      {
+        "path": "usagestats/mode.go",
+        "sha": "37e420ddbfd7cfa9fb860f9a1c9831dd9f9088c1"
+      },
+      {
+        "path": "usagestats/reporter.go",
+        "sha": "6f5e7fb0fe85485bb9597482f12ec242129d1a3b"
+      },
+      {
+        "path": "internal/datasource/datasource.go",
+        "sha": "f48768c42e143dca650b906b7969cbdbe8f559cf"
+      },
+      {
+        "path": "internal/datasource/fallback.go",
+        "sha": "81905e8e115ac80f0723c8e6789cb05ecaa6d147"
+      },
+      {
+        "path": "lokiguard/testdata/cases.json",
+        "sha": "bb09b91dc7156db7798c439ccacf5a96a89f681b"
+      },
+      {
+        "path": "testdata/dashboards/demo.json",
+        "sha": "a5b5e299c815afbb1322374a61e7b8f0582f3153"
+      },
+      {
+        "path": "testdata/gitserver/entrypoint.sh",
+        "sha": "c552447f635ef6b36ef6ecbfb8c7c76affb49fbb"
+      },
+      {
+        "path": "tools/datasource_schemas/alertmanager_schema.json",
+        "sha": "a0dde2d49a62efb0cecf0dd812a71a60b14163ca"
+      },
+      {
+        "path": "tools/datasource_schemas/cloudwatch_schema.json",
+        "sha": "8516b05fb8fb9284ed85dba6913b686291484283"
+      },
+      {
+        "path": "tools/datasource_schemas/datasource_schemas_utils.go",
+        "sha": "c91fc8bff8a4ef31f37437bcbf5048a2a46a78e6"
+      },
+      {
+        "path": "tools/datasource_schemas/elasticsearch_schema.json",
+        "sha": "5ad99635fcf48aa69deee0703961d57dcefa9678"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-amazonprometheus-datasource_schema.json",
+        "sha": "16abd858acbb9561b2c0eb781656937227d8f1c2"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-appdynamics-datasource_schema.json",
+        "sha": "88acf41a1a8eb4d26538fae8ed86b8c930ea0fb5"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-astradb-datasource_schema.json",
+        "sha": "ce6b27b64ce9bf17e3073180ed262729a5027a97"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-athena-datasource_schema.json",
+        "sha": "09fef24ed4b02394e77c30c31e4cb84560ea9535"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-azure-data-explorer-datasource_schema.json",
+        "sha": "b103be4205a6414f248b140b931b2b6bc5557256"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-azure-monitor-datasource_schema.json",
+        "sha": "c4e04cfa7151a6472d294d63e0096d9cdb82f8cd"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-azuredevops-datasource_schema.json",
+        "sha": "4446aa6eb210b04964706fcaaaee651bc2bdb1cc"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-azureprometheus-datasource_schema.json",
+        "sha": "18ed15e79d44a1fe881ac07ab5fc868ad50a6d96"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-bigquery-datasource_schema.json",
+        "sha": "2f201ad7dd3caf3705b64a393e040088242e9e38"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-clickhouse-datasource_schema.json",
+        "sha": "1657cb0c8fd0fdbeddb290cfbd71314d679df593"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-cockroachdb-datasource_schema.json",
+        "sha": "53c8ecc0d1a70275656de41c2af41c55ded38005"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-databricks-datasource_schema.json",
+        "sha": "c1cb0962c08dfdfe9bbf84820765ca4b0227d82c"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-datadog-datasource_schema.json",
+        "sha": "17f350e43bbbba2512ac9dd5f5f38577f7ead194"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-dynatrace-datasource_schema.json",
+        "sha": "28edfd15e23fde815e807e95c5f313cde1643779"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-falconlogscale-datasource_schema.json",
+        "sha": "21920529fd31be35fd663696cbf20b72682aa6ec"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-github-datasource_schema.json",
+        "sha": "c78b92c68d19e6209c8ce7c095f3a3e0d02c6bba"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-gitlab-datasource_schema.json",
+        "sha": "86dd75824219c8ea63d3d0d351c7816200b5c363"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-googlesheets-datasource_schema.json",
+        "sha": "57cb5e7ba04e31d02567ea9fd1175e39bb1f5517"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-honeycomb-datasource_schema.json",
+        "sha": "9b7beacaa3db83b48575a13be5eafadaf9cb81b0"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-iot-sitewise-datasource_schema.json",
+        "sha": "6c55ff5eb3183f105ef93909f986a26974433834"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-jira-datasource_schema.json",
+        "sha": "da6c17b6ac572d78c133473ba6ec3647fa5c5795"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-looker-datasource_schema.json",
+        "sha": "44c856481a9b86d4f372b2178b736fd5543d0967"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-mongodb-datasource_schema.json",
+        "sha": "67e4b79604ac0a97ed625e4d92ba02f492260d49"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-mqtt-datasource_schema.json",
+        "sha": "9cf7b1ddbbfed6653fbadaa44924d6a32cb3c975"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-newrelic-datasource_schema.json",
+        "sha": "ec2adfcf9f3c6cc6afee084a61bc24d4940f0fb1"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-odbc-datasource_schema.json",
+        "sha": "af830933c5c028e48f04d446d5e15cc2b1a14e3d"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-opensearch-datasource_schema.json",
+        "sha": "88dc42c745ea3fb5c88a044a0d5dc1655e43ede3"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-oracle-datasource_schema.json",
+        "sha": "e2b63fe8721329a815961e466e292d6d9268d67d"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-pagerduty-datasource_schema.json",
+        "sha": "53b3d1ff30d3f3e4248de6dd8ee1f6e019fd003a"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-postgresql-datasource_schema.json",
+        "sha": "b0deb088cdf36dae5b079ef324c9334bfb1bada8"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-pyroscope-datasource_schema.json",
+        "sha": "6a839fd1da12fe9a99f91333aaf0b0be02860e6a"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-redshift-datasource_schema.json",
+        "sha": "3465968f46053f9d498f6e7986881471031b1876"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-salesforce-datasource_schema.json",
+        "sha": "e6d2046c7f5f576fd88de1ad5f829bd93e30fe92"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-saphana-datasource_schema.json",
+        "sha": "398f5e5954621067cdd93e2ed35ec4297383ea2f"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-sentry-datasource_schema.json",
+        "sha": "0a5080aeef783739dc182e9c0a44a4fce02f7984"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-servicenow-datasource_schema.json",
+        "sha": "276180d4f2d34cc70b9ededdc6b53c651aca803d"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-snowflake-datasource_schema.json",
+        "sha": "b8942e7e19706b553269a355c5f7474351e879ca"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-splunk-datasource_schema.json",
+        "sha": "3b019ea6dc25cafacc8f1b7c98e820c19d993a2e"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-splunkobservability-datasource_schema.json",
+        "sha": "3fc9c63ea870474a370eeaba0bb5d6cc3125ea5b"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-strava-datasource_schema.json",
+        "sha": "ca47bec47889b43c5acea757bb678d2defcb9140"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-sumologic-datasource_schema.json",
+        "sha": "254b6818aaf5870b769c4045e8dbebf8286016c9"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-surrealdb-datasource_schema.json",
+        "sha": "158c227b2ac02b0aa574354408a69f9dcc606aac"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-timestream-datasource_schema.json",
+        "sha": "27e48875c183cf899041dcdfa3f17d68b97fc037"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-wavefront-datasource_schema.json",
+        "sha": "fc81c36e6daeb3830242fc6083c991fdec9a3b8d"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-x-ray-datasource_schema.json",
+        "sha": "93ed5249bde014ce61b93e6f4c43b3ca9ac887ff"
+      },
+      {
+        "path": "tools/datasource_schemas/grafana-yugabyte-datasource_schema.json",
+        "sha": "046749deef2592926afab1b21808a25468d59451"
+      },
+      {
+        "path": "tools/datasource_schemas/graphite_schema.json",
+        "sha": "365d01864283db920a59202b7ff0610a05d21b41"
+      },
+      {
+        "path": "tools/datasource_schemas/influxdb_schema.json",
+        "sha": "d8502e11d9ddce951ec6e3dc00f7c073866d0700"
+      },
+      {
+        "path": "tools/datasource_schemas/jaeger_schema.json",
+        "sha": "9303db28669083b78ffeadd8d1628b90d773d940"
+      },
+      {
+        "path": "tools/datasource_schemas/loki_schema.json",
+        "sha": "d5101ab6ebbed4802dabd0b01c6a8d6467dca392"
+      },
+      {
+        "path": "tools/datasource_schemas/marcusolsson-csv-datasource_schema.json",
+        "sha": "c5c1c777c307ffb609a335402394e32a6ee99715"
+      },
+      {
+        "path": "tools/datasource_schemas/marcusolsson-json-datasource_schema.json",
+        "sha": "cc998fe2f54f985c75988cfe7ebd6d017c29e8c4"
+      },
+      {
+        "path": "tools/datasource_schemas/mssql_schema.json",
+        "sha": "61416179ba95dae98bc94d9b41c11480300393d5"
+      },
+      {
+        "path": "tools/datasource_schemas/mysql_schema.json",
+        "sha": "df3531ba23fbc2c728aa6638d6fe2beb31a6a3a2"
+      },
+      {
+        "path": "tools/datasource_schemas/opentsdb_schema.json",
+        "sha": "8ce2144a6b9edde79ae4b7046f84c3b0911242dc"
+      },
+      {
+        "path": "tools/datasource_schemas/prometheus_schema.json",
+        "sha": "5826d9e4b277f6e10ef4f99e90c5efb2edab27ad"
+      },
+      {
+        "path": "tools/datasource_schemas/stackdriver_schema.json",
+        "sha": "664e97c006bb32ba913a46a0cef5c6a69a2127ed"
+      },
+      {
+        "path": "tools/datasource_schemas/tempo_schema.json",
+        "sha": "5d3b057225e72282cfba355418773035ae8b3ad7"
+      },
+      {
+        "path": "tools/datasource_schemas/yesoreyeram-infinity-datasource_schema.json",
+        "sha": "ddfea6e54e60321c2d1945964c24c63e2a986f3b"
+      },
+      {
+        "path": "tools/datasource_schemas/zipkin_schema.json",
+        "sha": "4fdd9da57ce91ba9c2c8ed1af92a8cca7dd5b1a1"
+      },
+      {
+        "path": "tools/sql/athena.go",
+        "sha": "a25b376abae5a8cf3a2b7ac8c9fc2acd70386558"
+      },
+      {
+        "path": "tools/sql/bigquery.go",
+        "sha": "eb020ddba001fdd31ac71d7e238fa901d1a0603e"
+      },
+      {
+        "path": "tools/sql/clickhouse.go",
+        "sha": "a3989208ec1db3c62b2276900fdfe690b6dbd561"
+      },
+      {
+        "path": "tools/sql/dialect.go",
+        "sha": "650314e2ad90a388b7ec391567f1a54f5e81a828"
+      },
+      {
+        "path": "tools/sql/mssql.go",
+        "sha": "9b8343585e7107b4d9a4bd31385d59591b1b5e44"
+      },
+      {
+        "path": "tools/sql/mysql.go",
+        "sha": "73dc7f294e04eda32cd9b87e67a7634dbd3f479d"
+      },
+      {
+        "path": "tools/sql/postgres.go",
+        "sha": "1a4035ee6520db2ce5391909dd0a592aa9719522"
+      },
+      {
+        "path": "tools/sql/snowflake.go",
+        "sha": "3c67b40b6be240049c1f35845d84f1e1e5c6dfd0"
+      },
+      {
+        "path": "tools/testdata/legacy_rows_dashboard.json",
+        "sha": "c6c9b33b7d7283506efc8c74a1c5c27f8bb00fa0"
+      },
+      {
+        "path": "tools/testdata/v2beta1_dashboard.json",
+        "sha": "78c198e838f979aee98fae4a0f71967ed053dbfc"
+      },
+      {
+        "path": "ui/mcp-apps/app.vite.config.ts",
+        "sha": "139bf80b547253c6f3011e30ad79cf9a4cc74ba4"
+      },
+      {
+        "path": "ui/mcp-apps/grafana.vite.config.ts",
+        "sha": "ffc0f0c56f0d80a1843f223d1d435dce803f0312"
+      },
+      {
+        "path": "ui/mcp-apps/localhost.vite.config.ts",
+        "sha": "54d11e3d3707ff62e2ecfa9b20bc26177afd699e"
+      },
+      {
+        "path": "ui/mcp-apps/package-lock.json",
+        "sha": "03baaf4bbb51eb00061de18e5eb28fb4df4f90fb"
+      },
+      {
+        "path": "ui/mcp-apps/README.md",
+        "sha": "4b3ef94a0acc53401e588c00988b222ee5fea234"
+      },
+      {
+        "path": "ui/mcp-apps/tsconfig.build.json",
+        "sha": "d55f2de481dce4a4a3c167cf24e5f8cdb73a1657"
+      },
+      {
+        "path": "ui/mcp-apps/tsconfig.json",
+        "sha": "5c0d035efbd52f1374a96a7f884d7c893bd7363a"
+      },
+      {
+        "path": "ui/mcp-apps/vite.config.ts",
+        "sha": "446beffc5ab603ff30388e32f72abe5657408ffd"
+      },
+      {
+        "path": "ui/mcp-apps/vitest.config.ts",
+        "sha": "c9fc281bfab5f76ca82c6d9785849f795c111862"
+      },
+      {
+        "path": "ui/panel-viewer/package-lock.json",
+        "sha": "b629e2e6ba4dab1a25350578f35d627e449b4032"
+      },
+      {
+        "path": "ui/panel-viewer/tsconfig.json",
+        "sha": "2cac755e47d208b1c5acd6725be8d1c0ef497e38"
+      },
+      {
+        "path": "ui/panel-viewer/vite.config.ts",
+        "sha": "0a3b1ff42918c5d9bdedf77aa52803cb3f60f29f"
+      },
+      {
+        "path": "internal/linter/jsonschema/jsonschema_lint.go",
+        "sha": "c598d7d426e6d4665a3b2e96c667b1eea850a1a6"
+      },
+      {
+        "path": "internal/linter/jsonschema/README.md",
+        "sha": "86099886980f3d14b32314a45a5a7f3ee30c904a"
+      },
+      {
+        "path": "internal/linter/openapi/analyzer.go",
+        "sha": "ae2be4c32e4a10033e953ed5e72dde08972fc1c1"
+      },
+      {
+        "path": "testdata/provisioning-repo/extra/broken-dashboard.json",
+        "sha": "4e4528e865c2efa7289176e5bd054daaedcb3452"
+      },
+      {
+        "path": "testdata/provisioning-repo/extra/extra-dashboard.json",
+        "sha": "8eba087fb0ef336f0ff18569120176d8ef946f5b"
+      },
+      {
+        "path": "testdata/provisioning-repo/main/sample-dashboard.json",
+        "sha": "0d9432fb1f9f6e572cd7ba7ab0186e91c892b5a5"
+      },
+      {
+        "path": "testdata/provisioning/alerting/alert_rules.yaml",
+        "sha": "6a7b70ccba538414847f7bf7be1611d885c320a9"
+      },
+      {
+        "path": "testdata/provisioning/alerting/contact_points.yaml",
+        "sha": "fa435357f8a959bbac51b80a410ba5865ee2f696"
+      },
+      {
+        "path": "testdata/provisioning/alerting/routing.yaml",
+        "sha": "e362e6a8a1858f50ed527df129dba038876c6149"
+      },
+      {
+        "path": "testdata/provisioning/dashboards/dashboards.yaml",
+        "sha": "5169879ca8390908d6d1230452c5564c135546cb"
+      },
+      {
+        "path": "testdata/provisioning/datasources/datasources.yaml",
+        "sha": "00b158c8bf0352ceac1949c0bd5a33e61a51f077"
+      },
+      {
+        "path": "tools/testdata/variable_interpolation/README.md",
+        "sha": "472f7f07d7f0d07ca423e3fc73e219d882188d76"
+      },
+      {
+        "path": "ui/mcp-apps/app/AppErrorBoundary.tsx",
+        "sha": "1b02c1c0d39695c41645924a2c31179e074e8ae1"
+      },
+      {
+        "path": "ui/mcp-apps/app/appHostState.ts",
+        "sha": "4a0449a1d9013b0534d135cc8e63549d5b86e372"
+      },
+      {
+        "path": "ui/mcp-apps/app/GrafanaApplication.tsx",
+        "sha": "c594a4f87df28c38c62fd1bac77f6fa4ffc766f5"
+      },
+      {
+        "path": "ui/mcp-apps/app/hostContext.ts",
+        "sha": "ee26972072f5ee4044417724165fca9c022551ec"
+      },
+      {
+        "path": "ui/mcp-apps/app/MetricsApplication.tsx",
+        "sha": "0cb47b92b2b7244bd4e5b656f7f5e5b0cf4bc5a4"
+      },
+      {
+        "path": "ui/mcp-apps/app/parsePrometheusResult.ts",
+        "sha": "6d768273355f8f68f1d6494ae865e94bf7199d35"
+      },
+      {
+        "path": "ui/mcp-apps/app/parseTraceResult.ts",
+        "sha": "b849ec556ed367567a0f25b0b0d40b5608356d8f"
+      },
+      {
+        "path": "ui/mcp-apps/app/TraceApplication.tsx",
+        "sha": "f0464bc77a411cc30702fc00077334c913e14e41"
+      },
+      {
+        "path": "ui/mcp-apps/preview/host.ts",
+        "sha": "4f88b4aacf98f2a85daad927f797a75d88ea1481"
+      },
+      {
+        "path": "ui/mcp-apps/preview/localhost.ts",
+        "sha": "8f8fe83eca81ebf9ce52fa6bbc8172cfcfd0b50c"
+      },
+      {
+        "path": "ui/mcp-apps/preview/Preview.styles.ts",
+        "sha": "092931f1a8674e5d3afcc17258847f237d7f9cdf"
+      },
+      {
+        "path": "ui/mcp-apps/preview/trace.tsx",
+        "sha": "57f3ac60730a1d3a32996e846a5453ff596a3b8a"
+      },
+      {
+        "path": "ui/mcp-apps/preview/traceFixture.ts",
+        "sha": "15de98246849ab544a1b4cd2a454575e5e5e0caa"
+      },
+      {
+        "path": "ui/mcp-apps/preview/vite.config.ts",
+        "sha": "54cc0ba2e03f6296d6a018a421956160da8d11ab"
+      },
+      {
+        "path": "ui/mcp-apps/src/design.tsx",
+        "sha": "9ea61ecabb0cb5195cb746ba8ba6acb0dbe677e6"
+      },
+      {
+        "path": "ui/mcp-apps/src/grafanaLink.ts",
+        "sha": "9f9a1b9492ce27fa52b58254c736a7ed37135426"
+      },
+      {
+        "path": "ui/mcp-apps/src/McpAppSection.styles.ts",
+        "sha": "464886f16f99af41eaf44ae084651f60f31a8ea8"
+      },
+      {
+        "path": "ui/mcp-apps/src/McpAppSection.tsx",
+        "sha": "bcf57738086ef92bb57f1e6c32c57e835e677602"
+      },
+      {
+        "path": "ui/mcp-apps/src/McpAppShell.styles.ts",
+        "sha": "ac5f2114999384781648b28a08d7ef3bcacddc8e"
+      },
+      {
+        "path": "ui/mcp-apps/src/McpAppShell.tsx",
+        "sha": "43e348411ba044569526fe4618e57157a9ceabc5"
+      },
+      {
+        "path": "ui/panel-viewer/src/mcp-app.ts",
+        "sha": "f56a6c7ab332eec56df797ac87a81bf0b06aeba3"
+      },
+      {
+        "path": "ui/mcp-apps/src/metrics/IconButton.tsx",
+        "sha": "b7d2bc7a5578effcff5e929e65243915ac4eb2bf"
+      },
+      {
+        "path": "ui/mcp-apps/src/metrics/pickViz.ts",
+        "sha": "545556e1f7b27bd6ab21eeafab4bb0092fd53cf8"
+      },
+      {
+        "path": "ui/mcp-apps/src/metrics/RenderMetricsApp.styles.ts",
+        "sha": "17fec7e20ea367404e7dcc502b6c7d86dc8bb688"
+      },
+      {
+        "path": "ui/mcp-apps/src/metrics/RenderMetricsApp.tsx",
+        "sha": "d78e634466c5c8ae6cc52b8375729855c97af2db"
+      },
+      {
+        "path": "ui/mcp-apps/src/metrics/VizPicker.tsx",
+        "sha": "ff39618d85b640c55b4cdbfa5a07702a48392f70"
+      },
+      {
+        "path": "ui/mcp-apps/src/trace/RenderTraceApp.tsx",
+        "sha": "59a7e38f1d0efa51705b4ae4ffeb57c8bea8ba36"
+      },
+      {
+        "path": "ui/mcp-apps/src/trace/TraceViewer.styles.ts",
+        "sha": "0d78eb23a404345ea0062894815c88f63fc2d485"
+      },
+      {
+        "path": "ui/mcp-apps/src/trace/TraceViewer.tsx",
+        "sha": "b123833c8770687440aa4f8452b83f66683032e5"
+      },
+      {
+        "path": "ui/mcp-apps/src/trace/types.ts",
+        "sha": "658e172b50b19bd57718221e2ea59852157c5804"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/BarChart.tsx",
+        "sha": "4e605828d104402b2fef060a67516da47753f180"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/Bullet.tsx",
+        "sha": "34ec3c6240d9fd0b177bb5b06a7f219e8a731ae5"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/echartsSetup.ts",
+        "sha": "af8da7fb01380f5a5ccb24b1d2ef34605c0d2c7c"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/format.ts",
+        "sha": "486125fb3a968f7809721dce7a94812fe772287f"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/Heatmap.tsx",
+        "sha": "d07c879d127ea72b57b2b96b541456c1c29872bc"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/sparkline.ts",
+        "sha": "1a96c151887e44c423c6559373c5cbc802b820bf"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/Stat.tsx",
+        "sha": "9334d5ae252c4ee9c1c856e36a71e2aefb7fd27c"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/Table.tsx",
+        "sha": "37645decbb4a2a520da8b3a2dfa3aa950386f196"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/theme.ts",
+        "sha": "3920afd58599dc880aaccf9cdd79483fa2e8d66d"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/TimeSeriesChart.tsx",
+        "sha": "6a0e3587694a5e7f374b8e91e71fe5b184e5ee95"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/types.ts",
+        "sha": "14794b6cc3308e60f93b559780068f10094bc57a"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/useEChart.ts",
+        "sha": "bc6e67aa4e3c333eb96109ffea8db469fa248c48"
+      },
+      {
+        "path": "ui/mcp-apps/src/viz/Viz.styles.ts",
+        "sha": "8740bf89f1a1bccc25d4aac9612c7a1d04d4aefc"
+      },
+      {
+        "path": "internal/linter/openapi/testdata/src/testpkg/usage.go",
+        "sha": "f7d31d0a6441af9a8ea49287812b413c3db82274"
+      },
+      {
+        "path": "internal/linter/openapi/testdata/src/github.com/grafana/grafana-openapi-client-go/client/datasources/fake.go",
+        "sha": "fe3c8d6648bcd98903324298a4c8ea8d6793974b"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T13:09:35Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 306,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 11472
+  },
+  "duration_ms": 11551
+}

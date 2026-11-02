@@ -1,0 +1,302 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T142715Z",
+  "target": {
+    "source": "github",
+    "id": "firecrawl/firecrawl-mcp-server",
+    "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+    "name": "firecrawl-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:28:41.596Z",
+  "method_version": "0.2.0",
+  "tool": {
+    "assay_commit": "386fade9a9c8c2bf8699acf7b79adb01b8af734d",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.2.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "e70e89e483a31da396568b0697d4b5eae4a2d949",
+    "files_scanned": 58,
+    "candidates": 58,
+    "excluded_non_shipped": 52,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/index.ts",
+        "sha": "308f094a7104441bce717f1fd6bad253353018b6"
+      },
+      {
+        "path": "src/server.ts",
+        "sha": "bb118ffd11a92f70a50a3763c8aea07162743b0c"
+      },
+      {
+        "path": "server.json",
+        "sha": "56fdfe6b9a12bdac9d6fa3db7e91a50d16813ca2"
+      },
+      {
+        "path": "src/legacy/index.md",
+        "sha": "6bb61be044ba2f2652ce268d8d21f870d9c611a6"
+      },
+      {
+        "path": "src/service/index.ts",
+        "sha": "1c75dcace84e68232aece80656cb7f4ba40bb955"
+      },
+      {
+        "path": "package.json",
+        "sha": "614764d28257cbbdd31c5289f7305765d198640c"
+      },
+      {
+        "path": "scripts/agent-metadata-policy.mjs",
+        "sha": "f3362f79a6bd7d18917d50e99286245623c4eb4b"
+      },
+      {
+        "path": "scripts/http-surface-diff.mjs",
+        "sha": "f43668d8d6bcbd4d52bdf5293189454fe9dd2291"
+      },
+      {
+        "path": "scripts/stdio-surface-diff.mjs",
+        "sha": "955e06b6b86b2a84ac9c3f890525297687ca634b"
+      },
+      {
+        "path": "scripts/surface-common.mjs",
+        "sha": "6a62413eab0445aabb652658241605e8584521be"
+      },
+      {
+        "path": "src/alexandria-feedback.ts",
+        "sha": "ff15c666889efdcf7452bb6c024b4c60aa680056"
+      },
+      {
+        "path": "src/alexandria-output.ts",
+        "sha": "a368c8ffd43725caab013921a0ac8389a0c4d08c"
+      },
+      {
+        "path": "src/alexandria.ts",
+        "sha": "f288a3f0f15cb5bb48335d895099fe12e12265b1"
+      },
+      {
+        "path": "src/core-http-error.ts",
+        "sha": "66b2f78cccf2bf9d4e3767e5a80bc2d5b2948b60"
+      },
+      {
+        "path": "src/developer.ts",
+        "sha": "d7d0334365f1c61c87c8c8a17a7049e57a8a27c6"
+      },
+      {
+        "path": "src/gov.ts",
+        "sha": "a73dfe92638693659c1070ce121272312ff9edff"
+      },
+      {
+        "path": "src/headers.ts",
+        "sha": "6cc34398b255935accc69508ceb6a38a77e8b15f"
+      },
+      {
+        "path": "src/integration.ts",
+        "sha": "3364a8871d5ddd42e888860eaa58509468003fa7"
+      },
+      {
+        "path": "src/keyless-signup-link.ts",
+        "sha": "6329bb7ebd426a97c0b9f0bd04b3a3e4a8abb925"
+      },
+      {
+        "path": "src/monitor.ts",
+        "sha": "66521d4307b52d8280f2e4077d71d0e98ca5aa74"
+      },
+      {
+        "path": "src/origin.ts",
+        "sha": "c4a8d3c93a083fcf24fb99c365c7221945bae153"
+      },
+      {
+        "path": "src/recovery.ts",
+        "sha": "b4677b9692b5581385a51312255399348fcbabdc"
+      },
+      {
+        "path": "src/research.ts",
+        "sha": "b2ea75990ec773d8f31e24dc1c831f4fb7a3f72f"
+      },
+      {
+        "path": "src/search-budget.ts",
+        "sha": "5d30a96a21f1f3353950cec9c077462fe952b9fd"
+      },
+      {
+        "path": "src/tasks.ts",
+        "sha": "5e587bd8c7cf13879d714c16f9e1629c2e4b3301"
+      },
+      {
+        "path": "src/tool-arguments.ts",
+        "sha": "4f9ef306300944696af2f38cdc8abe159016b4ae"
+      },
+      {
+        "path": "src/tool-helpers.ts",
+        "sha": "daf3d3753540bf063d497481a204970e12854a19"
+      },
+      {
+        "path": "src/tool-output.ts",
+        "sha": "8afff07c74d9d7d99e9e18adda825338bedc0647"
+      },
+      {
+        "path": "src/usage.ts",
+        "sha": "cb02d8f0a40e90f5ff2631b46cc3fd0de4a51920"
+      },
+      {
+        "path": ".eslintrc.json",
+        "sha": "ccf7009cb8a8ef56f5f028d09001c10eed51060d"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "baaaaf74a70500370f13d8fdbe7fc049caa163fd"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "85db73e9eefa64338e6ff835d1fd35d6fb3062c7"
+      },
+      {
+        "path": "glama.json",
+        "sha": "4e5b4ec9075c5d889e383742aebd33b0699fdffc"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "sha": "9920c566334657d29a350d71d631bb031f054290"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha": "ef353544b8a76fc1c430a54e491a532dd6367831"
+      },
+      {
+        "path": "README.md",
+        "sha": "7898bdb647c55b389d22846b093edc5a1f05eeee"
+      },
+      {
+        "path": "smithery.yaml",
+        "sha": "d603d96e236c978293208912930abe431dd58fb5"
+      },
+      {
+        "path": "src/mcp/runtime.ts",
+        "sha": "34f3976e74961aee84e81931de37c33715c41022"
+      },
+      {
+        "path": "src/mcp/sse.ts",
+        "sha": "8fb068bceeac12b2640c7885154419c74801e631"
+      },
+      {
+        "path": "src/mcp/www-authenticate.ts",
+        "sha": "3c33fb654ac853ef7af1671874659f7c97d17809"
+      },
+      {
+        "path": "src/service/auth.ts",
+        "sha": "c4a1ff87e6712e373a801117a023896e5632f3cc"
+      },
+      {
+        "path": "src/service/introspection-cache.ts",
+        "sha": "16be3d708a553c1b3799b4ce70c643a1828904bf"
+      },
+      {
+        "path": "src/service/profiles.ts",
+        "sha": "bbc2fff6d0bf91206e89cb3be394946c12827b8b"
+      },
+      {
+        "path": "src/service/search-surface.ts",
+        "sha": "0efd1cd16f3f9f88a5909731a38f4cbb553f3d2f"
+      },
+      {
+        "path": "src/service/session-credential.ts",
+        "sha": "d4998f76ce274aecc891dc9cc15ffad19ed37688"
+      },
+      {
+        "path": "src/service/session.ts",
+        "sha": "6eddc869e639f9bf1d3122f280590043e81612c2"
+      },
+      {
+        "path": "src/service/tool-guard.ts",
+        "sha": "068c9877dbe2473c7b0bf83d64c08fc8d7c8f26f"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "b035627655683e3ea21cf9c0fee4a0923a7b7966"
+      },
+      {
+        "path": "tsup.config.ts",
+        "sha": "b393faee0d9043cfa6645e3280350f8d15b8710c"
+      },
+      {
+        "path": "VERSIONING.md",
+        "sha": "e084ec3fe4e9d68bf80bbc85292ea06864924336"
+      },
+      {
+        "path": "reports/alexandria-mcp-validation.md",
+        "sha": "cbfeee46bfda50e55eadf1091f602fd9dbec3306"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "0e6b287385edc8199c48e86a2bf3557d565c9760"
+      },
+      {
+        "path": ".github/workflows/image.yml",
+        "sha": "1ee9cb306d6c93caf2f3adb2548de82e8f40cb3d"
+      },
+      {
+        "path": ".github/workflows/publish.yml",
+        "sha": "7d18e0a6b3ac5f55e35847cf5bd12da106086814"
+      },
+      {
+        "path": ".github/actions/release-summary/action.yml",
+        "sha": "b7e395558c1c5b9f74a0efd1ac4c178a323a7acf"
+      },
+      {
+        "path": ".github/actions/release-summary/summary.sh",
+        "sha": "b6c27a6f1b351b3038ce50a9812df042a68c1b5d"
+      },
+      {
+        "path": ".github/actions/supersede-waiting-runs/action.yml",
+        "sha": "978daecc09139ae8a64a213eb5fcd85cb2170676"
+      },
+      {
+        "path": ".github/actions/supersede-waiting-runs/supersede.sh",
+        "sha": "3493e2b9126acb3409ab16d5d70827f513f4431c"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T02:43:31Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 58,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 5,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 61,
+    "failed": 0,
+    "ms": 19214
+  },
+  "duration_ms": 19224
+}

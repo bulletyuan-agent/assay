@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T142715Z",
+  "target": {
+    "source": "github",
+    "id": "modelcontextprotocol/servers",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "name": "servers"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T14:27:20.082Z",
+  "method_version": "0.2.0",
+  "tool": {
+    "assay_commit": "386fade9a9c8c2bf8699acf7b79adb01b8af734d",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.2.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "194cc86e3ae6400958555bd4116849d822d69263",
+    "files_scanned": 80,
+    "candidates": 183,
+    "excluded_non_shipped": 147,
+    "coverage": 0.44,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "src/everything/index.ts",
+        "sha": "3fadb8ea5cd8a712a83d4261c2339cd0b8e72d10"
+      },
+      {
+        "path": "src/filesystem/index.ts",
+        "sha": "160948c18b0a842094cfdd9c57d3ffe1227ea20e"
+      },
+      {
+        "path": "src/filesystem/server.ts",
+        "sha": "a5127f8dbff059342467c2709020fbe1b6543e34"
+      },
+      {
+        "path": "src/memory/index.ts",
+        "sha": "4892ee85a2dd4c5c66aafd5e986542b3bb5b1692"
+      },
+      {
+        "path": "src/sequentialthinking/index.ts",
+        "sha": "c7015df353c45b80308556a7f7243f80f79c661c"
+      },
+      {
+        "path": ".claude/skills/board-ops/SKILL.md",
+        "sha": "02808f21fa145641d68315884157dc6e5663651d"
+      },
+      {
+        "path": ".claude/skills/client-smoke/SKILL.md",
+        "sha": "3af97b1172ccf0b0e89340262079f70ef2aef10a"
+      },
+      {
+        "path": ".claude/skills/issue-create/SKILL.md",
+        "sha": "4712fa66b3f706bd5e5831882b7e77d6d6f9401b"
+      },
+      {
+        "path": ".claude/skills/issue-triage/SKILL.md",
+        "sha": "86da5dadb63019aa307a5c4ee8b2a88cffda4b67"
+      },
+      {
+        "path": ".claude/skills/local-dev/SKILL.md",
+        "sha": "6b7c4a2f801a72902edeb24ab812d3db9c2434c9"
+      },
+      {
+        "path": ".claude/skills/pr-flow/SKILL.md",
+        "sha": "e64ac106dcabcb258c5b5bd4563c5d8bbee56f07"
+      },
+      {
+        "path": ".claude/skills/pre-push-gate/SKILL.md",
+        "sha": "ddb54b47ca0da62e272c6f8fcf0b69e87b643b56"
+      },
+      {
+        "path": ".claude/skills/project-structure/SKILL.md",
+        "sha": "c67e4e127f8e39c1736fc1e75ffa4c0f4820aac7"
+      },
+      {
+        "path": ".claude/skills/release/SKILL.md",
+        "sha": "4f3fe0bc45e5062876cc3cd70be34fb50221bcba"
+      },
+      {
+        "path": ".claude/skills/security-advisory/SKILL.md",
+        "sha": "f63f22317d518d251b42d9063b0579ccb6561934"
+      },
+      {
+        "path": ".claude/skills/testing/SKILL.md",
+        "sha": "1527dbce82fa8e35a82a547ace488130cbd99400"
+      },
+      {
+        "path": "src/everything/prompts/index.ts",
+        "sha": "22d6a22baf89bfc6eaa6e88316fdd5b206c467b8"
+      },
+      {
+        "path": "src/everything/resources/index.ts",
+        "sha": "d36d948fd42fa71426d2a611ea67f933c6eafe08"
+      },
+      {
+        "path": "src/everything/server/index.ts",
+        "sha": "ee56f48eb1ea908f3d920925cc896b1c09faa6db"
+      },
+      {
+        "path": "src/everything/tools/index.ts",
+        "sha": "361cd67bcb6012574708f7da73c95bd9ef0b3307"
+      },
+      {
+        "path": "package.json",
+        "sha": "e4d1170acaeb876986f06ac7c841b9dfb858ed69"
+      },
+      {
+        "path": "src/everything/package.json",
+        "sha": "77dac768bb8b7504c05472121ff99bed20e8818a"
+      },
+      {
+        "path": "src/filesystem/package.json",
+        "sha": "432fafe77c05d4ed4ee6e8b3ac20adf050a17db6"
+      },
+      {
+        "path": "src/memory/package.json",
+        "sha": "cb1ea6ae7f248efaef602af93eae9179d37a2822"
+      },
+      {
+        "path": "src/sequentialthinking/package.json",
+        "sha": "24e203f53786c796206880787ee5dc536ed8235a"
+      },
+      {
+        "path": "scripts/coverage-py.mjs",
+        "sha": "94e320bc080752550506d57a494befa3875265f6"
+      },
+      {
+        "path": "scripts/dependabot-alerts.mjs",
+        "sha": "ce19de92b02016aeb460cd792934f6fad52d4aaf"
+      },
+      {
+        "path": "scripts/dependency-refresh.mjs",
+        "sha": "5b63fb1ab363260de47dc2c579334275f29b2d0a"
+      },
+      {
+        "path": "scripts/gate-lease.mjs",
+        "sha": "987d1b45fef529b207e60a1ae9de659ebbda8ca8"
+      },
+      {
+        "path": "scripts/interface-diff.mjs",
+        "sha": "59403326c444448e713d1c8ede84a92d0026fe2a"
+      },
+      {
+        "path": "scripts/npm-publish-guard.mjs",
+        "sha": "5687b1aef284b9fee6f5e5b2d5ab43b6f1c12a70"
+      },
+      {
+        "path": "scripts/pack-and-verify.mjs",
+        "sha": "c1b7c9497b1de1980bfb71efd7406a900d37aa69"
+      },
+      {
+        "path": "scripts/prepare-python-release.mjs",
+        "sha": "27fa8cff4391206524b040b77d6da3aa4f35d5be"
+      },
+      {
+        "path": "scripts/release-manifest.mjs",
+        "sha": "db1c7c6aa44ce95870457e7cbe34458afc0491de"
+      },
+      {
+        "path": "scripts/release-notes.mjs",
+        "sha": "fe5eb39362318d829d8c70f92c2e9c8666089abf"
+      },
+      {
+        "path": "scripts/sdk-watch.mjs",
+        "sha": "429fff1a486cf2ce09dbe7c47386f5919e765180"
+      },
+      {
+        "path": "scripts/session-instructions-check.mjs",
+        "sha": "14c20a3970a65a6a0c652fd1281b110d2ef1d37d"
+      },
+      {
+        "path": "scripts/skill-eval.mjs",
+        "sha": "b298ad92fca9026d717d4dd2fe6f339e00b8bc22"
+      },
+      {
+        "path": "scripts/smoke-servers.mjs",
+        "sha": "f0e98f67d55fd6f8ba1f32db79e16b4192f13a0e"
+      },
+      {
+        "path": "scripts/validate-py.mjs",
+        "sha": "ceef6d435cc6ab4db7a8379552e6ff51b92918ee"
+      },
+      {
+        "path": "scripts/verify-action-pins.mjs",
+        "sha": "344dd0095388b74a1a81f46f88db1f9370127dae"
+      },
+      {
+        "path": "scripts/verify-dco.mjs",
+        "sha": "9c3f8c10801af0c84899ea44430a417398555fd3"
+      },
+      {
+        "path": "scripts/verify-dep-lockstep.mjs",
+        "sha": "2baeeae0b21b3f92955a40807941a3bc3235f8b1"
+      },
+      {
+        "path": "scripts/verify-format-coverage.mjs",
+        "sha": "8a0e9b82f71e8403e957443e261b5599068cdf27"
+      },
+      {
+        "path": "scripts/verify-install-fresh.mjs",
+        "sha": "672444ca2bfb3e65a19fc80304abd3a77ef9f0df"
+      },
+      {
+        "path": "scripts/verify-main-source.mjs",
+        "sha": "280f16db1c8df261cfb41219c5d246810ba3f380"
+      },
+      {
+        "path": "scripts/verify-no-test-retries.mjs",
+        "sha": "bfdac56fe1e635139c796bb55f66bb7b3720ea47"
+      },
+      {
+        "path": "scripts/verify-skills-cli.mjs",
+        "sha": "21e3034b334e740540eb8ed5d10c9328c96084df"
+      },
+      {
+        "path": "scripts/verify-skills.mjs",
+        "sha": "c747f17088c770d9404a83766979d0ad9debe0a5"
+      },
+      {
+        "path": "scripts/verify-typecheck-coverage.mjs",
+        "sha": "9b1084b508d954ad4b53afe1643d8a59227b1af4"
+      },
+      {
+        "path": "src/fetch/src/mcp_server_fetch/server.py",
+        "sha": "a36c5a25471e0d656407ddf62bf7e664578b43f8"
+      },
+      {
+        "path": "src/git/src/mcp_server_git/server.py",
+        "sha": "8ced4d97cd635550bd5edbc9eee89cab632613c2"
+      },
+      {
+        "path": "src/time/src/mcp_server_time/server.py",
+        "sha": "e0b15c23c2bd3b1a72590cc94c76ab735e67bf92"
+      },
+      {
+        "path": ".mcp.json",
+        "sha": "5f68642aa159fa1582f62b8b0d914694d3eebc36"
+      },
+      {
+        "path": "ADDITIONAL.md",
+        "sha": "3c25b3557de884374d81eb858567ef3e9a88f77d"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "8fe94f01a724effbadda2939007e2d2a2861b0b9"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "05c32c6053c1edd9a2faaf1b6ebf565c6650fa28"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "99464a5090953350301c6fae298a96c6784e3201"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha": "88195dd67ceedf47dd71bcb460e6ad3cd3898a7e"
+      },
+      {
+        "path": "README.md",
+        "sha": "224364cb6b1ea7af9e52e39d432d8d7d6dabdcdb"
+      },
+      {
+        "path": "RELEASING.md",
+        "sha": "c44cf957735660c1683dc0fe57f86c15d3c8ed6a"
+      },
+      {
+        "path": "scripts/lib/action-refs.mjs",
+        "sha": "b7e4caeb0dc3a1a86a6b4927f42eb36952f51126"
+      },
+      {
+        "path": "scripts/lib/claude-cli.mjs",
+        "sha": "47287e2a1c3b381dff212294e33f5a2db0adca41"
+      },
+      {
+        "path": "scripts/lib/npm-scripts.mjs",
+        "sha": "d0bc75c23410fc53b7559366a30746aba648672f"
+      },
+      {
+        "path": "scripts/lib/pep440.mjs",
+        "sha": "f08b2ae07baa6004f3d96a8a6691c773cccd7052"
+      },
+      {
+        "path": "scripts/lib/py-coverage.mjs",
+        "sha": "2ba4af3925181da5fa01cb001c39d8e42e38d3e9"
+      },
+      {
+        "path": "scripts/lib/resolve-node-bin.mjs",
+        "sha": "810c2ae49afa2f5f94492e38bb4089de2b6b6830"
+      },
+      {
+        "path": "scripts/lib/skill-manifest.mjs",
+        "sha": "4b577ed886ef0253520c729683709b35c38469e7"
+      },
+      {
+        "path": "scripts/lib/sweep.mjs",
+        "sha": "5daea0a0aad20b7a82d9f158d7d5369fd60b2f8f"
+      },
+      {
+        "path": "scripts/lib/tsc-program.mjs",
+        "sha": "12404a70e0ecec6f2d9006747c8d5fab292e069b"
+      },
+      {
+        "path": "scripts/lib/uv-lock.mjs",
+        "sha": "bb1a1a3d67c22bc091452edd4cd9fc3925fa265a"
+      },
+      {
+        "path": "scripts/lib/win-shell-args.mjs",
+        "sha": "151ee87cab87b9e7ac4e2ddc441ffaf98264eeba"
+      },
+      {
+        "path": "scripts/lib/workflow-gate.mjs",
+        "sha": "5dd77e1eb728cf1c5b24731ee95212c1c79b9e27"
+      },
+      {
+        "path": "scripts/lib/workspaces.mjs",
+        "sha": "99d9a22f39b7df6c645291a1e6a8b6d01c114f7a"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "3b0235c2f498279b5db8a574c804cb94b215b71c"
+      },
+      {
+        "path": "src/everything/AGENTS.md",
+        "sha": "cdf5449d4ae76233fd2e63d6e3961ee3c6d5feba"
+      },
+      {
+        "path": "src/everything/CHANGELOG.md",
+        "sha": "44b065bcf54da5c3521ffc39afe48a90f6dc5c5b"
+      },
+      {
+        "path": "src/everything/README.md",
+        "sha": "ec0c81181a9765362dfcebe7548313440deaeddf"
+      },
+      {
+        "path": "src/everything/tsconfig.json",
+        "sha": "56d027dff8accc36cfabbe4cef2fb092cc51deb1"
+      },
+      {
+        "path": "src/everything/version.ts",
+        "sha": "94358d6a7b4a9ea79314add43e9c288062077225"
+      }
+    ],
+    "repo_pushed_at": "2026-10-29T05:27:40Z",
+    "license": "LICENSE-file (type needs review)"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 4
+  },
+  "network": {
+    "calls": 84,
+    "failed": 0,
+    "ms": 4306
+  },
+  "duration_ms": 4336
+}

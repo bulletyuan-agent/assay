@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T142715Z",
+  "target": {
+    "source": "github",
+    "id": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "name": "skills"
+  },
+  "type": "skill",
+  "evaluated_at": "2026-11-02T14:29:16.778Z",
+  "method_version": "0.2.0",
+  "tool": {
+    "assay_commit": "386fade9a9c8c2bf8699acf7b79adb01b8af734d",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.2.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "ca45fc496a3436251f191354091d557da31c15b5",
+    "files_scanned": 80,
+    "candidates": 254,
+    "excluded_non_shipped": 8,
+    "coverage": 0.31,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "template/SKILL.md",
+        "sha": "50a4f9b104357d96361e257adb70454604cd15c0"
+      },
+      {
+        "path": "skills/academy-guide/SKILL.md",
+        "sha": "cefeaeb20cc29a803af0335d7c7155b066d8770f"
+      },
+      {
+        "path": "skills/algorithmic-art/SKILL.md",
+        "sha": "634f6fa42e4e697fa6afd293acd7fb8246574876"
+      },
+      {
+        "path": "skills/brand-guidelines/SKILL.md",
+        "sha": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59"
+      },
+      {
+        "path": "skills/canvas-design/SKILL.md",
+        "sha": "9f63fee82de84cd4230e1d0e322247b61eb4c94c"
+      },
+      {
+        "path": "skills/claude-api/SKILL.md",
+        "sha": "fe7e28a55c713933ff98e017112e53c61d8f5537"
+      },
+      {
+        "path": "skills/discernment-nudge/SKILL.md",
+        "sha": "49ebbcad692ffdf70e518087468609a5c4ab9e22"
+      },
+      {
+        "path": "skills/doc-coauthoring/SKILL.md",
+        "sha": "a5a69839ef4a161131d80b6daef10037a9686f4a"
+      },
+      {
+        "path": "skills/docx/SKILL.md",
+        "sha": "fb954a460a1ea2294e9595e87fecce8df043eeba"
+      },
+      {
+        "path": "skills/frontend-design/SKILL.md",
+        "sha": "a5333457c414d20d625f307df945842c0952ecc3"
+      },
+      {
+        "path": "skills/internal-comms/SKILL.md",
+        "sha": "56ea935b74f371bfeb4c7d3c19d5139df866e73b"
+      },
+      {
+        "path": "skills/mcp-builder/SKILL.md",
+        "sha": "d61a9056202a0f8b2d064c896e62f415c45b1bf1"
+      },
+      {
+        "path": "skills/pdf/SKILL.md",
+        "sha": "d3e046a5ae107a6cb23cfb16c219837094ab35d3"
+      },
+      {
+        "path": "skills/pptx/SKILL.md",
+        "sha": "41cd2306977f269bb1d8169a9643b35053aa66bd"
+      },
+      {
+        "path": "skills/skill-creator/SKILL.md",
+        "sha": "65b3a402dbd09b8e83f9d637c6b553875189085c"
+      },
+      {
+        "path": "skills/slack-gif-creator/SKILL.md",
+        "sha": "16660d8ceb77af47986bba1c9176c2ff3f287a91"
+      },
+      {
+        "path": "skills/theme-factory/SKILL.md",
+        "sha": "90dfceaf2ecdc191a4dcfb0069768a9560638998"
+      },
+      {
+        "path": "skills/web-artifacts-builder/SKILL.md",
+        "sha": "8b39b19f259b4216ecb07574741dd8eaa9863a07"
+      },
+      {
+        "path": "skills/webapp-testing/SKILL.md",
+        "sha": "4726215301db64a0cc4d41fc3219c61f37a30f4a"
+      },
+      {
+        "path": "skills/xlsx/SKILL.md",
+        "sha": "9da54804cc8c938586f89363c8da3b3a6e2a563d"
+      },
+      {
+        "path": "README.md",
+        "sha": "eb54ee8b92f2d40b4b26569be0772be3c1e23156"
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.md",
+        "sha": "ffef92c48b351a3ed036556ed32dda934e8cf41a"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "1969092344b3405a5459f82c1dd252d30b335a6e"
+      },
+      {
+        "path": "skills/academy-guide/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/algorithmic-art/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/brand-guidelines/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/canvas-design/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/claude-api/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/discernment-nudge/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/docx/LICENSE.txt",
+        "sha": "c55ab42224874608473643de0a85736b7fec0730"
+      },
+      {
+        "path": "skills/frontend-design/LICENSE.txt",
+        "sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+      },
+      {
+        "path": "skills/internal-comms/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/mcp-builder/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/pdf/forms.md",
+        "sha": "6e7e1e0d9e6ae17215db3e130aea3c3c546487e6"
+      },
+      {
+        "path": "skills/pdf/LICENSE.txt",
+        "sha": "c55ab42224874608473643de0a85736b7fec0730"
+      },
+      {
+        "path": "skills/pdf/reference.md",
+        "sha": "41400bf4fc67f15fb062d43695ec92f078226023"
+      },
+      {
+        "path": "skills/pptx/LICENSE.txt",
+        "sha": "c55ab42224874608473643de0a85736b7fec0730"
+      },
+      {
+        "path": "skills/skill-creator/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/slack-gif-creator/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/slack-gif-creator/requirements.txt",
+        "sha": "8bc4493e9163cb513d4be38ab9fe5c1ff763e0d7"
+      },
+      {
+        "path": "skills/theme-factory/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/web-artifacts-builder/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/webapp-testing/LICENSE.txt",
+        "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+      },
+      {
+        "path": "skills/xlsx/LICENSE.txt",
+        "sha": "c55ab42224874608473643de0a85736b7fec0730"
+      },
+      {
+        "path": "skills/algorithmic-art/templates/generator_template.js",
+        "sha": "e263fbde985cd4b84b28e6a8eaf07fca3fcd3557"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/ArsenalSC-OFL.txt",
+        "sha": "1dad6ca6de2b041ef35c0f5009239ede4567e1f4"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/BigShoulders-OFL.txt",
+        "sha": "b220280e780d0b52a1efb259f44f332cfa9dcab4"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/Boldonse-OFL.txt",
+        "sha": "1890cb1c226f32e581a9ca30cb06e01f2d251168"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/BricolageGrotesque-OFL.txt",
+        "sha": "fc2b2167c3ccc6fa6f41ab38cb5bde9b3b808769"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/CrimsonPro-OFL.txt",
+        "sha": "f976fdc910257e3de8f4b24475963edb81b6ba46"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/DMMono-OFL.txt",
+        "sha": "5b17f0c628c0a76ceb057e1b44d0112ab9a63ad2"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/EricaOne-OFL.txt",
+        "sha": "490d012017f42bee136a3d3cb0d79ef9c3ba4561"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/GeistMono-OFL.txt",
+        "sha": "679a685a2343079632b0dd836fecb7cefbea6f0d"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/Gloock-OFL.txt",
+        "sha": "363acd33d9e37e60b9941229448244b6a2d22461"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/IBMPlexMono-OFL.txt",
+        "sha": "e423b74780b16934a073769bd147d46479ceb8b2"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/InstrumentSans-OFL.txt",
+        "sha": "4bb99142f612dfaa0053377934b47e466800b20e"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/Italiana-OFL.txt",
+        "sha": "ba8af215bb486cc7f3f9acfa5df895d5ba2d89ae"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/JetBrainsMono-OFL.txt",
+        "sha": "5ceee0025da23d2cd5fd14b28569708a8db4db2b"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/Jura-OFL.txt",
+        "sha": "64ad4c67d29fb44d037a400881c3c7a3d227cacf"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/LibreBaskerville-OFL.txt",
+        "sha": "8c531fa56848a48577f9aa3b3e8051f3682e87f4"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/Lora-OFL.txt",
+        "sha": "4cf1b950d308edaee72401989e45410ea99e76a4"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/NationalPark-OFL.txt",
+        "sha": "f4ec3fba915df6e072b72fed691f1032d440544d"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/NothingYouCouldDo-OFL.txt",
+        "sha": "c81eccdee9a75cebdd400cc39ff5a0bb7bd1eaa3"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/Outfit-OFL.txt",
+        "sha": "fd0cb995c0cadfa28394e7f9b88b7e43c783b453"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/PixelifySans-OFL.txt",
+        "sha": "b02d1b6767c0cd44a3a3afeddef03778f10e6ad2"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/PoiretOne-OFL.txt",
+        "sha": "607bdad3fd41bf7915b74271cd4c67f3319c00e6"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/RedHatMono-OFL.txt",
+        "sha": "16cf394bb1bd5100686703ebc4a3772a568e0e6a"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/Silkscreen-OFL.txt",
+        "sha": "a1fe7d5fbe4182d1071a23f8a8c46b9766eec81c"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/SmoochSans-OFL.txt",
+        "sha": "4c2f033ac0e041f61d88d255c4bb02ee28b6f3cb"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/Tektur-OFL.txt",
+        "sha": "2cad55f1b2d239571560773c92801166cb2be635"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/WorkSans-OFL.txt",
+        "sha": "070f3416c4767c3396120b5942627f6d3d5bab10"
+      },
+      {
+        "path": "skills/canvas-design/canvas-fonts/YoungSerif-OFL.txt",
+        "sha": "f09443cbe4dfca41153edf6f9dd8fd63138a24b3"
+      },
+      {
+        "path": "skills/claude-api/curl/examples.md",
+        "sha": "78b19edc1cc37a43e7f163cfbe63f7bec8b32865"
+      },
+      {
+        "path": "skills/claude-api/curl/managed-agents.md",
+        "sha": "3c64df0d89af4802f81452f34ebb9bc0bc5f299f"
+      },
+      {
+        "path": "skills/claude-api/shared/admin-api.md",
+        "sha": "a688f7b5cafa17cfb14c9a676d692d4a9573ae5f"
+      },
+      {
+        "path": "skills/claude-api/shared/agent-design.md",
+        "sha": "517cec6b2a5529296b999916f43533425d30effb"
+      },
+      {
+        "path": "skills/claude-api/shared/anthropic-cli.md",
+        "sha": "13911dadc87be8d3829ad9a9cba53d33dbe06b22"
+      },
+      {
+        "path": "skills/claude-api/shared/claude-platform-on-aws.md",
+        "sha": "f2a9f84f2b63b553b4af7af2fddaae129247db06"
+      },
+      {
+        "path": "skills/claude-api/shared/cost-optimization.md",
+        "sha": "f69f9d28880b6aa56ac33aa2f6987586c5ad7f74"
+      },
+      {
+        "path": "skills/claude-api/shared/error-codes.md",
+        "sha": "f2d63f962bb522b7faac478cd3b21f81d2388e3f"
+      }
+    ],
+    "repo_pushed_at": "2026-10-28T19:20:39Z",
+    "license": null
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": false,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 5
+  },
+  "network": {
+    "calls": 87,
+    "failed": 4,
+    "ms": 25861
+  },
+  "duration_ms": 25866
+}

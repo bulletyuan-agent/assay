@@ -46,6 +46,7 @@ export function stripComments(text, path) {
     .replace(/(^|[^:\\'"`])\/\/.*$/gm, (m, pre) => pre + ' '.repeat(m.length - pre.length));
 }
 // Reserved or documentation-only hosts and domains are placeholders, never real egress.
+const NETWORK_PRIMITIVE = /\b(fetch|axios|got|undici|request|XMLHttpRequest|WebSocket|EventSource)\s*\(|https?\.(request|get)\s*\(|\b(requests|httpx|urllib\d?|aiohttp)\b|\bcurl\b|\bwget\b|child_process|net\.connect|new\s+Socket/;
 const PLACEHOLDER_HOST = /(^|\.)(example\.(com|org|net)|invalid|test|localhost|local)$|\.example$|^example$/i;
 const CODE_RE = /\.(m?[jt]sx?|py|sh|rb|go)$/i;
 const TEXT_RE = /(\.(md|json|ya?ml|txt)|SKILL\.md)$/i;
@@ -116,6 +117,8 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   const declared = new Set();
   for (const f of code) {
     const clean = stripComments(f.text, f.path);
+    // A URL only counts as egress when the same file can actually make network calls. Links in error messages do not.
+    if (!NETWORK_PRIMITIVE.test(clean)) continue;
     for (const m of clean.matchAll(/https?:\/\/([a-z0-9.-]+)/gi)) {
       const h = m[1].toLowerCase();
       if (h !== ownHost && !PLACEHOLDER_HOST.test(h) && !ALLOW_HOSTS.some((a) => h === a || h.endsWith(`.${a}`))) {

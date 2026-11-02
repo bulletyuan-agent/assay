@@ -1,0 +1,412 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T142715Z",
+  "target": {
+    "source": "github",
+    "id": "ChromeDevTools/chrome-devtools-mcp",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "name": "chrome-devtools-mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:28:11.932Z",
+  "method_version": "0.2.0",
+  "tool": {
+    "assay_commit": "386fade9a9c8c2bf8699acf7b79adb01b8af734d",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.2.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "aade3be8f65d8afc941c97b498b9752ef562f181",
+    "files_scanned": 80,
+    "candidates": 217,
+    "excluded_non_shipped": 117,
+    "coverage": 0.37,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "src/index.ts",
+        "sha": "f8a96c758e2ae0841d98bf7f74b9f57e9d6cce7c"
+      },
+      {
+        "path": "server.json",
+        "sha": "cefb63b8346c5e2d1bb64a05137b881a47453a9c"
+      },
+      {
+        "path": "skills/a11y-debugging/SKILL.md",
+        "sha": "d6b2413b7aa090c8a5c605982456811767a3c622"
+      },
+      {
+        "path": "skills/chrome-devtools-cli/references/installation.md",
+        "sha": "179ecb401c90e1cb94ecc19c7dd04392ad9448fa"
+      },
+      {
+        "path": "skills/chrome-devtools-cli/SKILL.md",
+        "sha": "b1e8ae12b3e685b181a729561ce001bc37a31908"
+      },
+      {
+        "path": "skills/chrome-devtools/SKILL.md",
+        "sha": "ab71579f7667050ef13d8c87c9fcdde522271482"
+      },
+      {
+        "path": "skills/cookie-debugging/SKILL.md",
+        "sha": "2a0d5663dd94cba6c89a3c9d1a76d066b949f1d6"
+      },
+      {
+        "path": "skills/debug-optimize-lcp/SKILL.md",
+        "sha": "89b48b64b0352c850e64c8db7cdfbd3527361f54"
+      },
+      {
+        "path": "skills/memory-leak-debugging/SKILL.md",
+        "sha": "5f2adc3abf021b118892ed87fdba803e702947e3"
+      },
+      {
+        "path": "skills/troubleshooting/SKILL.md",
+        "sha": "94a23d4cb7f4dfce11eacf6f0e418d445f12fb50"
+      },
+      {
+        "path": "src/third_party/cli.ts",
+        "sha": "73c4bbedfbfe438e5b8e8d8768957cc30f38aa52"
+      },
+      {
+        "path": "src/third_party/index.ts",
+        "sha": "3b9a65588982caa30a89f469225e65b9eb779926"
+      },
+      {
+        "path": "src/tools/tools.ts",
+        "sha": "9bd86ee99f67e44049713c989e599cf1da56a0f3"
+      },
+      {
+        "path": "src/telemetry/watchdog/main.ts",
+        "sha": "ec3ccc3df1cb7b595e03bfb6258d8c740f2355a0"
+      },
+      {
+        "path": "src/tools/slim/tools.ts",
+        "sha": "3f6aa5fb24019ccd890fec245894716199d95411"
+      },
+      {
+        "path": "package.json",
+        "sha": "ad188c317327895eb4c3ce0ba6a51515dc3ac54c"
+      },
+      {
+        "path": "scripts/append-lighthouse-notices.ts",
+        "sha": "2c6d1ba899b531f34e6da2c0a1b1ae14cc6346b1"
+      },
+      {
+        "path": "scripts/clean-submodules.ts",
+        "sha": "981eae509d5a97d2408a4872b7a08f2c80b009b5"
+      },
+      {
+        "path": "scripts/count_tokens.ts",
+        "sha": "22a24b0c7b657094bc7576583fb5e8cf1569f672"
+      },
+      {
+        "path": "scripts/eval_gemini.ts",
+        "sha": "9712ca229240b2a79fdacadf56587a13fc51fdf0"
+      },
+      {
+        "path": "scripts/eval_result.ts",
+        "sha": "2593156f7ae378700c0992e2665431f0972679ed"
+      },
+      {
+        "path": "scripts/generate-cli.ts",
+        "sha": "231e8d7396b1f1e72aa715810818150d88799311"
+      },
+      {
+        "path": "scripts/generate-docs.ts",
+        "sha": "a0eed330bd82cd00cbb576b1fdbb9c1f6aec3370"
+      },
+      {
+        "path": "scripts/post-build.ts",
+        "sha": "90e4db17f967a7583396f826edbb101e96592e16"
+      },
+      {
+        "path": "scripts/prepare.ts",
+        "sha": "b12a2a5c145e716b13c28c548bcbb0170bd7266f"
+      },
+      {
+        "path": "scripts/test.js",
+        "sha": "f334e408d9dabf4abae9d6629b3289c97e36884e"
+      },
+      {
+        "path": "scripts/tsconfig.json",
+        "sha": "1a65b2e083a12c285fef47c0fad46486e858bf9c"
+      },
+      {
+        "path": "scripts/update_metrics.ts",
+        "sha": "4e7983396203ee2985ebee44f5d2b0d7af4ef770"
+      },
+      {
+        "path": "scripts/update-lighthouse.ts",
+        "sha": "5485e70c08ccac25dd418407732a0436f7a78e21"
+      },
+      {
+        "path": "scripts/verify-npm-package.js",
+        "sha": "98d1a81e347f5f7e9023b48b7d4c19ce329739be"
+      },
+      {
+        "path": "scripts/verify-server-json-version.ts",
+        "sha": "81deb147aa4897ef065cefd7a99a8d429f62555b"
+      },
+      {
+        "path": "src/BrowserManager.ts",
+        "sha": "66a1195d9bb7e1f2bcffb1614e5ed8d6f028b353"
+      },
+      {
+        "path": "src/McpContext.ts",
+        "sha": "8a67d0cb05cb2abb0d47f6d892d9d3dc1eb8b15f"
+      },
+      {
+        "path": "src/McpPage.ts",
+        "sha": "0e1cabdee055a1887c395bb3d4e9d5c6295fa242"
+      },
+      {
+        "path": "src/McpResponse.ts",
+        "sha": "63f95081834036c2a1e1d3e4a442a42295cac098"
+      },
+      {
+        "path": "src/McpWorker.ts",
+        "sha": "1e125bec5f914951f0e044e756b69cded85430d4"
+      },
+      {
+        "path": "src/SlimMcpResponse.ts",
+        "sha": "c474ed8dff04922d0b2de0b91c3f950c2c824e25"
+      },
+      {
+        "path": "src/TextSnapshot.ts",
+        "sha": "5586cd8cd7eb337b6c821ecda2ee71b0b1b17738"
+      },
+      {
+        "path": "src/ToolHandler.ts",
+        "sha": "569d1c2ffb676a61299e19f844ec2984f830073d"
+      },
+      {
+        "path": "src/types.ts",
+        "sha": "320faed34c6f1101baeeac962ff1c4e2d2170ec0"
+      },
+      {
+        "path": "src/version.ts",
+        "sha": "f72a1a0a0b0393025fbe096aff2b32ed9075627d"
+      },
+      {
+        "path": ".release-please-manifest.json",
+        "sha": "a09efe7f87ae43d09472da2fe645ba8acf39b0c3"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "f06c55cf220b4a12e4f391f007cf3fdbc8abb37e"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "c396ce31c82f842da0da1eb1ee7f2e996fa13130"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha": "7c1342bca20bc2f5dd87c2106e5c26e038bb6584"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "662a2cc572801f4c91f72ea5e2aaa7a03f2e4179"
+      },
+      {
+        "path": "mcp.json",
+        "sha": "456fab037164888b8cd173ce0ad4a91095ef45a6"
+      },
+      {
+        "path": "plugin.json",
+        "sha": "1824f496db38964bd66c8ace2bcde775bbde8cc5"
+      },
+      {
+        "path": "prettier.config.js",
+        "sha": "f1eee8aa7b75cac105ae695ce2b0ae0c83a07025"
+      },
+      {
+        "path": "puppeteer.config.js",
+        "sha": "194340ac427ee72d6a41990d728e5b731474bccd"
+      },
+      {
+        "path": "README.md",
+        "sha": "970f869de1a33bfb798e36d3a46976e94c025ae1"
+      },
+      {
+        "path": "release-please-config.json",
+        "sha": "afdf48f5d80663cff0550121a7ebdcd15bc3cf59"
+      },
+      {
+        "path": "rollup.config.js",
+        "sha": "76cd9dd8fb3f359e6a100258eff2fa0bbd432f47"
+      },
+      {
+        "path": "scripts/eslint_rules/check-license-rule.js",
+        "sha": "7616d63d0fd42285dfe5e73638a3154d6bec3c7d"
+      },
+      {
+        "path": "scripts/eslint_rules/enforce-using-rule.js",
+        "sha": "734ddd6b24d5055875707a1c6f5b88bafaef2674"
+      },
+      {
+        "path": "scripts/eslint_rules/enforce-zod-schema-rule.js",
+        "sha": "d75dfb11d2b0480c51eef79df305fab313201ba8"
+      },
+      {
+        "path": "scripts/eslint_rules/local-plugin.js",
+        "sha": "b959c6738d7f8553e9d201157896b5839a0e3b9e"
+      },
+      {
+        "path": "scripts/eslint_rules/no-direct-third-party-imports-rule.js",
+        "sha": "111ffa9112a8b419565ed9273023d9862c761fc8"
+      },
+      {
+        "path": "scripts/eslint_rules/no-sinon-restore-in-hooks-rule.js",
+        "sha": "17110bf509542e22f91be448dd7df1c63709353d"
+      },
+      {
+        "path": "scripts/eslint_rules/require-parsed-arguments-rule.js",
+        "sha": "e32f451838ab1243046ca3c8b6053d10cb5a2bea"
+      },
+      {
+        "path": "scripts/eval_scenarios/console_test.ts",
+        "sha": "125b1e925913f8271b988286221cae873100d79b"
+      },
+      {
+        "path": "scripts/eval_scenarios/cookie_banner_conformance_test.ts",
+        "sha": "0871ed7c0d756cd2c2c1e4aa823f6a47997fd75c"
+      },
+      {
+        "path": "scripts/eval_scenarios/cookie_debugging_test.ts",
+        "sha": "2947a56c3b5c9b6589160eb7364e5338bee2cfda"
+      },
+      {
+        "path": "scripts/eval_scenarios/cookie_httponly_trigger_test.ts",
+        "sha": "0411e20d3d591e0f2955139431bbdb0dd8048934"
+      },
+      {
+        "path": "scripts/eval_scenarios/cookie_issues_audit_test.ts",
+        "sha": "4682c55888116675d1e4e59e11a6998363ca2791"
+      },
+      {
+        "path": "scripts/eval_scenarios/css_cascade_layer_override_test.ts",
+        "sha": "decd153e73f90af083d5a73c9438e3aa0650ba10"
+      },
+      {
+        "path": "scripts/eval_scenarios/css_custom_property_resolution_test.ts",
+        "sha": "d2a8f2d122406fc88e50b180ca30e22ac64a4f1a"
+      },
+      {
+        "path": "scripts/eval_scenarios/css_descendant_specificity_test.ts",
+        "sha": "47d90e821d591fee09c0f341c340165c64da532d"
+      },
+      {
+        "path": "scripts/eval_scenarios/css_important_vs_specificity_test.ts",
+        "sha": "7f5ccc0637d55330328f33cad783ec6ed0dd6443"
+      },
+      {
+        "path": "scripts/eval_scenarios/css_inline_style_override_test.ts",
+        "sha": "c0a5c0d511daafb75a0450f00e5aac44ced375c6"
+      },
+      {
+        "path": "scripts/eval_scenarios/emulation_test.ts",
+        "sha": "9456e451ecc995c44cc21bb6d960cc290360a016"
+      },
+      {
+        "path": "scripts/eval_scenarios/emulation_userAgent_test.ts",
+        "sha": "0fb4959cd878c6a02c4e3cd1fbe32ea9b99da22a"
+      },
+      {
+        "path": "scripts/eval_scenarios/emulation_viewport_test.ts",
+        "sha": "52a945a3d4cacac699ac3e890d6bac7454321e5a"
+      },
+      {
+        "path": "scripts/eval_scenarios/fill_select_and_checkboxes_test.ts",
+        "sha": "cb66cbbf3ee78b1530e3877f4cb5e9163e97492f"
+      },
+      {
+        "path": "scripts/eval_scenarios/fix_webpage_issues_test.ts",
+        "sha": "444def9463b1dc89667474050431846df900cc0c"
+      },
+      {
+        "path": "scripts/eval_scenarios/frontend_snapshot_test.ts",
+        "sha": "c2166fead30ce9d54374aa289f0db41dce176c3d"
+      },
+      {
+        "path": "scripts/eval_scenarios/input_parallel_test.ts",
+        "sha": "7c466b8575faa68c60641de47a513c74667783ef"
+      },
+      {
+        "path": "scripts/eval_scenarios/input_test.ts",
+        "sha": "e7fef7a0b7f7f9a1d5b8f6de7498a7f0e29a58b9"
+      },
+      {
+        "path": "scripts/eval_scenarios/isolated_context_test.ts",
+        "sha": "c1ae69a380020fb11fab0ce3ceaee0b8f88b82f7"
+      },
+      {
+        "path": "scripts/eval_scenarios/lighthouse_a11y_test.ts",
+        "sha": "457192fa7d9f0546a5e7dee4203bd126dc07b683"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T13:32:53Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 93,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/BrowserManager.ts",
+      "line": 114,
+      "snippet": "'(https://crbug.com/638180). Run chrome-devtools-mcp as a non-root user; in a ' +",
+      "host": "crbug.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/BrowserManager.ts",
+      "line": 117,
+      "snippet": "'https://pptr.dev/troubleshooting#setting-up-chrome-linux-sandbox.',",
+      "host": "pptr.dev",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "crbug.com",
+      "pptr.dev"
+    ],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 25970
+  },
+  "duration_ms": 25983
+}

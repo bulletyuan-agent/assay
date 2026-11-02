@@ -9,7 +9,7 @@ import { execFileSync } from 'node:child_process';
 import { parseTarget, fetchMeta, guessType, NET } from './lib.mjs';
 import { evaluateStatic, githubFiles, checkGates } from './evaluate.mjs';
 
-export const METHOD_VERSION = '0.2.0';
+export const METHOD_VERSION = '0.2.1';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
 let urls = [];

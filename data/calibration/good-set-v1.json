@@ -1,0 +1,249 @@
+{
+  "set": "good-set-v1",
+  "pre_registered_before_scoring": true,
+  "policy": "Selected by reputation before any score was seen. Items are kept even if the screen flags them (that is a measured false positive, not a reason to drop them). Excludes the 7 development repos.",
+  "candidates_total": 40,
+  "unreachable": [],
+  "items": [
+    {
+      "id": "g1-sentry-mcp",
+      "label": "good",
+      "url": "https://github.com/getsentry/sentry-mcp",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-server-cloudflare",
+      "label": "good",
+      "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-context7",
+      "label": "good",
+      "url": "https://github.com/upstash/context7",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-supabase-mcp",
+      "label": "good",
+      "url": "https://github.com/supabase-community/supabase-mcp",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mongodb-mcp-server",
+      "label": "good",
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-terraform-mcp-server",
+      "label": "good",
+      "url": "https://github.com/hashicorp/terraform-mcp-server",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-grafana",
+      "label": "good",
+      "url": "https://github.com/grafana/mcp-grafana",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-atlassian",
+      "label": "good",
+      "url": "https://github.com/sooperset/mcp-atlassian",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-serena",
+      "label": "good",
+      "url": "https://github.com/oraios/serena",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-tavily-mcp",
+      "label": "good",
+      "url": "https://github.com/tavily-ai/tavily-mcp",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-exa-mcp-server",
+      "label": "good",
+      "url": "https://github.com/exa-labs/exa-mcp-server",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-brave-search-mcp-server",
+      "label": "good",
+      "url": "https://github.com/brave/brave-search-mcp-server",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-server-neon",
+      "label": "good",
+      "url": "https://github.com/neondatabase/mcp-server-neon",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-figma-context-mcp",
+      "label": "good",
+      "url": "https://github.com/GLips/Figma-Context-MCP",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-agent-toolkit",
+      "label": "good",
+      "url": "https://github.com/stripe/agent-toolkit",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-typescript-sdk",
+      "label": "good",
+      "url": "https://github.com/modelcontextprotocol/typescript-sdk",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-python-sdk",
+      "label": "good",
+      "url": "https://github.com/modelcontextprotocol/python-sdk",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-fastmcp",
+      "label": "good",
+      "url": "https://github.com/jlowin/fastmcp",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-markitdown",
+      "label": "good",
+      "url": "https://github.com/microsoft/markitdown",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-playwright",
+      "label": "good",
+      "url": "https://github.com/executeautomation/mcp-playwright",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-slack-mcp-server",
+      "label": "good",
+      "url": "https://github.com/korotovsky/slack-mcp-server",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-agent-skills",
+      "label": "good",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-superpowers",
+      "label": "good",
+      "url": "https://github.com/obra/superpowers",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-skills",
+      "label": "good",
+      "url": "https://github.com/openai/skills",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-skills",
+      "label": "good",
+      "url": "https://github.com/huggingface/skills",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp",
+      "label": "good",
+      "url": "https://github.com/awslabs/mcp",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-gateway",
+      "label": "good",
+      "url": "https://github.com/docker/mcp-gateway",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-server-elasticsearch",
+      "label": "good",
+      "url": "https://github.com/elastic/mcp-server-elasticsearch",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-redis",
+      "label": "good",
+      "url": "https://github.com/redis/mcp-redis",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-pinecone-mcp",
+      "label": "good",
+      "url": "https://github.com/pinecone-io/pinecone-mcp",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-auth0-mcp-server",
+      "label": "good",
+      "url": "https://github.com/auth0/auth0-mcp-server",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-server",
+      "label": "good",
+      "url": "https://github.com/mapbox/mcp-server",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-server-mysql",
+      "label": "good",
+      "url": "https://github.com/benborla/mcp-server-mysql",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-browser-tools-mcp",
+      "label": "good",
+      "url": "https://github.com/AgentDeskAI/browser-tools-mcp",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mem0-mcp",
+      "label": "good",
+      "url": "https://github.com/mem0ai/mem0-mcp",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-server-qdrant",
+      "label": "good",
+      "url": "https://github.com/qdrant/mcp-server-qdrant",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-mcp-clickhouse",
+      "label": "good",
+      "url": "https://github.com/ClickHouse/mcp-clickhouse",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-heroku-mcp-server",
+      "label": "good",
+      "url": "https://github.com/heroku/heroku-mcp-server",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-netlify-mcp",
+      "label": "good",
+      "url": "https://github.com/netlify/netlify-mcp",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    },
+    {
+      "id": "g1-langchain-mcp-adapters",
+      "label": "good",
+      "url": "https://github.com/langchain-ai/langchain-mcp-adapters",
+      "basis": "widely used, maintained by an established organisation or very popular project; reputation, not an audit"
+    }
+  ]
+}

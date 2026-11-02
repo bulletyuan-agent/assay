@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154652Z",
+  "target": {
+    "source": "github",
+    "id": "tavily-ai/tavily-mcp",
+    "url": "https://github.com/tavily-ai/tavily-mcp",
+    "name": "tavily-mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:47:15.413Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "3be0c424ed2e9132e3830aa6a8a41ba96becd6d6",
+    "files_scanned": 7,
+    "candidates": 7,
+    "excluded_non_shipped": 1,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/index.ts",
+        "sha": "b9dd0cc72a068d8806bd578fe4ef511a964088cd"
+      },
+      {
+        "path": "package.json",
+        "sha": "d3b1cac4ca083af8b8d8087a875c0f855726d82f"
+      },
+      {
+        "path": "src/format-results.ts",
+        "sha": "2d01103db34291e50eaa9048ca4e9b9a8ee503ac"
+      },
+      {
+        "path": "package-lock.json",
+        "sha": "b3bec360522b2ac17bbb085bdb5b3847aa94d278"
+      },
+      {
+        "path": "README.md",
+        "sha": "ae173304e7107ff3b097e6e2a7ba9d973b6790d1"
+      },
+      {
+        "path": "smithery.yaml",
+        "sha": "443a5fc6b753fe39e116bfc9c57c990231b7d7df"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "a14bee07055b3cd300c82b3a53f4192512349392"
+      }
+    ],
+    "repo_pushed_at": "2026-10-29T15:09:45Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 7,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 4
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1441
+  },
+  "duration_ms": 1458
+}

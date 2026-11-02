@@ -1,0 +1,1768 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154338Z",
+  "target": {
+    "source": "github",
+    "id": "getsentry/sentry-mcp",
+    "url": "https://github.com/getsentry/sentry-mcp",
+    "name": "toolkit"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:43:44.446Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "b7c23cf40abb42dbddcf8db5b9fe088d5bb09297",
+    "files_scanned": 400,
+    "candidates": 1478,
+    "excluded_non_shipped": 1142,
+    "coverage": 0.27,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/install-scripts.yml",
+        "sha": "d9d6a603be421f193ca2904ec1e1b26fff8b6bd4"
+      },
+      {
+        "path": ".mcp.json",
+        "sha": "4e1e006d90d4154b4464899deadf381ed80d39a7"
+      },
+      {
+        "path": "packages/cli/.cursor/skills/sentry-cli/SKILL.md",
+        "sha": "7b44d2c9cac37113513306b3c6f14deb08327843"
+      },
+      {
+        "path": ".claude/settings.json",
+        "sha": "ae2a3966b79d04f309aece906d63aa7187f88ef4"
+      },
+      {
+        "path": ".claude/skills",
+        "sha": "2b7a412b8fa0fb7e985b0793321bd4e698f2b6cd"
+      },
+      {
+        "path": ".cursor/mcp.json",
+        "sha": "ed210289387c503b4a5299a9ed42e1f642290511"
+      },
+      {
+        "path": ".cursor/skills",
+        "sha": "2b7a412b8fa0fb7e985b0793321bd4e698f2b6cd"
+      },
+      {
+        "path": ".vscode/extensions.json",
+        "sha": "0ef1e247fdb5aa7c530b8d9e8ac81ebcb7741e29"
+      },
+      {
+        "path": ".vscode/mcp.json",
+        "sha": "a8372ae22e69d4f17b0f263a9919817494bcd549"
+      },
+      {
+        "path": ".vscode/settings.json",
+        "sha": "8daad2ef7502562d822bd49fb18999e46e985694"
+      },
+      {
+        "path": ".cursor/commands/opsx-apply.md",
+        "sha": "9c171786b4ecf9936c9a3ab6fab70e79fb847c19"
+      },
+      {
+        "path": ".cursor/commands/opsx-archive.md",
+        "sha": "8e3553cf33727e9e5c4ab2906dd91ce3ef455b30"
+      },
+      {
+        "path": ".cursor/commands/opsx-explore.md",
+        "sha": "ba1339b44eeb7953e879166fe839ed120d4ce4ef"
+      },
+      {
+        "path": ".cursor/commands/opsx-propose.md",
+        "sha": "1744ba3e92f7c60c7feca3903e165bae938e083c"
+      },
+      {
+        "path": ".cursor/commands/opsx-sync.md",
+        "sha": "7bd8828246769723d584f1393bd33ee25394f23b"
+      },
+      {
+        "path": ".github/workflows/cli-build.yml",
+        "sha": "afd8c9ef92eeaa03627d5f9b000b8eb957feed96"
+      },
+      {
+        "path": ".github/workflows/cli-nightly-watchdog.yml",
+        "sha": "42a2d86bffdb12d4afd0634d47b1c8551ed8340c"
+      },
+      {
+        "path": ".github/workflows/deploy-docs-mcp.yml",
+        "sha": "3bd2c12e1655dab25ab680c248d77acfeabefd5f"
+      },
+      {
+        "path": ".github/workflows/deploy.yml",
+        "sha": "c4043b77fb9302cb5ec751e737d6fbfff8a1d39a"
+      },
+      {
+        "path": ".github/workflows/eval.yml",
+        "sha": "6d54abbabcbc7630bdf98c9507ddbd83fbc42c12"
+      },
+      {
+        "path": ".github/workflows/local.yml",
+        "sha": "c287154ad2bb7199fa5f234f31ab4e8c6659ece9"
+      },
+      {
+        "path": ".github/workflows/merge-jobs.yml",
+        "sha": "86f6b8600953d1b2681b7925879133289b84a09e"
+      },
+      {
+        "path": ".github/workflows/migrate-cloudflare-token.yml",
+        "sha": "4420fd6003d632d346730927b98559e80509f593"
+      },
+      {
+        "path": ".github/workflows/pr-risk-jev.yml",
+        "sha": "e75aa116d844d411bc6ffcd5cd7a3216926098be"
+      },
+      {
+        "path": ".github/workflows/pr-risk-labels-test.yml",
+        "sha": "5f54f625d22d27317acf4af7ca3b3580e5942307"
+      },
+      {
+        "path": ".github/workflows/recover-cloudflare-deployment.yml",
+        "sha": "710a9b1e1df5217395fb18e3de820bce46f8a489"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "fcd0d63dad0748391d76cba5072cf4ab008c68e5"
+      },
+      {
+        "path": ".github/workflows/smoke-tests.yml",
+        "sha": "84147a204ac19680ad3d690c00862b3daca74811"
+      },
+      {
+        "path": ".github/workflows/test.yml",
+        "sha": "47402b236c8d30a5298bd5139ceb53a075db728a"
+      },
+      {
+        "path": ".github/workflows/token-cost.yml",
+        "sha": "40217e2998722257f99afb345a112a65d8b00472"
+      },
+      {
+        "path": "plugins/sentry-mcp-experimental/.mcp.json",
+        "sha": "d536ccacd79bb5a43a87c972bb33a33b472db853"
+      },
+      {
+        "path": "plugins/sentry-mcp/.mcp.json",
+        "sha": "6652e53862cfeff453167727fdee44849e6a9a57"
+      },
+      {
+        "path": ".claude/commands/opsx/apply.md",
+        "sha": "45003f8fa0f35cd9eaba1b4d874521925c87ea84"
+      },
+      {
+        "path": ".claude/commands/opsx/archive.md",
+        "sha": "4af9687780fdfe941be20043c10e26d3c018e1d9"
+      },
+      {
+        "path": ".claude/commands/opsx/explore.md",
+        "sha": "8655619f1efaf1620691334e1846f87d5ec267b0"
+      },
+      {
+        "path": ".claude/commands/opsx/propose.md",
+        "sha": "90ba3448b9f2af270a2c7ac110395f70f5250c08"
+      },
+      {
+        "path": ".claude/commands/opsx/sync.md",
+        "sha": "62bde0ca82e91f5e35f9ed26cfd740d516f39b0c"
+      },
+      {
+        "path": "packages/cli/.cursor/hooks.json",
+        "sha": "7382c49c7799a9b3cee24e9a900615a160941827"
+      },
+      {
+        "path": "packages/cli/.vscode/settings.json",
+        "sha": "5359e4ecfef6a74dead4c36049c72b9fe3718a29"
+      },
+      {
+        "path": "packages/cli/.cursor/rules/oxc.mdc",
+        "sha": "a306c9ef277f7dbc7125949dfe3b689f79376c9c"
+      },
+      {
+        "path": "server.json",
+        "sha": "61db12c98695f9be914f0388b3639c5fdfee3027"
+      },
+      {
+        "path": ".agents/skills/create-pr/SKILL.md",
+        "sha": "0b43b019e04a0c01f27bda0285168eb409de32b7"
+      },
+      {
+        "path": ".agents/skills/logging-observability/SKILL.md",
+        "sha": "30be9980d16039f3c7c923a649342554ad324a8f"
+      },
+      {
+        "path": ".agents/skills/mcp-audit/SKILL.md",
+        "sha": "4f16860385202543032790024683bf4274d75f66"
+      },
+      {
+        "path": ".agents/skills/mcp-qa/SKILL.md",
+        "sha": "8858724f58658f9d957bd52d9da70c722c0d05a6"
+      },
+      {
+        "path": ".agents/skills/openspec-apply-change/SKILL.md",
+        "sha": "db4d8ce2a8dd2ff89e33e5b9035c3a036988afd4"
+      },
+      {
+        "path": ".agents/skills/openspec-archive-change/SKILL.md",
+        "sha": "97c3e5e3a4e71707c9a4ca4928906377272e5826"
+      },
+      {
+        "path": ".agents/skills/openspec-explore/SKILL.md",
+        "sha": "1e97aaa81f5ba33204a2e12a4cffcb13663373e7"
+      },
+      {
+        "path": ".agents/skills/openspec-propose/SKILL.md",
+        "sha": "9fc85139aaca3e381126fef946865ece362975e5"
+      },
+      {
+        "path": ".agents/skills/openspec-sync-specs/SKILL.md",
+        "sha": "e29bdd92bb3f50a60307b5aad12cf058cbaa82b9"
+      },
+      {
+        "path": ".agents/skills/skill-creator/SKILL.md",
+        "sha": "b060cd78f6f1baa7289b87b9893866637522edcb"
+      },
+      {
+        "path": ".agents/skills/testing-guidelines/SKILL.md",
+        "sha": "82e9a47070dff1dea6594b7a26f61a74a1e973d4"
+      },
+      {
+        "path": ".codex/skills/openspec-apply-change/SKILL.md",
+        "sha": "db4d8ce2a8dd2ff89e33e5b9035c3a036988afd4"
+      },
+      {
+        "path": ".codex/skills/openspec-archive-change/SKILL.md",
+        "sha": "97c3e5e3a4e71707c9a4ca4928906377272e5826"
+      },
+      {
+        "path": ".codex/skills/openspec-explore/SKILL.md",
+        "sha": "1e97aaa81f5ba33204a2e12a4cffcb13663373e7"
+      },
+      {
+        "path": ".codex/skills/openspec-propose/SKILL.md",
+        "sha": "9fc85139aaca3e381126fef946865ece362975e5"
+      },
+      {
+        "path": ".codex/skills/openspec-sync-specs/SKILL.md",
+        "sha": "e29bdd92bb3f50a60307b5aad12cf058cbaa82b9"
+      },
+      {
+        "path": "packages/cli/.cursor/skills/sentry-cli/references",
+        "sha": "26521e94383aaa0ab026d563ed327940261b0555"
+      },
+      {
+        "path": "package.json",
+        "sha": "0a4993af98da46cafe0fbee56309a924e12bc977"
+      },
+      {
+        "path": "bin/bump-version.sh",
+        "sha": "6e7c7bc266429b0ee77ef8f9f684891e90bf9335"
+      },
+      {
+        "path": "packages/cli/src/lib/db/install-info.ts",
+        "sha": "911d1bca47fd028db27ef56f89c791185c3acf9a"
+      },
+      {
+        "path": "scripts/check-doc-links.mjs",
+        "sha": "b5a6ab15bbf4b91aeca4ac40af333be501a0f09a"
+      },
+      {
+        "path": "scripts/check-workspace-deps.mjs",
+        "sha": "37ce59af3147b960d27ab0c72dfd3ed7816b6527"
+      },
+      {
+        "path": "scripts/ci-projects.mjs",
+        "sha": "26d4c2f75403e415cdf9897af56541d7033fe6de"
+      },
+      {
+        "path": "scripts/cli-nightly-version.mjs",
+        "sha": "84e43fa553e8cdbfb4df10bd15f35605e85f962c"
+      },
+      {
+        "path": "scripts/cli-nightly-watchdog.mjs",
+        "sha": "3c90c046b90e7b9d5ae6de27768db0ff9d9fe967"
+      },
+      {
+        "path": "scripts/cloudflare-deployment.mjs",
+        "sha": "6c1981dbd2611fc50f107a8ca1b12e40ba7b839e"
+      },
+      {
+        "path": "scripts/generate-parsers.mjs",
+        "sha": "fb6248543bee244dd5f0d933313745ce2aad673b"
+      },
+      {
+        "path": "scripts/pre-commit-generated.mjs",
+        "sha": "2cba9b4e69b17e3ee0e9f083a8a21247609e3ec0"
+      },
+      {
+        "path": "scripts/validate-npm-runtime.sh",
+        "sha": "c48c11ed0dcd6643d32f4225b01960cd990d43c1"
+      },
+      {
+        "path": ".craft.yml",
+        "sha": "a9d0773212e5f60f70854eba38c8c54f1eace526"
+      },
+      {
+        "path": ".oxfmtrc.json",
+        "sha": "75785910bdf5e6f9d07d171789dcb72a74947545"
+      },
+      {
+        "path": ".oxlintrc.json",
+        "sha": "26f55be4adebd6718e7a542f61a74697f4cd0ce6"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "d270b376ebebe925a988a6eb5f7f8d386752ff64"
+      },
+      {
+        "path": "apps/docs-mcp/src/index.ts",
+        "sha": "d47dc342ada18511362e941918419828e484b0f4"
+      },
+      {
+        "path": "apps/local/src/App.tsx",
+        "sha": "196e30e9dbc04ca5de0a6ddcd76e5b1e0d98c9da"
+      },
+      {
+        "path": "apps/local/src/main.tsx",
+        "sha": "4e906e5f70482cd23d8c29f2e074d89f99413b85"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+      },
+      {
+        "path": "LICENSE.md",
+        "sha": "f97b1d1f628142b825c11675c5c33dd7a747f946"
+      },
+      {
+        "path": "packages/cli/src/app.ts",
+        "sha": "bfb04b2914a19134afcec1eb5c0722ec2b9495be"
+      },
+      {
+        "path": "packages/cli/src/cli.ts",
+        "sha": "0baa93c26cabe02362a42464c1b5cd8b11df63af"
+      },
+      {
+        "path": "packages/cli/src/index.ts",
+        "sha": "ad6dcc6ef6a68e2ceebd7c89f6c346b9b2148c87"
+      },
+      {
+        "path": "packages/logger/src/index.ts",
+        "sha": "ec1c5e4b86f4d1f7a88c98f34c6e7c4568146a21"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/client/components/fragments/install-tabs.tsx",
+        "sha": "dbf2ad9e32d7f8d2013c5f2a2719d76bc1409e8e"
+      },
+      {
+        "path": "packages/mcp-core/src/server.ts",
+        "sha": "b7bc29d99c7978b80a4e81cb5f49d9b0e99f8270"
+      },
+      {
+        "path": "packages/mcp-test-client/src/index.ts",
+        "sha": "03ca572239773e4630e7ce2dc17cdc0b7a219609"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha": "c4e8d2eea581ae498698e5089b6541d02c022b12"
+      },
+      {
+        "path": "README.md",
+        "sha": "c766f54ce0744e658fc70e81b76e744e96b58b29"
+      },
+      {
+        "path": "sgconfig.yml",
+        "sha": "4a08dfd52be7821fd9567a78137d6a8a3edb3c8a"
+      },
+      {
+        "path": "TELEMETRY.md",
+        "sha": "96f0b4c4fb751b6f0f9f28a6531bc8a5f2ed99b9"
+      },
+      {
+        "path": "vitest.workspace.ts",
+        "sha": "66f39df1b065bc52d7cbde64bda903fdaba7d705"
+      },
+      {
+        "path": "apps/cli-docs/package.json",
+        "sha": "5d715a96f9fa45216663234f28789c97883de0fc"
+      },
+      {
+        "path": "apps/docs-mcp/package.json",
+        "sha": "1b62d210f9c881b103296569f48e1bb95b3a6662"
+      },
+      {
+        "path": "apps/local/package.json",
+        "sha": "7fccafb125600e4161ad9d06cf28b1bd90216106"
+      },
+      {
+        "path": "packages/cli/package.json",
+        "sha": "ebf27bbad71579b6b0d291c07c2c4a7bc93750b6"
+      },
+      {
+        "path": "packages/logger/package.json",
+        "sha": "cbb12de6a759a5251e52b5190553eec91912d44d"
+      },
+      {
+        "path": "packages/mcp-cloudflare/package.json",
+        "sha": "18e5c8455c726e5ca4a1bcc805e582edf47aa47b"
+      },
+      {
+        "path": "packages/mcp-core/package.json",
+        "sha": "d194b987d668ceb7d7501ceebee6dbef2f4b5f50"
+      },
+      {
+        "path": "packages/mcp-server-evals/package.json",
+        "sha": "7782743563dba05e6a5668c5ee82d4f186462a5c"
+      },
+      {
+        "path": "packages/mcp-server-tsconfig/package.json",
+        "sha": "a69973b488a542f284bd3c56c2e3b273804c7bd5"
+      },
+      {
+        "path": "packages/mcp-server/package.json",
+        "sha": "584cdc4a14f899747af31c1fc1d62c3d56a70746"
+      },
+      {
+        "path": "packages/mcp-test-client/package.json",
+        "sha": "e16c0780209f075d2e2d959bb3262a879da910f4"
+      },
+      {
+        "path": "packages/smoke-tests/package.json",
+        "sha": "569fb97f6dc49e210b20246d8bc5c550e7122db8"
+      },
+      {
+        "path": "packages/toolkit-core/package.json",
+        "sha": "4b3d127db79319a61be488559ea8f9e4c6e318cc"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "1352e1e16802631cf97cdac5f075e833dc730d79"
+      },
+      {
+        "path": ".cursor-plugin/marketplace.json",
+        "sha": "3fc8f5ee8f290643d2b6cfa24fdd4d6bb7b1a95d"
+      },
+      {
+        "path": "apps/cli-docs/public/.well-known/skills/sentry-cli/SKILL.md",
+        "sha": "2aa8fe71cb7505a664baca1e758d417b3c517a22"
+      },
+      {
+        "path": "apps/docs-mcp/src/agent/tools.ts",
+        "sha": "93863bc5ec8c45eaa095644889ad78f7b0d539c5"
+      },
+      {
+        "path": "ast-grep-rule-tests/no-async-catch-callback-test.yml",
+        "sha": "3ad0a44d9d66608beb29e137cdee7d70806a5fea"
+      },
+      {
+        "path": "ast-grep-rule-tests/no-expand-top-level-tools-test.yml",
+        "sha": "ae175cb89b1572a6dcb0b65ca033064c20b1ca3f"
+      },
+      {
+        "path": "ast-grep-rule-tests/no-stdio-stdout-test.yml",
+        "sha": "d0b36e15fced2cad8cf4591a27c4c742fe5f55ef"
+      },
+      {
+        "path": "ast-grep-rules/no-async-catch-callback.yml",
+        "sha": "2a7eb218e37273bfbd4948ec1a8f9ea305fdf379"
+      },
+      {
+        "path": "ast-grep-rules/no-expand-top-level-tools.yml",
+        "sha": "565399dac357d547a91954fe95080664ec5d30a1"
+      },
+      {
+        "path": "ast-grep-rules/no-stdio-stdout.yml",
+        "sha": "c9ba12cec8c9f5c695ba3ffdaf3e8ecc99fb4e55"
+      },
+      {
+        "path": "openspec/config.yaml",
+        "sha": "392946c67c03e2dae0537d29a6facc4ab9b1b285"
+      },
+      {
+        "path": "packages/cli/plugins/sentry-cli/skills/sentry-cli/SKILL.md",
+        "sha": "ac0aa362394e73f1ec9ec0cae6573715f06dbb14"
+      },
+      {
+        "path": "packages/cli/src/types/index.ts",
+        "sha": "4ba1bb7b4ea708bb909166d4d39beb47600e6016"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/client/app.tsx",
+        "sha": "4f6cfaa8882e338e9a37970cce0cb8003af1bfff"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/client/main.tsx",
+        "sha": "d2c9da5f1d961c745c36c17967528ba7b89302ed"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/server/app.ts",
+        "sha": "46f23b349d15800b28f58c996642c388a37d6929"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/server/index.ts",
+        "sha": "dd09fced5529f1273f955f7a48bdf2cb30f302a6"
+      },
+      {
+        "path": "packages/mcp-core/src/api-client/index.ts",
+        "sha": "df47ef807bebeb26644c7c6366ef44e76eb4df0b"
+      },
+      {
+        "path": "packages/mcp-core/src/telem/index.ts",
+        "sha": "a7861a6bb2eb964e0ff4ee02407d480c8c4ddb1f"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/index.ts",
+        "sha": "1c897d26af40aef41c0389431eff74946ed84d41"
+      },
+      {
+        "path": "apps/cli-docs/astro.config.mjs",
+        "sha": "485e6113f337a2e8f42ce4367b15026d0e271464"
+      },
+      {
+        "path": "apps/cli-docs/sentry.client.config.js",
+        "sha": "48b259b4be776003b3f340d3569646226bf2085b"
+      },
+      {
+        "path": "apps/cli-docs/sentry.server.config.js",
+        "sha": "1fc3dca013f16730a5269e3bb2094aad0bb5bce2"
+      },
+      {
+        "path": "apps/cli-docs/src/fragments/commands/cli.md",
+        "sha": "a045c52c5c0be5a4fc022bbf7bb08dc52e81379a"
+      },
+      {
+        "path": "apps/cli-docs/src/fragments/commands/index.md",
+        "sha": "eb785a3a6de239ef2b44d6b843dfe795eb1b369b"
+      },
+      {
+        "path": "apps/cli-docs/tsconfig.json",
+        "sha": "0fc51d71b1d323f39316bd0bae765275743e69bb"
+      },
+      {
+        "path": "apps/docs-mcp/README.md",
+        "sha": "5d4bfdc9b5adc356587da0faf1458d1e8c75cceb"
+      },
+      {
+        "path": "apps/docs-mcp/tsconfig.json",
+        "sha": "d349c64f708d253059f1d628436174a8e258f4df"
+      },
+      {
+        "path": "apps/local/.oxlintrc.json",
+        "sha": "72cf41a39a58f88ca0797ac3a19f84a43def2b2a"
+      },
+      {
+        "path": "apps/local/components.json",
+        "sha": "8bfc737f96cad6567033a8771236a4762428781a"
+      },
+      {
+        "path": "apps/local/README.md",
+        "sha": "2a362420f46e4f40ffe652db41883a4391fd348d"
+      },
+      {
+        "path": "apps/local/tsconfig.app.json",
+        "sha": "3a104a4a3c1bc58dc2b6e67f07d8b311c05593b0"
+      },
+      {
+        "path": "apps/local/tsconfig.json",
+        "sha": "d0b2bca50419f55399de1bd0e8a8bce768059d17"
+      },
+      {
+        "path": "apps/local/tsconfig.node.json",
+        "sha": "8d2b2b02f19d13d2d4a0c6d10c928090d1543f10"
+      },
+      {
+        "path": "apps/local/vercel.json",
+        "sha": "2736ab335372d40e29e0c46374a8d4dfc72bf1ea"
+      },
+      {
+        "path": "apps/local/vite.config.ts",
+        "sha": "6a2374b6035ff76ee13e7cd4e00e3641605f0efa"
+      },
+      {
+        "path": "packages/cli/AGENTS.md",
+        "sha": "7ae9105d641888dd7717f8e69cc407d380f5986b"
+      },
+      {
+        "path": "packages/cli/CHANGELOG.md",
+        "sha": "9c0df2b193b377c8711b7328e063c8245c59e280"
+      },
+      {
+        "path": "packages/cli/codecov.yml",
+        "sha": "118648efb07fb4f5d7dcafa09859ffbbfd53c082"
+      },
+      {
+        "path": "packages/cli/CONTRIBUTING.md",
+        "sha": "e74817df4cd6ea8b3137420faf3bd1b6528dd055"
+      },
+      {
+        "path": "packages/cli/DEVELOPMENT.md",
+        "sha": "aec2f0dd436dd29174691f22979c6068d70bcf70"
+      },
+      {
+        "path": "packages/cli/LICENSE.md",
+        "sha": "08bcdbf6b2ab70e0d88cd8c9de0582cc0b1ffc17"
+      },
+      {
+        "path": "packages/cli/README.md",
+        "sha": "9b535b030e61d2d3752e09f1dbd1f305b74dd1a8"
+      },
+      {
+        "path": "packages/cli/src/commands/agent-conversation/index.ts",
+        "sha": "43796eb69d7167dde503c25543ae7becac6741e4"
+      },
+      {
+        "path": "packages/cli/src/commands/alert/index.ts",
+        "sha": "4f49e0711f9e89b49b57f4dfc37f7f9cc5edfbab"
+      },
+      {
+        "path": "packages/cli/src/commands/attribute/index.ts",
+        "sha": "84126559273999f799a6ed07b41c215fd2d29c0c"
+      },
+      {
+        "path": "packages/cli/src/commands/auth/index.ts",
+        "sha": "b1a8f394ee0fba3b5733d0a54618b8fe85bc907c"
+      },
+      {
+        "path": "packages/cli/src/commands/build/index.ts",
+        "sha": "e148086dfab1f0f15db394c49c9bf65d931ba804"
+      },
+      {
+        "path": "packages/cli/src/commands/cli/index.ts",
+        "sha": "071c42e872217288823e564aef5b634c3507aa7f"
+      },
+      {
+        "path": "packages/cli/src/commands/code-mappings/index.ts",
+        "sha": "5b91bf75848801d460f9eb53fdb978425909c516"
+      },
+      {
+        "path": "packages/cli/src/commands/dart-symbol-map/index.ts",
+        "sha": "5c48d0974113e197f80e11d48e2874ed57d706c7"
+      },
+      {
+        "path": "packages/cli/src/commands/dashboard/index.ts",
+        "sha": "88905737401b142c9e54b3dc3963a988c21d0b54"
+      },
+      {
+        "path": "packages/cli/src/commands/debug-files/index.ts",
+        "sha": "6584544a5ad6df9cb0b42c36c0706cda779c5c73"
+      },
+      {
+        "path": "packages/cli/src/commands/dsn/index.ts",
+        "sha": "a2081a354c4d6c82230b5601cd048d4e8c5da805"
+      },
+      {
+        "path": "packages/cli/src/commands/event/index.ts",
+        "sha": "70888d552e533dc9a308a191f5595713a746d94f"
+      },
+      {
+        "path": "packages/cli/src/commands/feedback/index.ts",
+        "sha": "d946b40bbd05062cdb0b3c4b41968bbcc3bb7090"
+      },
+      {
+        "path": "packages/cli/src/commands/integration/index.ts",
+        "sha": "7175df1298a471adf7f5254c35d6ed6c33c0c9a1"
+      },
+      {
+        "path": "packages/cli/src/commands/issue/index.ts",
+        "sha": "e0084bac4c8a872c4d9610923c7fee7c4618b9e2"
+      },
+      {
+        "path": "packages/cli/src/commands/local/index.ts",
+        "sha": "21f55c310388a35c204e11dde5a067cf627f8679"
+      },
+      {
+        "path": "packages/cli/src/commands/local/server.ts",
+        "sha": "b199b854d209b70c14f8fb9b7d9a7ff61fb84d28"
+      },
+      {
+        "path": "packages/cli/src/commands/log/index.ts",
+        "sha": "79e75bd410004db8570cc03bd15753b0795cfb48"
+      },
+      {
+        "path": "packages/cli/src/commands/monitor/index.ts",
+        "sha": "d9a20c44b4c953e05329b454e04b61eae82caf7b"
+      },
+      {
+        "path": "packages/cli/src/commands/org/index.ts",
+        "sha": "d83886f8f0ae2ac6a421dc430265fe6371495e0d"
+      },
+      {
+        "path": "packages/cli/src/commands/platform/index.ts",
+        "sha": "5b10c0a27bec8e76bfb6a2729054e66afc57ee8b"
+      },
+      {
+        "path": "packages/cli/src/commands/proguard/index.ts",
+        "sha": "fb36707b2c670934d568be32c18087fbff4c9a72"
+      },
+      {
+        "path": "packages/cli/src/commands/project/index.ts",
+        "sha": "77709bf735b745cb45f6d7f743a6598c01801abd"
+      },
+      {
+        "path": "packages/cli/src/commands/react-native/index.ts",
+        "sha": "96def32335810a3a72c97ac92087898a411c4e19"
+      },
+      {
+        "path": "packages/cli/src/commands/release/index.ts",
+        "sha": "39f44ebaf1a3b99fbaf4c8faf89060e749640a6c"
+      },
+      {
+        "path": "packages/cli/src/commands/replay/index.ts",
+        "sha": "6d595a04d456edfcf1eb122e32ab8d3660266f0f"
+      },
+      {
+        "path": "packages/cli/src/commands/repo/index.ts",
+        "sha": "a284693b59900db591911ef7cc6b6ff74f6cb04b"
+      },
+      {
+        "path": "packages/cli/src/commands/snapshots/index.ts",
+        "sha": "aeae742f1f1a347b448d17256700f457e73c4a86"
+      },
+      {
+        "path": "packages/cli/src/commands/sourcemap/index.ts",
+        "sha": "30282a5ddcf0c8f3fedc0377e2f5c48c7e8eb22a"
+      },
+      {
+        "path": "packages/cli/src/commands/span/index.ts",
+        "sha": "13c5044004d7681b6446aed693c65dee8bdc16ba"
+      },
+      {
+        "path": "packages/cli/src/commands/status/index.ts",
+        "sha": "cea082c6d7f189a748ccda5af820ffa93c7ea778"
+      },
+      {
+        "path": "packages/cli/src/commands/team/index.ts",
+        "sha": "c22523cc0683e010f284c4c7e79cc87498f6c90a"
+      },
+      {
+        "path": "packages/cli/src/commands/trace/index.ts",
+        "sha": "258eb1306e581443ae0b35666964c1fa6f7ace54"
+      },
+      {
+        "path": "packages/cli/src/commands/trial/index.ts",
+        "sha": "525c20a5e21bc0ee304c61db1fe69889f6fe5ea8"
+      },
+      {
+        "path": "packages/cli/src/lib/build/index.ts",
+        "sha": "3671324bb9e6cd1f210ecca6c6cda08cee414cd2"
+      },
+      {
+        "path": "packages/cli/src/lib/db/index.ts",
+        "sha": "1b51fc4c8e8b81236907515a5f24b2427ef3fa4c"
+      },
+      {
+        "path": "packages/cli/src/lib/dif/index.ts",
+        "sha": "2aac914f765f7c08ac1a2ebb59ae8045ef217e50"
+      },
+      {
+        "path": "packages/cli/src/lib/dsn/index.ts",
+        "sha": "bdd08aebace133168280114c75f89e7d7f53ff05"
+      },
+      {
+        "path": "packages/cli/src/lib/formatters/index.ts",
+        "sha": "5d06a1ca02df07147b9462949ca88b801e055df6"
+      },
+      {
+        "path": "packages/cli/src/lib/mcp/server.ts",
+        "sha": "6664546257840cdbe4075f687473508be9a97ebc"
+      },
+      {
+        "path": "packages/cli/src/lib/scan/index.ts",
+        "sha": "3cee56fdc6818cc1b747ed21dc97119498343e88"
+      },
+      {
+        "path": "packages/cli/THIRD_PARTY_LICENSES.md",
+        "sha": "aab45064f3d50d5a6b09f65c146e3fdc0a84ce8f"
+      },
+      {
+        "path": "packages/cli/tsconfig.json",
+        "sha": "9e4f7c8e094aef5ba8bb6dd163f7a6f0f73b8292"
+      },
+      {
+        "path": "packages/cli/vitest.config.ts",
+        "sha": "2792dbf1486b29628c5cb8882d9b9ab608b03b99"
+      },
+      {
+        "path": "packages/logger/README.md",
+        "sha": "5811a52457d651c2ffa07fed58300d2070b9633a"
+      },
+      {
+        "path": "packages/logger/tsconfig.json",
+        "sha": "d89cf4aec3092251bd88123fc246442d9d62ee5b"
+      },
+      {
+        "path": "packages/logger/tsdown.config.ts",
+        "sha": "1c9be5d5805fc17cef109f00ed81df48b451ff78"
+      },
+      {
+        "path": "packages/mcp-cloudflare/components.json",
+        "sha": "de35ac1254d41e93f1b170422e0a7cd12e73d0e5"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/client/utils/index.ts",
+        "sha": "31529cfbe7e5d2e6f6102886c98309d52007a5c6"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/server/oauth/index.ts",
+        "sha": "ed50670c8a15096c50ede3036cfc987bb56259c1"
+      },
+      {
+        "path": "packages/mcp-cloudflare/tsconfig.client.json",
+        "sha": "0bfc9a086a33962b91d64db0a7afbbe4c38a3f8a"
+      },
+      {
+        "path": "packages/mcp-cloudflare/tsconfig.json",
+        "sha": "4ae2aa1b2710d7b5010bcb36758f8b291b952030"
+      },
+      {
+        "path": "packages/mcp-cloudflare/tsconfig.node.json",
+        "sha": "bdadf3ce9ab371abd64432e098fbd10e43bba55c"
+      },
+      {
+        "path": "packages/mcp-cloudflare/tsconfig.server.json",
+        "sha": "1e0cc6723d9b9e6e70807f1c395589554a053307"
+      },
+      {
+        "path": "packages/mcp-cloudflare/vite.config.ts",
+        "sha": "93ffe500633c813163ffbe51e71193b8331fd987"
+      },
+      {
+        "path": "packages/mcp-cloudflare/vitest.config.ts",
+        "sha": "af0152549b2d311c164771871218af999b9390a4"
+      },
+      {
+        "path": "packages/mcp-core/README.md",
+        "sha": "abb1a67edaa07bbb844c8630c42cecaa93593636"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/catalog/index.ts",
+        "sha": "0b47f82f10eb08d668c80c015cb379dca118c10e"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/search-events/index.ts",
+        "sha": "88a96865afcc95b3789cfdcc3e3789d92149491b"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/search-issue-events/index.ts",
+        "sha": "7d9c3842139c3a0380d93ef7e5264c2c7a8123d5"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/search-issues/index.ts",
+        "sha": "e8fe149723eb2a16566422ac94f84b108ba7ce62"
+      },
+      {
+        "path": "packages/mcp-core/tsconfig.json",
+        "sha": "d4fe4fe1adbc858a71d803375d8cf00fc156a9ca"
+      },
+      {
+        "path": "packages/mcp-core/tsdown.config.ts",
+        "sha": "e212ea53f07dad00620b5e0b7acb514fb12a007f"
+      },
+      {
+        "path": "packages/mcp-core/vitest.config.ts",
+        "sha": "24b49d69396093ad7160ac16c9ff85b94ff05c99"
+      },
+      {
+        "path": "packages/mcp-server-evals/README.md",
+        "sha": "43ac46e1bcef0eaf48462a2c9eec1760ea8a4f6a"
+      },
+      {
+        "path": "packages/mcp-server-evals/src/evals/utils/index.ts",
+        "sha": "0316b2a6134c1d959ec5d97fec9c28415ab44930"
+      },
+      {
+        "path": "packages/mcp-server-evals/tsconfig.json",
+        "sha": "d4fe4fe1adbc858a71d803375d8cf00fc156a9ca"
+      },
+      {
+        "path": "packages/mcp-server-evals/vitest.config.ts",
+        "sha": "cdbf92da4203175d9b85eec30919c9571ecc91af"
+      },
+      {
+        "path": "packages/mcp-server-tsconfig/tsconfig.base.json",
+        "sha": "96f15858304094c418aabbc61c259a13a0f3f33a"
+      },
+      {
+        "path": "packages/mcp-server-tsconfig/tsconfig.vite.json",
+        "sha": "b7a7ff306a2ec3dddf0c57854bea15e3bd9cf3ad"
+      },
+      {
+        "path": "packages/mcp-server/README.md",
+        "sha": "da898d8bff32d88a361053f09cd7878029bbae9e"
+      },
+      {
+        "path": "packages/mcp-test-client/README.md",
+        "sha": "4c9b21b4ec731d182ad151491af47001bfe8dae8"
+      },
+      {
+        "path": "packages/mcp-test-client/tsconfig.json",
+        "sha": "4c1f2efaf66ec6788da1523c2c8b9a3bfa93879b"
+      },
+      {
+        "path": "packages/mcp-test-client/tsdown.config.ts",
+        "sha": "75457e936cd5daf78af964a2670af7d27137d330"
+      },
+      {
+        "path": "packages/mcp-test-client/vitest.config.ts",
+        "sha": "c103860dc8b43271bbf5630484fc5b7dfdcdb306"
+      },
+      {
+        "path": "packages/smoke-tests/vitest.config.ts",
+        "sha": "1065b6eea0d9146c3d784807fa5608f1eaa0c118"
+      },
+      {
+        "path": "packages/toolkit-core/README.md",
+        "sha": "ceccc1f2e5124fa5ddbcb337e035cf133f30b599"
+      },
+      {
+        "path": "packages/toolkit-core/src/api-client/response-cache/index.ts",
+        "sha": "2166cb96b143fb1ad8ca54b948e2de2a4f8e4b0f"
+      },
+      {
+        "path": "packages/toolkit-core/tsconfig.browser.json",
+        "sha": "6c13f0c7ad4b2bc73757025969fd9593c8cccfd1"
+      },
+      {
+        "path": "packages/toolkit-core/tsconfig.json",
+        "sha": "741fa77f162a4d160a3c796614e7a8cf660406b7"
+      },
+      {
+        "path": "plugins/sentry-mcp-experimental/mcp.json",
+        "sha": "ed1964983aa4de6fec98de025b08680701467d0e"
+      },
+      {
+        "path": "plugins/sentry-mcp/mcp.json",
+        "sha": "9918d4c7dc318f84f8efbbeaf10859218ccd6ece"
+      },
+      {
+        "path": ".agents/skills/mcp-audit/SOURCES.md",
+        "sha": "c7b11d37790a3e5cef33c50e3e6b16fd6a6dd11a"
+      },
+      {
+        "path": "apps/cli-docs/src/content.config.ts",
+        "sha": "7fbcf2c33262d746e2fdfb8970347b6a8226a7ed"
+      },
+      {
+        "path": "apps/docs-mcp/src/access.ts",
+        "sha": "f9da748ca0cc30e43d8d0a91afa5212ba3da608f"
+      },
+      {
+        "path": "apps/docs-mcp/src/internal-api.ts",
+        "sha": "b6d99c293a31bbaf3ba81065b8637f316c777f0b"
+      },
+      {
+        "path": "apps/docs-mcp/src/mcp.ts",
+        "sha": "5b984f1524773f8352fb5fdb5705ccb901a8fc81"
+      },
+      {
+        "path": "apps/docs-mcp/src/metrics.ts",
+        "sha": "1051e945b9936adcccca89d381fabff17bf97523"
+      },
+      {
+        "path": "apps/docs-mcp/src/types.ts",
+        "sha": "ae1eda374ef61a3d8a0699fbe18324510f7f7276"
+      },
+      {
+        "path": "apps/local/scripts/replay.ts",
+        "sha": "95fb198d96518b2b62a6198ebd594f1d06b3d6c5"
+      },
+      {
+        "path": "apps/local/src/router.tsx",
+        "sha": "8f22ea737451df1a80fdabdd163c5af93f2f9e72"
+      },
+      {
+        "path": "apps/local/src/test-setup.ts",
+        "sha": "f3c3d28b4f5fcf10d8fdaff8dc28acc15c4a75b8"
+      },
+      {
+        "path": "openspec/changes/refine-project-management-tools/.openspec.yaml",
+        "sha": "43e65ca6e6676e6633758c5c953465c553b5b879"
+      },
+      {
+        "path": "openspec/changes/refine-project-management-tools/design.md",
+        "sha": "021871cda7fe7e1845f5fb8741a72498c1d51d32"
+      },
+      {
+        "path": "openspec/changes/refine-project-management-tools/proposal.md",
+        "sha": "ef4b3f28428714fe1a02abd0afbf827429d6ac4b"
+      },
+      {
+        "path": "openspec/changes/refine-project-management-tools/tasks.md",
+        "sha": "4ece885da8154d54ee8a9521146cca92fbb96178"
+      },
+      {
+        "path": "packages/cli/.claude-plugin/marketplace.json",
+        "sha": "d3e1052f00b55419fce64fa9283f5e7abcf57e9d"
+      },
+      {
+        "path": "packages/cli/grammar/field-list.d.ts",
+        "sha": "7ae94bede19ad51200aaf69f535a7d54d66b858a"
+      },
+      {
+        "path": "packages/cli/grammar/id-arguments.d.ts",
+        "sha": "31fd0c502df0d8450c35754a8f409154c1751311"
+      },
+      {
+        "path": "packages/cli/grammar/issue-argument.d.ts",
+        "sha": "bcddda965eef58d65c26de3c2592bc581cb778c1"
+      },
+      {
+        "path": "packages/cli/grammar/org-project-target.d.ts",
+        "sha": "d6cd13b190e47f66496e8fa8e31438c1b82b5770"
+      },
+      {
+        "path": "packages/cli/lint-rules/cli-oxlint-plugin.js",
+        "sha": "bcc20a2b0e4c1d3aa775700b3d012553cf3a15cd"
+      },
+      {
+        "path": "packages/cli/lint-rules/completion-exemptions.json",
+        "sha": "bdbb1e078f839e4ba79e3ea4f39f78df9113211f"
+      },
+      {
+        "path": "packages/cli/plugins/README.md",
+        "sha": "4acc7e69b21d0ea483adf6a2dca87c3e737bed3d"
+      },
+      {
+        "path": "packages/cli/script/bench-sweep.ts",
+        "sha": "be6f259cc3691bf85c8f15ae2328b4bdd8efeb52"
+      },
+      {
+        "path": "packages/cli/script/bench.ts",
+        "sha": "e745c48906d6b81aef0f89a57197fb2f8de6b763"
+      },
+      {
+        "path": "packages/cli/script/build-car-extract.ts",
+        "sha": "879f34debaee058a153ca245b079d8105c40a866"
+      },
+      {
+        "path": "packages/cli/script/build.ts",
+        "sha": "4d2ba08e15709bfc6478b4ac34efb3b40953aaa6"
+      },
+      {
+        "path": "packages/cli/script/bump-version.ts",
+        "sha": "b44f9d02127a00e2a1e4f4b40ea91e981ed6e4e8"
+      },
+      {
+        "path": "packages/cli/script/bundle.ts",
+        "sha": "61c49f008eb994f434f5928587e7e7759166a58d"
+      },
+      {
+        "path": "packages/cli/script/check-destructive-commands.ts",
+        "sha": "a094324eb8c5b4435280e7bb5373285fc8d8fb1a"
+      },
+      {
+        "path": "packages/cli/script/check-doc-examples.ts",
+        "sha": "ad6689cbd6cc517a2d9fbb5aaba5d9c977b345c5"
+      },
+      {
+        "path": "packages/cli/script/check-env-coverage.ts",
+        "sha": "dfef7e5065242c98189c7ae6212ba7c4b2728798"
+      },
+      {
+        "path": "packages/cli/script/check-error-patterns.ts",
+        "sha": "cd050994ad1f97921efb1ff2aa4cdd26e62e0918"
+      },
+      {
+        "path": "packages/cli/script/check-fragments.ts",
+        "sha": "00b18ade8d1583f82b5105d7b91d3143fe901e2a"
+      },
+      {
+        "path": "packages/cli/script/check-installer-docs.ts",
+        "sha": "2e59897cda9ad2cb7fe14eb5b04df4de6bfea05e"
+      },
+      {
+        "path": "packages/cli/script/check-no-deps.ts",
+        "sha": "05a46074b1e49e86a5e639b5385dd7a54a2ced1c"
+      },
+      {
+        "path": "packages/cli/script/check-patches.ts",
+        "sha": "c263c0ba0544f68ae44d3dccef061bd195cbccd4"
+      },
+      {
+        "path": "packages/cli/script/check-stale-references.ts",
+        "sha": "359d65921062355eaa1f7a616728936d30599e91"
+      },
+      {
+        "path": "packages/cli/script/debug-id.ts",
+        "sha": "47b39e2d32bb370f51e6d90258b706d6e8a019d5"
+      },
+      {
+        "path": "packages/cli/script/ensure-generated.mjs",
+        "sha": "83aa80ef1ae49d1a237750c970df6228d23253d2"
+      },
+      {
+        "path": "packages/cli/script/eval-skill.ts",
+        "sha": "4be90705eaab761575c49ede3831184e5cc2bf7a"
+      },
+      {
+        "path": "packages/cli/script/fragment-commands.ts",
+        "sha": "9c91aba48fd7291a613feac449aece4c23a497cb"
+      },
+      {
+        "path": "packages/cli/script/generate-api-schema.ts",
+        "sha": "702aeae929b2c593fe2ca2ce597e991310bc51e9"
+      },
+      {
+        "path": "packages/cli/script/generate-banner-image.ts",
+        "sha": "235b4cf4b301aed03f259b5c18403f07af5f1de6"
+      },
+      {
+        "path": "packages/cli/script/generate-command-api.ts",
+        "sha": "8ae5497ae8f31ebbe7dcf5bf1de7a92b540fcf9d"
+      },
+      {
+        "path": "packages/cli/script/generate-command-docs.ts",
+        "sha": "36e735a5a6a9c353760a7c2774ff531f0bc2bf87"
+      },
+      {
+        "path": "packages/cli/script/generate-completion-targets.ts",
+        "sha": "8512fe98eee24ec54a7c472548d4f95eee3b927a"
+      },
+      {
+        "path": "packages/cli/script/generate-docs-sections.ts",
+        "sha": "1b760ff3ad34d4b7639f50f636202a26de908d07"
+      },
+      {
+        "path": "packages/cli/script/generate-sdk.ts",
+        "sha": "e26db15be2571b2e7d985743bee1a96eb61e18b6"
+      },
+      {
+        "path": "packages/cli/script/generate-skill-markdown.ts",
+        "sha": "d9d5ae9c991bbe75231ac72d94966e30ceb2a31e"
+      },
+      {
+        "path": "packages/cli/script/generate-skill.ts",
+        "sha": "e077a2069b36fe307dd3e8ca9407b7a09ad150ad"
+      },
+      {
+        "path": "packages/cli/script/import-meta-url.js",
+        "sha": "7c51b7c0206ddda4538c337678012ffecc003729"
+      },
+      {
+        "path": "packages/cli/script/markdown.ts",
+        "sha": "c226e04cf3ddf642419daf47b54848c8c1a7b7e4"
+      },
+      {
+        "path": "packages/cli/script/paths.ts",
+        "sha": "82e106d6f8b9a894176778e278b5057ea7481264"
+      },
+      {
+        "path": "packages/cli/script/prepare-e2e-bundle.ts",
+        "sha": "3a79556fcf2ac70a4db345ede9a1fdad30cd54c0"
+      },
+      {
+        "path": "packages/cli/script/preview-selectors.ts",
+        "sha": "1bc632b510c80a2a83dbd245357b85c0f705c377"
+      },
+      {
+        "path": "packages/cli/script/require-shim.mjs",
+        "sha": "adc552fa44a2038f211a92c61e8f20908c336fa5"
+      },
+      {
+        "path": "packages/cli/script/sdk-declarations.ts",
+        "sha": "dbfd1a308fb97df194a71c727d3ca900b6ab25ed"
+      },
+      {
+        "path": "packages/cli/script/sdk-run-calls.ts",
+        "sha": "d54d13a8946ac78ef0ca6e04477d3f37975e29f8"
+      },
+      {
+        "path": "packages/cli/script/shell-words.ts",
+        "sha": "edf0899e04a99e08c696dcdcb9b51a5c232a41dc"
+      },
+      {
+        "path": "packages/cli/script/strip-arg-separator.mjs",
+        "sha": "210fac230cde08f6a2f6115af316dc476844cb48"
+      },
+      {
+        "path": "packages/cli/script/text-import-plugin.ts",
+        "sha": "95d75613e3c9df109fd5ddbd3b900ce3d8f538bd"
+      },
+      {
+        "path": "packages/cli/script/ts-codegen.ts",
+        "sha": "6d7959805047b7a84820a1c3957d8e3d06eae7bf"
+      },
+      {
+        "path": "packages/cli/src/bin.ts",
+        "sha": "5403ff1f7e79a22d43a8feea170a7543d77de61d"
+      },
+      {
+        "path": "packages/cli/src/commands/alert/issues/index.ts",
+        "sha": "7af43497e12f4b339ad83c378cf11d8b0ee04a99"
+      },
+      {
+        "path": "packages/cli/src/commands/alert/metrics/index.ts",
+        "sha": "275f63699d0611fbc63bfa89ee53851e1ca14b1f"
+      },
+      {
+        "path": "packages/cli/src/commands/dashboard/widget/index.ts",
+        "sha": "17c08f41d12da5fd8ba27bb119815c9c17e531f2"
+      },
+      {
+        "path": "packages/cli/src/context.ts",
+        "sha": "fe0e4f85cd3b093bcc40bb2a40a372d590929b16"
+      },
+      {
+        "path": "packages/cli/src/global.d.ts",
+        "sha": "1433484f6e95ebc34ca9cc3ae448c0248064e52b"
+      },
+      {
+        "path": "packages/cli/src/mcp-server-app.ts",
+        "sha": "c948d231a6ed1d2f2dc6e8f38c2be7eb5f914f71"
+      },
+      {
+        "path": "packages/cli/src/mcp-server.ts",
+        "sha": "77c7931a4908424a35643e9cc3d3520202539866"
+      },
+      {
+        "path": "packages/cli/src/sentry-cli.ts",
+        "sha": "52443d199878626762f7eb8a6ac0c28e68ce2a81"
+      },
+      {
+        "path": "packages/logger/bench/run.mjs",
+        "sha": "bfdd529f58524e54337a65120b18a4e219ff0232"
+      },
+      {
+        "path": "packages/logger/src/fields.ts",
+        "sha": "fb2c309a50a7962904c202a38666dd83eb6538f1"
+      },
+      {
+        "path": "packages/logger/src/levels.ts",
+        "sha": "4b04f5e4af990f7979ac8c8cece04c1a893628ca"
+      },
+      {
+        "path": "packages/logger/src/logger.ts",
+        "sha": "1bbffb5169dcedac0285753365cc527bd59aaaf1"
+      },
+      {
+        "path": "packages/logger/src/message.ts",
+        "sha": "2577d2aaaa5f5b42f18fbbab4e2d60608d7ca43f"
+      },
+      {
+        "path": "packages/logger/src/types.ts",
+        "sha": "d91784ce94c789084570db1cd7aa125163ea57a3"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/client/components/chat/index.ts",
+        "sha": "29d6dbee5a4509bb65bcd82817e3849bdf43c00d"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/client/components/usecases/index.tsx",
+        "sha": "aaff6ca6c5464a2dc101e918fe0b579be5f2478c"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/constants.ts",
+        "sha": "69c8d7958fd91b2ea47d5fd2519064559d8bf0e2"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/homepage-content.ts",
+        "sha": "4b0f8c95fcd48fd94e666cf2e410e3a2628c5b01"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/server/oauth/routes/index.ts",
+        "sha": "582028d55e917d1cb150c3397e888bf64d4470f0"
+      },
+      {
+        "path": "packages/mcp-cloudflare/src/test-setup.ts",
+        "sha": "f310cba88644cd414b0ea49227cf47c5a401cf55"
+      },
+      {
+        "path": "packages/mcp-core/scripts/check-build-imports.ts",
+        "sha": "1a977f51e0b78ad22ba88676589f5b3e21a12b0a"
+      },
+      {
+        "path": "packages/mcp-core/scripts/generate-definitions.ts",
+        "sha": "94805e898c066f38e495e203626606e9fec10032"
+      },
+      {
+        "path": "packages/mcp-core/scripts/generate-otel-namespaces.ts",
+        "sha": "37cb6dff8a0b2f8845a2ffa8e8873d95d2bb4298"
+      },
+      {
+        "path": "packages/mcp-core/scripts/measure-token-cost.ts",
+        "sha": "6d47efccc4365786acf0d4c9f7924cd63688c577"
+      },
+      {
+        "path": "packages/mcp-core/scripts/validate-skills-mapping.ts",
+        "sha": "b9ec7eb546d85fa7a2ce54ac47c55f9a8102478f"
+      },
+      {
+        "path": "packages/mcp-core/src/constants.ts",
+        "sha": "85cef2495142c0dadb17251e87432b0e808ad8dc"
+      },
+      {
+        "path": "packages/mcp-core/src/errors.ts",
+        "sha": "9323813f40b424bc754d91b6d22101245d9b68c0"
+      },
+      {
+        "path": "packages/mcp-core/src/permissions.ts",
+        "sha": "d3f61f82ef2d6a2be9a8b6ef8fd9f2c8a7d90c9c"
+      },
+      {
+        "path": "packages/mcp-core/src/schema.ts",
+        "sha": "fb86c4381a417dc37c7f7801da3fed7c023f1750"
+      },
+      {
+        "path": "packages/mcp-core/src/scopes.ts",
+        "sha": "4d8d4e59e592300ba8efa7d600a7b74750000085"
+      },
+      {
+        "path": "packages/mcp-core/src/skillDefinitions.json",
+        "sha": "41beeedd02a1c484fd1e2b302c5620ed769ae92b"
+      },
+      {
+        "path": "packages/mcp-core/src/skillDefinitions.ts",
+        "sha": "3be3c07ecc6731f2da8956ca22dcc0f4d0cb8d7f"
+      },
+      {
+        "path": "packages/mcp-core/src/skills.ts",
+        "sha": "dd89d52b372905464855a188364e010ce7c68e5d"
+      },
+      {
+        "path": "packages/mcp-core/src/test-setup.ts",
+        "sha": "586b561c4d3ece660862800309c4b14b556ff507"
+      },
+      {
+        "path": "packages/mcp-core/src/toolDefinitions.ts",
+        "sha": "1cab97508046db77d9e019df2a3530aaf9fbb373"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/support/dashboards/index.ts",
+        "sha": "f4e4f8c9e000115fd04440d82f9c2172b71c14d3"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/support/issue-linking/app.ts",
+        "sha": "a883e3166ef5dbbd35423c76967c1f3e1987b344"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/support/issue-linking/index.ts",
+        "sha": "e3e0f7cb289017cce75b3513c7fc00e2287fc019"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/support/issue-linking/tool.ts",
+        "sha": "b17746a2a3fa46c9a055243e6970408daedb7988"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/support/search-events/index.ts",
+        "sha": "8a40e3ac290b8164f43f725d3caa8a0fbcf08734"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/support/search-issue-events/index.ts",
+        "sha": "d9da05fed44055e90538ebc7be83a33c1d67875f"
+      },
+      {
+        "path": "packages/mcp-core/src/tools/support/search-issues/index.ts",
+        "sha": "a1aac7d13c3ed7ec90c166b3297b0032e5db5631"
+      },
+      {
+        "path": "packages/mcp-core/src/types.ts",
+        "sha": "b4558c079369f15ef8ce682bf601b8c11432421f"
+      },
+      {
+        "path": "packages/mcp-core/src/version.ts",
+        "sha": "5bded426cf2dd6d22b0cd8e136923d71cb93f3e3"
+      },
+      {
+        "path": "packages/mcp-server-evals/src/setup-env.ts",
+        "sha": "58d358849db35033b6285250e904735a40b4e78d"
+      },
+      {
+        "path": "packages/mcp-server/script/bundle.ts",
+        "sha": "522874301962c508a895526e15de885951e69c85"
+      },
+      {
+        "path": "packages/mcp-test-client/src/agent-provider.ts",
+        "sha": "ffe7111bd44e26e2c73dab8ee9b5a5d7b2351bb3"
+      },
+      {
+        "path": "packages/mcp-test-client/src/agent.ts",
+        "sha": "bc5754d345e88f2a9d82be6c32a40dd464bbf0a5"
+      },
+      {
+        "path": "packages/mcp-test-client/src/constants.ts",
+        "sha": "c403881e9fc90c855709350f9151e511409a08eb"
+      },
+      {
+        "path": "packages/mcp-test-client/src/logger.ts",
+        "sha": "d8bab9f49ad66f557c878fac46a6c05e393dad8d"
+      },
+      {
+        "path": "packages/mcp-test-client/src/mcp-test-client-remote.ts",
+        "sha": "fa7a69490449165b129d3b6bf7336c2cd2d0e493"
+      },
+      {
+        "path": "packages/mcp-test-client/src/mcp-test-client.ts",
+        "sha": "bffe4c26cc6261630fdf9fc00c52d949c0e24bb0"
+      },
+      {
+        "path": "packages/mcp-test-client/src/mcp-url.ts",
+        "sha": "856921a43b1fd57628ddc5d73ce85a527a0aca8b"
+      },
+      {
+        "path": "packages/mcp-test-client/src/tool-output-format.ts",
+        "sha": "6b1a707362fe46c380a5b417e8d696ba7bf17fa6"
+      },
+      {
+        "path": "packages/mcp-test-client/src/transport.ts",
+        "sha": "1192840224280e6a7a78d52b30878cf08bf98480"
+      },
+      {
+        "path": "packages/mcp-test-client/src/types.ts",
+        "sha": "d2d13b23d2b8148f9df545472ca35d36c1e2ba31"
+      },
+      {
+        "path": "packages/mcp-test-client/src/version.ts",
+        "sha": "76f20d8fdc4901302f114ef99fd99852db23cc0a"
+      },
+      {
+        "path": "packages/toolkit-core/src/api-path-segment.ts",
+        "sha": "15c594fd5191d35c3e5c264f95adba9b75b319b3"
+      },
+      {
+        "path": "packages/toolkit-core/src/api-request.ts",
+        "sha": "82b7a9da14ca56ddf959028b7e53301bc5f7e4cf"
+      },
+      {
+        "path": "packages/toolkit-core/src/auth-token.ts",
+        "sha": "eafd66ca2cdfb0b30eb152b6847370dbca5ca642"
+      },
+      {
+        "path": "packages/toolkit-core/src/events-fields.ts",
+        "sha": "05ff5592a765a95c576f24753ec43adcea6b95f7"
+      },
+      {
+        "path": "packages/toolkit-core/src/events-sort.ts",
+        "sha": "9f0c968ceeca0d3058d189ecb3cf72cd4fd71e40"
+      },
+      {
+        "path": "packages/toolkit-core/src/markdown.ts",
+        "sha": "bc16157cf5a3e2686ca8758e95ed85694a79dd2f"
+      },
+      {
+        "path": "packages/toolkit-core/src/mcp-limits.ts",
+        "sha": "59ceaf4a66265c03c72d826b560d99b73d53d156"
+      },
+      {
+        "path": "packages/toolkit-core/src/metric-monitor.ts",
+        "sha": "d3a0880c9901f2822b3f8b8bacd52eb170df4e87"
+      },
+      {
+        "path": "packages/toolkit-core/src/oauth-device.ts",
+        "sha": "70b825fa221bfb3e1b43d099bcec39f888a0d8d4"
+      },
+      {
+        "path": "packages/toolkit-core/src/oauth-poll.ts",
+        "sha": "b87edf3da5a9228e44aff2d285c59f9769dd3a77"
+      },
+      {
+        "path": "packages/toolkit-core/src/region-cache.ts",
+        "sha": "adb31b65c0b989e760fb95432777dd9309197c51"
+      },
+      {
+        "path": "packages/toolkit-core/src/resource-identity.ts",
+        "sha": "a2a64687b953beeccf711fc5044be51c3d63d622"
+      },
+      {
+        "path": "packages/toolkit-core/src/search-query.ts",
+        "sha": "f51ec3526ef6b775d37b92f7b0553d25e7e29004"
+      },
+      {
+        "path": "packages/toolkit-core/src/sentry-host.ts",
+        "sha": "a4fe3e940b163d9253d6cbf375dd340c6b1f08a8"
+      },
+      {
+        "path": "packages/toolkit-core/src/sentry-origin.ts",
+        "sha": "2f389f92eb9ec193a0695484dacc13811caf05da"
+      },
+      {
+        "path": "plugins/sentry-mcp-experimental/.claude-plugin/plugin.json",
+        "sha": "eb7e8e9bd318d0406753b040fbca63c2f7a2fe06"
+      },
+      {
+        "path": "plugins/sentry-mcp-experimental/.cursor-plugin/plugin.json",
+        "sha": "c21aa3d33ffdbc2a08d9be4e97e8fbddc4bded32"
+      },
+      {
+        "path": "plugins/sentry-mcp-experimental/agents/sentry-mcp.md",
+        "sha": "37705a4f0b8a189c10fb407bb97e178652af8d2c"
+      },
+      {
+        "path": "plugins/sentry-mcp/.claude-plugin/plugin.json",
+        "sha": "add8b35307971a6c428d0969957f2d1a4b7fa9b8"
+      },
+      {
+        "path": "plugins/sentry-mcp/.cursor-plugin/plugin.json",
+        "sha": "7670eee6aea72b514d03c723979444499eef1832"
+      },
+      {
+        "path": "plugins/sentry-mcp/agents/sentry-mcp.md",
+        "sha": "37705a4f0b8a189c10fb407bb97e178652af8d2c"
+      },
+      {
+        "path": ".agents/skills/mcp-audit/references/checklist.md",
+        "sha": "669108dd3add0913619e34d8c38d37c9413cc624"
+      },
+      {
+        "path": ".agents/skills/mcp-audit/references/common-findings.md",
+        "sha": "c4542067aec8ea7d45614a3644ecca795d92a5ef"
+      },
+      {
+        "path": ".agents/skills/mcp-audit/references/spec-baseline.md",
+        "sha": "5da22dbb0d45825076466fde67bb143c9b6f7928"
+      },
+      {
+        "path": ".agents/skills/mcp-audit/references/version-watchpoints.md",
+        "sha": "fdf0ed0ed47b906bdb5ed6b0960b0681624cfa8c"
+      },
+      {
+        "path": "apps/cli-docs/src/fragments/configuration.md",
+        "sha": "9fb40b8be4f5a9d3b672fd3a108a7864c74529fa"
+      },
+      {
+        "path": "apps/docs-mcp/src/agent/cache.ts",
+        "sha": "52541f52761dcb2ca3c266dcb4c6095b7ad5f6ff"
+      },
+      {
+        "path": "apps/docs-mcp/src/agent/features-agent.ts",
+        "sha": "ec57fbfc53266ee12d585275b0e2d9f192df7179"
+      },
+      {
+        "path": "apps/docs-mcp/src/agent/model-fallback.ts",
+        "sha": "4feae34b87758da43e2a8808fa3ae6665079304d"
+      },
+      {
+        "path": "apps/docs-mcp/src/agent/query-agent.ts",
+        "sha": "6e3af3806b4d7ce2d57325a41515c587cccd9884"
+      },
+      {
+        "path": "apps/docs-mcp/src/agent/tailor-agent.ts",
+        "sha": "c489ad1190e8c25fe8cdbd1e8b59ba73359d824f"
+      },
+      {
+        "path": "apps/docs-mcp/src/sentry-docs/doctree.ts",
+        "sha": "15b882e6572cecb2cb1422e005181b2a1fcd2bd0"
+      },
+      {
+        "path": "apps/docs-mcp/src/sentry-docs/fetcher.ts",
+        "sha": "ddb72a5270b2c99497127d72d3641f11aad239ff"
+      },
+      {
+        "path": "apps/docs-mcp/src/stubs/execa.ts",
+        "sha": "fc91a88fe41b74c63f316d5d7b91ba9cb1990820"
+      },
+      {
+        "path": "apps/local/src/components/ai-inspector.tsx",
+        "sha": "241fd97c636b50f5acfc178c342427d76dd6c109"
+      },
+      {
+        "path": "apps/local/src/components/attachment-detail.tsx",
+        "sha": "138777db132cb635a5c9d6b466df86a8ffcb2f17"
+      },
+      {
+        "path": "apps/local/src/components/capture-header.tsx",
+        "sha": "400baf9a05a8092cabb5814d97148a8bf96649b2"
+      },
+      {
+        "path": "apps/local/src/components/cli-logo.tsx",
+        "sha": "3e1bc1a21cc60f490e5d88341b71565cd3708605"
+      },
+      {
+        "path": "apps/local/src/components/connection-landing.tsx",
+        "sha": "7eb51a31b2733b803845e18e4dbb5f6ad3d1deb4"
+      },
+      {
+        "path": "apps/local/src/components/event-command-dialog.tsx",
+        "sha": "3d6e2bc9eb9c1351f874cbcec42618db9cd58c0a"
+      },
+      {
+        "path": "apps/local/src/components/event-context.tsx",
+        "sha": "52221f0101b18737b6448f0160dd111ab5ebfae5"
+      },
+      {
+        "path": "apps/local/src/components/event-detail.tsx",
+        "sha": "6c05665510ffb43ed22a5dbcc9f5ded1a9105d89"
+      },
+      {
+        "path": "apps/local/src/components/event-filter-controls.tsx",
+        "sha": "ba1afc69cd81d72bb3ca58a9ea4b9d6f954f5791"
+      },
+      {
+        "path": "apps/local/src/components/exception-overview.tsx",
+        "sha": "10ca49383a5b518a36aa021be5c29876fb31ccc2"
+      },
+      {
+        "path": "apps/local/src/components/inspector-data.ts",
+        "sha": "6896d5f7065d0fc1148d411e7149ae654b497fe4"
+      },
+      {
+        "path": "apps/local/src/components/json-view.tsx",
+        "sha": "64f4ed072da28e48e1216aeaa3a07c25e66ef2fa"
+      },
+      {
+        "path": "apps/local/src/components/local-settings.tsx",
+        "sha": "e320c05f3b7827e5d71be4b3aea869e7f3406794"
+      },
+      {
+        "path": "apps/local/src/components/performance-workspace.tsx",
+        "sha": "bcd0a405365cbb0128fb19846bef0716b4cac6e3"
+      },
+      {
+        "path": "apps/local/src/components/profile-workspace.tsx",
+        "sha": "9e7a5ec5c1524e67ab88714928bb2b999658bda2"
+      },
+      {
+        "path": "apps/local/src/components/receiver-controls.tsx",
+        "sha": "cd5299ee0504023710a21ff8a6512db5f8e5c684"
+      },
+      {
+        "path": "apps/local/src/components/receiver-dialog.tsx",
+        "sha": "8bfbb6dcfcd34e6ead59807a1357d9276dbd7564"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T15:19:17Z",
+    "license": "LICENSE-file (type needs review)"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 30,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [
+      "gha-pull-request-target-checkout"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "curl-pipe-sh",
+      "severe": false,
+      "file": "apps/cli-docs/astro.config.mjs",
+      "line": 111,
+      "snippet": "var command = 'curl https://cli.sentry.dev/install -fsS | bash';",
+      "deduction": 25
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "curl-pipe-sh",
+      "severe": false,
+      "file": "packages/cli/script/bundle.ts",
+      "line": 357,
+      "snippet": "{let v=process.versions.node.split(\".\").map(Number);if(v[0]<18){console.error(\"Error: sentry requires Node.js 18 or later (found \"+process.version+\").\\\\n\\\\nEith",
+      "deduction": 5
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "curl-pipe-sh",
+      "severe": false,
+      "file": "packages/cli/script/generate-skill.ts",
+      "line": 246,
+      "snippet": "curl https://cli.sentry.dev/install -fsS | bash",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "scripts/cli-nightly-watchdog.mjs",
+      "line": 86,
+      "snippet": "`https://ghcr.io/token?scope=repository:${repository}:pull`,",
+      "host": "ghcr.io",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "apps/cli-docs/astro.config.mjs",
+      "line": 187,
+      "snippet": "href: \"https://fonts.googleapis.com\",",
+      "host": "fonts.googleapis.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "apps/cli-docs/astro.config.mjs",
+      "line": 194,
+      "snippet": "href: \"https://fonts.gstatic.com\",",
+      "host": "fonts.gstatic.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "apps/cli-docs/astro.config.mjs",
+      "line": 211,
+      "snippet": "src: \"https://plausible.io/js/script.js\",",
+      "host": "plausible.io",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "packages/cli/plugins/sentry-cli/skills/sentry-cli/SKILL.md",
+      "line": 361,
+      "snippet": "curl https://cli.sentry.dev/install -fsS | bash",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "packages/cli/README.md",
+      "line": 22,
+      "snippet": "curl https://cli.sentry.dev/install -fsS | bash",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "gha-pull-request-target-checkout",
+      "severe": true,
+      "file": ".github/workflows/pr-risk-jev.yml",
+      "line": 4,
+      "snippet": "pull_request_target:",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 3,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "ghcr.io",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "plausible.io"
+    ],
+    "declared_hosts": 3,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 29,
+    "failed": 1,
+    "ms": 13164
+  },
+  "duration_ms": 6094
+}

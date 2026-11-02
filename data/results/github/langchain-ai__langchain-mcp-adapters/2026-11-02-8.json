@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154652Z",
+  "target": {
+    "source": "github",
+    "id": "langchain-ai/langchain-mcp-adapters",
+    "url": "https://github.com/langchain-ai/langchain-mcp-adapters",
+    "name": "langchain-mcp-adapters"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:48:12.890Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "52a4535f3eb4b98f386836e4d9b8c4cadf99afca",
+    "files_scanned": 16,
+    "candidates": 16,
+    "excluded_non_shipped": 27,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/_lint.yml",
+        "sha": "565f0ddc9cc65227482e0900f01f68913694c482"
+      },
+      {
+        "path": ".github/workflows/_test.yml",
+        "sha": "475aac38e83b8ab356b7ee14ecff809a28cf6ac6"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "14cdbdef24de1d3ddf3246d73b01908af300d7e4"
+      },
+      {
+        "path": ".github/workflows/codeql.yml",
+        "sha": "38d2d63bf9f5f7e51557223f2a48aecad00bd023"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "613ec139a7e318c2cd875cbdcf41ce2f4040283b"
+      },
+      {
+        "path": "langchain_mcp_adapters/tools.py",
+        "sha": "1b920e7d3066b17e4e2764519184442a6cce9723"
+      },
+      {
+        "path": "README.md",
+        "sha": "0d3e7d0fc7c4facdf437445eaeeb71102de4befe"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "dacb1d60b25fb509cbc11d2344628e00d1fbf137"
+      },
+      {
+        "path": "langchain_mcp_adapters/__init__.py",
+        "sha": "3f43182ba0db6b2950aa251c902e9da041aa9168"
+      },
+      {
+        "path": "langchain_mcp_adapters/callbacks.py",
+        "sha": "1e27b29501ca2468fa415aed60b17c4187dbe842"
+      },
+      {
+        "path": "langchain_mcp_adapters/client.py",
+        "sha": "c8f735707910b8ab9dc104fe220d3d111e86b8fb"
+      },
+      {
+        "path": "langchain_mcp_adapters/interceptors.py",
+        "sha": "720d0472e777acb006c993c01752fe21d344c2d5"
+      },
+      {
+        "path": "langchain_mcp_adapters/prompts.py",
+        "sha": "208bbd864dfae280cb7369d4953d3acc24b58443"
+      },
+      {
+        "path": "langchain_mcp_adapters/resources.py",
+        "sha": "7450a9042fdff0a430ee7f9946a31e30e4e81cfd"
+      },
+      {
+        "path": "langchain_mcp_adapters/server_info.py",
+        "sha": "e8c7cc35f914bc8d94d6c375bb7ad5b7362a8d9f"
+      },
+      {
+        "path": "langchain_mcp_adapters/sessions.py",
+        "sha": "d42e952457fbc35d102fb8df868bf9b7da6e1ab9"
+      }
+    ],
+    "repo_pushed_at": "2026-09-16T03:16:07Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": false,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 85,
+    "dims": {
+      "maintenance": 0,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 16,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 48
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1580
+  },
+  "duration_ms": 1595
+}

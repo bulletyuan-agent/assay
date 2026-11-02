@@ -1,0 +1,1205 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154517Z",
+  "target": {
+    "source": "github",
+    "id": "evanw/esbuild",
+    "url": "https://github.com/evanw/esbuild",
+    "name": "esbuild"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:45:35.641Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "f6058f8364fe7ab91ca57a83e02577ed74c9cae4",
+    "files_scanned": 270,
+    "candidates": 270,
+    "excluded_non_shipped": 39,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "d9eff1b63b7a5a3ff81a6d4b36a32ff670be3578"
+      },
+      {
+        "path": ".github/workflows/e2e.yml",
+        "sha": "6d8fe4625629fac366baca3625a6f2710f4bb6bf"
+      },
+      {
+        "path": ".github/workflows/publish.yml",
+        "sha": "05b0401fda61695239ceae96b4391694b922b21b"
+      },
+      {
+        "path": ".github/workflows/validate.yml",
+        "sha": "c4a91e4e9c8a80e8f122004fd0865ec68b3ef516"
+      },
+      {
+        "path": "lib/package.json",
+        "sha": "e5d50bd23158ec93169c230cf295285b6843cb76"
+      },
+      {
+        "path": "scripts/package.json",
+        "sha": "39f802ad92f635f5abfa35657f544caafa4546e0"
+      },
+      {
+        "path": "scripts/browser/package.json",
+        "sha": "62ce7e47884d5cac6250d75ce36216f23e1379c4"
+      },
+      {
+        "path": "cmd/esbuild/main.go",
+        "sha": "3ff4481efddb9a98c29052262b85c5135f6db569"
+      },
+      {
+        "path": "compat-table/src/index.ts",
+        "sha": "aea756e1216d231a2808b6f421f233fcb607dcb6"
+      },
+      {
+        "path": "lib/package-lock.json",
+        "sha": "d13d8aa03bcb6d5810014a4d4fbf6cd656c0cf3b"
+      },
+      {
+        "path": "lib/README.md",
+        "sha": "2b49927d8e7d13090be2bccd8417c21a75e3cd95"
+      },
+      {
+        "path": "lib/tsconfig-deno.json",
+        "sha": "4461029c4c1bb3bc826a250247fe7d88357110cd"
+      },
+      {
+        "path": "lib/tsconfig-nolib.json",
+        "sha": "91ecf73c6fa9e6009001cde8e672403e7039bf1e"
+      },
+      {
+        "path": "lib/tsconfig.json",
+        "sha": "f16fdae622f0a1b5504bbd564e621b003cc370d8"
+      },
+      {
+        "path": "pkg/cli/cli.go",
+        "sha": "f339c7e31638f5709a30dc099382be74e2aaf24b"
+      },
+      {
+        "path": "scripts/destructuring-fuzzer.js",
+        "sha": "fb93c3f2191166c2844a0694a55c9f9b0be5a40c"
+      },
+      {
+        "path": "scripts/esbuild.js",
+        "sha": "b0d5ab3ba032d7bd36ff96319acbc8c9f0fd618d"
+      },
+      {
+        "path": "scripts/gen-unicode-table.js",
+        "sha": "b720f507f28f6a5af82ac62db7f630a05f634591"
+      },
+      {
+        "path": "scripts/node-unref-tests.js",
+        "sha": "151619498da744bf3cb332034868b4ecf207b39e"
+      },
+      {
+        "path": "scripts/package-lock.json",
+        "sha": "317b61d933dad4a2f3a745da835b08e153bb4bca"
+      },
+      {
+        "path": "scripts/parse-ts-files.js",
+        "sha": "2b84ad084a0fc5b0674d8da99ba75290aa0cd05d"
+      },
+      {
+        "path": "scripts/plugin-tests.js",
+        "sha": "5489d798bfa9f5e5f144e0411a40a2a252b3fcf6"
+      },
+      {
+        "path": "scripts/register-test.js",
+        "sha": "a0d6a5af77736d0e9f24218a8857a96298f903bc"
+      },
+      {
+        "path": "scripts/terser-tests.js",
+        "sha": "63ee9a3c4d6d2806f22d8c8774e0f0c2911bd8e0"
+      },
+      {
+        "path": "scripts/test-yarnpnp.js",
+        "sha": "27fe0380cba08beb9a364667d9f9743e8827f4e5"
+      },
+      {
+        "path": "scripts/test262-async.js",
+        "sha": "62385b7ad4d5722fd0cb9e3e9ad0202f9d1fddbd"
+      },
+      {
+        "path": "scripts/test262.js",
+        "sha": "cc3ceee67158d85825dd1c5f6750f9b204efb8d6"
+      },
+      {
+        "path": "scripts/ts-type-tests.js",
+        "sha": "a7c9fbc1cc7aae3096190ae2806305f6bbc1c25c"
+      },
+      {
+        "path": "scripts/tsconfig.json",
+        "sha": "b6ef3d1efe542c23aa3020f3a7bdf751904be34c"
+      },
+      {
+        "path": "scripts/uglify-tests.js",
+        "sha": "b565d7cb41cea6a66c557d4d47cd358daf62d056"
+      },
+      {
+        "path": "scripts/verify-source-map.js",
+        "sha": "b704dfdece94c9b6180d79f5a877f341c65df32d"
+      },
+      {
+        "path": "scripts/wasm-tests.js",
+        "sha": "12fcf8d1e6ad3dcaf79f151c90b014d585023188"
+      },
+      {
+        "path": "compat-table/package.json",
+        "sha": "70ce0069ad2a1c0119867cb5145cc4d5be99bd14"
+      },
+      {
+        "path": "CHANGELOG-2024.md",
+        "sha": "c0cbb8f875a81afd6e98c9a68d0dff5b033cae2f"
+      },
+      {
+        "path": "CHANGELOG-2025.md",
+        "sha": "de9b1351d4bd2089729efb8265b758226f1d540c"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "b94df600fb2536436cc8160d199c1db9d191f237"
+      },
+      {
+        "path": "dl.sh",
+        "sha": "45d3a9adec00efc1c2c011495ee81b1c7840479f"
+      },
+      {
+        "path": "lib/npm/browser.ts",
+        "sha": "f51c4f3088ac5dbcaec376a494b856b462a71ddc"
+      },
+      {
+        "path": "lib/npm/node-install.ts",
+        "sha": "1cf1fc94a8f2de10c5a3b0d683aba294a5ed6b64"
+      },
+      {
+        "path": "lib/npm/node-platform.ts",
+        "sha": "7187a78dbfa920ede4e19d71b58fbb16e6bce2e3"
+      },
+      {
+        "path": "lib/npm/node-shim.ts",
+        "sha": "bb07ab53707b1d616bfccd6577c354df62032e45"
+      },
+      {
+        "path": "lib/npm/node.ts",
+        "sha": "6ae6618e9b7f0d62a86da922738102f85eaece04"
+      },
+      {
+        "path": "lib/shared/common.ts",
+        "sha": "8dc7169301db450887dfcfb773f8f6dfd5a36162"
+      },
+      {
+        "path": "lib/shared/stdio_protocol.ts",
+        "sha": "0aade051128212a2126329854a585604aa78f025"
+      },
+      {
+        "path": "lib/shared/types.ts",
+        "sha": "631a1e26e5a8b600186c5f809598133c45f600e6"
+      },
+      {
+        "path": "lib/shared/uint8array_json_parser.ts",
+        "sha": "4cf45c5bdebb1bbee965bc2b43b51926a63ae719"
+      },
+      {
+        "path": "lib/shared/worker.ts",
+        "sha": "bef2c93fd9f6b3e5b43af56b23e1bea17a288f0a"
+      },
+      {
+        "path": "LICENSE.md",
+        "sha": "2027e8dcf3787f5aac9fcd835e2b80cb75a39211"
+      },
+      {
+        "path": "README.md",
+        "sha": "08272e6b3db3f5068e876e2c2b13b4e138d5694d"
+      },
+      {
+        "path": "require/yarnpnp/bar/index.js",
+        "sha": "2c25185e0e2d4c0d7518b1d74c6f090783117195"
+      },
+      {
+        "path": "require/yarnpnp/foo/index.js",
+        "sha": "7e942cf45c8a371a12fb1a750e05d278caa61543"
+      },
+      {
+        "path": "RUNBOOK.md",
+        "sha": "aea1c87cc563fe45b485485e78f6818ad4c35af3"
+      },
+      {
+        "path": "scripts/browser/browser-tests.js",
+        "sha": "b67c0ab8d3811b6bffcea404fe41a89cf7092da0"
+      },
+      {
+        "path": "scripts/browser/package-lock.json",
+        "sha": "9f6a3636380c73b8a88cf5eaa9a314f65e388318"
+      },
+      {
+        "path": "version.txt",
+        "sha": "a37255a85b9f006788bc34d9f098a5235c3e36a2"
+      },
+      {
+        "path": "npm/esbuild-wasm/package.json",
+        "sha": "2a152be40ef4a04301f14aaf77884cb7bb62c066"
+      },
+      {
+        "path": "npm/esbuild/package.json",
+        "sha": "7e54c6fc979b490baba9937b3893d1390473dde2"
+      },
+      {
+        "path": "require/old-ts/package.json",
+        "sha": "bd24d5c549f76b5377f0e5b681c4b548a10164f5"
+      },
+      {
+        "path": "require/parcel2/package.json",
+        "sha": "41a9e7aa17605fc83987286ce121fd8f766c809a"
+      },
+      {
+        "path": "require/rollup/package.json",
+        "sha": "e33b8fce3def0b7f531901acd91057c8b363b9f0"
+      },
+      {
+        "path": "require/webpack5/package.json",
+        "sha": "1848118016a55c064b748ea62856dad5daed63e6"
+      },
+      {
+        "path": "require/yarnpnp/package.json",
+        "sha": "ef0b85e2d14cf669cb23bd149d51105b05d3f1f0"
+      },
+      {
+        "path": "compat-table/package-lock.json",
+        "sha": "2d92cf344eb78e465b0cb0e2cef129fc9aaf0fe9"
+      },
+      {
+        "path": "compat-table/README.md",
+        "sha": "ecc11174247ab1ab41e1e0948dd1a93edf4149f7"
+      },
+      {
+        "path": "compat-table/tsconfig.json",
+        "sha": "bbe9e264c3c3e7e528013170a6484335409aeaef"
+      },
+      {
+        "path": "npm/@esbuild/aix-ppc64/package.json",
+        "sha": "25453cb14702b3e6fc308b4c339ba01698355b7c"
+      },
+      {
+        "path": "npm/@esbuild/android-arm/package.json",
+        "sha": "a597e80c37c2c2136e3b2583c2de90824550b5d7"
+      },
+      {
+        "path": "npm/@esbuild/android-arm64/package.json",
+        "sha": "49eb9955b7da68f8a759c4eeefa089d6256a23ba"
+      },
+      {
+        "path": "npm/@esbuild/android-x64/package.json",
+        "sha": "9d90d701fcd2ef63f00b42195f054c303fe80ce5"
+      },
+      {
+        "path": "npm/@esbuild/darwin-arm64/package.json",
+        "sha": "0f78985dc48fec01504911a59076a138e2c7368d"
+      },
+      {
+        "path": "npm/@esbuild/darwin-x64/package.json",
+        "sha": "e7ade39e1419e4717a1fc355e051c5977bae9ec9"
+      },
+      {
+        "path": "npm/@esbuild/freebsd-arm64/package.json",
+        "sha": "97c48595815540c283238f644f275941ad97d4ac"
+      },
+      {
+        "path": "npm/@esbuild/freebsd-x64/package.json",
+        "sha": "d8ac4a8869fe8019f2e6bae5ea879f992ce0adc9"
+      },
+      {
+        "path": "npm/@esbuild/linux-arm/package.json",
+        "sha": "b70044f1b655c9a2de129c24a680b1e6c496f668"
+      },
+      {
+        "path": "npm/@esbuild/linux-arm64/package.json",
+        "sha": "35bcee506dd492670c4c856a8dea3db780b26e3d"
+      },
+      {
+        "path": "npm/@esbuild/linux-ia32/package.json",
+        "sha": "a3c28e74d6852b0df432d748bbf0b24796a7b9c3"
+      },
+      {
+        "path": "npm/@esbuild/linux-loong64/package.json",
+        "sha": "3fcd9f2ddf13fa32f152e75325720032885a40b1"
+      },
+      {
+        "path": "npm/@esbuild/linux-mips64el/package.json",
+        "sha": "eba524f21e2d30c401ba9f2e77576ee7da5f673d"
+      },
+      {
+        "path": "npm/@esbuild/linux-ppc64/package.json",
+        "sha": "ade91b3da36b18a81c74a65faba2eb027a7aedf5"
+      },
+      {
+        "path": "npm/@esbuild/linux-riscv64/package.json",
+        "sha": "d5595a6058a0194b459cc4f0b9236a6a511b5995"
+      },
+      {
+        "path": "npm/@esbuild/linux-s390x/package.json",
+        "sha": "0d3663e15892a1b65002582a16386d89c80d8ddb"
+      },
+      {
+        "path": "npm/@esbuild/linux-x64/package.json",
+        "sha": "0822e6ea729a778077d7a9f4a845c65331759d99"
+      },
+      {
+        "path": "npm/@esbuild/netbsd-arm64/package.json",
+        "sha": "d9425aee5785a62073d596847556b68dc02053e7"
+      },
+      {
+        "path": "npm/@esbuild/netbsd-x64/package.json",
+        "sha": "46b2113a4a416d079f65cab07b8d4d1d2f8304d8"
+      },
+      {
+        "path": "npm/@esbuild/openbsd-arm64/package.json",
+        "sha": "1edb09e670180151560f6260fe7618fd30e1caa5"
+      },
+      {
+        "path": "npm/@esbuild/openbsd-x64/package.json",
+        "sha": "3108517c01708349c32669b09e08cca4426d3768"
+      },
+      {
+        "path": "npm/@esbuild/openharmony-arm64/package.json",
+        "sha": "00543e9c90c4b4067f9dac9a2ed12e81858234ab"
+      },
+      {
+        "path": "npm/@esbuild/sunos-x64/package.json",
+        "sha": "e1820498309c91d0dcbece567cf3fe76c97ac57e"
+      },
+      {
+        "path": "npm/@esbuild/wasi-preview1/package.json",
+        "sha": "8a59c726b2c686b12d8ecff48327d3f6265e61e2"
+      },
+      {
+        "path": "npm/@esbuild/win32-arm64/package.json",
+        "sha": "d1ba728d364989f06f5d507bcaf73a6ece294079"
+      },
+      {
+        "path": "npm/@esbuild/win32-ia32/package.json",
+        "sha": "920163d896f93192f32719c81d1a90828dd4a534"
+      },
+      {
+        "path": "npm/@esbuild/win32-x64/package.json",
+        "sha": "5baf9051bcea33d844080dc91846799efb2caa3b"
+      },
+      {
+        "path": "require/yarnpnp/foo/package.json",
+        "sha": "5992d83e74e7d7e267f15f0eddc7963719b66528"
+      },
+      {
+        "path": "cmd/esbuild/main_other.go",
+        "sha": "3b69994af7e1c4400e23042bc7134a782ad38d6f"
+      },
+      {
+        "path": "cmd/esbuild/main_wasm.go",
+        "sha": "64372006540815588bc371ccc8d2e7d845a0be1c"
+      },
+      {
+        "path": "cmd/esbuild/service.go",
+        "sha": "223b564e0a29bec1a4de5e30bee9d720f38766ae"
+      },
+      {
+        "path": "cmd/esbuild/stdio_protocol.go",
+        "sha": "15dcef6d0e381d9f91c2bcea4408348533aa4592"
+      },
+      {
+        "path": "cmd/esbuild/version.go",
+        "sha": "e539adc39acfa714b0487fd3fef4604465378ecb"
+      },
+      {
+        "path": "compat-table/src/caniuse.ts",
+        "sha": "d0f44d3cd6f569ea6e3cf66812fea247f436bfc2"
+      },
+      {
+        "path": "compat-table/src/compat-table.ts",
+        "sha": "71c8c9b1f1b0049e5106119695961fc777fc263b"
+      },
+      {
+        "path": "compat-table/src/css_table.ts",
+        "sha": "2492ebd958d37d34259caaf10e7240b9cf89f4c2"
+      },
+      {
+        "path": "compat-table/src/js_table.ts",
+        "sha": "ee31548189c6bb63e9fe1092fdeddb6e15d2b01d"
+      },
+      {
+        "path": "compat-table/src/mdn.ts",
+        "sha": "60277cedde6a92eb621cd44c695f0f8b9bbaa268"
+      },
+      {
+        "path": "compat-table/src/types.d.ts",
+        "sha": "3e172c0fd861e3a7002acdbe9427214ec316ff2b"
+      },
+      {
+        "path": "internal/api_helpers/use_timer.go",
+        "sha": "3b36fe25a30ca96b55bec20fef21944762bb6fc9"
+      },
+      {
+        "path": "internal/ast/ast.go",
+        "sha": "eedc3bae0ad9c72e8202d0f24ac760ce51004b90"
+      },
+      {
+        "path": "internal/bundler/bundler.go",
+        "sha": "ae06c622d3234ea8b31189769f201f479c7fc38f"
+      },
+      {
+        "path": "internal/cache/cache_ast.go",
+        "sha": "c976f8951648f80194b931ca19b97e79e88d97c9"
+      },
+      {
+        "path": "internal/cache/cache_fs.go",
+        "sha": "ab4d08ef0cc8ed3d54385680c9d330a554f3df85"
+      },
+      {
+        "path": "internal/cache/cache.go",
+        "sha": "8b1dd8c401e5b3d51b2b1f9530e8cc5340ee3a7a"
+      },
+      {
+        "path": "internal/cli_helpers/cli_helpers.go",
+        "sha": "03eea3a77d94e0f128ebb0f9e172772d1201e83a"
+      },
+      {
+        "path": "internal/compat/compat.go",
+        "sha": "af069c20d13d06fdbe3e98ac8c8435496594037c"
+      },
+      {
+        "path": "internal/compat/css_table.go",
+        "sha": "6daf4e7ff56530606b4d4d5631dde256d5022c64"
+      },
+      {
+        "path": "internal/compat/js_table.go",
+        "sha": "52c5ca7c85ad74ce66ccf71e457e83fefc529ba7"
+      },
+      {
+        "path": "internal/config/config.go",
+        "sha": "dd9f89fbea4c7c1f2fab871480cb6df8d599a86e"
+      },
+      {
+        "path": "internal/config/globals.go",
+        "sha": "342aa2cdf4c4bb5c48fe143af250773e5182c92d"
+      },
+      {
+        "path": "internal/css_ast/css_ast.go",
+        "sha": "fd067b05f1ae0ad140a541ccd85810a2d46559ec"
+      },
+      {
+        "path": "internal/css_ast/css_decl_table.go",
+        "sha": "231eac47231d889ccc9c8b1df1e6406188a930e8"
+      },
+      {
+        "path": "internal/css_lexer/css_lexer.go",
+        "sha": "d8703934b6a5b35a01fa0d520bfd589a656078d1"
+      },
+      {
+        "path": "internal/css_parser/css_color_spaces.go",
+        "sha": "03c5efbc895ce95f5e2812664493f9c73c8dc15a"
+      },
+      {
+        "path": "internal/css_parser/css_decls_animation.go",
+        "sha": "e4368d51c59807fcdaa1cdcf225aadcaa9c203c9"
+      },
+      {
+        "path": "internal/css_parser/css_decls_border_radius.go",
+        "sha": "cddc66e77c43a3d5ea2599c77e11d1a260e3f00d"
+      },
+      {
+        "path": "internal/css_parser/css_decls_box_shadow.go",
+        "sha": "5bc730f4b815e1c9ed03ce7514e64bbd511ab775"
+      },
+      {
+        "path": "internal/css_parser/css_decls_box.go",
+        "sha": "9f7d7ec3ab2071a349913900b012e5418162a6bc"
+      },
+      {
+        "path": "internal/css_parser/css_decls_color.go",
+        "sha": "c6b66910347349faddee17a25839d10e9e0bc399"
+      },
+      {
+        "path": "internal/css_parser/css_decls_composes.go",
+        "sha": "2b8aa0aa55e31664664a59c771b919212b3c618b"
+      },
+      {
+        "path": "internal/css_parser/css_decls_container.go",
+        "sha": "6c7ca3a6b402a90cef630395f9e5d8a862be3b93"
+      },
+      {
+        "path": "internal/css_parser/css_decls_font_family.go",
+        "sha": "8c403821b27284c86747e3daf3ae872b4e69b8c6"
+      },
+      {
+        "path": "internal/css_parser/css_decls_font_weight.go",
+        "sha": "6b8fe90acb7f254b3ad13620620d07066a621c30"
+      },
+      {
+        "path": "internal/css_parser/css_decls_font.go",
+        "sha": "c1644b428a50eb650e4a7b7b77a647963e7e052c"
+      },
+      {
+        "path": "internal/css_parser/css_decls_gradient.go",
+        "sha": "06415764ef32716a2358318748a0defbcd04651c"
+      },
+      {
+        "path": "internal/css_parser/css_decls_list_style.go",
+        "sha": "113769d782b77a1c0aa3133d52cf29141a5ab1e6"
+      },
+      {
+        "path": "internal/css_parser/css_decls_transform.go",
+        "sha": "e5cdbae63e6b8a6745c2c16a26c2bf9ffa57b600"
+      },
+      {
+        "path": "internal/css_parser/css_decls.go",
+        "sha": "4a15a74a137bad6d2f79001ea7865cfd2e398aff"
+      },
+      {
+        "path": "internal/css_parser/css_nesting.go",
+        "sha": "502533b3451c2707cb7e0ba308c4b033459533e4"
+      },
+      {
+        "path": "internal/css_parser/css_parser_media.go",
+        "sha": "3b574a1977b6f841fef90e2d2dfb18e6eacdc033"
+      },
+      {
+        "path": "internal/css_parser/css_parser_selector.go",
+        "sha": "79c4c4f60ed42e9097094997c2d3d34d830c0c10"
+      },
+      {
+        "path": "internal/css_parser/css_parser.go",
+        "sha": "17d894b12a4ba0638536194ec731c3a70fb7d688"
+      },
+      {
+        "path": "internal/css_parser/css_reduce_calc.go",
+        "sha": "19b45820b8c495a522d03900f3c20deee8ca901f"
+      },
+      {
+        "path": "internal/css_printer/css_printer.go",
+        "sha": "50c8fcba2d1a067a0e80ef9d2c27a4258fef049f"
+      },
+      {
+        "path": "internal/fs/error_other.go",
+        "sha": "bd8647d66e827f6e29772cbda3497f07db141f40"
+      },
+      {
+        "path": "internal/fs/error_wasm+windows.go",
+        "sha": "1ddecff72c195a074e8517baf688a5dc80ffa9a1"
+      },
+      {
+        "path": "internal/fs/filepath.go",
+        "sha": "edab22c22addc37962fcb3811f4bf1e3f6876bad"
+      },
+      {
+        "path": "internal/fs/fs_mock.go",
+        "sha": "7bb34a51ac26d4433bbfd7e77f8dcbda492b06eb"
+      },
+      {
+        "path": "internal/fs/fs_real.go",
+        "sha": "412eb687d8543c9ef6d9ccca74104d64c962320e"
+      },
+      {
+        "path": "internal/fs/fs_zip.go",
+        "sha": "58a7b8ba494dbdf580e48daab45301b805b0ef2c"
+      },
+      {
+        "path": "internal/fs/fs.go",
+        "sha": "ccfcc6cded83905db223ed595f4fbe01a741a4df"
+      },
+      {
+        "path": "internal/fs/iswin_other.go",
+        "sha": "1aa2037df6f3d4e10c37681c98533def5b0dc45d"
+      },
+      {
+        "path": "internal/fs/iswin_wasm.go",
+        "sha": "b44a60e06dc2b45f1430f5ab46e82d194d618ffb"
+      },
+      {
+        "path": "internal/fs/iswin_windows.go",
+        "sha": "6f0128d77402ece9093b60cd05ff833116254515"
+      },
+      {
+        "path": "internal/fs/modkey_other.go",
+        "sha": "4999e80e1455a5e7b4899ecad0917a04ee89e76e"
+      },
+      {
+        "path": "internal/fs/modkey_unix.go",
+        "sha": "c7c7f9ca9307ba38740e10f5dabc0f69d20bf269"
+      },
+      {
+        "path": "internal/graph/graph.go",
+        "sha": "a030797d81c119778b386c3c4d728ff9e8780e54"
+      },
+      {
+        "path": "internal/graph/input.go",
+        "sha": "08292705360a456d4e67a66879cf1719edc916c0"
+      },
+      {
+        "path": "internal/graph/meta.go",
+        "sha": "208056cb44ec662c8b41b3ee44e15c07571a1b7a"
+      },
+      {
+        "path": "internal/helpers/bitset.go",
+        "sha": "47b0c1cb22baa0956d022931b2a9b38cdda948c6"
+      },
+      {
+        "path": "internal/helpers/comment.go",
+        "sha": "95b86845c21b21653a6f61f52d4c8a7d6b28d725"
+      },
+      {
+        "path": "internal/helpers/dataurl.go",
+        "sha": "2b5004c07abe9a17d3f6b5904f16ab1c6d3cfed6"
+      },
+      {
+        "path": "internal/helpers/float.go",
+        "sha": "02b3ac97c97aba574effdb93796bb9eba33657c3"
+      },
+      {
+        "path": "internal/helpers/glob.go",
+        "sha": "c8ffa8ba7beeb282898a4852aa9839cf01409197"
+      },
+      {
+        "path": "internal/helpers/hash.go",
+        "sha": "d7028860a5b780fce0b9935440c8bd9d77f5cda2"
+      },
+      {
+        "path": "internal/helpers/joiner.go",
+        "sha": "649f80a2c1a3dde26df2fd777e57a8f5b92ae2aa"
+      },
+      {
+        "path": "internal/helpers/mime.go",
+        "sha": "3a2f5a4ab2047d289f758f17ec2c9b5c25ee8560"
+      },
+      {
+        "path": "internal/helpers/path.go",
+        "sha": "2b05b16f5dd3d22095682175e1d3f222093ba256"
+      },
+      {
+        "path": "internal/helpers/quote.go",
+        "sha": "a505ad4a78c100f2735dd935b77dccc2570de278"
+      },
+      {
+        "path": "internal/helpers/serializer.go",
+        "sha": "9b3ae0b4470e292e9e0432ec1355595590a33379"
+      },
+      {
+        "path": "internal/helpers/stack.go",
+        "sha": "0c2e91c27a19e4af9a33016fa2de57c0087b08c4"
+      },
+      {
+        "path": "internal/helpers/strings.go",
+        "sha": "e07789276fbf4bef01425c0fdfb0bb52e8dbb4b5"
+      },
+      {
+        "path": "internal/helpers/timer.go",
+        "sha": "4502b23ffe6e6cb07cdfb7570d4e11d58f618524"
+      },
+      {
+        "path": "internal/helpers/typos.go",
+        "sha": "deef87efce98757b54b61d7e7bac7e0cab2b5cc6"
+      },
+      {
+        "path": "internal/helpers/utf.go",
+        "sha": "59b24bbfa490bc845d8c92f1a233e02565f87433"
+      },
+      {
+        "path": "internal/helpers/waitgroup.go",
+        "sha": "850e088280e51b12ebb5c9cddd04446fc9c29785"
+      },
+      {
+        "path": "internal/js_ast/js_ast_helpers.go",
+        "sha": "bfd8cf4dfb21c7454e4fb47257f93b9e724533c1"
+      },
+      {
+        "path": "internal/js_ast/js_ast.go",
+        "sha": "aa94f245b7e68e77bf8c1d525a06aae8cd5224b0"
+      },
+      {
+        "path": "internal/js_ast/js_ident.go",
+        "sha": "b1ff22dc8ab68d03d78c63eda29da4c2d71a6441"
+      },
+      {
+        "path": "internal/js_ast/unicode.go",
+        "sha": "f1d67206aa43e4bafe42b0953f9c3f62f08591ea"
+      },
+      {
+        "path": "internal/js_lexer/js_lexer.go",
+        "sha": "62d82ac373aca21bd9d775afbb77e85a50062fd1"
+      },
+      {
+        "path": "internal/js_lexer/tables.go",
+        "sha": "c96b6b58a5332de1266800f685fc9d94143b7c6f"
+      },
+      {
+        "path": "internal/js_parser/global_name_parser.go",
+        "sha": "78649ead8aa60ba4eb30106c53a5d050063443aa"
+      },
+      {
+        "path": "internal/js_parser/js_parser_lower_class.go",
+        "sha": "53f6701fea5eb08de4c90e596fd784dc70ed99e2"
+      },
+      {
+        "path": "internal/js_parser/js_parser_lower.go",
+        "sha": "ca7a828980854eef1d0c2a95c8d1343261dbe76a"
+      },
+      {
+        "path": "internal/js_parser/json_parser.go",
+        "sha": "0f8c79a9ed51a49fa3411b346ec8f5b301b6577c"
+      },
+      {
+        "path": "internal/js_parser/sourcemap_parser.go",
+        "sha": "49d9de574b277e97fe261ec86c96453245635d61"
+      },
+      {
+        "path": "internal/js_parser/ts_parser.go",
+        "sha": "36f5328f0d92591a12fbf8ddeeae49b47fefa58d"
+      },
+      {
+        "path": "internal/js_printer/js_printer.go",
+        "sha": "d41bbce69f3c72946b2170ea623b1e06f612dcf7"
+      },
+      {
+        "path": "internal/linker/debug.go",
+        "sha": "252733c3da6dce742244b12f7eb734779678556c"
+      },
+      {
+        "path": "internal/logger/logger_darwin.go",
+        "sha": "dac2a041be4b575ab5801423583db9a210972b4b"
+      },
+      {
+        "path": "internal/logger/logger_linux.go",
+        "sha": "b825cbb96e3f18649cd842677a1b6a330d7e4876"
+      },
+      {
+        "path": "internal/logger/logger_other.go",
+        "sha": "7da8a85493338e51ea7110f7523994a95ffae851"
+      },
+      {
+        "path": "internal/logger/logger_windows.go",
+        "sha": "f2383ff87e1d0c832cd76f201774c8d612c3077c"
+      },
+      {
+        "path": "internal/logger/logger.go",
+        "sha": "2b2a463d7e4f872482eda5ee109ec7104ffc9f3c"
+      },
+      {
+        "path": "internal/logger/msg_ids.go",
+        "sha": "3a1829c2e5330990bf3cd3a79ccda9c4a5801e21"
+      },
+      {
+        "path": "internal/logger/style_clang.go",
+        "sha": "7ad97cb7ec875797d95b635ef477b97b15fec5ba"
+      },
+      {
+        "path": "internal/logger/style_default.go",
+        "sha": "fe5b788690cba0ce17e63d3c746c267e7b6b67a3"
+      },
+      {
+        "path": "internal/logger/style_visualstudio.go",
+        "sha": "cea861ec3801b66bf8ee2fad3ac219073f3279d0"
+      },
+      {
+        "path": "internal/logger/style.go",
+        "sha": "39071e384d20b5e11951eeda35dd4bbad28003d5"
+      },
+      {
+        "path": "internal/renamer/renamer.go",
+        "sha": "15a9bf6db828e4b4bebc90faf1acb45605629ed2"
+      },
+      {
+        "path": "internal/resolver/dataurl.go",
+        "sha": "c46e607183004453e1d271d4ffa5d3bd463d5f17"
+      },
+      {
+        "path": "internal/resolver/package_json.go",
+        "sha": "e64758c7217fab63c6c5d64451c2e037c401ed8e"
+      },
+      {
+        "path": "internal/resolver/resolver.go",
+        "sha": "530547bf9892b71a5bd5e85cd90e0dbbc3d77800"
+      },
+      {
+        "path": "internal/resolver/testExpectations.json",
+        "sha": "56cd4a106f972826a1131163acbe45d304294efe"
+      },
+      {
+        "path": "internal/resolver/tsconfig_json.go",
+        "sha": "1e368f8d7b65e6616f36d83dc25e9383546ab22d"
+      },
+      {
+        "path": "internal/resolver/yarnpnp.go",
+        "sha": "cb5190f80e73477dcda0dc3c9b6dc664ec33d114"
+      },
+      {
+        "path": "internal/runtime/runtime.go",
+        "sha": "f63fb968da2d10f8d8f64136e445d120115229b9"
+      },
+      {
+        "path": "internal/sourcemap/sourcemap.go",
+        "sha": "4d759dbbaec892321753adce9b4535c184620096"
+      },
+      {
+        "path": "internal/xxhash/LICENSE.txt",
+        "sha": "24b53065f40b5d7d277a64375956ec19cb2123c5"
+      },
+      {
+        "path": "internal/xxhash/README.md",
+        "sha": "1c9f0af767ed7e4afb74438350a1d81bc6f63887"
+      },
+      {
+        "path": "internal/xxhash/xxhash_other.go",
+        "sha": "ce512f7caacf5127a6a54731fedb392e3c996992"
+      },
+      {
+        "path": "internal/xxhash/xxhash.go",
+        "sha": "15c835d5417c06d14182c50afc7c5b2ca0b45fce"
+      },
+      {
+        "path": "npm/esbuild-wasm/LICENSE.md",
+        "sha": "2027e8dcf3787f5aac9fcd835e2b80cb75a39211"
+      },
+      {
+        "path": "npm/esbuild-wasm/README.md",
+        "sha": "9c301c61dde3e4448976001e4824d748df5d24fe"
+      },
+      {
+        "path": "npm/esbuild/LICENSE.md",
+        "sha": "2027e8dcf3787f5aac9fcd835e2b80cb75a39211"
+      },
+      {
+        "path": "npm/esbuild/README.md",
+        "sha": "93863d198004eae1c7b17aef26d829dfca4a314f"
+      },
+      {
+        "path": "pkg/api/api_impl.go",
+        "sha": "afe24d8e07fd0cfff979153cf649a3d073450e63"
+      },
+      {
+        "path": "pkg/api/api_js_table.go",
+        "sha": "72177f1a1667e1a9416d3f791b814222aad8f30c"
+      },
+      {
+        "path": "pkg/api/api.go",
+        "sha": "f9d4335282ab3a21fb2f726feb2cec6d8995be39"
+      },
+      {
+        "path": "pkg/api/favicon.go",
+        "sha": "c3ec13a265bf4716ebd6d1d143e2657c207223a9"
+      },
+      {
+        "path": "pkg/api/serve_other.go",
+        "sha": "3a1f66c54f4235b0a012b30d8663a8cd9b2116e0"
+      },
+      {
+        "path": "pkg/api/serve_wasm.go",
+        "sha": "bdae0383e5adb4d26ef6ca55dbe986bcdac62dd4"
+      },
+      {
+        "path": "pkg/api/watcher.go",
+        "sha": "f7d7079aae496d8b8c5e25e2a4c9fd66a55367bb"
+      },
+      {
+        "path": "pkg/cli/cli_impl.go",
+        "sha": "803accea20beec78e5117dc20b76cd9aa79277ac"
+      },
+      {
+        "path": "pkg/cli/cli_js_table.go",
+        "sha": "117b050446a5f572df56c904ed79280d340f874e"
+      },
+      {
+        "path": "pkg/cli/mangle_cache.go",
+        "sha": "05fe75e42ef79134506e8d13f4e58fe743944804"
+      },
+      {
+        "path": "require/old-ts/package-lock.json",
+        "sha": "6b87b41e4562a1e2b20625725505115a9b8fdfd9"
+      },
+      {
+        "path": "require/old-ts/README.md",
+        "sha": "20103a9cd2a85ff09477f4b975bb9167167d85f6"
+      },
+      {
+        "path": "require/rollup/package-lock.json",
+        "sha": "a2597780deddf452c3f5cb288112274ebb82d461"
+      },
+      {
+        "path": "require/webpack5/package-lock.json",
+        "sha": "0b172b5eaae8edc05f5151d782181def5fc00f39"
+      },
+      {
+        "path": "require/yarnpnp/bar/node_modules/bar-pkg/index.js",
+        "sha": "bd58f7ab949f31dc18a34b202fa22a5d65c5cc66"
+      },
+      {
+        "path": "require/yarnpnp/in.mjs",
+        "sha": "b2654172350395a2b577a4b97f6bddf8e41df6f7"
+      },
+      {
+        "path": "require/yarnpnp/tsconfig.json",
+        "sha": "06c807c61002bc4e908c335455e673cb54a8d4b1"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_css.txt",
+        "sha": "dbc0d9e309db6d07f448c5a42dc6ee311c6ae9fd"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_dce.txt",
+        "sha": "80d8e975646fcf544c30bbb7e548706777338bed"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_glob.txt",
+        "sha": "59b248d7fa95167f6177f21337b917722bd64f92"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_importphase.txt",
+        "sha": "b44f3d96dd0fd16ae9252b6871df93a7c539ccbc"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_importstar_ts.txt",
+        "sha": "c4fee5b6b7c8398e0c7aeebd932c9ae1bb2c2d7e"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_importstar.txt",
+        "sha": "c4bf5af82085195ec9281c04f2a640ad332afd3b"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_loader.txt",
+        "sha": "f9825488a253e30c97668a62b56e39268a755d3d"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_lower.txt",
+        "sha": "9935a61ad52e90e143f1028647ba074eb2d06002"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_packagejson.txt",
+        "sha": "0fba60ecbcb28d20299e0ebe61357cd5473d2c95"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_splitting.txt",
+        "sha": "071fb909084b36be2369be48a003e05bf552075b"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_ts.txt",
+        "sha": "4cd16ccfd40ff0940117b874cda0b4340d3186fb"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_tsconfig.txt",
+        "sha": "be4c9f3d530f7d717310d3ff079bed7e1c736d33"
+      },
+      {
+        "path": "internal/bundler_tests/snapshots/snapshots_yarnpnp.txt",
+        "sha": "1b2beecc607b3f898721e0d252578e484b3b8295"
+      },
+      {
+        "path": "npm/@esbuild/aix-ppc64/README.md",
+        "sha": "c897cd1a5183d56c693beb24e91ea42a4e9a7a91"
+      },
+      {
+        "path": "npm/@esbuild/android-arm/README.md",
+        "sha": "d8cc415dcff464a808a751e1864efe532c6479a5"
+      },
+      {
+        "path": "npm/@esbuild/android-arm64/README.md",
+        "sha": "ec71ee6bc2793e81ffb24e96f51998de74d9d1d1"
+      },
+      {
+        "path": "npm/@esbuild/android-x64/README.md",
+        "sha": "3c8508e44ca0317094c7a96d1591a92969c3a8e1"
+      },
+      {
+        "path": "npm/@esbuild/darwin-arm64/README.md",
+        "sha": "c2c0398db097559260815e9f5c85412e4fe1e615"
+      },
+      {
+        "path": "npm/@esbuild/darwin-x64/README.md",
+        "sha": "a2fd0cbee76ef213310347f4911edf75d8e334a8"
+      },
+      {
+        "path": "npm/@esbuild/freebsd-arm64/README.md",
+        "sha": "2a167ad0848e91806239872b1630f234a2024dc6"
+      },
+      {
+        "path": "npm/@esbuild/freebsd-x64/README.md",
+        "sha": "eb63d93cfe2d1b6ce87e3fc1800ed33bdd102972"
+      },
+      {
+        "path": "npm/@esbuild/linux-arm/README.md",
+        "sha": "07413355ba318f8b7c8a9cd65078219a585fb89b"
+      },
+      {
+        "path": "npm/@esbuild/linux-arm64/README.md",
+        "sha": "0d52dd1fc04b7de19884895cdf1dab7c6d62a9a4"
+      },
+      {
+        "path": "npm/@esbuild/linux-ia32/README.md",
+        "sha": "377d1b728c1e57a9fb5d7b80a5155f2443c79fcf"
+      },
+      {
+        "path": "npm/@esbuild/linux-loong64/README.md",
+        "sha": "c64a2b19766a00d81363f47ac3418538d073d4ca"
+      },
+      {
+        "path": "npm/@esbuild/linux-mips64el/README.md",
+        "sha": "cf84cc32b1040a368a8891efd21ca927a98c6260"
+      },
+      {
+        "path": "npm/@esbuild/linux-ppc64/README.md",
+        "sha": "ba646c434aaea3a98d393b6fd24d7920ff6ad9e8"
+      },
+      {
+        "path": "npm/@esbuild/linux-riscv64/README.md",
+        "sha": "d6df31270a8d01e86f98855739d57fa5e7047df9"
+      },
+      {
+        "path": "npm/@esbuild/linux-s390x/README.md",
+        "sha": "4cb2548a263c78d27bba6d0fbaa633414c86b17a"
+      },
+      {
+        "path": "npm/@esbuild/linux-x64/README.md",
+        "sha": "b2f19300430eb75c1a1fc7d5700ad0b6e7e69333"
+      },
+      {
+        "path": "npm/@esbuild/netbsd-arm64/README.md",
+        "sha": "ddbd635a15c1c87d888ef697e8acc2d0a3c65b6b"
+      },
+      {
+        "path": "npm/@esbuild/netbsd-x64/README.md",
+        "sha": "ca4558d43743cdf77a934f906843518d1afdf297"
+      },
+      {
+        "path": "npm/@esbuild/openbsd-arm64/README.md",
+        "sha": "1a0e1e8b427515c44d3e14ee78405dc8901f3c61"
+      },
+      {
+        "path": "npm/@esbuild/openbsd-x64/README.md",
+        "sha": "35b71084ed6a2e7615fd4a1b68048179b8018884"
+      },
+      {
+        "path": "npm/@esbuild/openharmony-arm64/README.md",
+        "sha": "f40582c0cb1282168d225a5ac616410b8e0c6184"
+      },
+      {
+        "path": "npm/@esbuild/sunos-x64/README.md",
+        "sha": "f5402c6f06224e7f190c472c6e03489da9395468"
+      },
+      {
+        "path": "npm/@esbuild/wasi-preview1/README.md",
+        "sha": "5cb51d5a50782ca23323c78f479fb5ebfc1a98b1"
+      },
+      {
+        "path": "npm/@esbuild/win32-arm64/README.md",
+        "sha": "e6c7f7b5fe71ceeb16887302e3b8d1d25879b807"
+      },
+      {
+        "path": "npm/@esbuild/win32-ia32/README.md",
+        "sha": "e24a27edc994d87244042c048589ddbac3d7180c"
+      },
+      {
+        "path": "npm/@esbuild/win32-x64/README.md",
+        "sha": "a99ee7cf84e91677bc3c6100ac37a60fc8ec8fdb"
+      }
+    ],
+    "repo_pushed_at": "2026-08-09T17:20:12Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": false,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 80,
+    "dims": {
+      "maintenance": 85,
+      "install_docs": 40,
+      "dangerous_patterns": 70,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "new-Function",
+      "severe": false,
+      "file": "scripts/destructuring-fuzzer.js",
+      "line": 121,
+      "snippet": "new Function('a', 's', code)(assignTarget, sideEffect)",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "new-Function",
+      "severe": false,
+      "file": "scripts/esbuild.js",
+      "line": 67,
+      "snippet": "new Function('module', 'exports', 'require', childProcess.execFileSync(esbuildPath, [",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "new-Function",
+      "severe": false,
+      "file": "scripts/plugin-tests.js",
+      "line": 853,
+      "snippet": "new Function('use', result.outputFiles[0].text)(x => used.push(x));",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "new-Function",
+      "severe": false,
+      "file": "scripts/terser-tests.js",
+      "line": 371,
+      "snippet": "return new Function(\"return(\" + code + \")\")();",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "new-Function",
+      "severe": false,
+      "file": "scripts/uglify-tests.js",
+      "line": 336,
+      "snippet": "return new Function(\"return(\" + code + \")\")();",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "new-Function",
+      "severe": false,
+      "file": "scripts/wasm-tests.js",
+      "line": 37,
+      "snippet": "new Function('module', 'exports', stdout)(module, module.exports);",
+      "deduction": 0
+    }
+  ],
+  "evidence": {
+    "files_scanned": 270,
+    "files_excluded": 0,
+    "danger_hits": 6,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 1,
+    "install_detected": false,
+    "age_days": 85
+  },
+  "network": {
+    "calls": 7,
+    "failed": 0,
+    "ms": 3126
+  },
+  "duration_ms": 2378
+}

@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154517Z",
+  "target": {
+    "source": "github",
+    "id": "WiseLibs/better-sqlite3",
+    "url": "https://github.com/WiseLibs/better-sqlite3",
+    "name": "better-sqlite3"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:45:53.314Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "f8e2d541208281368129929a96f70f937c0735ef",
+    "files_scanned": 30,
+    "candidates": 30,
+    "excluded_non_shipped": 57,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/build.yml",
+        "sha": "df6c9dffdd992bf8e904978e5fdca0134e076c9a"
+      },
+      {
+        "path": ".github/workflows/bump-version.yml",
+        "sha": "0b5e8b2d1e872bb2c9a5312214ced794b0d40e0e"
+      },
+      {
+        "path": ".github/workflows/update-sqlite.yml",
+        "sha": "b163448296b2dc845e4bce9a84433474a1004c18"
+      },
+      {
+        "path": "lib/index.js",
+        "sha": "d7890fabcfe1ed49c3766d2a4cc69aac443378dc"
+      },
+      {
+        "path": "package.json",
+        "sha": "3be238a5696295ac0e225209b118d0ad994b01b9"
+      },
+      {
+        "path": "lib/binding.js",
+        "sha": "db68b61f8bd27de2cd90c820cd6dc813ea23cfb7"
+      },
+      {
+        "path": "lib/darwin-arm64.js",
+        "sha": "a2662d4c84651e441475ae7b28959b81b2f6bfc6"
+      },
+      {
+        "path": "lib/darwin-x64.js",
+        "sha": "8385b3e621fa607e2144a1cd2293f1fa4d1cfa25"
+      },
+      {
+        "path": "lib/database.js",
+        "sha": "af7aff60e3e0e13f43bc8fec550145138ffb9fd7"
+      },
+      {
+        "path": "lib/linux-arm64.js",
+        "sha": "d6f19f5447288249a2c646a215e00eda15b237f7"
+      },
+      {
+        "path": "lib/linux-x64.js",
+        "sha": "7ce601012f5640c5d27878ad9adf47b869710d8c"
+      },
+      {
+        "path": "lib/linuxmusl-arm64.js",
+        "sha": "a24708ecea8c50d1ec79d7865a2d972fb751e8a9"
+      },
+      {
+        "path": "lib/linuxmusl-x64.js",
+        "sha": "84a48be7a976e027bec7f0271763dc9b3370eff1"
+      },
+      {
+        "path": "lib/sqlite-error.js",
+        "sha": "e916a02786e60c9eccd8d77632abb12193abc9fd"
+      },
+      {
+        "path": "lib/util.js",
+        "sha": "0328c84a50cdc278f5ba925f75d4f81f4dd647c2"
+      },
+      {
+        "path": "lib/win32-arm64.js",
+        "sha": "0eec9eb79391fee86b6c530bcb087e5ea69d4a07"
+      },
+      {
+        "path": "lib/win32-x64.js",
+        "sha": "34489b05df1b8fd95cf7d8d0716c1bf162e7cced"
+      },
+      {
+        "path": "lib/methods/aggregate.js",
+        "sha": "04173627793656f29add0b5e04a16825f2a21402"
+      },
+      {
+        "path": "lib/methods/backup.js",
+        "sha": "fe541b7fc96bf94ac11da74d42d9e06e123bb67d"
+      },
+      {
+        "path": "lib/methods/explain.js",
+        "sha": "6db6c1eef6b2d832a88c3b5ade733a75e1f0746a"
+      },
+      {
+        "path": "lib/methods/function.js",
+        "sha": "f4406d4a0bb298c526aed5c373316fc5e9e308dd"
+      },
+      {
+        "path": "lib/methods/inspect.js",
+        "sha": "cd9fd6df639d40bda3255a9caa219bd5ca6f2c40"
+      },
+      {
+        "path": "lib/methods/pragma.js",
+        "sha": "958f53689710cf1585613f8e15623b5b4a83a49a"
+      },
+      {
+        "path": "lib/methods/serialize.js",
+        "sha": "4f1374f0605b9b51523162d55e85d015c014d56e"
+      },
+      {
+        "path": "lib/methods/table.js",
+        "sha": "41f77a59edb590d8c04182f647a0401d6b28a4d3"
+      },
+      {
+        "path": "lib/methods/transaction.js",
+        "sha": "049bacdb95d6d12c78f44483e57421e7d7349729"
+      },
+      {
+        "path": "lib/methods/wrappers.js",
+        "sha": "3ab6af67dba5d7a239807edcbec37b5a808da9be"
+      },
+      {
+        "path": "README.md",
+        "sha": "0a85787f60ffb562eb39de55f17f60e52bdcc810"
+      },
+      {
+        "path": "deps/copy.js",
+        "sha": "3d2dd56ddde97fd1ff61781772ca4b079944abe9"
+      },
+      {
+        "path": "deps/download.sh",
+        "sha": "2fdcd283bb106c7f127d61751c27c694357afd1d"
+      }
+    ],
+    "repo_pushed_at": "2026-08-10T03:10:10Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 98,
+    "dims": {
+      "maintenance": 85,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 30,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 85
+  },
+  "network": {
+    "calls": 6,
+    "failed": 0,
+    "ms": 3042
+  },
+  "duration_ms": 2116
+}

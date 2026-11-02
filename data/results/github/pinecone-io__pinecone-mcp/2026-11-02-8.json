@@ -1,0 +1,284 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154652Z",
+  "target": {
+    "source": "github",
+    "id": "pinecone-io/pinecone-mcp",
+    "url": "https://github.com/pinecone-io/pinecone-mcp",
+    "name": "pinecone-mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:47:55.812Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "ca3ae6ebf400f4d9caea42b7aba1addcd0d4d580",
+    "files_scanned": 51,
+    "candidates": 51,
+    "excluded_non_shipped": 36,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".cursor/BUGBOT.md",
+        "sha": "24e512ff2c45306da0b23681885e0f0f21bd092c"
+      },
+      {
+        "path": ".cursor/commands/create-bug.md",
+        "sha": "54ff5d89d2a2e94fa9e5eb80725dd80a24bafde4"
+      },
+      {
+        "path": ".cursor/commands/create-improvement.md",
+        "sha": "5eb3858053c981ae4062f0ca87cdc881529fec30"
+      },
+      {
+        "path": ".cursor/commands/create-subplan.md",
+        "sha": "3a4c6644f39e315e29ea20a4be2b8add6e0cdd2d"
+      },
+      {
+        "path": ".cursor/commands/github-triage.md",
+        "sha": "54e65996e8cb0b3e3b21f0c12c86e584690c6546"
+      },
+      {
+        "path": ".cursor/commands/investigate-github-issue.md",
+        "sha": "b2f58aceb8d808000de6f74f4027cc84ace8458a"
+      },
+      {
+        "path": ".cursor/commands/list-github-issues.md",
+        "sha": "539050267bf2bc4561a1faa1a669241f2649168b"
+      },
+      {
+        "path": ".cursor/commands/next-action.md",
+        "sha": "3423d7e71a38bb3b449b81747c9c47ff8b6c1075"
+      },
+      {
+        "path": ".cursor/commands/pr-iterate.md",
+        "sha": "497e1d4f95818ffef12ce4154696ee223610c65b"
+      },
+      {
+        "path": ".cursor/commands/pr-merge.md",
+        "sha": "cfef673286d296279a5d169ce85e76d37ab9b45e"
+      },
+      {
+        "path": ".cursor/commands/pr-open.md",
+        "sha": "0b1033a3cdc66cab01e758cd6c3c237c34c6806e"
+      },
+      {
+        "path": ".cursor/rules/best-practices.mdc",
+        "sha": "66297e7aa945eeaea1488a0e8fc90f5c96aee3f3"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "6bf6b5cf29077524348c5f5cd4000cdab56b995f"
+      },
+      {
+        "path": ".github/workflows/integration.yml",
+        "sha": "749c001283bbb5308dfb792f0f5c6c34735298f4"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "a552081f97cfa2f9e6e5e21651cb7d7fcec40b46"
+      },
+      {
+        "path": "src/index.ts",
+        "sha": "60d03228216af4ececeeebd5ec88807d999e448b"
+      },
+      {
+        "path": "src/server.ts",
+        "sha": "79284cc6c3280867563281a684554e17ac0dd556"
+      },
+      {
+        "path": "src/tools/database/index.ts",
+        "sha": "b2491463a5a4dd066ef3d011621aea3fc6ee75b2"
+      },
+      {
+        "path": "package.json",
+        "sha": "7288fde8d3ca41ff13425ed429c18f47fa6172c7"
+      },
+      {
+        "path": "src/constants.ts",
+        "sha": "a68c57342d3168b68421ff9225baa83a97906978"
+      },
+      {
+        "path": "src/error.ts",
+        "sha": "53a02ea2099c05d47650178a23ab9e5fc61241c2"
+      },
+      {
+        "path": "src/version.ts",
+        "sha": "45f675bea057673887452b61361534c98ab32790"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "d9e44279d200e25d18ddc663ac56c29a9d6f0893"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha": "2a5207e00d62c6e225374cd07262b69942279613"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "07e4dbec4019ac130432263d21e49093a0a8d718"
+      },
+      {
+        "path": "package-lock.json",
+        "sha": "836713d12066928087290af7b047674468bbcec1"
+      },
+      {
+        "path": "README.md",
+        "sha": "d1e7e7f7e74e6f9ecabb3d6df4d2903637fccf9d"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "775ac62562ab9730ccec7b3f468cc4bda9ddb48d"
+      },
+      {
+        "path": "src/test-utils/mock-pinecone.ts",
+        "sha": "1569cf2b11dc28e9ab1fc4315493e6d746876881"
+      },
+      {
+        "path": "src/test-utils/mock-server.ts",
+        "sha": "e1b2c145aeadf7d957547964702241619d8c321a"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "79aa0f5bdc09260b7e75d60c9f0d737d4346f689"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "7640ff5a1ff672cbc93b71637a0de32757ceb545"
+      },
+      {
+        "path": "vitest.integration.config.ts",
+        "sha": "73e7f700cab11ff467abe5ce78ad3d954208ad0a"
+      },
+      {
+        "path": "src/tools/common/format-error.ts",
+        "sha": "e63be26903a9375164098d51d5c18c9c0f20c3f1"
+      },
+      {
+        "path": "src/tools/database/cascading-search.ts",
+        "sha": "6820c8e0f44e5fe5124d783d965be12a98d1cca7"
+      },
+      {
+        "path": "src/tools/database/create-document-index.ts",
+        "sha": "15f0301d6bbd1dd971bad0eab30d96de330cb420"
+      },
+      {
+        "path": "src/tools/database/create-index-for-model.ts",
+        "sha": "8ff3ea7e5e639fb797913592bf86ac910f0d0b41"
+      },
+      {
+        "path": "src/tools/database/describe-index-stats.ts",
+        "sha": "e65836be479d20317be66fd3d127366f0c33a6cd"
+      },
+      {
+        "path": "src/tools/database/describe-index.ts",
+        "sha": "2a687606fca63abf29fcd9f61e5ca1ec807cf1dd"
+      },
+      {
+        "path": "src/tools/database/list-indexes.ts",
+        "sha": "90d3c274a6fd2d124e1805a91cd05a579b822334"
+      },
+      {
+        "path": "src/tools/database/rerank-documents.ts",
+        "sha": "f64f2256038f73c3511eddf9c3d3cbbaca4ae4b5"
+      },
+      {
+        "path": "src/tools/database/search-document-index.ts",
+        "sha": "e8f06c09f28649df8c56c67a667989335ef249f3"
+      },
+      {
+        "path": "src/tools/database/search-records.ts",
+        "sha": "54387e08f8db8e4b89d342b502e5bdee3297ddc9"
+      },
+      {
+        "path": "src/tools/database/upsert-documents.ts",
+        "sha": "27eccf0721d0319f5e7198e7edbe67d81e2ed8e9"
+      },
+      {
+        "path": "src/tools/database/upsert-records.ts",
+        "sha": "767c49cee959b474af77b1085d38314e8be41a33"
+      },
+      {
+        "path": "src/tools/database/common/messages.ts",
+        "sha": "83a12e5eb8d5aee679fa0db4d7c9aeef3c0b4279"
+      },
+      {
+        "path": "src/tools/database/common/pinecone-client.ts",
+        "sha": "8c21938f7c44584b9011b21096cbd206b600d96a"
+      },
+      {
+        "path": "src/tools/database/common/register-tool.ts",
+        "sha": "382a7eaf423e3e285a746dbc60f191c60587521a"
+      },
+      {
+        "path": "src/tools/database/common/rerank-model.ts",
+        "sha": "028ecc8410e3f899b2668d4530703732fb20bd13"
+      },
+      {
+        "path": "src/tools/database/common/rerank-options.ts",
+        "sha": "36b157cfcb0384c22be2b39651bbf59f39b49b50"
+      },
+      {
+        "path": "src/tools/database/common/search-query.ts",
+        "sha": "0a1a7806a434a7db798727298b2b9827bd21a87a"
+      }
+    ],
+    "repo_pushed_at": "2026-10-29T17:29:08Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 98,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 85
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "instruction_hygiene",
+      "rule": "tool-shadowing",
+      "severe": false,
+      "file": "src/tools/database/list-indexes.ts",
+      "line": 6,
+      "snippet": "names before calling other tools.`;",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 51,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 4
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1418
+  },
+  "duration_ms": 1437
+}

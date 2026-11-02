@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154812Z",
+  "target": {
+    "source": "github",
+    "id": "typicode/husky",
+    "url": "https://github.com/typicode/husky",
+    "name": "husky"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:48:23.854Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "3f0023dc10d7003d70f2e31aa56300eab80e76d6",
+    "files_scanned": 11,
+    "candidates": 11,
+    "excluded_non_shipped": 43,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".husky/pre-commit",
+        "sha": "778fb0b7106025b89bd5c11dc5343fc7e82cc8b3"
+      },
+      {
+        "path": ".github/workflows/deploy.yml",
+        "sha": "39634fbc0fed1002779de336ffcb689947884157"
+      },
+      {
+        "path": ".github/workflows/node.js.yml",
+        "sha": "7884e10abb447bcceab5c01ad24e7360df1cf4ab"
+      },
+      {
+        "path": ".github/workflows/npm_publish.yml",
+        "sha": "ff513ea27e34be304d989f76a6c678a5553a837a"
+      },
+      {
+        "path": "index.js",
+        "sha": "bebf0d50dc52548ab0cb2d937fffdd0e3de0bd15"
+      },
+      {
+        "path": "package.json",
+        "sha": "b9d3810bd03383dc259d7dcc2443c49d3ac2efe9"
+      },
+      {
+        "path": "bin.js",
+        "sha": "244311baa08bcb859bc8f06333fed8e86260dca1"
+      },
+      {
+        "path": "index.d.ts",
+        "sha": "72a5495a823e1cee4843542ce1532f66546b01ac"
+      },
+      {
+        "path": "package-lock.json",
+        "sha": "57a398ddc0939c8c343950725e338aef616082ce"
+      },
+      {
+        "path": "README.md",
+        "sha": "405cda7dab3dc59734133b6df48b3eff15fe6367"
+      },
+      {
+        "path": "test.sh",
+        "sha": "75e90bf3e21e951677215946ba5f7ff6ef47218a"
+      }
+    ],
+    "repo_pushed_at": "2026-03-19T23:03:16Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": false,
+    "install": false,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 72,
+    "dims": {
+      "maintenance": 0,
+      "install_docs": 40,
+      "dangerous_patterns": 85,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": false,
+      "file": ".husky/pre-commit",
+      "line": 1,
+      "snippet": "./test.sh",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 11,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": false,
+    "age_days": 228
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1228
+  },
+  "duration_ms": 1232
+}

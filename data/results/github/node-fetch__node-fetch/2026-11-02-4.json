@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154812Z",
+  "target": {
+    "source": "github",
+    "id": "node-fetch/node-fetch",
+    "url": "https://github.com/node-fetch/node-fetch",
+    "name": "node-fetch"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:48:41.027Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "8b3320d2a7c07bce4afc6b2bf6c3bbddda85b01f",
+    "files_scanned": 26,
+    "candidates": 26,
+    "excluded_non_shipped": 25,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "fd27eac962c9a1a3184df911f8270c38bd745a49"
+      },
+      {
+        "path": ".github/workflows/lint.yml",
+        "sha": "75cbfed0cf1e5bff0b2e1254ee0a6301946ac9d2"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "263334cb4dcc26d8a43cb4551a9e8135773df565"
+      },
+      {
+        "path": ".github/workflows/types.yml",
+        "sha": "8bd047bac014fe255c03b7bc46cc77bf199f7fc0"
+      },
+      {
+        "path": "src/index.js",
+        "sha": "7c4aee87b68f7b3613ce7dad4a570c17ec3630b9"
+      },
+      {
+        "path": "package.json",
+        "sha": "ae5e196501209d2d9e26c29c6cc42f78b0528961"
+      },
+      {
+        "path": "src/body.js",
+        "sha": "714e27ec4aa74103a246480cf2bbcd9ae2103823"
+      },
+      {
+        "path": "src/headers.js",
+        "sha": "cd694558048ef1682b4beb9f1bcdc32de26a8b01"
+      },
+      {
+        "path": "src/request.js",
+        "sha": "af2ebc8e9b6f11783435d3c951eaef500fabbfdc"
+      },
+      {
+        "path": "src/response.js",
+        "sha": "9806c0cbabfb75817112360fbd4b5d67d570e417"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "2336057d06fefa9e2793ceeb57f5d441b0355209"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "6d231e87d1cbe513d503679bf729b287138e95a0"
+      },
+      {
+        "path": "example.js",
+        "sha": "f19ff803f0ef86a52e9be5866c4ac5e6a4da0ae7"
+      },
+      {
+        "path": "LICENSE.md",
+        "sha": "41ca1b6eb4d7ecded300615322179c48fcde9e4e"
+      },
+      {
+        "path": "README.md",
+        "sha": "badc2b19799590b9f0c81f6f4f7d121e1e809587"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "e60fc6870aa01db9a6e10e89ca557b3b801c737f"
+      },
+      {
+        "path": "src/errors/abort-error.js",
+        "sha": "0b62f1cd32672eb043ae64b85d134b647db2de20"
+      },
+      {
+        "path": "src/errors/base.js",
+        "sha": "4e66e1bfbdd348c41acefdc42052e7954d5595cd"
+      },
+      {
+        "path": "src/errors/fetch-error.js",
+        "sha": "f7ae5cc4a9c293659b562d1fa572c08ad5c983a8"
+      },
+      {
+        "path": "src/utils/get-search.js",
+        "sha": "d067e7c7f7f809034da527ec5de477d2c16e48c7"
+      },
+      {
+        "path": "src/utils/is-redirect.js",
+        "sha": "d1347f005bd804100e6bbb956b19adb31b93661a"
+      },
+      {
+        "path": "src/utils/is.js",
+        "sha": "f9e467e45fe7f214725f49f2bed3f137ddc06e20"
+      },
+      {
+        "path": "src/utils/multipart-parser.js",
+        "sha": "5ad06f98e105dc96878720a6c4fe2044c89da297"
+      },
+      {
+        "path": "src/utils/referrer.js",
+        "sha": "6741f2fcc3b483b744d88e16bb3d418120045664"
+      },
+      {
+        "path": "@types/index.d.ts",
+        "sha": "274ca03a837fbbf88f6be7d59dfdd4b67c2c1bca"
+      },
+      {
+        "path": "@types/index.test-d.ts",
+        "sha": "d5b8b4004450b548f90418f1d887437143f2f36a"
+      }
+    ],
+    "repo_pushed_at": "2026-05-12T09:33:16Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 87,
+    "dims": {
+      "maintenance": 60,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "@types/index.test-d.ts",
+      "line": 9,
+      "snippet": "const getResponse = await fetch('https://bigfile.com/test.zip');",
+      "host": "bigfile.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "@types/index.test-d.ts",
+      "line": 39,
+      "snippet": "const request = new Request('http://byjka.com/buka');",
+      "host": "byjka.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "@types/index.test-d.ts",
+      "line": 66,
+      "snippet": "const wildResponse = await _fetch.default('https://google.com');",
+      "host": "google.com",
+      "deduction": 0
+    }
+  ],
+  "evidence": {
+    "files_scanned": 26,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "bigfile.com",
+      "byjka.com",
+      "google.com"
+    ],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 174
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1558
+  },
+  "duration_ms": 1578
+}

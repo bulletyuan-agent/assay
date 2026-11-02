@@ -1,0 +1,1745 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154517Z",
+  "target": {
+    "source": "github",
+    "id": "webpack/webpack",
+    "url": "https://github.com/webpack/webpack",
+    "name": "webpack"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:45:59.557Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "13b3a61b08ac4e318331bec26d77e4ab23aff5e5",
+    "files_scanned": 400,
+    "candidates": 1091,
+    "excluded_non_shipped": 18904,
+    "coverage": 0.37,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".claude/settings.json",
+        "sha": "e06b0338e2585d90e2529cddfd6cbfba1234e79b"
+      },
+      {
+        "path": ".husky/pre-commit",
+        "sha": "1f54b373ad9e1e622797b07684735345c77954a4"
+      },
+      {
+        "path": ".claude/hooks/session-start.sh",
+        "sha": "f592d356a328c0f5d56c9b4486e248e10b8ea193"
+      },
+      {
+        "path": ".github/workflows/benchmarks.yml",
+        "sha": "25bf3db451d1be61b0773af98c6cd29f9e28fc6a"
+      },
+      {
+        "path": ".github/workflows/code-size.yml",
+        "sha": "b364800734410b541c10a6ffc87828ccb2a2d233"
+      },
+      {
+        "path": ".github/workflows/codeql.yml",
+        "sha": "53afced7bea917d39292898eeb34b8fc6557087e"
+      },
+      {
+        "path": ".github/workflows/dependabot.yml",
+        "sha": "b21d34fb67e4b31fd9e642587fb58d09cc1f8ba6"
+      },
+      {
+        "path": ".github/workflows/dependency-report.yml",
+        "sha": "3430d33c71d7d887c0f938ac74a901f34338ebe3"
+      },
+      {
+        "path": ".github/workflows/dependency-review.yml",
+        "sha": "20e44d221e2ec58b222908501e2a258f41335fcd"
+      },
+      {
+        "path": ".github/workflows/examples.yml",
+        "sha": "73cfb17725bfece817626ba5c976aa7cdaf56012"
+      },
+      {
+        "path": ".github/workflows/labeler.yml",
+        "sha": "c0c29ccf670ff26c02b8eeb47f126c758b1654ce"
+      },
+      {
+        "path": ".github/workflows/module-loading.yml",
+        "sha": "21983977b437f04d62c62b0e73f0c1bc3f433dd4"
+      },
+      {
+        "path": ".github/workflows/pr-quality.yml",
+        "sha": "371e718114fc55cb0bbcebc7e0221e7fbda0cfd2"
+      },
+      {
+        "path": ".github/workflows/pr-reports.yml",
+        "sha": "de33afc35e27e5786a4398a92d3bbe265ff6bcbc"
+      },
+      {
+        "path": ".github/workflows/publish-to-pkg-pr-new.yml",
+        "sha": "c5ec9a682d0c502e5f37c8ebecc41e47f1f02c32"
+      },
+      {
+        "path": ".github/workflows/release-announcement.yml",
+        "sha": "ff6ed567f52b9aba857fa035173e7f1a182758d5"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "170aef76760d8560fc1a92c27696bf94259c9c0a"
+      },
+      {
+        "path": ".github/workflows/test.yml",
+        "sha": "b120d13f5fabe342528e7653348120f47fb35b37"
+      },
+      {
+        "path": ".github/workflows/types-coverage.yml",
+        "sha": "9944bf34146e737abdf574002e5ccf76b1a6fda9"
+      },
+      {
+        "path": "tooling/install-browsers.js",
+        "sha": "176fc2ca3c526a48aa7a1742d7b1257d8e8aee44"
+      },
+      {
+        "path": "lib/index.js",
+        "sha": "bd1873c7a6122641bfca8355d422ce7e88c14e21"
+      },
+      {
+        "path": "lib/config/cli.js",
+        "sha": "868aa7d32b029c66ba68fa18f6b82314ecc0f8b0"
+      },
+      {
+        "path": "package.json",
+        "sha": "a004df7ec9ebd7676ce43bdbb3d0642b58ccd0d1"
+      },
+      {
+        "path": "bin/webpack.js",
+        "sha": "b8908dcc5504afb9dd23f323492be9a62fb38a24"
+      },
+      {
+        "path": "lib/Chunk.js",
+        "sha": "55de274811faed910c750ac22cbd2227f9255b47"
+      },
+      {
+        "path": "lib/ChunkGraph.js",
+        "sha": "593be0e19b140d9259b765741cccc52fce114f65"
+      },
+      {
+        "path": "lib/Compiler.js",
+        "sha": "3e4856e4d7910a095250a054d0a56e7d1d2f76fb"
+      },
+      {
+        "path": "lib/Dependency.js",
+        "sha": "f03bf95196c55570321f0256c5dc9edd0a7b86bb"
+      },
+      {
+        "path": "lib/DependencyTemplate.js",
+        "sha": "b94cb892e7d439a000b268cfcca015f927378db4"
+      },
+      {
+        "path": "lib/EntryPlugin.js",
+        "sha": "45081e099cdd63c96709b360c49b1cd36d86d036"
+      },
+      {
+        "path": "lib/Entrypoint.js",
+        "sha": "9ffaf41f52b955ad9b2071469a3761d45f9e568d"
+      },
+      {
+        "path": "lib/ExternalsPlugin.js",
+        "sha": "077487fcd458fe580af11a13373a51f8447a93f1"
+      },
+      {
+        "path": "lib/FileSystemInfo.js",
+        "sha": "0e0ebe353f90ee5988408f7f8eedb19e61f4eee6"
+      },
+      {
+        "path": "lib/HotUpdateChunk.js",
+        "sha": "8661a5b0d659f17bc6dd012e75764df7da561c62"
+      },
+      {
+        "path": "lib/InitFragment.js",
+        "sha": "0810c20274fd628c68e98d534a72dc36a5bda1c6"
+      },
+      {
+        "path": "lib/LibraryTemplatePlugin.js",
+        "sha": "3674f7163e80cdbc80cb17e1702e78554ca20d35"
+      },
+      {
+        "path": "lib/ModuleFactory.js",
+        "sha": "fbb831ec426b60214b35892dd5f8d5ce264f6d61"
+      },
+      {
+        "path": "lib/ModuleFilenameHelpers.js",
+        "sha": "2a4b9652f8d4a1ccc81393089434e36aa107bd2b"
+      },
+      {
+        "path": "lib/ModuleNotFoundError.js",
+        "sha": "16b33da954ba3ad0cd920908acb8b44bb4bf3809"
+      },
+      {
+        "path": "lib/MultiCompiler.js",
+        "sha": "482dd0afbc730369470edeb368b610072930cedb"
+      },
+      {
+        "path": "lib/NormalModule.js",
+        "sha": "894a55a81a45ab58e9aefdb210b336710adbda0c"
+      },
+      {
+        "path": "lib/NullFactory.js",
+        "sha": "72acaefaee884e50ced8360aa3b25900bc3b3dfc"
+      },
+      {
+        "path": "lib/ProgressPlugin.js",
+        "sha": "e996dfd2da1b7b124c654933888a117a5b35f4b0"
+      },
+      {
+        "path": "lib/RawModule.js",
+        "sha": "6cbd320832557c21d60d3d792fa9f2e933343a6d"
+      },
+      {
+        "path": "lib/RequestShortener.js",
+        "sha": "c7d95f078ba7c3e1366418222fb6dff0b00b5057"
+      },
+      {
+        "path": "lib/ResolverFactory.js",
+        "sha": "8b244620f379a62880e97b0cb143a75203360ea6"
+      },
+      {
+        "path": "lib/RuntimeGlobals.js",
+        "sha": "ecf3914e3f297f6d860fecea2a520a0111e54741"
+      },
+      {
+        "path": "lib/RuntimeModule.js",
+        "sha": "2b13b43aea3ccb8f5726163e6e190cae655beaf8"
+      },
+      {
+        "path": "lib/RuntimeTemplate.js",
+        "sha": "bab88266796610b524fa6010e619904d379eda52"
+      },
+      {
+        "path": "lib/SingleEntryPlugin.js",
+        "sha": "873ec5de74eb2dfa626349d6e19c043404e33f15"
+      },
+      {
+        "path": "lib/webpack.js",
+        "sha": "895cc1d6def3c4b3fc13bc6ef2735a393268cd2d"
+      },
+      {
+        "path": "lib/WebpackError.js",
+        "sha": "b202f98657770b28af1dc4cbec72efec94f87e73"
+      },
+      {
+        "path": "_SETUP.md",
+        "sha": "5ce7f804a583c23773c2cb503c1bc560e3aab92b"
+      },
+      {
+        "path": ".coderabbit.yaml",
+        "sha": "353be7e26ceb2683fb53e595e32523ec2f5f5b6f"
+      },
+      {
+        "path": ".istanbul.yml",
+        "sha": "380ddeb6d8892c4f905e435914da62023bcb5940"
+      },
+      {
+        "path": ".prettierrc.js",
+        "sha": "04b93b8c6a75ac0e2336389bb252eec726f6dd5e"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "afd4a0730220c90763eee9fc7fb23dfb5f642893"
+      },
+      {
+        "path": "codecov.yml",
+        "sha": "bb9aab315f429d5ee325096f8de9abf38f97e881"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "1e06b506c87a3d7026d3c717761c4dfc3b836a4b"
+      },
+      {
+        "path": "cspell.json",
+        "sha": "e31d2eff76ee4743dff02174ce6d25ec946fa067"
+      },
+      {
+        "path": "declarations.d.ts",
+        "sha": "155e0c4f49d81bf6ffd3e82784397b6e535277b3"
+      },
+      {
+        "path": "declarations.test.d.ts",
+        "sha": "d5fa535c534461315ea66932be667f522de3e3ec"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "sha": "9d8e0347de6c13580f6e84fd2fc31f8bad78103d"
+      },
+      {
+        "path": "generate-types-config.js",
+        "sha": "89205e3496b7763a6e2dd68ed155d0eedfd967b4"
+      },
+      {
+        "path": "GOVERNANCE.md",
+        "sha": "6d004f586105b95768a1ca6ca355a4fee175367f"
+      },
+      {
+        "path": "jest.config.js",
+        "sha": "d1a777d895fad4dd04daf9e353a9d0e4b3edead3"
+      },
+      {
+        "path": "lib/asset/AssetBytesGenerator.js",
+        "sha": "d6098e994c4645d47a246c4159931d0beedd871b"
+      },
+      {
+        "path": "lib/asset/AssetBytesParser.js",
+        "sha": "405b21038a4d5aadcf07fbea98a00ca5a503f749"
+      },
+      {
+        "path": "lib/asset/AssetGenerator.js",
+        "sha": "5f60da67b3faeeac65e5c4cecadf1c25880a81b0"
+      },
+      {
+        "path": "lib/asset/AssetModule.js",
+        "sha": "da5d56b7324f212d4e3fe757be9b861e6f369d90"
+      },
+      {
+        "path": "lib/asset/AssetModulesPlugin.js",
+        "sha": "1d55804616f7825cf9270886267e2b2cf59c1611"
+      },
+      {
+        "path": "lib/asset/AssetParser.js",
+        "sha": "ca1ad559bc375518be8ea2aabd075a946d2a34cd"
+      },
+      {
+        "path": "lib/asset/AssetSourceGenerator.js",
+        "sha": "53e5289f2bb6bd2c703f9bf96a3f91e23deb80e5"
+      },
+      {
+        "path": "lib/asset/AssetSourceParser.js",
+        "sha": "3532ef01c0dc298084c17831f6bc82960b561ec8"
+      },
+      {
+        "path": "lib/asset/RawDataUrlModule.js",
+        "sha": "f091af7fe524142ac2bd5431e05ec6f7b00617ce"
+      },
+      {
+        "path": "lib/asset/WebManifestGenerator.js",
+        "sha": "33ff0819cbfe4c9b8bb2b84d599bfefb83e7d985"
+      },
+      {
+        "path": "lib/asset/WebManifestParser.js",
+        "sha": "a28022a1b08aa1b96ac8c575530969c92ad65372"
+      },
+      {
+        "path": "lib/async-modules/AsyncModuleHelpers.js",
+        "sha": "af78fa766c593f85a5b974a706c7d2b42259bb46"
+      },
+      {
+        "path": "lib/async-modules/AwaitDependenciesInitFragment.js",
+        "sha": "be809fdb5b7d6b854d82242c1b651b1a579eb97f"
+      },
+      {
+        "path": "lib/async-modules/InferAsyncModulesPlugin.js",
+        "sha": "bf2077e344ca25b34c4ac5b2ecf70f3936615e0e"
+      },
+      {
+        "path": "lib/async-modules/isGeneratorLowered.js",
+        "sha": "9f2d6e9cd6a9bd1526d03fedbf457a58835c6e65"
+      },
+      {
+        "path": "lib/bun/BunTargetPlugin.js",
+        "sha": "b3a82dd4c28930bd05f147277c938b451ab34eab"
+      },
+      {
+        "path": "lib/cache/AddBuildDependenciesPlugin.js",
+        "sha": "53874260119892de002670b9756f387d7cc9a024"
+      },
+      {
+        "path": "lib/cache/AddManagedPathsPlugin.js",
+        "sha": "525f8477cd139f2cd5f445dbf2f8a463b945f82b"
+      },
+      {
+        "path": "lib/cache/Cache.js",
+        "sha": "baf424bf84c16961e6981c92afa15a4f6922d0cc"
+      },
+      {
+        "path": "lib/cache/CacheFacade.js",
+        "sha": "4860e9f60eb646656b51b1439c86cb4035b53c9b"
+      },
+      {
+        "path": "lib/cache/getLazyHashedEtag.js",
+        "sha": "0cbcadec1b9e8c1f220bae6018ca30228eebb28f"
+      },
+      {
+        "path": "lib/cache/IdleFileCachePlugin.js",
+        "sha": "3006d961b1a3ae3a6dde94e2d2fe9c9a153d1467"
+      },
+      {
+        "path": "lib/cache/MemoryCachePlugin.js",
+        "sha": "0979230b68b894e914ce4892eb31110d2e514f31"
+      },
+      {
+        "path": "lib/cache/MemoryWithGcCachePlugin.js",
+        "sha": "e1991b49123ab7632f804192d9bc8a9bd7a801af"
+      },
+      {
+        "path": "lib/cache/mergeEtags.js",
+        "sha": "558e59d5d03e5c48502836054485c9b62bcfa5e0"
+      },
+      {
+        "path": "lib/cache/PackFileCacheStrategy.js",
+        "sha": "ce7ec590c0940983a80788efc1cc55548db9cfec"
+      },
+      {
+        "path": "lib/cache/ResolverCachePlugin.js",
+        "sha": "a6235b8f55531ac3a0940bcbb0560a98278c3940"
+      },
+      {
+        "path": "lib/config/browserslistTargetHandler.js",
+        "sha": "98004d47b7bb3e47d4a5f82069e06f8a0dcd6ef3"
+      },
+      {
+        "path": "lib/config/defaults.js",
+        "sha": "b4f2ee4bb8876a44c02e75b21c4e9d9642723818"
+      },
+      {
+        "path": "lib/config/defineConfig.js",
+        "sha": "35d335b99d8fa4758a8bb85986a775cba0f6a5b9"
+      },
+      {
+        "path": "lib/config/getClaimedAssetTypes.js",
+        "sha": "8c23f0cffe30398cbc7e606401f8c5da1ef3c120"
+      },
+      {
+        "path": "lib/config/normalization.js",
+        "sha": "4bc54403761f482d463b8ac93b834e2f15854258"
+      },
+      {
+        "path": "lib/config/OptionsApply.js",
+        "sha": "b763ed6ce2b32e4eaab72caa881145f73cb6e92c"
+      },
+      {
+        "path": "lib/config/PlatformPlugin.js",
+        "sha": "1fba118d938290848f9199f20090fa3da5cf4a3d"
+      },
+      {
+        "path": "lib/config/target.js",
+        "sha": "0712e4e1ba145db814bad5a156d066c1e559e4c9"
+      },
+      {
+        "path": "lib/config/validateSchema.js",
+        "sha": "631f79dffaaa8596b4f243fdd5d1201ea9a1b9d5"
+      },
+      {
+        "path": "lib/config/WebpackOptionsApply.js",
+        "sha": "f27619ad0fe0c135f5e2ee2cc7d59f071442e06e"
+      },
+      {
+        "path": "lib/config/WebpackOptionsDefaulter.js",
+        "sha": "1244ee38a7a7856347afa8ba0365c59ff2d97dfd"
+      },
+      {
+        "path": "lib/container/ContainerEntryDependency.js",
+        "sha": "dd447a09427d74323ea3015f6d0dbb2131ffedaf"
+      },
+      {
+        "path": "lib/container/ContainerEntryModule.js",
+        "sha": "7eb2f1e2fc50ac4449aced80495a1c594f7d93f8"
+      },
+      {
+        "path": "lib/container/ContainerEntryModuleFactory.js",
+        "sha": "3bb3075f0b190aa93df37287dc5cb768d21fad60"
+      },
+      {
+        "path": "lib/container/ContainerExposedDependency.js",
+        "sha": "4ed94aa0574ca3b2222b6bef07f0f3fc51a490d8"
+      },
+      {
+        "path": "lib/container/ContainerPlugin.js",
+        "sha": "160eb00a6f1b162d492b0b82075af5954ee1171a"
+      },
+      {
+        "path": "lib/container/ContainerReferencePlugin.js",
+        "sha": "60d1fb3b9796f965678a3b3a10716ad6d17f843f"
+      },
+      {
+        "path": "lib/container/declaredRemotes.js",
+        "sha": "b75a9c96077e066b585096fa2848b05499ec9296"
+      },
+      {
+        "path": "lib/container/FallbackDependency.js",
+        "sha": "d184ba74febe9841ec8a2bd6a69c61391aba28eb"
+      },
+      {
+        "path": "lib/container/FallbackItemDependency.js",
+        "sha": "94851a08bd2cc9fcf1524b6b4289628541349a2d"
+      },
+      {
+        "path": "lib/container/FallbackModule.js",
+        "sha": "0b6ae59be16b75253f0b91e92a640aeabe3edd7e"
+      },
+      {
+        "path": "lib/container/FallbackModuleFactory.js",
+        "sha": "b6dd2c4d4dfa5693a4becaf51f22758d3c0197e0"
+      },
+      {
+        "path": "lib/container/HoistContainerReferencesPlugin.js",
+        "sha": "9c9c9ad94c8de4fb6f9495d017374ac57b925aed"
+      },
+      {
+        "path": "lib/container/moduleFederationHooks.js",
+        "sha": "318d9d812d0ce3ab870eb8b28baf2621e47dfe69"
+      },
+      {
+        "path": "lib/container/ModuleFederationPlugin.js",
+        "sha": "f90b2ec3340cd4f0ffa4dd55457fbef15981086e"
+      },
+      {
+        "path": "lib/container/options.js",
+        "sha": "3625caf73c02443a586251b144d64368670d4026"
+      },
+      {
+        "path": "lib/container/RemoteModule.js",
+        "sha": "8377aaed981ff2613eada40723289a3ff24d964f"
+      },
+      {
+        "path": "lib/container/RemoteRuntimeModule.js",
+        "sha": "edff53f693c5cfff13c23a5f51b7773940de6109"
+      },
+      {
+        "path": "lib/container/RemoteToExternalDependency.js",
+        "sha": "d651e99b232d68448c2bd3265d5ef4e3d70bc00c"
+      },
+      {
+        "path": "lib/context/ContextExclusionPlugin.js",
+        "sha": "cedbee16fd5d4dba145c2240f988b319337ab141"
+      },
+      {
+        "path": "lib/context/ContextModule.js",
+        "sha": "0082351f4fb59aeaca639a2d7078628d506cc4dd"
+      },
+      {
+        "path": "lib/context/ContextModuleFactory.js",
+        "sha": "238ab492fd567ce598630e727894586905f3b5f2"
+      },
+      {
+        "path": "lib/context/ContextReplacementPlugin.js",
+        "sha": "fccd25730d7a6c1c0806c2b731104b3d6894a679"
+      },
+      {
+        "path": "lib/css/conventions.js",
+        "sha": "2cef352263e9381e9b7aa5adba9dba9862e24b22"
+      },
+      {
+        "path": "lib/css/CssGenerator.js",
+        "sha": "f160ef971fa9e3536e025c78aea8a354bc3725fc"
+      },
+      {
+        "path": "lib/css/CssInjectStyleRuntimeModule.js",
+        "sha": "4a1a6ffa716266a79cb54f0e37a05d685d51a168"
+      },
+      {
+        "path": "lib/css/CssLoadingRuntimeModule.js",
+        "sha": "183e3595abc668dfe1632f00b69a38ba96d6fe04"
+      },
+      {
+        "path": "lib/css/cssMinify.js",
+        "sha": "2d3196ff2ac472cda377b3347039b284f06ac417"
+      },
+      {
+        "path": "lib/css/CssModule.js",
+        "sha": "c565f854be1c114b0a2881477d99ce9afee5edef"
+      },
+      {
+        "path": "lib/css/CssModulesPlugin.js",
+        "sha": "950b9e9c37382ccbbad5a697469a177baa15232d"
+      },
+      {
+        "path": "lib/css/CssServerStylesRuntimeModule.js",
+        "sha": "b947f5bf7624bca22c85cb415651bc3422017d2d"
+      },
+      {
+        "path": "lib/css/syntax.js",
+        "sha": "ba40f884c14ebb95f39a888377564c0498569470"
+      },
+      {
+        "path": "lib/css/topologicalSort.js",
+        "sha": "bb38b07db0d42723aa5f3837fdcc9eb1f5795399"
+      },
+      {
+        "path": "lib/debug/ProfilingPlugin.js",
+        "sha": "a38c4d069549f9d97801069d238f4f1a0505ccca"
+      },
+      {
+        "path": "lib/define/DefinePlugin.js",
+        "sha": "83315e0f96032f94c621a32696c3c3ae4454bf1a"
+      },
+      {
+        "path": "lib/define/DotenvPlugin.js",
+        "sha": "ea99288d5e05ebe0d246ab99db9427d68d471369"
+      },
+      {
+        "path": "lib/define/EnvironmentPlugin.js",
+        "sha": "6c4fad94f80fb284cc11c6519872e2d23e7c6f3b"
+      },
+      {
+        "path": "lib/deno/DenoTargetPlugin.js",
+        "sha": "fc25f4e10a14b1d773b7e6d84652b19cad4c240c"
+      },
+      {
+        "path": "lib/dependencies/ConstDependency.js",
+        "sha": "0eb51d2781c79e71bea36f3de95a3b1d1b08844a"
+      },
+      {
+        "path": "lib/dependencies/ContextElementDependency.js",
+        "sha": "de4448093bd228e1958eaa26b459d23d592d403e"
+      },
+      {
+        "path": "lib/dependencies/EntryDependency.js",
+        "sha": "1736bbf849aa68731c1deb6f39fcf3dac6adcbc4"
+      },
+      {
+        "path": "lib/dependencies/ModuleDependency.js",
+        "sha": "3b119501dae2afdb15d622ed0866c9f683e34c60"
+      },
+      {
+        "path": "lib/dependencies/NullDependency.js",
+        "sha": "de993ca677984aafb53ae7ff707f910cbad8afba"
+      },
+      {
+        "path": "lib/dependencies/StaticExportsDependency.js",
+        "sha": "e7e391676a30194194f5f83604d2c312b8bd0230"
+      },
+      {
+        "path": "lib/devtool/EvalDevToolModulePlugin.js",
+        "sha": "5edd56c33848d992ee612b2a0ba31145625ded13"
+      },
+      {
+        "path": "lib/devtool/EvalSourceMapDevToolPlugin.js",
+        "sha": "efd670f4c020310f7e5f87cc190bfe42eec7cd61"
+      },
+      {
+        "path": "lib/devtool/generateDebugId.js",
+        "sha": "c5da288858cbc1dbc33804d94500ea8b32a1e811"
+      },
+      {
+        "path": "lib/devtool/ModuleFilenameHelpers.js",
+        "sha": "52907ed1079b743b4ca2584506e682bc48d06a91"
+      },
+      {
+        "path": "lib/devtool/SourceMapDevToolModuleOptionsPlugin.js",
+        "sha": "85df47acf63dea9491d1509bcf67bf36e0cabf75"
+      },
+      {
+        "path": "lib/devtool/SourceMapDevToolPlugin.js",
+        "sha": "e957fd70abf57e096e541888b2c501850e7789ad"
+      },
+      {
+        "path": "lib/diagnostics/IgnoreWarningsPlugin.js",
+        "sha": "ed974b31dfaab62ae3600f8726f7b8d1eb0b5cb2"
+      },
+      {
+        "path": "lib/diagnostics/NoEmitOnErrorsPlugin.js",
+        "sha": "26c4971ce9d36df6d273a01ce39e2f7041fa169c"
+      },
+      {
+        "path": "lib/diagnostics/WarnCaseSensitiveModulesPlugin.js",
+        "sha": "7df7d5523d63d4642e659947a455154888a0039f"
+      },
+      {
+        "path": "lib/diagnostics/WarnDeprecatedOptionPlugin.js",
+        "sha": "de73527a6d69a2e24c04b52691e11dd6a73ab0f7"
+      },
+      {
+        "path": "lib/diagnostics/WarnNoModeSetPlugin.js",
+        "sha": "991c989e6b0e2d40b0c8ef8d34784e0ae70b4e0e"
+      },
+      {
+        "path": "lib/dll/DelegatedModule.js",
+        "sha": "c390c0e06f47436946c6cbf92d8934225f1f8792"
+      },
+      {
+        "path": "lib/dll/DelegatedModuleFactoryPlugin.js",
+        "sha": "3517338ecb7821f6240636aac0a4ad87630a4118"
+      },
+      {
+        "path": "lib/dll/DelegatedPlugin.js",
+        "sha": "eb893af77132e6fc247317e53e9a562431a3f9aa"
+      },
+      {
+        "path": "lib/dll/DelegatedSourceDependency.js",
+        "sha": "1e6d0a5ba8c10be6c85737173ca7e3126c6e9303"
+      },
+      {
+        "path": "lib/dll/DllEntryDependency.js",
+        "sha": "88fa02399fff2413c3a62c82f66bd70d79722d04"
+      },
+      {
+        "path": "lib/dll/DllEntryPlugin.js",
+        "sha": "fc560d3221b504e9f02a5e223d842ded7e646f44"
+      },
+      {
+        "path": "lib/dll/DllModule.js",
+        "sha": "20bde5b861da3da8f1eba7043a65b6f7720e1aff"
+      },
+      {
+        "path": "lib/dll/DllModuleFactory.js",
+        "sha": "adb26c5e286ba30dd051774156de33c532340d84"
+      },
+      {
+        "path": "lib/dll/DllPlugin.js",
+        "sha": "6300840db7314527bf57595a13a57a9c732d32e5"
+      },
+      {
+        "path": "lib/dll/DllReferencePlugin.js",
+        "sha": "b096cb2849629882f0f7ac8369d5400dba527d65"
+      },
+      {
+        "path": "lib/dll/LibManifestPlugin.js",
+        "sha": "511719651b9daf203827a17f914e25f8367d9a0b"
+      },
+      {
+        "path": "lib/electron/ElectronTargetPlugin.js",
+        "sha": "070b5bf4a765d184dd4209d006a9c2f6975c1cd6"
+      },
+      {
+        "path": "lib/entry/DynamicEntryPlugin.js",
+        "sha": "0c75c9492ea56b970bcf17afd2159b7587b3ae2f"
+      },
+      {
+        "path": "lib/entry/EntryDependency.js",
+        "sha": "bb4b891998eda66e94f64518666280c3804c6706"
+      },
+      {
+        "path": "lib/entry/EntryOptionPlugin.js",
+        "sha": "ec17b1df8053f65e20348d192935fab173b08190"
+      },
+      {
+        "path": "lib/entry/EntryPlugin.js",
+        "sha": "f539dc9a9b447976c54b0eaeefc9d587267a739e"
+      },
+      {
+        "path": "lib/errors/AbstractMethodError.js",
+        "sha": "84608d4c276bc6bc98f1bb626370b0960cec150b"
+      },
+      {
+        "path": "lib/errors/AnalyzableBailoutsWarning.js",
+        "sha": "2404c114765d4931be0d2e13b8f50f7683c8f93e"
+      },
+      {
+        "path": "lib/errors/AssetsOverSizeLimitWarning.js",
+        "sha": "c1d5a5bca2ab587d5efb2b3a15a5615be49885bd"
+      },
+      {
+        "path": "lib/errors/AsyncChunkWaterfallWarning.js",
+        "sha": "45970d830c448be241ad774036d8e5183fba333e"
+      },
+      {
+        "path": "lib/errors/AsyncDependencyToInitialChunkError.js",
+        "sha": "c5c92c04c7def63183a4576d05d981eb38b00382"
+      },
+      {
+        "path": "lib/errors/BroadContextsWarning.js",
+        "sha": "93139114fdbe0dbfe04c50c3090993348ff8f5de"
+      },
+      {
+        "path": "lib/errors/BuildCycleError.js",
+        "sha": "69877318d00827a88c423606635c403403911769"
+      },
+      {
+        "path": "lib/errors/CacheEffectivenessWarning.js",
+        "sha": "935b727c8dc596e835eff81b8cac8e77b2126be2"
+      },
+      {
+        "path": "lib/errors/CaseSensitiveModulesWarning.js",
+        "sha": "6bb6272aaddf2d09606abead16f0f46fcece7336"
+      },
+      {
+        "path": "lib/errors/ChunkRenderError.js",
+        "sha": "d6d256e5a48d7958d56b57510404dbaa13b351ec"
+      },
+      {
+        "path": "lib/errors/CircularDependenciesWarning.js",
+        "sha": "9b72aabda6f0d3c02a411143089a6710aa84248a"
+      },
+      {
+        "path": "lib/errors/CodeGenerationError.js",
+        "sha": "e88d21f3b74b06cfc15d4340db1519f13889826d"
+      },
+      {
+        "path": "lib/errors/CommentCompilationWarning.js",
+        "sha": "64b82f7036dcee890b5ac4ce6798c1584472dde5"
+      },
+      {
+        "path": "lib/errors/ConcurrentCompilationError.js",
+        "sha": "32b5c2ac06bb11c4634ce3e2bffe6e3e6eacf999"
+      },
+      {
+        "path": "lib/errors/ConflictingEntryExportsWarning.js",
+        "sha": "3955f022f13dc12a37bc2244ca6e69b0e84a0c5d"
+      },
+      {
+        "path": "lib/errors/ConflictingResourceHintsWarning.js",
+        "sha": "5f32c3f3da182e251538a53c6aaa53cbfbd97b87"
+      },
+      {
+        "path": "lib/errors/CriticalDependencyWarning.js",
+        "sha": "a298edb07a51e931190f49ef1ed007ae4bf01d46"
+      },
+      {
+        "path": "lib/errors/DeprecatedOptionWarning.js",
+        "sha": "fecbf9f10619373cd16a42e615ff9b1fb15907c9"
+      },
+      {
+        "path": "lib/errors/deriveStackFromNestedError.js",
+        "sha": "c06ccedc09a4922d7ee8272eb099017eb1506305"
+      },
+      {
+        "path": "lib/errors/DllManifestError.js",
+        "sha": "1cdc5e5df1705c56e512bfd861e2870a87a69229"
+      },
+      {
+        "path": "lib/errors/DotenvFileError.js",
+        "sha": "3395da7eea1d266ae7da3dfe7b75fe050166667a"
+      },
+      {
+        "path": "lib/errors/DuplicateModulesWarning.js",
+        "sha": "7781de0b1c6f40b60c73146fe7c2df3de79a60bf"
+      },
+      {
+        "path": "lib/errors/DuplicatePackagesWarning.js",
+        "sha": "b31332c96a9465fc86a287ccfdc91e249a66dee4"
+      },
+      {
+        "path": "lib/errors/DynamicExportsWarning.js",
+        "sha": "c2b798efb0dad4f0a9d69aba410a091c476f76c2"
+      },
+      {
+        "path": "lib/errors/EmbeddedSourceMapsWarning.js",
+        "sha": "ddd45b4606bfad90431b4eb523dd4a4778ab65a4"
+      },
+      {
+        "path": "lib/errors/EmptyCopyPatternWarning.js",
+        "sha": "98af27b0c71dcc82742a10446ead87473b2df754"
+      },
+      {
+        "path": "lib/errors/EntrypointsOverSizeLimitWarning.js",
+        "sha": "a1eea7c3ce4659d1a9619443636ed35601ddbcba"
+      },
+      {
+        "path": "lib/errors/EnvironmentNotSupportAsyncWarning.js",
+        "sha": "465e676c0642ff730e7aa21a7bcc0fc8b5593e26"
+      },
+      {
+        "path": "lib/errors/ErrorHelpers.js",
+        "sha": "70cf00b2d44fccab5c9ca71d3c6cbfda626d7f35"
+      },
+      {
+        "path": "lib/errors/ESMLinkingError.js",
+        "sha": "898b4414684fd1aa8fb7868b1d54a84a70d6af8d"
+      },
+      {
+        "path": "lib/errors/EvalUsageWarning.js",
+        "sha": "91b48a26cc43b3351d0540025a64481e2ad4b5cc"
+      },
+      {
+        "path": "lib/errors/ExternalStarReexportError.js",
+        "sha": "046391c6e619ae00996c53b7db6644b652f29feb"
+      },
+      {
+        "path": "lib/errors/FalseIIFEUmdWarning.js",
+        "sha": "9c66129ce72cf61429f3f9cef4596f02b3cc5032"
+      },
+      {
+        "path": "lib/errors/HookWebpackError.js",
+        "sha": "ff84067b89a093460388087df42cc8833605c423"
+      },
+      {
+        "path": "lib/errors/HotspotsWarning.js",
+        "sha": "c962f5388254fb9682752c8057a9ee66b7ff0969"
+      },
+      {
+        "path": "lib/errors/IgnoreErrorModuleFactory.js",
+        "sha": "4cbcd5752a569912d8f32ced7a1267c974390d03"
+      },
+      {
+        "path": "lib/errors/ImportedBindingAssignmentError.js",
+        "sha": "f3821c66358aef9bcb1e83de6ea2c19e942932c9"
+      },
+      {
+        "path": "lib/errors/InlinedAssetsWarning.js",
+        "sha": "bba5beb3ff66d536fbefbf0a611700988b298459"
+      },
+      {
+        "path": "lib/errors/InvalidChunkNameWarning.js",
+        "sha": "0b06127d6c904f26581268c09d41911a8f8a3ae0"
+      },
+      {
+        "path": "lib/errors/InvalidDependenciesModuleWarning.js",
+        "sha": "24a93d7fbfa5b012011d9c952d8b2495dd63fc32"
+      },
+      {
+        "path": "lib/errors/JSONParseError.js",
+        "sha": "5def7dce8c2a63dd8272cca7dff08ff3ecdf0cf1"
+      },
+      {
+        "path": "lib/errors/LargeModulesWarning.js",
+        "sha": "5a8effab6f0b8a97a96b0ff75386bcf595f1e53b"
+      },
+      {
+        "path": "lib/errors/LegacyJavascriptWarning.js",
+        "sha": "5977c631cca0a73aa87a1c4182dfcb63db852e04"
+      },
+      {
+        "path": "lib/errors/LoaderLoadingError.js",
+        "sha": "04dea7482a03b99b108a0fcf46e82153bbe79977"
+      },
+      {
+        "path": "lib/errors/MinMaxSizeWarning.js",
+        "sha": "af2b94dd39113931ff9eece63d3b19c6901b628e"
+      },
+      {
+        "path": "lib/errors/MissingSideEffectsWarning.js",
+        "sha": "ce1936afabb0b9a76da7717c81e041d804ee6320"
+      },
+      {
+        "path": "lib/errors/MissingSourceMapsWarning.js",
+        "sha": "066c304433dff97020665339e05d345be3d2a694"
+      },
+      {
+        "path": "lib/errors/MixedExportsWarning.js",
+        "sha": "6e227ed1b954161d3273858f3bebc7c43ae18149"
+      },
+      {
+        "path": "lib/errors/ModuleBuildError.js",
+        "sha": "c831088bc5a152f1b7bd6cc00cd40e10a692ad45"
+      },
+      {
+        "path": "lib/errors/ModuleDependencyError.js",
+        "sha": "e3db888e65d2f5dd12ea5a910de28d392634ce2c"
+      },
+      {
+        "path": "lib/errors/ModuleDependencyWarning.js",
+        "sha": "9719e28881aeb5ef0b710be64edb4642554fa6a7"
+      },
+      {
+        "path": "lib/errors/ModuleError.js",
+        "sha": "89b985ce7e51c673144f5f9fc2daa75fb9d866ab"
+      },
+      {
+        "path": "lib/errors/ModuleHashingError.js",
+        "sha": "fd1f14a28315b1b3ee542cad38ef688fdb211e1d"
+      },
+      {
+        "path": "lib/errors/ModuleNotFoundError.js",
+        "sha": "3efffc5f9031f243c523da9adb4c8139714a7955"
+      },
+      {
+        "path": "lib/errors/ModuleParseError.js",
+        "sha": "7c1b941e9afe9c4a74b2e63c9650e2253b0c26eb"
+      },
+      {
+        "path": "lib/errors/ModuleRestoreError.js",
+        "sha": "06d3545f8e8fd4fc3cc22989a27a88a8130cc2c5"
+      },
+      {
+        "path": "lib/errors/ModuleStoreError.js",
+        "sha": "11f09080898e6e712374f7e134ffd1416e139931"
+      },
+      {
+        "path": "lib/errors/ModuleWarning.js",
+        "sha": "8b17e2ecbd5a98a588f8e17f1e4752634a6c43a5"
+      },
+      {
+        "path": "lib/errors/NoAsyncChunksWarning.js",
+        "sha": "5cd05d719c35d8914df1031d6e27a29d93beeea4"
+      },
+      {
+        "path": "lib/errors/NodeStuffInWebError.js",
+        "sha": "89e77e56f241f611d9cb10c9019cb5acba6a6149"
+      },
+      {
+        "path": "lib/errors/NoModeWarning.js",
+        "sha": "8979f87925c16fb5e8ef2136d524c9b3d9e14746"
+      },
+      {
+        "path": "lib/errors/NonErrorEmittedError.js",
+        "sha": "18e5c351bb0ed4f39cd5d12f3328dfa460f790ee"
+      },
+      {
+        "path": "lib/errors/OsDependentRuleWarning.js",
+        "sha": "37ebdc88b050a921e52231fc9f0bc1b785a5dbed"
+      },
+      {
+        "path": "lib/errors/PathVariableError.js",
+        "sha": "548edeab40afbfde6dcc9e9e35cb5bf0e3fdc4bc"
+      },
+      {
+        "path": "lib/errors/PureAnnotationsWarning.js",
+        "sha": "b47db36e55dee80a3cdc6397fa755f566814520f"
+      },
+      {
+        "path": "lib/errors/RedundantDynamicImportWarning.js",
+        "sha": "9404d6b149afcfd67a918a4ea844323ee8faf94f"
+      },
+      {
+        "path": "lib/errors/RequireIncludeDeprecationWarning.js",
+        "sha": "86d358c8f99eb5fabce028a3d1956222c494ed8f"
+      },
+      {
+        "path": "lib/errors/RuntimeInLargeChunkWarning.js",
+        "sha": "990a340b3d3aa46017cf5de6597602c94654093e"
+      },
+      {
+        "path": "lib/errors/RuntimeModuleGenerationError.js",
+        "sha": "36cc73ef7ce15f29f220a8470f5a708cae6b45cb"
+      },
+      {
+        "path": "lib/errors/ScopeHoistingBailoutsWarning.js",
+        "sha": "a0fee8020b41d9256e9da3f6c120b62667a0b118"
+      },
+      {
+        "path": "lib/errors/SplitChunksCappedWarning.js",
+        "sha": "d7f3bf483a5e85ebf41b0a53ff73e4abe9c42647"
+      },
+      {
+        "path": "lib/errors/SSRManifestAutoPublicPathWarning.js",
+        "sha": "ab6ef9c127c174c63d8bcc8d237450274eaa625e"
+      },
+      {
+        "path": "lib/errors/SystemImportDeprecationWarning.js",
+        "sha": "d5c68791b2a87135a11061bbb0fcf3c524279b0c"
+      },
+      {
+        "path": "lib/errors/TinyChunksWarning.js",
+        "sha": "9ac5e6f80e944e628643891e567ce09d40dda992"
+      },
+      {
+        "path": "lib/errors/TopLevelThisWarning.js",
+        "sha": "d1c4a161afd58dda643c464160be5f9aef82d1af"
+      },
+      {
+        "path": "lib/errors/UnhandledSchemeError.js",
+        "sha": "4d59fd702755e82d1015c947d977fabbbd252fa1"
+      },
+      {
+        "path": "lib/errors/UnmergeableEntryExportsError.js",
+        "sha": "bb67ae06bfc7ab4d1400d37b7cd84b28e5a183a2"
+      },
+      {
+        "path": "lib/errors/UnsplitVendorsWarning.js",
+        "sha": "0c113aa862137dbc82aaca450f9db7379622c1c4"
+      },
+      {
+        "path": "lib/errors/UnsupportedFeatureWarning.js",
+        "sha": "261a5154b315b76135c4e3dc6785f2290aee0d23"
+      },
+      {
+        "path": "lib/errors/UnsupportedWebAssemblyFeatureError.js",
+        "sha": "98637552c83f8f709a1576d448150fe2ebbc8977"
+      },
+      {
+        "path": "lib/errors/UnusedAliasesWarning.js",
+        "sha": "337b3edaafa6bbd694873c383f476c112986b49d"
+      },
+      {
+        "path": "lib/errors/UnusedAssetsWarning.js",
+        "sha": "7756b2d9dc515cc1cd80d062a0daf8fa4de5fb85"
+      },
+      {
+        "path": "lib/errors/UnusedDefinesWarning.js",
+        "sha": "3c86a66075b1c4f843ea80a40fe5b11a395821ca"
+      },
+      {
+        "path": "lib/errors/UnusedExternalsWarning.js",
+        "sha": "7d55ea2eb4560edd39e3413ab713da918eafae71"
+      },
+      {
+        "path": "lib/errors/UnusedFederationWarning.js",
+        "sha": "f92d15f9301882e682a5501ca118465f1e70e9da"
+      },
+      {
+        "path": "lib/errors/UnusedModulesWarning.js",
+        "sha": "73e57c404736e9b3d3bddc11bbe611c1034924bd"
+      },
+      {
+        "path": "lib/errors/UnusedReexportsWarning.js",
+        "sha": "c786b97bed01543a60702e77268094538012e9bd"
+      },
+      {
+        "path": "lib/errors/UnusedRuleWarning.js",
+        "sha": "63a2b46346d758fff26ac70adcf88735e8ddaac5"
+      },
+      {
+        "path": "lib/errors/WebAssemblyInInitialChunkError.js",
+        "sha": "a998624d170feb0be58e9691b2746ad3be853740"
+      },
+      {
+        "path": "lib/errors/WebpackError.js",
+        "sha": "e315c109933d8a10026255a4037370cf64c249ea"
+      },
+      {
+        "path": "lib/esm/ExportWebpackRequireRuntimeModule.js",
+        "sha": "aa6acc8320bd605c1ab1761d87d20ef3045b2256"
+      },
+      {
+        "path": "lib/esm/ModuleChunkFormatPlugin.js",
+        "sha": "b2159b43f2cbfd671b1228e0b42f53c4e8114a4b"
+      },
+      {
+        "path": "lib/esm/ModuleChunkLoadingPlugin.js",
+        "sha": "b108cf7cd9e55295fcfc794f05ca77fa19af99f8"
+      },
+      {
+        "path": "lib/esm/ModuleChunkLoadingRuntimeModule.js",
+        "sha": "73d99b8d193b6ee105cb467e23c46e0650746d27"
+      },
+      {
+        "path": "lib/externals/ExternalModule.js",
+        "sha": "c2a8015ed287083f76c8dccd2a893d711ac135c7"
+      },
+      {
+        "path": "lib/externals/ExternalModuleFactoryPlugin.js",
+        "sha": "3a56e110176cc4c18770c03a6117b0f4e867fce9"
+      },
+      {
+        "path": "lib/externals/ExternalsPlugin.js",
+        "sha": "f51454aeef887edd182510f26da4c5e16c216899"
+      },
+      {
+        "path": "lib/externals/extractUrlAndGlobal.js",
+        "sha": "7ef9e6cc8683e8f5df595f46c90bf5eafb0ae6d2"
+      },
+      {
+        "path": "lib/fs/FileSystemInfo.js",
+        "sha": "cb8843184f881ed9c17095e55631112a24523ba3"
+      },
+      {
+        "path": "lib/fs/fs.js",
+        "sha": "3ae8d063aa9376061c48b62defda5f17b786f7f6"
+      },
+      {
+        "path": "lib/fs/StackedCacheMap.js",
+        "sha": "2ab8533a23b81b1539e0c6f5c1b0d3a68e90cc79"
+      },
+      {
+        "path": "lib/graph/AsyncDependenciesBlock.js",
+        "sha": "d1d04f40f8253072683dd046da01fca6b10e2a35"
+      },
+      {
+        "path": "lib/graph/buildChunkGraph.js",
+        "sha": "3e24eac13db2f696625738374c71cf7e5218f6f8"
+      },
+      {
+        "path": "lib/graph/Chunk.js",
+        "sha": "5986a98497580bc8539d98803ae8e08027d3d92d"
+      },
+      {
+        "path": "lib/graph/ChunkGraph.js",
+        "sha": "de5e0cb78135770f41d120138e466bab83283cac"
+      },
+      {
+        "path": "lib/graph/ChunkGroup.js",
+        "sha": "7f5bd760631a1567b19dfb091b40934c83f5edcf"
+      },
+      {
+        "path": "lib/graph/DependenciesBlock.js",
+        "sha": "535306391bcd5e7eb37499d38e10614b04589924"
+      },
+      {
+        "path": "lib/graph/Dependency.js",
+        "sha": "de8cc93cc16ce68db793551158fc38f30ae3d21d"
+      },
+      {
+        "path": "lib/graph/Entrypoint.js",
+        "sha": "aaf7f0ff9d71560ab0b48dd9cdffc61613fc7ba2"
+      },
+      {
+        "path": "lib/graph/ExportsInfo.js",
+        "sha": "06b96286c550629f087fb6c286c6d06ba713153d"
+      },
+      {
+        "path": "lib/graph/findGraphRoots.js",
+        "sha": "4c400ab1488ae6900083e9267fec4f4874e2f6fa"
+      },
+      {
+        "path": "lib/graph/HotUpdateChunk.js",
+        "sha": "5fe6f77892507e0f5820d0bf9105dddd883e0099"
+      },
+      {
+        "path": "lib/graph/isDependencyKind.js",
+        "sha": "17da14bb109e628cb72ab8d21a9ec62a669e6f90"
+      },
+      {
+        "path": "lib/graph/ModuleGraph.js",
+        "sha": "e6e8c2feb057ebc59a1ad152456a9cd0df0d9037"
+      },
+      {
+        "path": "lib/graph/ModuleGraphConnection.js",
+        "sha": "3d8b18be08212fcb9bfbe2627aad8f213c40c155"
+      },
+      {
+        "path": "lib/hmr/chunkGroupStandIn.js",
+        "sha": "946f231a2ce9abb08f5832e23501ea0f67b9a555"
+      },
+      {
+        "path": "lib/hmr/HotModuleReplacement.runtime.js",
+        "sha": "714602f53527b8b1cfc9d6d27c632e9d5537d054"
+      },
+      {
+        "path": "lib/hmr/HotModuleReplacementChunkGroupRuntimeModule.js",
+        "sha": "3cb048b4e350f35e813b71cea169036291788492"
+      },
+      {
+        "path": "lib/hmr/HotModuleReplacementChunkVersionCheck.runtime.js",
+        "sha": "39ca8c803ecc0f79e03a35b28482bbdae3d67d7b"
+      },
+      {
+        "path": "lib/hmr/HotModuleReplacementChunkVersionCheckRuntimeModule.js",
+        "sha": "87d148f3c358a2f55767a8401798fd0f4f29584e"
+      },
+      {
+        "path": "lib/hmr/HotModuleReplacementChunkVersionsRuntimeModule.js",
+        "sha": "b58e5afeb5626326d17577efe2ad257b0092afc0"
+      },
+      {
+        "path": "lib/hmr/HotModuleReplacementLoadedChunkVersionRuntimeModule.js",
+        "sha": "1418bd8ddeb2fba81010e7448eb875efc9d5d3f2"
+      },
+      {
+        "path": "lib/hmr/HotModuleReplacementPlugin.js",
+        "sha": "89378df6b26571a9adee96c2443830e39068b721"
+      },
+      {
+        "path": "lib/hmr/HotModuleReplacementRuntimeModule.js",
+        "sha": "dfa0a267feb89f16f10f96dcf365083645cdad4a"
+      },
+      {
+        "path": "lib/hmr/JavascriptHotModuleReplacement.runtime.js",
+        "sha": "f007d8d694fdc357ab648b233f86f5ea302a612b"
+      },
+      {
+        "path": "lib/hmr/JavascriptHotModuleReplacementHelper.js",
+        "sha": "651fcc6309ad9911994dff2ce1b672edf70ea9d2"
+      },
+      {
+        "path": "lib/hmr/lazyCompilationBackend.js",
+        "sha": "f75b2a9d3009177f691f9d4906156fc4edb24b9b"
+      },
+      {
+        "path": "lib/hmr/LazyCompilationPlugin.js",
+        "sha": "7796f5cb96456d5ce46baca07abe4fd129f7c955"
+      },
+      {
+        "path": "lib/hmr/parserHooks.js",
+        "sha": "02aa8e23e50d8ae39c72cbfc5e41a00577949b36"
+      },
+      {
+        "path": "lib/html/builtinEmbeddedRenderer.js",
+        "sha": "b5ad236c4edb0ccbcef19a6cb8be899459739acb"
+      },
+      {
+        "path": "lib/html/data.js",
+        "sha": "fdcf69c754705ee3e28c8420e1d1935aeaf60b23"
+      },
+      {
+        "path": "lib/html/HtmlGenerator.js",
+        "sha": "0903933d0e16cb631d49b18bb8c69e07854a9719"
+      },
+      {
+        "path": "lib/html/htmlMinify.js",
+        "sha": "8b81b80bcb7db230622fa341ff67aa90f13a2e1d"
+      },
+      {
+        "path": "lib/html/HtmlModule.js",
+        "sha": "d22a119b8303f5267f1ab60f7320b397e845046c"
+      },
+      {
+        "path": "lib/html/HtmlModulesPlugin.js",
+        "sha": "92211b5d2c358195e86fe91d461c013a3507d67a"
+      },
+      {
+        "path": "lib/html/HtmlParser.js",
+        "sha": "ea3b9e6ace502dae5c9b7b32125061993221fe3d"
+      },
+      {
+        "path": "lib/html/syntax-printer.js",
+        "sha": "2bcd71215b6bb028de974a856885fd6013f1912d"
+      },
+      {
+        "path": "lib/html/syntax.js",
+        "sha": "cc79f312faba58f5ff2cec53934d5744dccffa91"
+      },
+      {
+        "path": "lib/html/xmlMinify.js",
+        "sha": "caa765cccf31f0243f26cc05a304372c910278a8"
+      },
+      {
+        "path": "lib/ids/ChunkModuleIdRangePlugin.js",
+        "sha": "c5fa0961bed69ec79808f5d9a89d195ecc26c4dc"
+      },
+      {
+        "path": "lib/ids/DeterministicChunkIdsPlugin.js",
+        "sha": "38afaef8f19a1ae09305df18dd768bf4ab4ecf93"
+      },
+      {
+        "path": "lib/ids/DeterministicModuleIdsPlugin.js",
+        "sha": "c7d6372e53b794e2544f51b66e56b3dab4e22fa9"
+      },
+      {
+        "path": "lib/ids/HashedModuleIdsPlugin.js",
+        "sha": "53b4275536ed43f2692aa112ee41a5b6a6483746"
+      },
+      {
+        "path": "lib/ids/IdHelpers.js",
+        "sha": "6422fc76cd9077929d5b4eeb7b10d4fcd4a63f37"
+      },
+      {
+        "path": "lib/ids/NamedChunkIdsPlugin.js",
+        "sha": "a0c6b602ca3773a043200f0c248ecc69948a974f"
+      },
+      {
+        "path": "lib/ids/NamedModuleIdsPlugin.js",
+        "sha": "1385b7ccfbaa2b481c213135e7ec539b4bcb262e"
+      },
+      {
+        "path": "lib/ids/NaturalChunkIdsPlugin.js",
+        "sha": "3d2821cb6648f41415457066fb10210046411762"
+      },
+      {
+        "path": "lib/ids/NaturalModuleIdsPlugin.js",
+        "sha": "65da721cd5d3279691df610f6d5d416534591818"
+      },
+      {
+        "path": "lib/ids/numberHash.js",
+        "sha": "a9eaef1487c40b41f8fa82c6cc15cfd7e37234f4"
+      },
+      {
+        "path": "lib/ids/OccurrenceChunkIdsPlugin.js",
+        "sha": "1edb7bec8d982191caf19328af6cdd6d537a06a1"
+      },
+      {
+        "path": "lib/ids/OccurrenceModuleIdsPlugin.js",
+        "sha": "5e2dfed3be253a9acbab524883b818ce4a86511f"
+      },
+      {
+        "path": "lib/ids/RecordIdsPlugin.js",
+        "sha": "da33c472260f57db2f18de8aee133969056b861c"
+      },
+      {
+        "path": "lib/ids/SyncModuleIdsPlugin.js",
+        "sha": "2154331eb53e63a1241256d81c30a5c1558e4dba"
+      },
+      {
+        "path": "lib/javascript/APIPlugin.js",
+        "sha": "d19bc171d79183a3621750bb80caa1e39819ff32"
+      },
+      {
+        "path": "lib/javascript/ArrayPushCallbackChunkFormatPlugin.js",
+        "sha": "c5cd4c61e7a13faa99f864c76b075fb85a8fc1f0"
+      },
+      {
+        "path": "lib/javascript/BasicEvaluatedExpression.js",
+        "sha": "ef87f44f2f1839a5c9c5267e93bcbd58f58e9eb1"
+      },
+      {
+        "path": "lib/javascript/ChunkHelpers.js",
+        "sha": "8f02e8ef8b8b3e5c4891d500c396e175730e729d"
+      },
+      {
+        "path": "lib/javascript/CommonJsChunkFormatPlugin.js",
+        "sha": "661145527fcb9f2c059ffbd6dab486631b923811"
+      },
+      {
+        "path": "lib/javascript/CompatibilityPlugin.js",
+        "sha": "f0c1b7b00aeddfd725729cfa61d78ffc8b1a10de"
+      },
+      {
+        "path": "lib/javascript/ConstPlugin.js",
+        "sha": "b2230ccfcc50d96144af595896a76f96b4f2a6fb"
+      },
+      {
+        "path": "lib/javascript/data.js",
+        "sha": "e19e68987ab4114d5b9ea2286c5d0a976e7672b6"
+      },
+      {
+        "path": "lib/javascript/EnableChunkLoadingPlugin.js",
+        "sha": "0f6fdcb523691bbafc6fb29ea2830ef76ced7f7b"
+      },
+      {
+        "path": "lib/javascript/ExportsInfoApiPlugin.js",
+        "sha": "7769c1d3bc60d08622116d0b4c17b3247f282f13"
+      },
+      {
+        "path": "lib/javascript/ExportsInfoDependency.js",
+        "sha": "4643247e40ba9cb5834bc84ede141e49b4be4241"
+      },
+      {
+        "path": "lib/javascript/JavascriptGenerator.js",
+        "sha": "d39b18e85cf7012c3e14590ac53ce41dfabdcd50"
+      },
+      {
+        "path": "lib/javascript/JavascriptMetaInfoPlugin.js",
+        "sha": "7cd931ddc17ff8b77de667c017e736dda4cdc969"
+      },
+      {
+        "path": "lib/javascript/JavascriptModule.js",
+        "sha": "ba6f2609af2766c072eea243dd99f8d92e2a2636"
+      },
+      {
+        "path": "lib/javascript/JavascriptModulesPlugin.js",
+        "sha": "29058bd7f86e825f3e1dfc202a905f97bed2ee7e"
+      },
+      {
+        "path": "lib/javascript/JavascriptParserHelpers.js",
+        "sha": "8c94b8ce544c86fe560d6d0c537f699633fd124f"
+      },
+      {
+        "path": "lib/javascript/jsMinify.js",
+        "sha": "8707a2c0901e08d3be32b8f879c0852b49626aa3"
+      },
+      {
+        "path": "lib/javascript/MergedEntryExports.js",
+        "sha": "7582db64a1310e052558a19d26641a7485efae93"
+      },
+      {
+        "path": "lib/javascript/parse-error-codes.js",
+        "sha": "32a3ce8ac2d822d325a1e168dca8abc094be81ce"
+      },
+      {
+        "path": "lib/javascript/regexp.js",
+        "sha": "f8c46c0a6a9d411617613dde46351623abdfcbb3"
+      },
+      {
+        "path": "lib/javascript/ScopeAnalyzer.js",
+        "sha": "2a0cb27f97c59346ac8ddb5aadc80c08983233ff"
+      },
+      {
+        "path": "lib/javascript/side-effects.js",
+        "sha": "cf1f6f70ccec79581ab370578e75878f44cdb3a6"
+      },
+      {
+        "path": "lib/javascript/StackedMap.js",
+        "sha": "3ca2fd35c585cffe3a10c6ee30a8e76810e2b145"
+      },
+      {
+        "path": "lib/javascript/StartupHelpers.js",
+        "sha": "283d00f5065b8a649b0f2a8fc37e010988f62cd5"
+      },
+      {
+        "path": "lib/javascript/syntax.js",
+        "sha": "24712396f75fb7a8d5a56c464bba08eaf1096db2"
+      },
+      {
+        "path": "lib/javascript/terser-option-names.js",
+        "sha": "8e359b2a1e884e880ad33ea173ac5a9b432f5be5"
+      },
+      {
+        "path": "lib/javascript/UseStrictPlugin.js",
+        "sha": "dc7009cb95e981c7dd89bb3e977d6026490e9bc3"
+      },
+      {
+        "path": "lib/javascript/WebpackIsIncludedDependency.js",
+        "sha": "82fb96c61d6526ce08c20670221d0609b1d18bd2"
+      },
+      {
+        "path": "lib/javascript/WebpackIsIncludedPlugin.js",
+        "sha": "e0a009b7dd8cc99a3a65b0d05084d85609a535de"
+      },
+      {
+        "path": "lib/json/JsonData.js",
+        "sha": "92016c9d1ea3913f866dc4084cdd4f442a48c7bc"
+      },
+      {
+        "path": "lib/json/JsonExportsDependency.js",
+        "sha": "68c31be484de808a30486f4c60bf6b6d2429c771"
+      },
+      {
+        "path": "lib/json/JsonGenerator.js",
+        "sha": "e0bd7ccfec4f2d327161f72f12b3e5bb62f283a4"
+      },
+      {
+        "path": "lib/json/jsonMinify.js",
+        "sha": "7f07746e1bfc95b74b6983789fc0fea6a9f9bfa2"
+      },
+      {
+        "path": "lib/json/JsonModule.js",
+        "sha": "13d53effd459ed59109eb515c2d1d5d1eb6c47d2"
+      },
+      {
+        "path": "lib/json/JsonModulesPlugin.js",
+        "sha": "55769e58a214d9f3f1b0d2265eb32ac34839fb94"
+      },
+      {
+        "path": "lib/json/JsonParser.js",
+        "sha": "2f94a2f97cb9e47ba46edf4e5a300dbb3f1c4564"
+      },
+      {
+        "path": "lib/library/AbstractLibraryPlugin.js",
+        "sha": "818d7f3b4f000fe42fffbb24d0baebd4543f4935"
+      },
+      {
+        "path": "lib/library/AmdLibraryPlugin.js",
+        "sha": "81b41ce59b2bd81489134cc1afe5585ee59547ef"
+      },
+      {
+        "path": "lib/library/AssignLibraryPlugin.js",
+        "sha": "813369a4bf055981708c616783adfc06391505a4"
+      },
+      {
+        "path": "lib/library/EnableLibraryPlugin.js",
+        "sha": "d2a89ea255b13fd67ca91d41b38886ed5da5bdd0"
+      },
+      {
+        "path": "lib/library/ExportPropertyLibraryPlugin.js",
+        "sha": "d6d57355ca2bd9b750525c0781d8b39a72b0f7b9"
+      },
+      {
+        "path": "lib/library/JsonpLibraryPlugin.js",
+        "sha": "ee041fdc89f7f0bdbc320b3b641de76ccd1632b5"
+      },
+      {
+        "path": "lib/library/LibraryTemplatePlugin.js",
+        "sha": "4a66e0fa7c57a76d37d9787077135f5a884f7be7"
+      },
+      {
+        "path": "lib/library/ModuleLibraryPlugin.js",
+        "sha": "153aecb986094d28e2760211a92b695d77eafc56"
+      },
+      {
+        "path": "lib/library/SystemLibraryPlugin.js",
+        "sha": "30bf553e845f2a7888bd4781a7f6e611e5333b9e"
+      },
+      {
+        "path": "lib/library/UmdLibraryPlugin.js",
+        "sha": "14564d5e7ba0050e5b1dcd97ab235cc54f7361dd"
+      },
+      {
+        "path": "lib/loaders/LoaderDependency.js",
+        "sha": "db5085b2617844c7bf1032e9b465697bae33a998"
+      },
+      {
+        "path": "lib/loaders/LoaderImportDependency.js",
+        "sha": "70ce0d26e2f37a76a3c8adc1d32e27f4a0eae0da"
+      },
+      {
+        "path": "lib/loaders/LoaderOptionsPlugin.js",
+        "sha": "f1625e896e4ebc64c77cdfa662e9f0c1c0886cbb"
+      },
+      {
+        "path": "lib/loaders/LoaderPlugin.js",
+        "sha": "c55f3a619c2953277a1641e4a98cc40da1ecd12e"
+      },
+      {
+        "path": "lib/loaders/LoaderRunner.js",
+        "sha": "7aee84f148d9d8928688f9beb9ac923f86eaf840"
+      },
+      {
+        "path": "lib/loaders/LoaderTargetPlugin.js",
+        "sha": "e484c1b839373b04edfbbc05ff60cd5566e9a346"
+      },
+      {
+        "path": "lib/loaders/loadLoader.js",
+        "sha": "0bc93d87d5585686bbd7f8cda172ad8067cd2ed7"
+      },
+      {
+        "path": "lib/logging/createConsoleLogger.js",
+        "sha": "f0f52bab17fff295c346e2593b167ccce3102dac"
+      },
+      {
+        "path": "lib/logging/Logger.js",
+        "sha": "0b9c196a07e00c49fc6c54d88d4c92fff2eeaea6"
+      },
+      {
+        "path": "lib/logging/ProgressPlugin.js",
+        "sha": "dc75c7883566c281b3c02a42f63e64ed8a046a77"
+      },
+      {
+        "path": "lib/logging/runtime.js",
+        "sha": "0627b6ee873583c23926b119e547571a38674504"
+      },
+      {
+        "path": "lib/logging/truncateArgs.js",
+        "sha": "ccd8635cd3b56923913fb6059ab285eb46628159"
+      },
+      {
+        "path": "lib/module/CodeGenerationResults.js",
+        "sha": "b8928fb2ce94dae132b9628b9ea1770bcf1d656c"
+      },
+      {
+        "path": "lib/module/extractSourceMap.js",
+        "sha": "540d61ff1fc24bac00fef41ae54d3b7dd071ed53"
+      },
+      {
+        "path": "lib/module/findCaseMismatch.js",
+        "sha": "844eb66d54296cb9d4a1462e4417cb5626cf6f0a"
+      },
+      {
+        "path": "lib/module/Generator.js",
+        "sha": "251cd4405f8f3e1053497ef99a942407038c2a85"
+      },
+      {
+        "path": "lib/module/Module.js",
+        "sha": "cade9d559fc11be32badc1cea5ddb5403e4306bf"
+      },
+      {
+        "path": "lib/module/ModuleFactory.js",
+        "sha": "00f237e0543a1dc356d1c1a499dc9e3f483d9c9c"
+      },
+      {
+        "path": "lib/module/ModuleProfile.js",
+        "sha": "93dc442680976f73f923aca3558f6038b0be30ea"
+      },
+      {
+        "path": "lib/module/ModuleSourceTypeConstants.js",
+        "sha": "4b842d04d4243c8f35bd49eef575860b7b4dff17"
+      },
+      {
+        "path": "lib/module/ModuleTypeConstants.js",
+        "sha": "135d15cbf63b53531a5877b9d25c3354c216a72f"
+      },
+      {
+        "path": "lib/module/NormalModule.js",
+        "sha": "6aa75bc0a3fee1bcfca06bccc2db870c7b711c2d"
+      },
+      {
+        "path": "lib/module/NormalModuleFactory.js",
+        "sha": "e90c1a8741f24007fdc21cfe7b9304e3e42253d4"
+      },
+      {
+        "path": "lib/module/NullFactory.js",
+        "sha": "5f65ddd641acc6338be7580714a662d9a080c599"
+      },
+      {
+        "path": "lib/module/Parser.js",
+        "sha": "ec88852a0dc40140b68fca26add44f70024883eb"
+      },
+      {
+        "path": "lib/module/RawModule.js",
+        "sha": "8614cb791e7690280ec124bac4d06c8362495bed"
+      },
+      {
+        "path": "lib/module/SelfModuleFactory.js",
+        "sha": "08015a4691d5605d29f2d9b27d83b5c6cc5f57d3"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T15:42:09Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 30,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [
+      "ships-git-hooks"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "child_process-shell",
+      "severe": false,
+      "file": "bin/webpack.js",
+      "line": 33,
+      "snippet": "const cp = require(\"child_process\");",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "lib/devtool/EvalDevToolModulePlugin.js",
+      "line": 110,
+      "snippet": "`eval(${",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "lib/devtool/EvalSourceMapDevToolPlugin.js",
+      "line": 232,
+      "snippet": "`eval(${",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "lib/javascript/JavascriptMetaInfoPlugin.js",
+      "line": 58,
+      "snippet": "buildInfo.moduleConcatenationBailout = \"eval()\";",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "lib/library/ModuleLibraryPlugin.js",
+      "line": 171,
+      "snippet": "return \"the module calls eval(), and a function it creates may write a binding later\";",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "lib/loaders/loadLoader.js",
+      "line": 78,
+      "snippet": "const dynamicImport = eval(\"(url) => import(url)\");",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "agent-hook-command",
+      "severe": false,
+      "file": ".claude/settings.json",
+      "line": 3,
+      "snippet": "\"SessionStart\": [",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": true,
+      "file": ".husky/pre-commit",
+      "line": 1,
+      "snippet": "npx --no-install lint-staged --quiet",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 6,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 22,
+    "failed": 0,
+    "ms": 9925
+  },
+  "duration_ms": 4579
+}

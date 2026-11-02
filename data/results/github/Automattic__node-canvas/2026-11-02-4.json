@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154812Z",
+  "target": {
+    "source": "github",
+    "id": "Automattic/node-canvas",
+    "url": "https://github.com/Automattic/node-canvas",
+    "name": "node-canvas"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:48:36.497Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "6cc138b908731575a449a78126a68d01cb6bcf1b",
+    "files_scanned": 35,
+    "candidates": 35,
+    "excluded_non_shipped": 68,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/ci.yaml",
+        "sha": "a0e621070d1c90afeffc72813e3c75a94a9f0767"
+      },
+      {
+        "path": ".github/workflows/publish.yaml",
+        "sha": "2251df35cb5a4fdf123942b55647cbf94adf1615"
+      },
+      {
+        "path": "index.js",
+        "sha": "d75f784bb52e239c38448b8bcf7086266477bd98"
+      },
+      {
+        "path": "package.json",
+        "sha": "696ad565edd1d930d4a527b1e562e2d0112685ea"
+      },
+      {
+        "path": "lib/bindings.js",
+        "sha": "a17a919248f74499811ed3ed32a59ca2b2c42376"
+      },
+      {
+        "path": "lib/canvas.js",
+        "sha": "439664a03241de13d2587309d7057759a541d84a"
+      },
+      {
+        "path": "lib/context2d.js",
+        "sha": "103ec63256511a6fd6f4fdba7523e9a132a40373"
+      },
+      {
+        "path": "lib/DOMMatrix.js",
+        "sha": "717dca206fd2ea2883a6b19b872890c9a3ef0490"
+      },
+      {
+        "path": "lib/image.js",
+        "sha": "0e1cebd5981422126ead911e1a308ee511a85aa5"
+      },
+      {
+        "path": "lib/jpegstream.js",
+        "sha": "8f98a9db7e7369b40a26f7632084113a47e4df6c"
+      },
+      {
+        "path": "lib/pattern.js",
+        "sha": "fe5bbc300065bfd8214ab7529a3760ab356609a1"
+      },
+      {
+        "path": "lib/pdfstream.js",
+        "sha": "8643af75bdb24bdd3890e95b44f6e5d4187c9178"
+      },
+      {
+        "path": "lib/pngstream.js",
+        "sha": "db8fdb46583db95aa6b64bffd6498d8563cedd1e"
+      },
+      {
+        "path": "scripts/version.js",
+        "sha": "a504d26408d49c2aa57cc1e05bb45a4c9fd24eb7"
+      },
+      {
+        "path": "browser.js",
+        "sha": "df6b3e5339c6caddbae674f57032bb0b9f797d4f"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "c72d5dfe4c81a6e7f0e7d30f82e386ceeae0ceaa"
+      },
+      {
+        "path": "index.d.ts",
+        "sha": "886ec2dfdb5ab4cb7d090f62527f0936ae195126"
+      },
+      {
+        "path": "index.test-d.ts",
+        "sha": "35b5afa96bafa62561a9c6e4b6f361f9bae91f71"
+      },
+      {
+        "path": "README.md",
+        "sha": "46068091ff79b4bbe517e6696c23fff332f5c7be"
+      },
+      {
+        "path": "src/bmp/LICENSE.md",
+        "sha": "6bb8a291517d679d962db079ade50adfaf39ae2a"
+      },
+      {
+        "path": "npm/darwin-arm64/package.json",
+        "sha": "1bd08185ae751f43b2a8deccb856af1491df439e"
+      },
+      {
+        "path": "npm/darwin-x64/package.json",
+        "sha": "5935f4e84ed8ea92647882541fa21ceaa4e3c09e"
+      },
+      {
+        "path": "npm/linux-arm-gnueabihf/package.json",
+        "sha": "3b1335e07ed8eadd0e7a103f5e160f1da983481a"
+      },
+      {
+        "path": "npm/linux-arm64-gnu/package.json",
+        "sha": "ad8b5c24775df4faa4c05de6761619ac0f99615c"
+      },
+      {
+        "path": "npm/linux-arm64-musl/package.json",
+        "sha": "8cb01c432d9ef68646d52d0261050156120d6016"
+      },
+      {
+        "path": "npm/linux-riscv64-gnu/package.json",
+        "sha": "09f4a4aa7e43fc134dd3c75f165ed7fef85adc65"
+      },
+      {
+        "path": "npm/linux-x64-gnu/package.json",
+        "sha": "a50eb9befdf3e95918e3d0a9859a669caa5bfd42"
+      },
+      {
+        "path": "npm/linux-x64-musl/package.json",
+        "sha": "b0dea1f20d99747a230bd8478e508c6e9ca9de11"
+      },
+      {
+        "path": "npm/linux-x86-gnu/package.json",
+        "sha": "2927aca2348cbe46dc5e19b3bf1cbbd19f4ca146"
+      },
+      {
+        "path": "npm/linux-x86-musl/package.json",
+        "sha": "8c38fac20b91cc42f53c8aa87c8b7c191e9247e3"
+      },
+      {
+        "path": "npm/win32-arm64/package.json",
+        "sha": "d1d20abb9ece448f449dfa23f81c46db17afec16"
+      },
+      {
+        "path": "npm/win32-x64/package.json",
+        "sha": "ab30dc3a74ecbeda2dddfed7155b6102d320dcca"
+      },
+      {
+        "path": "npm/win32-x86/package.json",
+        "sha": "2c959e4e8ba927fc7f551eba4fbfd7018aae5257"
+      },
+      {
+        "path": "util/has_lib.js",
+        "sha": "02d709064b41f747331f997bf5c127d079adfbc4"
+      },
+      {
+        "path": "util/win_jpeg_lookup.js",
+        "sha": "79815f65019e1c6fbc92d84ea3e982c4465cf49e"
+      }
+    ],
+    "repo_pushed_at": "2026-11-01T23:45:55Z",
+    "license": null
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": false,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 35,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 1
+  },
+  "network": {
+    "calls": 7,
+    "failed": 4,
+    "ms": 3139
+  },
+  "duration_ms": 3155
+}

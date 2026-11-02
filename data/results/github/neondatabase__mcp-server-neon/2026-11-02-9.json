@@ -1,0 +1,577 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154652Z",
+  "target": {
+    "source": "github",
+    "id": "neondatabase/mcp-server-neon",
+    "url": "https://github.com/neondatabase/mcp-server-neon",
+    "name": "mcp-server-neon"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:47:20.072Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "6c4d43b76f7105f9c1676dbceab3dd7706d0ed51",
+    "files_scanned": 122,
+    "candidates": 122,
+    "excluded_non_shipped": 85,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".claude/skills/claimable-postgres",
+        "sha": "f7ccfd7d6a50f8b70aacce161c8fb2456f8044a9"
+      },
+      {
+        "path": ".claude/skills/logging-best-practices",
+        "sha": "230b5a64ad53e867530cf96a3a7282d353c6eb83"
+      },
+      {
+        "path": ".github/workflows/claude.yml",
+        "sha": "b30c40c2687f81bea6e4e68f69e1f67458b1ff7e"
+      },
+      {
+        "path": ".github/workflows/deploy-preview.yml",
+        "sha": "6b20b93cae5dde0a2c6078257eb3ebb57f455aad"
+      },
+      {
+        "path": ".github/workflows/pr.yml",
+        "sha": "ae77921e3a3c9648a84c28a89b3d9c28e98d5e59"
+      },
+      {
+        "path": "server.json",
+        "sha": "7340e95b4a60962e09bb0ec5b5538a771ee159ac"
+      },
+      {
+        "path": ".agents/skills/claimable-postgres/SKILL.md",
+        "sha": "8a74990c13fc8121b13fb271185d0f33821aef2e"
+      },
+      {
+        "path": ".agents/skills/logging-best-practices/SKILL.md",
+        "sha": "309f7e49f5292affba8c2f46e1c5b4c853ea3a26"
+      },
+      {
+        "path": "package.json",
+        "sha": "a423b7e2eee8b607374ec6cd76b798f6b8e935bf"
+      },
+      {
+        "path": "lib/assert.ts",
+        "sha": "32914363a3b0d178d7bdaeb68a320ea699e8f1c7"
+      },
+      {
+        "path": "lib/config.ts",
+        "sha": "77d3018dd6fd81bc0579464ab82e44d209d36820"
+      },
+      {
+        "path": "lib/errors.ts",
+        "sha": "7c384dad9ccbdba982fdb6787257150d0a9b00f5"
+      },
+      {
+        "path": "mcp/server/index.ts",
+        "sha": "57c9f236e8c7ba422487d4702d280a89896e870c"
+      },
+      {
+        "path": "mcp/tools/index.ts",
+        "sha": "b390f1953a061607f7f296999d9d5c2eea471057"
+      },
+      {
+        "path": "mcp/tools/tools.ts",
+        "sha": "46dd389a8463163f16518d47f1420b599da98461"
+      },
+      {
+        "path": "scripts/e2e-setup.ts",
+        "sha": "ea386c60b22837a53e7074b023254c618e43bb6c"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "9c6176b2dabcb71113534604ea77161db74b7af6"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "7d852cb43cf3bd3d23d84535f8c50fa3b70936b7"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "b506635654107efcdfb137af445792b076e15311"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "sha": "ef37301a84116f069175a2b0c9513ee7c6719688"
+      },
+      {
+        "path": "knip.json",
+        "sha": "0effd663e4259f9d5ff368eb4bc369b78ee5080b"
+      },
+      {
+        "path": "lib/oauth/client-assertion.ts",
+        "sha": "d1b0d099a702fe0686a80c0d96748c2cca161ae6"
+      },
+      {
+        "path": "lib/oauth/client-credentials.ts",
+        "sha": "469d4ebab216735d61870113c961100d016e8ebb"
+      },
+      {
+        "path": "lib/oauth/client-id-metadata-document.ts",
+        "sha": "e717907fc81adbc20c27d6eb1c4b3a15e1c983c7"
+      },
+      {
+        "path": "lib/oauth/client.ts",
+        "sha": "05f852a78410741d3bc634dc317be1296068db9f"
+      },
+      {
+        "path": "lib/oauth/protected-resource-metadata.ts",
+        "sha": "0cef64b396b2fb96e486d447e9605c6d1389359c"
+      },
+      {
+        "path": "lib/oauth/redirect-uri.ts",
+        "sha": "f1f8bb4a22781ffc8801c3590d1fccc922615c41"
+      },
+      {
+        "path": "lib/oauth/upstream-error.ts",
+        "sha": "e43cf3bdcf3fe17af83f4c7cedc3a783b993c6a1"
+      },
+      {
+        "path": "next.config.ts",
+        "sha": "8eecbc46ac9acb988442553b0ef436a986ddcab1"
+      },
+      {
+        "path": "playwright.config.ts",
+        "sha": "c5abfd2f57819148371bad3199506534ab82d11d"
+      },
+      {
+        "path": "postcss.config.mjs",
+        "sha": "ba720fe55c468abac4f1c7e349166bd70e8bf9bc"
+      },
+      {
+        "path": "README.md",
+        "sha": "a5ecdc18307b64e8925498261801c261946c474e"
+      },
+      {
+        "path": "skills-lock.json",
+        "sha": "b6be83d777cffd363896bbc273ad060d6a705133"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "ee9d3d294c25cafa45f1fde1155ac8eb8207abc6"
+      },
+      {
+        "path": "vercel.json",
+        "sha": "0726916780c8e10519773caff3c7eedddf04634e"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "392bfd1c73294be54eb676018b302c281bb612d4"
+      },
+      {
+        "path": "ai-notes/auth-callback-slo.md",
+        "sha": "2cc79376a30d932cd9f21be7da9770195160f0fe"
+      },
+      {
+        "path": "ai-notes/refresh-slo.md",
+        "sha": "d0780423141bf51876e0848749263d7d1318b4dd"
+      },
+      {
+        "path": "ai-notes/SMOKE_TESTS.md",
+        "sha": "eea2ff1e7512e74e041560f486ddab79544fe420"
+      },
+      {
+        "path": "ai-notes/vercel-migration.md",
+        "sha": "7210b8aa44117b8f544e8da4cc2861245b1897d2"
+      },
+      {
+        "path": "app/layout.tsx",
+        "sha": "3db122361e0f8e9ff331926fdc984b960b590f74"
+      },
+      {
+        "path": "mcp/constants.ts",
+        "sha": "786a477c4ee0f32658f4a81a65ddbe1123b982d5"
+      },
+      {
+        "path": "mcp/describeUtils.ts",
+        "sha": "00418259b3f4f06da9a7f814182f3e48fc69b9b2"
+      },
+      {
+        "path": "mcp/neon-client.ts",
+        "sha": "3839518172e6d105de471afad18689fb0b66a13b"
+      },
+      {
+        "path": "public/llms.txt",
+        "sha": "c7b726cfc0b40204f3ac1f18bf419679ae97af2d"
+      },
+      {
+        "path": "app/callback/route.ts",
+        "sha": "5b6be68e6ea12e62aa8c230131ca4e7aa2c1c22f"
+      },
+      {
+        "path": "mcp/analytics/analytics.ts",
+        "sha": "e3eed843eb69afd64eb05c513729f149aac4d0bf"
+      },
+      {
+        "path": "mcp/inspect/queries.ts",
+        "sha": "4950017c51ceca6f20949b93244ad4d10869ec9e"
+      },
+      {
+        "path": "mcp/inspect/report.ts",
+        "sha": "8a84556b75be3ccbc69adaebd0590ecdab0d99d9"
+      },
+      {
+        "path": "mcp/inspect/targets.ts",
+        "sha": "8c1d8b0f31fae3b35e2e5cd81fc82211430f8ec8"
+      },
+      {
+        "path": "mcp/oauth/auth-transaction-store.ts",
+        "sha": "c5ec5cbb9434256b011c9d76eaa6ae0010b60bb9"
+      },
+      {
+        "path": "mcp/oauth/auth-transaction.ts",
+        "sha": "69ea36a3999461633c3da15faa2197e1be499370"
+      },
+      {
+        "path": "mcp/oauth/browser-binding.ts",
+        "sha": "dd39cce8fe802035772dc26eabcabc27196fcb3b"
+      },
+      {
+        "path": "mcp/oauth/consent-approval.ts",
+        "sha": "c30fa0b18c620728d85d35c04aa7f2f63902bfcc"
+      },
+      {
+        "path": "mcp/oauth/consent-canonical-url.ts",
+        "sha": "2c464442ce4617f6888f53394ab6d2f08faa1a04"
+      },
+      {
+        "path": "mcp/oauth/consent-dialog.ts",
+        "sha": "8ac84600128bd6fc983749390e2757f3cf0a146d"
+      },
+      {
+        "path": "mcp/oauth/consent-html-headers.ts",
+        "sha": "c476df43e829227bb87f39f2323fe1e460913bd1"
+      },
+      {
+        "path": "mcp/oauth/consent-mode.ts",
+        "sha": "323dcdf43244f3325449fe3de746855df0fe30be"
+      },
+      {
+        "path": "mcp/oauth/consent-tools.ts",
+        "sha": "ed1eed09f0862d3860a1c12c66fd4faa5e35f2a4"
+      },
+      {
+        "path": "mcp/oauth/downstream-auth-request.ts",
+        "sha": "eab212f69f94f7c2fc7abf15fbf556285c2830af"
+      },
+      {
+        "path": "mcp/oauth/issued-scopes.ts",
+        "sha": "23aac5c3d9c31243a2f6b2ae3fb680a256163a05"
+      },
+      {
+        "path": "mcp/oauth/kv-store.ts",
+        "sha": "1fe798af38aa02f479d0650afef07632dd1dc2a9"
+      },
+      {
+        "path": "mcp/oauth/model.ts",
+        "sha": "c683a77476bba9a8e681b06fadb6b74028366c25"
+      },
+      {
+        "path": "mcp/oauth/refresh-lock.ts",
+        "sha": "af4598d8cb9a2b1df804a775709a10696f8a98e4"
+      },
+      {
+        "path": "mcp/oauth/utils.ts",
+        "sha": "ca0dc27cc82e1e29856a2a21504ecf9e703a4360"
+      },
+      {
+        "path": "mcp/sentry/instrument.ts",
+        "sha": "62318d03407f55fa06190b38f1797c6127e7d045"
+      },
+      {
+        "path": "mcp/sentry/utils.ts",
+        "sha": "047b3841aa5aea701c652d482a7217c28be8899e"
+      },
+      {
+        "path": "mcp/server/account.ts",
+        "sha": "4063c811b35d03dc398361515b03fc25da195112"
+      },
+      {
+        "path": "mcp/server/api.ts",
+        "sha": "1ddcffda46f6799d7b014ec701f0f2fa297b681e"
+      },
+      {
+        "path": "mcp/server/errors.ts",
+        "sha": "4ef6586451870c6dd1b6314cd057742b08fe376f"
+      },
+      {
+        "path": "mcp/server/session-binding.ts",
+        "sha": "72c6cee6941243fa39e3b2279538257b02b88764"
+      },
+      {
+        "path": "mcp/tools/definitions.ts",
+        "sha": "f2747dfd57b3d91bcc6d0e3ac65d05c9be179928"
+      },
+      {
+        "path": "mcp/tools/grant-filter.ts",
+        "sha": "330f6f98d205cdac80a7a24698fc4fa9326d0091"
+      },
+      {
+        "path": "mcp/tools/listed-schema.ts",
+        "sha": "9387ba635edf4d532010d0b50c7d3efd5fc627ae"
+      },
+      {
+        "path": "mcp/tools/registration.ts",
+        "sha": "f3c295b0698166927faaeeaa567f7fb8b275e2b0"
+      },
+      {
+        "path": "mcp/tools/tool-definition.ts",
+        "sha": "9671b4b9a79b53fd475129219420aeb5db638e62"
+      },
+      {
+        "path": "mcp/tools/toolsSchema.ts",
+        "sha": "f091f08914602f50f68a9d0a00fc5ffd9682a634"
+      },
+      {
+        "path": "mcp/tools/types.ts",
+        "sha": "c923fc7a1487a851d76f9f2d1d46b1274354ea08"
+      },
+      {
+        "path": "mcp/tools/utils.ts",
+        "sha": "a91747dc86f8e6f407bba8a773c8da6b6b559aef"
+      },
+      {
+        "path": "mcp/types/auth.ts",
+        "sha": "9ec9680e2733cc2ab9e8ca3932f318feee3c0a73"
+      },
+      {
+        "path": "mcp/types/context.ts",
+        "sha": "4779b513869960d2e89dad9ac5a27f0dd9e45345"
+      },
+      {
+        "path": "mcp/utils/client-application.ts",
+        "sha": "991874c4c185965fba1cf052137280ef6f965a33"
+      },
+      {
+        "path": "mcp/utils/grant-context.ts",
+        "sha": "4ecc81f94a79429b94ddcc7e62c65c4f6c2ae285"
+      },
+      {
+        "path": "mcp/utils/logger.ts",
+        "sha": "c5fd8a9d1037be409d858aa9fe004c222255b8f7"
+      },
+      {
+        "path": "mcp/utils/read-only.ts",
+        "sha": "2c6b5f3b0632d606a37e831ac91657ee9d37c7d8"
+      },
+      {
+        "path": "mcp/utils/retry.ts",
+        "sha": "e16217dabc39aa405d4b9447238f3eca6e931e26"
+      },
+      {
+        "path": "mcp/utils/singleflight.ts",
+        "sha": "e0a3e2046eb8f661dfb38f036cac3902ceaf5bfc"
+      },
+      {
+        "path": "mcp/utils/trace.ts",
+        "sha": "65c2db9aca2030ffef211ccbe140ad8994a0b781"
+      },
+      {
+        "path": "app/.well-known/oauth-authorization-server/route.ts",
+        "sha": "eb108a3be1ea86a40e6796f76178d582fc71b167"
+      },
+      {
+        "path": "app/.well-known/oauth-protected-resource/route.ts",
+        "sha": "0dc6c267a81064a5ccb9038b3cae6b47933e2016"
+      },
+      {
+        "path": "app/api/[transport]/route.ts",
+        "sha": "f3f48df462866d1fe8b23b8fb7d39d77dab2c516"
+      },
+      {
+        "path": "app/api/authorize/route.ts",
+        "sha": "6525e3618cb9785d724efa7e6f4ade6351b28b83"
+      },
+      {
+        "path": "app/api/health/route.ts",
+        "sha": "b91a8256ee6fcedabb07b9f3c90fb4159ebc7e6c"
+      },
+      {
+        "path": "app/api/list-tools/route.ts",
+        "sha": "edec4be5794f342ed4c099993df9937b71f115e5"
+      },
+      {
+        "path": "app/api/register/route.ts",
+        "sha": "89b7e700d46b0793d3c19f86a0738b5478ab7100"
+      },
+      {
+        "path": "app/api/revoke/route.ts",
+        "sha": "24153df59d4aea953ff671778b00713afd9ec54e"
+      },
+      {
+        "path": "app/api/token/route.ts",
+        "sha": "c3df2a574e896178d5af4e740333a90fb6e592c0"
+      },
+      {
+        "path": "mcp/tools/generated/adapt.ts",
+        "sha": "17d676da179411b45ebe94e721f2573ea589d256"
+      },
+      {
+        "path": "mcp/tools/generated/names.ts",
+        "sha": "d7bf6c5d745f1c8b9d5f57fe53878817ced2aa37"
+      },
+      {
+        "path": "mcp/tools/generated/operations.ts",
+        "sha": "9afacb55f6ebccd088058e782eebc6ce8b66b3d2"
+      },
+      {
+        "path": "mcp/tools/generated/sanitize.ts",
+        "sha": "453bee88b06f7f1a57c3b7f47d79aab82eef678f"
+      },
+      {
+        "path": "mcp/tools/handlers/connection-string.ts",
+        "sha": "37fe7424d4d0acb218a2b200d23ce36a13d2e490"
+      },
+      {
+        "path": "mcp/tools/handlers/decribe-project.ts",
+        "sha": "f21642cf835f5e38b11cc2d116715dfb5232ffaa"
+      },
+      {
+        "path": "mcp/tools/handlers/describe-branch.ts",
+        "sha": "9885455e1d5a0b36c19b2d670816e76d5ab9493f"
+      },
+      {
+        "path": "mcp/tools/handlers/docs.ts",
+        "sha": "99bd219a2725bccac13f01caf8c16eb6c1049b9f"
+      },
+      {
+        "path": "mcp/tools/handlers/feedback.ts",
+        "sha": "c0f5c8e6de7f783d073d3f0d0581fe4b65a1ae22"
+      },
+      {
+        "path": "mcp/tools/handlers/fetch.ts",
+        "sha": "931d0fb5ba0df5f0002a61924017c253a7996b36"
+      },
+      {
+        "path": "mcp/tools/handlers/inspect-database.ts",
+        "sha": "cc826a9595cb4699daa21de7a36a11562f262170"
+      },
+      {
+        "path": "mcp/tools/handlers/list-orgs.ts",
+        "sha": "8f65e381cbf28f94d52bfdad5969b09d6f46f3c1"
+      },
+      {
+        "path": "mcp/tools/handlers/list-projects.ts",
+        "sha": "b4aece9548a8222fdd7fad81ea4b1db481c91521"
+      },
+      {
+        "path": "mcp/tools/handlers/neon-auth-branch.ts",
+        "sha": "22721ce58900ab70eb6b9b1f673f6afe782cb827"
+      },
+      {
+        "path": "mcp/tools/handlers/neon-auth-get-config.ts",
+        "sha": "0808cb19b4bcb1532733abd5029172635b30f455"
+      },
+      {
+        "path": "mcp/tools/handlers/neon-auth-settings-snapshot.ts",
+        "sha": "7ea5b934caa5ff6201cc2d78a55df73d6269b993"
+      },
+      {
+        "path": "mcp/tools/handlers/search.ts",
+        "sha": "96b5eca9574c8a6ac681791ad6abcd16f277d967"
+      },
+      {
+        "path": "mcp/tools/handlers/urls.ts",
+        "sha": "baa3404f21bfbfcd59c8e562087a62d704fccef5"
+      },
+      {
+        "path": "mcp/tools/handlers/utils.ts",
+        "sha": "8a0c63b2597bdd21fa0e8d313c1638850f57f0f8"
+      },
+      {
+        "path": "public/fonts/inter/INTER-LICENSE.txt",
+        "sha": "40589daa9de8bc96606292ea0be712ff0f0626eb"
+      },
+      {
+        "path": ".agents/skills/logging-best-practices/rules/context.md",
+        "sha": "baa6eec75273942d9849c63d132ad073a75053fa"
+      },
+      {
+        "path": ".agents/skills/logging-best-practices/rules/pitfalls.md",
+        "sha": "ec100d9b7a7d63907e2800e557788007542d3d0d"
+      },
+      {
+        "path": ".agents/skills/logging-best-practices/rules/structure.md",
+        "sha": "05482095b2f5c4f37cf1bc1b7fd406711a585f59"
+      },
+      {
+        "path": ".agents/skills/logging-best-practices/rules/wide-events.md",
+        "sha": "22b71cd949897b652439b60961344679d1f05a94"
+      },
+      {
+        "path": "app/.well-known/oauth-protected-resource/[...resource]/route.ts",
+        "sha": "7c6e0f2afebd5c992955a0a397d28a29189b0c5f"
+      }
+    ],
+    "repo_pushed_at": "2026-10-31T22:38:08Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 94,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 90,
+      "egress": 100,
+      "instruction_hygiene": 80
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "mcp/oauth/refresh-lock.ts",
+      "line": 216,
+      "snippet": "redis.eval(HEARTBEAT_LUA, {",
+      "deduction": 10
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "nl-exfil",
+      "severe": false,
+      "file": ".agents/skills/claimable-postgres/SKILL.md",
+      "line": 56,
+      "snippet": "2. **Provision:** POST to `https://neon.new/api/v1/database` with `{\"ref\": \"agent-skills\"}`.",
+      "deduction": 20
+    }
+  ],
+  "evidence": {
+    "files_scanned": 122,
+    "files_excluded": 0,
+    "danger_hits": 1,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 2
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1703
+  },
+  "duration_ms": 1783
+}

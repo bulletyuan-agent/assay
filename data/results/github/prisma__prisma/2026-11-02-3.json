@@ -1,0 +1,1719 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154517Z",
+  "target": {
+    "source": "github",
+    "id": "prisma/prisma",
+    "url": "https://github.com/prisma/prisma",
+    "name": "orm"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:45:27.895Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "bb69b5cc061fd7cde924353104168156675db359",
+    "files_scanned": 400,
+    "candidates": 3890,
+    "excluded_non_shipped": 6803,
+    "coverage": 0.1,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".claude/settings.json",
+        "sha": "333a7191a8d14a4833964fc041dc547b22ff4c60"
+      },
+      {
+        "path": ".cursor/environment.json",
+        "sha": "01e8575dc10c267fb1bd028c78414d38941f9743"
+      },
+      {
+        "path": ".cursor/rules-footprint.config.json",
+        "sha": "e11a45a794d92c8654c0ef5e2f76dd2e8802731c"
+      },
+      {
+        "path": ".husky/commit-msg",
+        "sha": "74e479f5f6d0bd7dc34c4a8d619def23b4d8d955"
+      },
+      {
+        "path": ".husky/pre-commit",
+        "sha": "56c172b960f0268fc3fdb12059de58765f494fcb"
+      },
+      {
+        "path": ".vscode/settings.json",
+        "sha": "19178fb0c985f9dbb5bb7752300e7a43b8457c77"
+      },
+      {
+        "path": ".claude/scripts/enforce-tools.mjs",
+        "sha": "5432da7ed281f7953c0d69e40037972c5971b94d"
+      },
+      {
+        "path": ".claude/scripts/format-ts.mjs",
+        "sha": "3c0767be2eb9090832a77e099b3c917eff60903a"
+      },
+      {
+        "path": ".claude/scripts/stop-quality-gate.mjs",
+        "sha": "cc32e0eb352796c65480aeb762a2afd4817e894b"
+      },
+      {
+        "path": ".claude/scripts/worktree-create.mjs",
+        "sha": "3ca3ef66b25cf6a63b227f3ec7777496c1565d41"
+      },
+      {
+        "path": ".cursor/commands/build.mdc",
+        "sha": "27cd2a48da33eb82eff8e393bb1db39897140808"
+      },
+      {
+        "path": ".cursor/commands/coverage-packages.mdc",
+        "sha": "3b1d7118e0d910ec4896e02c8763fc09ce3c6d4e"
+      },
+      {
+        "path": ".cursor/commands/demo.mdc",
+        "sha": "2d33b487d5d3c4992f19ae9459b64240993c26d4"
+      },
+      {
+        "path": ".cursor/commands/lint-deps.mdc",
+        "sha": "f5f044f408d44ca0518f6aed402c13431b136b1c"
+      },
+      {
+        "path": ".cursor/commands/test-packages.mdc",
+        "sha": "62a06d01afecd6f6139c4e301c9edcc7f057437d"
+      },
+      {
+        "path": ".github/workflows/auto-close-github-discussions.yml",
+        "sha": "804e19743a3c38bd3deddc865e39d5eb9e9d4fec"
+      },
+      {
+        "path": ".github/workflows/bundle-size.yml",
+        "sha": "04b85c37f80f1d6c21c7ee3e9bf5494c0a2c03bd"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "1af1028e8f2a364f3558e3315633747fedc4d918"
+      },
+      {
+        "path": ".github/workflows/codeql-analysis.yml",
+        "sha": "15b7bbe8f507f124fe82abc7a01cbb972015a965"
+      },
+      {
+        "path": ".github/workflows/deploy-telemetry-backend.yml",
+        "sha": "fde2957f4f7f5ef4721361e62314eeeee9fc197f"
+      },
+      {
+        "path": ".github/workflows/init-journey-nightly.yml",
+        "sha": "88b5e6c535884fc5b5fb61623d83f55081a6e52a"
+      },
+      {
+        "path": ".github/workflows/integration.yml",
+        "sha": "7f602b7ca19defd7e200982bc80e383c471176ca"
+      },
+      {
+        "path": ".github/workflows/label-stale-issues.yml",
+        "sha": "b45afbc578c6b7ed4ebef6a6f5575c02d491501b"
+      },
+      {
+        "path": ".github/workflows/pr-code-security.yml",
+        "sha": "27be1dbc080fd73e356d7328103dd72dd03945b7"
+      },
+      {
+        "path": ".github/workflows/preview-publish.yml",
+        "sha": "6b8e39ad68bd62fb2ae7b3a4b4172cd6d4925cb1"
+      },
+      {
+        "path": ".github/workflows/publish.yml",
+        "sha": "3e4d6602c09e383aecca2727662bef5df8e9dba9"
+      },
+      {
+        "path": ".github/workflows/record-cli.yml",
+        "sha": "cf87f3e0f5742fec31b9d3cb50d45c87b76a4656"
+      },
+      {
+        "path": ".github/workflows/supabase-images.yml",
+        "sha": "d699dd6ce1e6e8dd72925e6686eb6b75d717d5aa"
+      },
+      {
+        "path": ".github/workflows/v7-daily-buildpulse.yml",
+        "sha": "0801a9c143597ace81c354e766ab4ada6d9c2707"
+      },
+      {
+        "path": ".github/workflows/v7-daily-test.yml",
+        "sha": "52d4e12f5248ac70522fd4d74309fc74635d486b"
+      },
+      {
+        "path": ".github/workflows/v7-manage-dist-tag.yml",
+        "sha": "e503f723babdf655ddc3e2636a19c9436881c582"
+      },
+      {
+        "path": ".github/workflows/v7-update-engines-version.yml",
+        "sha": "1da9258d57f2590f9d74d917779318051c3e1a15"
+      },
+      {
+        "path": ".github/workflows/v7-update-studio-version.yml",
+        "sha": "e3e5dc0c43e598bdd3d9643a2a78ecf5a96a263a"
+      },
+      {
+        "path": "skills-contrib/adr-review/SKILL.md",
+        "sha": "322ff645ae601939c5e693806ccc506e2387fd63"
+      },
+      {
+        "path": "skills-contrib/ast-visitor-pattern/SKILL.md",
+        "sha": "61e69149a187492b36951c2214c8d57a72140697"
+      },
+      {
+        "path": "skills-contrib/bumping-biome/SKILL.md",
+        "sha": "461c859d3999d649a24b1104f194a5e18756e280"
+      },
+      {
+        "path": "skills-contrib/contrib-pr/SKILL.md",
+        "sha": "4ff6ec11fa0f7b5aadb295eee9fa9524a0e36df6"
+      },
+      {
+        "path": "skills-contrib/create-pr/SKILL.md",
+        "sha": "25fd9d3dae54d26c9e1506877bd298b4a09d5a7f"
+      },
+      {
+        "path": "skills-contrib/draft-release-notes/SKILL.md",
+        "sha": "0a4a9eb287c4a87a521a92938e6d073377880eb9"
+      },
+      {
+        "path": "skills-contrib/github-review-iteration/SKILL.md",
+        "sha": "a139ce37a10e2eb348f47e8987bb905acd1e95b2"
+      },
+      {
+        "path": "skills-contrib/markdown-no-artificial-line-wraps/SKILL.md",
+        "sha": "f1d5a08859d69bd76d6310d20412e9d133259e36"
+      },
+      {
+        "path": "skills-contrib/multiline-commit-messages/SKILL.md",
+        "sha": "af6a0cf4029117f4c2902fb696250bb68bdc8ea3"
+      },
+      {
+        "path": "skills-contrib/no-bare-casts/SKILL.md",
+        "sha": "150a24acb68dfee50959b926c1e31d073fb1b207"
+      },
+      {
+        "path": "skills-contrib/product-direction/SKILL.md",
+        "sha": "8d634432f444de84c50d69d730bb0b82227a39f0"
+      },
+      {
+        "path": "skills-contrib/psl-ast-layers/SKILL.md",
+        "sha": "4aba602832efdb86eaec25072533792e93bd161c"
+      },
+      {
+        "path": "skills-contrib/publish-npm-version/SKILL.md",
+        "sha": "f1388a7bfef2463214738cab6ccfcc541efb9c91"
+      },
+      {
+        "path": "skills-contrib/record-gotcha/SKILL.md",
+        "sha": "d2abad6b5e92db9e4e2a51aace2c70af65bf27ba"
+      },
+      {
+        "path": "skills-contrib/record-upgrade-instructions/SKILL.md",
+        "sha": "8a77322ee461222979ad80cd79dfe7ddb034f70b"
+      },
+      {
+        "path": "skills-contrib/review-fetch-phase/SKILL.md",
+        "sha": "7715e42d7aded511a0970ed7cdf4d2ce934c6e3a"
+      },
+      {
+        "path": "skills-contrib/review-implement-phase/SKILL.md",
+        "sha": "42c0f08b9e4aba88236cca2de17152e5a860c6e6"
+      },
+      {
+        "path": "skills-contrib/review-triage-phase/SKILL.md",
+        "sha": "1172dfccec382b979f41007222f7d1403baefe10"
+      },
+      {
+        "path": "skills-contrib/triage-contributor-pr/SKILL.md",
+        "sha": "f7604705c3e9fe45c99f545fad2c0c695e6ae52b"
+      },
+      {
+        "path": "skills-contrib/write-architecture-docs/SKILL.md",
+        "sha": "4965e35bc909221944d20d3d1068ff339db6c3c4"
+      },
+      {
+        "path": "skills/prisma-8/SKILL.md",
+        "sha": "90c001b85baffec3962b1723bf0e338845114ef0"
+      },
+      {
+        "path": "package.json",
+        "sha": "5e10b26a059fe25b701ed765b6ecdcd6accc9cd5"
+      },
+      {
+        "path": "scripts/architecture-globs.mjs",
+        "sha": "f4bf190965f30514bb0212903a1f9ae1551b88be"
+      },
+      {
+        "path": "scripts/audit-notice.mjs",
+        "sha": "28c5ad7df727e8f41aa92c410cc8f4a863b82f13"
+      },
+      {
+        "path": "scripts/bump-version.ts",
+        "sha": "be45b5e5b213fd56339ddd3ae2f920513d19c887"
+      },
+      {
+        "path": "scripts/check-catalogue-links.mjs",
+        "sha": "40e48691d7e12f9e1190b0f13a7a435c00f998ab"
+      },
+      {
+        "path": "scripts/check-clean-tree.mjs",
+        "sha": "abb5badcc3b38da2e92a029568fbfb27355dfbbe"
+      },
+      {
+        "path": "scripts/check-commit-signoff.mjs",
+        "sha": "24be5cc582fb23222ce29777c4a778d72ed11fb3"
+      },
+      {
+        "path": "scripts/check-conformance.mjs",
+        "sha": "e08f1f703a115231c8a3e089f50aa9d3f8cc5055"
+      },
+      {
+        "path": "scripts/check-publish-deps.mjs",
+        "sha": "0eb39f0e30f6103ceacab10ed7635acaa7545ba2"
+      },
+      {
+        "path": "scripts/check-release-notes.mjs",
+        "sha": "7c69cc9657aeb550c89c90f5588bb0b3730a38e0"
+      },
+      {
+        "path": "scripts/check-upgrade-coverage.mjs",
+        "sha": "d6e5e6a925800998b4b00459695f64b0d80cb7e4"
+      },
+      {
+        "path": "scripts/coverage-config.js",
+        "sha": "7867705ae27ccd83cf471fecc3555e5129ea50b7"
+      },
+      {
+        "path": "scripts/coverage-report.mjs",
+        "sha": "add6e4cd02292c6bb128228d48bd876ef0ed3146"
+      },
+      {
+        "path": "scripts/determine-version-utils.ts",
+        "sha": "cae86ad27bb044debd7b1aaa0cd0d7ad08ac25e5"
+      },
+      {
+        "path": "scripts/determine-version.ts",
+        "sha": "9d0206ab66f9833df9c02084768828a72cdaa261"
+      },
+      {
+        "path": "scripts/download-mongod-binary.mjs",
+        "sha": "58c8f314d5e55d09923c6da1d68a9c729c7ebb10"
+      },
+      {
+        "path": "scripts/framework-vocabulary-thresholds.json",
+        "sha": "c32b61055eb943cc2f7fdd253e1d7c3e02203766"
+      },
+      {
+        "path": "scripts/lint-app-space-id.mjs",
+        "sha": "1082e3dae673b85b4d689995daead28cf1fe3f97"
+      },
+      {
+        "path": "scripts/lint-architecture-registration.mjs",
+        "sha": "d3160ec29160638f4bd8e9b6dcbab11b79769d2f"
+      },
+      {
+        "path": "scripts/lint-consumer-internal-imports.mjs",
+        "sha": "dd5278a47fe51078f3bc3f83f5b677e93a7ff253"
+      },
+      {
+        "path": "scripts/lint-deps-focused.mjs",
+        "sha": "8b8f6cc4b44cac5ad20b550c209981cbdeb1e777"
+      },
+      {
+        "path": "scripts/lint-framework-target-imports.mjs",
+        "sha": "81e032940f4e4b6c928e48a03b93563eb06b77d4"
+      },
+      {
+        "path": "scripts/lint-legacy-name.mjs",
+        "sha": "ae53dc77894a5161fab9e6c1538dfac9a54fc207"
+      },
+      {
+        "path": "scripts/lint-no-contract-cast.mjs",
+        "sha": "9806ebb18457ea542161f2fb3dbde9ca3d815147"
+      },
+      {
+        "path": "scripts/lint-publishability.mjs",
+        "sha": "ce166f6f9f1d68748d81a513967c93d1ffd15b8d"
+      },
+      {
+        "path": "scripts/lint-ratchets.mjs",
+        "sha": "3e107990a49bd20c9a31031b160ad03c13709c6c"
+      },
+      {
+        "path": "scripts/lint-single-import-root.mjs",
+        "sha": "0a6777849d38fa932968d071b5637d1fbd3e6b92"
+      },
+      {
+        "path": "scripts/lint-target-layering.mjs",
+        "sha": "ecd4fe39e1e60172cfa93a4ff47d7613e8c51a2b"
+      },
+      {
+        "path": "scripts/lint-vitest-timeouts.mjs",
+        "sha": "26fb27321d74b6efc7e5a4f525053698831b6670"
+      },
+      {
+        "path": "scripts/lint-workflow-triggers.mjs",
+        "sha": "8fb6170fb4fd3a37ebaeca336b8b68ae7e3d961f"
+      },
+      {
+        "path": "scripts/list-error-codes.mjs",
+        "sha": "c2795948af1dcc2ddad0883e53051181f3404beb"
+      },
+      {
+        "path": "scripts/list-publishable-packages.mjs",
+        "sha": "cbcd54a7f6e78ca2b64d68102ed362ff6fa3aa25"
+      },
+      {
+        "path": "scripts/migrate-migrations-layout.mjs",
+        "sha": "91a581eae307bb4d33aa734ae1cce42e34eb7057"
+      },
+      {
+        "path": "scripts/publish-packages-utils.mjs",
+        "sha": "4d1515cd5b4704c4163abbdafeca5783e76ce568"
+      },
+      {
+        "path": "scripts/publish-packages.mjs",
+        "sha": "0e46d0ab502a1de35b98c10ee8ebc8f98fcd6e37"
+      },
+      {
+        "path": "scripts/refresh-contract-snapshot.mjs",
+        "sha": "e3cf0fd82204ae532071313ee6a1afec16c677c5"
+      },
+      {
+        "path": "scripts/regen-example-migrations.mjs",
+        "sha": "43c3155a7b47bf2de879c4cd25f4d465327bd84f"
+      },
+      {
+        "path": "scripts/regen-extension-migrations.mjs",
+        "sha": "eef28b0659751fe9ccd2f3a0b7ebdc56c05a9efa"
+      },
+      {
+        "path": "scripts/regen-mongo-end-contract-dts.mjs",
+        "sha": "2da2e02da268d1ba9fd853cb5c499a7efd0f4937"
+      },
+      {
+        "path": "scripts/retry-command.mjs",
+        "sha": "c4f6b7dfe56aa56ca54a94f7d5e7f3d816493fa5"
+      },
+      {
+        "path": "scripts/rules-footprint.mjs",
+        "sha": "635aa5b44dfeb3f680e9c556aebe0ee6a3e33bc4"
+      },
+      {
+        "path": "scripts/run-logged.mjs",
+        "sha": "ea02d4fdc2faba93e19e4b5b38dcdf3315deb896"
+      },
+      {
+        "path": "scripts/set-version-utils.ts",
+        "sha": "8304a455c215123e67cd9831542b5553a1d9b610"
+      },
+      {
+        "path": "scripts/set-version.ts",
+        "sha": "e423cde6667a4d4fd1e6cde79c7e80b94782a2ab"
+      },
+      {
+        "path": "scripts/sync-agent-rules.mjs",
+        "sha": "3b24d02452f56599e9c654a2100da2aa6ec75cfd"
+      },
+      {
+        "path": "scripts/sync-package-skills.ts",
+        "sha": "bcb90e0c7469386dd4478ce616b5c983a57c39af"
+      },
+      {
+        "path": "scripts/validate-package-manifests.mjs",
+        "sha": "d6e11803b2519f9573d47f809af905636d9337d5"
+      },
+      {
+        "path": "scripts/validate-package-readmes.mjs",
+        "sha": "243ac169c872c1159e1e97356293b268e5969507"
+      },
+      {
+        "path": "scripts/validate-rules.mjs",
+        "sha": "41cb9a789d00c20dedfab3d9a1580e7eebc37c76"
+      },
+      {
+        "path": "scripts/validate-skills.mjs",
+        "sha": "671d30fd05dcd7a8b87be1551753270af1a32113"
+      },
+      {
+        "path": "scripts/validate-typescript-peer.mjs",
+        "sha": "7d8d6a7e364519ef1157104e3494e9a4dd879070"
+      },
+      {
+        "path": ".coderabbit.yml",
+        "sha": "01048217061a601865266166a9245a786b518d5b"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "3e2406fb6d29ceee8f9f84822460dd064aa1b3a9"
+      },
+      {
+        "path": "apps/lsp-playground/src/cli.ts",
+        "sha": "5dd90270de70acd793799cebb634cd7ffa3c06ff"
+      },
+      {
+        "path": "apps/telemetry-backend/src/handler.ts",
+        "sha": "1957ecb7ec52670fa3f8df924135ec95ea5baf75"
+      },
+      {
+        "path": "apps/telemetry-backend/src/server.ts",
+        "sha": "b0c180b250a6724001be36b9850ffb887b1fcce0"
+      },
+      {
+        "path": "architecture.config.json",
+        "sha": "e041592c2cad120379d5e3ff759e247065ff929a"
+      },
+      {
+        "path": "ARCHITECTURE.md",
+        "sha": "154abe6bf57afed6bb4e3ab39b38bc6246d6d042"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "c82a082504682ab08542324f34af8e1a07b75166"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "73bf0b692fad1742fb8d588a01e9971842521021"
+      },
+      {
+        "path": "coverage.config.json",
+        "sha": "a3f83ad5851ef8d7f475b1b1a4b990d037479479"
+      },
+      {
+        "path": "coverage.config.schema.json",
+        "sha": "a88f44e92ee234d956f31ff1af1e73abc940eb5a"
+      },
+      {
+        "path": "dependency-cruiser.config.mjs",
+        "sha": "56e0d793ee8df30318a63e4f81ea7a747bf6e7f0"
+      },
+      {
+        "path": "docker-compose.yaml",
+        "sha": "cebc24be8095e4e6d867fac6e20272249caa1bc2"
+      },
+      {
+        "path": "gotchas.md",
+        "sha": "d99dfb4281a9b70be93a40b157544a75a6bbd45a"
+      },
+      {
+        "path": "lint-staged.config.mjs",
+        "sha": "952c8452b095f43b8cd2ccb148cde6c7804a0471"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha": "7b1e19b9239052e5379b8283028f2b30bd26ee3d"
+      },
+      {
+        "path": "README.md",
+        "sha": "9e0d5740e84c5b9c9675acf2c7929602f08d32d1"
+      },
+      {
+        "path": "rules-footprint.config.schema.json",
+        "sha": "5b8daa307b201145b10f5ac89bea8f3f4939e8de"
+      },
+      {
+        "path": "scorecard.md",
+        "sha": "39d0e52ed495e8b2e532ad8b5b0d48d20ea93ca5"
+      },
+      {
+        "path": "scripts/codemods/add-model-map.mjs",
+        "sha": "4781b1c79f7796dd376f7beb28e1ceed8de0a780"
+      },
+      {
+        "path": "scripts/codemods/rewrite-sql-strings.mjs",
+        "sha": "b0c77400788c1572b428afeb7e3de5c204495def"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "5016cbe2ff637c7290a4b781bb6662e160cc03dd"
+      },
+      {
+        "path": "tsconfig.base.json",
+        "sha": "2039072bf1f5b184c1c3199f80880e4df8457c0a"
+      },
+      {
+        "path": "turbo.json",
+        "sha": "b415162f57b6c019fff388bb4a178aa959bbee53"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "a5ae635b3a1299115dc22782097ac72e2febf525"
+      },
+      {
+        "path": "apps/lsp-playground/package.json",
+        "sha": "c1a1bd2782b80d1fbb634ee8ff74b4a004beb85c"
+      },
+      {
+        "path": "apps/telemetry-backend/package.json",
+        "sha": "7666009f8715e848cce502e95502fe7f0643ea00"
+      },
+      {
+        "path": "skills-contrib/github-review-iteration/package.json",
+        "sha": "9fd3206b63b64a71d40b78e5db31a48b71820a60"
+      },
+      {
+        "path": "skills-contrib/review-fetch-phase/package.json",
+        "sha": "6af71567e4a325a9a087e125f6d25f3d3b419cce"
+      },
+      {
+        "path": "skills-contrib/review-implement-phase/package.json",
+        "sha": "8608e36c053a5d5189442bdcc1c851b93d51ef07"
+      },
+      {
+        "path": "skills-contrib/review-triage-phase/package.json",
+        "sha": "363b37bd9a3149cd7b44a3e4ad97f0591e34b773"
+      },
+      {
+        "path": ".zed/settings.json",
+        "sha": "8b376fda773b16f89f85c2a0d653698ece45bf71"
+      },
+      {
+        "path": "apps/lsp-playground/src/client/main.ts",
+        "sha": "ea55638db2316df33f14dacee45a319eee89b56b"
+      },
+      {
+        "path": "drive/README.md",
+        "sha": "959cbdf6756da2f48a43df53dd2b172113514eb6"
+      },
+      {
+        "path": "drive/trial.md",
+        "sha": "9fed6cd28fe90b9b8764ad33564cfb49c1f5ad4e"
+      },
+      {
+        "path": "projects/README.md",
+        "sha": "89021581baf5ca0375a670cc4fb01d9be31afa01"
+      },
+      {
+        "path": "scorecard/01-targets-and-connection.md",
+        "sha": "76289d783dccdbccd196a757b966da6f87ec054c"
+      },
+      {
+        "path": "scorecard/02-types-and-values.md",
+        "sha": "9261c4c07c9a76868dbee00b0d499e899d6a5680"
+      },
+      {
+        "path": "scorecard/03-psl-schema-language.md",
+        "sha": "bd24a85fddf6ef789699d3f547cff883b13386b9"
+      },
+      {
+        "path": "scorecard/04-contract-emission-and-authoring.md",
+        "sha": "ea5ce86f51ad219db2c62459fcbc52d939a5b43e"
+      },
+      {
+        "path": "scorecard/05-sql-query-builder.md",
+        "sha": "5e788c016a92f135907948e1fc55e86dd1eb4206"
+      },
+      {
+        "path": "scorecard/06-sql-orm-client.md",
+        "sha": "c216b886f7b96def9649c9aa1fdf0483885196e6"
+      },
+      {
+        "path": "scorecard/07-mongodb-query-and-orm.md",
+        "sha": "5af69eb01ec90817280df118c6c47506a06136c7"
+      },
+      {
+        "path": "scorecard/08-relations.md",
+        "sha": "c4cacccec8ce06d19309d9f88a416caf53ae0217"
+      },
+      {
+        "path": "scorecard/09-filtering.md",
+        "sha": "e37192aa36a8fe6b9c55848580bd300efea06e64"
+      },
+      {
+        "path": "scorecard/10-ordering-and-pagination.md",
+        "sha": "66903fecb6c012e6a181bea391518cb62a5dadab"
+      },
+      {
+        "path": "scorecard/11-aggregation-and-grouping.md",
+        "sha": "e0a24fe3d0e1b98d412c337451a77eec260229ab"
+      },
+      {
+        "path": "scorecard/12-nested-writes-and-atomic-ops.md",
+        "sha": "7e1ed7184d4b3a525ca570b65d9391cddb863429"
+      },
+      {
+        "path": "scorecard/13-raw-and-typed-sql.md",
+        "sha": "585410d1739d9816ea817a56f496d3f8da35a3b2"
+      },
+      {
+        "path": "scorecard/14-transactions.md",
+        "sha": "a5fac63c2bff148b0f165de1c0ee1d3fd77b447c"
+      },
+      {
+        "path": "scorecard/15-migrations.md",
+        "sha": "0d1c5c0ea62e5684b5f15a8448c60781dd6039b1"
+      },
+      {
+        "path": "scorecard/16-introspection.md",
+        "sha": "b526110a1ecdc9c6905221eb69068ec69c6467e8"
+      },
+      {
+        "path": "scorecard/17-cli-commands.md",
+        "sha": "9955a3c5f639f184483eba3be6d00b3ea9f55b1e"
+      },
+      {
+        "path": "scorecard/18-extensions.md",
+        "sha": "e0de18b571a094f6e955c0a8656bdf8c4429843b"
+      },
+      {
+        "path": "scorecard/19-observability-and-lifecycle.md",
+        "sha": "e84605af9751b5d2acf53cdc61586287c3526c12"
+      },
+      {
+        "path": "skills/DEVELOPING.md",
+        "sha": "bb4714a9e8f59ca1a2a2c0927d6f8bd1e98ed323"
+      },
+      {
+        "path": "skills/README.md",
+        "sha": "632fd348404884380e3bcd78d9600744e64d3ec3"
+      },
+      {
+        "path": "upgrade-instructions/README.md",
+        "sha": "02d99c4e663c44951b37f0538b66b31d7884738d"
+      },
+      {
+        "path": "packages/0-config/tsconfig/package.json",
+        "sha": "ab32b5923233888ae400595555923f2492d5428d"
+      },
+      {
+        "path": "packages/0-config/tsdown/package.json",
+        "sha": "0ed19fc3357823078271d1cf42024c5bc6cab08d"
+      },
+      {
+        "path": "packages/0-shared/extension-author-tools/package.json",
+        "sha": "3516ac54d44b3c125baa62dfa7fd88d5aa4bb88f"
+      },
+      {
+        "path": "packages/0-shared/publish-surface/package.json",
+        "sha": "bc0cdabc8502e0afec383daabebe80c214f40c08"
+      },
+      {
+        "path": "packages/2-mongo-family/7-runtime/package.json",
+        "sha": "add896c2d315bab8deb1c3bba64466485872c86d"
+      },
+      {
+        "path": "packages/2-mongo-family/9-family/package.json",
+        "sha": "b5cfc9354563dc4b9af67782806fd647f4959f79"
+      },
+      {
+        "path": "packages/2-sql-family/5-runtime/package.json",
+        "sha": "7d4adea558c634e63ead17fca528a89f72b7c203"
+      },
+      {
+        "path": "packages/2-sql-family/9-family/package.json",
+        "sha": "500914c981ceebb1d79a32b71d7d87bd786418e0"
+      },
+      {
+        "path": "packages/3-extensions/arktype-json/package.json",
+        "sha": "f87028f72b296c633399b30738164702d1bf213b"
+      },
+      {
+        "path": "packages/3-extensions/citext/package.json",
+        "sha": "707b73e3041976881a9b2bc704268c4974a04258"
+      },
+      {
+        "path": "packages/3-extensions/middleware-cache/package.json",
+        "sha": "00b06d7a4db50ba8fc61ecc63a7e6313509c372b"
+      },
+      {
+        "path": "packages/3-extensions/paradedb/package.json",
+        "sha": "d0cf4a0b429c9073f54e4bb8e62850e4a5d96c60"
+      },
+      {
+        "path": "packages/3-extensions/pgvector/package.json",
+        "sha": "0cd00cd4b3018ea670f035efe2b2f50e244e1aa0"
+      },
+      {
+        "path": "packages/3-extensions/postgis/package.json",
+        "sha": "38932cb3f6538db002e39b4cff6abb92ff03c43c"
+      },
+      {
+        "path": "packages/3-extensions/sql-orm-client/package.json",
+        "sha": "6b407c8b08dd9c48389412b27fb5a14ae75b0713"
+      },
+      {
+        "path": "packages/3-extensions/supabase/package.json",
+        "sha": "e80f3f7089e1637d57470194257b99cdf06fbd59"
+      },
+      {
+        "path": ".agents/rules/adr-examples-must-match-code.mdc",
+        "sha": "faca91b4d47edce858f6441e15908d4e63117329"
+      },
+      {
+        "path": ".agents/rules/adr-writing.mdc",
+        "sha": "05b79667db9de27ede55503cfd681326b05ce9ce"
+      },
+      {
+        "path": ".agents/rules/arktype-usage.mdc",
+        "sha": "be996a4eedf2961938c7bc17dff19750642467f8"
+      },
+      {
+        "path": ".agents/rules/as-contract-cast-smell.mdc",
+        "sha": "a225403123c0922cc131659a3c445a2e5a9b0cd6"
+      },
+      {
+        "path": ".agents/rules/avoid-cleavage-in-prose.mdc",
+        "sha": "d05d15308ce96aa7a47a10a3fac95ea1f74c39ed"
+      },
+      {
+        "path": ".agents/rules/capabilities-ownership.mdc",
+        "sha": "c189efed6457d0363a5088ea04123704292e2b4b"
+      },
+      {
+        "path": ".agents/rules/ci-failure-classification.mdc",
+        "sha": "111e2e9db1776860f23476f878011ad7867c836c"
+      },
+      {
+        "path": ".agents/rules/cli-e2e-test-patterns.mdc",
+        "sha": "733cbe9a2f7b129542df28cd489f53b1a98f7d7b"
+      },
+      {
+        "path": ".agents/rules/cli-error-handling.mdc",
+        "sha": "cef7e0b52e223c0bb09c0152ee65f455aa3121ea"
+      },
+      {
+        "path": ".agents/rules/cli-package-exports.mdc",
+        "sha": "64c843878e4ffd0a29618e6b2170fdcc9af9fefb"
+      },
+      {
+        "path": ".agents/rules/cli-test-fixture-cleanup.mdc",
+        "sha": "4698a464b59ad2cad0528af0504dc48597c2d27a"
+      },
+      {
+        "path": ".agents/rules/config-validation-and-normalization.mdc",
+        "sha": "9feddd0e939a1df99d07d0d9e27e928d613c3ac7"
+      },
+      {
+        "path": ".agents/rules/contract-default-values.mdc",
+        "sha": "8a1708b233d1a7c9ec07977c777df560eab82e1d"
+      },
+      {
+        "path": ".agents/rules/contract-space-package-layout.mdc",
+        "sha": "35ea05df0d69cc3e95035afe22883493587af4fb"
+      },
+      {
+        "path": ".agents/rules/control-plane-descriptors.mdc",
+        "sha": "ef1ddd5004a980ca4066724baad11e1f41716aea"
+      },
+      {
+        "path": ".agents/rules/cursor-markdown-file-links.mdc",
+        "sha": "d7af486ac84eef592949abbbf1f33d8d42ad6900"
+      },
+      {
+        "path": ".agents/rules/declarative-config.mdc",
+        "sha": "7c56a6a58008ef5f3dba326daf16a24c8ad9d832"
+      },
+      {
+        "path": ".agents/rules/directory-layout.mdc",
+        "sha": "a0000d448c6c2484563852eaf3c2c337ebc4e5fd"
+      },
+      {
+        "path": ".agents/rules/doc-maintenance.mdc",
+        "sha": "97bee6cbe34e4b3b7e7350cd4b264eddb3ce5a7b"
+      },
+      {
+        "path": ".agents/rules/explicit-opt-in-over-diagnostics.mdc",
+        "sha": "dcb6cf7cb92f026d7c17a04decf94c264be304ee"
+      },
+      {
+        "path": ".agents/rules/family-instance-domain-actions.mdc",
+        "sha": "d2d91142c432347cf06b27db31302d2441e0b2ba"
+      },
+      {
+        "path": ".agents/rules/fix-the-class-not-the-instance.mdc",
+        "sha": "9ddcb5889e9ea2ff5f1950bdbb8f0345987472ec"
+      },
+      {
+        "path": ".agents/rules/generic-parameters.mdc",
+        "sha": "b7d3f6aabd7dbf65329c437ba49bd83313ab0a0a"
+      },
+      {
+        "path": ".agents/rules/git-staging.mdc",
+        "sha": "d11ccf76a2c34bc253ee75ab36655a3d2387faf0"
+      },
+      {
+        "path": ".agents/rules/import-validation.mdc",
+        "sha": "c606d267b3133a576a713145c49669508d8f7f2b"
+      },
+      {
+        "path": ".agents/rules/interface-factory-pattern.mdc",
+        "sha": "0647cf36618ac6fe0718b97107db0544971642b4"
+      },
+      {
+        "path": ".agents/rules/jsdoc-line-width.mdc",
+        "sha": "95c1c831f191abccdf3e8cab066ae96fb64ee9b7"
+      },
+      {
+        "path": ".agents/rules/mermaid-compat.mdc",
+        "sha": "b383368451010e207c332a1bdfc07b335531b671"
+      },
+      {
+        "path": ".agents/rules/modular-refactoring-patterns.mdc",
+        "sha": "87c71c85a62ecd290afdeb9d3f1074459d6a7c65"
+      },
+      {
+        "path": ".agents/rules/mongo-no-obsolete-commands.mdc",
+        "sha": "d0d1d741705c0511c82fe4c67848e7938db56a14"
+      },
+      {
+        "path": ".agents/rules/mongodb-memory-server-setup.mdc",
+        "sha": "4b5149aa1e0d73f978d928f06323e964a3a35a63"
+      },
+      {
+        "path": ".agents/rules/moving-packages.mdc",
+        "sha": "db19cb2a5d15befdaa13c6ba65974e225b679ed0"
+      },
+      {
+        "path": ".agents/rules/multi-plane-entrypoints.mdc",
+        "sha": "fe647c97df01e0240d37d52e96186645b21700ab"
+      },
+      {
+        "path": ".agents/rules/multi-plane-packages.mdc",
+        "sha": "011515bcda9d0a57a80a038e6cda58d4137d7643"
+      },
+      {
+        "path": ".agents/rules/namespace-diagnostic-wording.mdc",
+        "sha": "ae44e7098a6020ae3f4b681ba0d713bc2632a7c7"
+      },
+      {
+        "path": ".agents/rules/never-change-the-framework-domain.mdc",
+        "sha": "2c450d97f57cddeb7ca226336c5e9d75b6a5a643"
+      },
+      {
+        "path": ".agents/rules/never-hand-edit-contract-fixtures.mdc",
+        "sha": "61759c491624451ba3048e3d2c8867a71982a54f"
+      },
+      {
+        "path": ".agents/rules/no-backward-compatibility.mdc",
+        "sha": "492d92fbbd578093c389612e10d6b1d0765b6aa4"
+      },
+      {
+        "path": ".agents/rules/no-bare-casts.mdc",
+        "sha": "d41366118fad082dc9ab8769c620e3f98cda8401"
+      },
+      {
+        "path": ".agents/rules/no-barrel-files.mdc",
+        "sha": "72dd6b8486a5f70db58af49e0d7460c716d4d36a"
+      },
+      {
+        "path": ".agents/rules/no-contract-data-patching-in-tests.mdc",
+        "sha": "0d7deda6358a76d1566b45b0762fea065f5e4817"
+      },
+      {
+        "path": ".agents/rules/no-direct-lockfile-edits.mdc",
+        "sha": "77e6a03b2a0390dca1c9d4404390c7830e418753"
+      },
+      {
+        "path": ".agents/rules/no-family-vocabulary-in-framework.mdc",
+        "sha": "8ddd20cb5620c0b078ef9ffa68e8137bc8877d0a"
+      },
+      {
+        "path": ".agents/rules/no-inline-imports.mdc",
+        "sha": "29eb28a7fe43e787a093d60f6fd546666fc428c2"
+      },
+      {
+        "path": ".agents/rules/no-linear-sub-issues.mdc",
+        "sha": "0f854c78972a37163480c37041ee40caf56853d6"
+      },
+      {
+        "path": ".agents/rules/no-pull-request-target.mdc",
+        "sha": "2fde180eea4acbc2911927bc5f506be6ed398e4e"
+      },
+      {
+        "path": ".agents/rules/no-target-branches.mdc",
+        "sha": "f667843bea1c9da0642083e7455262d27dbb42b5"
+      },
+      {
+        "path": ".agents/rules/no-tautological-tests.mdc",
+        "sha": "b711a46bf43d62bd2f7aff731cbb19d312dc77fd"
+      },
+      {
+        "path": ".agents/rules/no-transient-project-ids-in-code.mdc",
+        "sha": "c9d3f5b24705955ea44087895cf0b66b0963a671"
+      },
+      {
+        "path": ".agents/rules/non-vacuous-verification.mdc",
+        "sha": "c89e5843cd7ef89a7fdc3effff99bd2fbe39629c"
+      },
+      {
+        "path": ".agents/rules/object-hasown.mdc",
+        "sha": "78136227de1602c6afc47b5a17b878342be904cb"
+      },
+      {
+        "path": ".agents/rules/omit-should-in-tests.mdc",
+        "sha": "6fd91cdf7dcef89638161331d9e53cc781052487"
+      },
+      {
+        "path": ".agents/rules/optimize-for-human-time-on-prs.mdc",
+        "sha": "269234339afff80b6d30e7995be08e5afee93e0d"
+      },
+      {
+        "path": ".agents/rules/postgres-lateral-patterns.mdc",
+        "sha": "6c7ecf315ce5c0b59649c48548fec2089951eb7c"
+      },
+      {
+        "path": ".agents/rules/prefer-assertions-over-defensive-checks.mdc",
+        "sha": "9bffdd094f79de6d60a3170560d808f447f30e2a"
+      },
+      {
+        "path": ".agents/rules/prefer-direct-imports-over-module-mocks.mdc",
+        "sha": "582e5180462589991017b4f0d02ebb3e9c3bc822"
+      },
+      {
+        "path": ".agents/rules/prefer-object-matcher.mdc",
+        "sha": "37f314cf693f56f2095d069d9aeb527e72d34ba4"
+      },
+      {
+        "path": ".agents/rules/prefer-psl-in-design-docs.mdc",
+        "sha": "fc431566a627265e33712620cf418ea1194ac758"
+      },
+      {
+        "path": ".agents/rules/prefer-to-throw.mdc",
+        "sha": "51bc8f54ad40418204ae57d65e9f67abfebbb968"
+      },
+      {
+        "path": ".agents/rules/query-patterns.mdc",
+        "sha": "fa65c42521a2bb945ca2f59a571acf8b74c872fe"
+      },
+      {
+        "path": ".agents/rules/read-agents-md.mdc",
+        "sha": "86c8def92bfa4a162d6ce72afb2ba21f07c64f14"
+      },
+      {
+        "path": ".agents/rules/README.md",
+        "sha": "13f683472cc0a2a0efda7fd79e7bb57bf43c6792"
+      },
+      {
+        "path": ".agents/rules/required-key-undefined-fields.mdc",
+        "sha": "a61c47eb8f289c82b3e9707768bed6f41d0c9030"
+      },
+      {
+        "path": ".agents/rules/resolving-cyclic-dependencies.mdc",
+        "sha": "1f5a43b73bad00ce61fa56677cde7fcaa32e2f16"
+      },
+      {
+        "path": ".agents/rules/review-scope-overrides.mdc",
+        "sha": "07bfa512811bbdb0b70229f8f1d1542cef4e379b"
+      },
+      {
+        "path": ".agents/rules/running-tests.mdc",
+        "sha": "4195918015d268c65b285f715318e68282a80cd1"
+      },
+      {
+        "path": ".agents/rules/schema-driven-architecture.mdc",
+        "sha": "0e605d197a0e10e5e21e73342f6f6a7195fab07d"
+      },
+      {
+        "path": ".agents/rules/shared-plane-packages.mdc",
+        "sha": "f738254248c0522f13bb883f527f14514503194a"
+      },
+      {
+        "path": ".agents/rules/sql-orm-client-whole-shape-assertions.mdc",
+        "sha": "acd187d9e6e89a875901a9cee18065f4716700fd"
+      },
+      {
+        "path": ".agents/rules/sql-queries-not-asts.mdc",
+        "sha": "70bdea4c6fd560d3505bac9d87b01b7d6415114b"
+      },
+      {
+        "path": ".agents/rules/sql-types-imports.mdc",
+        "sha": "cf0b049b798a4f62b941809a2fe3e1139a49f941"
+      },
+      {
+        "path": ".agents/rules/storage-type-hooks.mdc",
+        "sha": "dbe1bb2d201377a1ae7ee97a4ad33d8089731884"
+      },
+      {
+        "path": ".agents/rules/test-database-limitations.mdc",
+        "sha": "7e7ab431a89b23b7a463f1658bd11189cf024a1b"
+      },
+      {
+        "path": ".agents/rules/test-file-organization.mdc",
+        "sha": "d08797123ce40e7847f26305d1b1f533155d2474"
+      },
+      {
+        "path": ".agents/rules/test-import-patterns.mdc",
+        "sha": "44d5114cc19cfe353bd5406aa80bc021e1373c1c"
+      },
+      {
+        "path": ".agents/rules/test-intent-readability.mdc",
+        "sha": "1161c83f88623e0f02456f334cb83b92af4e6549"
+      },
+      {
+        "path": ".agents/rules/test-mocking-patterns.mdc",
+        "sha": "3a1149d953ca6f198565ec24b50ad502354bdd46"
+      },
+      {
+        "path": ".agents/rules/tsdown-config-package-source-only.mdc",
+        "sha": "7dd08c813d1f1dede705fe2c4b348c9d8622dfce"
+      },
+      {
+        "path": ".agents/rules/tsdown-dist-layout-in-tests.mdc",
+        "sha": "cb998468fee7a147dda329ebdc815707a1218e7b"
+      },
+      {
+        "path": ".agents/rules/type-extraction-from-contract.mdc",
+        "sha": "813c68070392eddaddad2f58b2b398281acf8e4b"
+      },
+      {
+        "path": ".agents/rules/type-predicates.mdc",
+        "sha": "259110d0731a76e90fbd8ab9fa14a7bed1d7ae33"
+      },
+      {
+        "path": ".agents/rules/typed-contract-in-tests.mdc",
+        "sha": "a9fa6668a9e844851dee268bdf8ae49ae45487c0"
+      },
+      {
+        "path": ".agents/rules/typescript-patterns.mdc",
+        "sha": "4c6e07bc04d9a86c53d3a8fde760d99b46a988b6"
+      },
+      {
+        "path": ".agents/rules/use-ast-factories.mdc",
+        "sha": "e713a354513ffa6f144b397c8d3fabe6dfdfb102"
+      },
+      {
+        "path": ".agents/rules/use-contract-ir-factories.mdc",
+        "sha": "94884e57d37809a79e6307d13e9d71616ce92cf2"
+      },
+      {
+        "path": ".agents/rules/use-hash-constructors.mdc",
+        "sha": "0ca984cae0f6b9b32825113f65d1c313d52ffa50"
+      },
+      {
+        "path": ".agents/rules/use-if-defined.mdc",
+        "sha": "b35100a4c6be48383977b4f651ed6e0c26d3c880"
+      },
+      {
+        "path": ".agents/rules/use-pathe-for-paths.mdc",
+        "sha": "2a68418c849cf1e1a2450234974114686d2490ce"
+      },
+      {
+        "path": ".agents/rules/use-timeouts-helper-in-tests.mdc",
+        "sha": "b95d96a5306cf130c0fd470d4f852e74433b6ff6"
+      },
+      {
+        "path": ".agents/rules/vitest-expect-typeof.mdc",
+        "sha": "3752e28a3b9174c72759a6828bee6ea597634a01"
+      },
+      {
+        "path": ".agents/rules/workspace-package-not-found-run-pnpm-install.mdc",
+        "sha": "3bd2219d7de121b5bd73b4bb9107666736bccd04"
+      },
+      {
+        "path": "apps/lsp-playground/README.md",
+        "sha": "f2e534297c0acdabe3f0080376a1ec88d36f725e"
+      },
+      {
+        "path": "apps/lsp-playground/tsconfig.json",
+        "sha": "4ab2e802cdd1be2c8ec7d61a1e9088f3de976f91"
+      },
+      {
+        "path": "apps/telemetry-backend/prisma.config.ts",
+        "sha": "ae433b644110626dab5281bcd78d80a49a4fcef1"
+      },
+      {
+        "path": "apps/telemetry-backend/README.md",
+        "sha": "ccbf28b312180154cc4c814c1d7020b66e164672"
+      },
+      {
+        "path": "apps/telemetry-backend/tsconfig.json",
+        "sha": "ce084981588a4a06dda89b4367e2f2ce5c8e7fb4"
+      },
+      {
+        "path": "apps/telemetry-backend/vitest.config.ts",
+        "sha": "a0fa86d0f1ba924e79a8e94d3ee60754263bec80"
+      },
+      {
+        "path": "drive/calibration/dod.md",
+        "sha": "ccaee4f98ea6fc64b9ba2f8535801c80dd666178"
+      },
+      {
+        "path": "drive/calibration/dor.md",
+        "sha": "72f703f963cfdb9b8de0524ced8200175ce48b2c"
+      },
+      {
+        "path": "drive/calibration/failure-modes.md",
+        "sha": "4b214deb6906b9f456c3d38037ec9dbca60b7c76"
+      },
+      {
+        "path": "drive/calibration/grep-library.md",
+        "sha": "819a9411bb37a5cb0b0b0fc482efa3e8823be8b1"
+      },
+      {
+        "path": "drive/calibration/model-tier.md",
+        "sha": "ac5acfd6a123e6c0cf5f2241773b9fc5481f6b30"
+      },
+      {
+        "path": "drive/calibration/patterns.md",
+        "sha": "882eed045fa582566ad11fea9ff4871b327918dd"
+      },
+      {
+        "path": "drive/calibration/README.md",
+        "sha": "c04cb7ed22eca6d7cfb07eaaf9a3711a03be2b25"
+      },
+      {
+        "path": "drive/calibration/sizing.md",
+        "sha": "4276a190e2bf938b8649617e11eb163d8c345db3"
+      },
+      {
+        "path": "drive/code/README.md",
+        "sha": "202438144d8af645d5f1b9b7ef8c84ca3d5aa64f"
+      },
+      {
+        "path": "drive/health/findings.md",
+        "sha": "8ff5a14099231a8074f100ab9c1c0716cc7ab274"
+      },
+      {
+        "path": "drive/health/README.md",
+        "sha": "8ecf22567926bf11adcdf342a55c95a9cb02c1ea"
+      },
+      {
+        "path": "drive/plan/findings.md",
+        "sha": "6d5ecfbb3f096e00ee85692ab951d82c46259de4"
+      },
+      {
+        "path": "drive/plan/README.md",
+        "sha": "b02fbf36ddc1c054da04f6e98d3c27c90c9582f3"
+      },
+      {
+        "path": "drive/pr/findings.md",
+        "sha": "b50fc94a7507781f0798162b0edfe2c73b2a5a97"
+      },
+      {
+        "path": "drive/pr/README.md",
+        "sha": "663fa6c227bbe41ac82512594e11a7dbb5629bbc"
+      },
+      {
+        "path": "drive/project/findings.md",
+        "sha": "114aa1c94ca217f745e77c2085eb816a38808762"
+      },
+      {
+        "path": "drive/project/README.md",
+        "sha": "76301e6c2cf2be1d2cd89d6f1fe90272af186147"
+      },
+      {
+        "path": "drive/qa/findings.md",
+        "sha": "0c9722c204b16b10da2434df294e67df83bd66c1"
+      },
+      {
+        "path": "drive/qa/README.md",
+        "sha": "66d751c2072b3fa531b47c7b7f3e4e60fcff8be9"
+      },
+      {
+        "path": "drive/retro/findings.md",
+        "sha": "6d9ac64415a264e96cb28cf0aff00ff7d0ac6f48"
+      },
+      {
+        "path": "drive/retro/README.md",
+        "sha": "6f998a96acfbab597618e0d496ff787b12c9b80f"
+      },
+      {
+        "path": "drive/roles/README.md",
+        "sha": "472f7fbb2ae946619ce50803dac701e89764206a"
+      },
+      {
+        "path": "drive/triage/findings.md",
+        "sha": "599c3e57d5f2b908a5ae076928b0492e7caa7232"
+      },
+      {
+        "path": "drive/triage/README.md",
+        "sha": "ddc8722ff674a1c1a5048df730106d94b4c8c884"
+      },
+      {
+        "path": "packages/1-framework/1-core/operations/src/index.ts",
+        "sha": "7b3a3138e90ee8891ce06a4e3766efa0acfd8b34"
+      },
+      {
+        "path": "packages/1-framework/1-core/ts-render/src/index.ts",
+        "sha": "c183bea0948b9ff96fab28285856b74bb3ef0fe6"
+      },
+      {
+        "path": "packages/1-framework/2-authoring/contract/src/index.ts",
+        "sha": "cd7e724f0bc9655fb9007591281d02f8a2ab8a77"
+      },
+      {
+        "path": "packages/1-framework/2-authoring/ids/src/index.ts",
+        "sha": "656fd4ae1ccca6a26fe48e5877bb8a392565c257"
+      },
+      {
+        "path": "packages/1-framework/3-tooling/language-server/src/server.ts",
+        "sha": "70cf79fa54ffde3ffc8024582b4f3dd93159af57"
+      },
+      {
+        "path": "packages/2-document/README.md",
+        "sha": "188ca42b2a2c2352578bb982ddfe2419b82a7322"
+      },
+      {
+        "path": "packages/2-mongo-family/3-tooling/emitter/src/index.ts",
+        "sha": "fdaf2298b2efd638aeadcaea7bff91daf1ab7655"
+      },
+      {
+        "path": "packages/2-mongo-family/7-runtime/src/exports/index.ts",
+        "sha": "fc27d8180b7f72de0d7ac32fe81b6d824e941f93"
+      },
+      {
+        "path": "packages/2-sql-family/1-core/contract/src/index.ts",
+        "sha": "bad027691ddc865fb0bb170f8ce7745fe7839cf2"
+      },
+      {
+        "path": "packages/2-sql-family/1-core/operations/src/index.ts",
+        "sha": "c74bf6af79d7ce705a6f50db0f5ca3d16733abcb"
+      },
+      {
+        "path": "packages/2-sql-family/1-core/schema-ir/src/index.ts",
+        "sha": "1910ada010ea6f8bf3eecdbab762131192a547f5"
+      },
+      {
+        "path": "packages/2-sql-family/3-tooling/emitter/src/index.ts",
+        "sha": "1454a81da83da0fa88ec34cf552abf8b0a9e2feb"
+      },
+      {
+        "path": "packages/2-sql-family/4-lanes/relational-core/src/index.ts",
+        "sha": "22b24c5adc35abe4899591578aeefa7bfd577769"
+      },
+      {
+        "path": "packages/2-sql-family/4-lanes/sql-builder/src/index.ts",
+        "sha": "aba786330d30c29d79ea8ae3b459958c402cc750"
+      },
+      {
+        "path": "packages/2-sql-family/5-runtime/src/exports/index.ts",
+        "sha": "798daa53081dcc4c9de25794b8969c513b84dc11"
+      },
+      {
+        "path": "packages/3-extensions/middleware-cache/src/exports/index.ts",
+        "sha": "298aa4f933b24cd97ecdde7aef2e748d38d25dca"
+      },
+      {
+        "path": "packages/3-extensions/sql-orm-client/src/exports/index.ts",
+        "sha": "527be6397496a8f924a7a3820efca6e589a54a6f"
+      },
+      {
+        "path": "packages/3-extensions/supabase/src/pack/index.ts",
+        "sha": "bc5fffab4f01d57b31af8ed14e04aedc4c0c1444"
+      },
+      {
+        "path": "packages/3-targets/postgres/4-codec-testkit/src/index.ts",
+        "sha": "580079a16d50d40024219581db84f2d33cd7bb12"
+      },
+      {
+        "path": "packages/3-targets/sqlite/4-codec-testkit/src/index.ts",
+        "sha": "dc2d4a015bcbb651171403cd81efaad834ff021d"
+      },
+      {
+        "path": "projects/ast-codec-binding/learnings.md",
+        "sha": "2775f7b71b1a3a7142c2d819f23f8bd9eaf2a06a"
+      },
+      {
+        "path": "projects/ast-codec-binding/plan.md",
+        "sha": "51c1e3a9cd1291816c317ff86a21a5ad04d1ed4a"
+      },
+      {
+        "path": "projects/ast-codec-binding/spec.md",
+        "sha": "ef202782ee7d8e349e72785833da2c082a0eace8"
+      },
+      {
+        "path": "projects/codec-json-projections/design-notes.md",
+        "sha": "984a13c1abb99ec139f4ef7c73cc895209defcc2"
+      },
+      {
+        "path": "projects/codec-json-projections/plan.md",
+        "sha": "95f48092e407637fcd66d6a9089ae962f1e9cd69"
+      },
+      {
+        "path": "projects/codec-json-projections/README.md",
+        "sha": "4752b531a2d00e129ebc7f6d9b78f304bde16fd6"
+      },
+      {
+        "path": "projects/codec-json-projections/spec.md",
+        "sha": "915579dd31c51a4d80ee85c7d13310f62a976cc4"
+      },
+      {
+        "path": "projects/codec-registration-completion/plan.md",
+        "sha": "c7bc3131098a5773a14dec8461f6553caef6454f"
+      },
+      {
+        "path": "projects/codec-registration-completion/spec.md",
+        "sha": "00fc2576555d9a5eb581b4faab5fb1ddbb6e7b6b"
+      },
+      {
+        "path": "projects/consolidate-clis/cli-consolidation-plan.md",
+        "sha": "d9aa67fd579a82e20e1a64ace6ecab5cbe55d5e3"
+      },
+      {
+        "path": "projects/consolidate-clis/current-state.md",
+        "sha": "936805d3375d0a95c9b3935990255758256f4ba1"
+      },
+      {
+        "path": "projects/consolidate-clis/plan.md",
+        "sha": "c525550957dc3ead074c0619e389fa526831cb92"
+      },
+      {
+        "path": "projects/consolidate-clis/spec.md",
+        "sha": "745f6f89cfe3055ab39a14cb6e904e02e871dca1"
+      },
+      {
+        "path": "projects/consolidate-migration-graph-model/design-notes.md",
+        "sha": "dc73e19c11e8540116fd0e5f6f42c0f6a93bc1a4"
+      },
+      {
+        "path": "projects/consolidate-migration-graph-model/plan.md",
+        "sha": "8bbb39327881909c7f154f7f64312ec15c5a005a"
+      },
+      {
+        "path": "projects/consolidate-migration-graph-model/spec.md",
+        "sha": "70b6db1b8ed7ee64818fbb10cd4d0e22717a057c"
+      },
+      {
+        "path": "projects/contract-free-migration-planning/plan.md",
+        "sha": "1c4dbc9efaf2ac18dcc9684a8bee124999a8a7b6"
+      },
+      {
+        "path": "projects/contract-free-migration-planning/README.md",
+        "sha": "5f711f2cab59a0a87acb713e062702139e4de681"
+      },
+      {
+        "path": "projects/contract-free-migration-planning/spec.md",
+        "sha": "829e8fe525e382cdb945d64ab73a7ce8ddd8632c"
+      },
+      {
+        "path": "projects/convenience-types-other-targets/plan.md",
+        "sha": "c835143e6e5b3ccf4a82832b8f018e5cde23c161"
+      },
+      {
+        "path": "projects/convenience-types-other-targets/spec.md",
+        "sha": "490107c3b2529e7e4f737aaa4bdd8f2b17ff11e1"
+      },
+      {
+        "path": "projects/created-updated-at-authoring/plan.md",
+        "sha": "4bfa36094831b61cbd279b5d0c27d311fc1629a2"
+      },
+      {
+        "path": "projects/created-updated-at-authoring/spec.md",
+        "sha": "0fe383727183ccec277cf0af825cde4908297e1d"
+      },
+      {
+        "path": "projects/customize-generated-asset-output-path/design-notes.md",
+        "sha": "919166374112698f027163832b5d2ee2b62a2e70"
+      },
+      {
+        "path": "projects/customize-generated-asset-output-path/plan.md",
+        "sha": "09a36a4a40a8838d40d86f54ecadb30d7b5e3945"
+      },
+      {
+        "path": "projects/customize-generated-asset-output-path/spec.md",
+        "sha": "69ad3343b22f024689ed6410108505c4ab3cfdea"
+      },
+      {
+        "path": "projects/database-change-policies/design.md",
+        "sha": "67fb8d4ba8bf89e0de4149ec8a6345652d4c9cd1"
+      },
+      {
+        "path": "projects/database-change-policies/plan.md",
+        "sha": "3cedba4c47bc6c1dc9315283dfb85dd7b831c2f2"
+      },
+      {
+        "path": "projects/database-change-policies/spec.md",
+        "sha": "7d31d7538b3024b7d262e656382cbee63543ea1d"
+      },
+      {
+        "path": "projects/db-close-teardown/design-notes.md",
+        "sha": "90a14bdd3b2e5f8faf5a495e6ffcb331513c0996"
+      },
+      {
+        "path": "projects/db-close-teardown/manual-qa.md",
+        "sha": "2d35dc6ec4b463a74aed557a65b563d10d0c3a44"
+      },
+      {
+        "path": "projects/db-close-teardown/plan.md",
+        "sha": "016765bd7f6cfd66727b8f30248940d7ed959faa"
+      },
+      {
+        "path": "projects/db-close-teardown/spec.md",
+        "sha": "fab195bfcbc1dbad4fe646080d0ffa80f91ffa72"
+      },
+      {
+        "path": "projects/domain-enum-inference/plan.md",
+        "sha": "597aaced4a5f0ac183ac80973f658a54f9ceb09d"
+      },
+      {
+        "path": "projects/domain-enum-inference/spec.md",
+        "sha": "13929456e4b27eaf7032c3b762691e6a81cb3e68"
+      },
+      {
+        "path": "projects/drive-judge-harness/design-notes.md",
+        "sha": "07e401f7ae05e8afe1860d2a8a32d23012671636"
+      },
+      {
+        "path": "projects/drive-judge-harness/plan.md",
+        "sha": "945b26a6b82b6cd2569ed6468cb318f29a7f663a"
+      },
+      {
+        "path": "projects/drive-judge-harness/spec.md",
+        "sha": "af4a0c8dd5f314b6139e290fd6cb27fa8c4cef58"
+      },
+      {
+        "path": "projects/enums-as-domain-concept/design-notes.md",
+        "sha": "8d0b28ff811895b2a41138482464afce8f30b147"
+      },
+      {
+        "path": "projects/enums-as-domain-concept/plan.md",
+        "sha": "ccbebea6c1c8ed86307d64b7cfe9a5ec20895bf6"
+      },
+      {
+        "path": "projects/enums-as-domain-concept/spec.md",
+        "sha": "3be3f733d5d4312ca0b2e649c6547f26ec9def90"
+      },
+      {
+        "path": "projects/expose-static-execution-context/plan.md",
+        "sha": "d8c3f7255296f1a42766c68d295162c20f18c3cc"
+      },
+      {
+        "path": "projects/expose-static-execution-context/spec.md",
+        "sha": "ffad4d154946fd9d0f035da65205b8de6db3d93c"
+      },
+      {
+        "path": "projects/facade-import-surface-completion/manual-qa.md",
+        "sha": "4c0621dcfba2cd192461f225525bc40a73b0e36e"
+      },
+      {
+        "path": "projects/facade-import-surface-completion/plan.md",
+        "sha": "d546f7e8cdfbcaf361d898f510e65e7ae04bd0cd"
+      },
+      {
+        "path": "projects/facade-import-surface-completion/retros.md",
+        "sha": "0ceadeacc57a09021451682fc2a49243f606f528"
+      },
+      {
+        "path": "projects/facade-import-surface-completion/spec.md",
+        "sha": "e1d87e98cb4fd0c2f34c4b7a2d8891467de3adec"
+      },
+      {
+        "path": "projects/infer-emit-roundtrip/plan.md",
+        "sha": "dedd63a7112d3f5359b943a3c3ca34cc35c29fda"
+      },
+      {
+        "path": "projects/infer-emit-roundtrip/reproduction.md",
+        "sha": "50ab686e3e3a1c780d4852595f543a123d5c23f7"
+      },
+      {
+        "path": "projects/infer-emit-roundtrip/spec.md",
+        "sha": "87d511e24ccd42b71ea9ccba89d652492432c466"
+      },
+      {
+        "path": "projects/init-journey-tests/plan.md",
+        "sha": "e65e73201531b6c0e905658d6a152d6e257832a7"
+      },
+      {
+        "path": "projects/init-journey-tests/spec.md",
+        "sha": "e35a36d528921e4836fa4c8313c657a15a2e21c1"
+      },
+      {
+        "path": "projects/middleware-intercept-and-cache/api-revision-meta-callback.md",
+        "sha": "c8cb7c873718ec1c4a9ad1998edb9854bbe4db7c"
+      },
+      {
+        "path": "projects/middleware-intercept-and-cache/follow-ups.md",
+        "sha": "3bffa049878c93342d19e5f3e78673d24ead0a24"
+      },
+      {
+        "path": "projects/middleware-intercept-and-cache/plan.md",
+        "sha": "58e25db8cdd397405aee3fc7a1fee9b407ab18d1"
+      },
+      {
+        "path": "projects/middleware-intercept-and-cache/spec.md",
+        "sha": "6eb9d0656e232ee6fe969a404db4f39bf4cf71b0"
+      },
+      {
+        "path": "projects/migration-domain-model/cli-audit.md",
+        "sha": "7e0417788cc657dc1e010527e0ef3950b07542c7"
+      },
+      {
+        "path": "projects/migration-domain-model/discussion-notes.md",
+        "sha": "5509a7434568e124493f019a8f8773b096b72b78"
+      },
+      {
+        "path": "projects/migration-domain-model/domain.md",
+        "sha": "767af91821b4116b1c3d4d7211b071dc929b251c"
+      },
+      {
+        "path": "projects/migration-domain-model/established-conventions.md",
+        "sha": "9ffab68837cb85e36688d61619294ef090e1651f"
+      },
+      {
+        "path": "projects/migration-domain-model/manual-qa.md",
+        "sha": "b67dcd4fb0f6aecb519def626d3f10b373714e6b"
+      },
+      {
+        "path": "projects/migration-domain-model/plan.md",
+        "sha": "3c4d3c4e4f1eef61f06c47c764f1fd91737daa5c"
+      },
+      {
+        "path": "projects/migration-domain-model/spec.md",
+        "sha": "357a2ed23d6aa9d64cc09048cc5b33eaa208a9ae"
+      },
+      {
+        "path": "projects/migration-manifest-drop-inline-contracts/plan.md",
+        "sha": "2366d49ddad860049e94ea261c32045eed7d8bf9"
+      },
+      {
+        "path": "projects/migration-manifest-drop-inline-contracts/spec.md",
+        "sha": "7a4a13a75183626317d29b6857143a1d48f2727e"
+      },
+      {
+        "path": "projects/migration-statements/deferred.md",
+        "sha": "a25cb832d4b5ac281220d40aa9632f1b41d50785"
+      },
+      {
+        "path": "projects/migration-statements/design-notes.md",
+        "sha": "1e2916d61daa67c1cc2cc8fa2bec8f6557aa3ebd"
+      },
+      {
+        "path": "projects/migration-statements/manual-qa.md",
+        "sha": "4210f5f5109aca52376302e3941b05f357ef5246"
+      },
+      {
+        "path": "projects/migration-statements/plan.md",
+        "sha": "ffd0565c5c48e8ee0211973d1680488275e8b254"
+      },
+      {
+        "path": "projects/migration-statements/README.md",
+        "sha": "2d3f274c31e33eed3e412da374b4239f758d21bc"
+      },
+      {
+        "path": "projects/migration-statements/retros.md",
+        "sha": "3bc349e6d1a0dc6c35e7f95819241deff157970e"
+      },
+      {
+        "path": "projects/migration-statements/spec.md",
+        "sha": "6603c7b1568341e3daf2c87648a05126cc396953"
+      },
+      {
+        "path": "projects/mongo-driver-wire-contract/README.md",
+        "sha": "326a743f403220f04f80ad7de2b5004c94e7a1e9"
+      },
+      {
+        "path": "projects/mongo-driver-wire-contract/spec.md",
+        "sha": "b62aa5a3fee21cd98b92464b08351cbab4b208cb"
+      },
+      {
+        "path": "projects/mongo-reshaping-pipeline-decode/plan.md",
+        "sha": "29010b33480f2121a867bfaebdf1fb2433384087"
+      },
+      {
+        "path": "projects/mongo-reshaping-pipeline-decode/spec.md",
+        "sha": "c1b48d07886ee16e06f60bc335d73a54774d1419"
+      },
+      {
+        "path": "projects/mongodb-contract-ts-support/plan.md",
+        "sha": "112bb2636e3d971c9b6fa735a56951355d7a045e"
+      },
+      {
+        "path": "projects/mongodb-contract-ts-support/spec.md",
+        "sha": "39dca9e5d09b93b68c54392fda35a00c020a5dd1"
+      },
+      {
+        "path": "projects/multifile-psl/design-decisions.md",
+        "sha": "45ff60bdaf1a437a60e82d3f194478572428a55e"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T15:34:58Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 5,
+      "egress": 85,
+      "instruction_hygiene": 60
+    },
+    "red_flags": [
+      "ships-git-hooks",
+      "instruction-credential-request"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "install-time-network",
+      "severe": false,
+      "file": "scripts/check-commit-signoff.mjs",
+      "line": 27,
+      "snippet": "import { execFileSync } from 'node:child_process';",
+      "deduction": 15
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "agent-hook-command",
+      "severe": false,
+      "file": ".claude/settings.json",
+      "line": 3,
+      "snippet": "\"PreToolUse\": [",
+      "deduction": 15
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": true,
+      "file": ".husky/commit-msg",
+      "line": 1,
+      "snippet": "node scripts/check-commit-signoff.mjs \"$1\"",
+      "deduction": 40
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": true,
+      "file": ".husky/pre-commit",
+      "line": 1,
+      "snippet": "pnpm lint-staged --no-stash",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "instruction-credential-request",
+      "severe": true,
+      "file": "skills-contrib/record-upgrade-instructions/SKILL.md",
+      "line": 108,
+      "snippet": "6. Run `pnpm --filter <example-package> test` for each touched example. The repo-wide `pnpm test:examples` also runs examples needing a database and `.env` (`pn",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 24,
+    "failed": 0,
+    "ms": 11818
+  },
+  "duration_ms": 5326
+}

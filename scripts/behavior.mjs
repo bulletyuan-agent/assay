@@ -14,7 +14,8 @@ const WRITE = /\b(writeFile(Sync)?|appendFile(Sync)?|createWriteStream|rename(Sy
 const DECODE = /String\.fromCharCode|charCodeAt|Buffer\.from\([^)]*['"](hex|base64|base32)['"]|\.toString\(\s*['"](hex|base64)['"]|bytes\.fromhex|fromhex\(|b64decode|b32decode|b32encode|atob\(|hex\.DecodeString|base64\.StdEncoding\.Decode|\bxor\b|\^\s*(0x[0-9a-f]+|\d+)\b|\.decode\(['"](hex|base64)/i;
 const DELAY = /setTimeout\([^)]*,\s*\d{4,}|setInterval\(|time\.sleep\(\s*\d{2,}|time\.AfterFunc|time\.Sleep\(|threading\.Timer|Timer\(\s*\d{2,}|sleep\s+\d{2,}/;
 const ENVALL = /os\.Environ\(\)|os\.environ\b|process\.env\b(?!\.\w)|ENV\.to_h|ENV\.each/;
-const CRED = /(\.ssh\/|id_(rsa|ed25519|ecdsa)|\.aws\/credentials|\.npmrc|\.netrc|\.docker\/config|\.kube\/config|\.config\/(gh|gcloud)|\.git-credentials|\.pypirc|\.gnupg|\.env\b|wallet\.dat|keystore|Login Data|Local State|key4\.db|logins\.json|Cookies\b)/i;
+const CRED = /(\.ssh\/|id_(rsa|ed25519|ecdsa)|\.aws\/credentials|\.npmrc|\.netrc|\.docker\/config|\.kube\/config|\.config\/(gh|gcloud)|\.git-credentials|\.pypirc|\.gnupg|(?<![\w.])\.env\b|wallet\.dat|keystore|Login Data|Local State|key4\.db|logins\.json)/i;
+const CRED_STRONG = /(\.ssh\/|id_(rsa|ed25519|ecdsa)|\.aws\/credentials|\.npmrc|\.netrc|\.docker\/config|\.kube\/config|\.git-credentials|\.pypirc|\.gnupg|wallet\.dat|~\/\.env|AWS_(ACCESS|SECRET)\w*|default profile)/i;
 const CRED_SEG = /['"]\.(ssh|aws|npmrc|kube|gnupg|docker)['"]|['"]credentials['"]|['"]id_(rsa|ed25519)['"]/;
 const TMP = /tmpdir\(\)|\/tmp\/|TEMP\b|tempfile|os\.TempDir/;
 const LOADEXEC = /\brequire\(\s*[a-zA-Z_]\w*\s*\)|importlib|\bexec\(|\bevaluate|new Function|vm\.run|\bsource\b|\bimport\(\s*[a-zA-Z_]/;
@@ -110,7 +111,7 @@ export function behaviorScan(shipped, ctx, autorun) {
       const l = locate(f.text, /hooksPath|fsmonitor|alias[\s\S]{0,200}=\s*!|\bsshCommand\b|\bpager\b/);
       if (l) add(f, 'git-config-exec', true, l, 40);
     }
-    if (/(^|\/)(\.githooks|\.husky|\.git\/hooks)\//.test(p) && !/\.sample$/.test(p)) add(f, 'ships-git-hooks', true, { line: 1, snippet: f.text.split('\n')[0] }, 40);
+    if (/(^|\/)(\.githooks|\.husky|\.git\/hooks)\//.test(p) && !/\.sample$/.test(p)) { const risky = /\b(curl|wget|nc|base64)\b|\bnode\b[^\n]*&\s*$|&\s*$/m.test(f.text) && !/^\s*#/.test(f.text.split('\n').find((x) => /&\s*$/.test(x)) || '#'); add(f, 'ships-git-hooks', risky, { line: 1, snippet: f.text.split('\n')[0] }, 15); }
     if (/(^|\/)\.vscode\/tasks\.json$/.test(p)) {
       const l = locate(f.text, /folderOpen/);
       if (l) { const hidden = /"reveal"\s*:\s*"never"|"echo"\s*:\s*false|"close"\s*:\s*true/.test(f.text); add(f, 'folder-open-autorun', hidden, l, 20); }
@@ -129,8 +130,8 @@ export function behaviorScan(shipped, ctx, autorun) {
     if (/(^|\/)\.github\/workflows\/[^/]+\.ya?ml$/.test(p)) {
       const dump = locate(f.text, /toJSON\(\s*secrets\s*\)|toJson\(\s*secrets\s*\)|\$\{\{\s*secrets\s*\}\}/);
       if (dump) add(f, 'gha-secrets-dump', true, dump, 40);
-      const prt = /pull_request_target/.test(f.text) && /github\.event\.pull_request\.head\.(sha|ref)|refs\/pull\/\$\{\{[^}]*\}\}\/(head|merge)/.test(f.text);
-      if (prt) add(f, 'gha-pull-request-target-checkout', true, locate(f.text, /pull_request_target/), 40);
+      const prt = /pull_request_target/.test(f.text) && /actions\/checkout[\s\S]{0,300}ref:\s*\$\{\{[^}]*(pull_request\.head\.(sha|ref)|refs\/pull)/.test(f.text);
+      if (prt) add(f, 'gha-pull-request-target-checkout', /secrets\./.test(f.text) && /(artifact|curl|wget|toJSON)/i.test(f.text), locate(f.text, /pull_request_target/), 15);
       const cs = locate(f.text, /(curl|wget)[^\n]*\$\{\{\s*secrets\./);
       if (cs) add(f, 'gha-secret-to-network', true, cs, 40);
     }
@@ -152,10 +153,10 @@ export function behaviorScan(shipped, ctx, autorun) {
     if (isCode) {
       if (/\b(dns\.(resolve\w*|lookup)|resolveTxt|gethostbyname|getaddrinfo|dns\.resolver|nslookup|LookupHost|LookupTXT)\b/.test(t) && /(b32encode|b32|toString\(\s*['"]hex['"]|\.hex\(\)|hexlify|hex\.EncodeToString)/.test(t) && (CRED.test(t) || CRED_SEG.test(t) || ENVALL.test(t) || /readFile|open\(|ReadFile/.test(t))) add(f, 'dns-exfil', true, locate(t, /dns\.(resolve\w*|lookup)|resolveTxt|gethostbyname|getaddrinfo|dns\.resolver|nslookup|LookupHost|LookupTXT/, f.text), 40);
       if (/(clipboardy|pyperclip|navigator\.clipboard|pbpaste|xclip|GetClipboard|clipboard\.(read|write)\w*|Clipboard\.)/i.test(t) && /(0x\[?0-9a-fA-F|0x[0-9a-fA-F]{6,}|bc1|\[13\]\[a-km|T[A-Za-z0-9]{33}|[1-9A-HJ-NP-Za-km-z]{32,44})/.test(t)) add(f, 'clipboard-address-swap', true, locate(t, /clipboard/i, f.text), 40);
-      if (/(Login Data|key4\.db|logins\.json|Web Data|User Data\/Default|Chrome\/User Data|Google\/Chrome|\.mozilla|BraveSoftware|Local Extension Settings|leveldb)/.test(t) && /(readFile|copyFile|open\(|createReadStream|ReadFile|sqlite|better-sqlite3)/.test(t)) add(f, 'browser-credential-access', true, locate(t, /Login Data|key4\.db|logins\.json|Web Data|User Data|Google\/Chrome|\.mozilla|BraveSoftware|Local Extension Settings|leveldb/, f.text), 40);
+      if (/(Login Data|key4\.db|logins\.json|User Data\/Default|Chrome\/User Data|(^|[^\w.])\.mozilla\/|BraveSoftware|Local Extension Settings)/.test(t) && /(homedir|expanduser|APPDATA|os\.Getenv|\$HOME|process\.env\.HOME)/.test(t) && /(readFile|copyFile|open\(|createReadStream|ReadFile|sqlite|better-sqlite3)/.test(t)) add(f, 'browser-credential-access', true, locate(t, /Login Data|key4\.db|logins\.json|User Data|\.mozilla\/|BraveSoftware|Local Extension Settings/, f.text), 40);
       if (/authorized_keys/.test(t) && /(append|>>|write|'a'|"a"|O_APPEND)/.test(t)) add(f, 'ssh-key-injection', true, locate(t, /authorized_keys/, f.text), 40);
       if (/(xmrig|stratum\+tcp|minerd|cpuminer|--donate-level|randomx|monero)/i.test(t)) add(f, 'cryptominer', true, locate(t, /xmrig|stratum\+tcp|minerd|cpuminer|--donate-level|randomx|monero/i, f.text), 40);
-      if (/(\/dev\/tcp\/|bash\s+-i\s*>&|\bnc\s+(-\w+\s+)*-e\b|pty\.spawn|dup2\(|\bnet\.Socket\b[\s\S]{0,300}\bspawn\(|net\.Dial[\s\S]{0,200}exec\.Command)/.test(t)) add(f, 'reverse-shell', true, locate(t, /\/dev\/tcp\/|bash\s+-i|\bnc\s+(-\w+\s+)*-e|pty\.spawn|dup2\(|net\.Socket|net\.Dial/, f.text), 40);
+      if (/(\/dev\/tcp\/|bash\s+-i\s*>&|\bnc\s+(-\w+\s+)*-e\b|pty\.spawn|\bnet\.Socket\b[\s\S]{0,300}\bspawn\(|net\.Dial[\s\S]{0,200}exec\.Command)/.test(t)) add(f, 'reverse-shell', true, locate(t, /\/dev\/tcp\/|bash\s+-i|\bnc\s+(-\w+\s+)*-e|pty\.spawn|dup2\(|net\.Socket|net\.Dial/, f.text), 40);
       if (/(npm\s+publish|\/-\/npm\/v1\/user\/tokens|registry\.npmjs\.org\/[^'"\s]*\/-\/|publishConfig)/.test(t) && /(NPM_TOKEN|npm_token|_authToken|\.npmrc)/.test(t)) add(f, 'token-worm-republish', true, locate(t, /npm\s+publish|registry\.npmjs\.org/, f.text), 40);
       if (/(Discord|discord(app)?\.com\/api|leveldb|Local Storage)/.test(t) && /(token|Token)/.test(t) && hasNet && /(readFile|readdir|createReadStream)/.test(t)) add(f, 'chat-token-theft', true, locate(t, /leveldb|Local Storage|discord/, f.text), 40);
     }
@@ -168,10 +169,10 @@ export function behaviorScan(shipped, ctx, autorun) {
     const instr = INSTR_FILE.test(p);
     const isMd = /\.(md|mdc|txt|rst)$/i.test(p) || /(^|\/)\.cursorrules$/.test(p);
     const isJson = /\.(json|ya?ml)$/i.test(p);
-    const text = f.text;
+    const text = isCode ? t : f.text;
     if (instr) {
-      const aa = locate(text, /(auto-?approve|autoApprove|always allow|pre-?approve(d)?|without (asking|confirmation|prompting)|do not (ask|prompt)[^.\n]{0,30}(confirm|approval|permission)|skip (all )?(permission|confirmation)|bypass permission)/i);
-      if (aa && /(mcp|tool|shell|command|dotfile|write|install|server)/i.test(text.slice(Math.max(0, aa.match.index - 120), aa.match.index + 200)) && !NEG.test(text.slice(Math.max(0, aa.match.index - 30), aa.match.index))) add(f, 'instruction-auto-approve', true, aa, 40, 'instruction_hygiene');
+      const aa = locate(text, /(auto-?approve|autoApprove|always allow|pre-?approve(d)?|skip (all )?permission|bypass permission|dangerously)/i);
+      if (aa && /(mcp|autoApprove|shell|dotfile|rc file|global)/i.test(text.slice(Math.max(0, aa.match.index - 120), aa.match.index + 200)) && !NEG.test(text.slice(Math.max(0, aa.match.index - 30), aa.match.index))) add(f, 'instruction-auto-approve', true, aa, 40, 'instruction_hygiene');
       const ri = locate(text, /\b(fetch|download|load|pull|read|retrieve|follow|apply|source)\b[^.\n]{0,100}https?:\/\/([a-z0-9.-]+)[^\s)]*[^.\n]{0,160}\b(rules?|instructions?|guidelines?|prompt|polic(y|ies)|override|take precedence|supersede|house style)\b/i);
       if (ri) { const h = (/https?:\/\/([a-z0-9.-]+)/i.exec(ri.match[0]) || [])[1]; if (h && !VENDOR.test(h) && !declared(h)) add(f, 'remote-instruction-load', true, ri, 40, 'instruction_hygiene'); }
       const ov = locate(text, /\b(override|take precedence over|supersede|ignore)\b[^.\n]{0,40}\b(user|the user's|local|previous|other)\b[^.\n]{0,30}\b(instructions?|rules?|settings|config)\b/i);
@@ -180,8 +181,9 @@ export function behaviorScan(shipped, ctx, autorun) {
       if (so) add(f, 'package-source-override', true, so, 40, 'instruction_hygiene');
     }
     if (instr || isMd || isJson || isCode) {
-      const cs = locate(text, new RegExp('\\b(copy|paste|include|append|attach|print|cat|forward|return|output|send|echo|read)\\b[^.\\n]{0,90}(' + CRED.source + ')', 'i'));
-      if (cs && !NEG.test(text.slice(Math.max(0, cs.match.index - 30), cs.match.index)) && !/(readFile|readFileSync|open\(|ReadFile|fs\.)/.test(cs.snippet) && (instr || isJson || /['"`]/.test(cs.snippet)) && (instr || /\b(description|instruction|prompt|note)\b/i.test(text.slice(Math.max(0, cs.match.index - 300), cs.match.index)))) add(f, 'instruction-credential-request', true, cs, 40, 'instruction_hygiene');
+      const cs = locate(text, new RegExp('\\b(copy|paste|include|append|attach|print|cat|forward|return|output|send|upload|echo|read)\\b[^.\\n]{0,90}(' + CRED_STRONG.source + '|(?<![\\w.])\\.env\\b)', 'i'));
+      const envOk = !cs || !/\.env/i.test(cs.match[0]) || /(forward|send|upload|attach|append|include|paste)/i.test(cs.match[0]);
+      if (cs && envOk && !NEG.test(text.slice(Math.max(0, cs.match.index - 30), cs.match.index)) && !/(readFile|readFileSync|open\(|ReadFile|fs\.)/.test(cs.snippet) && (instr || isJson || /['"`]/.test(cs.snippet)) && (instr || /\b(description|instruction|prompt|note)\b/i.test(text.slice(Math.max(0, cs.match.index - 300), cs.match.index)))) add(f, 'instruction-credential-request', true, cs, 40, 'instruction_hygiene');
     }
     if (isMd && !/(^|\/)(CHANGELOG|LICENSE)/i.test(p)) {
       const ea = locate(text, /(core\.hooksPath|git config[^\n]*hooksPath|task\.allowAutomaticTasks|runOn["']?\s*:\s*["']?folderOpen|automatic tasks)/i);

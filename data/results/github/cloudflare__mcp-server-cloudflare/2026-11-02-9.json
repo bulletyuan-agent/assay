@@ -1,0 +1,1408 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154652Z",
+  "target": {
+    "source": "github",
+    "id": "cloudflare/mcp-server-cloudflare",
+    "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+    "name": "mcp-server-cloudflare"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:46:59.448Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "a21972e219289337731a066befb5c66886b9ce7b",
+    "files_scanned": 324,
+    "candidates": 324,
+    "excluded_non_shipped": 57,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/main.yml",
+        "sha": "69cbd4b72bd2d1b95a4b0378cf5ce5b03f8122bd"
+      },
+      {
+        "path": ".vscode/extensions.json",
+        "sha": "60853896bcc054f17d8ce895b1f6189083b3a773"
+      },
+      {
+        "path": ".vscode/launch.json",
+        "sha": "60caad93efb20e06cb20a7e3ce7fb72149d0d077"
+      },
+      {
+        "path": ".vscode/settings.json",
+        "sha": "3c072771915f15d8e3853c20dd113f3001cc206b"
+      },
+      {
+        "path": ".vscode/tasks.json",
+        "sha": "db58e6900d3e04edf3fd83afc2dbc1645f1d981f"
+      },
+      {
+        "path": ".github/workflows/branches.yml",
+        "sha": "44a0669f83916a1a947460958d6dc05bed402ef6"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "20926ece12f5650551689643950f92917dcd0f64"
+      },
+      {
+        "path": ".github/workflows/semgrep.yml",
+        "sha": "09dfe25e4adfc90e30f53ed170bc99c0f6c5864a"
+      },
+      {
+        "path": "server.json",
+        "sha": "72924224859b36daa48cf20db975769f5b8b2309"
+      },
+      {
+        "path": "implementation-guides/tools.md",
+        "sha": "f3265802ce21710f8a81468e6af2f9dba0d7ae74"
+      },
+      {
+        "path": "package.json",
+        "sha": "34dd388d8d0e2ec72cbdc6ecc97c68c8099cf795"
+      },
+      {
+        "path": "packages/typescript-config/tools.json",
+        "sha": "6f8fec374df9303d8b3f7fa117cef04e09105655"
+      },
+      {
+        "path": ".eslintrc.cjs",
+        "sha": "ea03789f0d2d91ef143eead3772516f9404d3e38"
+      },
+      {
+        "path": ".prettierrc.cjs",
+        "sha": "557446e6479f56ecf9a8c8e400da1e77334cabb5"
+      },
+      {
+        "path": ".syncpackrc.cjs",
+        "sha": "72ab988a279f066834df8926cb4b4c416d847f6a"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "369f4d19eaf679d4977b8925fccffb060c8caf61"
+      },
+      {
+        "path": "packages/mcp-common/src/index.ts",
+        "sha": "0e2f66bcaa2325a0ea225f1d826d814854c22fb9"
+      },
+      {
+        "path": "packages/mcp-common/src/server.ts",
+        "sha": "0faab72e5feb746a770413e843552bfc037fc447"
+      },
+      {
+        "path": "packages/mcp-observability/src/index.ts",
+        "sha": "92d11722a43b868c875263cdc05f270f84ea161e"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha": "278dce89d8812723d30a9ae94d4d532d8a85c8e7"
+      },
+      {
+        "path": "README.md",
+        "sha": "44283f9b60988afc3b74f1b474874de142c8e81d"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "d79bc86bca7765bab6c360419558a76a738ac2fe"
+      },
+      {
+        "path": "turbo.json",
+        "sha": "c08f6be44e03cf1b33755041b4a77cb143b8f866"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "064c4c0259235038fbb059fa9e73cb9c13491509"
+      },
+      {
+        "path": "apps/ai-gateway/package.json",
+        "sha": "65bcb436c1df52049b495ff791930a9e69f56e38"
+      },
+      {
+        "path": "apps/auditlogs/package.json",
+        "sha": "6245c581534034aa170c3ec37077e841301a5861"
+      },
+      {
+        "path": "apps/autorag/package.json",
+        "sha": "69ac643b6ebdcfc297cd71673a91d9804e1dabd4"
+      },
+      {
+        "path": "apps/browser-rendering/package.json",
+        "sha": "574bb17f9de547c4f2512309ce876d19776411d4"
+      },
+      {
+        "path": "apps/cloudflare-blog/package.json",
+        "sha": "dcb5915cdb29170ae4396c3332d23b7fc09a1f35"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/package.json",
+        "sha": "e503b98abe3ed911804ab95de6503878f597c72f"
+      },
+      {
+        "path": "apps/demo-day/package.json",
+        "sha": "00dc20b627ceeb541e9abff25b8f5666e8b053af"
+      },
+      {
+        "path": "apps/dex-analysis/package.json",
+        "sha": "87241b32ffa924314bdf75b1dcf035c71bc89a4f"
+      },
+      {
+        "path": "apps/dns-analytics/package.json",
+        "sha": "8cbff2aea3199a351ab89000c17b3b3f0c3edca6"
+      },
+      {
+        "path": "apps/docs-ai-search/package.json",
+        "sha": "e6900d3bc62e984389292c0f21fd66fb91be9f68"
+      },
+      {
+        "path": "apps/graphql/package.json",
+        "sha": "b631271a8ab972c0c2cadf6f9038b0abe7457526"
+      },
+      {
+        "path": "apps/logpush/package.json",
+        "sha": "c40f9594a5d9598514d195e018366be3d92ca7d7"
+      },
+      {
+        "path": "apps/radar/package.json",
+        "sha": "13098ef81c63045ebde594b6d2224b1689f2049b"
+      },
+      {
+        "path": "apps/sandbox-container/package.json",
+        "sha": "ab23eee97612e9d1fb3273f2ef2de96cfbb8edf5"
+      },
+      {
+        "path": "apps/stack-mcp/package.json",
+        "sha": "34a613b439bb9b09bf54471777a46a5147f2ebfd"
+      },
+      {
+        "path": "apps/workers-bindings/package.json",
+        "sha": "3b92255ae00518209c2a28beda16076b80c1097f"
+      },
+      {
+        "path": "apps/workers-builds/package.json",
+        "sha": "ecebf62bb6aa94420d246c62acbcf1286ae0b10c"
+      },
+      {
+        "path": "apps/workers-observability/package.json",
+        "sha": "7a59eba9f14d372a4f05070c1a2bc9d7e5887112"
+      },
+      {
+        "path": "packages/eslint-config/package.json",
+        "sha": "a152616d77389341afc845b3905873407036c37a"
+      },
+      {
+        "path": "packages/eval-tools/package.json",
+        "sha": "6dab140d9d7c9bc31e2d7163dcb1ae2d41dcaba3"
+      },
+      {
+        "path": "packages/mcp-common/package.json",
+        "sha": "007e9b1af1b57314219971e00f0c57d0af04572c"
+      },
+      {
+        "path": "packages/mcp-observability/package.json",
+        "sha": "a70cbbe4389715b0490e69cdedd234474a535ce3"
+      },
+      {
+        "path": "packages/tools/package.json",
+        "sha": "ab5aeb575aacd7b74e57ec793b3d567c17f7d10f"
+      },
+      {
+        "path": "packages/typescript-config/package.json",
+        "sha": "b549bce8eeee52d59bb4becdcf8a31c9a2d48aaa"
+      },
+      {
+        "path": ".changeset/config.json",
+        "sha": "15d20aa44d98e7c1df1f7a299673bff74caab220"
+      },
+      {
+        "path": ".changeset/README.md",
+        "sha": "e5b6d8d6a67ad0dca8f20117fbfc72e076882d00"
+      },
+      {
+        "path": "implementation-guides/evals.md",
+        "sha": "4c69ec5e73eb9c74a292267193a17630410176fb"
+      },
+      {
+        "path": "implementation-guides/type-validators.md",
+        "sha": "7b972db430e81583640e670097f31758147997cc"
+      },
+      {
+        "path": "apps/ai-gateway/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/ai-gateway/CHANGELOG.md",
+        "sha": "e58b93f578740775c73f940e7220d2b6ae18304b"
+      },
+      {
+        "path": "apps/ai-gateway/CONTRIBUTING.md",
+        "sha": "797f595a8bde8b8f93dc40b71dc0eb491fe05ffe"
+      },
+      {
+        "path": "apps/ai-gateway/README.md",
+        "sha": "37c90f5ca25a48d8882f989735ec879648105599"
+      },
+      {
+        "path": "apps/ai-gateway/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/ai-gateway/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/ai-gateway/vitest.config.ts",
+        "sha": "f2f7039608d1141fda8c883ad2243285dd00aa4e"
+      },
+      {
+        "path": "apps/auditlogs/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/auditlogs/CHANGELOG.md",
+        "sha": "dfa1d77130b8bfaf96ce8f50afd1ab54090e2986"
+      },
+      {
+        "path": "apps/auditlogs/CONTRIBUTING.md",
+        "sha": "87053194420183469634190f84f9313b233009c5"
+      },
+      {
+        "path": "apps/auditlogs/README.md",
+        "sha": "bc3a9555a039cf4930a74a64baa627e24e994270"
+      },
+      {
+        "path": "apps/auditlogs/tsconfig.json",
+        "sha": "0b416ae26f05030e26d7d928dfe80f2b4e4e8215"
+      },
+      {
+        "path": "apps/auditlogs/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/auditlogs/vitest.config.ts",
+        "sha": "a7559d10986c4e3fba79d26eb4c375a2e569584a"
+      },
+      {
+        "path": "apps/autorag/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/autorag/CHANGELOG.md",
+        "sha": "d580ced494fc94391d4c8da58bdde79ee18b84a8"
+      },
+      {
+        "path": "apps/autorag/CONTRIBUTING.md",
+        "sha": "a9ecefd14b7d3a542bf76a637430552bcbeb4f4d"
+      },
+      {
+        "path": "apps/autorag/README.md",
+        "sha": "12d765b780cfddf312ffbb58265e9c1ee7c60c48"
+      },
+      {
+        "path": "apps/autorag/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/autorag/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/autorag/vitest.config.ts",
+        "sha": "d166414e58fb0aacd1b3d73d70ea4b1a08f19273"
+      },
+      {
+        "path": "apps/browser-rendering/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/browser-rendering/CHANGELOG.md",
+        "sha": "e088a8f99190dcb3960a9efc19865365b3bb0ff0"
+      },
+      {
+        "path": "apps/browser-rendering/CONTRIBUTING.md",
+        "sha": "797f595a8bde8b8f93dc40b71dc0eb491fe05ffe"
+      },
+      {
+        "path": "apps/browser-rendering/README.md",
+        "sha": "cfc791f8c1576de68844b12510fb61f9795c5ec6"
+      },
+      {
+        "path": "apps/browser-rendering/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/browser-rendering/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/browser-rendering/vitest.config.ts",
+        "sha": "7129f4c50c266dab56d9796be9da5916b54d78fb"
+      },
+      {
+        "path": "apps/cloudflare-blog/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/cloudflare-blog/CHANGELOG.md",
+        "sha": "17c848d4f2f748c38fccb588f94fd3bbe60d8fcc"
+      },
+      {
+        "path": "apps/cloudflare-blog/README.md",
+        "sha": "5922021ff022e8bfdcc90951d2b7cedaa1abe9e4"
+      },
+      {
+        "path": "apps/cloudflare-blog/tsconfig.json",
+        "sha": "386756e0f94e17f6d6d23aa80bfbf68a90417a8a"
+      },
+      {
+        "path": "apps/cloudflare-blog/vitest.config.ts",
+        "sha": "3a638d7e3fbffb6db06bdd42a0dc04538c654423"
+      },
+      {
+        "path": "apps/cloudflare-blog/worker-configuration.d.ts",
+        "sha": "aa2768c41ddf2798c86cb783998dc3a7d012dc6d"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/CHANGELOG.md",
+        "sha": "7f599012a279835a917db003c40d6965d9edfbfa"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/README.md",
+        "sha": "ba8012185f7d92c0b8a30890aff8875895a07410"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/tsconfig.json",
+        "sha": "19fcd83e300e72edc85bb939aacdea0b12ea3dc0"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/vitest.config.ts",
+        "sha": "cc461b2030358a9a61b091b3bf8235678ee58480"
+      },
+      {
+        "path": "apps/demo-day/.eslintrc.cjs",
+        "sha": "a8da6ed8e307f397572b275335a4471a6f45b544"
+      },
+      {
+        "path": "apps/demo-day/CHANGELOG.md",
+        "sha": "f248fa861fe089b7a0e8e97b1607e37c58b57277"
+      },
+      {
+        "path": "apps/demo-day/tsconfig.json",
+        "sha": "ccecac8da557a4239468ae332a91702f6f8b4c0b"
+      },
+      {
+        "path": "apps/demo-day/types.d.ts",
+        "sha": "2cc25b3910f1f4e7459a9655bc7d7920bd9fb9aa"
+      },
+      {
+        "path": "apps/demo-day/vitest.config.ts",
+        "sha": "781f35c214abb5940c777f83387ff3407d7655d5"
+      },
+      {
+        "path": "apps/demo-day/wrangler.json",
+        "sha": "f4db3300d3a376bc55f7c7b7344cb5931ac8799e"
+      },
+      {
+        "path": "apps/dex-analysis/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/dex-analysis/CHANGELOG.md",
+        "sha": "22a86c2fc9e77f25ebc5e6f6642be4bf183e3f88"
+      },
+      {
+        "path": "apps/dex-analysis/README.md",
+        "sha": "5543df0abe39e59d621a94891ff4b77765d8bc57"
+      },
+      {
+        "path": "apps/dex-analysis/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/dex-analysis/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/dex-analysis/vitest.config.ts",
+        "sha": "16049d611186e430476777160f2b28421c733de8"
+      },
+      {
+        "path": "apps/dns-analytics/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/dns-analytics/CHANGELOG.md",
+        "sha": "79a681a2aa0c5674d5481ec71d7a6e449edc9712"
+      },
+      {
+        "path": "apps/dns-analytics/CONTRIBUTING.md",
+        "sha": "674493803eb86cd2b78d767acebb69fa3f983149"
+      },
+      {
+        "path": "apps/dns-analytics/README.md",
+        "sha": "67e84845af54d6196815384b69b2e75b9b066b49"
+      },
+      {
+        "path": "apps/dns-analytics/tsconfig.json",
+        "sha": "cdecf55f92e47471a5fc305214ddf7b9f00b1af6"
+      },
+      {
+        "path": "apps/dns-analytics/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/dns-analytics/vitest.config.ts",
+        "sha": "d2aa97af38a295c78b966ce00956645e8041056c"
+      },
+      {
+        "path": "apps/docs-ai-search/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/docs-ai-search/CHANGELOG.md",
+        "sha": "a045c72647f2aa1ea89b313f197c70f0af4170d4"
+      },
+      {
+        "path": "apps/docs-ai-search/README.md",
+        "sha": "3000530a998bbd97547f81675f6511ba145cd898"
+      },
+      {
+        "path": "apps/docs-ai-search/tsconfig.json",
+        "sha": "386756e0f94e17f6d6d23aa80bfbf68a90417a8a"
+      },
+      {
+        "path": "apps/docs-ai-search/vitest.config.ts",
+        "sha": "a62b7ff40c0047fe5e8840f6288ecab9bc4ef185"
+      },
+      {
+        "path": "apps/graphql/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/graphql/CHANGELOG.md",
+        "sha": "b4d973fde4cbc59d8764506509adeca5f1b97103"
+      },
+      {
+        "path": "apps/graphql/CONTRIBUTING.md",
+        "sha": "783ed70b46e76e5658f6843af0f34a7df860a223"
+      },
+      {
+        "path": "apps/graphql/README.md",
+        "sha": "61334ed519b001a3891d420ab4edd6d0d409e955"
+      },
+      {
+        "path": "apps/graphql/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/graphql/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/graphql/vitest.config.ts",
+        "sha": "b403edfa8b34b3936e8db2b8069518870bfc696c"
+      },
+      {
+        "path": "apps/logpush/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/logpush/CHANGELOG.md",
+        "sha": "1f23805a28337d3995e2ef32ddfbb82a8c440276"
+      },
+      {
+        "path": "apps/logpush/README.md",
+        "sha": "008c4af099a7070b9ac9d56c281711c695145539"
+      },
+      {
+        "path": "apps/logpush/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/logpush/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/logpush/vitest.config.ts",
+        "sha": "b61d77c4e608b3a712939a72362d7060df4f6029"
+      },
+      {
+        "path": "apps/radar/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/radar/CHANGELOG.md",
+        "sha": "6be68fbb35b1d1bcb0f863615f2e1e5774897470"
+      },
+      {
+        "path": "apps/radar/CONTRIBUTING.md",
+        "sha": "42f2658bd519605435025d71635c5d3dd8ef4bd8"
+      },
+      {
+        "path": "apps/radar/README.md",
+        "sha": "38ba3dbbe8224509980944604166becde51aa3bf"
+      },
+      {
+        "path": "apps/radar/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/radar/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/radar/vitest.config.ts",
+        "sha": "1c67b06a1ed96bb27fc5a246faf0af04ce18b54d"
+      },
+      {
+        "path": "apps/sandbox-container/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/sandbox-container/CHANGELOG.md",
+        "sha": "743de507a8d976ffc587a7dc7efac92921f0f723"
+      },
+      {
+        "path": "apps/sandbox-container/CONTRIBUTING.md",
+        "sha": "c9f8835e6244643ed69fe5dc64250863b88fa3c5"
+      },
+      {
+        "path": "apps/sandbox-container/README.md",
+        "sha": "43d3b668a884016e5aa2a4ce8b42df42685e6f61"
+      },
+      {
+        "path": "apps/sandbox-container/tsconfig.json",
+        "sha": "34b300a4e18edfed908dbc6bc49322a8604585cd"
+      },
+      {
+        "path": "apps/sandbox-container/types.d.ts",
+        "sha": "95b20f3328f2eadcbd054aae945e4855aa598c31"
+      },
+      {
+        "path": "apps/sandbox-container/vitest.config.evals.ts",
+        "sha": "77902ab838838ccafd100392136d0391f2d60770"
+      },
+      {
+        "path": "apps/sandbox-container/vitest.config.ts",
+        "sha": "2897de9d2e1f48811c64d6bb32f3ece6779b5a5e"
+      },
+      {
+        "path": "apps/stack-mcp/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/stack-mcp/CHANGELOG.md",
+        "sha": "ded1d09f7c0a0c21f928c56cc9133ca5834d5996"
+      },
+      {
+        "path": "apps/stack-mcp/README.md",
+        "sha": "d4703c64ddbf22e41a35cf42c906c4fe2c82ba8d"
+      },
+      {
+        "path": "apps/stack-mcp/tsconfig.json",
+        "sha": "386756e0f94e17f6d6d23aa80bfbf68a90417a8a"
+      },
+      {
+        "path": "apps/stack-mcp/vitest.config.ts",
+        "sha": "b7ee790ac27111cccd5ce4485e9f65238cde65df"
+      },
+      {
+        "path": "apps/stack-mcp/worker-configuration.d.ts",
+        "sha": "9eb68e7841d706b666862d9b144d52e0c629998f"
+      },
+      {
+        "path": "apps/workers-bindings/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/workers-bindings/CHANGELOG.md",
+        "sha": "37f931193551a048dcfce973d4c55f3c997faf3b"
+      },
+      {
+        "path": "apps/workers-bindings/CONTRIBUTING.md",
+        "sha": "797f595a8bde8b8f93dc40b71dc0eb491fe05ffe"
+      },
+      {
+        "path": "apps/workers-bindings/README.md",
+        "sha": "eb0d22d9a4d648aa15b4af5add7081ba78c1fe97"
+      },
+      {
+        "path": "apps/workers-bindings/tsconfig.json",
+        "sha": "231f1a095bb603e58f29a0f078536f4c3cc10940"
+      },
+      {
+        "path": "apps/workers-bindings/vitest.config.evals.ts",
+        "sha": "77902ab838838ccafd100392136d0391f2d60770"
+      },
+      {
+        "path": "apps/workers-bindings/vitest.config.ts",
+        "sha": "800464006de04fa6005936e32d9cd1be03fb97d2"
+      },
+      {
+        "path": "apps/workers-builds/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/workers-builds/CHANGELOG.md",
+        "sha": "c0649e9e8336a97a2f7a9ce19a865af7f8b81225"
+      },
+      {
+        "path": "apps/workers-builds/CONTRIBUTING.md",
+        "sha": "3024be9ff961fe65bdc7f50d812b84210e3fe806"
+      },
+      {
+        "path": "apps/workers-builds/README.md",
+        "sha": "095cfe6753c94a7b0bf13702c14213116eebe8c5"
+      },
+      {
+        "path": "apps/workers-builds/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/workers-builds/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/workers-builds/vite.config.mts",
+        "sha": "da8d7d4b9b4c9ce7a8b8d2f0281be35bdd93862c"
+      },
+      {
+        "path": "apps/workers-builds/vitest.config.ts",
+        "sha": "8a3e1d471fd8c6319e62009e53eead068e45307f"
+      },
+      {
+        "path": "apps/workers-observability/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "apps/workers-observability/CHANGELOG.md",
+        "sha": "7ea08eb0fbeb29e9efba05550b200f73c1f3c5f3"
+      },
+      {
+        "path": "apps/workers-observability/CONTRIBUTING.md",
+        "sha": "f5b2752baceb39e04504981eab570ccba86c6ff9"
+      },
+      {
+        "path": "apps/workers-observability/README.md",
+        "sha": "32dee178d8b8b164230ae3e291976b0e85d47e2e"
+      },
+      {
+        "path": "apps/workers-observability/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/workers-observability/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/workers-observability/vitest.config.ts",
+        "sha": "2b7ddf47dcd7d5bdba1c5c8b86dabb76cfe1e4cb"
+      },
+      {
+        "path": "packages/eslint-config/CHANGELOG.md",
+        "sha": "de61d42a2af8d431d7d2c0f29fa84f3df33f789a"
+      },
+      {
+        "path": "packages/eslint-config/default.cjs",
+        "sha": "a37c9189c67989d8abf6f3e28ae441b8200ca76b"
+      },
+      {
+        "path": "packages/eslint-config/README.md",
+        "sha": "b79474eaf968c4321f09affd145d925b32a582b7"
+      },
+      {
+        "path": "packages/eval-tools/CHANGELOG.md",
+        "sha": "dc44a33ad11e5a00e178bd468e85a23e225f4f9e"
+      },
+      {
+        "path": "packages/eval-tools/tsconfig.json",
+        "sha": "ba0c4ae457ac59afd46d9cbfca51b35bce51fbcf"
+      },
+      {
+        "path": "packages/eval-tools/wrangler.json",
+        "sha": "71588e44bab9bd7d6c675421f3b2ad68ac000fab"
+      },
+      {
+        "path": "packages/mcp-common/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "packages/mcp-common/CHANGELOG.md",
+        "sha": "f16e58f86299af98931b290684c15865114911c9"
+      },
+      {
+        "path": "packages/mcp-common/README.md",
+        "sha": "99414fff8ed17ef9719365746478fa788cc52ce3"
+      },
+      {
+        "path": "packages/mcp-common/tsconfig.json",
+        "sha": "698f8491f4db7cd594cb7be71ed7696b63187442"
+      },
+      {
+        "path": "packages/mcp-common/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "packages/mcp-common/vitest.config.ts",
+        "sha": "ecc2c3819ec816e0f4cd833011d6e152e7393f49"
+      },
+      {
+        "path": "packages/mcp-observability/CHANGELOG.md",
+        "sha": "4a414c270b788e0949603ce2e18281151290b207"
+      },
+      {
+        "path": "packages/mcp-observability/tsconfig.json",
+        "sha": "ba87316e7df2f998022eef0a029d318ff9de268e"
+      },
+      {
+        "path": "packages/tools/.eslintrc.cjs",
+        "sha": "f6bf291ae8df72705eeac3fc33983b5e58353119"
+      },
+      {
+        "path": "packages/tools/CHANGELOG.md",
+        "sha": "3e629e869f526a5c49f11937630a90f16403d3ca"
+      },
+      {
+        "path": "packages/tools/README.md",
+        "sha": "30167225dcba9bc43342a2365a9f9ca271299bcf"
+      },
+      {
+        "path": "packages/tools/tsconfig.json",
+        "sha": "3ddb4fd82d977fe5e94ef741ec6f332c317692fd"
+      },
+      {
+        "path": "packages/tools/vitest.config.ts",
+        "sha": "6e43524bcb1ce18c3221b4c8b068e416f86e86f1"
+      },
+      {
+        "path": "packages/typescript-config/CHANGELOG.md",
+        "sha": "781eb7cccd31c55c06d6de996c36ab7f341c4b94"
+      },
+      {
+        "path": "packages/typescript-config/workers-lib.json",
+        "sha": "93097cbea2d44c99557b017f6f6fbc6bf3f47d7a"
+      },
+      {
+        "path": "packages/typescript-config/workers.json",
+        "sha": "a4bd880de7554a67166670f0afbb792249a2a2aa"
+      },
+      {
+        "path": "apps/ai-gateway/src/ai-gateway.app.ts",
+        "sha": "e8ef055fb8a0a9d3019e386d955dfbc63d22c5dc"
+      },
+      {
+        "path": "apps/ai-gateway/src/ai-gateway.context.ts",
+        "sha": "fbc18e0a45b779954fb8459eb93a7e85fd8972e3"
+      },
+      {
+        "path": "apps/ai-gateway/src/types.ts",
+        "sha": "f9cc22545bc2ab9ad21967a1ae9177a54ed513e7"
+      },
+      {
+        "path": "apps/auditlogs/src/auditlogs.app.ts",
+        "sha": "a67dfdd214f23f9ba589008f4e3e46567f34ca60"
+      },
+      {
+        "path": "apps/auditlogs/src/auditlogs.context.ts",
+        "sha": "43456e4b6ed1ff744285348178681c93ecd5acf8"
+      },
+      {
+        "path": "apps/autorag/src/autorag.app.ts",
+        "sha": "773290ebe8ac28bb3ae215b68b6b3192860b3765"
+      },
+      {
+        "path": "apps/autorag/src/autorag.context.ts",
+        "sha": "fbc18e0a45b779954fb8459eb93a7e85fd8972e3"
+      },
+      {
+        "path": "apps/autorag/src/types.ts",
+        "sha": "6bb37934201dc963750d214e51c7caae479834ee"
+      },
+      {
+        "path": "apps/browser-rendering/src/browser.app.ts",
+        "sha": "d6d4493eab62364879d9aead0d92ba6375b25416"
+      },
+      {
+        "path": "apps/browser-rendering/src/browser.context.ts",
+        "sha": "fbc18e0a45b779954fb8459eb93a7e85fd8972e3"
+      },
+      {
+        "path": "apps/cloudflare-blog/src/cloudflare-blog.app.ts",
+        "sha": "3eeca09dcab8f210bd4566c522e7d1e1ca4c2507"
+      },
+      {
+        "path": "apps/cloudflare-blog/src/cloudflare-blog.context.ts",
+        "sha": "512e668aeb613eff8a9bbbb1ad910e77f541bc3a"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/src/cf1-casb.app.ts",
+        "sha": "50d2a2c516b2a4a1a528d2870f196c31d874dd85"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/src/cf1-casb.context.ts",
+        "sha": "f9c119e1f5ad4d27458bd2cf561ca5543d8de3b5"
+      },
+      {
+        "path": "apps/demo-day/frontend/script.js",
+        "sha": "6cc71ad5878f3ed13d5ac7ba9eaf4ee447fdd436"
+      },
+      {
+        "path": "apps/demo-day/src/demo-day.app.ts",
+        "sha": "95b873cb1339f3a0c156396cf87fd21b9cd0d6f8"
+      },
+      {
+        "path": "apps/dex-analysis/src/dex-analysis.app.ts",
+        "sha": "03c8772ec08726edbb8c6fa741d27100d8078062"
+      },
+      {
+        "path": "apps/dex-analysis/src/dex-analysis.context.ts",
+        "sha": "a1fb3a9ff214934802b2dbd25fa2965226b9d3d4"
+      },
+      {
+        "path": "apps/dex-analysis/src/warp_diag_reader.ts",
+        "sha": "cdb06f6076f8b222c1d8e2080c99a0a735b0e351"
+      },
+      {
+        "path": "apps/dns-analytics/src/dns-analytics.app.ts",
+        "sha": "5c58993f59b3f82b613391d0deea230cb9bf3de9"
+      },
+      {
+        "path": "apps/dns-analytics/src/dns-analytics.context.ts",
+        "sha": "5b49e5ae1d586947fa19a9c087a2150fc43227f9"
+      },
+      {
+        "path": "apps/docs-ai-search/src/docs-ai-search.app.ts",
+        "sha": "bd3b89ba0fbd0d3bc6c927c242a1e878153ead07"
+      },
+      {
+        "path": "apps/docs-ai-search/src/docs-ai-search.context.ts",
+        "sha": "ca3d4b2540ae569d53a754ede8d3fad4069a974b"
+      },
+      {
+        "path": "apps/graphql/src/graphql.app.ts",
+        "sha": "159f760eca4c15c247c169ecd396067c197c326a"
+      },
+      {
+        "path": "apps/graphql/src/graphql.context.ts",
+        "sha": "5b49e5ae1d586947fa19a9c087a2150fc43227f9"
+      },
+      {
+        "path": "apps/logpush/src/logpush.app.ts",
+        "sha": "9f7b2bd8a77365ae9444fd126f03a8197e9ec4dc"
+      },
+      {
+        "path": "apps/logpush/src/logpush.context.ts",
+        "sha": "fbc18e0a45b779954fb8459eb93a7e85fd8972e3"
+      },
+      {
+        "path": "apps/radar/src/radar.app.ts",
+        "sha": "bfa84d5d3ca0e7ef7977b5129da7c76c70347d80"
+      },
+      {
+        "path": "apps/radar/src/radar.context.ts",
+        "sha": "673587b72039718604c0aa09f86a23b877b67045"
+      },
+      {
+        "path": "apps/radar/src/utils.ts",
+        "sha": "d83f6ebc6f789f15b911ba81e661c79b598b6087"
+      },
+      {
+        "path": "apps/sandbox-container/evals/exec.eval.ts",
+        "sha": "3813887d57a90e0d4517055644a69eda59993b24"
+      },
+      {
+        "path": "apps/sandbox-container/evals/files.eval.ts",
+        "sha": "a1f12669b3d897dcee99b336a9155bbf842299a3"
+      },
+      {
+        "path": "apps/sandbox-container/evals/initialize.eval.ts",
+        "sha": "55756ecd8cb134c3bcedc3c6392d612d6c969a69"
+      },
+      {
+        "path": "apps/sandbox-container/evals/utils.ts",
+        "sha": "566d94a93499cb4bd3308327e7391d743973ff66"
+      },
+      {
+        "path": "apps/sandbox-container/server/container-tools.ts",
+        "sha": "72c893d09918f9f9b0688c1d6c936861e8d234ce"
+      },
+      {
+        "path": "apps/sandbox-container/server/containerManager.ts",
+        "sha": "50fae4b6d4ff01398f58ed928a8de09b2d5154a0"
+      },
+      {
+        "path": "apps/sandbox-container/server/metrics.ts",
+        "sha": "f3ca9e76ac188e4c0f26814520620194ee566b1e"
+      },
+      {
+        "path": "apps/sandbox-container/server/prompts.ts",
+        "sha": "e6a074f07a7522fc24563870a25720aac26371ef"
+      },
+      {
+        "path": "apps/sandbox-container/server/sandbox.server.app.ts",
+        "sha": "c5d56092361269633dd35e57583cffa506ad1089"
+      },
+      {
+        "path": "apps/sandbox-container/server/sandbox.server.context.ts",
+        "sha": "016538687e208dce3d8e948145c208604dcd466a"
+      },
+      {
+        "path": "apps/sandbox-container/server/sandboxTemplate.ts",
+        "sha": "73aee1fdd791ac4548f180f76c358950895d8bef"
+      },
+      {
+        "path": "apps/sandbox-container/server/userContainer.ts",
+        "sha": "d4d217d8e20aa7b4fa06a3581793b19a66ead184"
+      },
+      {
+        "path": "apps/sandbox-container/server/utils.ts",
+        "sha": "77e7ec2ab760b4e0add9a90667efe85adec511ab"
+      },
+      {
+        "path": "apps/sandbox-container/shared/schema.ts",
+        "sha": "0cdce059694ddbc27dae46ff08d52476cd924ecc"
+      },
+      {
+        "path": "apps/stack-mcp/src/stack-mcp.app.ts",
+        "sha": "5ec4d6460597a043ff9048154e587e9cd6bf3ad2"
+      },
+      {
+        "path": "apps/stack-mcp/src/stack-mcp.context.ts",
+        "sha": "2d3d24ed881a40981073cb6b1d03103e3c05de6b"
+      },
+      {
+        "path": "apps/workers-bindings/evals/hyperdrive.eval.ts",
+        "sha": "ca663f06b62570924007ece47995357a8e242c6a"
+      },
+      {
+        "path": "apps/workers-bindings/evals/kv_namespaces.eval.ts",
+        "sha": "0d8d2b9cc2eb9a6cfb00b5c812c1a04e93eb40d8"
+      },
+      {
+        "path": "apps/workers-bindings/evals/types.d.ts",
+        "sha": "9b67d06dab95206551e6c1745014941676843e90"
+      },
+      {
+        "path": "apps/workers-bindings/evals/utils.ts",
+        "sha": "6460c04804ac6a89f2ee0c63723a16b6d9683634"
+      },
+      {
+        "path": "apps/workers-bindings/src/bindings.app.ts",
+        "sha": "f5cc9f24d9be62a76428c6e70b39df305379c7ef"
+      },
+      {
+        "path": "apps/workers-bindings/src/bindings.context.ts",
+        "sha": "855740aa1f9063e4acd3f73a813f18b20a557105"
+      },
+      {
+        "path": "apps/workers-builds/src/workers-builds.app.ts",
+        "sha": "7790f3eeb5b2b28b3df36c0e12fc62c3fa93060e"
+      },
+      {
+        "path": "apps/workers-builds/src/workers-builds.context.ts",
+        "sha": "5b49e5ae1d586947fa19a9c087a2150fc43227f9"
+      },
+      {
+        "path": "apps/workers-observability/src/workers-observability.app.ts",
+        "sha": "0a5a4b4817f5bea1ee5e8edb33464b7d01ddecab"
+      },
+      {
+        "path": "apps/workers-observability/src/workers-observability.context.ts",
+        "sha": "94470b106b7d7e282292e846ae9454791596fd84"
+      },
+      {
+        "path": "packages/eval-tools/src/runTask.ts",
+        "sha": "e6d442bcedf0ee361eb215a076baf446dfca0952"
+      },
+      {
+        "path": "packages/eval-tools/src/scorers.ts",
+        "sha": "e68c12ebf675b2c98078fdcfa1b033cb03bd7e38"
+      },
+      {
+        "path": "packages/eval-tools/src/test-models.ts",
+        "sha": "bf691e9ac42872afdf2993d33da9574a215fccfa"
+      },
+      {
+        "path": "packages/mcp-common/src/account-manager.ts",
+        "sha": "4a443a8283fde2e7d837bd9fdc481141563e19e8"
+      },
+      {
+        "path": "packages/mcp-common/src/account-tool.ts",
+        "sha": "6fea803215df792975ba8311c84589df9022d879"
+      },
+      {
+        "path": "packages/mcp-common/src/api-token-mode.ts",
+        "sha": "d91a053a8291187b91aa3da30dfe75699121e0a5"
+      },
+      {
+        "path": "packages/mcp-common/src/auth-props.ts",
+        "sha": "c83dad6269d2f8cbeddace1972da3f3724b78331"
+      },
+      {
+        "path": "packages/mcp-common/src/cloudflare-api.ts",
+        "sha": "4d776a767e9242422da437f14267cddac051404a"
+      },
+      {
+        "path": "packages/mcp-common/src/cloudflare-auth.ts",
+        "sha": "1795ad8a226983dd530352a1a83ecdd0c53b1c7d"
+      },
+      {
+        "path": "packages/mcp-common/src/cloudflare-oauth-handler.ts",
+        "sha": "8eac3cd18bea7ed5800355259343c02a32d1ed89"
+      },
+      {
+        "path": "packages/mcp-common/src/config.ts",
+        "sha": "aefba22e3cbd2ce248458e3a52c0259e63c70184"
+      },
+      {
+        "path": "packages/mcp-common/src/durable-kv-store.ts",
+        "sha": "66858699a76793a3d7e3294ac19ce052720c0d16"
+      },
+      {
+        "path": "packages/mcp-common/src/format.ts",
+        "sha": "a7c8e7fa0ee1f1d41b29c38329376665b124485a"
+      },
+      {
+        "path": "packages/mcp-common/src/mcp-app.ts",
+        "sha": "66fd2b8497f7d39ceccb787588fbff373e96067c"
+      },
+      {
+        "path": "packages/mcp-common/src/mcp-error.ts",
+        "sha": "569d45de05a4e7435075089f47b356fd3dd42093"
+      },
+      {
+        "path": "packages/mcp-common/src/oauth-router.ts",
+        "sha": "827f1a56b7c4c21a4f08dabd8510e1f2b5ef8f99"
+      },
+      {
+        "path": "packages/mcp-common/src/pagination.ts",
+        "sha": "fdf88dbc0adb3238f79f318fb6f2153d8ea0d325"
+      },
+      {
+        "path": "packages/mcp-common/src/poll.ts",
+        "sha": "f76493da5436370cca1b5254c0a6698d3a990f12"
+      },
+      {
+        "path": "packages/mcp-common/src/registration-context.ts",
+        "sha": "8052c3f30c699cf97ed49cd0a447cde79367e4c6"
+      },
+      {
+        "path": "packages/mcp-common/src/request-context.ts",
+        "sha": "485d6dcee337e5dd2cecaa1b19c375101b28d9d7"
+      },
+      {
+        "path": "packages/mcp-common/src/scopes.ts",
+        "sha": "7769de67714dfcc692efeb2d6fdc547a7086960a"
+      },
+      {
+        "path": "packages/mcp-common/src/sentry.ts",
+        "sha": "543a1b2b0bc9f871615e63a53d9a05b194b6f531"
+      },
+      {
+        "path": "packages/mcp-common/src/transport-migration.ts",
+        "sha": "48ce41c7f133ef5548eb6355523ae999ddd2dea5"
+      },
+      {
+        "path": "packages/mcp-common/src/user-agent.ts",
+        "sha": "78ec3e90dababae52341a2a586ff19640a225ff1"
+      },
+      {
+        "path": "packages/mcp-common/src/utils.ts",
+        "sha": "8032dd86b0263d28fb5bb906570fd1a632ec5ed9"
+      },
+      {
+        "path": "packages/mcp-common/src/v4-api.ts",
+        "sha": "6748c68b64694c7a7c225dbd5daa388c779ab135"
+      },
+      {
+        "path": "packages/mcp-common/src/workers-oauth-utils.ts",
+        "sha": "ba3df7e65dd793e2467844874bc46e7f6c335c73"
+      },
+      {
+        "path": "packages/mcp-observability/src/analytics-engine.ts",
+        "sha": "f50c4dcb8c539327c106e5d246ad9804ec0f10d1"
+      },
+      {
+        "path": "packages/mcp-observability/src/metrics.ts",
+        "sha": "2aa5bdee5ee2234bcf9dd66d9b7460de9b45f44a"
+      },
+      {
+        "path": "packages/tools/src/changesets.ts",
+        "sha": "18461d8df477a00343ee6aa3fb4a1a4df8927613"
+      },
+      {
+        "path": "packages/tools/src/proc.ts",
+        "sha": "841717997d94b31fdb01a08d952fc19b9c8ddd68"
+      },
+      {
+        "path": "packages/tools/src/tsconfig.ts",
+        "sha": "e63e3aba42d727e769e16c02e6c0cc599941a4b8"
+      },
+      {
+        "path": "apps/ai-gateway/src/tools/ai-gateway.tools.ts",
+        "sha": "429801366332b657fff84f7bb48cdcb925e753a7"
+      },
+      {
+        "path": "apps/auditlogs/src/tools/auditlogs.tools.ts",
+        "sha": "0e08d778aed84b669dc8a5ae1803acc10159ecd5"
+      },
+      {
+        "path": "apps/autorag/src/tools/autorag.tools.ts",
+        "sha": "82a5c852a9495569dc2e2f81a5713b79298ba8a4"
+      },
+      {
+        "path": "apps/browser-rendering/src/tools/browser.tools.ts",
+        "sha": "7e64cb6c34c8987ad7e7db437af663123832aae1"
+      },
+      {
+        "path": "apps/cloudflare-blog/src/tools/blog.tools.ts",
+        "sha": "ddaa8471e98ee92d6cf2dfeaba2e6ab1524b59c2"
+      },
+      {
+        "path": "apps/cloudflare-blog/src/types/blog.types.ts",
+        "sha": "6a880453d199c352ec031f624d45157c770ec768"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/src/api/cf1-integration.api.ts",
+        "sha": "fe5814278360aa560a916049e82914458a0e6721"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/src/tools/integrations.tools.ts",
+        "sha": "57c9d2bf198051549a70fcec66b900a646988573"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/src/types/cf1-integrations.types.ts",
+        "sha": "fe4eb165571c169c67420f5cc16b485b9120b3d7"
+      },
+      {
+        "path": "apps/dex-analysis/src/tools/dex-analysis.tools.ts",
+        "sha": "a29e14dba10de03e63f167a240f0d652db409e73"
+      },
+      {
+        "path": "apps/dns-analytics/src/tools/dex-analytics.tools.ts",
+        "sha": "d87be730390a4f92111f86fb8827d81f40a6dda7"
+      },
+      {
+        "path": "apps/graphql/src/tools/graphql.tools.ts",
+        "sha": "ab5a3f56102384c4f002ebcf31e77efc1a97dccf"
+      },
+      {
+        "path": "apps/logpush/src/tools/logpush.tools.ts",
+        "sha": "73d784d4870a7f299ca1fe025701f0c624bfcb28"
+      },
+      {
+        "path": "apps/radar/src/tools/radar.tools.ts",
+        "sha": "f94b9360f24531184b34fa65982a49811171775a"
+      },
+      {
+        "path": "apps/radar/src/tools/url-scanner.tools.ts",
+        "sha": "93094a3e03fd47bfb3df18f8412982e9f8d7be34"
+      },
+      {
+        "path": "apps/radar/src/types/radar.ts",
+        "sha": "42b6cb93efb7f4a6ecce10635592c1468ced6d7f"
+      },
+      {
+        "path": "apps/radar/src/types/url-scanner.ts",
+        "sha": "441e943c32f8c233e302a062266b4bcb7f2cf4ab"
+      },
+      {
+        "path": "apps/stack-mcp/src/tools/stack.tools.ts",
+        "sha": "003e49b2f705864335e13d11d2884057cfb7a666"
+      },
+      {
+        "path": "apps/stack-mcp/src/types/stack.types.ts",
+        "sha": "2fcd67850aac1e1c05096a25b541a71f3d2219a9"
+      },
+      {
+        "path": "apps/workers-bindings/src/tools/d1.tools.ts",
+        "sha": "2ae6bafe71ff22ead4feb4d98d7cc6a8fae0a327"
+      },
+      {
+        "path": "apps/workers-bindings/src/tools/hyperdrive.tools.ts",
+        "sha": "eae10ba7f60bb8a1b8431c07317f929ada4c4ce4"
+      },
+      {
+        "path": "apps/workers-bindings/src/tools/kv_namespace.tools.ts",
+        "sha": "3f715f1122e8948cd06f24b509142e38973bb340"
+      },
+      {
+        "path": "apps/workers-bindings/src/tools/r2_bucket.tools.ts",
+        "sha": "6b9f359bc36ec23464298081ac18f992109cb17f"
+      },
+      {
+        "path": "apps/workers-bindings/src/types/d1.types.ts",
+        "sha": "c87dc3c1be230426e74b1b600ebcb0431fbddbed"
+      },
+      {
+        "path": "apps/workers-bindings/src/types/hyperdrive.types.ts",
+        "sha": "d532d6ed12c5940d7c684cddc9c0475d5f4dd007"
+      },
+      {
+        "path": "apps/workers-bindings/src/types/kv_namespace.types.ts",
+        "sha": "b1efd9c00e2d6fbbc213262001cf42948688cc67"
+      },
+      {
+        "path": "apps/workers-bindings/src/types/r2_bucket.types.ts",
+        "sha": "33e4bc2076546fa5dc9ee6a75b351b417d39b42f"
+      },
+      {
+        "path": "apps/workers-builds/src/api/workers-builds.api.ts",
+        "sha": "061f5240161acc5c2d355d968002e7a178df416b"
+      },
+      {
+        "path": "apps/workers-builds/src/tools/workers-builds.tools.ts",
+        "sha": "3936684ab52f24fd02247b6a5e785f061b9bd2bd"
+      },
+      {
+        "path": "apps/workers-builds/src/types/workers-builds.types.ts",
+        "sha": "7520d4accba6d6ace4d59fb11cf25e096e90501e"
+      },
+      {
+        "path": "apps/workers-observability/src/api/workers-observability.api.ts",
+        "sha": "c1ed8c1f81bdb748796aaec5ff739ea243c90609"
+      },
+      {
+        "path": "apps/workers-observability/src/tools/workers-observability.tools.ts",
+        "sha": "c5e1262da3e40a3ccd18bd137b1804a068d68e80"
+      },
+      {
+        "path": "apps/workers-observability/src/types/workers-logs.types.ts",
+        "sha": "7cf6134a192ac6ccdd59fc854a58bebb6e9930a7"
+      },
+      {
+        "path": "packages/mcp-common/src/shared-prompts/docs-ai-search.prompts.ts",
+        "sha": "6325bbf4e1e6d8158605e1edc3307df198bde1b0"
+      },
+      {
+        "path": "packages/mcp-common/src/shared-tools/docs-ai-search.tools.ts",
+        "sha": "947a3cc3b34ea0ce6bb8bae81cccb8756ab7aa6c"
+      },
+      {
+        "path": "packages/mcp-common/src/shared-tools/worker.tools.ts",
+        "sha": "e268b68040407febbf38b5cf5d42db5feb11052f"
+      },
+      {
+        "path": "packages/mcp-common/src/shared-tools/workers.api.ts",
+        "sha": "1e922649643f3cf9c993d75b6d280ef0c203e907"
+      },
+      {
+        "path": "packages/mcp-common/src/shared-tools/workers.types.ts",
+        "sha": "26373041ca9fc720e74e8f536c431097f32d864b"
+      },
+      {
+        "path": "packages/mcp-common/src/shared-tools/zone.api.ts",
+        "sha": "032a63053c30ad366d208cb3a25e2588a6c8c492"
+      },
+      {
+        "path": "packages/mcp-common/src/shared-tools/zone.tools.ts",
+        "sha": "4ec7b989bcfd1e979ab8e8b1ddeb6344fdbdf249"
+      },
+      {
+        "path": "packages/tools/src/bin/runx.ts",
+        "sha": "6f04a4d83aa42ff7842eaef65816900df635b4b3"
+      },
+      {
+        "path": "packages/tools/src/cmd/deploy-published-packages.ts",
+        "sha": "59c52b7d1f7d730a2192eeee66ce2ca754568442"
+      }
+    ],
+    "repo_pushed_at": "2026-10-22T15:21:16Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": false,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 84,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 40,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "apps/demo-day/frontend/script.js",
+      "line": 275,
+      "snippet": "\"Get a preview of the future of agentic software. See how the world's most innovative platforms have connected agents to their services with MCP to build a new ",
+      "host": "cloudflare.tv",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "apps/demo-day/frontend/script.js",
+      "line": 285,
+      "snippet": "'https://calendar.google.com/calendar/render?action=TEMPLATE&text=MCP+Demo+Day&details=Get+a+preview+of+the+future+of+agentic+software.+See+how+the+world%27s+mo",
+      "host": "calendar.google.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "apps/demo-day/frontend/script.js",
+      "line": 292,
+      "snippet": "'https://outlook.live.com/calendar/0/deeplink/compose?subject=MCP+Demo+Day&body=Get+a+preview+of+the+future+of+agentic+software.+See+how+the+world%27s+most+inno",
+      "host": "outlook.live.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "apps/demo-day/src/demo-day.app.ts",
+      "line": 35,
+      "snippet": "text: \"Above is the contents of the demo day webpage, hosted at https://demo-day.mcp.cloudflare.com. Use it to answer the user's questions.\",",
+      "host": "demo-day.mcp.cloudflare.com.",
+      "deduction": 0
+    }
+  ],
+  "evidence": {
+    "files_scanned": 324,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "cloudflare.tv",
+      "calendar.google.com",
+      "outlook.live.com",
+      "demo-day.mcp.cloudflare.com."
+    ],
+    "declared_hosts": 3,
+    "install_detected": false,
+    "age_days": 11
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1974
+  },
+  "duration_ms": 2056
+}

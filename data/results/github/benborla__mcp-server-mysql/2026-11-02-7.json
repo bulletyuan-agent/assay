@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154338Z",
+  "target": {
+    "source": "github",
+    "id": "benborla/mcp-server-mysql",
+    "url": "https://github.com/benborla/mcp-server-mysql",
+    "name": "mcp-server-mysql"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:45:02.915Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "b9c714e182422b9f18437242b80cf003adf1c7ea",
+    "files_scanned": 35,
+    "candidates": 35,
+    "excluded_non_shipped": 27,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".mcp.json",
+        "sha": "62b73a6bf76b51f3d351ac50ca0e3ee6ef5557b8"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "50b749200d8292f63fd7de361ad247793046afe7"
+      },
+      {
+        "path": ".github/workflows/lint.yml",
+        "sha": "05e19c9f1dbd2a53e85aede68497d15b613514dd"
+      },
+      {
+        "path": ".github/workflows/npm-publish.yml",
+        "sha": "d5631d8d981fa2c3ffbeab5a5f517e0659c03eeb"
+      },
+      {
+        "path": ".github/workflows/plugin-quality-gate.yml",
+        "sha": "c60a724afcd8c9f40429dd0cb93d26abb0ba1e51"
+      },
+      {
+        "path": "index.ts",
+        "sha": "30420551920552d9f5d34d5e0d8cff5bf0e905f2"
+      },
+      {
+        "path": "skills/mcp-server-mysql/SKILL.md",
+        "sha": "3197ac6e6d8452c7f20d148a8f4944ff96ce29f9"
+      },
+      {
+        "path": "src/config/index.ts",
+        "sha": "1426f4cd2ef6ea5d6ba7e9995813654ec455b8b4"
+      },
+      {
+        "path": "src/db/index.ts",
+        "sha": "0e99128d32d8baf1250e413537167a1148d096c4"
+      },
+      {
+        "path": "src/types/index.ts",
+        "sha": "18110be6dac64bba60256a309a15656ee439babe"
+      },
+      {
+        "path": "src/utils/index.ts",
+        "sha": "8e504b93acd94f5dfe258afb24ec636e436d5fc1"
+      },
+      {
+        "path": "package.json",
+        "sha": "f4eaf7470306cbf06039ca59f901b09764853f5b"
+      },
+      {
+        "path": "scripts/setup-test-db.ts",
+        "sha": "a03e92942a23d90dfe5e2139542032cd0db7c884"
+      },
+      {
+        "path": "scripts/start-tunnel-rds.sh",
+        "sha": "ea3e7c6f87ba82b5e7a4dff08147060605ae56a0"
+      },
+      {
+        "path": "scripts/stop-tunnel-rds.sh",
+        "sha": "05b9aeb9e4a42416fc675b4bcac5c22bef244e17"
+      },
+      {
+        "path": ".markdownlint.yml",
+        "sha": "199a641994f368732481cdf5d35a628ad6929a55"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "89ebee5fb2b7081e457449c6904fa0ec1b342874"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "5f5aa6f2a6a790204ce071398ee6299895ab5783"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha": "0f6bbcd27915a9562ffbddd0df70e3e062f4b24c"
+      },
+      {
+        "path": "evals.ts",
+        "sha": "7cfc36f56f67e582f69707f6c12a1d765bc444f9"
+      },
+      {
+        "path": "LICENSE.md",
+        "sha": "ef9618ff5103bd384318c88bdb8baba76010fbd7"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "sha": "ce1b46419c8a60069f0b53458a42807affa93cbd"
+      },
+      {
+        "path": "PROJECT_SETUP_GUIDE.md",
+        "sha": "64d70308dbcd4c3b2fc95be6be8814f3f05b7e64"
+      },
+      {
+        "path": "README-MULTI-DB.md",
+        "sha": "df32f160a02adbd9916e174656d4a1d0d2204e98"
+      },
+      {
+        "path": "README.md",
+        "sha": "af5d63fe367c80c8086457f228f68c09750067b2"
+      },
+      {
+        "path": "RELEASE.md",
+        "sha": "d41b4d4d35064f92b0d965773ef455f76f011d3a"
+      },
+      {
+        "path": "smithery.yaml",
+        "sha": "96aee2be900f8a05d7f1378cb368aac2705230e0"
+      },
+      {
+        "path": "src/db/permissions.ts",
+        "sha": "508ccc7ce4a7ea3d359dcc8fed97eb2cca6ac911"
+      },
+      {
+        "path": "src/db/utils.ts",
+        "sha": "350e044fe6ac8e11dfe1e793859fb0110ca88ceb"
+      },
+      {
+        "path": "src/security/redact.ts",
+        "sha": "65741c89f4a5e483618b3ba50cc70a9d2aba7494"
+      },
+      {
+        "path": "test-db.js",
+        "sha": "9a2feb2b43a244d01417945f0d984c92e1ac4c9f"
+      },
+      {
+        "path": "TODO.md",
+        "sha": "198705eaa2366b462398ed1beadfb3c6fb994f37"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "1451261c1dfb2cb5f9653456711acc0c9a80e64e"
+      },
+      {
+        "path": "tsconfig.scripts.json",
+        "sha": "41fbcc85663c2c380242811876cb117cbcfcd8fd"
+      },
+      {
+        "path": ".codex-plugin/plugin.json",
+        "sha": "401f4fb4217aec98aa5e924783e3c4c0090b7f6b"
+      }
+    ],
+    "repo_pushed_at": "2026-07-27T13:36:52Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 94,
+    "dims": {
+      "maintenance": 60,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 35,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 98
+  },
+  "network": {
+    "calls": 7,
+    "failed": 0,
+    "ms": 2935
+  },
+  "duration_ms": 1750
+}

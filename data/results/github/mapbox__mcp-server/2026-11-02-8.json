@@ -1,0 +1,910 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154652Z",
+  "target": {
+    "source": "github",
+    "id": "mapbox/mcp-server",
+    "url": "https://github.com/mapbox/mcp-server",
+    "name": "mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:47:59.052Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "1e9e4a8c49b65b3a4badb014a1cbbac82ed8bf06",
+    "files_scanned": 203,
+    "candidates": 203,
+    "excluded_non_shipped": 132,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/copilot-instructions.md",
+        "sha": "22776527843e64c65172fd59aceabf6af0875c2c"
+      },
+      {
+        "path": ".husky/pre-commit",
+        "sha": "15ec148f4000ffb5492a815652f8b18dff7142eb"
+      },
+      {
+        "path": ".husky/setup-hooks.js",
+        "sha": "d7096e43221d141a7746da56ed0fa2da2556884f"
+      },
+      {
+        "path": ".github/workflows/test.yml",
+        "sha": "35ebffc31e06f2b54dbf92f78099fc617c18e5ac"
+      },
+      {
+        "path": ".claude/hillclimb/tool-selection-openai/_state.json",
+        "sha": "74d7168a066131771858b24f181b5b6db18335c4"
+      },
+      {
+        "path": ".claude/hillclimb/tool-selection/_state.json",
+        "sha": "67f4186e90c3a36faf62ec0d8f4c3ee3305c2824"
+      },
+      {
+        "path": "src/cli.ts",
+        "sha": "c540935d6765c90324d84461f95e7598c94a51ee"
+      },
+      {
+        "path": "src/index.ts",
+        "sha": "46c96a661f3e054ab7a01f636cf3281c4ecb6979"
+      },
+      {
+        "path": "server.json",
+        "sha": "6e6faf347521e5904fb6201a5ad0416b993e8037"
+      },
+      {
+        "path": "src/completions/index.ts",
+        "sha": "6be1a81023333e435b68c7c3fe8bb4a006befba9"
+      },
+      {
+        "path": "src/prompts/index.ts",
+        "sha": "91bedc832102d3ec2215794765d947aeb46525f3"
+      },
+      {
+        "path": "src/resources/index.ts",
+        "sha": "e6a897a8e51058664ece1dd9b0bd77c5ef6beec1"
+      },
+      {
+        "path": "src/tools/index.ts",
+        "sha": "a0f12dd318b209692aab13a50ccdcc47cb4f5b68"
+      },
+      {
+        "path": "src/utils/index.ts",
+        "sha": "3a28b6e8f51d452c3fdf0132594d3737f4d0fc9f"
+      },
+      {
+        "path": "package.json",
+        "sha": "ad7e599fbbc1d600cdb95934708920b09ecfe633"
+      },
+      {
+        "path": "scripts/add-shebang.cjs",
+        "sha": "bd2d38fb46fdaeb62fcd0472d6bbdc68752ef6f1"
+      },
+      {
+        "path": "scripts/build-helpers.cjs",
+        "sha": "feff02bcae2d95b9e8f1ebbb8b713ca1518eaf52"
+      },
+      {
+        "path": "scripts/dev-http-server.ts",
+        "sha": "a258562dbe8b64247609979455b42ad622dd4d67"
+      },
+      {
+        "path": "scripts/prepare-changelog-release.cjs",
+        "sha": "595254ac8355a31231d2ebd28d53258bdb23d9b3"
+      },
+      {
+        "path": "scripts/sync-manifest-version.cjs",
+        "sha": "d1bb85b0e38f8cb03f69577d116984c61535b230"
+      },
+      {
+        "path": ".cz.json",
+        "sha": "4279a74946464c8027c37ca6c1f86617daf6ebb2"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "d9f87e89c679746247dab4356e21ee10319bf967"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "056e66b86fc25137b1b2ab9dde55b361a2953243"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "0b7d207bb302762b6a401ec1566e6433a0a2d680"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "a591e5e75f2bcf87f714ceabaf4fadfa2e5a756c"
+      },
+      {
+        "path": "cspell.config.json",
+        "sha": "76d2d3be61065b6cf5903547430bdab31cbc3937"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "sha": "16a59664054360f6e74d96c2d40bd657f91334fe"
+      },
+      {
+        "path": "glama.json",
+        "sha": "6ad0a4f2bc1d0063f628380ce18dab1b60cc680f"
+      },
+      {
+        "path": "LICENSE.md",
+        "sha": "4affd8823a0599116035fd094daa506a1413e835"
+      },
+      {
+        "path": "manifest.json",
+        "sha": "aced3f2f0950451787de9976b99e3f34695a29e7"
+      },
+      {
+        "path": "plopfile.cjs",
+        "sha": "76539094c76b7fd4bae3d717be2efbf341f76119"
+      },
+      {
+        "path": "README.md",
+        "sha": "35ddc810c86f731748d2f610e91d2c2ef3faf336"
+      },
+      {
+        "path": "src/completions/completionProvider.ts",
+        "sha": "843ac69267c3e74d0c603f19c22043ab1698410d"
+      },
+      {
+        "path": "src/config/toolConfig.ts",
+        "sha": "75881b700a8666366207e4e9246526243ca304a4"
+      },
+      {
+        "path": "src/constants/categories.ts",
+        "sha": "fb54d8857584e1d4a28d5a7ee7e63bd810477dff"
+      },
+      {
+        "path": "src/prompts/BasePrompt.ts",
+        "sha": "71d13df13067248d6ee14583b15b6366c9969644"
+      },
+      {
+        "path": "src/prompts/FindPlacesNearbyPrompt.ts",
+        "sha": "91fa774cc6ad3ca15ffc319017311cd98d94a8ed"
+      },
+      {
+        "path": "src/prompts/GetDirectionsPrompt.ts",
+        "sha": "51870d2b011510a2fec7b8660921ae82fc482e77"
+      },
+      {
+        "path": "src/prompts/promptRegistry.ts",
+        "sha": "8e799e27d98062dae008d050bf0fa7f8df8ceead"
+      },
+      {
+        "path": "src/prompts/SearchAlongRoutePrompt.ts",
+        "sha": "d44958d15e6010f93fa9a177fff9dc480dfabd1a"
+      },
+      {
+        "path": "src/prompts/ShowReachableAreasPrompt.ts",
+        "sha": "b3d9a2f812ba207936727a2d941182459b431a2f"
+      },
+      {
+        "path": "src/resources/BaseResource.ts",
+        "sha": "e149ed93b75a86469f844e054a60970e4184c214"
+      },
+      {
+        "path": "src/resources/MapboxApiBasedResource.ts",
+        "sha": "99a7e8d9caf7dcecc441bbb2995c654684eab99d"
+      },
+      {
+        "path": "src/resources/resourceRegistry.ts",
+        "sha": "f8322878e859238470bb95456abfb6c4b80510b8"
+      },
+      {
+        "path": "src/schemas/geojson.ts",
+        "sha": "d18f7f0d6b2173a2fd72f0ab5a2316e61bb41d76"
+      },
+      {
+        "path": "src/schemas/shared.ts",
+        "sha": "cd4939004ac3836a64587ce818cd33c9354ef625"
+      },
+      {
+        "path": "src/tools/BaseTool.ts",
+        "sha": "d8dc04755fb5cc321ac2c2f6fc7de778c35a5470"
+      },
+      {
+        "path": "src/tools/lenientOutputSchema.ts",
+        "sha": "c81b8bbdac8dd68da9d21f16c6169c76f42a4c72"
+      },
+      {
+        "path": "src/tools/MapboxApiBasedTool.ts",
+        "sha": "cfe8f76968c335ccce04466ccc5c31e3c85bb1b2"
+      },
+      {
+        "path": "src/tools/toolRegistry.ts",
+        "sha": "f17376d8ad91e092e816c4311973f3b9db6b8440"
+      },
+      {
+        "path": "src/tools/validateOutput.ts",
+        "sha": "3a8aaf51c0257f2eccfdcf945740f8a5c092e77e"
+      },
+      {
+        "path": "src/utils/computeRef.ts",
+        "sha": "757076f8e6cee9f5e9557f1c2f8ffe424f384e16"
+      },
+      {
+        "path": "src/utils/dateUtils.ts",
+        "sha": "564ea806b8acbf095bdded819e5dd46c25334c91"
+      },
+      {
+        "path": "src/utils/directionsRef.ts",
+        "sha": "df72937615789d0979a5358d8b271ec542ce2389"
+      },
+      {
+        "path": "src/utils/httpPipeline.ts",
+        "sha": "56a65389b5a9e859e6f5c294a3a1bd7fe9fe2149"
+      },
+      {
+        "path": "src/utils/inlinePayloadRef.ts",
+        "sha": "d3f57bde8c64b549aa3a0dd23f0df2293ae0e9b3"
+      },
+      {
+        "path": "src/utils/jsonSchema2020.ts",
+        "sha": "b1ba04d82770f30541fc3846135ac167bf60359d"
+      },
+      {
+        "path": "src/utils/jwtUtils.ts",
+        "sha": "a685c2a4959b3e2cb5b0c69015c7db36c8189683"
+      },
+      {
+        "path": "src/utils/mapAppPayload.ts",
+        "sha": "20bcee3bf158ae7272afe5c623222fb64b7457fb"
+      },
+      {
+        "path": "src/utils/mapboxPublicToken.ts",
+        "sha": "01f16b257a35611c4f1b7e74b07824e1f8c4c07f"
+      },
+      {
+        "path": "src/utils/redactingSpanExporter.ts",
+        "sha": "c41f8717175cbb78f75bdb5f615e61ce3dbe3415"
+      },
+      {
+        "path": "src/utils/redactToken.ts",
+        "sha": "7b2887ca0b584762af6c86613d2b59835b3c482e"
+      },
+      {
+        "path": "src/utils/responseRef.ts",
+        "sha": "79c50f2d9558a06f213f3fb76f0096ae8a85c6e9"
+      },
+      {
+        "path": "src/utils/selfFetchRef.ts",
+        "sha": "c9b8c4dcc8c42c55e9ac059832f171d0e1e8691d"
+      },
+      {
+        "path": "src/utils/serverInstructions.ts",
+        "sha": "fbf9b9a202b51faa5bf4a0c4cd6b7d02b4c5c699"
+      },
+      {
+        "path": "src/utils/storeMapPayload.ts",
+        "sha": "797a16504342ab4404cdfc6a6d2daaebb7db326c"
+      },
+      {
+        "path": "src/utils/temporaryResourceManager.ts",
+        "sha": "18e5c42bc31557e8dce7593323059fc7445301c5"
+      },
+      {
+        "path": "src/utils/tracing.ts",
+        "sha": "8afa85c57ad442ce9e64c82f2d35d47b8d932269"
+      },
+      {
+        "path": "src/utils/types.ts",
+        "sha": "f6c3040f4817e0f4fdb2e7041dbe2e2f394766b3"
+      },
+      {
+        "path": "src/utils/urlSafety.ts",
+        "sha": "a1b7598bb54be5be8af7499631e87ac171dc88a8"
+      },
+      {
+        "path": "src/utils/versionUtils-cjs.cts",
+        "sha": "fc4011ad5894ffe7de25a286e58ac847426b9cb8"
+      },
+      {
+        "path": "src/utils/versionUtils.ts",
+        "sha": "50d50924873df3b31070c7fe5b59c2764e41bf83"
+      },
+      {
+        "path": "TOOL_CONFIGURATION.md",
+        "sha": "e6a4eecf99f80e3d7aba795abd839fd9f5a080b4"
+      },
+      {
+        "path": "tsconfig.base.json",
+        "sha": "302df0655a6e8b133d86d10d0efdeba72383d021"
+      },
+      {
+        "path": "tsconfig.examples.json",
+        "sha": "cdc62178fcc820713939dbb0f5285519ef73292d"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "1dbb49fadd2945819c9292b11f25e03912f6e9a5"
+      },
+      {
+        "path": "tsconfig.src.json",
+        "sha": "3d624a5c66d39db71af57c9ae70179e1463bb358"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "235aa9df48ade7746568fcd0e2f4e9dea4e81ff0"
+      },
+      {
+        "path": "patches/README.md",
+        "sha": "ce620a5eb96910622fc77020cda18e1043bd9772"
+      },
+      {
+        "path": "src/resources/category-list/CategoryListResource.ts",
+        "sha": "0c901a9f7b7c7b359da8211af72d90b66f74e601"
+      },
+      {
+        "path": "src/resources/compute/ComputeResource.ts",
+        "sha": "ec49d81a721a42d34e4cf14cafa6d1c9265ef555"
+      },
+      {
+        "path": "src/resources/inline-payload/InlinePayloadResource.ts",
+        "sha": "d4e3b74497691c1efdce83accfa76164a385a80b"
+      },
+      {
+        "path": "src/resources/place-photo/PlacePhotoResource.ts",
+        "sha": "1cd45ace0075369b8aca6cbd515a682df409549f"
+      },
+      {
+        "path": "src/resources/temporary/TemporaryDataResource.ts",
+        "sha": "a5613b25038cfef4a3c324d02815abd2c513ef59"
+      },
+      {
+        "path": "src/resources/tool-response/ToolResponseResource.ts",
+        "sha": "d95fd0433789a2ea5379fbf695c80931b6c2ec8d"
+      },
+      {
+        "path": "src/resources/ui-apps/mapAppCsp.ts",
+        "sha": "687f11d7dca707a35e12a2c8bcf09c302995f944"
+      },
+      {
+        "path": "src/resources/ui-apps/mapAppHtml.ts",
+        "sha": "60056e1c09780937e5ae37c506f21093a135e119"
+      },
+      {
+        "path": "src/resources/ui-apps/MapAppUIResource.ts",
+        "sha": "cc20d8fb46c0b5d1f52a7e7157f43c2a06c6c96b"
+      },
+      {
+        "path": "src/resources/version/VersionResource.ts",
+        "sha": "2aabb7ceb48069919f35bc9f038441e39cde3282"
+      },
+      {
+        "path": "src/tools/area-tool/AreaTool.input.schema.ts",
+        "sha": "d1360320bf2d86ce1aadb27b6d6b4e1f7efe64ce"
+      },
+      {
+        "path": "src/tools/area-tool/AreaTool.output.schema.ts",
+        "sha": "1bdcf4e4146f0bc7c72fac6f93ae9b30004e1580"
+      },
+      {
+        "path": "src/tools/area-tool/AreaTool.ts",
+        "sha": "9306659a3ee22d0c9863569013e59807cc5ab1f4"
+      },
+      {
+        "path": "src/tools/bearing-tool/BearingTool.input.schema.ts",
+        "sha": "dbd9beddfbf51c967223144cf3122c819ae77c01"
+      },
+      {
+        "path": "src/tools/bearing-tool/BearingTool.output.schema.ts",
+        "sha": "48051ff87cb393f2b1f4a537557fca5197cc96e0"
+      },
+      {
+        "path": "src/tools/bearing-tool/BearingTool.ts",
+        "sha": "0acc7fd856a7c27bd07b95f30e0c4cb26a1fd99b"
+      },
+      {
+        "path": "src/tools/bounding-box-tool/BoundingBoxTool.input.schema.ts",
+        "sha": "634db7664a21cda6a827eb445062f6e6e21a6deb"
+      },
+      {
+        "path": "src/tools/bounding-box-tool/BoundingBoxTool.output.schema.ts",
+        "sha": "f039015c0757d502de136c15415e96201c05692e"
+      },
+      {
+        "path": "src/tools/bounding-box-tool/BoundingBoxTool.ts",
+        "sha": "addabe7403a82c831e346b8ef4f0a6f29df68683"
+      },
+      {
+        "path": "src/tools/buffer-tool/BufferTool.input.schema.ts",
+        "sha": "7f1d7c0456130af959b87d9634b1f4002d9e4355"
+      },
+      {
+        "path": "src/tools/buffer-tool/BufferTool.output.schema.ts",
+        "sha": "19cb0394e1ce10658e227e31cc688aa34a9f779e"
+      },
+      {
+        "path": "src/tools/buffer-tool/BufferTool.ts",
+        "sha": "5c7f34e4050731e9376d4b1d73883d8114fd1956"
+      },
+      {
+        "path": "src/tools/category-list-tool/CategoryListTool.input.schema.ts",
+        "sha": "a4cd774be4bbbc9ca68ac8a1c6f2e9251c78c7ea"
+      },
+      {
+        "path": "src/tools/category-list-tool/CategoryListTool.output.schema.ts",
+        "sha": "793a72aeb860b7982b16a9f025adbc2219daad9d"
+      },
+      {
+        "path": "src/tools/category-list-tool/CategoryListTool.ts",
+        "sha": "9370b0b61fc8943757cdc3898d84463e3ca822a2"
+      },
+      {
+        "path": "src/tools/category-search-tool/buildCategorySearchRequestUrl.ts",
+        "sha": "c49118a4cd2a83c17e61dd1fce636c829c5468f2"
+      },
+      {
+        "path": "src/tools/category-search-tool/CategorySearchTool.input.schema.ts",
+        "sha": "0e06e99287c0e0124efcc7f1970c2a8468f1af12"
+      },
+      {
+        "path": "src/tools/category-search-tool/CategorySearchTool.output.schema.ts",
+        "sha": "790728a8b319ff2ffc88e058445c8d282fb4a19d"
+      },
+      {
+        "path": "src/tools/category-search-tool/CategorySearchTool.ts",
+        "sha": "809786525000e6b304cf5f113146395931582c8b"
+      },
+      {
+        "path": "src/tools/centroid-tool/CentroidTool.input.schema.ts",
+        "sha": "cb7a6144bfdc7aa8fedeb6159cc0dba20f9d4c29"
+      },
+      {
+        "path": "src/tools/centroid-tool/CentroidTool.output.schema.ts",
+        "sha": "74d92b721f57538008028486db023059a687a07e"
+      },
+      {
+        "path": "src/tools/centroid-tool/CentroidTool.ts",
+        "sha": "8893d7077a6d91d1ee4941a7a96f24fa6d14e438"
+      },
+      {
+        "path": "src/tools/convex-tool/ConvexTool.input.schema.ts",
+        "sha": "9b0929084d60fa96d8c154de8184bfb0caeb8955"
+      },
+      {
+        "path": "src/tools/convex-tool/ConvexTool.output.schema.ts",
+        "sha": "47d9965205e9bb11a87a8de094de315d0ece5474"
+      },
+      {
+        "path": "src/tools/convex-tool/ConvexTool.ts",
+        "sha": "104f8468bc3fd16aab296ff7ad0add00aec5e014"
+      },
+      {
+        "path": "src/tools/destination-tool/DestinationTool.input.schema.ts",
+        "sha": "6c6a8bc90eb24886970180a4051a5f36467dd5c3"
+      },
+      {
+        "path": "src/tools/destination-tool/DestinationTool.output.schema.ts",
+        "sha": "2c88d9d193576437fde2f25a4b82f7fc3ec6417a"
+      },
+      {
+        "path": "src/tools/destination-tool/DestinationTool.ts",
+        "sha": "6520429eac9a740a84c3754498f549cb8748bf48"
+      },
+      {
+        "path": "src/tools/difference-tool/DifferenceTool.input.schema.ts",
+        "sha": "3c4acdbe66edfb92000b72fc4f6d3bf9af093b9a"
+      },
+      {
+        "path": "src/tools/difference-tool/DifferenceTool.output.schema.ts",
+        "sha": "c09c365f916d4d65cc3fe3e7b79c0e8d16f077a5"
+      },
+      {
+        "path": "src/tools/difference-tool/DifferenceTool.ts",
+        "sha": "de463fcb671332254f41d45e33ce63756a7be5cc"
+      },
+      {
+        "path": "src/tools/directions-tool/buildDirectionsRequestUrl.ts",
+        "sha": "409bd8ead01d094a85ae2c4a9deb74335d1e6068"
+      },
+      {
+        "path": "src/tools/directions-tool/cleanResponseData.ts",
+        "sha": "70448b6d779c4a85f1982d20861e381ef31ba69e"
+      },
+      {
+        "path": "src/tools/directions-tool/DirectionsTool.input.schema.ts",
+        "sha": "240628b3556a7e4c1a013ee6c8b7b32e90180cb6"
+      },
+      {
+        "path": "src/tools/directions-tool/DirectionsTool.output.schema.ts",
+        "sha": "80f5cd1b6584894d49fec3d7eb3501afd9e6574a"
+      },
+      {
+        "path": "src/tools/directions-tool/DirectionsTool.ts",
+        "sha": "2dcc182053832821980249a0b2da29f5803551f7"
+      },
+      {
+        "path": "src/tools/distance-tool/DistanceTool.input.schema.ts",
+        "sha": "224d0d2b2e78536e151a6d561190874f6ba3db9d"
+      },
+      {
+        "path": "src/tools/distance-tool/DistanceTool.output.schema.ts",
+        "sha": "15052b45ef065ce13422821c3749269bb2b7bc85"
+      },
+      {
+        "path": "src/tools/distance-tool/DistanceTool.ts",
+        "sha": "44b3a4860839935205c90cf5cc7cd9ea70719a62"
+      },
+      {
+        "path": "src/tools/feedback-tool/FeedbackTool.input.schema.ts",
+        "sha": "08e100d5e1fead58780eb5f007ac90d18f950bf0"
+      },
+      {
+        "path": "src/tools/feedback-tool/FeedbackTool.output.schema.ts",
+        "sha": "1eb3d6e930ed369840d177a65852c160624e579f"
+      },
+      {
+        "path": "src/tools/feedback-tool/FeedbackTool.ts",
+        "sha": "ebb721995e9f9f9d15e2de0117d7268929664419"
+      },
+      {
+        "path": "src/tools/ground-location-tool/buildReverseGeocodeUrl.ts",
+        "sha": "62e87d77b48ab73bb976cc348ac2ebdafbdd48b5"
+      },
+      {
+        "path": "src/tools/ground-location-tool/GroundLocationTool.input.schema.ts",
+        "sha": "1590fba0906f04b307a06ba33097360a1afaf859"
+      },
+      {
+        "path": "src/tools/ground-location-tool/GroundLocationTool.output.schema.ts",
+        "sha": "51a0127d622d72b37037c717a415cca9b8591f4e"
+      },
+      {
+        "path": "src/tools/ground-location-tool/GroundLocationTool.ts",
+        "sha": "5d5c7ca406d0abc47b7014cb07be59e985263a57"
+      },
+      {
+        "path": "src/tools/intersect-tool/IntersectTool.input.schema.ts",
+        "sha": "4d4d947c0e3a65a371a53008e30bc0911b7b568b"
+      },
+      {
+        "path": "src/tools/intersect-tool/IntersectTool.output.schema.ts",
+        "sha": "e410d4542d476100b3f944fd8b4f8b46bb009dc8"
+      },
+      {
+        "path": "src/tools/intersect-tool/IntersectTool.ts",
+        "sha": "323a43f87703552f983756607d6266bd04f5eda1"
+      },
+      {
+        "path": "src/tools/isochrone-tool/buildIsochroneRequestUrl.ts",
+        "sha": "4a3e74c330106a86fdbb6de79204124ebd7a2b27"
+      },
+      {
+        "path": "src/tools/isochrone-tool/IsochroneTool.input.schema.ts",
+        "sha": "e1e20abe1fd4ecd3a45d97fe8d44f8c1e9cf53c1"
+      },
+      {
+        "path": "src/tools/isochrone-tool/IsochroneTool.output.schema.ts",
+        "sha": "b9155c16973342d3f1d96bdf540c1c5feae0078e"
+      },
+      {
+        "path": "src/tools/isochrone-tool/IsochroneTool.ts",
+        "sha": "d93bc93567007b8fd3bb66d9730e900c7e6a0cf7"
+      },
+      {
+        "path": "src/tools/length-tool/LengthTool.input.schema.ts",
+        "sha": "68f2030951de768cc053d17701a31368265db57c"
+      },
+      {
+        "path": "src/tools/length-tool/LengthTool.output.schema.ts",
+        "sha": "5ce5bbf828f06c6805ef5a1addd72601e336247f"
+      },
+      {
+        "path": "src/tools/length-tool/LengthTool.ts",
+        "sha": "0ac081b3cb14bfe7ac50bb12959d0b5f7aa5ffb8"
+      },
+      {
+        "path": "src/tools/list-public-tokens-tool/ListPublicTokensTool.input.schema.ts",
+        "sha": "77cdd84b202211a717878d8e58c9e75c632585db"
+      },
+      {
+        "path": "src/tools/list-public-tokens-tool/ListPublicTokensTool.output.schema.ts",
+        "sha": "9343bb601e100bae8bbba39b1c49bc30941c0538"
+      },
+      {
+        "path": "src/tools/list-public-tokens-tool/ListPublicTokensTool.ts",
+        "sha": "4cde8cc806027306be665cddd17f4208d7244742"
+      },
+      {
+        "path": "src/tools/map-matching-tool/buildMapMatchingRequestUrl.ts",
+        "sha": "ef73e605267bff95c0ca4de7b0a8a391f34cbbdc"
+      },
+      {
+        "path": "src/tools/map-matching-tool/MapMatchingTool.input.schema.ts",
+        "sha": "6ad43dfd913cb7e898c6db2f8b86bc09805e2b50"
+      },
+      {
+        "path": "src/tools/map-matching-tool/MapMatchingTool.output.schema.ts",
+        "sha": "8c47e6b33faf9a1dd663691c39dfba9e493d3d74"
+      },
+      {
+        "path": "src/tools/map-matching-tool/MapMatchingTool.ts",
+        "sha": "089180f8873609cbd1934e6775e57350733be77b"
+      },
+      {
+        "path": "src/tools/matrix-tool/MatrixTool.input.schema.ts",
+        "sha": "98f6ee5e5277e488e68f38ba17d74ffbea40435a"
+      },
+      {
+        "path": "src/tools/matrix-tool/MatrixTool.output.schema.ts",
+        "sha": "2b22226e53607d4e5db81e1567484917db8de12f"
+      },
+      {
+        "path": "src/tools/matrix-tool/MatrixTool.ts",
+        "sha": "56d6540030c646cf8567ff521c699a8f1100787d"
+      },
+      {
+        "path": "src/tools/midpoint-tool/MidpointTool.input.schema.ts",
+        "sha": "5193f004ed0c4ad256dc435c1ab1e42c77da180b"
+      },
+      {
+        "path": "src/tools/midpoint-tool/MidpointTool.output.schema.ts",
+        "sha": "512154638fc1e3da430bdee33edc5715207746d7"
+      },
+      {
+        "path": "src/tools/midpoint-tool/MidpointTool.ts",
+        "sha": "c48df66432bb8f646310cd364efd4041607a0793"
+      },
+      {
+        "path": "src/tools/nearest-point-on-line-tool/NearestPointOnLineTool.input.schema.ts",
+        "sha": "e080e8062c481db98dd072d67210608c50e6dc26"
+      },
+      {
+        "path": "src/tools/nearest-point-on-line-tool/NearestPointOnLineTool.output.schema.ts",
+        "sha": "089ddc237f8f25934c98f2461ffe423de5169ed5"
+      },
+      {
+        "path": "src/tools/nearest-point-on-line-tool/NearestPointOnLineTool.ts",
+        "sha": "82e750c1c2e3741d113215194f07b3cbde8e624b"
+      },
+      {
+        "path": "src/tools/nearest-point-tool/NearestPointTool.input.schema.ts",
+        "sha": "aaa3b03d20d87d45b964fc15f59427655c8aadb9"
+      },
+      {
+        "path": "src/tools/nearest-point-tool/NearestPointTool.output.schema.ts",
+        "sha": "c95fe7666c24fdc71a13375617a368a1e9174f47"
+      },
+      {
+        "path": "src/tools/nearest-point-tool/NearestPointTool.ts",
+        "sha": "2c73310f29d7abaf125534884e204aa153b8ef2a"
+      },
+      {
+        "path": "src/tools/optimization-tool/buildOptimizationRequestUrl.ts",
+        "sha": "0bea8f09d3cc99a8d473ed346b8167c487c2ea3d"
+      },
+      {
+        "path": "src/tools/optimization-tool/OptimizationTool.input.schema.ts",
+        "sha": "4da84894eaa85cf6644130437b6f965a388b2648"
+      },
+      {
+        "path": "src/tools/optimization-tool/OptimizationTool.output.schema.ts",
+        "sha": "665bb6662451e63389d81ef6c5f89b5dd13ae3d5"
+      },
+      {
+        "path": "src/tools/optimization-tool/OptimizationTool.ts",
+        "sha": "e717c12f7508f1db21f4c4c3a9d5f37d43bb7afb"
+      },
+      {
+        "path": "src/tools/place-details-tool/PlaceDetailsTool.input.schema.ts",
+        "sha": "15512666e2f1ab567f6cd9516c01763bd11d52f5"
+      },
+      {
+        "path": "src/tools/place-details-tool/PlaceDetailsTool.output.schema.ts",
+        "sha": "d4573b19a5fed9312f9eea925fc38cd98deabd7d"
+      },
+      {
+        "path": "src/tools/place-details-tool/PlaceDetailsTool.ts",
+        "sha": "5226d6b6d223fdfc0504932170c06a702662b34f"
+      },
+      {
+        "path": "src/tools/points-within-polygon-tool/PointsWithinPolygonTool.input.schema.ts",
+        "sha": "0a33317856b43ab93148bd77904f9ae8ca1cd1cd"
+      },
+      {
+        "path": "src/tools/points-within-polygon-tool/PointsWithinPolygonTool.output.schema.ts",
+        "sha": "1877c7db931b3640ec1608073e8be5e10c1ca224"
+      },
+      {
+        "path": "src/tools/points-within-polygon-tool/PointsWithinPolygonTool.ts",
+        "sha": "9aac03083904396ba8547a12c49e8607799e599a"
+      },
+      {
+        "path": "src/tools/render-map-tool/RenderMapTool.input.schema.ts",
+        "sha": "e5481044d7f0db1c1d316b665e7f115d039adafb"
+      },
+      {
+        "path": "src/tools/render-map-tool/RenderMapTool.output.schema.ts",
+        "sha": "b27fb663b378500f941b7bd2299d87ea4489c3d3"
+      },
+      {
+        "path": "src/tools/render-map-tool/RenderMapTool.ts",
+        "sha": "1650029952be8f9cc8e7426db3df43b83266f141"
+      },
+      {
+        "path": "src/tools/resource-reader-tool/ResourceReaderTool.input.schema.ts",
+        "sha": "5a14af7df85a7116a7426e335779a0992ded6869"
+      },
+      {
+        "path": "src/tools/resource-reader-tool/ResourceReaderTool.output.schema.ts",
+        "sha": "2cb7e8f405927e722b7db2784e634e54b02bf8fe"
+      },
+      {
+        "path": "src/tools/resource-reader-tool/ResourceReaderTool.ts",
+        "sha": "113bbb059192d2ef16baaa94d9952f220b0f1232"
+      },
+      {
+        "path": "src/tools/reverse-geocode-tool/ReverseGeocodeTool.input.schema.ts",
+        "sha": "fc15efc8598f64e3d3f71a392512edfa3e28fed9"
+      },
+      {
+        "path": "src/tools/reverse-geocode-tool/ReverseGeocodeTool.output.schema.ts",
+        "sha": "8d2bf5b5772442fe7c70dc1e3d8058a036037ec3"
+      },
+      {
+        "path": "src/tools/reverse-geocode-tool/ReverseGeocodeTool.ts",
+        "sha": "ef3d9aa6035dddcb621c444193695799c2b93e03"
+      },
+      {
+        "path": "src/tools/search-and-geocode-tool/buildSearchAndGeocodeRequestUrl.ts",
+        "sha": "cfc2b08469189b0830f2ad8a2ef761eaa60c3941"
+      },
+      {
+        "path": "src/tools/search-and-geocode-tool/SearchAndGeocodeTool.input.schema.ts",
+        "sha": "a3ef7ebf78943af3ed3685f860b44f2d8e6fe153"
+      },
+      {
+        "path": "src/tools/search-and-geocode-tool/SearchAndGeocodeTool.output.schema.ts",
+        "sha": "68b7fe9abff67deaba9e89d8dcd54d3690573cab"
+      },
+      {
+        "path": "src/tools/search-and-geocode-tool/SearchAndGeocodeTool.ts",
+        "sha": "277651c795cef447dde028e90f6ec56fa7c3fca7"
+      },
+      {
+        "path": "src/tools/shared/polygonSchema.ts",
+        "sha": "71b59b61f56d832204b01b34ffdfd423d2d7698b"
+      },
+      {
+        "path": "src/tools/simplify-tool/SimplifyTool.input.schema.ts",
+        "sha": "8e7efe8b8d630701e5d61bcec300c6c57b32ae78"
+      },
+      {
+        "path": "src/tools/simplify-tool/SimplifyTool.output.schema.ts",
+        "sha": "79f8d217844928bc3432865f4655b67a78ae399e"
+      },
+      {
+        "path": "src/tools/simplify-tool/SimplifyTool.ts",
+        "sha": "55c52684fa8bcadb8ca230ffdc39114a2c81cc76"
+      },
+      {
+        "path": "src/tools/static-map-image-tool/StaticMapImageTool.input.schema.ts",
+        "sha": "552851a67fea9bff00fdd98fdfb049b712ba37a4"
+      },
+      {
+        "path": "src/tools/static-map-image-tool/StaticMapImageTool.ts",
+        "sha": "37729d212832e0f792ae778d1a6332e999b1fb00"
+      },
+      {
+        "path": "src/tools/union-tool/buildPolygonOpsMapPayload.ts",
+        "sha": "e97eae59084dd11f1273997cc4ac9018f2547d1f"
+      },
+      {
+        "path": "src/tools/union-tool/UnionTool.input.schema.ts",
+        "sha": "c4b959d3536cbda30cceda53cc34a009566353c4"
+      },
+      {
+        "path": "src/tools/union-tool/UnionTool.output.schema.ts",
+        "sha": "71a0daf99453df39d20bb0e9e182a3115d26cf8f"
+      },
+      {
+        "path": "src/tools/union-tool/UnionTool.ts",
+        "sha": "bec01c1dc08a6dcb5b56d3a4b57bc832732a68ec"
+      },
+      {
+        "path": "evals/tool-selection/build-report-lite.mjs",
+        "sha": "ba1c1ba05eadd9b121a1a1cc07cf59443e70754a"
+      },
+      {
+        "path": "evals/tool-selection/cases.json",
+        "sha": "fbd757e6735de47763cef5458899fce54bb00376"
+      },
+      {
+        "path": "evals/tool-selection/harness.ts",
+        "sha": "a206c4e54bb489067b7a950bfccc0aad392cee11"
+      },
+      {
+        "path": "evals/tool-selection/README.md",
+        "sha": "0c37b94d2d12e1e7a50b074696aee678d855837b"
+      },
+      {
+        "path": "evals/tool-selection/rescore.ts",
+        "sha": "0f800d29e0d475cbcb4e0cbfc411a264147d135a"
+      },
+      {
+        "path": "evals/tool-selection/run-eval.mjs",
+        "sha": "051d88198a6021d0e1b065debc7226719a962f2b"
+      }
+    ],
+    "repo_pushed_at": "2026-10-30T13:51:34Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 87,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 70,
+      "egress": 85,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "install-time-network",
+      "severe": false,
+      "file": ".husky/setup-hooks.js",
+      "line": 2,
+      "snippet": "import { execSync } from 'node:child_process';",
+      "deduction": 15
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": false,
+      "file": ".husky/pre-commit",
+      "line": 1,
+      "snippet": "#!/usr/bin/env sh",
+      "deduction": 15
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": false,
+      "file": ".husky/setup-hooks.js",
+      "line": 1,
+      "snippet": "import { writeFileSync, mkdirSync, chmodSync, constants } from 'node:fs';",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 203,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 3
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1669
+  },
+  "duration_ms": 1773
+}

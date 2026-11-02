@@ -1,0 +1,1598 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154517Z",
+  "target": {
+    "source": "github",
+    "id": "puppeteer/puppeteer",
+    "url": "https://github.com/puppeteer/puppeteer",
+    "name": "puppeteer"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:45:20.821Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "2083f2ebe99120bd56169b24e762a71acf224711",
+    "files_scanned": 360,
+    "candidates": 360,
+    "excluded_non_shipped": 1018,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".vscode/extensions.json",
+        "sha": "4084e393e9ee80a8580daa584b3f304c5947250c"
+      },
+      {
+        "path": ".vscode/launch.template.json",
+        "sha": "2c6f8f010ce1a275a21290ad2d3289575cf09ec7"
+      },
+      {
+        "path": ".github/workflows/bisect.yml",
+        "sha": "a074aa7d952daab0378084152a0e329261f958fe"
+      },
+      {
+        "path": ".github/workflows/changed-packages.yml",
+        "sha": "b385e3c313fe1721a1ab14c9d0ae357a18fa5038"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "fc60b1dd01dfc083673d755c8ff12aa7acd606fb"
+      },
+      {
+        "path": ".github/workflows/conventional-commit.yml",
+        "sha": "17a0b414c79487433b90d986a252944d04c12c52"
+      },
+      {
+        "path": ".github/workflows/daily.yml",
+        "sha": "16819a190a85563a90f47aebe2a51eee5efde0bc"
+      },
+      {
+        "path": ".github/workflows/deflake.yml",
+        "sha": "dd826b99dedfcc86c4874165638402ce610c8a06"
+      },
+      {
+        "path": ".github/workflows/devtools.yml",
+        "sha": "87a91aa8305d20b6ad4d057e07f3932fc64e61ab"
+      },
+      {
+        "path": ".github/workflows/docs.yml",
+        "sha": "f123178423d57fa39b64c9af6150b339d9200afb"
+      },
+      {
+        "path": ".github/workflows/pre-release.yml",
+        "sha": "cf42c159f563b5ec8c90e79cceba68ce65947cba"
+      },
+      {
+        "path": ".github/workflows/publish.yml",
+        "sha": "c5e1bf7d1be67153b336819833ffdd2b1a358c73"
+      },
+      {
+        "path": ".github/workflows/release-please.yml",
+        "sha": "70a6ffe5d1986712ccaeca35363499474761b3a1"
+      },
+      {
+        "path": ".github/workflows/scorecards-analysis.yml",
+        "sha": "6fe6d5fb87647ac914c8b5a7dfc581a8a7a8973c"
+      },
+      {
+        "path": ".github/workflows/stale.yml",
+        "sha": "b828465002b5f046eb537a44bf120f20dd02e279"
+      },
+      {
+        "path": ".github/workflows/update-browser-pins.yml",
+        "sha": "48d8a0bc9d15ca2bdad30172805b67442ae1d146"
+      },
+      {
+        "path": "packages/puppeteer/install.mjs",
+        "sha": "e4c158282ebbcb4e62fcd32a0089b0e7aceb22b9"
+      },
+      {
+        "path": "packages/browsers/src/install.ts",
+        "sha": "769987a4492986ea2b2f305709263ad6101d7b67"
+      },
+      {
+        "path": ".agents/skills/puppeteer-verification/SKILL.md",
+        "sha": "5f8cdc398bb47ea575ae100e828a23153a162ac6"
+      },
+      {
+        "path": "packages/puppeteer/src/node/install.ts",
+        "sha": "bc3951fc2f2e4069a2428653ff249fb117ae11f4"
+      },
+      {
+        "path": "package.json",
+        "sha": "1903883f20937c2aa46f7e213575fa96083f828a"
+      },
+      {
+        "path": "website/package.json",
+        "sha": "0d60f6e5a0f4d802bff49f846177925930b93812"
+      },
+      {
+        "path": ".mocharc.js",
+        "sha": "9703ebdd1d1d86e0f3c88ba6a610392a88b5531f"
+      },
+      {
+        "path": ".release-please-manifest.json",
+        "sha": "4e43dc2a268bab3339b2775bc5cee8fe1d847587"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "sha": "21cb15ac1a58a338f0b3345808cecee36c527099"
+      },
+      {
+        "path": "Herebyfile.mjs",
+        "sha": "287a58fdb661a611a77f365cde2bab5b5b01f5fb"
+      },
+      {
+        "path": "packages/browsers/src/CLI.ts",
+        "sha": "c66cb535eed4a6dad75cad09d19c7f8e4e9fdc1d"
+      },
+      {
+        "path": "packages/browsers/src/main.ts",
+        "sha": "ae47422d5ea2bafa1c861d49a9acf76e8ad6d5fc"
+      },
+      {
+        "path": "packages/puppeteer-core/src/index.ts",
+        "sha": "6fa4ec1b0831e925c6310637eb89bc4710ea58bf"
+      },
+      {
+        "path": "packages/testserver/src/index.ts",
+        "sha": "7c2a7eb8cd7ea7d4413e206453644c6032eeb3c3"
+      },
+      {
+        "path": "prettier.config.js",
+        "sha": "1f3295b22e94387b21dca2688b7a1180e10c3b97"
+      },
+      {
+        "path": "puppeteer.config.js",
+        "sha": "f80220ca64869144d529646d1ae687aa390cf016"
+      },
+      {
+        "path": "README.md",
+        "sha": "2424293b5688dbec4f2407a3326fb54d086b6527"
+      },
+      {
+        "path": "release-please-config.json",
+        "sha": "54e69f262483494ccb295a8cf951bf90f06bb46a"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "7e73f04e71af376a3c81b020be6ac1819df85fa0"
+      },
+      {
+        "path": "tsconfig.base.json",
+        "sha": "969cc43db89f35776b60ddf67dbc2765a1b4b63d"
+      },
+      {
+        "path": "tsdoc.json",
+        "sha": "ab9e2714f0d12f90a5729392651c304350cac7d2"
+      },
+      {
+        "path": "versions.json",
+        "sha": "4c560840ae394669c9e18a84f4f96e4a384da2af"
+      },
+      {
+        "path": "packages/browsers/package.json",
+        "sha": "ec7141ada64347888cb34cfad85b110816bdeb66"
+      },
+      {
+        "path": "packages/ng-schematics/package.json",
+        "sha": "0bc02d7ad5449cb36cd70d40d451fb669845d1e0"
+      },
+      {
+        "path": "packages/puppeteer-core/package.json",
+        "sha": "774a1ae17cc8ef6496661ef0723825cd52c50819"
+      },
+      {
+        "path": "packages/puppeteer/package.json",
+        "sha": "ea1f956aae31ac7b3c941c768d8f6c5919ef6005"
+      },
+      {
+        "path": "packages/testserver/package.json",
+        "sha": "a65f29fd381774ecac10b454d868e616fb00e80f"
+      },
+      {
+        "path": "tools/docgen/package.json",
+        "sha": "71f15e2c932b10c2dd61a9da99c0dd0cef9c1a5c"
+      },
+      {
+        "path": "tools/eslint/package.json",
+        "sha": "e3b953ba7d7bd09eaddd54d55478abe0a90ff24c"
+      },
+      {
+        "path": "tools/mocha-runner/package.json",
+        "sha": "c56fbc6fb95ca19560562bdb3516c4c928a32bb4"
+      },
+      {
+        "path": "docker/pack.sh",
+        "sha": "29229df9e788661afd397a86fd9a3d0d488495c4"
+      },
+      {
+        "path": "docker/README.md",
+        "sha": "e5c1a1ce705fc11b316761e6eab7315695d9fcb5"
+      },
+      {
+        "path": "packages/puppeteer/src/node/cli.ts",
+        "sha": "f8d31aa26bc58325518b8af4f318fbadaa2eb73e"
+      },
+      {
+        "path": "test-d/CommonEventEmitter.test-d.ts",
+        "sha": "be071cf1b6e756fae318fc53e4da11355c5e170f"
+      },
+      {
+        "path": "test-d/ElementHandle.test-d.ts",
+        "sha": "34d3a562d1756b7ad244a23129d8b1565c916132"
+      },
+      {
+        "path": "test-d/JSHandle.test-d.ts",
+        "sha": "4b9e806e8b3f272fb8787daf8ef458c1f363d9d6"
+      },
+      {
+        "path": "test-d/NodeFor.test-d.ts",
+        "sha": "a97ca217f4fae282a305a3729cbb29b9a9ae52e7"
+      },
+      {
+        "path": "test-d/puppeteer-core.test-d.ts",
+        "sha": "ed354cd86265b5ea0b9c81e85ca63004084c86a1"
+      },
+      {
+        "path": "test-d/puppeteer.test-d.ts",
+        "sha": "3ff14d18f1e32710d5c94d14b552b80b0829552e"
+      },
+      {
+        "path": "tools/build_daily_comment.mjs",
+        "sha": "6e7f8a82f40c3e371c55fcb760e8602c475a76ec"
+      },
+      {
+        "path": "tools/chmod.ts",
+        "sha": "9311f65981f4d85164bfb5ee0da367348796f6ac"
+      },
+      {
+        "path": "tools/clean.mjs",
+        "sha": "4f8d1d0ae7565cd03b569ed689ab4352c4d2dac7"
+      },
+      {
+        "path": "tools/clear_github_cache.mjs",
+        "sha": "e1a4fc3ca4288841d8fed8261c03d41987fb8014"
+      },
+      {
+        "path": "tools/compare-trials.ts",
+        "sha": "cfdc6c47d18bbab1159d3752c3ceba7511b058f0"
+      },
+      {
+        "path": "tools/cp.ts",
+        "sha": "3095eb4e9885036577608ed3213440183fe3d542"
+      },
+      {
+        "path": "tools/download_chrome_canary.mjs",
+        "sha": "bf882fdacee767516c355dc06cf11a6c361d732c"
+      },
+      {
+        "path": "tools/generate-supported-browsers.ts",
+        "sha": "38f786aad6540e9a0fe1e9d15e0b17ca32bdc364"
+      },
+      {
+        "path": "tools/get_deprecated_version_range.mjs",
+        "sha": "7febf921f904c15caadbda1ada691c12537ff67e"
+      },
+      {
+        "path": "tools/merge-canary-test-expectations.mjs",
+        "sha": "222f888461202185185ec196ddc66354a4bf2df1"
+      },
+      {
+        "path": "tools/merge-changelogs.ts",
+        "sha": "1e046df48804d3a6768a6067efcd2583dccbf9dd"
+      },
+      {
+        "path": "tools/patch.mjs",
+        "sha": "aa3621c33cf3e0b4f81ffdd31f0759c9ddb08624"
+      },
+      {
+        "path": "tools/sort-test-expectations.mjs",
+        "sha": "883508ba0d0c3e2008837bb4bbde13445a9cfea4"
+      },
+      {
+        "path": "tools/tsconfig.json",
+        "sha": "393392c4940028150b907400d3fd39400696c4e4"
+      },
+      {
+        "path": "tools/tsdoc.json",
+        "sha": "751c707136184b8385e55e01788092da4751f0d3"
+      },
+      {
+        "path": "tools/update_browser_revision.mjs",
+        "sha": "9d73898d97043a130e168e6546f8f426eb809201"
+      },
+      {
+        "path": "tools/validate-deps.mjs",
+        "sha": "0a503d6072e24c824277b7a097759dc11f4a3e40"
+      },
+      {
+        "path": "website/docusaurus.config.js",
+        "sha": "36aea8637fc63d4bed85168ef86f5a2a97d62fc4"
+      },
+      {
+        "path": "website/materialize-docs.ts",
+        "sha": "6a49ff6611025cfed9f3e079dc211535392faf42"
+      },
+      {
+        "path": "website/README.md",
+        "sha": "1278d2350d90ac07f51a5d5ccd2829386a3475fb"
+      },
+      {
+        "path": "website/sidebars.js",
+        "sha": "f23bf0e3ce82525cfee9ecc980473a7040ad958f"
+      },
+      {
+        "path": "website/src/theme/SearchBar/index.js",
+        "sha": "3201fc7d17b2ff598ad50a8c00496e6ad2d0f76e"
+      },
+      {
+        "path": "website/src/theme/SearchMetadata/index.js",
+        "sha": "61d1f1e0fb0e2288a2b094cd785d35af5c2f97da"
+      },
+      {
+        "path": "website/src/theme/SearchPage/index.js",
+        "sha": "117c60a8cce3441315e611ffe1741941dec70030"
+      },
+      {
+        "path": "packages/browsers/.mocharc.js",
+        "sha": "29ed3c905d055fc9c11e209dbff2b3e57c9d2ca2"
+      },
+      {
+        "path": "packages/browsers/api-extractor.docs.json",
+        "sha": "9852e4fec11c176f597e30a55dfab47b392d720e"
+      },
+      {
+        "path": "packages/browsers/api-extractor.json",
+        "sha": "d4e5d5180a638fe506b006a7fbccc4a0d386f6ac"
+      },
+      {
+        "path": "packages/browsers/CHANGELOG.md",
+        "sha": "cddc4042583b7c70586bf7d8b7656c259d0af516"
+      },
+      {
+        "path": "packages/browsers/README.md",
+        "sha": "27f2b36bdc3367129b998eb774027bf2944e29d6"
+      },
+      {
+        "path": "packages/browsers/tsconfig.json",
+        "sha": "da2b04a50de610d117de633e8d21145857a921d1"
+      },
+      {
+        "path": "packages/browsers/tsdoc.json",
+        "sha": "b19397a5969a95973da3986a809927e292c652c1"
+      },
+      {
+        "path": "packages/ng-schematics/.mocharc.js",
+        "sha": "e3319be3cbc4b82cfe1277c1e686128edbc85a97"
+      },
+      {
+        "path": "packages/ng-schematics/CHANGELOG.md",
+        "sha": "bd0010283b7f3ce44f1aeca328ab71c44df858f7"
+      },
+      {
+        "path": "packages/ng-schematics/README.md",
+        "sha": "cbedec820e1eebc398e21f31176a30e90c8a51c8"
+      },
+      {
+        "path": "packages/ng-schematics/src/builders/puppeteer/index.ts",
+        "sha": "604795136bd3425f8b5f356f2219c245abffb07f"
+      },
+      {
+        "path": "packages/ng-schematics/src/schematics/config/index.ts",
+        "sha": "b01d98e33e57a8783c9e9b93625b8a06619efaf9"
+      },
+      {
+        "path": "packages/ng-schematics/src/schematics/ng-add/index.ts",
+        "sha": "af0b8ede4b0a27a8a840d53c24c5f29e0c275e9e"
+      },
+      {
+        "path": "packages/ng-schematics/tsconfig.json",
+        "sha": "66c6a19cd3067d35d42e3f19cb13b096facf9f56"
+      },
+      {
+        "path": "packages/ng-schematics/tsdoc.json",
+        "sha": "b19397a5969a95973da3986a809927e292c652c1"
+      },
+      {
+        "path": "packages/puppeteer-core/api-extractor.docs.json",
+        "sha": "b747180e3ed6f70afc3ef64d2e9823248d4312ff"
+      },
+      {
+        "path": "packages/puppeteer-core/api-extractor.json",
+        "sha": "9a318406a67c0e1ed2d2d33b17554cdbd5c86569"
+      },
+      {
+        "path": "packages/puppeteer-core/function-fixture.mjs",
+        "sha": "3644aca6594d449cdee009e9cc517f4876b5eb12"
+      },
+      {
+        "path": "packages/puppeteer-core/Herebyfile.mjs",
+        "sha": "963156e61d3a1d655b6c2410c2dd45541c26b64a"
+      },
+      {
+        "path": "packages/puppeteer-core/rollup.config.mjs",
+        "sha": "35af9025f58dfe40c741a5eecdb6cabad0fc3212"
+      },
+      {
+        "path": "packages/puppeteer-core/tsconfig.json",
+        "sha": "637da4ca304e57e00105ba7828c602ca8e146284"
+      },
+      {
+        "path": "packages/puppeteer-core/tsdoc.json",
+        "sha": "b19397a5969a95973da3986a809927e292c652c1"
+      },
+      {
+        "path": "packages/puppeteer/api-extractor.docs.json",
+        "sha": "6f7ef90bacdd84416819449b67d2bee8bf81c0dc"
+      },
+      {
+        "path": "packages/puppeteer/api-extractor.json",
+        "sha": "67670bf358e634b860445dcf7646d6812986321b"
+      },
+      {
+        "path": "packages/puppeteer/tsconfig.json",
+        "sha": "927bce020570ff94c1d2d7456d406a299a967c5b"
+      },
+      {
+        "path": "packages/puppeteer/tsdoc.json",
+        "sha": "b19397a5969a95973da3986a809927e292c652c1"
+      },
+      {
+        "path": "packages/testserver/CHANGELOG.md",
+        "sha": "0a0ab1b74d5c7c1c74d2f531bc3275070c124ecd"
+      },
+      {
+        "path": "packages/testserver/README.md",
+        "sha": "f46dd68c513949fb3215aa031fceb67545901ea7"
+      },
+      {
+        "path": "packages/testserver/tsconfig.json",
+        "sha": "07168c212a5992ac1c9f82208342404a06d4dc66"
+      },
+      {
+        "path": "packages/testserver/tsdoc.json",
+        "sha": "b19397a5969a95973da3986a809927e292c652c1"
+      },
+      {
+        "path": "tools/docgen/tsconfig.json",
+        "sha": "27d0d84f5d0cc6f55cbebbc5e20f04bb88ee6e9a"
+      },
+      {
+        "path": "tools/docgen/tsdoc.json",
+        "sha": "f5b91f4af69b1eed49f16f663711875eadc5d814"
+      },
+      {
+        "path": "tools/eslint/tsconfig.json",
+        "sha": "5f19f75116cd681b105064fdd6e21139baac5915"
+      },
+      {
+        "path": "tools/eslint/tsdoc.json",
+        "sha": "f5b91f4af69b1eed49f16f663711875eadc5d814"
+      },
+      {
+        "path": "tools/mocha-runner/README.md",
+        "sha": "cd8136a59e1f4b5d7aec7817108e9aaec0936791"
+      },
+      {
+        "path": "tools/mocha-runner/tsconfig.json",
+        "sha": "4082777ff10e73d3ffacfa713d733fece4b349c1"
+      },
+      {
+        "path": "tools/mocha-runner/tsdoc.json",
+        "sha": "751c707136184b8385e55e01788092da4751f0d3"
+      },
+      {
+        "path": "tools/third_party/validate-licenses.ts",
+        "sha": "f843de05c26069de3157d28af59912db0a921a0e"
+      },
+      {
+        "path": "website/static/fix-location.js",
+        "sha": "6657479077b4fc96c52d69f3866b2cb833efa489"
+      },
+      {
+        "path": "website/static/sw.js",
+        "sha": "6cdfa07b829efaf3d39c42e7e550be12fd3016c1"
+      },
+      {
+        "path": "packages/puppeteer-core/third_party/parsel-js/package.json",
+        "sha": "3dbc1ca591c0557e35b6004aeba250e6a70b56e3"
+      },
+      {
+        "path": "packages/browsers/src/Cache.ts",
+        "sha": "3e424d6e34b515e8b11c4b454814ac59fb1abe23"
+      },
+      {
+        "path": "packages/browsers/src/debug.ts",
+        "sha": "8f01be52a7380f4cca3ae0611ae0c4bec853718b"
+      },
+      {
+        "path": "packages/browsers/src/DefaultProvider.ts",
+        "sha": "4783ed87c27b81ef9f930bc91833918269ba4ca5"
+      },
+      {
+        "path": "packages/browsers/src/detectPlatform.ts",
+        "sha": "1a87c201f76c87be4d88c1870ac999352518e6de"
+      },
+      {
+        "path": "packages/browsers/src/fileUtil.ts",
+        "sha": "e529ad0a67d48f0fc9fad3b6d399eb223b75d80b"
+      },
+      {
+        "path": "packages/browsers/src/httpUtil.ts",
+        "sha": "a43c1a4c49fb582b5015aa943b5fef3a0fdc649e"
+      },
+      {
+        "path": "packages/browsers/src/launch.ts",
+        "sha": "f2fc8f80d1930d5755063f9634fd5d1286a61291"
+      },
+      {
+        "path": "packages/browsers/src/main-cli.ts",
+        "sha": "9919a4dfb71058dfc7cd8ec1e7b98e5baa3a245c"
+      },
+      {
+        "path": "packages/browsers/src/ProgressBar.ts",
+        "sha": "25227513734a87aca77c26d5584164a683160eba"
+      },
+      {
+        "path": "packages/browsers/src/provider.ts",
+        "sha": "4002a235c6b3d9ee3e9a14cf074420581f415f36"
+      },
+      {
+        "path": "packages/browsers/tools/downloadTestBrowsers.mjs",
+        "sha": "dc03cc93dca3363842a36568632ed42e4b8e972c"
+      },
+      {
+        "path": "packages/ng-schematics/tools/copySchemaFiles.mjs",
+        "sha": "d1f883cd14267b715cef5519743c5fe11073eae7"
+      },
+      {
+        "path": "packages/ng-schematics/tools/projects.mjs",
+        "sha": "462dae1d169b59e0924ce9415a8b3e39a69585ff"
+      },
+      {
+        "path": "packages/ng-schematics/tools/smoke.mjs",
+        "sha": "27a93a8ebba197f0ef58da1dce062fed8a46e054"
+      },
+      {
+        "path": "packages/puppeteer-core/src/environment.ts",
+        "sha": "34ff9ee05b5cecb4d099c3f9a8675848d07c33d5"
+      },
+      {
+        "path": "packages/puppeteer-core/src/index-browser.ts",
+        "sha": "35ca5c82c68e11675cf46211a07b730a0afdcfb2"
+      },
+      {
+        "path": "packages/puppeteer-core/src/node-env-setup.ts",
+        "sha": "bc09800f469d46cde79cef327388629e6909ea69"
+      },
+      {
+        "path": "packages/puppeteer-core/src/puppeteer-core-browser.ts",
+        "sha": "b2558528e71992989a8c0d97f71e0fb09a0eb154"
+      },
+      {
+        "path": "packages/puppeteer-core/src/puppeteer-core.ts",
+        "sha": "4a5f756958ef1518a72c67979c87c543d7696ebd"
+      },
+      {
+        "path": "packages/puppeteer-core/src/revisions.ts",
+        "sha": "a2d9308b16ecffa7c78d64bf20815c4218a3a4b8"
+      },
+      {
+        "path": "packages/puppeteer-core/third_party/README.md",
+        "sha": "38c1844346fd1013f165df344db5e8dd41dec0b4"
+      },
+      {
+        "path": "packages/puppeteer-core/third_party/tsconfig.json",
+        "sha": "0a507fe654a0481e0381950bc70e035c79b9b9fd"
+      },
+      {
+        "path": "packages/puppeteer-core/tools/ensure-correct-devtools-protocol-package.mts",
+        "sha": "22358a9642b9805b5d9df6d9e30929ab3c3bbddd"
+      },
+      {
+        "path": "packages/puppeteer/src/getConfiguration.ts",
+        "sha": "34ed2d052ffc9a215b21c0618274c8f274a7ab83"
+      },
+      {
+        "path": "packages/puppeteer/src/puppeteer.docs.ts",
+        "sha": "2d60d1edb54d434104ced5b47c70a711c8e4dbe9"
+      },
+      {
+        "path": "packages/puppeteer/src/puppeteer.ts",
+        "sha": "266cbb7f65a9d278fa22f367a200650cb86549fe"
+      },
+      {
+        "path": "tools/docgen/src/custom_markdown_documenter.ts",
+        "sha": "3032e77be89a8a5bfff85fae9352ef0fce6b98ed"
+      },
+      {
+        "path": "tools/docgen/src/docgen.ts",
+        "sha": "87949719c1e1f152af9addd2ce58805949989bf5"
+      },
+      {
+        "path": "tools/eslint/src/check-license.ts",
+        "sha": "e83068ee14564e1e83a6a58c58f1513e3d63e954"
+      },
+      {
+        "path": "tools/eslint/src/extensions.ts",
+        "sha": "7ffcb4740a66fc6d365e9823e95a9453d4051e78"
+      },
+      {
+        "path": "tools/eslint/src/no-quirks-mode-set-content.ts",
+        "sha": "9412e8cd7b06f02ce3d0cd684cd79bb28c2f860e"
+      },
+      {
+        "path": "tools/eslint/src/plugin.ts",
+        "sha": "11ca0e09c08e960cd2c7838d53d6d70ea1e8e52d"
+      },
+      {
+        "path": "tools/eslint/src/prettier-comments.ts",
+        "sha": "2fe87f311736dc8e8e9efd90c55e1a49b0b6450a"
+      },
+      {
+        "path": "tools/eslint/src/use-using.ts",
+        "sha": "5718be975e166438d45234fe6063aecd17e835ee"
+      },
+      {
+        "path": "tools/mocha-runner/src/interface.ts",
+        "sha": "cea3b12edec24cb565b7c18cf656d90bd19d9530"
+      },
+      {
+        "path": "tools/mocha-runner/src/mocha-runner.ts",
+        "sha": "04a8fa0e96c601841fdac1dcbfd1c18fda11fb2f"
+      },
+      {
+        "path": "tools/mocha-runner/src/reporter.ts",
+        "sha": "7d2501ab351035caca518a7ab4cdc00eb96fda10"
+      },
+      {
+        "path": "tools/mocha-runner/src/test.ts",
+        "sha": "13b58e6d7c09a94139f5cf51cd384e5fcd35a0e9"
+      },
+      {
+        "path": "tools/mocha-runner/src/types.ts",
+        "sha": "9f3456bc0cccc28aa6e95675e41c99ca4a14064a"
+      },
+      {
+        "path": "tools/mocha-runner/src/utils.ts",
+        "sha": "66b82c8209a2b552c4cd9d0dba9166f19512a763"
+      },
+      {
+        "path": "website/src/theme/Root.js",
+        "sha": "c54d3906b915aef1ff07397bcfe9d112c0adadf3"
+      },
+      {
+        "path": "packages/browsers/src/browser-data/browser-data.ts",
+        "sha": "558fcdb147c4c5b115801bc37f86f983305a6a48"
+      },
+      {
+        "path": "packages/browsers/src/browser-data/chrome-headless-shell.ts",
+        "sha": "86219591cf60480e8d2f0a1c487e2c9030052c04"
+      },
+      {
+        "path": "packages/browsers/src/browser-data/chrome.ts",
+        "sha": "cf4d5f0eb688f75901eb4a0e18da01d00d0e6e01"
+      },
+      {
+        "path": "packages/browsers/src/browser-data/chromedriver.ts",
+        "sha": "45438dceee1d686a9b6fe00aafc87911990c5f44"
+      },
+      {
+        "path": "packages/browsers/src/browser-data/chromium.ts",
+        "sha": "9b351107f30c5296ec4f3ee06ae1b3026e76c6d4"
+      },
+      {
+        "path": "packages/browsers/src/browser-data/firefox.ts",
+        "sha": "f5942861937116f6c5ab052a372216d57953805f"
+      },
+      {
+        "path": "packages/browsers/src/browser-data/types.ts",
+        "sha": "5c86b48ed96f85a3c895883cdda6310faefb2171"
+      },
+      {
+        "path": "packages/ng-schematics/src/builders/builders.json",
+        "sha": "41079f77310a0bd6e65f03c85904c8c46cf024e5"
+      },
+      {
+        "path": "packages/ng-schematics/src/schematics/collection.json",
+        "sha": "00bede45e583e581989288726f0fb45a7efa6da2"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/api.ts",
+        "sha": "46789d5ffa4a2fd88e2dfb90d7ae7c68c8b112c1"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/BluetoothEmulation.ts",
+        "sha": "ce673d259d204be7ae819b94c43ade4b12ac944a"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/Browser.ts",
+        "sha": "8aad1b0e8d050f6c76717573cf02b6c5088c15e4"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/BrowserContext.ts",
+        "sha": "a0592df2fd032f064195580e2b30b27f10957fcc"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/CDPSession.ts",
+        "sha": "2882e871fafa8a07839107503ed18b6967aa4a13"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/DeviceRequestPrompt.ts",
+        "sha": "7552d1b347c480773888a447ba2334ee6faaaa9a"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/Dialog.ts",
+        "sha": "5abbf3ba8f519ee7eb416da2197a9282334574dc"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/ElementHandle.ts",
+        "sha": "41420a2d972982f71812511c14542fcb30abde02"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/ElementHandleSymbol.ts",
+        "sha": "6e5087b773ee9e61dbdaab36191486b6e4f0e7ce"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/Environment.ts",
+        "sha": "c5a8d73d00ee28fb7a83757e2d0b0594b6bea4eb"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/Extension.ts",
+        "sha": "486326693ea4aa4854951d979ffe0008eaf764d5"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/Frame.ts",
+        "sha": "773c164fa59b40e2bec15af286c58afa21369fbe"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/HTTPRequest.ts",
+        "sha": "ef4d9371735d5243409eaec631067aa18dbd531a"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/HTTPResponse.ts",
+        "sha": "8b5123b499fa637d633606af2946d20d05c2cf88"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/Input.ts",
+        "sha": "cc85e7d0d40f02a65e2793d4a99879dba713b1c6"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/Issue.ts",
+        "sha": "3af7111fee6ccbbf059cc646896dfdcff527525b"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/JSHandle.ts",
+        "sha": "c3cc3c498a82370d9060609f779467f30151a843"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/Page.ts",
+        "sha": "36706e0fb25df9a7c8d76a349f798eddc838e24d"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/Realm.ts",
+        "sha": "8bac839276d951bf95ab90bb83a736e1f693a37d"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/ScreenRecording.ts",
+        "sha": "7d83191a1dfd73b87ba8995d2de8868c30dcd600"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/Target.ts",
+        "sha": "f78f9bcb574915f9218722f1b479c5905a42f1c4"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/WebWorker.ts",
+        "sha": "2cd1bd4f0fcfc4d8c3d24af61524a95fd4bb3f7a"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/bidi.ts",
+        "sha": "ba66f65c117d0d4ae86307eabe7a5e435a254150"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/BidiOverCdp.ts",
+        "sha": "70205055cc3fbc8e3cd422322bfec6803cbca7eb"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/BluetoothEmulation.ts",
+        "sha": "faacf76a4c09e0102fc7a51fcdb0fbd1173c7be6"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/Browser.ts",
+        "sha": "25b4689c33880e82631ac9dd97329d39855c1f63"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/BrowserConnector.ts",
+        "sha": "d8e3e413662291944c0b86c3fade5408c87d2061"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/BrowserContext.ts",
+        "sha": "417ec9a4800b334bae3e7313efe163468493a544"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/CDPSession.ts",
+        "sha": "af7f57ad1f30e179f7b44a931a4703dc90da35cc"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/Connection.ts",
+        "sha": "f006f103dbd0c642e1476b1c222e514fc984539f"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/Deserializer.ts",
+        "sha": "7bfb5e1c1884eabdd56c577a80088a833cf9ec4d"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/DeviceRequestPrompt.ts",
+        "sha": "32ed812991ffaf8c8d3f9e8ad086bd1108de79f6"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/Dialog.ts",
+        "sha": "0592c54a67987b0536fe2b1dc247cfffa5f151bd"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/ElementHandle.ts",
+        "sha": "41800e2ca845320067b6da3f0f83d881f00bbc99"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/ExposedFunction.ts",
+        "sha": "b58a31602d95f786598b72e24517fb78378cc2ad"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/Frame.ts",
+        "sha": "95519968798a144a12159061f808ec880d7423f4"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/HTTPRequest.ts",
+        "sha": "488b20cc880f1fc06fe67675600a0f887f2c623f"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/HTTPResponse.ts",
+        "sha": "3cbed8456a55db4d1817fedcd0e7e85e078b247d"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/Input.ts",
+        "sha": "caf4222bade63ceaecedd49563d3d06791c161c7"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/JSHandle.ts",
+        "sha": "f8d466f89959f72d9944b6d87b7cc0a251900405"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/Page.ts",
+        "sha": "025d7dcaea8a410579a99afa6b8d92e682921173"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/Realm.ts",
+        "sha": "9867872a094eb4b803ecf065c5baf525db0081cd"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/ScreenRecording.ts",
+        "sha": "003320e76e2761ddb38e9d8d211464982ccf3f3e"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/Serializer.ts",
+        "sha": "c8204e7a7572c08db5343f9b3ceb1062446e1b90"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/Target.ts",
+        "sha": "bfeb5429a6da31984d84c7204baba7e98337bf82"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/util.ts",
+        "sha": "54fc9587fdd8b8b842ae66e26c22011efbad56d3"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/WebWorker.ts",
+        "sha": "0a4595872af5f8d64e6691ef73c8288f2133a894"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Accessibility.ts",
+        "sha": "d31b60879169b22f326bc1f635c88e0a55711e5d"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Binding.ts",
+        "sha": "918b3f6ca6bd8fd443f897fec612ea4f415b464e"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/BluetoothEmulation.ts",
+        "sha": "948732033da63f70f05ee067c26e4231e4a9f964"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Browser.ts",
+        "sha": "4292e2bd3cf11511bee35cab315e3cdae2f20b38"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/BrowserConnector.ts",
+        "sha": "d1dc659d2454a4adf71b6576d5e6b84e7d6d7309"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/BrowserContext.ts",
+        "sha": "2adfe972368821e7c91f448347d1cd1464a03110"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/cdp.ts",
+        "sha": "cb7cec8ab734c793802d747391cb3189efc2c044"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/CdpIssue.ts",
+        "sha": "7733ffc56e65035799c988022789e40bae7bd5d7"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/CdpPreloadScript.ts",
+        "sha": "99e382237b3681bba2e5cdaae3aafb2ef666e02f"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/CdpSession.ts",
+        "sha": "6a1938df22c51c7b3cdb2dfc8009d58660bf16da"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Connection.ts",
+        "sha": "b7d8fd08c91e2e8b7b0af2dc4605e878f0509f15"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Coverage.ts",
+        "sha": "c11eb867869908c5c1b4ea28d181554e65aded05"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/DeviceRequestPrompt.ts",
+        "sha": "be1f38197e4a2730f9ee5a6392d7cde681cd9b75"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Dialog.ts",
+        "sha": "838a86b96d5cb17ebd5923df8a0c384d8b2b459d"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/ElementHandle.ts",
+        "sha": "4995ab7f363f31816a0f5695413aa61dd1c91288"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/EmulationManager.ts",
+        "sha": "77a04227401ab98eccfda05ebe1c62349edf560d"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/ExecutionContext.ts",
+        "sha": "8d6da1edd9262591e69d83dd30e057ef19700d63"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Extension.ts",
+        "sha": "b55c6d15c6e989b3517f0fe556dd6724ca6059f2"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/ExtensionTransport.ts",
+        "sha": "f610709710eb128f18d85c56dbb8bf5b44c70a09"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Frame.ts",
+        "sha": "2fcc2091e6fe255c52fa7b6e97f0cd45b20c1b5c"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/FrameManager.ts",
+        "sha": "2560798fc29ec00f61f10dc78ad798a5d9db319b"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/FrameManagerEvents.ts",
+        "sha": "dd6232044b5e82a70bb1e3618e0fe64be6d4b927"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/FrameTree.ts",
+        "sha": "dcd341c9e33d8a7f4d8c0396affffa96255456af"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/HTTPRequest.ts",
+        "sha": "6fee10007dd866b0f6306ff60cfa26db478870f0"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/HTTPResponse.ts",
+        "sha": "7fb788e9f56265d0a748d94d4a9aeb7b87dfab00"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Input.ts",
+        "sha": "48d64f1574a587d91735a8b1713d6b19be9390c3"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/IsolatedWorld.ts",
+        "sha": "ec78c3af39e8fb19e2f204a82ae476adc12fc17a"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/IsolatedWorlds.ts",
+        "sha": "ddb6c2381d6789bd19115e2dbc0b6f31f1aeb5dd"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/JSHandle.ts",
+        "sha": "40daa5155ae868af1b58b3dd61a3c89fb8c5e811"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/LifecycleWatcher.ts",
+        "sha": "6cca4ce0f44076128768fd926d896dcbd00727f8"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/NetworkEventManager.ts",
+        "sha": "08a60d960db4a18c260c72ddf88ed60e62783e73"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/NetworkManager.ts",
+        "sha": "c2756df38820b3f1c408869e4a3c2fc8cc148e64"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Page.ts",
+        "sha": "15d38614f09d8d36c2d53120495848d32eee42c8"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/PredefinedNetworkConditions.ts",
+        "sha": "73b70fc3e09e13a38d306a4044302b3de18b584a"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/ScreenRecording.ts",
+        "sha": "52491ca6ebcb95c82942f5a9980203297ae098f5"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Target.ts",
+        "sha": "b56a0dbd7662e14b49752d41f66971959984bcf6"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/TargetManageEvents.ts",
+        "sha": "0da86316d7bacc024024e8f8075a7108f6195e19"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/TargetManager.ts",
+        "sha": "9d675142cab59c029036edfabc4796109b5bd949"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/Tracing.ts",
+        "sha": "bb590be55c43de45124435de22d77377928deb0e"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/utils.ts",
+        "sha": "46b25030e0d2945f8ba5d05657e771ab2e8b4b0b"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/WebMCP.ts",
+        "sha": "d288909ff7601953e4057c6ca99cc34dd26f9606"
+      },
+      {
+        "path": "packages/puppeteer-core/src/cdp/WebWorker.ts",
+        "sha": "afdb1a78da68eee0b3bd884dd24b652fbecf681f"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/AriaQueryHandler.ts",
+        "sha": "c10edc70443cbbee7b15213cd3d5f124bd67bf77"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/BrowserConnector.ts",
+        "sha": "7ad719f9c2e9d6b877dd723b35b65362c78f4b6e"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/BrowserWebSocketTransport.ts",
+        "sha": "3675928055af50d6b244b9dac488483ebfcc4891"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/CallbackRegistry.ts",
+        "sha": "112546786337d8a1610e50c0e306cc0f8eea52e5"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/common.ts",
+        "sha": "9d0b8c4d09a326690de9ba694b9b984244269d04"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/Configuration.ts",
+        "sha": "126ef00a9f8f5ce34cfd147da921cb5d1ef76127"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/ConnectionTransport.ts",
+        "sha": "ff36a2557ac3d076c1db2c20064ea3b4fa07431a"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/ConnectOptions.ts",
+        "sha": "6815c7f0d59e65de60f0e398a9906e6cc21b5f53"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/ConsoleMessage.ts",
+        "sha": "d6f5d7dab7bf73fa742d791a38057976d056f9f6"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/Cookie.ts",
+        "sha": "055c972d5861f1177546887be719026aa869ab51"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/CSSQueryHandler.ts",
+        "sha": "e2cfec5a7e77c668578b88c86127d3265d8bdfd8"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/CustomQueryHandler.ts",
+        "sha": "c45e613b97851e031fa0cc6abde402713aa4d63d"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/Debug.ts",
+        "sha": "a334607a60cfaa54d816a8d3534a80e76df383ec"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/Device.ts",
+        "sha": "411366813bbfc3538ed05678be5d62be501802cb"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/DownloadBehavior.ts",
+        "sha": "a1d5a7ce387725f3ca11eac72d2ca5f15b969cfa"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/Errors.ts",
+        "sha": "6f3e1ba636f8cf1bd12920e84d40650c3aa18b68"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/EventEmitter.ts",
+        "sha": "786e9c9e62b1c90edb74be97a1a8f390f39bf953"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/FileChooser.ts",
+        "sha": "1d49fc18718b9e9737285dd49d192aa5e305c468"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/GetQueryHandler.ts",
+        "sha": "785a7afb0bd62235b33c8cec14f6c7c7825fc82b"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/HandleIterator.ts",
+        "sha": "295c0d5bb0fe7eea4670dc780d057cb924f16267"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/LazyArg.ts",
+        "sha": "669bfb830716934c13024b8d6750554956c19919"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/NetworkManagerEvents.ts",
+        "sha": "ab4236a605f337285b0d396bc2eb15264f40e71d"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/PDFOptions.ts",
+        "sha": "2871735edc5115d5e1253c55a83aeaf79dfab49e"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/PierceQueryHandler.ts",
+        "sha": "c6646328573c6d224da602a27d3012e286886c37"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/PQueryHandler.ts",
+        "sha": "348c63c45e9c29d70dab6218badc32c808cb4371"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/PSelectorParser.ts",
+        "sha": "0a5d0763a9efd202fa5fa4157ef564fcadda0c5c"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/Puppeteer.ts",
+        "sha": "c3272730fd129029bca7eb1624b1350dd61e0215"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/QueryHandler.ts",
+        "sha": "ebedd0629e6e50baf831f878b77c6895cea77ed3"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/ScriptInjector.ts",
+        "sha": "d505d6c5ff8699208c802d03de8244c5c96f6156"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/SecurityDetails.ts",
+        "sha": "188eeea9ad3d7b4d9ebc01b550cb4f7c586d9fa7"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/SupportedBrowser.ts",
+        "sha": "7fff0174feee3ad0070f6d5f6b2d02369a317c44"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/TaskQueue.ts",
+        "sha": "7feede40bd5aeba1b2aa6855b40270c0383621bb"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/TextQueryHandler.ts",
+        "sha": "954875644d73eeecbe31e8177010b9bd42b92305"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/TimeoutSettings.ts",
+        "sha": "7789d89b754dc3ea20610a0b50f4525c7b0eca14"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/types.ts",
+        "sha": "baab40110f18b168f268818103888903d5b1e14a"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/USKeyboardLayout.ts",
+        "sha": "0a6d2f2e18ab84d801fc89d07849477346189d8e"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/util.ts",
+        "sha": "86e8fd15afc6e48e601c013b0a3ae225be2010c6"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/Viewport.ts",
+        "sha": "46a937a88f13767e8494be07ef63db48772e895a"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/WaitTask.ts",
+        "sha": "880a6136258c43d5c6aa60c59c0dcd0cc87407fe"
+      },
+      {
+        "path": "packages/puppeteer-core/src/common/XPathQueryHandler.ts",
+        "sha": "390b476102407374c94c2e497853a6e9f8fd8be3"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/ARIAQuerySelector.ts",
+        "sha": "ee883ee525bb24cd2669684660aa7880764463fa"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/CSSSelector.ts",
+        "sha": "a98c540b8c75ac71fb28cd288ea37050fc612b91"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/CustomQuerySelector.ts",
+        "sha": "f202a8a17533efa81a01cb597e32cdcaedf54d2e"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/injected.ts",
+        "sha": "dd9fc5c9d3bf44e5d7fd47ff6e397e3ed723c9b6"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/PierceQuerySelector.ts",
+        "sha": "4c63f95fa864a8921103c32be2cd002a9eab8145"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/Poller.ts",
+        "sha": "6538c4ea45d5867d09303ed8d96f8e2315c67fdf"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/PQuerySelector.ts",
+        "sha": "0b87c4a2356317fdce93bb05f959f07c90a3c6d6"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/README.md",
+        "sha": "d05ed25820acb89e2f5080aaab1915befbfd0f9d"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/TextContent.ts",
+        "sha": "46bb2df672ae54f419af5c9262ae06b643fdd8ad"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/TextQuerySelector.ts",
+        "sha": "6de5e169a8f13fe16410fe510bfd7e1775de36b3"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/util.ts",
+        "sha": "9bfe84032c5b9a637af39b430c23aab6915a1ae0"
+      },
+      {
+        "path": "packages/puppeteer-core/src/injected/XPathQuerySelector.ts",
+        "sha": "50bc3bf9d93e23665edb2f664ca609fe8f9dfd27"
+      },
+      {
+        "path": "packages/puppeteer-core/src/node/BrowserLauncher.ts",
+        "sha": "18f643e186c24dac3c086da8a0374f6f426829cc"
+      },
+      {
+        "path": "packages/puppeteer-core/src/node/ChromeLauncher.ts",
+        "sha": "b4c395cc290060d4ea87b6598d751cd6095569fa"
+      },
+      {
+        "path": "packages/puppeteer-core/src/node/FirefoxLauncher.ts",
+        "sha": "0205d4444b75b548156d2290578a51c75c17c401"
+      },
+      {
+        "path": "packages/puppeteer-core/src/node/LaunchOptions.ts",
+        "sha": "57de48131aa2b74e86b501b46836473cbb11f435"
+      },
+      {
+        "path": "packages/puppeteer-core/src/node/node.ts",
+        "sha": "544b82d7f7f82c733d956b164be271cfde895145"
+      },
+      {
+        "path": "packages/puppeteer-core/src/node/NodeWebSocketTransport.ts",
+        "sha": "688083204f94d1dab8c05c933db8bc21150331b5"
+      },
+      {
+        "path": "packages/puppeteer-core/src/node/PipeTransport.ts",
+        "sha": "e743ba1d6859a5e17ff39ccf13052ace72f15719"
+      },
+      {
+        "path": "packages/puppeteer-core/src/node/PuppeteerNode.ts",
+        "sha": "47564d3f4baec31792f1d77c2a0c46fe84c84c8b"
+      },
+      {
+        "path": "packages/puppeteer-core/src/node/ScreenRecorder.ts",
+        "sha": "56c01a4cd186034a62d743dba98c6c49a1088e5f"
+      },
+      {
+        "path": "packages/puppeteer-core/src/templates/README.md",
+        "sha": "548987eafc13330d9ea8f9a3a0492fe7c90d3195"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/assert.ts",
+        "sha": "4d8125fb82fc5b6c4ac9639e401698a632eda7a2"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/AsyncIterableUtil.ts",
+        "sha": "12e6e6f4261c24645ad291e89cd80cf56027b45c"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/decorators.ts",
+        "sha": "4afaf62fc9e6a4e446e83916c9c4543d367ce952"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/Deferred.ts",
+        "sha": "335735b17249c8b9092ef4c58e70dbce9ac620ac"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/disposable.ts",
+        "sha": "e3a35f91dffeb6df7fc8f378bc49bc3f19252e0d"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/encoding.ts",
+        "sha": "07a3884b23394d7b926fd3cedacf76425f8931b9"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/ErrorLike.ts",
+        "sha": "fc84977a4d8fe35124c62601512e544024ef8f5b"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/Function.ts",
+        "sha": "ae0f161c6d90e9d16423b2ba96ae7e13e9460b76"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/httpUtils.ts",
+        "sha": "8bdc4c27da7e5ddce32e350dcbc4ad1cc55e17c0"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/incremental-id-generator.ts",
+        "sha": "ca456bc245e3f8a4b71e7d1a74f92b4c00406a54"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/Mutex.ts",
+        "sha": "3be4f9564d6157c4d30de2c2a7237dc524869483"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/util.ts",
+        "sha": "cf37ed58d16b335b947aa95f6e4e80d7620690f5"
+      },
+      {
+        "path": "packages/puppeteer-core/src/util/version.ts",
+        "sha": "24c33d65903a0ba767399d95f0e303de3f238912"
+      },
+      {
+        "path": "packages/puppeteer-core/third_party/mitt/mitt.ts",
+        "sha": "ae6f2cb3e5870cfc8ada9a826e5c5c92dd355319"
+      },
+      {
+        "path": "packages/puppeteer-core/third_party/parsel-js/parsel-js.ts",
+        "sha": "46e844f1ba67ea3e61488bf8eafffd6147f0acb9"
+      },
+      {
+        "path": "packages/puppeteer-core/third_party/rxjs/rxjs.ts",
+        "sha": "97909f84fe1274fadd70cc08e7924a115b3965a2"
+      },
+      {
+        "path": "packages/puppeteer-core/third_party/urlpattern-polyfill/urlpattern-polyfill.ts",
+        "sha": "698ffde28cb3651ef926c26fc17b6911b3d48a33"
+      },
+      {
+        "path": "packages/ng-schematics/src/builders/puppeteer/schema.json",
+        "sha": "a8bf9470538a39329b46ea0b6ff7ad4eebc85763"
+      },
+      {
+        "path": "packages/ng-schematics/src/builders/puppeteer/types.ts",
+        "sha": "8e7b1ab4d927f72ffb41ccb2b9d1969c18d62977"
+      },
+      {
+        "path": "packages/ng-schematics/src/schematics/config/schema.json",
+        "sha": "8d45751bb19e27db2540a929bc40ff0a930903a8"
+      },
+      {
+        "path": "packages/ng-schematics/src/schematics/ng-add/schema.json",
+        "sha": "0fa581f1a712467a8816b4761dbcff17072d44e9"
+      },
+      {
+        "path": "packages/ng-schematics/src/schematics/utils/files.ts",
+        "sha": "75b779f04a23e1b8223d7526eb33b886462024b1"
+      },
+      {
+        "path": "packages/ng-schematics/src/schematics/utils/json.ts",
+        "sha": "cac21f7f22f7e0bea32e1faff855ddb93f51f2c1"
+      },
+      {
+        "path": "packages/ng-schematics/src/schematics/utils/packages.ts",
+        "sha": "aaff7aed385287821b70be276bad39bbb9847548"
+      },
+      {
+        "path": "packages/ng-schematics/src/schematics/utils/types.ts",
+        "sha": "7d66e0f0fa0ce0660712ff2c257ab921e9150e4f"
+      },
+      {
+        "path": "packages/puppeteer-core/src/api/locators/locators.ts",
+        "sha": "3b7ee76b6681e970cda833d2dc0b04ba29a08db5"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/core/Browser.ts",
+        "sha": "d5b0ef37c503ca5159165a77f48b4d48ff78b5a4"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/core/BrowsingContext.ts",
+        "sha": "31c4b20d7b50bf85922a28de6244c644bbec8815"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/core/Connection.ts",
+        "sha": "f6aaa4496af0b16262b290f13312b632b26d3c99"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/core/core.ts",
+        "sha": "82649096ceadd328855167b9b1faaff0d00de503"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/core/Navigation.ts",
+        "sha": "a4637a3a893aec183a8b7bf052540ebad6a7c362"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/core/README.md",
+        "sha": "26adebadbdc6018fd62b7958858ada8861593ff7"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/core/Realm.ts",
+        "sha": "8b0cc7bef84f2eb4ba68ac374c15a7a120af58f0"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/core/Request.ts",
+        "sha": "3d7a8c38349df8346e447bb7e5c20c1e031aeb25"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/core/Session.ts",
+        "sha": "a7d1d38bc58086cc22bb707f75c211367df1b876"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/core/UserContext.ts",
+        "sha": "ae6ec769d2e915b7c37fc33e5fa209125d1a24ff"
+      },
+      {
+        "path": "packages/puppeteer-core/src/bidi/core/UserPrompt.ts",
+        "sha": "90323e06bb5d5aa1df99c0e004646a4ac50fc51c"
+      },
+      {
+        "path": "packages/puppeteer-core/src/node/util/fs.ts",
+        "sha": "a2ea6423e42ea693dad99b20fc56d1bda640f624"
+      },
+      {
+        "path": "packages/ng-schematics/src/schematics/config/files/.puppeteerrc.mjs",
+        "sha": "0da14a80d85dd3c586af5b0070197e2505de7ecd"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T15:44:01Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 0,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [
+      "autorun-credential-access",
+      "browser-credential-access"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "test-d/ElementHandle.test-d.ts",
+      "line": 907,
+      "snippet": "await handle.$eval(",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "new-Function",
+      "severe": false,
+      "file": "tools/patch.mjs",
+      "line": 23,
+      "snippet": "file = file.replaceAll('fn = new Function(`return ${functionValue}`)();', '');",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "packages/puppeteer-core/src/api/Frame.ts",
+      "line": 671,
+      "snippet": "return await document.$eval(selector, pageFunction, ...args);",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "packages/puppeteer-core/src/api/Page.ts",
+      "line": 1551,
+      "snippet": "return await this.mainFrame().$eval(selector, pageFunction, ...args);",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "new-Function",
+      "severe": false,
+      "file": "packages/puppeteer-core/src/util/Function.ts",
+      "line": 20,
+      "snippet": "fn = new Function(`return ${functionValue}`)() as (",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "packages/browsers/src/CLI.ts",
+      "line": 504,
+      "snippet": "'(experimental) Bisect Chrome for Testing using the specified script. Downloads https://chromium.googlesource.com/chromium/src.git/+/main/tools/bisect-builds.py",
+      "host": "chromium.googlesource.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "packages/browsers/src/browser-data/chrome.ts",
+      "line": 38,
+      "snippet": "baseUrl = 'https://storage.googleapis.com/chrome-for-testing-public',",
+      "host": "storage.googleapis.com",
+      "deduction": 15
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "autorun-credential-access",
+      "severe": true,
+      "file": "packages/puppeteer/install.mjs",
+      "line": 28,
+      "snippet": "if (process.env['RUNNER_DEBUG']) {",
+      "deduction": 40
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "browser-credential-access",
+      "severe": true,
+      "file": "packages/browsers/src/browser-data/firefox.ts",
+      "line": 83,
+      "snippet": "'https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central';",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 360,
+    "files_excluded": 0,
+    "danger_hits": 5,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "chromium.googlesource.com",
+      "storage.googleapis.com"
+    ],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 19,
+    "failed": 0,
+    "ms": 8833
+  },
+  "duration_ms": 3218
+}

@@ -1,0 +1,186 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154652Z",
+  "target": {
+    "source": "github",
+    "id": "redis/mcp-redis",
+    "url": "https://github.com/redis/mcp-redis",
+    "name": "mcp-redis"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:47:54.374Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "68ea0b01331a3dd5572f07e368fdbf6d0cb174ae",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "0506f6b62e109c4364d92ca390d13fc15e9c202f",
+    "files_scanned": 29,
+    "candidates": 29,
+    "excluded_non_shipped": 26,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "af872ccaf73381db6eec67ad09f1369815611c78"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "f85869a04bbd2f9d71d09bc5d4c50ba2b02f83f0"
+      },
+      {
+        "path": ".github/workflows/stale-issues.yml",
+        "sha": "5970650398d1cb35c8184abefa2bf3d4a75fae9a"
+      },
+      {
+        "path": "src/main.py",
+        "sha": "82d5a7847d344c6288ea0b8025701284511ada1f"
+      },
+      {
+        "path": "server.json",
+        "sha": "33d728dc41ee157dcf7c38154da419ce88e8d6f0"
+      },
+      {
+        "path": "src/common/server.py",
+        "sha": "9eec034c87e215e2c97a7f8583c0036412713e24"
+      },
+      {
+        "path": "src/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/version.py",
+        "sha": "dd9b22cccc1fd4469ceec38987ae57ec4429c12b"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "dbb5be67383d867823960096a82e21c92832328b"
+      },
+      {
+        "path": "GEMINI.md",
+        "sha": "28677ad76a767e4db4b9f4d0be29b296ea7f2fba"
+      },
+      {
+        "path": "README.md",
+        "sha": "d0817e30384d6a0a42f33e5f6fa98d116864e962"
+      },
+      {
+        "path": "src/common/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/common/config.py",
+        "sha": "9ad712ea7dca6c1112e33237439e8e791406c63a"
+      },
+      {
+        "path": "src/common/connection.py",
+        "sha": "176a096d7288feb7e2dc67e17351a5026dc15187"
+      },
+      {
+        "path": "src/common/entraid_auth.py",
+        "sha": "5260cfa1e64d02ca219f5acd148a6baded026841"
+      },
+      {
+        "path": "src/common/logging_utils.py",
+        "sha": "37e337a578ad6dfa04756700b570726fad35df91"
+      },
+      {
+        "path": "src/common/subscription_manager.py",
+        "sha": "ccb721f13611603cbb2a32f0a2595bd9b96aa43b"
+      },
+      {
+        "path": "src/tools/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/tools/hash.py",
+        "sha": "0e70a86a75962b02b44d4762a7aa28e36982d40c"
+      },
+      {
+        "path": "src/tools/json.py",
+        "sha": "54718afcadcb6268f0eb545218fa586daa4f7de1"
+      },
+      {
+        "path": "src/tools/list.py",
+        "sha": "f9d389faa8a754964d22e1aa748eaa37e7e16b66"
+      },
+      {
+        "path": "src/tools/misc.py",
+        "sha": "5e0e08adef48476e6e5e4e392dfecf8105b7e4f2"
+      },
+      {
+        "path": "src/tools/pub_sub.py",
+        "sha": "6bb85f70936dba7398fc05a1c8db1b7bcc98150b"
+      },
+      {
+        "path": "src/tools/redis_query_engine.py",
+        "sha": "32bc662b5250dd50557010c0983644cb5e7be957"
+      },
+      {
+        "path": "src/tools/server_management.py",
+        "sha": "94a6360a743e75f92ff150cccfee101700b3c76e"
+      },
+      {
+        "path": "src/tools/set.py",
+        "sha": "bb2de0bf028b213fe1a9f8cfee83398698f21eba"
+      },
+      {
+        "path": "src/tools/sorted_set.py",
+        "sha": "c633a74298bbfb74845e1c5add9db22d74d4fe9c"
+      },
+      {
+        "path": "src/tools/stream.py",
+        "sha": "1f72327338c9fe76aa489cc24e9bc40151846426"
+      },
+      {
+        "path": "src/tools/string.py",
+        "sha": "f4f76ef99b5b9899341d597c191abcc18725d2a3"
+      }
+    ],
+    "repo_pushed_at": "2026-10-26T16:33:56Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 29,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 7
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1336
+  },
+  "duration_ms": 1354
+}

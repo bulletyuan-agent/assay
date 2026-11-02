@@ -19,6 +19,14 @@ const DANGER = [
 ];
 // Indexes into DANGER that are severe on their own: destructive deletes, pipe-to-shell, env exfiltration.
 const SEVERE = new Set([0, 1, 2, 8, 9]);
+export const DANGER_NAMES = ['rm-rf', 'curl-pipe-sh', 'wget-pipe-sh', 'eval', 'new-Function', 'child_process-shell', 'os.system', 'subprocess-shell', 'base64-pipe-sh', 'env-dump-to-network'];
+// Locate the first match of a regex: file line and a short snippet, so every deduction can be traced.
+function locate(text, re) {
+  const m = re.exec(text);
+  if (!m) return null;
+  const line = text.slice(0, m.index).split('\n').length;
+  return { line, snippet: (text.split('\n')[line - 1] || '').trim().slice(0, 160) };
+}
 // Tests, examples and docs routinely contain eval, rm -rf and foreign URLs. They are not shipped behaviour.
 export const NON_SHIPPED = /(^|\/)(tests?|__tests__|spec|examples?|fixtures?|docs?|samples?|benchmarks?|e2e)\/|\.(test|spec)\.[a-z]+$/i;
 const INJECTION = [
@@ -38,14 +46,18 @@ const clamp = (v) => Math.max(0, Math.min(100, Math.round(v)));
 export async function githubFiles(t, branch = 'HEAD') {
   const tree = await http(`https://api.github.com/repos/${t.id}/git/trees/${branch}?recursive=1`, { headers: ghHeaders() });
   if (!tree.ok) return null;
-  const picked = tree.data.tree
-    .filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path)))
-    .slice(0, 80);
+  const candidates = tree.data.tree
+    .filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path)));
+  const picked = candidates.slice(0, 80);
   const out = [];
   for (const f of picked) {
     const r = await http(`https://raw.githubusercontent.com/${t.id}/${branch}/${f.path}`, { json: false });
     if (r.ok) out.push({ path: f.path, text: r.data });
   }
+  // Fingerprint of exactly what was scanned. Same tree sha + same method version must give the same score.
+  out.treeSha = tree.data.sha;
+  out.candidates = candidates.length;
+  out.truncated = candidates.length > picked.length || !!tree.data.truncated;
   return out;
 }
 
@@ -61,7 +73,13 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   const code = shipped.filter((f) => CODE_RE.test(f.path));
   let danger = 0;
   let severe = 0;
-  for (const f of code) DANGER.forEach((re, i) => { if (re.test(f.text)) { danger++; if (SEVERE.has(i)) severe++; } });
+  const findings = [];
+  for (const f of code) {
+    DANGER.forEach((re, i) => {
+      const loc = locate(f.text, re);
+      if (loc) { danger++; if (SEVERE.has(i)) severe++; findings.push({ dim: 'dangerous_patterns', rule: DANGER_NAMES[i], severe: SEVERE.has(i), file: f.path, ...loc, deduction: 25 }); }
+    });
+  }
   const dangerous_patterns = hasFiles ? clamp(100 - 25 * danger) : null;
 
   // Egress: a host is fine when the README declares it (by host or registrable domain). Only undeclared hosts count.
@@ -73,14 +91,24 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
     for (const m of f.text.matchAll(/https?:\/\/([a-z0-9.-]+)/gi)) {
       const h = m[1].toLowerCase();
       if (h !== ownHost && !ALLOW_HOSTS.some((a) => h === a || h.endsWith(`.${a}`))) {
-        if (readmeLower.includes(h) || readmeLower.includes(reg(h))) declared.add(h); else hosts.add(h);
+        if (readmeLower.includes(h) || readmeLower.includes(reg(h))) declared.add(h);
+        else if (!hosts.has(h)) {
+          hosts.add(h);
+          const loc = locate(f.text, new RegExp(h.replace(/\./g, '\\.')));
+          findings.push({ dim: 'egress', rule: 'undeclared-host', file: f.path, ...(loc || {}), host: h, deduction: hosts.size <= 6 ? 15 : 0 });
+        }
       }
     }
   }
   const egress = hasFiles ? clamp(100 - 15 * Math.min(hosts.size, 6)) : null;
 
   let inj = 0;
-  for (const f of shipped) for (const re of INJECTION) if (re.test(f.text)) inj++;
+  for (const f of shipped) {
+    for (const re of INJECTION) {
+      const loc = locate(f.text, re);
+      if (loc) { inj++; findings.push({ dim: 'instruction_hygiene', rule: 'injection', file: f.path, ...loc, deduction: 30 }); }
+    }
+  }
   const instruction_hygiene = hasFiles ? clamp(100 - 30 * inj) : null;
 
   const dims = { maintenance, install_docs, dangerous_patterns, egress, instruction_hygiene };
@@ -100,7 +128,7 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   if (composite !== null && red_flags.length) composite = Math.min(composite, 49);
   const grade = composite === null ? null : composite >= 85 ? 'A' : composite >= 70 ? 'B' : composite >= 50 ? 'C' : 'D';
   return {
-    dims, composite, grade, red_flags, coverage: Number(den.toFixed(2)), static_scan: hasFiles,
+    dims, composite, grade, red_flags, findings, coverage: Number(den.toFixed(2)), static_scan: hasFiles,
     evidence: {
       files_scanned: hasFiles ? shipped.length : 0, files_excluded: hasFiles ? files.length - shipped.length : 0, danger_hits: danger, severe_hits: severe, injection_hits: inj,
       undeclared_hosts: [...hosts].slice(0, 10), declared_hosts: declared.size, install_detected: installDetected, age_days: Math.round(age),

@@ -123,7 +123,15 @@ export function daysSince(iso) {
 
 export const INSTALL_RE = /(npx\s|uvx\s|npm (i|install)\s|pip install|docker (run|pull)|claude (mcp add|plugin)|\binstall\b|安装)/i;
 
-export async function http(url, { headers = {}, json = true } = {}) {
+// Every network call is recorded so a run can be audited afterwards (URL without query, status, duration).
+export const NET = [];
+export async function http(url, opts = {}) {
+  const t0 = Date.now();
+  const r = await httpRaw(url, opts);
+  NET.push({ url: String(url).replace(/\?.*$/, ''), status: r.status, ok: r.ok, ms: Date.now() - t0 });
+  return r;
+}
+async function httpRaw(url, { headers = {}, json = true } = {}) {
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), 20000);
   try {

@@ -1,10 +1,10 @@
 {
-  "at": "2026-11-02T14:01:22.635Z",
+  "at": "2026-11-02T14:18:39.532Z",
   "summary": {
     "all": {
-      "n_good": 9,
+      "n_good": 2,
       "n_bad": 5,
-      "mean_good": 96,
+      "mean_good": 94,
       "mean_bad": 49,
       "auc": 1
     },
@@ -16,9 +16,9 @@
       "auc": 1
     },
     "real": {
-      "n_good": 7,
+      "n_good": 0,
       "n_bad": 0,
-      "mean_good": 96,
+      "mean_good": null,
       "mean_bad": null,
       "auc": null
     }
@@ -203,183 +203,6 @@
         "declared_hosts": 0,
         "install_detected": true,
         "age_days": 0
-      }
-    },
-    {
-      "id": "g-servers",
-      "label": "good",
-      "kind": "real",
-      "score": 100,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 100,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 62,
-        "files_excluded": 18,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [],
-        "declared_hosts": 0,
-        "install_detected": true,
-        "age_days": 4
-      }
-    },
-    {
-      "id": "g-github-mcp",
-      "label": "good",
-      "kind": "real",
-      "score": 100,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 100,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 48,
-        "files_excluded": 32,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [],
-        "declared_hosts": 2,
-        "install_detected": true,
-        "age_days": 0
-      }
-    },
-    {
-      "id": "g-chrome-devtools",
-      "label": "good",
-      "kind": "real",
-      "score": 93,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 70,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 70,
-        "files_excluded": 10,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [
-          "v8.dev",
-          "www.apache.org"
-        ],
-        "declared_hosts": 2,
-        "install_detected": true,
-        "age_days": 0
-      }
-    },
-    {
-      "id": "g-playwright",
-      "label": "good",
-      "kind": "real",
-      "score": 93,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 70,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 30,
-        "files_excluded": 7,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [
-          "www.apache.org",
-          "portal.microsofticm.com"
-        ],
-        "declared_hosts": 1,
-        "install_detected": true,
-        "age_days": 1
-      }
-    },
-    {
-      "id": "g-firecrawl",
-      "label": "good",
-      "kind": "real",
-      "score": 93,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 70,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 56,
-        "files_excluded": 24,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [
-          "client.example",
-          "status.example"
-        ],
-        "declared_hosts": 5,
-        "install_detected": true,
-        "age_days": 0
-      }
-    },
-    {
-      "id": "g-notion",
-      "label": "good",
-      "kind": "real",
-      "score": 93,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 75,
-        "egress": 100,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 27,
-        "files_excluded": 14,
-        "danger_hits": 1,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [],
-        "declared_hosts": 2,
-        "install_detected": true,
-        "age_days": 4
-      }
-    },
-    {
-      "id": "g-anthropic-skills",
-      "label": "good",
-      "kind": "real",
-      "score": 100,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 100,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 80,
-        "files_excluded": 0,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [],
-        "declared_hosts": 0,
-        "install_detected": true,
-        "age_days": 5
       }
     }
   ]

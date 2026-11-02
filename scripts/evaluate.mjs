@@ -1,5 +1,8 @@
 // Static evaluation and nomination gates. Implements docs in knowledge base: standards/01-evaluation-standard.md
 import { fileURLToPath } from 'node:url';
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath as _fu } from 'node:url';
 import { extendedScan } from './extended.mjs';
 import { http, ghHeaders, fetchMeta, parseTarget, daysSince, INSTALL_RE, WINDOW_DAYS, F } from './lib.mjs';
 
@@ -29,7 +32,7 @@ function locate(text, re, original = text) {
   return { line, snippet: (original.split('\n')[line - 1] || '').trim().slice(0, 160) };
 }
 // Tests, examples and docs routinely contain eval, rm -rf and foreign URLs. They are not shipped behaviour.
-export const NON_SHIPPED = /(^|\/)(tests?|__tests__|spec|examples?|fixtures?|docs?|samples?|benchmarks?|e2e)\/|\.(test|spec)\.[a-z]+$/i;
+export const NON_SHIPPED = /(^|\/)(tests?|__tests__|__mocks__|mocks?|spec|examples?|fixtures?|docs?|samples?|benchmarks?|e2e|\.github|\.devcontainer|\.husky|\.vscode)\/|(^|\/)[^/]*mocks?\/|\.(test|spec|stories)\.[a-z]+$|_test\.(go|py|rs|js|ts)$|(^|\/)test_[^/]*\.py$/i;
 const INJECTION = [
   /ignore (all |any |the )?(previous|prior|above) instructions/i,
   /do not (tell|inform|mention (it )?to) the user/i,
@@ -48,13 +51,14 @@ export function stripComments(text, path) {
 }
 // Reserved or documentation-only hosts and domains are placeholders, never real egress.
 const NETWORK_PRIMITIVE = /\b(fetch|axios|got|undici|request|XMLHttpRequest|WebSocket|EventSource)\s*\(|https?\.(request|get)\s*\(|\b(requests|httpx|urllib\d?|aiohttp)\b|\bcurl\b|\bwget\b|child_process|net\.connect|new\s+Socket/;
-const PLACEHOLDER_HOST = /(^|\.)(example\.(com|org|net)|invalid|test|localhost|local)$|\.example$|^example$/i;
+const PLACEHOLDER_HOST = /(^|\.)(example\.(com|org|net)|invalid|test|localhost|local|internal|lan|localdomain)$|\.example$|^example$|^[a-z0-9-]+$/i;
 const CODE_RE = /\.(m?[jt]sx?|py|sh|rb|go)$/i;
 const TEXT_RE = /(\.(md|json|ya?ml|txt)|SKILL\.md)$/i;
 const ALLOW_HOSTS = ['apache.org', 'opensource.org', 'creativecommons.org', 'gnu.org', 'localhost', '127.0.0.1', 'github.com', 'api.github.com', 'raw.githubusercontent.com',
   'npmjs.org', 'npmjs.com', 'pypi.org', 'gitlab.com', 'w3.org', 'json-schema.org', 'schemastore.org',
-  'example.com', 'modelcontextprotocol.io', 'anthropic.com', 'shields.io'];
+  'example.com', 'openxmlformats.org', 'purl.org', 'schemas.microsoft.com', 'xmlsoap.org', 'ecma-international.org', 'dublincore.org', 'xmlns.com', 'modelcontextprotocol.io', 'anthropic.com', 'shields.io'];
 
+const CACHE = join(dirname(_fu(import.meta.url)), '..', '.cache', 'blobs'); // content-addressed by git blob sha
 const clamp = (v) => Math.max(0, Math.min(100, Math.round(v)));
 
 export async function githubFiles(t, branch = 'HEAD') {
@@ -78,8 +82,13 @@ export async function githubFiles(t, branch = 'HEAD') {
   const excludedNonShipped = tree.data.tree.filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path)) && NON_SHIPPED.test(x.path)).length;
   const out = [];
   for (const f of picked) {
-    const r = await http(`https://raw.githubusercontent.com/${t.id}/${branch}/${f.path}`, { json: false });
-    if (r.ok) out.push({ path: f.path, sha: f.sha, text: r.data });
+    const cachePath = join(CACHE, `${f.sha}`);
+    let text = existsSync(cachePath) ? readFileSync(cachePath, 'utf8') : null;
+    if (text === null) {
+      const r = await http(`https://raw.githubusercontent.com/${t.id}/${branch}/${f.path}`, { json: false });
+      if (r.ok) { text = r.data; try { mkdirSync(CACHE, { recursive: true }); writeFileSync(cachePath, text); } catch { /* cache is optional */ } }
+    }
+    if (text !== null) out.push({ path: f.path, sha: f.sha, text });
   }
   // Fingerprint of exactly what was scanned. Same tree sha + same method version must give the same score.
   out.treeSha = tree.data.sha;
@@ -106,7 +115,7 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
     const clean = stripComments(f.text, f.path);
     DANGER.forEach((re, i) => {
       const loc = locate(clean, re, f.text);
-      if (loc) { danger++; if (SEVERE.has(i)) severe++; findings.push({ dim: 'dangerous_patterns', rule: DANGER_NAMES[i], severe: SEVERE.has(i), file: f.path, ...loc, deduction: 25 }); }
+      if (loc) { danger++; if (SEVERE.has(i)) severe++; findings.push({ dim: 'dangerous_patterns', rule: DANGER_NAMES[i], severe: SEVERE.has(i), file: f.path, ...loc, deduction: SEVERE.has(i) ? 40 : 10 }); }
     });
   }
 
@@ -121,6 +130,7 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
     if (!NETWORK_PRIMITIVE.test(clean)) continue;
     for (const m of clean.matchAll(/https?:\/\/([a-z0-9.-]+)/gi)) {
       const h = m[1].toLowerCase();
+      if (/[A-Za-z]{3,}\s+$/.test(clean.slice(Math.max(0, m.index - 14), m.index))) continue; // prose such as 'see https://...'
       if (h !== ownHost && !PLACEHOLDER_HOST.test(h) && !ALLOW_HOSTS.some((a) => h === a || h.endsWith(`.${a}`))) {
         if (readmeLower.includes(h) || readmeLower.includes(reg(h))) declared.add(h);
         else if (!hosts.has(h)) {
@@ -153,6 +163,9 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   }
   // Extended detectors (method 0.3.0). Every dimension is now exactly 100 minus the deductions of its findings.
   if (hasFiles) findings.push(...extendedScan(shipped, { stripComments, NETWORK_PRIMITIVE, PLACEHOLDER_HOST, readmeLower }));
+  // Weak (non-severe) dangerous-pattern hits are capped in total so they cannot sink a clean project.
+  let weak = 0;
+  for (const x of findings) if (x.dim === 'dangerous_patterns' && !x.severe && DANGER_NAMES.includes(x.rule)) { if (weak + x.deduction > 30) x.deduction = Math.max(0, 30 - weak); weak += x.deduction; }
   const sumDim = (d) => findings.filter((x) => x.dim === d).reduce((a, x) => a + x.deduction, 0);
   const instruction_hygiene = hasFiles ? clamp(100 - sumDim('instruction_hygiene')) : null;
 

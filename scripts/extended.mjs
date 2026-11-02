@@ -16,7 +16,7 @@ const VENDOR_INSTALL_HOSTS = ['astral.sh', 'get.docker.com', 'raw.githubusercont
 
 const EXEC_TEXT = [
   ['pipe-to-shell', /\b(curl|wget|iwr|Invoke-WebRequest)\b[^\n|]*\|\s*(sudo\s+)?(ba|z|k|da)?sh\b/i, 'url-host'],
-  ['pipe-to-source', /\|\s*source\b|source\s+<\(\s*(curl|wget)|\.\s+<\(\s*(curl|wget)/i, 'always'],
+  ['pipe-to-source', /\b(curl|wget)\b[^\n]*\|\s*source\b|source\s+<\(\s*(curl|wget)|\.\s+<\(\s*(curl|wget)/i, 'always'],
   ['eval-decoded', /\beval\b[^\n]{0,60}\$\([^)\n]*base64|base64\s+(-d|-D|--decode)[^\n]*\|\s*(ba|z)?sh|\beval\s*\(\s*(atob|Buffer\.from)\(/i, 'always'],
   ['encrypted-archive', /\bunzip\s+-P\s*\S+|\b7z?a?\s+x[^\n]*\s-p\S+|\bzip\s+-P\s*\S+/i, 'always'],
   ['powershell-encoded', /powershell[^\n]{0,60}-(enc|encodedcommand)\b/i, 'always'],
@@ -28,7 +28,8 @@ const CRED = /(\.ssh\/(id_[a-z0-9]+|authorized_keys)|\.aws\/credentials|\.npmrc|
 const ENV_DUMP_PY = /(dict\(\s*os\.environ\s*\)|json\.dumps\(\s*(dict\()?\s*os\.environ|os\.environ\.items\(\))/;
 const CONCEAL = /\b(do not|don't|never)\s+(mention|tell|reveal|inform|disclose|show|notify)\b|\bwithout\s+(telling|informing|notifying|mentioning)\b|\b(silently|secretly|covertly)\b|不要(告诉|告知|提及)|不得(告诉|告知)/i;
 const SEND_TO_URL = /\b(send|upload|post|forward|transmit|submit|email|exfiltrat\w*|copy)\b[^.\n]{0,140}\b(to|at|via)\b[^.\n]{0,60}https?:\/\/[^\s)'"`>]+/i;
-const POISON_MARK = /<\s*IMPORTANT\s*>|<\s*system\s*>|<\s*instructions?\s*>|\[\s*SYSTEM\s*\]/i;
+const POISON_MARK = /<\s*(IMPORTANT|system|instructions?)\s*>|\[SYSTEM\]/;
+const POISON_MARK_I = /<\s*IMPORTANT\s*>/i;
 const INJECT_EXTRA = [/disregard (all |any |the )?(previous|prior|above)/i, /override (the )?(system|safety)/i, /you are now (in )?(developer|dan|unrestricted)/i];
 const TAG_CHARS = /[\u{E0000}-\u{E007F}]/u;
 
@@ -121,7 +122,7 @@ export function extendedScan(shipped, ctx) {
           add('instruction_hygiene', 'nl-exfil', hasConceal, { path: f.path }, send, hasConceal ? 40 : 20);
         }
       }
-      const mark = find(f.text, POISON_MARK);
+      const mark = find(f.text, POISON_MARK) || find(f.text, POISON_MARK_I);
       if (mark && (isSkill || isCode || isDoc)) {
         add('instruction_hygiene', 'tool-poisoning-marker', hasConceal, f, mark, hasConceal ? 40 : 15);
       }

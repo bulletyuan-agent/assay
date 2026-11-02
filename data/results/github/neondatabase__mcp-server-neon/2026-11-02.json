@@ -1,0 +1,420 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T144431Z",
+  "target": {
+    "source": "github",
+    "id": "neondatabase/mcp-server-neon",
+    "url": "https://github.com/neondatabase/mcp-server-neon",
+    "name": "mcp-server-neon"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:50:15.749Z",
+  "method_version": "0.3.0",
+  "tool": {
+    "assay_commit": "ec5d6df5813eb648cfc550b37887c357f2078eb5",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "6c4d43b76f7105f9c1676dbceab3dd7706d0ed51",
+    "files_scanned": 80,
+    "candidates": 121,
+    "excluded_non_shipped": 81,
+    "coverage": 0.66,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "7340e95b4a60962e09bb0ec5b5538a771ee159ac"
+      },
+      {
+        "path": ".agents/skills/claimable-postgres/SKILL.md",
+        "sha": "8a74990c13fc8121b13fb271185d0f33821aef2e"
+      },
+      {
+        "path": ".agents/skills/logging-best-practices/SKILL.md",
+        "sha": "309f7e49f5292affba8c2f46e1c5b4c853ea3a26"
+      },
+      {
+        "path": "package.json",
+        "sha": "a423b7e2eee8b607374ec6cd76b798f6b8e935bf"
+      },
+      {
+        "path": "lib/assert.ts",
+        "sha": "32914363a3b0d178d7bdaeb68a320ea699e8f1c7"
+      },
+      {
+        "path": "lib/config.ts",
+        "sha": "77d3018dd6fd81bc0579464ab82e44d209d36820"
+      },
+      {
+        "path": "lib/errors.ts",
+        "sha": "7c384dad9ccbdba982fdb6787257150d0a9b00f5"
+      },
+      {
+        "path": "mcp/server/index.ts",
+        "sha": "57c9f236e8c7ba422487d4702d280a89896e870c"
+      },
+      {
+        "path": "mcp/tools/index.ts",
+        "sha": "b390f1953a061607f7f296999d9d5c2eea471057"
+      },
+      {
+        "path": "mcp/tools/tools.ts",
+        "sha": "46dd389a8463163f16518d47f1420b599da98461"
+      },
+      {
+        "path": "scripts/e2e-setup.ts",
+        "sha": "ea386c60b22837a53e7074b023254c618e43bb6c"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "9c6176b2dabcb71113534604ea77161db74b7af6"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "7d852cb43cf3bd3d23d84535f8c50fa3b70936b7"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "b506635654107efcdfb137af445792b076e15311"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "sha": "ef37301a84116f069175a2b0c9513ee7c6719688"
+      },
+      {
+        "path": "knip.json",
+        "sha": "0effd663e4259f9d5ff368eb4bc369b78ee5080b"
+      },
+      {
+        "path": "lib/oauth/client-assertion.ts",
+        "sha": "d1b0d099a702fe0686a80c0d96748c2cca161ae6"
+      },
+      {
+        "path": "lib/oauth/client-credentials.ts",
+        "sha": "469d4ebab216735d61870113c961100d016e8ebb"
+      },
+      {
+        "path": "lib/oauth/client-id-metadata-document.ts",
+        "sha": "e717907fc81adbc20c27d6eb1c4b3a15e1c983c7"
+      },
+      {
+        "path": "lib/oauth/client.ts",
+        "sha": "05f852a78410741d3bc634dc317be1296068db9f"
+      },
+      {
+        "path": "lib/oauth/protected-resource-metadata.ts",
+        "sha": "0cef64b396b2fb96e486d447e9605c6d1389359c"
+      },
+      {
+        "path": "lib/oauth/redirect-uri.ts",
+        "sha": "f1f8bb4a22781ffc8801c3590d1fccc922615c41"
+      },
+      {
+        "path": "lib/oauth/upstream-error.ts",
+        "sha": "e43cf3bdcf3fe17af83f4c7cedc3a783b993c6a1"
+      },
+      {
+        "path": "next.config.ts",
+        "sha": "8eecbc46ac9acb988442553b0ef436a986ddcab1"
+      },
+      {
+        "path": "playwright.config.ts",
+        "sha": "c5abfd2f57819148371bad3199506534ab82d11d"
+      },
+      {
+        "path": "postcss.config.mjs",
+        "sha": "ba720fe55c468abac4f1c7e349166bd70e8bf9bc"
+      },
+      {
+        "path": "README.md",
+        "sha": "a5ecdc18307b64e8925498261801c261946c474e"
+      },
+      {
+        "path": "skills-lock.json",
+        "sha": "b6be83d777cffd363896bbc273ad060d6a705133"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "ee9d3d294c25cafa45f1fde1155ac8eb8207abc6"
+      },
+      {
+        "path": "vercel.json",
+        "sha": "0726916780c8e10519773caff3c7eedddf04634e"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "392bfd1c73294be54eb676018b302c281bb612d4"
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "sha": "5cf7d3e85b69060b5aa3c1b7a6a1eb16a749ae9f"
+      },
+      {
+        "path": "ai-notes/auth-callback-slo.md",
+        "sha": "2cc79376a30d932cd9f21be7da9770195160f0fe"
+      },
+      {
+        "path": "ai-notes/refresh-slo.md",
+        "sha": "d0780423141bf51876e0848749263d7d1318b4dd"
+      },
+      {
+        "path": "ai-notes/SMOKE_TESTS.md",
+        "sha": "eea2ff1e7512e74e041560f486ddab79544fe420"
+      },
+      {
+        "path": "ai-notes/vercel-migration.md",
+        "sha": "7210b8aa44117b8f544e8da4cc2861245b1897d2"
+      },
+      {
+        "path": "app/layout.tsx",
+        "sha": "3db122361e0f8e9ff331926fdc984b960b590f74"
+      },
+      {
+        "path": "mcp/constants.ts",
+        "sha": "786a477c4ee0f32658f4a81a65ddbe1123b982d5"
+      },
+      {
+        "path": "mcp/describeUtils.ts",
+        "sha": "00418259b3f4f06da9a7f814182f3e48fc69b9b2"
+      },
+      {
+        "path": "mcp/neon-client.ts",
+        "sha": "3839518172e6d105de471afad18689fb0b66a13b"
+      },
+      {
+        "path": "public/llms.txt",
+        "sha": "c7b726cfc0b40204f3ac1f18bf419679ae97af2d"
+      },
+      {
+        "path": ".github/workflows/claude.yml",
+        "sha": "b30c40c2687f81bea6e4e68f69e1f67458b1ff7e"
+      },
+      {
+        "path": ".github/workflows/deploy-preview.yml",
+        "sha": "6b20b93cae5dde0a2c6078257eb3ebb57f455aad"
+      },
+      {
+        "path": ".github/workflows/pr.yml",
+        "sha": "ae77921e3a3c9648a84c28a89b3d9c28e98d5e59"
+      },
+      {
+        "path": "app/callback/route.ts",
+        "sha": "5b6be68e6ea12e62aa8c230131ca4e7aa2c1c22f"
+      },
+      {
+        "path": "mcp/analytics/analytics.ts",
+        "sha": "e3eed843eb69afd64eb05c513729f149aac4d0bf"
+      },
+      {
+        "path": "mcp/inspect/queries.ts",
+        "sha": "4950017c51ceca6f20949b93244ad4d10869ec9e"
+      },
+      {
+        "path": "mcp/inspect/report.ts",
+        "sha": "8a84556b75be3ccbc69adaebd0590ecdab0d99d9"
+      },
+      {
+        "path": "mcp/inspect/targets.ts",
+        "sha": "8c1d8b0f31fae3b35e2e5cd81fc82211430f8ec8"
+      },
+      {
+        "path": "mcp/oauth/auth-transaction-store.ts",
+        "sha": "c5ec5cbb9434256b011c9d76eaa6ae0010b60bb9"
+      },
+      {
+        "path": "mcp/oauth/auth-transaction.ts",
+        "sha": "69ea36a3999461633c3da15faa2197e1be499370"
+      },
+      {
+        "path": "mcp/oauth/browser-binding.ts",
+        "sha": "dd39cce8fe802035772dc26eabcabc27196fcb3b"
+      },
+      {
+        "path": "mcp/oauth/consent-approval.ts",
+        "sha": "c30fa0b18c620728d85d35c04aa7f2f63902bfcc"
+      },
+      {
+        "path": "mcp/oauth/consent-canonical-url.ts",
+        "sha": "2c464442ce4617f6888f53394ab6d2f08faa1a04"
+      },
+      {
+        "path": "mcp/oauth/consent-dialog.ts",
+        "sha": "8ac84600128bd6fc983749390e2757f3cf0a146d"
+      },
+      {
+        "path": "mcp/oauth/consent-html-headers.ts",
+        "sha": "c476df43e829227bb87f39f2323fe1e460913bd1"
+      },
+      {
+        "path": "mcp/oauth/consent-mode.ts",
+        "sha": "323dcdf43244f3325449fe3de746855df0fe30be"
+      },
+      {
+        "path": "mcp/oauth/consent-tools.ts",
+        "sha": "ed1eed09f0862d3860a1c12c66fd4faa5e35f2a4"
+      },
+      {
+        "path": "mcp/oauth/downstream-auth-request.ts",
+        "sha": "eab212f69f94f7c2fc7abf15fbf556285c2830af"
+      },
+      {
+        "path": "mcp/oauth/issued-scopes.ts",
+        "sha": "23aac5c3d9c31243a2f6b2ae3fb680a256163a05"
+      },
+      {
+        "path": "mcp/oauth/kv-store.ts",
+        "sha": "1fe798af38aa02f479d0650afef07632dd1dc2a9"
+      },
+      {
+        "path": "mcp/oauth/model.ts",
+        "sha": "c683a77476bba9a8e681b06fadb6b74028366c25"
+      },
+      {
+        "path": "mcp/oauth/refresh-lock.ts",
+        "sha": "af4598d8cb9a2b1df804a775709a10696f8a98e4"
+      },
+      {
+        "path": "mcp/oauth/utils.ts",
+        "sha": "ca0dc27cc82e1e29856a2a21504ecf9e703a4360"
+      },
+      {
+        "path": "mcp/sentry/instrument.ts",
+        "sha": "62318d03407f55fa06190b38f1797c6127e7d045"
+      },
+      {
+        "path": "mcp/sentry/utils.ts",
+        "sha": "047b3841aa5aea701c652d482a7217c28be8899e"
+      },
+      {
+        "path": "mcp/server/account.ts",
+        "sha": "4063c811b35d03dc398361515b03fc25da195112"
+      },
+      {
+        "path": "mcp/server/api.ts",
+        "sha": "1ddcffda46f6799d7b014ec701f0f2fa297b681e"
+      },
+      {
+        "path": "mcp/server/errors.ts",
+        "sha": "4ef6586451870c6dd1b6314cd057742b08fe376f"
+      },
+      {
+        "path": "mcp/server/session-binding.ts",
+        "sha": "72c6cee6941243fa39e3b2279538257b02b88764"
+      },
+      {
+        "path": "mcp/tools/definitions.ts",
+        "sha": "f2747dfd57b3d91bcc6d0e3ac65d05c9be179928"
+      },
+      {
+        "path": "mcp/tools/grant-filter.ts",
+        "sha": "330f6f98d205cdac80a7a24698fc4fa9326d0091"
+      },
+      {
+        "path": "mcp/tools/listed-schema.ts",
+        "sha": "9387ba635edf4d532010d0b50c7d3efd5fc627ae"
+      },
+      {
+        "path": "mcp/tools/registration.ts",
+        "sha": "f3c295b0698166927faaeeaa567f7fb8b275e2b0"
+      },
+      {
+        "path": "mcp/tools/tool-definition.ts",
+        "sha": "9671b4b9a79b53fd475129219420aeb5db638e62"
+      },
+      {
+        "path": "mcp/tools/toolsSchema.ts",
+        "sha": "f091f08914602f50f68a9d0a00fc5ffd9682a634"
+      },
+      {
+        "path": "mcp/tools/types.ts",
+        "sha": "c923fc7a1487a851d76f9f2d1d46b1274354ea08"
+      },
+      {
+        "path": "mcp/tools/utils.ts",
+        "sha": "a91747dc86f8e6f407bba8a773c8da6b6b559aef"
+      },
+      {
+        "path": "mcp/types/auth.ts",
+        "sha": "9ec9680e2733cc2ab9e8ca3932f318feee3c0a73"
+      },
+      {
+        "path": "mcp/types/context.ts",
+        "sha": "4779b513869960d2e89dad9ac5a27f0dd9e45345"
+      }
+    ],
+    "repo_pushed_at": "2026-10-31T22:38:08Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 86,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 75,
+      "egress": 85,
+      "instruction_hygiene": 80
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "mcp/oauth/refresh-lock.ts",
+      "line": 216,
+      "snippet": "redis.eval(HEARTBEAT_LUA, {",
+      "deduction": 25
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "mcp/tools/grant-filter.ts",
+      "line": 175,
+      "snippet": "'if the user needs a DATABASE_URL, tell them to copy it from https://console.neon.tech. ' +",
+      "host": "console.neon.tech.",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "nl-exfil",
+      "severe": false,
+      "file": ".agents/skills/claimable-postgres/SKILL.md",
+      "line": 56,
+      "snippet": "2. **Provision:** POST to `https://neon.new/api/v1/database` with `{\"ref\": \"agent-skills\"}`.",
+      "deduction": 20
+    }
+  ],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 1,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "console.neon.tech."
+    ],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 2
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 29647
+  },
+  "duration_ms": 29678
+}

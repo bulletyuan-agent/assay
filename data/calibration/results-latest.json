@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-02T14:44:24.426Z",
+  "at": "2026-11-02T14:54:05.922Z",
   "summary": {
     "all": {
       "n_good": 2,
@@ -100,7 +100,7 @@
       "dims": {
         "maintenance": 100,
         "install_docs": 60,
-        "dangerous_patterns": 10,
+        "dangerous_patterns": 0,
         "egress": 100,
         "instruction_hygiene": 100
       },
@@ -479,11 +479,11 @@
       "id": "holdout-vuln-k8s-shell",
       "label": "vulnerable",
       "kind": "reconstructed",
-      "score": 87,
+      "score": 91,
       "dims": {
         "maintenance": 100,
         "install_docs": 60,
-        "dangerous_patterns": 75,
+        "dangerous_patterns": 90,
         "egress": 100,
         "instruction_hygiene": 100
       },

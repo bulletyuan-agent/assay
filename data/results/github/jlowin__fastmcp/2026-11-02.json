@@ -1,0 +1,422 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T144431Z",
+  "target": {
+    "source": "github",
+    "id": "jlowin/fastmcp",
+    "url": "https://github.com/jlowin/fastmcp",
+    "name": "fastmcp"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T14:52:47.062Z",
+  "method_version": "0.3.0",
+  "tool": {
+    "assay_commit": "ec5d6df5813eb648cfc550b37887c357f2078eb5",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "588297eb53c00d8a60291b05d4315fe753355c10",
+    "files_scanned": 80,
+    "candidates": 437,
+    "excluded_non_shipped": 770,
+    "coverage": 0.18,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "skills/fastmcp-client-cli/SKILL.md",
+        "sha": "ae66a5e3121c36c10d57236ffdae188d685ddeba"
+      },
+      {
+        "path": "skills/fastmcp-server/SKILL.md",
+        "sha": "7b71de3f1089f04496b58fd3ecdcc6782df134a6"
+      },
+      {
+        "path": ".agents/skills/adversarial-review/SKILL.md",
+        "sha": "99ca4115c3725dabdc27b186108e05b0a80c3ef3"
+      },
+      {
+        "path": ".agents/skills/fix-issue/SKILL.md",
+        "sha": "ba33d334d16d0253be012b833c4b1239442d5fcf"
+      },
+      {
+        "path": ".agents/skills/python-tests/SKILL.md",
+        "sha": "aa69967188968b4dfa9951a21c488ffe19052d96"
+      },
+      {
+        "path": ".agents/skills/release/SKILL.md",
+        "sha": "562a4456df8b6f5c661b8026876e4f83a9abe8dd"
+      },
+      {
+        "path": ".agents/skills/review-issue/SKILL.md",
+        "sha": "949a3cfb373beb16629aa32cd6622ce0be307334"
+      },
+      {
+        "path": ".agents/skills/review-pr/SKILL.md",
+        "sha": "4c03948dfa750563eebf51f50d009f90ecb87501"
+      },
+      {
+        "path": ".agents/skills/review-security-report/SKILL.md",
+        "sha": "a8d4490d9622d7e93fe41afad3606ae8b46b5296"
+      },
+      {
+        "path": ".agents/skills/triage/SKILL.md",
+        "sha": "300a45e9755b535037306b307febcca7add6d45f"
+      },
+      {
+        "path": "status-site/app.js",
+        "sha": "a892d3bcbb8ef5ad315923881159453db8411c73"
+      },
+      {
+        "path": "dev-docs/v4-notes/index.md",
+        "sha": "478eb79fe3b608e7d7c702d358860f1094fd52de"
+      },
+      {
+        "path": "fastmcp_remote/fastmcp_remote/cli.py",
+        "sha": "f72aacb6c91ed84a89d248b7dc62f2a2475a8b3b"
+      },
+      {
+        "path": "scripts/auto_close_duplicates.py",
+        "sha": "40318bfddeae813f80dbaf2976b105fd15ef97e4"
+      },
+      {
+        "path": "scripts/auto_close_needs_mre.py",
+        "sha": "240e83a01b91b527e6a7dc5ebf0e563a268b0308"
+      },
+      {
+        "path": "scripts/backlog_status.py",
+        "sha": "7b65b66e9d88fb6b2913f958f27a58089db4cacc"
+      },
+      {
+        "path": "scripts/benchmark_http_startup.py",
+        "sha": "54162ec4f85b1ddc7e3a7ef379ebb7094ffec53a"
+      },
+      {
+        "path": "scripts/benchmark_imports.py",
+        "sha": "6ad1dfe576460c8d8375b2247ce4aed3e81b8e7b"
+      },
+      {
+        "path": "scripts/maintenance_status.py",
+        "sha": "74406ed5a800a499e51bda51254d577178cd436b"
+      },
+      {
+        "path": "scripts/rank_issues.py",
+        "sha": "052675a59145e966f6cc55c0c691489a13bef9b7"
+      },
+      {
+        "path": "scripts/release_contributor_credit.py",
+        "sha": "d71b09973fd6734285e91c952e52c9da553b26f5"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "5f6ef5b6d6bb80c251bf616fab82ec7a82823de0"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "ddf9d8033903404dc599f34dba894476b25bcfcc"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "026b0a2cde1070b9e490bd6fcd7c13fbbf2777e4"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "84d4e10c28970e9aff9892e13155d900791fec33"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/apps/app.py",
+        "sha": "268ce929969a430f41ae4d218c55015e680625df"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/cli/cli.py",
+        "sha": "7cd8e6633cf4f5b5dd69c502a3ef074ad0aee138"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/server/server.py",
+        "sha": "53d00d5a5de610fd6c2328be3652ae8c8bb23058"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/utilities/cli.py",
+        "sha": "1f0a8d3605e50fc8384307b21cb591b5a9b31319"
+      },
+      {
+        "path": "README.md",
+        "sha": "436e1a9d3d88404dcb5c2ec904d60c8a27e57d23"
+      },
+      {
+        "path": "renovate.json",
+        "sha": "a61143b8c4a1f307384a2f4ccd48a986527b6a6f"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "bea822e9dadc9cf9bc0b2280a03cdb9bb7a58d0d"
+      },
+      {
+        "path": ".github/pull_request_template.md",
+        "sha": "08d3a99210f6a11e47102654118052354916051f"
+      },
+      {
+        "path": ".github/release.yml",
+        "sha": "5397d75e4dc8b53c18e8a5927cb97b5ab9999735"
+      },
+      {
+        "path": "fastmcp_remote/README.md",
+        "sha": "7f576eb705a5468549ea64f8063480190f621dd1"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/client/mixins/tools.py",
+        "sha": "d0548ed012fdeacfd5ba006ca213aff66a6c08c1"
+      },
+      {
+        "path": "fastmcp_slim/README.md",
+        "sha": "a9b155fc6671e4bc8c3bf907bdb086d03281927c"
+      },
+      {
+        "path": "fastmcp_tasks/README.md",
+        "sha": "f8564ea5e2b9cd80ab97b7a31623fb8571bd9cd8"
+      },
+      {
+        "path": "status-site/operations.js",
+        "sha": "84f47af0a5aab97ac4da8d7745f859b30a779de3"
+      },
+      {
+        "path": "status-site/README.md",
+        "sha": "31d52d9817adf22f292c4a83dd376180e3d26bac"
+      },
+      {
+        "path": ".github/agentic/prefect.yaml",
+        "sha": "60dff92b54baa90bf095e8edda7d41b9e5139ffb"
+      },
+      {
+        "path": ".github/agentic/README.md",
+        "sha": "5cb3fe73e627afc37099ba627984958a838ef388"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug.yml",
+        "sha": "13a84d7d7ec2d73ee0dfc472b23a047248963843"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/config.yml",
+        "sha": "7c4bef52e194ddf0d657ad3a2df6f684c755e75a"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/enhancement.yml",
+        "sha": "85f195cea9a445619ec2e4bb35e343ce51f0304e"
+      },
+      {
+        "path": ".github/scripts/analyze-ci-failure.mjs",
+        "sha": "ac03ebf657d9bd2aa581c8a30fdcf7641fc78805"
+      },
+      {
+        "path": ".github/scripts/test-ci-workflows.mjs",
+        "sha": "248d6fdfad88be47f545bc39105ad8fdb25b4dc7"
+      },
+      {
+        "path": ".github/scripts/test-issue-link.mjs",
+        "sha": "9a33dce713f67e819c26d535ba7931be9f0e9bb3"
+      },
+      {
+        "path": ".github/scripts/test-marvin-ci.mjs",
+        "sha": "d8d4f80900d336e49ca8dd84e2c4569eb663068c"
+      },
+      {
+        "path": ".github/scripts/triage-label.sh",
+        "sha": "c6bdda85c2475808b612bd0f935ed0a7004113a3"
+      },
+      {
+        "path": ".github/workflows/agentic-checks.yml",
+        "sha": "b992dc756ff25d7241eab71c55782f29cbd2e86c"
+      },
+      {
+        "path": ".github/workflows/auto-close-duplicates.yml",
+        "sha": "d3444be3f3f3226d47b425b9a4de8b4586c6b361"
+      },
+      {
+        "path": ".github/workflows/auto-close-needs-mre.yml",
+        "sha": "cec0091d8b7b72048cc087511bde22a29478eed9"
+      },
+      {
+        "path": ".github/workflows/backlog-status.yml",
+        "sha": "87728c17105f5adf0610e12eaa268b24d1fda877"
+      },
+      {
+        "path": ".github/workflows/deploy-docs.yml",
+        "sha": "fa57c150ffdecf0b3f2815d7e16cd6cfd981662f"
+      },
+      {
+        "path": ".github/workflows/maintenance-status.yml",
+        "sha": "44381e33b39ca12e591d4dedcd65be18871b1674"
+      },
+      {
+        "path": ".github/workflows/marvin-comment-on-issue.yml",
+        "sha": "0a264063f22c33e80e32e6f50b05bf1815fb1689"
+      },
+      {
+        "path": ".github/workflows/marvin-comment-on-pr.yml",
+        "sha": "f10e4903b07bb6762603fc9a2dd17e45eb9f723f"
+      },
+      {
+        "path": ".github/workflows/marvin-dedupe-issues.yml",
+        "sha": "dbe3752a845de4908177c9a2dfd17b002cc15249"
+      },
+      {
+        "path": ".github/workflows/marvin-label-triage.yml",
+        "sha": "df36cf29403893928f6599c44449253d015f0d10"
+      },
+      {
+        "path": ".github/workflows/marvin-test-failure.yml",
+        "sha": "e17d094d36a2b1c8bce887efa2a4f9a22332c007"
+      },
+      {
+        "path": ".github/workflows/minimize-resolved-reviews.yml",
+        "sha": "26e00be351dce2c16221f953584f13d485c3d36c"
+      },
+      {
+        "path": ".github/workflows/publish-fastmcp-remote.yml",
+        "sha": "79e93e6290c8e7e8540b358fc3efa9dc149ad53f"
+      },
+      {
+        "path": ".github/workflows/publish-fastmcp-slim.yml",
+        "sha": "4c7ff81ed5554ca2c42ed5d59d44ec7574107e49"
+      },
+      {
+        "path": ".github/workflows/publish-fastmcp-tasks.yml",
+        "sha": "7ffd987bfac2436f37d5c0077f96a6eee91e0c5a"
+      },
+      {
+        "path": ".github/workflows/publish-fastmcp.yml",
+        "sha": "9862ec398e7fe97e44194493a0d0e0dbebaf187a"
+      },
+      {
+        "path": ".github/workflows/require-issue-link.yml",
+        "sha": "8c7c837bc50c0ed4ae181e0d784c982785ca6cef"
+      },
+      {
+        "path": ".github/workflows/run-downstream-smoke.yml",
+        "sha": "068ca2c2604892259ab91785af961ed76e389cbe"
+      },
+      {
+        "path": ".github/workflows/run-schema-crash-test.yml",
+        "sha": "cd5b8fe1aed4434da2677e6f8ec631106460fa0b"
+      },
+      {
+        "path": ".github/workflows/run-static.yml",
+        "sha": "fe21b79327b168ad4dd1e9fa5e10e66897d6b8d8"
+      },
+      {
+        "path": ".github/workflows/run-tests.yml",
+        "sha": "9d71d5e9eacab0ae8f372f451db07f2535813ea0"
+      },
+      {
+        "path": ".github/workflows/run-upgrade-checks.yml",
+        "sha": "98c0a7e68bf8fb5cf11d3204b450ca648a0291ca"
+      },
+      {
+        "path": ".github/workflows/update-config-schema.yml",
+        "sha": "389fde2774093db29dcfae7a1bb1cbc0326c16c2"
+      },
+      {
+        "path": ".github/workflows/update-sdk-docs.yml",
+        "sha": "115014b0d18d35403244acabdef704774e8a61f4"
+      },
+      {
+        "path": "dev-docs/v3-notes/auth-provider-env-vars.md",
+        "sha": "c61f61cbea185094dee5319eeb69cc43c6119084"
+      },
+      {
+        "path": "dev-docs/v3-notes/get-methods-consolidation.md",
+        "sha": "70b64c9c7c2546514aa1f61e8ebc0c26fb700c29"
+      },
+      {
+        "path": "dev-docs/v3-notes/prompt-internal-types.md",
+        "sha": "addbd01c37640858dccd41059d2f3e5cbf723354"
+      },
+      {
+        "path": "dev-docs/v3-notes/provider-architecture.md",
+        "sha": "b1a0e80813b1dc847f3aef2bbd65660370592637"
+      },
+      {
+        "path": "dev-docs/v3-notes/provider-test-pattern.md",
+        "sha": "c37c14c8a250a420ed823e3af9ec1396bf048b00"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T14:43:14Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 89,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 55,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "status-site/app.js",
+      "line": 3,
+      "snippet": "window.location.origin === \"https://prefecthq.github.io\"",
+      "host": "prefecthq.github.io",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "fastmcp_slim/fastmcp/server/server.py",
+      "line": 2460,
+      "snippet": "def from_fastapi(",
+      "host": "fastapi",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "fastmcp_slim/fastmcp/server/server.py",
+      "line": 2579,
+      "snippet": "proxy = create_proxy(\"http://remote-server/mcp\")",
+      "host": "remote-server",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "prefecthq.github.io",
+      "fastapi",
+      "remote-server"
+    ],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 30450
+  },
+  "duration_ms": 30480
+}

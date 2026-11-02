@@ -1,0 +1,400 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T144431Z",
+  "target": {
+    "source": "github",
+    "id": "modelcontextprotocol/python-sdk",
+    "url": "https://github.com/modelcontextprotocol/python-sdk",
+    "name": "python-sdk"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T14:52:16.582Z",
+  "method_version": "0.3.0",
+  "tool": {
+    "assay_commit": "ec5d6df5813eb648cfc550b37887c357f2078eb5",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "d7845c073a2b9ba5ab2817ecf93d3e45ef24cd14",
+    "files_scanned": 80,
+    "candidates": 1063,
+    "excluded_non_shipped": 624,
+    "coverage": 0.08,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".claude/skills/test-quality/SKILL.md",
+        "sha": "d27fbb6e4d2ee3f0414b2f96dcd52548479c7202"
+      },
+      {
+        "path": "i18n/de/pages/get-started/installation.md",
+        "sha": "28f67185e3647a5ef9d264498a75b926bfc0cd54"
+      },
+      {
+        "path": "i18n/es/pages/get-started/installation.md",
+        "sha": "0e3ca1b1b12ac3fd06c5c1289ccc47298d76d20f"
+      },
+      {
+        "path": "i18n/fr/pages/get-started/installation.md",
+        "sha": "610c6253a5945200eb993a5ab08bdd3b563c2b20"
+      },
+      {
+        "path": "i18n/hi/pages/get-started/installation.md",
+        "sha": "b8460135ea45882f30f2a17da532bf0ee4a3f8b6"
+      },
+      {
+        "path": "i18n/ja/pages/get-started/installation.md",
+        "sha": "0a63a8af9eeb20fcd03acbcf05e277463cac130b"
+      },
+      {
+        "path": "i18n/ko/pages/get-started/installation.md",
+        "sha": "023991873c788f91b07ae17a8ca6ded673374215"
+      },
+      {
+        "path": "i18n/pt/pages/get-started/installation.md",
+        "sha": "533d1d8892404ac527611bd09574e10b345c83fe"
+      },
+      {
+        "path": "i18n/ru/pages/get-started/installation.md",
+        "sha": "a5c61f11c6d1d9902b142d71c7932b662740db80"
+      },
+      {
+        "path": "i18n/tr/pages/get-started/installation.md",
+        "sha": "b696c2ca5041d523207bd39add33d50559790a5c"
+      },
+      {
+        "path": "i18n/uk/pages/get-started/installation.md",
+        "sha": "e560423d7b17cb42e4cb0e87d0595089cf9df641"
+      },
+      {
+        "path": "i18n/zh-hant/pages/get-started/installation.md",
+        "sha": "c81972db1eed05c529c9ffc2186ae314b4b97879"
+      },
+      {
+        "path": "i18n/zh/pages/get-started/installation.md",
+        "sha": "5bf588d5c59c2f3bc929b078e026d04582bda7df"
+      },
+      {
+        "path": "src/mcp/cli/cli.py",
+        "sha": "203034c6efff034a60399f4c6b83b3d9f14c92bc"
+      },
+      {
+        "path": ".github/workflows/main.yml",
+        "sha": "45df5129a9af0724dc5004f8ff125d6f04999ad0"
+      },
+      {
+        "path": "scripts/build-docs.sh",
+        "sha": "f0991b759bf29bb6969c49e1c18a88b494cf7fd2"
+      },
+      {
+        "path": "scripts/gen_surface_types.py",
+        "sha": "230e7046820578e32de1b2260fc01c5d51d669c4"
+      },
+      {
+        "path": "scripts/serve-docs.sh",
+        "sha": "df32e915cf5f453359c338c72efbfd7273d90e21"
+      },
+      {
+        "path": "scripts/update_readme_snippets.py",
+        "sha": "aa0b70d2b445f953d98221e68a0450b18f63e194"
+      },
+      {
+        "path": "src/mcp/server/lowlevel/server.py",
+        "sha": "cbcf103d01f94bf6addacdac0ed14ce985bf0b69"
+      },
+      {
+        "path": "src/mcp/server/mcpserver/server.py",
+        "sha": "7efa29108d9504974cb38e7619d3403b14c4d53a"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "94fc4cf1520caf94d3f36885d588f65d126cb3ea"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "4a94783bea501b7f3d2a8a0c9611f9fbdb1fd280"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "985a28566c0c986d2a6317a2ea4abe0083193900"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "005cf2360d66b484bc811241a3b43c83cba0e456"
+      },
+      {
+        "path": "DEPENDENCY_POLICY.md",
+        "sha": "961157b3781262876b1d5faf8718244e6b174bf9"
+      },
+      {
+        "path": "i18n/de/pages/index.md",
+        "sha": "744c99c40e5275758d640afa10d278fbd8650dc5"
+      },
+      {
+        "path": "i18n/es/pages/index.md",
+        "sha": "145c89d4213251917ba405b441e544edefdbcb57"
+      },
+      {
+        "path": "i18n/fr/pages/index.md",
+        "sha": "99a02571665ec7a434449a6e134da143bea80b57"
+      },
+      {
+        "path": "i18n/hi/pages/index.md",
+        "sha": "ab70b31a7e4118a3cc03ecb0c49b183ce1113268"
+      },
+      {
+        "path": "i18n/ja/pages/index.md",
+        "sha": "554e24f66a8e7150860ee6f7fd6dea7abfcdcb7f"
+      },
+      {
+        "path": "i18n/ko/pages/index.md",
+        "sha": "06d21eb5d6b7d2a8fd14e81c2b4354eeb9f3a28b"
+      },
+      {
+        "path": "i18n/pt/pages/index.md",
+        "sha": "4305076473a4ead234577b2041e1209827e4339b"
+      },
+      {
+        "path": "i18n/ru/pages/index.md",
+        "sha": "15bda0c117ecc730ee9ddabe72af8c6980600fa8"
+      },
+      {
+        "path": "i18n/tr/pages/index.md",
+        "sha": "1faafb77851e6f5fb87ac142007f5d0beb7534a5"
+      },
+      {
+        "path": "i18n/uk/pages/index.md",
+        "sha": "0089a48c47246c416c325c77cf7071a0b04658ee"
+      },
+      {
+        "path": "i18n/zh-hant/pages/index.md",
+        "sha": "f94c586b96346ff7c87a66a0f8722c34851aa2cd"
+      },
+      {
+        "path": "i18n/zh/pages/index.md",
+        "sha": "7de9370fd308e1f3ce57b16335d99e496c638f84"
+      },
+      {
+        "path": "mkdocs.yml",
+        "sha": "62f064036637bf6a395e94db17d55f71e446598a"
+      },
+      {
+        "path": "README.md",
+        "sha": "50ea0ed227b72de82917d67d678d1d24783ab2e9"
+      },
+      {
+        "path": "RELEASE.md",
+        "sha": "cada37480cb810a1fa3be653e06e4a0160e7e764"
+      },
+      {
+        "path": "ROADMAP.md",
+        "sha": "dfdcc41a479c1297c14a888f37cd59286dc32701"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "5a69875124adf2ab3a8d5bccc58f6545b0c9712a"
+      },
+      {
+        "path": "src/mcp-types/README.md",
+        "sha": "910a9e8f386ca428d15aeda1341d69b67d4fac7d"
+      },
+      {
+        "path": "src/mcp/__init__.py",
+        "sha": "28bc4703edeae63396eddd08415b254a45b871b2"
+      },
+      {
+        "path": "VERSIONING.md",
+        "sha": "bc80d51aef1d31003d5352db08df5d3ef173c016"
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "sha": "754d5b0a57463896ed27125dfff72d2910e7e9fd"
+      },
+      {
+        "path": ".github/pull_request_template.md",
+        "sha": "d32f0079f5d79f75f75c5dcea292f2c87cf42369"
+      },
+      {
+        "path": "docs_src/__init__.py",
+        "sha": "d19acbc088b685f5c9e79c5e53a5c28e6a24c8f1"
+      },
+      {
+        "path": "i18n/de/pages/advanced/index.md",
+        "sha": "b58c2abf327967bcf22b20ffc0e9dd7866c76c45"
+      },
+      {
+        "path": "i18n/de/pages/client/index.md",
+        "sha": "a3ce8240de66b294f1eee91f0ab135c34bd812ec"
+      },
+      {
+        "path": "i18n/de/pages/get-started/index.md",
+        "sha": "4cdc309e508a0a48b78519d13e9ad796f11ccaed"
+      },
+      {
+        "path": "i18n/de/pages/handlers/index.md",
+        "sha": "9bf191c81b04afffd186d212d0a5b68df3a179d3"
+      },
+      {
+        "path": "i18n/de/pages/run/index.md",
+        "sha": "031fbdd524475b585be3421e77984a869f949095"
+      },
+      {
+        "path": "i18n/de/pages/servers/index.md",
+        "sha": "45be37e5dcd924c36d068ad1214d6a1094899494"
+      },
+      {
+        "path": "i18n/de/pages/servers/tools.md",
+        "sha": "a0ee259aa5b57f07c1f2aaefcef563479f8abf3e"
+      },
+      {
+        "path": "i18n/es/pages/advanced/index.md",
+        "sha": "5cf0d9e5888574acd6de7f94ee6226bf779fb8ad"
+      },
+      {
+        "path": "i18n/es/pages/client/index.md",
+        "sha": "a61c710402d34bfa2a1270f83307f70018879514"
+      },
+      {
+        "path": "i18n/es/pages/get-started/index.md",
+        "sha": "150b2ccef88b47cbe715d7403dc29aa37719689e"
+      },
+      {
+        "path": "i18n/es/pages/handlers/index.md",
+        "sha": "5cb1b939ba6618a5cebf0ea8109be0573eb1e90d"
+      },
+      {
+        "path": "i18n/es/pages/run/index.md",
+        "sha": "8dd948d07deae812adc1714e51afeebf3dd5e26d"
+      },
+      {
+        "path": "i18n/es/pages/servers/index.md",
+        "sha": "e021f74248bef327663684ad2d1eee0b7ff83329"
+      },
+      {
+        "path": "i18n/es/pages/servers/tools.md",
+        "sha": "95bc35aff9e255978c2bc7193bd5fd5ffe6134b5"
+      },
+      {
+        "path": "i18n/fr/pages/advanced/index.md",
+        "sha": "f6d9e0637b1ba083f0087d62278672cb7f47ebe4"
+      },
+      {
+        "path": "i18n/fr/pages/client/index.md",
+        "sha": "291933a44c5de0bd10c82d8c1c8949ebea82c496"
+      },
+      {
+        "path": "i18n/fr/pages/get-started/index.md",
+        "sha": "1374233b24391a8d614813452780deffcf0daa03"
+      },
+      {
+        "path": "i18n/fr/pages/handlers/index.md",
+        "sha": "294b26aebd8b34095601168ef756981ccc48b5ec"
+      },
+      {
+        "path": "i18n/fr/pages/run/index.md",
+        "sha": "d528c3752965639f875e1b42446bcf40f5c35aa9"
+      },
+      {
+        "path": "i18n/fr/pages/servers/index.md",
+        "sha": "462d9bc87a025c82a209d9ed073f303f01521b9d"
+      },
+      {
+        "path": "i18n/fr/pages/servers/tools.md",
+        "sha": "edb030a1e0ac856e181d8b84ee6a28a872639aa6"
+      },
+      {
+        "path": "i18n/general-prompt.md",
+        "sha": "b585cf0acf4720789d8c4bbfc457acc476137b88"
+      },
+      {
+        "path": "i18n/hi/pages/advanced/index.md",
+        "sha": "3ecafc2e38a26d50cc7213133f9a044bee5edf45"
+      },
+      {
+        "path": "i18n/hi/pages/client/index.md",
+        "sha": "eb85cb863cafc132eb035f5ca87faa8109a15956"
+      },
+      {
+        "path": "i18n/hi/pages/get-started/index.md",
+        "sha": "c3e55b6149a1cdb0bb3de7a6f384fa1ec4d75d5a"
+      },
+      {
+        "path": "i18n/hi/pages/handlers/index.md",
+        "sha": "a142c2d8cf21ba989e5a5fdb6e67a53d07d50732"
+      },
+      {
+        "path": "i18n/hi/pages/run/index.md",
+        "sha": "3c99980f3bace6b6babe8ce4a73749a6e1b8d908"
+      },
+      {
+        "path": "i18n/hi/pages/servers/index.md",
+        "sha": "4051a71659f6e9f9f3dd2f9901b0b51dbc324cb4"
+      },
+      {
+        "path": "i18n/hi/pages/servers/tools.md",
+        "sha": "52fe69fa3203e7b63e94213bec009a6b33234abd"
+      },
+      {
+        "path": "i18n/ja/pages/advanced/index.md",
+        "sha": "0b7ae52e724325f8af87a77b55157061bd2bd97f"
+      }
+    ],
+    "repo_pushed_at": "2026-11-01T16:26:38Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 93,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 75,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "subprocess-shell",
+      "severe": false,
+      "file": "src/mcp/cli/cli.py",
+      "line": 48,
+      "snippet": "subprocess.run([cmd, \"--version\"], check=True, capture_output=True, shell=True)",
+      "deduction": 25
+    }
+  ],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 1,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 1
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 30179
+  },
+  "duration_ms": 30202
+}

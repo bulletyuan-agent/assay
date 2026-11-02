@@ -1,0 +1,291 @@
+{
+  "holdout": "data/calibration/holdout-v3",
+  "method_version": "0.4.1",
+  "run_at": "2026-11-02T15:38:53.729Z",
+  "hit_rule": "score<70 or any red flag",
+  "recall": 0.07407407407407407,
+  "wilson95": [
+    0.020554221697383537,
+    0.2336997729073062
+  ],
+  "k": 2,
+  "n": 27,
+  "by_difficulty": {
+    "plain": "2/8",
+    "obfuscated": "0/11",
+    "instruction-only": "0/8"
+  },
+  "by_type": {
+    "npm-package": "2/6",
+    "pypi-package": "0/3",
+    "other": "0/5",
+    "config": "0/7",
+    "mcp": "0/3",
+    "skill": "0/3"
+  },
+  "rows": [
+    {
+      "id": "01-npm-token-worm-plain",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "credential-harvest"
+      ],
+      "rules": [
+        "credential-harvest",
+        "credential-read",
+        "undeclared-host"
+      ],
+      "hit": true
+    },
+    {
+      "id": "02-pypi-setup-cmdclass-plain",
+      "type": "pypi-package",
+      "difficulty": "plain",
+      "score": 91,
+      "red_flags": [],
+      "rules": [
+        "subprocess-shell"
+      ],
+      "hit": false
+    },
+    {
+      "id": "03-npm-browser-token-stealer-plain",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "undeclared-chat-webhook"
+      ],
+      "rules": [
+        "undeclared-chat-webhook"
+      ],
+      "hit": true
+    },
+    {
+      "id": "04-git-hooks-zip-plain",
+      "type": "other",
+      "difficulty": "plain",
+      "score": 90,
+      "red_flags": [],
+      "rules": [
+        "undeclared-host"
+      ],
+      "hit": false
+    },
+    {
+      "id": "05-vscode-folderopen-plain",
+      "type": "config",
+      "difficulty": "plain",
+      "score": 91,
+      "red_flags": [],
+      "rules": [
+        "credential-read"
+      ],
+      "hit": false
+    },
+    {
+      "id": "06-mcp-tool-output-exfil-plain",
+      "type": "mcp",
+      "difficulty": "plain",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "07-cursor-mcp-autoapprove-plain",
+      "type": "config",
+      "difficulty": "plain",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "08-go-init-exec-plain",
+      "type": "other",
+      "difficulty": "plain",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "09-npm-hexarray-stealer-obf",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "10-npm-charcode-powershell-obf",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 90,
+      "red_flags": [],
+      "rules": [
+        "install-time-network"
+      ],
+      "hit": false
+    },
+    {
+      "id": "11-pypi-pth-persistence-obf",
+      "type": "pypi-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "12-npm-sidecar-payload-obf",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "13-go-delayed-env-obf",
+      "type": "other",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "14-skill-aiconfig-harvest-obf",
+      "type": "skill",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "15-mcp-rewrites-cursor-config-obf",
+      "type": "mcp",
+      "difficulty": "obfuscated",
+      "score": 90,
+      "red_flags": [],
+      "rules": [
+        "agent-config-write"
+      ],
+      "hit": false
+    },
+    {
+      "id": "16-vscode-folderopen-obf-bootstrap",
+      "type": "config",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "17-gha-pull-request-target-obf",
+      "type": "other",
+      "difficulty": "obfuscated",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "18-npm-clipboard-swap-obf",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "19-pypi-dns-txt-exfil-obf",
+      "type": "pypi-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "20-skill-remote-house-rules",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "21-agents-md-install-mcp",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "22-claude-md-credential-paste",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "23-cursorrules-auto-approve",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "24-mcp-tool-desc-directive",
+      "type": "mcp",
+      "difficulty": "instruction-only",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "25-skill-pip-install-url",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "26-takehome-readme-hooks",
+      "type": "other",
+      "difficulty": "instruction-only",
+      "score": 91,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "27-agents-md-registry-override",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    }
+  ]
+}

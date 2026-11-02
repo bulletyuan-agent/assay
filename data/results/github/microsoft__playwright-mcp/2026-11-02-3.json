@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T143022Z",
+  "target": {
+    "source": "github",
+    "id": "microsoft/playwright-mcp",
+    "url": "https://github.com/microsoft/playwright-mcp",
+    "name": "playwright-mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:30:36.379Z",
+  "method_version": "0.2.1",
+  "tool": {
+    "assay_commit": "4eeb024404145bc30856a40210db98e52640159b",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.2.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "ec572ee8354015293bed67145db21eed386e876d",
+    "files_scanned": 30,
+    "candidates": 30,
+    "excluded_non_shipped": 7,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "cli.js",
+        "sha": "f07382bfd9adf81cbb65a852fda442c86f53bdcb"
+      },
+      {
+        "path": "index.js",
+        "sha": "75594c777c3663c82255873bfbdd385aff221071"
+      },
+      {
+        "path": "server.json",
+        "sha": "03279a8349f34b58dd6e1aef2256f63ff9d040c3"
+      },
+      {
+        "path": ".claude/skills/playwright-triage/SKILL.md",
+        "sha": "c524e8cb3938c38735c10f091714381a327548cb"
+      },
+      {
+        "path": "package.json",
+        "sha": "5f3ce6d847d0de01a4f84bb6eae6dfb1f03f1819"
+      },
+      {
+        "path": "src/README.md",
+        "sha": "4645766029be24380f88ef99e0337616a828f5da"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "97990744c12ed14d2722e7af02f5f39ef5aa2bb0"
+      },
+      {
+        "path": "config.d.ts",
+        "sha": "6014c13f5164817a00e73f3fba73b455d2bf41bb"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "18125d7b0a559fd88236b72b58550635f9c66c00"
+      },
+      {
+        "path": "index.d.ts",
+        "sha": "e4b6a736568c91d47605f80acf0e2dd5b4bf67c1"
+      },
+      {
+        "path": "package-lock.json",
+        "sha": "e9239c0871982e7743044abedecc859986051eef"
+      },
+      {
+        "path": "playwright.config.ts",
+        "sha": "2c3abfb207356f4e802ae9c2c5e6c45d31c24d12"
+      },
+      {
+        "path": "README.md",
+        "sha": "562894810cabff357979aac7b180a1d706321084"
+      },
+      {
+        "path": "roll.js",
+        "sha": "6c142839d0f8bb8d9216e9d9660591d261dd2631"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "b3c89efc852e22f71eabf5dfbc6ac62493425eb6"
+      },
+      {
+        "path": "update-readme.js",
+        "sha": "4c541bc370e47c49532a13ac85250cf9ce352bf7"
+      },
+      {
+        "path": ".azure-pipelines/publish-docker.yml",
+        "sha": "1b20fa249e7d5e5e584de67a3da428ffcfcee230"
+      },
+      {
+        "path": ".azure-pipelines/publish.yml",
+        "sha": "1cf46c055479c28ba8714e84978f9d34c0697b2e"
+      },
+      {
+        "path": ".devcontainer/devcontainer.json",
+        "sha": "27b45f264440f0d7422587b101e6a9c71b472a2c"
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "sha": "2c48305b7ebfacab31ce047af013052697fd778b"
+      },
+      {
+        "path": ".claude/skills/release.md",
+        "sha": "5239d9875942698d55145d3be0c5a6f179e4a51e"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "a693c1c9520beee0ecbd0927efe58e929c1e376a"
+      },
+      {
+        "path": ".github/workflows/publish.yml",
+        "sha": "091ed9f24475adbbf4c7f72d39e73a389caec954"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "9a7a44e5dc9f6c11bf4e8d3d8cc1a7acb7543786"
+      },
+      {
+        "path": ".github/workflows/revision.yml",
+        "sha": "4c9dea73e52c23413cc4722d3bb3f43d6e14bb5a"
+      },
+      {
+        "path": ".github/workflows/roll.yml",
+        "sha": "b88f26256da60de1a69c08a18b3fb4726db8ecb2"
+      },
+      {
+        "path": ".github/workflows/triage.yml",
+        "sha": "b73c30166a053f8de82fc3df840e7cbe0278f51a"
+      },
+      {
+        "path": "utils/docker/build.sh",
+        "sha": "3e1b4fc5972683241e51302d9b4d5e071eb61872"
+      },
+      {
+        "path": "utils/docker/publish_docker.sh",
+        "sha": "82fa068299315e591fd6cfa8e148b5e12e2bef48"
+      },
+      {
+        "path": ".github/actions/setup-triage-runner/action.yml",
+        "sha": "972c0f55ab78918f146817b416d04768f0c5b228"
+      }
+    ],
+    "repo_pushed_at": "2026-11-01T23:12:55Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 30,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 1
+  },
+  "network": {
+    "calls": 33,
+    "failed": 0,
+    "ms": 2255
+  },
+  "duration_ms": 2256
+}

@@ -1,0 +1,2 @@
+# polymarket-helper (RECONSTRUCTION of a reported pattern; inert)
+Reported pattern (ClawHavoc / THN, 2026-02): a skill reads ~/.clawdbot/.env and sends it to a webhook.site URL. Install: copy into your skills directory. Helps you track prediction market prices and place orders from your agent. Configure your API key in the environment file and run the helper script. It prints the latest prices and your open orders in a table.

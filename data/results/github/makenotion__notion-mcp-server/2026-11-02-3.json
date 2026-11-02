@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T143022Z",
+  "target": {
+    "source": "github",
+    "id": "makenotion/notion-mcp-server",
+    "url": "https://github.com/makenotion/notion-mcp-server",
+    "name": "notion-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:30:41.993Z",
+  "method_version": "0.2.1",
+  "tool": {
+    "assay_commit": "4eeb024404145bc30856a40210db98e52640159b",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.2.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "cf16e5c20bfbfb98ecec1227f210ef0ae3abebe5",
+    "files_scanned": 27,
+    "candidates": 27,
+    "excluded_non_shipped": 14,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/openapi-mcp-server/index.ts",
+        "sha": "4f9d99ada8f239d6d9bb9b1557db47b4c00e2678"
+      },
+      {
+        "path": "src/openapi-mcp-server/auth/index.ts",
+        "sha": "eaf269f9ee54ed52410661f596c7678a041b0cd5"
+      },
+      {
+        "path": "package.json",
+        "sha": "14b9267c9777041be9745f16bc5ce6997a16e001"
+      },
+      {
+        "path": "scripts/build-cli.js",
+        "sha": "0d749b4fa010338d3111f7f4b15d3d5f6219bd4c"
+      },
+      {
+        "path": "scripts/notion-openapi.json",
+        "sha": "8fa157702232b57274069277dad387015daf34e3"
+      },
+      {
+        "path": "scripts/server-options.ts",
+        "sha": "66431d1614219ba0b390e61bb523bb993a9974be"
+      },
+      {
+        "path": "scripts/start-server.ts",
+        "sha": "5225effebd73b97a663b560c630f5d8681b75150"
+      },
+      {
+        "path": "src/init-server.ts",
+        "sha": "d6012646ea055427043107d88ebb8516842f0b4c"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "2770f7e93a30f28cb352901c45523c2cf7d90797"
+      },
+      {
+        "path": "docker-compose.yml",
+        "sha": "cabe3644ccb9a1986033662c77c7e2d2d11d9dc8"
+      },
+      {
+        "path": "README.md",
+        "sha": "25bad4d9d8a45f11e028923589f2588787c60a9f"
+      },
+      {
+        "path": "RELEASING.md",
+        "sha": "f02c402f14ae7c48141466cf364178d34b1caf4a"
+      },
+      {
+        "path": "src/openapi-mcp-server/README.md",
+        "sha": "74434e6c1810fd26495f4c7d484bdc2cd9a8f7ee"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "5e2d4cf86e4ad8ea526520ec8094bd66941526ab"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "3d7e13eaed9f107d8c672b621df790c7b83c472c"
+      },
+      {
+        "path": ".github/pull_request_template.md",
+        "sha": "d52cd6ab70a936be04e6bcea36890a705f126dfb"
+      },
+      {
+        "path": "src/openapi-mcp-server/auth/template.ts",
+        "sha": "647e0d9b6097c8b7bedbdc0d14203576d71f828c"
+      },
+      {
+        "path": "src/openapi-mcp-server/auth/types.ts",
+        "sha": "ba2a20d26e9435ac55489e528439b7bfb653e48a"
+      },
+      {
+        "path": "src/openapi-mcp-server/client/http-client.ts",
+        "sha": "64b060e04e2b6e9d7aca0703e989dbb94505454c"
+      },
+      {
+        "path": "src/openapi-mcp-server/client/polyfill-headers.ts",
+        "sha": "fdd384d9fa3ddc7227cbd2d789d4217fe3f4e234"
+      },
+      {
+        "path": "src/openapi-mcp-server/mcp/proxy.ts",
+        "sha": "0ff800489c28a8bb1bef14790a8245681b5576d0"
+      },
+      {
+        "path": "src/openapi-mcp-server/mcp/token.ts",
+        "sha": "8ad91685bfbfd63b3a4d1708a0ca115f77e83af9"
+      },
+      {
+        "path": "src/openapi-mcp-server/openapi/file-upload.ts",
+        "sha": "6bc0cd06f4c8d1e535a2f5d4b1c43f412b408639"
+      },
+      {
+        "path": "src/openapi-mcp-server/openapi/parser.ts",
+        "sha": "595c4ce467362bed4bb7bcc6e31cba6bd690f332"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "dcbe597a751733825d74a9f2041d82ac380ab521"
+      },
+      {
+        "path": ".github/workflows/increment-version.yml",
+        "sha": "88662a51dc522c1fcdb77b5237f39855d63147d2"
+      },
+      {
+        "path": ".github/workflows/publish.yml",
+        "sha": "65741967fb61f7df3e9bd0d798367fbc5fd016d7"
+      }
+    ],
+    "repo_pushed_at": "2026-10-29T16:10:22Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 27,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 4
+  },
+  "network": {
+    "calls": 30,
+    "failed": 0,
+    "ms": 2189
+  },
+  "duration_ms": 2192
+}

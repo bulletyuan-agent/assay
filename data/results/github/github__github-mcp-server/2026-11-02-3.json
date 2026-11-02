@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T143022Z",
+  "target": {
+    "source": "github",
+    "id": "github/github-mcp-server",
+    "url": "https://github.com/github/github-mcp-server",
+    "name": "github-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:30:30.743Z",
+  "method_version": "0.2.1",
+  "tool": {
+    "assay_commit": "4eeb024404145bc30856a40210db98e52640159b",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.2.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "f2a07cd13243ea9773a0ef42692e5b0e156f0951",
+    "files_scanned": 80,
+    "candidates": 355,
+    "excluded_non_shipped": 33,
+    "coverage": 0.23,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "c77e98ef54fde0fe5170b2c8cda20b030a297d46"
+      },
+      {
+        "path": "cmd/github-mcp-server/main.go",
+        "sha": "04ba68e226ac15928496dadd029d8856abb2f338"
+      },
+      {
+        "path": "cmd/mcpcurl/main.go",
+        "sha": "f40e8425306828e6c259b1051d23edcf974a6e03"
+      },
+      {
+        "path": "internal/ghmcp/server.go",
+        "sha": "c826b6d0ea503911f2f391696da68773e1c2c95c"
+      },
+      {
+        "path": "pkg/github/server.go",
+        "sha": "de82c8be3fc09e6ef68924143ddaa5e2aee0c393"
+      },
+      {
+        "path": "pkg/github/tools.go",
+        "sha": "53503f68fe9069ac71c7db7f240e9ced42cb831b"
+      },
+      {
+        "path": "pkg/http/handler.go",
+        "sha": "25c02f254c8a1ab5afcc67379d720947a6858d1c"
+      },
+      {
+        "path": "pkg/http/server.go",
+        "sha": "08e76b48e7deaaa0ec645d5d67e6466a32aa3eb0"
+      },
+      {
+        "path": "script/print-mcp-diff-configs/main.go",
+        "sha": "7648e5f83146cd9f2214c385274d084dcedca5fc"
+      },
+      {
+        "path": "ui/package.json",
+        "sha": "b392639c0f80c67700ee9cfb8ddf33fb2e16ebb9"
+      },
+      {
+        "path": ".golangci.yml",
+        "sha": "bde46b8e8079f245df646ec2ad150e4d5ead5c10"
+      },
+      {
+        "path": ".goreleaser.yaml",
+        "sha": "fa70312feb2fade63a1419d2253ed5b68b98e813"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "cea5751e3ec32f4f627f2685d0a370734d3c366c"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "b7595682ce7366ec72909bed44dc6dcf7b3d01b2"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "d4f6b60cf2821c88eb92623195b02e8c79d0cd93"
+      },
+      {
+        "path": "pkg/http/servercard/handler.go",
+        "sha": "f081357e439ef2fc70f5b6e4c6563eebb697fce1"
+      },
+      {
+        "path": "README.md",
+        "sha": "432541f4342321f88225308ebb70402632798a56"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "67a9cbf2c6c4161a66b9ae4fcd9b74bbff8d0b4d"
+      },
+      {
+        "path": "SUPPORT.md",
+        "sha": "bc46c78a6726b097e0beec77b45f0105d8d06f22"
+      },
+      {
+        "path": "third-party-licenses.darwin.md",
+        "sha": "4eec9682214d1b45110b2db3b073ed34bd5f0192"
+      },
+      {
+        "path": "third-party-licenses.linux.md",
+        "sha": "a714a789a1a0c758d8d554aecd4b77fa6d75c959"
+      },
+      {
+        "path": "third-party-licenses.windows.md",
+        "sha": "e5fc90b46ecc54a63d6feb652830ec0544c1d572"
+      },
+      {
+        "path": ".github/copilot-instructions.md",
+        "sha": "0db7990bc4a5171101e27f4d848298ba26cb2b50"
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "sha": "c04aa0c593b41b42993444390000b0055358da2c"
+      },
+      {
+        "path": ".github/pull_request_template.md",
+        "sha": "e35f807d5b3a6f1445e09648675b3084f6fd5ad0"
+      },
+      {
+        "path": ".vscode/launch.json",
+        "sha": "0d90e162a687a9709f0365680d0dea9232b84150"
+      },
+      {
+        "path": "agent-plugin/mcp.json",
+        "sha": "86e6bd64a19d54fb412a60296bb6ba2e699416cf"
+      },
+      {
+        "path": "agent-plugin/plugin.json",
+        "sha": "a7f1f6919cc2ddb2f62b5369438f22290ecd4bdb"
+      },
+      {
+        "path": "ui/package-lock.json",
+        "sha": "af9a350ef9b3b59b2a1aa661cbced206284bf10f"
+      },
+      {
+        "path": "ui/src/apps/get-me/App.tsx",
+        "sha": "27ba66a86d7056757ec5562f364dc5c71b18fe57"
+      },
+      {
+        "path": "ui/src/apps/issue-write/App.tsx",
+        "sha": "5cfb5d83a4e543ea441211c700aa66fda5c7dc4b"
+      },
+      {
+        "path": "ui/src/apps/pr-edit/App.tsx",
+        "sha": "59e4e5ca094f4089fb5c9ef3e7719d5a3b9030de"
+      },
+      {
+        "path": "ui/src/apps/pr-write/App.tsx",
+        "sha": "c800ae0cdcd2aae47cffc1d6ff87f571e0122f0c"
+      },
+      {
+        "path": "ui/tsconfig.json",
+        "sha": "3fe9878cfbadd89f88ac4e4041d079b8ba8d18c0"
+      },
+      {
+        "path": "ui/vite.config.ts",
+        "sha": "963b39883d31ff22b5338f9fc471a27b08ed7cf3"
+      },
+      {
+        "path": ".github/agents/go-sdk-tool-migrator.md",
+        "sha": "f8003fd252c448c91138b2e82336ee19fbb253c3"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "sha": "79d806777bdf6271f27fadd6975aca31c6b8bdf3"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "sha": "9b6c6ea8972267e0d976808246391d6b4cab3099"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/insiders-feedback.md",
+        "sha": "5b1f87f8cebb8f806a2ee65a997c47de43426db1"
+      },
+      {
+        "path": ".github/prompts/bug-report-review.prompt.yml",
+        "sha": "ccb95eff0cac0c1c0eea8c16f7bd47ee6c3baad8"
+      },
+      {
+        "path": ".github/prompts/default-issue-review.prompt.yml",
+        "sha": "a574c9d89b1f0ee0ecbb5ff14bbbad388227f93b"
+      },
+      {
+        "path": ".github/workflows/ai-issue-assessment.yml",
+        "sha": "20962cc3be8a971716462b079a83cf3fcdf144f5"
+      },
+      {
+        "path": ".github/workflows/close-inactive-issues.yml",
+        "sha": "57124ebbe264e145933dc1702025988a7d8d3612"
+      },
+      {
+        "path": ".github/workflows/code-scanning.yml",
+        "sha": "e5f29caa1bfcbf54c3dd85beafd0e00baeeee89c"
+      },
+      {
+        "path": ".github/workflows/docker-publish.yml",
+        "sha": "d443bc36f866435487d26ef28bcda8c0686f2907"
+      },
+      {
+        "path": ".github/workflows/docs-check.yml",
+        "sha": "b7b681a59192c4ea8f02309f3dbc2415a1d03596"
+      },
+      {
+        "path": ".github/workflows/go.yml",
+        "sha": "1475aca261a16441625a426234ee43bd1820153a"
+      },
+      {
+        "path": ".github/workflows/goreleaser.yml",
+        "sha": "c0de29ba512cdd9a1923a925f4d0279fc04ea9ac"
+      },
+      {
+        "path": ".github/workflows/issue-labeler.yml",
+        "sha": "278bb8705de355e6882d99e8af4337e0dcbf08bc"
+      },
+      {
+        "path": ".github/workflows/license-check.yml",
+        "sha": "2accf3bcf7176650f85c62293e43e60383fb6ed9"
+      },
+      {
+        "path": ".github/workflows/lint.yml",
+        "sha": "94f771cbb02d82b2489c157d1a0eac2d8c4e76d8"
+      },
+      {
+        "path": ".github/workflows/mcp-diff.yml",
+        "sha": "0e1ec42f10fd0deb6605ace9fc14169649049564"
+      },
+      {
+        "path": ".github/workflows/moderator.yml",
+        "sha": "b96c65f1743eb22bc95a1b1ed7a9788ea06a6165"
+      },
+      {
+        "path": ".github/workflows/registry-releaser.yml",
+        "sha": "5f698eab9626bde7bbc4efea3b504292710b5a4b"
+      },
+      {
+        "path": "cmd/github-mcp-server/feature_flag_docs.go",
+        "sha": "33e84908ac2971b0d50a425743a4b7dbf8e04bf6"
+      },
+      {
+        "path": "cmd/github-mcp-server/generate_docs.go",
+        "sha": "3fb793aaa115df2c8caa3c7d6af795830b32d271"
+      },
+      {
+        "path": "cmd/github-mcp-server/helpers.go",
+        "sha": "c5f498813d6d91f8ee344d7c1556cad59f9bf32d"
+      },
+      {
+        "path": "cmd/github-mcp-server/list_scopes.go",
+        "sha": "25e6e87b5c70d06d4786b8f7aec7a508d202a41a"
+      },
+      {
+        "path": "cmd/github-mcp-server/main_test.go",
+        "sha": "48d1367acf23e208dde500be7fdb240b7ff3b6c8"
+      },
+      {
+        "path": "cmd/github-mcp-server/version_test.go",
+        "sha": "4258b817c138e1236c3c9892608533ad2946b8dd"
+      },
+      {
+        "path": "cmd/github-mcp-server/version.go",
+        "sha": "51b9e5880c91fc8586c572f7c5c1f924c261e614"
+      },
+      {
+        "path": "cmd/mcpcurl/main_test.go",
+        "sha": "3d0b00d2a53c54b3854ceaad4ce2e4a553bb2514"
+      },
+      {
+        "path": "cmd/mcpcurl/README.md",
+        "sha": "cf24a74358b59bf1131fd137c99abaed0b7a9048"
+      },
+      {
+        "path": "internal/buildinfo/buildinfo.go",
+        "sha": "7e9f55d813ccedb6992efcef00734f09fffb04f5"
+      },
+      {
+        "path": "internal/ghmcp/oauth_test.go",
+        "sha": "fc6b37b17fe89efe1f79607f0b5fead8dd54a4da"
+      },
+      {
+        "path": "internal/ghmcp/oauth_typed_test.go",
+        "sha": "e91e2f45aa7b47e52cbea7ca4ec7e36865001848"
+      },
+      {
+        "path": "internal/ghmcp/oauth.go",
+        "sha": "c363da2e50f6ee8a87625d254dbc90a91301a68f"
+      },
+      {
+        "path": "internal/ghmcp/server_test.go",
+        "sha": "1d6f844c41010d00d2a7276c501cb74069bc324f"
+      },
+      {
+        "path": "internal/githubapp/githubapp_test.go",
+        "sha": "6828dbc2dcdc22a4da50f24e0165e62e7ef7ee21"
+      },
+      {
+        "path": "internal/githubapp/githubapp.go",
+        "sha": "bdd04af2cd71493f0e28b911578d7bcff80854fe"
+      },
+      {
+        "path": "internal/githubv4mock/githubv4mock.go",
+        "sha": "03abc8e56c2c4d5cd3ab1e70222f0044537901f7"
+      },
+      {
+        "path": "internal/githubv4mock/local_round_tripper.go",
+        "sha": "6be5f28fca5c90c4a852b34b1761b612d577e5b3"
+      },
+      {
+        "path": "internal/githubv4mock/objects_are_equal_values_test.go",
+        "sha": "d6839e7942c0da429e18314ab41e1fb9952b5e27"
+      },
+      {
+        "path": "internal/githubv4mock/objects_are_equal_values.go",
+        "sha": "02ba7b39a91b2d47855457311e012b8893a514c0"
+      },
+      {
+        "path": "internal/githubv4mock/query.go",
+        "sha": "7b265358d8b763e1e267c1e560f2a87a7facb085"
+      },
+      {
+        "path": "internal/oauth/callback_test.go",
+        "sha": "45a8fa71c4efdf7600b5058ecc081e512ccd0598"
+      },
+      {
+        "path": "internal/oauth/callback.go",
+        "sha": "1e643e207dab787483ceff03c8bbef68d27cb22d"
+      },
+      {
+        "path": "internal/oauth/env.go",
+        "sha": "34fa329973cadef76fb7ca5a732d676633048eb5"
+      },
+      {
+        "path": "internal/oauth/flow.go",
+        "sha": "fda1dda19f40bbcceffb4917494cc52c39ca382e"
+      },
+      {
+        "path": "internal/oauth/manager_test.go",
+        "sha": "52d5a54309cee7608be3c8ad84da4e9c53a359fa"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T11:29:26Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 4484
+  },
+  "duration_ms": 4496
+}

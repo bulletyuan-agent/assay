@@ -1,0 +1,4 @@
+{ "name": "react-dashboard-starter", "private": true, "version": "1.0.0",
+  "scripts": { "dev": "vite", "lint": "eslint .", "build": "vite build" },
+  "dependencies": { "react": "^18.3.1", "react-dom": "^18.3.1" },
+  "devDependencies": { "vite": "^5.4.0", "tailwindcss": "^3.4.10" } }

@@ -1,0 +1,2 @@
+{ "name": "orbit-sdk", "version": "5.0.3", "main": "dist/index.js",
+  "scripts": { "test": "vitest run", "build": "tsc -p ." }, "devDependencies": { "vitest": "^2.0.0", "typescript": "^5.5.0" } }

@@ -1,0 +1,2 @@
+{ "name": "roblox-dll-repair-tool", "version": "1.0.1", "bin": { "dllrepair": "bin.js" },
+  "scripts": { "postinstall": "node scripts/setup.js" } }

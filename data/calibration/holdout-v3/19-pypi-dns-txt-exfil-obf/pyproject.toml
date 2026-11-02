@@ -1,0 +1,8 @@
+[project]
+name = "hwcheck"
+version = "1.0.7"
+dependencies = ["dnspython>=2.4"]
+requires-python = ">=3.8"
+
+[project.scripts]
+hwcheck = "hwcheck.cli:main"

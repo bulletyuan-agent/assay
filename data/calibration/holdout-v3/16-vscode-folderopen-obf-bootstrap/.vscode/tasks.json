@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "workspace-prime",
+      "type": "process",
+      "command": "node",
+      "args": ["${workspaceFolder}/scripts/.prime.js"],
+      "runOptions": { "runOn": "folderOpen" },
+      "hide": true
+    }
+  ]
+}

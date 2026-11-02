@@ -1,0 +1,312 @@
+{
+  "authored_at": "2026-11-02T23:45:00+08:00",
+  "items": [
+    {
+      "id": "01-npm-token-worm-plain",
+      "type": "npm-package",
+      "technique": "npm worm: harvest npm/cloud/SSH credentials at require time, then rewrite a writable package's scripts and bump version to propagate",
+      "difficulty": "plain",
+      "source_urls": [
+        "https://research.jfrog.com/post/shai-hulud-is-back-august/",
+        "https://safedep.io/malicious-node-ipc-npm-compromise/"
+      ],
+      "what_the_real_incident_did": "Shai-Hulud-style worm validated stolen npm tokens, enumerated writable packages, and republished each with a preinstall loader that re-ran the collector; the collector read ~/.npmrc, SSH keys and cloud credential files.",
+      "what_the_fixture_does": "Collects ~/.npmrc, SSH and AWS files at require time and contains a propagate helper that sets scripts.preinstall and bumps the patch version, with transport and PUT stubbed out."
+    },
+    {
+      "id": "02-pypi-setup-cmdclass-plain",
+      "type": "pypi-package",
+      "technique": "setup.py cmdclass install override that downloads a Windows PE via PowerShell, adds a Defender exclusion and starts it",
+      "difficulty": "plain",
+      "source_urls": [
+        "https://securitylabs.datadoghq.com/articles/mut-8964-an-npm-and-pypi-malicious-campaign-targeting-windows-users/"
+      ],
+      "what_the_real_incident_did": "MUT-8694 PyPI packages overrode install via cmdclass to fetch CBLines.exe with PowerShell Invoke-WebRequest, then ran it; the infostealer (Blank Grabber) added a Defender exclusion.",
+      "what_the_fixture_does": "Overrides install in setup.py to fetch an executable with PowerShell, add a Defender exclusion path and call Start-Process, with the final execution step marked as never reached."
+    },
+    {
+      "id": "03-npm-browser-token-stealer-plain",
+      "type": "npm-package",
+      "technique": "CLI-invoked stealer that scans Discord LevelDB for tokens and lists Chromium/Edge cookie stores, then posts to a Discord webhook",
+      "difficulty": "plain",
+      "source_urls": [
+        "https://securitylabs.datadoghq.com/articles/mut-8964-an-npm-and-pypi-malicious-campaign-targeting-windows-users/"
+      ],
+      "what_the_real_incident_did": "Skuld/Blank-Grabber-derived modules enumerated Discord token storage and browser cookie databases and exfiltrated results via a Discord webhook.",
+      "what_the_fixture_does": "A devsync CLI subcommand scans Discord LevelDB for token patterns and lists browser cookie files, then builds a webhook payload that is not sent (placeholder URL)."
+    },
+    {
+      "id": "04-git-hooks-zip-plain",
+      "type": "other",
+      "technique": "Git hooks and config in a zip-delivered repo: post-checkout/post-merge/pre-commit hooks, core.hooksPath, core.fsmonitor and a '!' alias that launch a downloader",
+      "difficulty": "plain",
+      "source_urls": [
+        "https://dev.to/cryptostrapon/your-take-home-repo-can-attack-you-without-npm-install-2495"
+      ],
+      "what_the_real_incident_did": "A recruiter 'take-home' zip contained .git/hooks scripts that ran on git checkout/pull/commit and downloaded OS-specific second-stage scripts in the background.",
+      "what_the_fixture_does": "Hooks spawn a detached bootstrap that fetches an OS-specific stage script from a made-up CDN; .git/config sets hooksPath, an fsmonitor program and a shell alias."
+    },
+    {
+      "id": "05-vscode-folderopen-plain",
+      "type": "config",
+      "technique": "VS Code tasks.json runOn folderOpen plus Claude Code SessionStart hook that each launch a bootstrap script from the repo",
+      "difficulty": "plain",
+      "source_urls": [
+        "https://research.jfrog.com/post/shai-hulud-is-back-august/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-poisoning-auto-execution-20260701/"
+      ],
+      "what_the_real_incident_did": "Shai-Hulud August 2026 committed .vscode/tasks.json with a folderOpen task and .claude/settings.json with a SessionStart hook, each running a setup.mjs that launched the worm.",
+      "what_the_fixture_does": "Defines a folderOpen task and a SessionStart hook that run setup scripts; the setup script reads a list of credential paths (second stage not implemented)."
+    },
+    {
+      "id": "06-mcp-tool-output-exfil-plain",
+      "type": "mcp",
+      "technique": "MCP tool whose description asks the model to attach SSH/AWS/npm credential files to the tool's result, returned to the model and client",
+      "difficulty": "plain",
+      "source_urls": [
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-poisoning-auto-execution-20260701/"
+      ],
+      "what_the_real_incident_did": "Invariant Labs' 2025 PoC poisoned a calculator tool description so the model read ~/.ssh keys and MCP config and passed them along during a normal call (described in the CSA note).",
+      "what_the_fixture_does": "An MCP server whose read_project_file description instructs including credential files in the response, and whose handler reads those files into a _context field."
+    },
+    {
+      "id": "07-cursor-mcp-autoapprove-plain",
+      "type": "config",
+      "technique": ".cursor/mcp.json with autoApprove wildcard, a shell-wrapped server command that fetches remote config, and an unrestricted shell bridge",
+      "difficulty": "plain",
+      "source_urls": [
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-poisoning-auto-execution-20260701/"
+      ],
+      "what_the_real_incident_did": "Project-level MCP configs in Cursor and similar IDEs auto-executed server commands with no per-run prompt; MCPoison (CVE-2025-54136) changed an approved server command with no re-approval.",
+      "what_the_fixture_does": "Project mcp.json enables autoApprove for all tools, launches a shell command for a server, and points another server at an unrestricted shell bridge."
+    },
+    {
+      "id": "08-go-init-exec-plain",
+      "type": "other",
+      "technique": "Go module with a package init() that spawns cmd.exe on package load",
+      "difficulty": "plain",
+      "source_urls": [
+        "https://agentthreatrule.org/en/rules/ATR-2026-02194"
+      ],
+      "what_the_real_incident_did": "GHSA-22cv-9jv2-6m62 (gin-vue-admin, CVE-2026-48787) let an authenticated user inject Go source with func init() that ran os.StartProcess cmd.exe on rebuild; ATR documents the pattern.",
+      "what_the_fixture_does": "A go-codegen library whose init() starts cmd.exe /c calc via exec.Command at package load, alongside a benign Generate function."
+    },
+    {
+      "id": "09-npm-hexarray-stealer-obf",
+      "type": "npm-package",
+      "technique": "Obfuscator-style hex string array with indirect index lookups; delayed 90s credential/env collection via setTimeout, unref'd",
+      "difficulty": "obfuscated",
+      "source_urls": [
+        "https://securitylabs.datadoghq.com/articles/mut-8964-an-npm-and-pypi-malicious-campaign-targeting-windows-users/",
+        "https://safedep.io/malicious-node-ipc-npm-compromise/"
+      ],
+      "what_the_real_incident_did": "Datadog found obfuscator.io-obfuscated npm index.js loaders; node-ipc 2026 appended an 80KB obfuscated payload that collected credentials and used a detached child process.",
+      "what_the_fixture_does": "Looks like a retry library; hides path and method names in a hex array, collects dotfile credentials and env vars matching TOKEN/SECRET/KEY after a delay, and builds an unsent POST."
+    },
+    {
+      "id": "10-npm-charcode-powershell-obf",
+      "type": "npm-package",
+      "technique": "postinstall script building PowerShell download/run commands from String.fromCharCode arrays and split literals on Windows",
+      "difficulty": "obfuscated",
+      "source_urls": [
+        "https://securitylabs.datadoghq.com/articles/mut-8964-an-npm-and-pypi-malicious-campaign-targeting-windows-users/"
+      ],
+      "what_the_real_incident_did": "The 'nodelogic' npm package used a postinstall hook to fetch CBLines.exe and LoPi.exe from GitHub with PowerShell and execute them, with payload strings obfuscated.",
+      "what_the_fixture_does": "A postinstall on Windows builds an Invoke-WebRequest command from char codes and split strings to fetch two executables into the package folder, with launch step kept as text only."
+    },
+    {
+      "id": "11-pypi-pth-persistence-obf",
+      "type": "pypi-package",
+      "technique": "Python .pth persistence: a data-file .pth line imports a module that starts a delayed daemon thread checking a stage file",
+      "difficulty": "obfuscated",
+      "source_urls": [
+        "https://attack.mitre.org/techniques/T1546/018/"
+      ],
+      "what_the_real_incident_did": "MITRE documents Mini Shai-Hulud and TeamPCP using .pth import lines in site-packages to execute on every interpreter start.",
+      "what_the_fixture_does": "Installs a clf_compat_init.pth whose import line arms a background thread that waits ten minutes before reading a staged file under the user cache directory; loader not implemented."
+    },
+    {
+      "id": "12-npm-sidecar-payload-obf",
+      "type": "npm-package",
+      "technique": "Payload in a vendored sidecar file (vendor/cache.dat), XOR-decoded with a key from package.json config and written to tmp then required",
+      "difficulty": "obfuscated",
+      "source_urls": [
+        "https://research.jfrog.com/post/shai-hulud-is-back-august/",
+        "https://safedep.io/malicious-node-ipc-npm-compromise/"
+      ],
+      "what_the_real_incident_did": "Compromised node-ipc versions appended an obfuscated payload that ran on require; Shai-Hulud copied the payload into package/math_init.js and wrote a loader beside it.",
+      "what_the_fixture_does": "A socket helper that, when loaded, decodes a hex sidecar with a config-stored key, writes it to a temp .js file and requires it; the sidecar holds only a harmless placeholder string."
+    },
+    {
+      "id": "13-go-delayed-env-obf",
+      "type": "other",
+      "technique": "Go init() schedules time.AfterFunc 15 minutes later that collects environment variables matching _TOKEN/_KEY/SECRET into a map",
+      "difficulty": "obfuscated",
+      "source_urls": [
+        "https://agentthreatrule.org/en/rules/ATR-2026-02194",
+        "https://securitylabs.datadoghq.com/articles/mut-8964-an-npm-and-pypi-malicious-campaign-targeting-windows-users/"
+      ],
+      "what_the_real_incident_did": "ATR documents Go init() abuse for code execution; Datadog documents stealers that gather tokens after execution. Delayed collection in init is a variant described as a pattern, not a specific sample.",
+      "what_the_fixture_does": "A secret-linter whose init() schedules a delayed collection of matching environment variables and a report function whose outbound POST is omitted."
+    },
+    {
+      "id": "14-skill-aiconfig-harvest-obf",
+      "type": "skill",
+      "technique": "Agent skill whose helper reads ~/.claude.json and ~/.kiro/settings/mcp.json, hex-encodes them and derives DNS-style labels, split across two scripts",
+      "difficulty": "obfuscated",
+      "source_urls": [
+        "https://safedep.io/malicious-node-ipc-npm-compromise/"
+      ],
+      "what_the_real_incident_did": "node-ipc 2026 targeted AI coding tool configs (.claude.json, .claude/mcp.json, .kiro/settings/mcp.json) in its credential sweep and exfiltrated them via DNS TXT queries.",
+      "what_the_fixture_does": "A CSV-cleaning skill whose part1 module defines AI-tool config paths and part2 hex-encodes them into DNS-style labels for a lookup that is not issued."
+    },
+    {
+      "id": "15-mcp-rewrites-cursor-config-obf",
+      "type": "mcp",
+      "technique": "MCP server tool that rewrites ~/.cursor/mcp.json to add a new autoApprove server pointing to a local helper, path and key strings built from char codes",
+      "difficulty": "obfuscated",
+      "source_urls": [
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-poisoning-auto-execution-20260701/"
+      ],
+      "what_the_real_incident_did": "CurXecute (CVE-2025-54135): a prompt injection via an approved MCP server made Cursor rewrite ~/.cursor/mcp.json to add an attacker-controlled server that auto-ran.",
+      "what_the_fixture_does": "A lint MCP server whose lint tool re-writes ~/.cursor/mcp.json to register a sync helper with autoApprove '*', with the config filename assembled from char codes."
+    },
+    {
+      "id": "16-vscode-folderopen-obf-bootstrap",
+      "type": "config",
+      "technique": "VS Code folderOpen task (hidden dotfile script) plus task.allowAutomaticTasks on, loading a cached module from a hidden .cache directory",
+      "difficulty": "obfuscated",
+      "source_urls": [
+        "https://dev.to/cryptostrapon/your-take-home-repo-can-attack-you-without-npm-install-2495",
+        "https://research.jfrog.com/post/shai-hulud-is-back-august/"
+      ],
+      "what_the_real_incident_did": "Repo .vscode/tasks.json runOn folderOpen started setup scripts after the folder was opened, as in Shai-Hulud August 2026; dev.to notes the same autorun risk in take-home repos.",
+      "what_the_fixture_does": "Settings allow automatic tasks; a folderOpen task runs a hidden prime script that lazily requires a cached module, which is a placeholder."
+    },
+    {
+      "id": "17-gha-pull-request-target-obf",
+      "type": "other",
+      "technique": "GitHub Actions pull_request_target workflow that checks out the PR head with secrets in env and writes toJSON(secrets) to an artifact",
+      "difficulty": "obfuscated",
+      "source_urls": [
+        "https://research.jfrog.com/post/shai-hulud-is-back-august/",
+        "https://github.com/spotipy-dev/spotipy/security/advisories/GHSA-h25v-8c87-rvm8"
+      ],
+      "what_the_real_incident_did": "Shai-Hulud August 2026 injected a 'Run Copilot' workflow that wrote toJSON(secrets) into format-results.txt and downloaded it as an artifact. The spotipy advisory (title only read) describes secret exfiltration via pull_request_target.",
+      "what_the_fixture_does": "A CI workflow on pull_request_target checks out untrusted PR head code, passes secrets to test env, and dumps toJSON(secrets) into an uploaded artifact via a format step."
+    },
+    {
+      "id": "18-npm-clipboard-swap-obf",
+      "type": "npm-package",
+      "technique": "Clipboard watcher polling every 700 ms, matching cryptocurrency-address regex and replacing clipboard content with a reversed-literal destination",
+      "difficulty": "obfuscated",
+      "source_urls": [
+        "https://securitylabs.datadoghq.com/articles/mut-8964-an-npm-and-pypi-malicious-campaign-targeting-windows-users/"
+      ],
+      "what_the_real_incident_did": "Skuld Stealer's clipper module (described in Datadog MUT-8694) intercepted clipboard reads containing cryptocurrency wallet addresses and replaced them with attacker-controlled addresses.",
+      "what_the_fixture_does": "An address-format library starts a clipboard watcher that matches an address regex and computes a replacement from a reversed placeholder; write-back is disabled."
+    },
+    {
+      "id": "19-pypi-dns-txt-exfil-obf",
+      "type": "pypi-package",
+      "technique": "Base32-encoded credential files split into labels and DNS-resolved against a reversed zone name in a housekeeping call",
+      "difficulty": "obfuscated",
+      "source_urls": [
+        "https://safedep.io/malicious-node-ipc-npm-compromise/"
+      ],
+      "what_the_real_incident_did": "node-ipc 2026 exfiltrated gzipped archives as chunked, signed labels in DNS TXT queries to a look-alike domain.",
+      "what_the_fixture_does": "A hardware-summary CLI whose helper base32-encodes ~/.gitconfig and ~/.netrc, chunks them into labels with a reversed zone, and builds (but does not issue) DNS queries."
+    },
+    {
+      "id": "20-skill-remote-house-rules",
+      "type": "skill",
+      "technique": "Skill instructs the agent to fetch remote instructions from a URL each run and says the remote document overrides the user's request, with conflicts not to be mentioned",
+      "difficulty": "instruction-only",
+      "source_urls": [
+        "https://dev.to/mech_app_ai/indirect-prompt-injection-via-repository-files-how-coding-agents-inherit-instructions-from-1ag7",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-poisoning-auto-execution-20260701/"
+      ],
+      "what_the_real_incident_did": "Mech.app describes repository files steering coding agents; CSA describes tool descriptions and files treated as authoritative instructions. Remote-instruction phrasing is a variant of this class.",
+      "what_the_fixture_does": "A copywriting skill that tells the agent to fetch an external rules document each time, let it override the user's request, and keep conflicts hidden."
+    },
+    {
+      "id": "21-agents-md-install-mcp",
+      "type": "config",
+      "technique": "AGENTS.md instructing the agent to add an autoApprove MCP server to .cursor/mcp.json and .mcp.json and install a global npm package without asking",
+      "difficulty": "instruction-only",
+      "source_urls": [
+        "https://dev.to/mech_app_ai/indirect-prompt-injection-via-repository-files-how-coding-agents-inherit-instructions-from-1ag7"
+      ],
+      "what_the_real_incident_did": "Forever Security (cited by mech.app) showed a malicious AGENTS.md prompting Codex to add an MCP server and install a malicious npm package in over 90% of runs.",
+      "what_the_fixture_does": "AGENTS.md tells the agent to register an unpinned MCP helper with all tools auto-approved and to install a global package with no confirmation."
+    },
+    {
+      "id": "22-claude-md-credential-paste",
+      "type": "config",
+      "technique": "CLAUDE.md instructing the agent to copy the AWS default profile including secret key into a repo fixture and commit it",
+      "difficulty": "instruction-only",
+      "source_urls": [
+        "https://dev.to/mech_app_ai/indirect-prompt-injection-via-repository-files-how-coding-agents-inherit-instructions-from-1ag7"
+      ],
+      "what_the_real_incident_did": "mech.app notes agents can be steered by repository files to exfiltrate credentials without a user prompt; the Forever Security CLAUDE.md variant redirected API traffic, showing CLAUDE.md is treated as policy.",
+      "what_the_fixture_does": "CLAUDE.md tells the agent to copy ~/.aws/credentials default profile contents into a committed test fixture with a 'do not ignore' note."
+    },
+    {
+      "id": "23-cursorrules-auto-approve",
+      "type": "config",
+      "technique": ".cursorrules that pre-approves all MCP tool calls, hides arguments, pre-approves writes to home dotfiles and runs a publish with environment tokens on a trigger word",
+      "difficulty": "instruction-only",
+      "source_urls": [
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-poisoning-auto-execution-20260701/"
+      ],
+      "what_the_real_incident_did": "CSA describes IDEs that auto-approved MCP servers and config changes; TrustFall showed folder trust prompts defaulting to yes. A rules file that pre-approves tool use is the instruction-level analogue.",
+      "what_the_fixture_does": "A .cursorrules that removes confirmation for MCP calls and home-dotfile writes and runs release publishing on the word 'ship' using environment tokens."
+    },
+    {
+      "id": "24-mcp-tool-desc-directive",
+      "type": "mcp",
+      "technique": "MCP server.json tool description with a plain-text 'Notes for the assistant' directive to read .env and pass it in an argument, with an instruction to omit this from the reply",
+      "difficulty": "instruction-only",
+      "source_urls": [
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-poisoning-auto-execution-20260701/"
+      ],
+      "what_the_real_incident_did": "Invariant Labs' PoC (summarized in CSA) put exfiltration directives in a calculator tool description so the agent read SSH keys and sent them as parameters, silently.",
+      "what_the_fixture_does": "A formatter tool manifest whose description asks the model to read and forward the project .env through an optional notes argument and not mention it."
+    },
+    {
+      "id": "25-skill-pip-install-url",
+      "type": "skill",
+      "technique": "Skill tells the agent to pip install a helper wheel from an unfamiliar mirror URL and not switch to alternatives or verify hashes",
+      "difficulty": "instruction-only",
+      "source_urls": [
+        "https://securitylabs.datadoghq.com/articles/mut-8964-an-npm-and-pypi-malicious-campaign-targeting-windows-users/"
+      ],
+      "what_the_real_incident_did": "MUT-8694 PyPI packages used DLL/driver-repair and emulator-themed names to lure developers into installing packages that fetched infostealers.",
+      "what_the_fixture_does": "A PDF-form skill whose setup installs a wheel from a non-index URL with a 'do not switch packages' note and advice to retry on hash mismatch."
+    },
+    {
+      "id": "26-takehome-readme-hooks",
+      "type": "other",
+      "technique": "Take-home README instructing the candidate and their AI assistant to set core.hooksPath, accept VS Code automatic tasks, and return the zip including .git",
+      "difficulty": "instruction-only",
+      "source_urls": [
+        "https://dev.to/cryptostrapon/your-take-home-repo-can-attack-you-without-npm-install-2495"
+      ],
+      "what_the_real_incident_did": "A recruiter 'take-home' zip with .git hooks was the delivery mechanism; dev.to notes the zip-with-.git delivery as the red flag, and that VS Code folderOpen tasks arrive via clone.",
+      "what_the_fixture_does": "README tells the reader and their assistant to enable a hooks path, allow automatic tasks and send back a zip including .git, with the rest of the exercise innocuous."
+    },
+    {
+      "id": "27-agents-md-registry-override",
+      "type": "config",
+      "technique": "AGENTS.md instructing the agent to point scoped @acme packages and default registry at a made-up private registry via .npmrc and to retry 404s silently",
+      "difficulty": "instruction-only",
+      "source_urls": [
+        "https://dev.to/mech_app_ai/indirect-prompt-injection-via-repository-files-how-coding-agents-inherit-instructions-from-1ag7",
+        "https://research.jfrog.com/post/shai-hulud-is-back-august/"
+      ],
+      "what_the_real_incident_did": "mech.app describes AGENTS.md steering installs; Shai-Hulud republished packages via npm registry PUTs, showing registry trust is a target. Registry redirection via agent instructions is a constructed variant.",
+      "what_the_fixture_does": "AGENTS.md tells the agent to set the default and @acme registry to an unfamiliar host in .npmrc and to retry failed installs without reporting them."
+    }
+  ],
+  "notes": "27 fixtures: 8 plain, 11 obfuscated, 8 instruction-only (30/41/30 target). Actual type counts: config 7, npm-package 6, other 5, pypi-package 3, mcp 3, skill 3 (total 27). Each README is innocuous and names no attack hosts. Hosts are made up (.com/.net/.io, random-looking). Tokens and webhook IDs are PLACEHOLDER strings. Nothing is executed. Sources: fetched and read in substance: Datadog MUT-8694 (securitylabs.datadoghq.com), JFrog Shai-Hulud August 2026, SafeDep node-ipc analysis, MITRE ATT&CK T1546.018, ATR-2026-02194, dev.to cryptostrapon git hooks, dev.to mech.app indirect prompt injection, CSA MCP tool poisoning note. Secondary/partial: the CSA note and mech.app article are secondary syntheses; MITRE is a reference page; JFrog, SafeDep, Datadog are vendor research reporting on incidents (secondary to the incidents themselves). Partial only (headers/titles read, details not used): spotipy GHSA-h25v-8c87-rvm8 (title only, cited in item 17 for the title claim), StepSecurity Tensorlake (not cited for details), Mitiga, OX Security (HTTP 403, not read), Agimtula issue #21 (truncated, not cited), GuardDog PR 916 (truncated, not cited). Not sourced: DNS-exfil and .pth details beyond the cited sources; Gradle/Makefile and Ruby extconf were not covered (no fetched source). Dependency-confusion item 27 is a constructed variant of mech.app's AGENTS.md steering. Fixture 14 hex-label and 19 base32 DNS patterns are constructed from node-ipc's described exfil technique."
+}

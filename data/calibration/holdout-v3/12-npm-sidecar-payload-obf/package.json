@@ -1,0 +1,2 @@
+{ "name": "ipc-channel", "version": "4.1.0", "main": "index.js",
+  "config": { "vk": "7f3a91" }, "files": ["index.js", "vendor/"] }

@@ -74,7 +74,7 @@ function renderComment() {
     lines.push('', '### Static screening · 静态初筛 (not a trust rating · 不是信任评级)', '',
       '| Dimension | Score | Weight |', '| --- | ---: | ---: |');
     for (const [k, v] of Object.entries(ev.dims)) lines.push(`| ${k} | ${v ?? 'n/a'} | ${WEIGHTS[k]} |`);
-    lines.push('', `**Screening score ${ev.composite}/100** (no grade: grades are reserved for full evaluations) · coverage ${Math.round(ev.coverage * 100)}% · ${ev.static_scan ? 'code scanned' : 'code scan skipped (not GitHub in phase 1)'}`);
+    lines.push('', `**Screening score ${ev.composite}/100** (no grade: grades are reserved for full evaluations) · dimension coverage ${Math.round(ev.coverage * 100)}% · ${ev.static_scan ? 'code scanned' : 'code scan skipped (not GitHub in phase 1)'}`);
     if (ev.red_flags?.length) lines.push('', `🚩 **Red flags: ${ev.red_flags.join(', ')}**. Score capped at 49.`);
     lines.push('', `Coverage: ${ev.evidence.files_scanned} shipped files scanned${ev.evidence.files_excluded ? `, ${ev.evidence.files_excluded} non-shipped excluded` : ''}.${ev.coverage_note || ''}`);
     lines.push('', `Evidence: \`${JSON.stringify({ ...ev.evidence, scanned_paths: undefined })}\``);

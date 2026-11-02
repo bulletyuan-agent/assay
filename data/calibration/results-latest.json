@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-02T15:19:57.094Z",
+  "at": "2026-11-02T15:27:47.534Z",
   "summary": {
     "all": {
       "n_good": 2,
@@ -381,7 +381,7 @@
       "dims": {
         "maintenance": 100,
         "install_docs": 60,
-        "dangerous_patterns": 60,
+        "dangerous_patterns": 20,
         "egress": 100,
         "instruction_hygiene": 100
       },

@@ -4,6 +4,7 @@ import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath as _fu } from 'node:url';
 import { extendedScan } from './extended.mjs';
+import { foldStrings } from './fold.mjs';
 import { http, ghHeaders, fetchMeta, parseTarget, daysSince, INSTALL_RE, WINDOW_DAYS, F } from './lib.mjs';
 
 export const WEIGHTS = { maintenance: 0.15, install_docs: 0.15, dangerous_patterns: 0.30, egress: 0.25, instruction_hygiene: 0.15 };
@@ -50,8 +51,8 @@ export function stripComments(text, path) {
 // Reserved or documentation-only hosts and domains are placeholders, never real egress.
 const NETWORK_PRIMITIVE = /\b(fetch|axios|got|undici|request|XMLHttpRequest|WebSocket|EventSource)\s*\(|https?\.(request|get)\s*\(|\b(requests|httpx|urllib\d?|aiohttp)\b|\bcurl\b|\bwget\b|child_process|net\.connect|new\s+Socket/;
 const PLACEHOLDER_HOST = /(^|\.)(example\.(com|org|net)|invalid|test|localhost|local|internal|lan|localdomain)$|\.example$|^example$|^[a-z0-9-]+$/i;
-const CODE_RE = /\.(m?[jt]sx?|py|sh|rb|go)$/i;
-const TEXT_RE = /(\.(md|json|ya?ml|txt)|SKILL\.md)$/i;
+const CODE_RE = /\.((c|m)?[jt]sx?|py|sh|rb|go)$/i;
+const TEXT_RE = /(\.(md|mdc|json|ya?ml|txt)|SKILL\.md|\.cursorrules)$/i;
 const ALLOW_HOSTS = ['apache.org', 'opensource.org', 'creativecommons.org', 'gnu.org', 'localhost', '127.0.0.1', 'github.com', 'api.github.com', 'raw.githubusercontent.com',
   'npmjs.org', 'npmjs.com', 'pypi.org', 'gitlab.com', 'w3.org', 'json-schema.org', 'schemastore.org',
   'example.com', 'openxmlformats.org', 'purl.org', 'schemas.microsoft.com', 'xmlsoap.org', 'ecma-international.org', 'dublincore.org', 'xmlns.com', 'modelcontextprotocol.io', 'anthropic.com', 'shields.io'];
@@ -122,7 +123,7 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   let severe = 0;
   const findings = [];
   for (const f of code) {
-    const clean = stripComments(f.text, f.path);
+    const clean = foldStrings(stripComments(f.text, f.path));
     DANGER.forEach((re, i) => {
       const loc = locate(clean, re, f.text);
       if (loc) {

@@ -1,0 +1,236 @@
+{
+  "holdout": "data/calibration/holdout-v2",
+  "method_version": "0.4.0-dev-iteration1",
+  "run_at": "2026-11-02T15:26:45.845Z",
+  "hit_rule": "score<70 or any red flag",
+  "recall": 0.75,
+  "wilson95": [
+    0.5050123107060135,
+    0.8981809801576265
+  ],
+  "k": 12,
+  "n": 16,
+  "by_difficulty": {
+    "plain": "4/4",
+    "obfuscated": "5/8",
+    "instruction-only": "3/4"
+  },
+  "by_type": {
+    "mcp": "2/4",
+    "skill": "3/3",
+    "npm-package": "7/9"
+  },
+  "rows": [
+    {
+      "id": "h01-mcp-tool-desc-plain",
+      "type": "mcp",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "tool-poisoning-marker",
+        "concealment-instruction"
+      ],
+      "rules": [
+        "tool-poisoning-marker",
+        "concealment-instruction"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h02-mcp-schema-split",
+      "type": "mcp",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h03-mcp-shadow-manifest",
+      "type": "mcp",
+      "difficulty": "instruction-only",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h04-mcp-rug-pull",
+      "type": "mcp",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "tool-poisoning-marker"
+      ],
+      "rules": [
+        "tool-poisoning-marker"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h05-skill-unicode-tags",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "hidden-unicode"
+      ],
+      "rules": [
+        "hidden-unicode"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h06-skill-zero-width-rules",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "hidden-zero-width"
+      ],
+      "rules": [
+        "hidden-zero-width"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h07-npm-env-postinstall",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "env-in-request-payload"
+      ],
+      "rules": [
+        "undeclared-host",
+        "install-time-network",
+        "env-in-request-payload"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h08-npm-scanner-gaslight",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h09-npm-ai-cli-recon",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "install-time-detached-spawn",
+        "agent-cli-bypass-flags"
+      ],
+      "rules": [
+        "install-time-detached-spawn",
+        "install-time-network",
+        "agent-cli-bypass-flags"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h10-npm-shell-rc-persist",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "install-time-outside-write",
+        "persistence"
+      ],
+      "rules": [
+        "install-time-outside-write",
+        "persistence"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h11-npm-binary-shadow",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "install-time-outside-write"
+      ],
+      "rules": [
+        "install-time-outside-write",
+        "install-time-network"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h12-npm-typosquat-mcp-inject",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "install-time-outside-write",
+        "agent-config-write"
+      ],
+      "rules": [
+        "install-time-outside-write",
+        "agent-config-write"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h13-npm-wallet-beacon",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "install-time-credential-read"
+      ],
+      "rules": [
+        "install-time-credential-read",
+        "install-time-network"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h14-npm-cred-scan-postinstall",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h15-skill-config-hijack",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "agent-config-instruction"
+      ],
+      "rules": [
+        "agent-config-instruction"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h16-npm-platform-dropper",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "install-time-detached-spawn",
+        "install-time-outside-write",
+        "download-exec"
+      ],
+      "rules": [
+        "undeclared-host",
+        "install-time-detached-spawn",
+        "install-time-outside-write",
+        "install-time-network",
+        "download-exec"
+      ],
+      "hit": true
+    }
+  ]
+}

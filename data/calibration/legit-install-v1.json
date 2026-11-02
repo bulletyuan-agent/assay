@@ -1,0 +1,82 @@
+{
+  "set": "legit-install-v1",
+  "role": "development",
+  "purpose": "Legitimate projects that run install-time scripts or download binaries at install. Measures false positives of the install-time rules. Development set: used to tune.",
+  "items": [
+    {
+      "id": "li-puppeteer",
+      "label": "good",
+      "url": "https://github.com/puppeteer/puppeteer"
+    },
+    {
+      "id": "li-sharp",
+      "label": "good",
+      "url": "https://github.com/lovell/sharp"
+    },
+    {
+      "id": "li-prisma",
+      "label": "good",
+      "url": "https://github.com/prisma/prisma"
+    },
+    {
+      "id": "li-cypress",
+      "label": "good",
+      "url": "https://github.com/cypress-io/cypress"
+    },
+    {
+      "id": "li-husky",
+      "label": "good",
+      "url": "https://github.com/typicode/husky"
+    },
+    {
+      "id": "li-esbuild",
+      "label": "good",
+      "url": "https://github.com/evanw/esbuild"
+    },
+    {
+      "id": "li-node-gyp",
+      "label": "good",
+      "url": "https://github.com/nodejs/node-gyp"
+    },
+    {
+      "id": "li-playwright",
+      "label": "good",
+      "url": "https://github.com/microsoft/playwright"
+    },
+    {
+      "id": "li-sqlite-wasm",
+      "label": "good",
+      "url": "https://github.com/sqlite/sqlite-wasm"
+    },
+    {
+      "id": "li-node-sqlite3",
+      "label": "good",
+      "url": "https://github.com/TryGhost/node-sqlite3"
+    },
+    {
+      "id": "li-node-canvas",
+      "label": "good",
+      "url": "https://github.com/Automattic/node-canvas"
+    },
+    {
+      "id": "li-nan",
+      "label": "good",
+      "url": "https://github.com/nodejs/nan"
+    },
+    {
+      "id": "li-better-sqlite3",
+      "label": "good",
+      "url": "https://github.com/WiseLibs/better-sqlite3"
+    },
+    {
+      "id": "li-node-fetch",
+      "label": "good",
+      "url": "https://github.com/node-fetch/node-fetch"
+    },
+    {
+      "id": "li-webpack",
+      "label": "good",
+      "url": "https://github.com/webpack/webpack"
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "holdout": "data/calibration/holdout-v2",
+  "method_version": "0.4.0-dev-iteration3",
+  "run_at": "2026-11-02T15:27:47.501Z",
+  "hit_rule": "score<70 or any red flag",
+  "recall": 1,
+  "wilson95": [
+    0.8063865817272801,
+    1
+  ],
+  "k": 16,
+  "n": 16,
+  "by_difficulty": {
+    "plain": "4/4",
+    "obfuscated": "8/8",
+    "instruction-only": "4/4"
+  },
+  "by_type": {
+    "mcp": "4/4",
+    "skill": "3/3",
+    "npm-package": "9/9"
+  },
+  "rows": [
+    {
+      "id": "h01-mcp-tool-desc-plain",
+      "type": "mcp",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "tool-poisoning-marker",
+        "concealment-instruction"
+      ],
+      "rules": [
+        "tool-poisoning-marker",
+        "concealment-instruction"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h02-mcp-schema-split",
+      "type": "mcp",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "tool-poisoning-marker"
+      ],
+      "rules": [
+        "tool-poisoning-marker"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h03-mcp-shadow-manifest",
+      "type": "mcp",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "note-for-model-directive"
+      ],
+      "rules": [
+        "note-for-model-directive"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h04-mcp-rug-pull",
+      "type": "mcp",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "tool-poisoning-marker"
+      ],
+      "rules": [
+        "tool-poisoning-marker"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h05-skill-unicode-tags",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "hidden-unicode"
+      ],
+      "rules": [
+        "hidden-unicode"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h06-skill-zero-width-rules",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "hidden-zero-width"
+      ],
+      "rules": [
+        "hidden-zero-width"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h07-npm-env-postinstall",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "install-time-data-send",
+        "env-in-request-payload"
+      ],
+      "rules": [
+        "undeclared-host",
+        "install-time-network",
+        "install-time-data-send",
+        "env-in-request-payload"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h08-npm-scanner-gaslight",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "scanner-manipulation",
+        "install-time-data-send",
+        "env-in-request-payload"
+      ],
+      "rules": [
+        "scanner-manipulation",
+        "install-time-network",
+        "install-time-data-send",
+        "undeclared-host",
+        "env-in-request-payload"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h09-npm-ai-cli-recon",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "install-time-detached-spawn",
+        "agent-cli-bypass-flags"
+      ],
+      "rules": [
+        "install-time-detached-spawn",
+        "install-time-network",
+        "agent-cli-bypass-flags"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h10-npm-shell-rc-persist",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "install-time-outside-write",
+        "persistence"
+      ],
+      "rules": [
+        "install-time-outside-write",
+        "persistence"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h11-npm-binary-shadow",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "install-time-outside-write"
+      ],
+      "rules": [
+        "install-time-outside-write",
+        "install-time-network"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h12-npm-typosquat-mcp-inject",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "install-time-outside-write",
+        "agent-config-write"
+      ],
+      "rules": [
+        "install-time-outside-write",
+        "agent-config-write"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h13-npm-wallet-beacon",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "install-time-credential-read",
+        "install-time-data-send"
+      ],
+      "rules": [
+        "install-time-credential-read",
+        "install-time-network",
+        "install-time-data-send"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h14-npm-cred-scan-postinstall",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "install-time-credential-read",
+        "install-time-outside-write"
+      ],
+      "rules": [
+        "install-time-credential-read",
+        "install-time-outside-write",
+        "install-time-network",
+        "credential-read"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h15-skill-config-hijack",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "agent-config-instruction"
+      ],
+      "rules": [
+        "agent-config-instruction"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h16-npm-platform-dropper",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "install-time-detached-spawn",
+        "install-time-outside-write",
+        "download-exec"
+      ],
+      "rules": [
+        "undeclared-host",
+        "install-time-detached-spawn",
+        "install-time-outside-write",
+        "install-time-network",
+        "download-exec"
+      ],
+      "hit": true
+    }
+  ]
+}

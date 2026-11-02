@@ -1,0 +1,59 @@
+{
+  "set": "incidents-v0",
+  "purpose": "Candidate real-world bad items for BLIND testing. They must not be used to tune rules. Each needs a public source; verification level is recorded honestly.",
+  "categories": {
+    "malicious": "Intentionally harmful code or content (backdoor, exfiltration, poisoning). The static screen is meant to catch these.",
+    "vulnerable": "Honest code with an exploitable flaw (CVE). Needs dependency and flaw analysis, a different detector than the screen."
+  },
+  "items": [
+    {
+      "id": "postmark-mcp",
+      "category": "malicious",
+      "ecosystem": "npm",
+      "summary": "Package modified from 1.0.16 to add a hidden BCC copying every outbound email to an external address. Removed from npm by 2025-09-25.",
+      "source": "https://snyk.io/blog/malicious-mcp-server-on-npm-postmark-mcp-harvests-emails/",
+      "also": "https://thehackernews.com/2025/09/first-malicious-mcp-server-found.html",
+      "verification": "source page fetched; timeline, versions and the one-line diff read. The Hacker News article seen in search only.",
+      "testable": "reconstruction only: package is gone from npm. Rebuild a fixture from the one-line diff published by Snyk and label it reconstructed.",
+      "expected_screen_behaviour": "Likely MISSED: the exfil target is a hard-coded email address (Bcc), not a URL host, so the current egress rule does not see it."
+    },
+    {
+      "id": "cyanheads-git-mcp-server",
+      "category": "vulnerable",
+      "ecosystem": "npm",
+      "summary": "CVE-2025-53107: command injection in several tools of @cyanheads/git-mcp-server.",
+      "source": "https://github.com/advisories/GHSA-3q26-f695-pp76",
+      "verification": "advisory page fetched; title and CVE id confirmed. Affected version range NOT read (page truncated).",
+      "testable": "needs the vulnerable version range from the advisory before pinning a version."
+    },
+    {
+      "id": "mcp-inspector",
+      "category": "vulnerable",
+      "ecosystem": "npm / GitHub",
+      "summary": "CVE-2025-58444 (as titled by the source): MCP Inspector XSS leading to RCE.",
+      "source": "https://www.sentinelone.com/vulnerability-database/cve-2025-58444/",
+      "verification": "seen in search results only, page not fetched. UNVERIFIED beyond the title."
+    },
+    {
+      "id": "ox-mcp-stdio-advisory",
+      "category": "vulnerable",
+      "ecosystem": "multiple",
+      "summary": "Advisory on STDIO command injection across MCP SDKs and products.",
+      "source": "https://www.ox.security/blog/mcp-supply-chain-advisory-rce-vulnerabilities-across-the-ai-ecosystem/",
+      "verification": "page fetch returned only a title. UNVERIFIED; needs another read before any item is extracted."
+    },
+    {
+      "id": "skills-security-leads",
+      "category": "malicious",
+      "ecosystem": "skills",
+      "summary": "Curated lists of agent-skill attacks and benchmarks. Leads for malicious Skill samples, none extracted yet.",
+      "source": "https://github.com/LLMSecurity/awesome-agent-skills-security",
+      "verification": "seen in search results only. UNVERIFIED."
+    }
+  ],
+  "findings": [
+    "Only 1 of 5 leads is a confirmed malicious MCP incident, and its package is no longer downloadable.",
+    "Real 'bad' items are mostly CVEs (vulnerable), which the static screen is not designed to detect. The screen and a vulnerability scanner must be reported separately.",
+    "Need at least 10 verified items per category before reporting a real AUC; currently 0 testable."
+  ]
+}

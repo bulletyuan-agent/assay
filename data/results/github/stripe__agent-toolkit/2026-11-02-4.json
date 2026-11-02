@@ -1,0 +1,1474 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T151616Z",
+  "target": {
+    "source": "github",
+    "id": "stripe/agent-toolkit",
+    "url": "https://github.com/stripe/agent-toolkit",
+    "name": "ai"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:17:26.861Z",
+  "method_version": "0.3.3",
+  "tool": {
+    "assay_commit": "5cc692d93611d566dbe688a6f2996d6c753c9347",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.3"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "b3ab9149225f837894b7de08c1b14650d7cc64eb",
+    "files_scanned": 351,
+    "candidates": 351,
+    "excluded_non_shipped": 486,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "llm/token-meter/index.ts",
+        "sha": "ea31fc8dfe8f49f528f9e8bf1fca215b21e0f79a"
+      },
+      {
+        "path": "scripts/sync.js",
+        "sha": "36674764baa472ddc73bc7eaef78f147019472ff"
+      },
+      {
+        "path": "tools/modelcontextprotocol/server.json",
+        "sha": "0a30ee1f96577b115322a6039da987565bd046a2"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "f64cc34c2afeb3d3c6ee1083761c5b124e6d7655"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "4fd08c0b99e15a1b4890250ca7281f038775b372"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "d91ef6ba831a768e6f83315242de56a91b7700c4"
+      },
+      {
+        "path": "llm/ai-sdk/meter/index.ts",
+        "sha": "18df03d95a7b3e8a05ee527a1cd208e32d2206c2"
+      },
+      {
+        "path": "llm/ai-sdk/provider/index.ts",
+        "sha": "b712502f27ab61a1fd6fd6f17756c8204a729eef"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "providers/claude/plugin/skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "providers/claude/plugin/skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "providers/grok/plugin/skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "providers/grok/plugin/skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "README.md",
+        "sha": "552aabdb67f1bd7be5db2e83cbb7d75a3949e2cd"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "dd1126ba44d3299762831195a04f8f769bdbf254"
+      },
+      {
+        "path": "tools/modelcontextprotocol/src/cli.ts",
+        "sha": "f63c2a115aeffb59d1e950db400d0a75ad82e031"
+      },
+      {
+        "path": "tools/modelcontextprotocol/src/index.ts",
+        "sha": "f4f83cec60f10a6245d700baab460036493848b1"
+      },
+      {
+        "path": "llm/ai-sdk/package.json",
+        "sha": "78e6ed88755d61276b2016b9f91cb2fdf8cea764"
+      },
+      {
+        "path": "llm/token-meter/package.json",
+        "sha": "a8720492e4f5fb0386111ef3cf24694521ae6a12"
+      },
+      {
+        "path": "tools/modelcontextprotocol/package.json",
+        "sha": "98fd79a80f6f9467b29b925a14141deb0d457cbc"
+      },
+      {
+        "path": "tools/typescript/package.json",
+        "sha": "17ce8f57ba338e8c5d77d9b96c32ce975cf9823c"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "3b3f5091f365ebaa027c4b3c0e2cff3c0e781921"
+      },
+      {
+        "path": ".cursor-plugin/marketplace.json",
+        "sha": "2c78683436ea7f04dc1ae5242b6359e6816a8004"
+      },
+      {
+        "path": ".grok-plugin/marketplace.json",
+        "sha": "74d634d6b02af5fd8df403a32826ccb90d4d066b"
+      },
+      {
+        "path": "llm/README.md",
+        "sha": "1852f14ab48452e654ef97742a80445fe9a33b77"
+      },
+      {
+        "path": "providers/claude/plugin/scripts/cli.mjs",
+        "sha": "1c7daf98494232156bf62633d1b3cb82f822c8b9"
+      },
+      {
+        "path": "providers/README.md",
+        "sha": "69425821af5901ffacb830372256269796edde53"
+      },
+      {
+        "path": "skills/README.md",
+        "sha": "dc267ee53bc3bb3c2d536f95689b8e7e2ed2e129"
+      },
+      {
+        "path": "tools/README.md",
+        "sha": "82b392c7d8644596147d5bafb86b56fdfeb89fa0"
+      },
+      {
+        "path": "tools/typescript/src/ai-sdk/index.ts",
+        "sha": "ccf5b53bb1329d901159e206e34108f86e9ca6eb"
+      },
+      {
+        "path": "tools/typescript/src/langchain/index.ts",
+        "sha": "ccf5b53bb1329d901159e206e34108f86e9ca6eb"
+      },
+      {
+        "path": "tools/typescript/src/modelcontextprotocol/index.ts",
+        "sha": "60cdc0ea9be47503bc894bdb2c001ccd34318923"
+      },
+      {
+        "path": "tools/typescript/src/openai/index.ts",
+        "sha": "ccf5b53bb1329d901159e206e34108f86e9ca6eb"
+      },
+      {
+        "path": ".agents/plugins/marketplace.json",
+        "sha": "a57100030d6a61bf56ff87422d7519e6323cb8a4"
+      },
+      {
+        "path": "llm/ai-sdk/jest.config.ts",
+        "sha": "4a6346026476d9a63f9d480253312efa2854fb16"
+      },
+      {
+        "path": "llm/ai-sdk/pnpm-lock.yaml",
+        "sha": "c0d1c06cae52a7cf8548ea5b4a2ac28d6b6cd148"
+      },
+      {
+        "path": "llm/ai-sdk/README.md",
+        "sha": "600cb2b9259bc47b029503c7992f7413104cf36e"
+      },
+      {
+        "path": "llm/ai-sdk/tsconfig.json",
+        "sha": "2a194ba2ec6234887e08deaebf2a5a1c80a09e43"
+      },
+      {
+        "path": "llm/ai-sdk/tsup.config.ts",
+        "sha": "3ff13d16621dd08e67653f8165053e94dc9ef15a"
+      },
+      {
+        "path": "llm/token-meter/jest.config.ts",
+        "sha": "d08b05b9351fce6ad76f8d79ead83a6746af9875"
+      },
+      {
+        "path": "llm/token-meter/meter-event-logging.ts",
+        "sha": "2ca309073cab05ff8d96720a4f7891e1917e8a2a"
+      },
+      {
+        "path": "llm/token-meter/meter-event-types.ts",
+        "sha": "76b8c612e4408b1a30df537f2e99fa5720d3dbb3"
+      },
+      {
+        "path": "llm/token-meter/pnpm-lock.yaml",
+        "sha": "9a19f0301ee68e5547cb4a10250189f8fb4319cf"
+      },
+      {
+        "path": "llm/token-meter/README.md",
+        "sha": "25857dfd76cc02e89cefafc13f741e5dc158f65e"
+      },
+      {
+        "path": "llm/token-meter/token-meter.ts",
+        "sha": "7a3b30d3bcce631f42c6d3bfc66fc2b47decccba"
+      },
+      {
+        "path": "llm/token-meter/tsconfig.build.json",
+        "sha": "f399551b0e71406ad6f3519a434fce7c17578e2e"
+      },
+      {
+        "path": "llm/token-meter/tsconfig.json",
+        "sha": "70c03d76813d89f077ec12fc9ddf21e3b0e490bd"
+      },
+      {
+        "path": "llm/token-meter/types.ts",
+        "sha": "d4fe0a4e778c12274898894c68347875fe396c0a"
+      },
+      {
+        "path": "tools/modelcontextprotocol/build-dxt.js",
+        "sha": "ebec5f91f62e437b29b06faf70c36043ff7b1817"
+      },
+      {
+        "path": "tools/modelcontextprotocol/eslint.config.mjs",
+        "sha": "4afcadad357eb7d4efd1213d694ea7983ab58ce8"
+      },
+      {
+        "path": "tools/modelcontextprotocol/jest.config.ts",
+        "sha": "f94405f382ab31279bbfaba3198fbf4f56fe1923"
+      },
+      {
+        "path": "tools/modelcontextprotocol/jest.setup.ts",
+        "sha": "8c08dccd75c4bf97a81305e0a0a62d9541a73e61"
+      },
+      {
+        "path": "tools/modelcontextprotocol/manifest.json",
+        "sha": "a6a06ab3b784cfef416adf1760a91061c78382fe"
+      },
+      {
+        "path": "tools/modelcontextprotocol/README.md",
+        "sha": "98e52e352bd0d9dad4a22d22c3cc0a2ac76a8620"
+      },
+      {
+        "path": "tools/modelcontextprotocol/tsconfig.json",
+        "sha": "81dad85b80e105fce876d53acab99f819d253811"
+      },
+      {
+        "path": "tools/modelcontextprotocol/tsup.config.ts",
+        "sha": "d84bc952cc777aacf58d1682a2ecead5426b1930"
+      },
+      {
+        "path": "tools/python/MIGRATION.md",
+        "sha": "688d768527407917c2bc67a7480ec8be74de2176"
+      },
+      {
+        "path": "tools/python/README.md",
+        "sha": "aa4cedabf82aeb3f3b859b1cdae36e447a0e671a"
+      },
+      {
+        "path": "tools/python/requirements.txt",
+        "sha": "93aba5d98bd9d6e014261aa52bbca7dae04f3d30"
+      },
+      {
+        "path": "tools/typescript/eslint.config.mjs",
+        "sha": "4afcadad357eb7d4efd1213d694ea7983ab58ce8"
+      },
+      {
+        "path": "tools/typescript/jest.config.ts",
+        "sha": "81b26ba0156642124afce4a018eaa14250b26226"
+      },
+      {
+        "path": "tools/typescript/MIGRATION.md",
+        "sha": "fa1b762d055c386a39aa6909475a841bb2355ae7"
+      },
+      {
+        "path": "tools/typescript/pnpm-workspace.yaml",
+        "sha": "471ec4b7d96833171803996c50b3f185c9f5c5ee"
+      },
+      {
+        "path": "tools/typescript/README.md",
+        "sha": "7d6c5c5bc1be9081e4641dbdbef36d93fb0a667d"
+      },
+      {
+        "path": "tools/typescript/tsconfig.json",
+        "sha": "8c5fe19df3ad62c8405211229651391209534bde"
+      },
+      {
+        "path": "tools/typescript/tsup.config.ts",
+        "sha": "b013f9524b8d4e1be55502829cd5dd757b3644ce"
+      },
+      {
+        "path": "llm/ai-sdk/meter/meter-event-logging.ts",
+        "sha": "2ca309073cab05ff8d96720a4f7891e1917e8a2a"
+      },
+      {
+        "path": "llm/ai-sdk/meter/meter-event-types.ts",
+        "sha": "76b8c612e4408b1a30df537f2e99fa5720d3dbb3"
+      },
+      {
+        "path": "llm/ai-sdk/meter/README.md",
+        "sha": "270ab23f4231f03d5c8925a3899070b5e05be2d8"
+      },
+      {
+        "path": "llm/ai-sdk/meter/tsconfig.json",
+        "sha": "70c03d76813d89f077ec12fc9ddf21e3b0e490bd"
+      },
+      {
+        "path": "llm/ai-sdk/meter/types.ts",
+        "sha": "3f727f59768abd9b909099d089b1e0fbda036834"
+      },
+      {
+        "path": "llm/ai-sdk/meter/utils.ts",
+        "sha": "db0b460b1042d80b2ee15e3d3603058405e62923"
+      },
+      {
+        "path": "llm/ai-sdk/meter/wrapperV2.ts",
+        "sha": "6307936eabb7c5d0535253d0ab35e41a0c1e718e"
+      },
+      {
+        "path": "llm/ai-sdk/meter/wrapperV3.ts",
+        "sha": "221a4734a981315c384dddc15502525e04e6e334"
+      },
+      {
+        "path": "llm/ai-sdk/provider/base64.ts",
+        "sha": "525af5fcc96b54616d7ffc720cb34fff2b940266"
+      },
+      {
+        "path": "llm/ai-sdk/provider/README.md",
+        "sha": "34956372151f0889d276689a97db6c605a9c4c1c"
+      },
+      {
+        "path": "llm/ai-sdk/provider/stripe-language-model-v3.ts",
+        "sha": "9ce962182a8a4c63ef2c99cccb6a490869be193c"
+      },
+      {
+        "path": "llm/ai-sdk/provider/stripe-language-model.ts",
+        "sha": "38c15f09b0790ac726f42652bf18d96baf93c904"
+      },
+      {
+        "path": "llm/ai-sdk/provider/stripe-provider.ts",
+        "sha": "e460631f3eb137085760af386f85c4eecec20542"
+      },
+      {
+        "path": "llm/ai-sdk/provider/tsconfig.build.json",
+        "sha": "44078c06c955872c1cca31cd754202ef92037821"
+      },
+      {
+        "path": "llm/ai-sdk/provider/tsconfig.json",
+        "sha": "4455265f45ab5034d5d2cc62beb00ee124478848"
+      },
+      {
+        "path": "llm/ai-sdk/provider/types.ts",
+        "sha": "e8f2d52f1b9ec728fd077566221c7cb4e8d6dd3c"
+      },
+      {
+        "path": "llm/ai-sdk/provider/utils-v3.ts",
+        "sha": "71b4fa4614c6278768cbe22573501e51671c6573"
+      },
+      {
+        "path": "llm/ai-sdk/provider/utils.ts",
+        "sha": "cec29d265c0ef6c5f5f6b334ec1339862e5fc91b"
+      },
+      {
+        "path": "llm/token-meter/utils/type-detection.ts",
+        "sha": "100e9abf5c4e996e74832ae086bde3adb632551c"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/mcp.json",
+        "sha": "fa57832a6e2926140e4389616755df98d68e8467"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/plugin.json",
+        "sha": "acc04b39bef5f3e008a0f0617867cfe0a0f0543c"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/TESTING.md",
+        "sha": "7a64876b163d34d2dc64b925151d1f5df3059547"
+      },
+      {
+        "path": "providers/antigravity/plugin/mcp-config.json",
+        "sha": "fa57832a6e2926140e4389616755df98d68e8467"
+      },
+      {
+        "path": "providers/antigravity/plugin/plugin.json",
+        "sha": "a380d2b7ca64523c50d15ea2893179b2ef7c284a"
+      },
+      {
+        "path": "providers/claude/plugin/.mcp.json",
+        "sha": "6a2a98b9be3fecc67ae56cccd4c1f8a8fa3ee585"
+      },
+      {
+        "path": "providers/claude/plugin/README.md",
+        "sha": "da8638f7b23e6e55b6ab0bb647e7b11262281ffe"
+      },
+      {
+        "path": "providers/cursor/plugin/mcp.json",
+        "sha": "6a2a98b9be3fecc67ae56cccd4c1f8a8fa3ee585"
+      },
+      {
+        "path": "providers/grok/plugin/.mcp.json",
+        "sha": "6a2a98b9be3fecc67ae56cccd4c1f8a8fa3ee585"
+      },
+      {
+        "path": "skills/connect-recommend/references/account-types.md",
+        "sha": "89cc121516f8d4b0312b3006a13ab4f2baab08ad"
+      },
+      {
+        "path": "skills/connect-recommend/references/charge-patterns.md",
+        "sha": "891831861d2634f0d13be089230beab183993208"
+      },
+      {
+        "path": "skills/connect-recommend/references/company-researcher.md",
+        "sha": "d88b72a46adf85018a72b335e75265d51a6bf768"
+      },
+      {
+        "path": "skills/connect-recommend/references/compatibility-matrix.md",
+        "sha": "8caeb3e52f21b9912078abb4baeae65483a30f7e"
+      },
+      {
+        "path": "skills/connect-recommend/references/decision-matrix.md",
+        "sha": "1e4ce6dd5baea42e29aeb20ae1ff09bd8253c574"
+      },
+      {
+        "path": "skills/connect-recommend/references/discovery-questions.md",
+        "sha": "c3a54f349d0f16454117fbe5619d97a128c6d54d"
+      },
+      {
+        "path": "skills/connect-recommend/references/recommendation-template.md",
+        "sha": "414b7089be88ce9c33689675e5c594bbbf1ed9e3"
+      },
+      {
+        "path": "skills/connect-recommend/references/terminology-rules.md",
+        "sha": "375221b9ca0dae8e176e950238abdf334352b932"
+      },
+      {
+        "path": "skills/stripe-apps/references/authentication.md",
+        "sha": "1bec68b1d067670a9bea464c0a969ffa061df1cd"
+      },
+      {
+        "path": "skills/stripe-apps/references/backend.md",
+        "sha": "7bf936f47e6be7ef0e864bb7a1c55720d9a81a12"
+      },
+      {
+        "path": "skills/stripe-apps/references/canonical-docs.md",
+        "sha": "d18f7e56c1680f247baf9e8fb2999082a2deb3d9"
+      },
+      {
+        "path": "skills/stripe-apps/references/discovery.md",
+        "sha": "c19bf463dc81dcee66ded1c94d322fd253ae48d5"
+      },
+      {
+        "path": "skills/stripe-apps/references/extension-types.md",
+        "sha": "8b8734410b70c0741070e8e9e5bbe8793ef8ebe7"
+      },
+      {
+        "path": "skills/stripe-apps/references/feedback.md",
+        "sha": "212a4f3f628f7041aaa83490804547595874e659"
+      },
+      {
+        "path": "skills/stripe-apps/references/onboarding-ux.md",
+        "sha": "f8acdb92be283b33c23d426a8624fbca25d29921"
+      },
+      {
+        "path": "skills/stripe-apps/references/publishing.md",
+        "sha": "389a5e672296ae4396d7afc9fc8cd3809a85f603"
+      },
+      {
+        "path": "skills/stripe-apps/references/script-extensions.md",
+        "sha": "93112ca759d2e80f9553472c2383351eead7cff7"
+      },
+      {
+        "path": "skills/stripe-apps/references/ui-extensions.md",
+        "sha": "7363556b45b02f720a576565f358ec4212b628b0"
+      },
+      {
+        "path": "skills/stripe-apps/references/webhooks.md",
+        "sha": "f09bf17c9bb1d70f05bd87b1a6a811f9a84bbae2"
+      },
+      {
+        "path": "skills/stripe-apps/references/workflow.md",
+        "sha": "343bbadc0b30600625a9b7011b889348a89522f3"
+      },
+      {
+        "path": "skills/stripe-best-practices/references/billing.md",
+        "sha": "9333d5df44f64016c4cf0a01bf00e66c199fcc0a"
+      },
+      {
+        "path": "skills/stripe-best-practices/references/connect.md",
+        "sha": "44f39b1ecb6018342f6ecab4ccae0f00c0e77c0a"
+      },
+      {
+        "path": "skills/stripe-best-practices/references/payments.md",
+        "sha": "140d734534d906504d1c051b1c954649d5da09a3"
+      },
+      {
+        "path": "skills/stripe-best-practices/references/security.md",
+        "sha": "365458e31b7620cd99b1c0330418208549f6b833"
+      },
+      {
+        "path": "skills/stripe-best-practices/references/tax.md",
+        "sha": "988438a5fa9b11074ab2a5f7e697cc84239da3f9"
+      },
+      {
+        "path": "skills/stripe-best-practices/references/treasury.md",
+        "sha": "3832f449a7af58840cf78a7bd48b31397c9a438a"
+      },
+      {
+        "path": "tools/modelcontextprotocol/src/userAgent.ts",
+        "sha": "ac4d9bfc990e674c09b5052eee25b4643b942bab"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/__init__.py",
+        "sha": "f7c21cab5cbdfbc4ea61586df73390c937c24a85"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/configuration.py",
+        "sha": "836d894119817f1c31694a6ed7ad4fcbef940863"
+      },
+      {
+        "path": "providers/claude/plugin/.claude-plugin/plugin.json",
+        "sha": "c6133577413f205d71e584868c4fa33eb25fd967"
+      },
+      {
+        "path": "providers/claude/plugin/commands/explain-error.md",
+        "sha": "6680d666e892ddf365de8365490e2bd433e40173"
+      },
+      {
+        "path": "providers/claude/plugin/commands/test-cards.md",
+        "sha": "4abe48076518509e45d3f123dbe891c7b216f1d3"
+      },
+      {
+        "path": "providers/claude/plugin/hooks/hooks.json",
+        "sha": "330da84fe28372f42b6e73026fc94c5c861af9d2"
+      },
+      {
+        "path": "providers/claude/plugin/scripts/constants.mjs",
+        "sha": "6c70c36152334f50c7fa4aa7cd488087e25fabca"
+      },
+      {
+        "path": "providers/claude/plugin/scripts/feedback.mjs",
+        "sha": "efbbe51695c4978ce5b9711cb24ecb70bbfe104c"
+      },
+      {
+        "path": "providers/claude/plugin/scripts/hookHelpers.mjs",
+        "sha": "15795e407798cd1af1fbc5d517ebbddba726d422"
+      },
+      {
+        "path": "providers/claude/plugin/scripts/transcriptHelpers.mjs",
+        "sha": "90d673bfd1fb1efb009fc1735288b5df29ca24c6"
+      },
+      {
+        "path": "providers/cursor/plugin/.cursor-plugin/plugin.json",
+        "sha": "2469302f7cb6b13155b8f75612ed05f5bf401112"
+      },
+      {
+        "path": "providers/grok/plugin/.grok-plugin/plugin.json",
+        "sha": "624cc23fde3448041e732a4b7a53cfe114b48438"
+      },
+      {
+        "path": "providers/grok/plugin/agents/company-researcher.md",
+        "sha": "947e090ae808498a9bd95d0bd44d9001651231bd"
+      },
+      {
+        "path": "providers/grok/plugin/commands/explain-error.md",
+        "sha": "6680d666e892ddf365de8365490e2bd433e40173"
+      },
+      {
+        "path": "providers/grok/plugin/commands/test-cards.md",
+        "sha": "4abe48076518509e45d3f123dbe891c7b216f1d3"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/crewai/__init__.py",
+        "sha": "a7e75dba6c10599b19352029a41cc6df82f07808"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/crewai/toolkit.py",
+        "sha": "7876e8bddef9be4220aa84346ad3f08f1584fb6a"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/langchain/__init__.py",
+        "sha": "3a99814a756740a1d8aa7d47417129f6b924e2e8"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/langchain/toolkit.py",
+        "sha": "9b2d4b96b7fa1ee0d19eafc936f2dcdb11887c0c"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/openai/__init__.py",
+        "sha": "9f15144a1d6f6daf5600b2d5d4ff7b2db91eb59d"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/openai/toolkit.py",
+        "sha": "c30ec8d781a1b161c406e31917ccbe179fb2e2f3"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/shared/__init__.py",
+        "sha": "7517c0c0a2a98c100e39a4d059c643f45ab601f0"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/shared/async_initializer.py",
+        "sha": "18b44ecea831fe32951da8398c959f3066b6ce61"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/shared/constants.py",
+        "sha": "5441ec9ebc9405b265433565ee41f49d03a22b71"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/shared/mcp_client.py",
+        "sha": "9dd84eaaff21f81e586312948ff3bbdb8ef2ade0"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/shared/schema_utils.py",
+        "sha": "acba76deb865f89de259566d042d3f2b110237c7"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/shared/toolkit_core.py",
+        "sha": "8d1bb4587b6e9f22133c4c6dd0d0673126eb6a4f"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/strands/__init__.py",
+        "sha": "cd89c15d4e5de68430baa418c7e544ba9062c90e"
+      },
+      {
+        "path": "tools/python/stripe_agent_toolkit/strands/toolkit.py",
+        "sha": "13fe26a27d77a0b52b2d4529c745d73b2d79820d"
+      },
+      {
+        "path": "tools/typescript/src/ai-sdk/toolkit.ts",
+        "sha": "8c7393922a32cae781c6a1d6f080f133104c2254"
+      },
+      {
+        "path": "tools/typescript/src/langchain/toolkit.ts",
+        "sha": "c92e5a92ab1ee2f348094464eca5e35a572fb115"
+      },
+      {
+        "path": "tools/typescript/src/modelcontextprotocol/README.md",
+        "sha": "6945ee23d708c5f9fc3c60753938f711c620972b"
+      },
+      {
+        "path": "tools/typescript/src/modelcontextprotocol/toolkit.ts",
+        "sha": "83732ca2ec68db3d7de3bfc96464f3fe51776318"
+      },
+      {
+        "path": "tools/typescript/src/openai/toolkit.ts",
+        "sha": "7877b0e1942c6bd0eea94f6feb1fec8858109763"
+      },
+      {
+        "path": "tools/typescript/src/shared/async-initializer.ts",
+        "sha": "a362d89840e271ab963252868ec1eaf08a248b44"
+      },
+      {
+        "path": "tools/typescript/src/shared/configuration.ts",
+        "sha": "00a0e5584a0dd37a42d2760d26ca2afb1e229f4a"
+      },
+      {
+        "path": "tools/typescript/src/shared/constants.ts",
+        "sha": "b1a7b763964f5ec7a2f7904c66f5b273a102e9a0"
+      },
+      {
+        "path": "tools/typescript/src/shared/mcp-client.ts",
+        "sha": "23edbcd99d567d2319e0d6ba9d5e4cea4d279d11"
+      },
+      {
+        "path": "tools/typescript/src/shared/schema-utils.ts",
+        "sha": "c8504cfe06bc1a38da811627801980595292567e"
+      },
+      {
+        "path": "tools/typescript/src/shared/toolkit-core.ts",
+        "sha": "75c50984f7267cf1d0623c2232ea3b45c9b41582"
+      },
+      {
+        "path": "providers/claude/plugin/scripts/lifecycle/postToolBatch.mjs",
+        "sha": "fb894053f82d399989191324340670476fb587f9"
+      },
+      {
+        "path": "providers/claude/plugin/scripts/lifecycle/postToolUse.mjs",
+        "sha": "3e1f27e6b4bb23b04eedbf7895187108f5c5f77d"
+      },
+      {
+        "path": "providers/claude/plugin/scripts/lifecycle/postToolUseFailure.mjs",
+        "sha": "4cfd9cbba9810ccbcf637c4c3b827adcac3ff235"
+      },
+      {
+        "path": "providers/claude/plugin/scripts/lifecycle/sessionStart.mjs",
+        "sha": "49c788062cfa934b09d54c47f44e35910e17e129"
+      },
+      {
+        "path": "providers/claude/plugin/scripts/lifecycle/userPromptSubmit.mjs",
+        "sha": "a3b62028a31625a4f5b05a8ded6cf835ea923880"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-recommend/references/account-types.md",
+        "sha": "89cc121516f8d4b0312b3006a13ab4f2baab08ad"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-recommend/references/charge-patterns.md",
+        "sha": "891831861d2634f0d13be089230beab183993208"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-recommend/references/company-researcher.md",
+        "sha": "d88b72a46adf85018a72b335e75265d51a6bf768"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-recommend/references/compatibility-matrix.md",
+        "sha": "8caeb3e52f21b9912078abb4baeae65483a30f7e"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-recommend/references/decision-matrix.md",
+        "sha": "1e4ce6dd5baea42e29aeb20ae1ff09bd8253c574"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-recommend/references/discovery-questions.md",
+        "sha": "c3a54f349d0f16454117fbe5619d97a128c6d54d"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-recommend/references/recommendation-template.md",
+        "sha": "414b7089be88ce9c33689675e5c594bbbf1ed9e3"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-recommend/references/terminology-rules.md",
+        "sha": "375221b9ca0dae8e176e950238abdf334352b932"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/authentication.md",
+        "sha": "1bec68b1d067670a9bea464c0a969ffa061df1cd"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/backend.md",
+        "sha": "7bf936f47e6be7ef0e864bb7a1c55720d9a81a12"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/canonical-docs.md",
+        "sha": "d18f7e56c1680f247baf9e8fb2999082a2deb3d9"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/discovery.md",
+        "sha": "c19bf463dc81dcee66ded1c94d322fd253ae48d5"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/extension-types.md",
+        "sha": "8b8734410b70c0741070e8e9e5bbe8793ef8ebe7"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/feedback.md",
+        "sha": "212a4f3f628f7041aaa83490804547595874e659"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/onboarding-ux.md",
+        "sha": "f8acdb92be283b33c23d426a8624fbca25d29921"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/publishing.md",
+        "sha": "389a5e672296ae4396d7afc9fc8cd3809a85f603"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/script-extensions.md",
+        "sha": "93112ca759d2e80f9553472c2383351eead7cff7"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/ui-extensions.md",
+        "sha": "7363556b45b02f720a576565f358ec4212b628b0"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/webhooks.md",
+        "sha": "f09bf17c9bb1d70f05bd87b1a6a811f9a84bbae2"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/references/workflow.md",
+        "sha": "343bbadc0b30600625a9b7011b889348a89522f3"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-best-practices/references/billing.md",
+        "sha": "9333d5df44f64016c4cf0a01bf00e66c199fcc0a"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-best-practices/references/connect.md",
+        "sha": "44f39b1ecb6018342f6ecab4ccae0f00c0e77c0a"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-best-practices/references/payments.md",
+        "sha": "140d734534d906504d1c051b1c954649d5da09a3"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-best-practices/references/security.md",
+        "sha": "365458e31b7620cd99b1c0330418208549f6b833"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-best-practices/references/tax.md",
+        "sha": "988438a5fa9b11074ab2a5f7e697cc84239da3f9"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-best-practices/references/treasury.md",
+        "sha": "3832f449a7af58840cf78a7bd48b31397c9a438a"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-recommend/references/account-types.md",
+        "sha": "89cc121516f8d4b0312b3006a13ab4f2baab08ad"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-recommend/references/charge-patterns.md",
+        "sha": "891831861d2634f0d13be089230beab183993208"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-recommend/references/company-researcher.md",
+        "sha": "d88b72a46adf85018a72b335e75265d51a6bf768"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-recommend/references/compatibility-matrix.md",
+        "sha": "8caeb3e52f21b9912078abb4baeae65483a30f7e"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-recommend/references/decision-matrix.md",
+        "sha": "1e4ce6dd5baea42e29aeb20ae1ff09bd8253c574"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-recommend/references/discovery-questions.md",
+        "sha": "c3a54f349d0f16454117fbe5619d97a128c6d54d"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-recommend/references/recommendation-template.md",
+        "sha": "414b7089be88ce9c33689675e5c594bbbf1ed9e3"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-recommend/references/terminology-rules.md",
+        "sha": "375221b9ca0dae8e176e950238abdf334352b932"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/authentication.md",
+        "sha": "1bec68b1d067670a9bea464c0a969ffa061df1cd"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/backend.md",
+        "sha": "7bf936f47e6be7ef0e864bb7a1c55720d9a81a12"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/canonical-docs.md",
+        "sha": "d18f7e56c1680f247baf9e8fb2999082a2deb3d9"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/discovery.md",
+        "sha": "c19bf463dc81dcee66ded1c94d322fd253ae48d5"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/extension-types.md",
+        "sha": "8b8734410b70c0741070e8e9e5bbe8793ef8ebe7"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/feedback.md",
+        "sha": "212a4f3f628f7041aaa83490804547595874e659"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/onboarding-ux.md",
+        "sha": "f8acdb92be283b33c23d426a8624fbca25d29921"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/publishing.md",
+        "sha": "389a5e672296ae4396d7afc9fc8cd3809a85f603"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/script-extensions.md",
+        "sha": "93112ca759d2e80f9553472c2383351eead7cff7"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/ui-extensions.md",
+        "sha": "7363556b45b02f720a576565f358ec4212b628b0"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/webhooks.md",
+        "sha": "f09bf17c9bb1d70f05bd87b1a6a811f9a84bbae2"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/references/workflow.md",
+        "sha": "343bbadc0b30600625a9b7011b889348a89522f3"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-best-practices/references/billing.md",
+        "sha": "9333d5df44f64016c4cf0a01bf00e66c199fcc0a"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-best-practices/references/connect.md",
+        "sha": "44f39b1ecb6018342f6ecab4ccae0f00c0e77c0a"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-best-practices/references/payments.md",
+        "sha": "140d734534d906504d1c051b1c954649d5da09a3"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-best-practices/references/security.md",
+        "sha": "365458e31b7620cd99b1c0330418208549f6b833"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-best-practices/references/tax.md",
+        "sha": "988438a5fa9b11074ab2a5f7e697cc84239da3f9"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-best-practices/references/treasury.md",
+        "sha": "3832f449a7af58840cf78a7bd48b31397c9a438a"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-recommend/references/account-types.md",
+        "sha": "89cc121516f8d4b0312b3006a13ab4f2baab08ad"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-recommend/references/charge-patterns.md",
+        "sha": "891831861d2634f0d13be089230beab183993208"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-recommend/references/company-researcher.md",
+        "sha": "d88b72a46adf85018a72b335e75265d51a6bf768"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-recommend/references/compatibility-matrix.md",
+        "sha": "8caeb3e52f21b9912078abb4baeae65483a30f7e"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-recommend/references/decision-matrix.md",
+        "sha": "1e4ce6dd5baea42e29aeb20ae1ff09bd8253c574"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-recommend/references/discovery-questions.md",
+        "sha": "c3a54f349d0f16454117fbe5619d97a128c6d54d"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-recommend/references/recommendation-template.md",
+        "sha": "414b7089be88ce9c33689675e5c594bbbf1ed9e3"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-recommend/references/terminology-rules.md",
+        "sha": "375221b9ca0dae8e176e950238abdf334352b932"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/authentication.md",
+        "sha": "1bec68b1d067670a9bea464c0a969ffa061df1cd"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/backend.md",
+        "sha": "7bf936f47e6be7ef0e864bb7a1c55720d9a81a12"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/canonical-docs.md",
+        "sha": "d18f7e56c1680f247baf9e8fb2999082a2deb3d9"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/discovery.md",
+        "sha": "c19bf463dc81dcee66ded1c94d322fd253ae48d5"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/extension-types.md",
+        "sha": "8b8734410b70c0741070e8e9e5bbe8793ef8ebe7"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/feedback.md",
+        "sha": "212a4f3f628f7041aaa83490804547595874e659"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/onboarding-ux.md",
+        "sha": "f8acdb92be283b33c23d426a8624fbca25d29921"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/publishing.md",
+        "sha": "389a5e672296ae4396d7afc9fc8cd3809a85f603"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/script-extensions.md",
+        "sha": "93112ca759d2e80f9553472c2383351eead7cff7"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/ui-extensions.md",
+        "sha": "7363556b45b02f720a576565f358ec4212b628b0"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/webhooks.md",
+        "sha": "f09bf17c9bb1d70f05bd87b1a6a811f9a84bbae2"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/references/workflow.md",
+        "sha": "343bbadc0b30600625a9b7011b889348a89522f3"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-best-practices/references/billing.md",
+        "sha": "9333d5df44f64016c4cf0a01bf00e66c199fcc0a"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-best-practices/references/connect.md",
+        "sha": "44f39b1ecb6018342f6ecab4ccae0f00c0e77c0a"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-best-practices/references/payments.md",
+        "sha": "140d734534d906504d1c051b1c954649d5da09a3"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-best-practices/references/security.md",
+        "sha": "365458e31b7620cd99b1c0330418208549f6b833"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-best-practices/references/tax.md",
+        "sha": "988438a5fa9b11074ab2a5f7e697cc84239da3f9"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-best-practices/references/treasury.md",
+        "sha": "3832f449a7af58840cf78a7bd48b31397c9a438a"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-recommend/references/account-types.md",
+        "sha": "89cc121516f8d4b0312b3006a13ab4f2baab08ad"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-recommend/references/charge-patterns.md",
+        "sha": "891831861d2634f0d13be089230beab183993208"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-recommend/references/company-researcher.md",
+        "sha": "d88b72a46adf85018a72b335e75265d51a6bf768"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-recommend/references/compatibility-matrix.md",
+        "sha": "8caeb3e52f21b9912078abb4baeae65483a30f7e"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-recommend/references/decision-matrix.md",
+        "sha": "1e4ce6dd5baea42e29aeb20ae1ff09bd8253c574"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-recommend/references/discovery-questions.md",
+        "sha": "c3a54f349d0f16454117fbe5619d97a128c6d54d"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-recommend/references/recommendation-template.md",
+        "sha": "414b7089be88ce9c33689675e5c594bbbf1ed9e3"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-recommend/references/terminology-rules.md",
+        "sha": "375221b9ca0dae8e176e950238abdf334352b932"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/authentication.md",
+        "sha": "1bec68b1d067670a9bea464c0a969ffa061df1cd"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/backend.md",
+        "sha": "7bf936f47e6be7ef0e864bb7a1c55720d9a81a12"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/canonical-docs.md",
+        "sha": "d18f7e56c1680f247baf9e8fb2999082a2deb3d9"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/discovery.md",
+        "sha": "c19bf463dc81dcee66ded1c94d322fd253ae48d5"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/extension-types.md",
+        "sha": "8b8734410b70c0741070e8e9e5bbe8793ef8ebe7"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/feedback.md",
+        "sha": "212a4f3f628f7041aaa83490804547595874e659"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/onboarding-ux.md",
+        "sha": "f8acdb92be283b33c23d426a8624fbca25d29921"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/publishing.md",
+        "sha": "389a5e672296ae4396d7afc9fc8cd3809a85f603"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/script-extensions.md",
+        "sha": "93112ca759d2e80f9553472c2383351eead7cff7"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/ui-extensions.md",
+        "sha": "7363556b45b02f720a576565f358ec4212b628b0"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/webhooks.md",
+        "sha": "f09bf17c9bb1d70f05bd87b1a6a811f9a84bbae2"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/references/workflow.md",
+        "sha": "343bbadc0b30600625a9b7011b889348a89522f3"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-best-practices/references/billing.md",
+        "sha": "9333d5df44f64016c4cf0a01bf00e66c199fcc0a"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-best-practices/references/connect.md",
+        "sha": "44f39b1ecb6018342f6ecab4ccae0f00c0e77c0a"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-best-practices/references/payments.md",
+        "sha": "140d734534d906504d1c051b1c954649d5da09a3"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-best-practices/references/security.md",
+        "sha": "365458e31b7620cd99b1c0330418208549f6b833"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-best-practices/references/tax.md",
+        "sha": "988438a5fa9b11074ab2a5f7e697cc84239da3f9"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-best-practices/references/treasury.md",
+        "sha": "3832f449a7af58840cf78a7bd48b31397c9a438a"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-recommend/references/account-types.md",
+        "sha": "89cc121516f8d4b0312b3006a13ab4f2baab08ad"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-recommend/references/charge-patterns.md",
+        "sha": "891831861d2634f0d13be089230beab183993208"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-recommend/references/company-researcher.md",
+        "sha": "d88b72a46adf85018a72b335e75265d51a6bf768"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-recommend/references/compatibility-matrix.md",
+        "sha": "8caeb3e52f21b9912078abb4baeae65483a30f7e"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-recommend/references/decision-matrix.md",
+        "sha": "1e4ce6dd5baea42e29aeb20ae1ff09bd8253c574"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-recommend/references/discovery-questions.md",
+        "sha": "c3a54f349d0f16454117fbe5619d97a128c6d54d"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-recommend/references/recommendation-template.md",
+        "sha": "414b7089be88ce9c33689675e5c594bbbf1ed9e3"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-recommend/references/terminology-rules.md",
+        "sha": "375221b9ca0dae8e176e950238abdf334352b932"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/authentication.md",
+        "sha": "1bec68b1d067670a9bea464c0a969ffa061df1cd"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/backend.md",
+        "sha": "7bf936f47e6be7ef0e864bb7a1c55720d9a81a12"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/canonical-docs.md",
+        "sha": "d18f7e56c1680f247baf9e8fb2999082a2deb3d9"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/discovery.md",
+        "sha": "c19bf463dc81dcee66ded1c94d322fd253ae48d5"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/extension-types.md",
+        "sha": "8b8734410b70c0741070e8e9e5bbe8793ef8ebe7"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/feedback.md",
+        "sha": "212a4f3f628f7041aaa83490804547595874e659"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/onboarding-ux.md",
+        "sha": "f8acdb92be283b33c23d426a8624fbca25d29921"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/publishing.md",
+        "sha": "389a5e672296ae4396d7afc9fc8cd3809a85f603"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/script-extensions.md",
+        "sha": "93112ca759d2e80f9553472c2383351eead7cff7"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/ui-extensions.md",
+        "sha": "7363556b45b02f720a576565f358ec4212b628b0"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/webhooks.md",
+        "sha": "f09bf17c9bb1d70f05bd87b1a6a811f9a84bbae2"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/references/workflow.md",
+        "sha": "343bbadc0b30600625a9b7011b889348a89522f3"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-best-practices/references/billing.md",
+        "sha": "9333d5df44f64016c4cf0a01bf00e66c199fcc0a"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-best-practices/references/connect.md",
+        "sha": "44f39b1ecb6018342f6ecab4ccae0f00c0e77c0a"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-best-practices/references/payments.md",
+        "sha": "140d734534d906504d1c051b1c954649d5da09a3"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-best-practices/references/security.md",
+        "sha": "365458e31b7620cd99b1c0330418208549f6b833"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-best-practices/references/tax.md",
+        "sha": "988438a5fa9b11074ab2a5f7e697cc84239da3f9"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-best-practices/references/treasury.md",
+        "sha": "3832f449a7af58840cf78a7bd48b31397c9a438a"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T00:32:53Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 351,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 1
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 5542
+  },
+  "duration_ms": 5623
+}

@@ -1,0 +1,262 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T151616Z",
+  "target": {
+    "source": "github",
+    "id": "brave/brave-search-mcp-server",
+    "url": "https://github.com/brave/brave-search-mcp-server",
+    "name": "brave-search-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:17:15.732Z",
+  "method_version": "0.3.3",
+  "tool": {
+    "assay_commit": "5cc692d93611d566dbe688a6f2996d6c753c9347",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.3"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "ee06f81e2c028c7f25a2a87a85994d0dbe241a8e",
+    "files_scanned": 48,
+    "candidates": 48,
+    "excluded_non_shipped": 18,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/index.ts",
+        "sha": "72b30bfc88b5156bd06f44e6180fece0d098170e"
+      },
+      {
+        "path": "src/server.ts",
+        "sha": "8d131c5f2efc474c3cd979bc742968a98fd04e33"
+      },
+      {
+        "path": "server.json",
+        "sha": "5d4d5550b9be519670b36c12849e76c0c9d5aef8"
+      },
+      {
+        "path": "src/BraveAPI/index.ts",
+        "sha": "e00c54ab2d44a6115767fd7d6c6b82e25750afee"
+      },
+      {
+        "path": "src/protocols/index.ts",
+        "sha": "b50d33f8281cd8bc2ea92c7e05dbfff7835a002c"
+      },
+      {
+        "path": "src/tools/index.ts",
+        "sha": "d1180e73a292df1c428473b32d491043c4531322"
+      },
+      {
+        "path": "src/tools/images/index.ts",
+        "sha": "33bca50a4447f5fef035d6baa5ff4488c0d59ea6"
+      },
+      {
+        "path": "src/tools/llm_context/index.ts",
+        "sha": "545f10cb181c8b4ef5af31bf2dc4465b2b841e2c"
+      },
+      {
+        "path": "src/tools/local/index.ts",
+        "sha": "96d69bc23886be8b75e9bcccc4bd7150249ad696"
+      },
+      {
+        "path": "src/tools/news/index.ts",
+        "sha": "c80c3b94d881e6fa55f8d81699773ec7e449f7ab"
+      },
+      {
+        "path": "src/tools/place_search/index.ts",
+        "sha": "f7fd55ccade27ac732c30148659681a425816539"
+      },
+      {
+        "path": "src/tools/summarizer/index.ts",
+        "sha": "aae97ffe0fe2a72e0c1daf479f906c3e1310bbe9"
+      },
+      {
+        "path": "src/tools/videos/index.ts",
+        "sha": "91d8fb04020a8b4d3a76e387e035cd7dfe66ed8a"
+      },
+      {
+        "path": "src/tools/web/index.ts",
+        "sha": "308cfafa5b4cb55c6974cd58f8786b47777ee495"
+      },
+      {
+        "path": "package.json",
+        "sha": "fc98b48f2693d615c97ba53af75456f22a43da48"
+      },
+      {
+        "path": "src/config.ts",
+        "sha": "9bc681cb54601b4174c36be867df8466ea297f7b"
+      },
+      {
+        "path": "src/jsonSchemaDialect.ts",
+        "sha": "c103fb455364285549ea7237cbee26d3bde941f7"
+      },
+      {
+        "path": "src/utils.ts",
+        "sha": "867f4dcfb0e252ebeffc6a2401c40361db60b8d7"
+      },
+      {
+        "path": "docker-compose.secrets.example.yml",
+        "sha": "bc46ea7f2fa84192cde1ec3cf19c89894b43874e"
+      },
+      {
+        "path": "docker-compose.yml",
+        "sha": "eab6b5f08580f25d38097f2c04abdf98a6b70ef3"
+      },
+      {
+        "path": "glama.json",
+        "sha": "fe81b8bd54219754efddffa123db2bb1e2c0c2d9"
+      },
+      {
+        "path": "marketplace-revision-release.json",
+        "sha": "656cc8f9d2ef58cff861dc8e42512d3e3d963270"
+      },
+      {
+        "path": "package-lock.json",
+        "sha": "bdb290de62835d90445a6802b5e3510f358bc235"
+      },
+      {
+        "path": "README.md",
+        "sha": "fc32fffd4a99e302c10bc592bbf043cd68fec003"
+      },
+      {
+        "path": "src/BraveAPI/types.ts",
+        "sha": "1757ea3774f1c425f7c0a8eecf47181769c52a21"
+      },
+      {
+        "path": "src/protocols/http.ts",
+        "sha": "7d4846b037ec27662339f199cbc19782b7fd6092"
+      },
+      {
+        "path": "src/protocols/rebinding.ts",
+        "sha": "6b507e1b18bed844fc3e132de714c67ebbc71432"
+      },
+      {
+        "path": "src/protocols/stdio.ts",
+        "sha": "f99062a556c6dd6f5e5a1749731e4322cbbb010e"
+      },
+      {
+        "path": "src/testUtils/mcpTestHarness.ts",
+        "sha": "da0ece55b7319e3dfc30c94cc917f06c14fd9fa1"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "2fd5c3e8f2eaf2ec27234a4d77ace151543b311b"
+      },
+      {
+        "path": "src/tools/images/types.ts",
+        "sha": "30c24037a34919afb1ecd82ac80568f54f7b2298"
+      },
+      {
+        "path": "src/tools/local/params.ts",
+        "sha": "6e469a6611e91ab9fc07e69c4a795ef42bb1975f"
+      },
+      {
+        "path": "src/tools/local/types.ts",
+        "sha": "2b3de76fc50693b12f750372bc480782baefcb97"
+      },
+      {
+        "path": "src/tools/news/params.ts",
+        "sha": "c85666dfce464615aa157261ecc894658e4542b8"
+      },
+      {
+        "path": "src/tools/news/types.ts",
+        "sha": "88f0125cf17fec9aa0e288fbdc4fa929f8812584"
+      },
+      {
+        "path": "src/tools/summarizer/params.ts",
+        "sha": "27eafc156af7c18fd5e2e759583533da4b92b6af"
+      },
+      {
+        "path": "src/tools/summarizer/types.ts",
+        "sha": "9c79fb8d4bd8f0d1511fceb277ad676cad719243"
+      },
+      {
+        "path": "src/tools/videos/params.ts",
+        "sha": "bb7e70ff6cec8d2646cf44fa5de99aedd5ca2651"
+      },
+      {
+        "path": "src/tools/videos/types.ts",
+        "sha": "04910319cf7f7fcaf64984f928a20ee02a7201e1"
+      },
+      {
+        "path": "src/tools/web/params.ts",
+        "sha": "49a1039b0c05c6c9f716edf58ddded2d48b6954a"
+      },
+      {
+        "path": "src/tools/web/types.ts",
+        "sha": "f3aa275778ed74ea1ed2e8f40f27aa47292d60b2"
+      },
+      {
+        "path": "src/tools/images/schemas/input.ts",
+        "sha": "5b0b861facd1e7d563e151d2a779dfcfdf9a89b7"
+      },
+      {
+        "path": "src/tools/images/schemas/output.ts",
+        "sha": "d5227b38fc38dee58d4d75302be07e1a5d43e0a2"
+      },
+      {
+        "path": "src/tools/images/schemas/response.ts",
+        "sha": "59cc17fbb2be431fe472ba680583c37fc1007faa"
+      },
+      {
+        "path": "src/tools/llm_context/schemas/input.ts",
+        "sha": "584e37dc2550bb1ae4d792b33a6df0cbbd717806"
+      },
+      {
+        "path": "src/tools/llm_context/schemas/output.ts",
+        "sha": "56c8ccb719c0e9a06b6c20bed8ddb041329d29e6"
+      },
+      {
+        "path": "src/tools/place_search/schemas/input.ts",
+        "sha": "c8c2339c43f7fa9e02c1414708795c60a016619c"
+      },
+      {
+        "path": "src/tools/place_search/schemas/output.ts",
+        "sha": "46ce4a3fd07cd371cac31453cc84549ce9d6aca3"
+      }
+    ],
+    "repo_pushed_at": "2026-10-30T14:32:37Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 48,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 3
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 4100
+  },
+  "duration_ms": 4126
+}

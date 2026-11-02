@@ -1,0 +1,442 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T151616Z",
+  "target": {
+    "source": "github",
+    "id": "supabase-community/supabase-mcp",
+    "url": "https://github.com/supabase-community/supabase-mcp",
+    "name": "mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:16:37.273Z",
+  "method_version": "0.3.3",
+  "tool": {
+    "assay_commit": "5cc692d93611d566dbe688a6f2996d6c753c9347",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.3"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "ed5084d1957541c5130f551d5f7e0fee5e3ddfeb",
+    "files_scanned": 90,
+    "candidates": 90,
+    "excluded_non_shipped": 64,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "package.json",
+        "sha": "61792b972dfbae648ed84a98e1e6ab588f65ddb1"
+      },
+      {
+        "path": "packages/mcp-server-supabase/server.json",
+        "sha": "01f46b72f957ab5da7efcb130f84d5c2ce363a82"
+      },
+      {
+        "path": "scripts/dev-http.mjs",
+        "sha": "f89d5fc41fcc2643b3066293806916f86ca6ee4f"
+      },
+      {
+        "path": "scripts/test-packed-platform-consumer.mjs",
+        "sha": "cb711427bd331102030bd38112efaf0e79756267"
+      },
+      {
+        "path": ".release-please-manifest.json",
+        "sha": "4c6fed95e6332106767857095e61b4d9a617d630"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "462f04000d46cf3d40364e4cc745c8c165cd7705"
+      },
+      {
+        "path": "biome.json",
+        "sha": "85bf07d1ca19fbf05d56f23914616b6452abe25f"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "df44d19ca045b9b36bb7da00a3d58d1fa8813fee"
+      },
+      {
+        "path": "packages/mcp-server-postgrest/src/index.ts",
+        "sha": "3693f485d46852e2422179780e1bb99df7edc7fa"
+      },
+      {
+        "path": "packages/mcp-server-postgrest/src/server.ts",
+        "sha": "37ce7da4976fbb8fd5aef06b3e226006eef5283b"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/cli.ts",
+        "sha": "cf90a46b2a802e11605a58ae439415609478f421"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/index.ts",
+        "sha": "3dc329753327218c7cda941d7b1e71647be6aded"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/server.ts",
+        "sha": "242135b3ff74dbecc5033d9bb2ad64e23e7d5695"
+      },
+      {
+        "path": "packages/mcp-utils/src/index.ts",
+        "sha": "ef0337f80abd2dfed9b4ddbcaea18836ed8a4405"
+      },
+      {
+        "path": "packages/mcp-utils/src/server.ts",
+        "sha": "1cf69b4164c6db35a988e9ac5d1496045a042ad0"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "sha": "0bb40548fe6d755318d5b6774e67e058c1a43b03"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha": "1a2ee1722ebf527c681cee45f47ae2e96ddcefbb"
+      },
+      {
+        "path": "README.md",
+        "sha": "e3d3ec65384c1cd0ce35d516c465ca9bbc88ca45"
+      },
+      {
+        "path": "release-please-config.json",
+        "sha": "449ce88ac402c69803ccb70015912f2d25ad2b57"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "599d4aa5fee93c17150ce4b293048861181ef5ce"
+      },
+      {
+        "path": "packages/mcp-server-postgrest/package.json",
+        "sha": "5f4d791b86470b010b1be6ecf515339366e7c7b2"
+      },
+      {
+        "path": "packages/mcp-server-supabase/package.json",
+        "sha": "5c6a828575a97cd8085ed3a837583aeb4545b76b"
+      },
+      {
+        "path": "packages/mcp-utils/package.json",
+        "sha": "36e9dcf9b04104dc93c2e92e28ef7a1a43b4c466"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/advisories/index.ts",
+        "sha": "48f33725e558088a12570b525048d4572c766063"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/content-api/index.ts",
+        "sha": "217fc2b317959c65fe6a4b4f89d0f7dbb7b24528"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/management-api-v2/index.ts",
+        "sha": "5f4aa7982005dc925897467582d927dba641ec0f"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/management-api/index.ts",
+        "sha": "74f568b3f369a0c3c95260a8617b26d177c18acf"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/pg-meta/index.ts",
+        "sha": "1b5016403ad048c3e24ad7923eea906a956c0068"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/platform/index.ts",
+        "sha": "d4702960d5479b4d37bf871e965a6d2406cf3b05"
+      },
+      {
+        "path": "packages/mcp-server-postgrest/CHANGELOG.md",
+        "sha": "6fd5cb59ea27ac1fe5bbaaac029bb37ef483b0eb"
+      },
+      {
+        "path": "packages/mcp-server-postgrest/README.md",
+        "sha": "952460ea8fbf9125d009703c8d875ae64b455dfd"
+      },
+      {
+        "path": "packages/mcp-server-postgrest/tsconfig.json",
+        "sha": "1d0215a2a6abad68f97269566e06e76521798e25"
+      },
+      {
+        "path": "packages/mcp-server-postgrest/tsup.config.ts",
+        "sha": "0a25f9b969f9512470b98eae6ae9968045428aaa"
+      },
+      {
+        "path": "packages/mcp-server-supabase/CHANGELOG.md",
+        "sha": "dbb2402695beb14c96a76e41b6932208328a5b9f"
+      },
+      {
+        "path": "packages/mcp-server-supabase/tsconfig.json",
+        "sha": "0fef0874edd1fef90e2c9276f778516266069116"
+      },
+      {
+        "path": "packages/mcp-server-supabase/tsup.config.ts",
+        "sha": "8557f8efac18f09c38971fff0fd6b65acee6f9ef"
+      },
+      {
+        "path": "packages/mcp-server-supabase/vitest.config.ts",
+        "sha": "ee40ba8cb1fe7bb3694de1508a8f102d88bfb627"
+      },
+      {
+        "path": "packages/mcp-server-supabase/vitest.setup.ts",
+        "sha": "d4919ad83e44011497876f000342560b7a75e12a"
+      },
+      {
+        "path": "packages/mcp-server-supabase/vitest.workspace.ts",
+        "sha": "19e7a8c414e95fc9c4f0316e6641d8c89c84fcb2"
+      },
+      {
+        "path": "packages/mcp-utils/CHANGELOG.md",
+        "sha": "9e25d982d9102d4883f688d50d31bbc8d4f57c73"
+      },
+      {
+        "path": "packages/mcp-utils/README.md",
+        "sha": "6919173ea7a685d6652699d111cc57ad8983227d"
+      },
+      {
+        "path": "packages/mcp-utils/tsconfig.json",
+        "sha": "4a21d820904db8b3719d2bdbb4d3d1152a2660cb"
+      },
+      {
+        "path": "packages/mcp-utils/tsup.config.ts",
+        "sha": "0d255dd7a779aad9dbacca9eeca01f7c133c6947"
+      },
+      {
+        "path": "packages/mcp-server-postgrest/src/stdio.ts",
+        "sha": "b6f6b9b54e8f8779d375a81712cface23648a2c5"
+      },
+      {
+        "path": "packages/mcp-server-postgrest/src/util.ts",
+        "sha": "347802673db7ebd594df1473ed1fa2402aee5cfc"
+      },
+      {
+        "path": "packages/mcp-server-supabase/scripts/generate-management-api-types.mjs",
+        "sha": "67571da20fbbf2c2860612f9ef225b23ac6b041b"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/edge-function.ts",
+        "sha": "9d702c43305585154f81746888949ce3df31a26e"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/errors.ts",
+        "sha": "8215d91345efc19f1691a2aa0758bb8d50206184"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/logs.ts",
+        "sha": "68e78cd229135be7ca326479aeade644d5db59e0"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/observation.ts",
+        "sha": "074326a61cf77d1f430284a8351d25fcba98897f"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/password.ts",
+        "sha": "b61160eb408e736a99de91f1e46f4238a4ddc8f0"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/pricing.ts",
+        "sha": "8ffb1e6597ee97e802a31626508e178551d27744"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/regions.ts",
+        "sha": "620fc1a0769226d24752e7cce9488fef06c64d65"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/types.ts",
+        "sha": "2f5bb49a91e55546dbaa16f8b7901230858a4919"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/util.ts",
+        "sha": "f83891ef6fe48885b5918c41134757d390643a7f"
+      },
+      {
+        "path": "packages/mcp-utils/src/observation-test-helpers.ts",
+        "sha": "fc30a859c68699074791abcc607c818d7d205684"
+      },
+      {
+        "path": "packages/mcp-utils/src/observation.ts",
+        "sha": "8c3edeb163b75d81413e1535d898a0707fdf782f"
+      },
+      {
+        "path": "packages/mcp-utils/src/stream-transport.ts",
+        "sha": "7cd76bc935eb33ac1996710e594369c1e39070b1"
+      },
+      {
+        "path": "packages/mcp-utils/src/types.ts",
+        "sha": "780ca7b53ee60f55814a5adef5e14364e41390fd"
+      },
+      {
+        "path": "packages/mcp-utils/src/util.ts",
+        "sha": "d3f02de3ef3c1e8aed951fa4a57025e16f6f32a1"
+      },
+      {
+        "path": "packages/mcp-server-supabase/scripts/registry/login.sh",
+        "sha": "42f88c967389fc3bfd1ff9ef850ef48fb93c5b9f"
+      },
+      {
+        "path": "packages/mcp-server-supabase/scripts/registry/update-version.ts",
+        "sha": "30b6b8a825e5510b29da05b1fa4c8cf622238026"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/advisories/rls-disabled.ts",
+        "sha": "d28584c6107db1876fb0663bc6bd4fdcc545c30a"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/advisories/schema.ts",
+        "sha": "ab084a4714a18905ebb2875a3dd736b4be673ff9"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/content-api/graphql.ts",
+        "sha": "7bb8de10971b782b1ec6fea00db0dfe6c1848429"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/pg-meta/types.ts",
+        "sha": "1e4bb744e88366b639192c81378feb1d134267a9"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/platform/api-platform.ts",
+        "sha": "5a6379f03ad0b2688ce61048272ff540aac5f694"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/platform/feedback.ts",
+        "sha": "e7b7dbf4c19e95d5125985eaa1e25d0d62091fe6"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/platform/types.ts",
+        "sha": "b73840b2fbd87587e241d64773301b9887de4725"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/account-tools.ts",
+        "sha": "3dfba00d6c8177af64b2728307e099b1f14a74ec"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/branching-tools.ts",
+        "sha": "369a9ce259838d5cd553afec99045d324cb9809d"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/confirmation.ts",
+        "sha": "50e2c9c4ee7c27d767f66e002f18e4f80f16efd2"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/database-operation-tools.ts",
+        "sha": "09f569b08cee2aa55eea9865a776757d297b155a"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/debugging-tools.ts",
+        "sha": "5b9a73b8e7cb2ad8ef7707fe55d48aa6abd5de8c"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/destructive-sql.ts",
+        "sha": "09721e1131c808a7c0ea5d3f292160d6ed407914"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/development-tools.ts",
+        "sha": "25762815487539a77c4891cc750fbebac5f0c39f"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/docs-tools.ts",
+        "sha": "5d3b3f2dd88139f368589f8e0e742bb52e159f5e"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/edge-function-tools.ts",
+        "sha": "11a36da29d73a94968743d1287b88ff8bfeb7839"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/feedback-tools.ts",
+        "sha": "5fe3d9bb6b29bbe9185e171c3ed13527779fe93f"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/notebook-cells.ts",
+        "sha": "a15100c69ff7f5ed1ff5da4e278c9c4f010a5a60"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/notebook-tools.ts",
+        "sha": "a6d9096ed3a1a6e4850dc32be13a5c391bb7f94a"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/secret-tools.ts",
+        "sha": "9d1be1d95af01546eea9d10077388dca3e821c14"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/storage-tools.ts",
+        "sha": "0375df16e654f8245f8b5d3f49d1f7de2a95ff03"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/tool-schemas.ts",
+        "sha": "544420f43a6e0637112c150d3a1827cbff9e3062"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/tools/util.ts",
+        "sha": "d53d352fe8c543eafc395aded81c1c684212c6b7"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/transports/http.ts",
+        "sha": "f7e854626c99ad369f90ac6c90b02faab63b41a5"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/transports/local-http-entry.ts",
+        "sha": "db48a520381c03e554a5689e499b07243adc6d28"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/transports/util.ts",
+        "sha": "5025ee1419491ffc9e6f3c368b35a78d747e4b14"
+      },
+      {
+        "path": "packages/mcp-server-supabase/src/types/sql.d.ts",
+        "sha": "f6a8ad5fd897351a19c001149e9260e9827f9478"
+      }
+    ],
+    "repo_pushed_at": "2026-10-31T06:13:19Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 96,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 85,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "packages/mcp-server-supabase/src/transports/local-http-entry.ts",
+      "line": 112,
+      "snippet": "case 'https://api.supabase.green':",
+      "host": "api.supabase.green",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 90,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "api.supabase.green"
+    ],
+    "declared_hosts": 3,
+    "install_detected": true,
+    "age_days": 2
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 5062
+  },
+  "duration_ms": 5098
+}

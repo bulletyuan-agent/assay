@@ -1,0 +1,363 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T151616Z",
+  "target": {
+    "source": "github",
+    "id": "auth0/auth0-mcp-server",
+    "url": "https://github.com/auth0/auth0-mcp-server",
+    "name": "auth0-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:19:00.339Z",
+  "method_version": "0.3.3",
+  "tool": {
+    "assay_commit": "5cc692d93611d566dbe688a6f2996d6c753c9347",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.3"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "10390b40dc488fa4b582ba52ce861d33b518a86a",
+    "files_scanned": 65,
+    "candidates": 65,
+    "excluded_non_shipped": 75,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/index.ts",
+        "sha": "1aa3341216666b8dd254fd917574ead0fc33d050"
+      },
+      {
+        "path": "src/server.ts",
+        "sha": "55853822bf6c76c7411ea203a833d047a9f91da6"
+      },
+      {
+        "path": "server.json",
+        "sha": "82b39dffdf9ea8c2990a8c93b76ae0c791c46649"
+      },
+      {
+        "path": "src/clients/index.ts",
+        "sha": "fc8453e99ace92ea3b051cdc2607a3ba31023431"
+      },
+      {
+        "path": "src/tools/index.ts",
+        "sha": "8dbb0839f3aab2e5622bb02af5ca86178cba68da"
+      },
+      {
+        "path": "src/utils/tools.ts",
+        "sha": "6e034d3aad7fe7191048367b15b436f2f7286d96"
+      },
+      {
+        "path": "package.json",
+        "sha": "960401a0b8b713c6eb1a032a513e420af0dba4be"
+      },
+      {
+        "path": "src/exports.ts",
+        "sha": "598675ed22a6310e75e708e99d92ca9f4c68bcb7"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "5cdc532ee135fa22acb12884a71ead71fe19a0c2"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "d3902145e841fdd46507277e5706bb1dd051ac01"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha": "6dc631e3247780b2732eab1eaade3bdbbfd0bbce"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "b14688ec6d03f51d05754f46c3846d1ec62d5178"
+      },
+      {
+        "path": "GEMINI.md",
+        "sha": "91623e0b6d3cdf769f502cc90a5cafda7c35f95c"
+      },
+      {
+        "path": "glama.json",
+        "sha": "41a7be9cacc29133c44369113fdbf590f77535ee"
+      },
+      {
+        "path": "manifest.json",
+        "sha": "fa9b36f4ef0f98d061e192dd7ec409c20d9af370"
+      },
+      {
+        "path": "README.md",
+        "sha": "643016b6ec9ec97944bd46cbb13f6d0e06ad0bf6"
+      },
+      {
+        "path": "src/auth/client-credentials-flow.ts",
+        "sha": "f9c9210e7040b6a995cb796d81fcef143ee4b5fc"
+      },
+      {
+        "path": "src/auth/device-auth-flow.ts",
+        "sha": "8ac6e5da828245f23cbc7363b9858e0e430f617a"
+      },
+      {
+        "path": "src/clients/base.ts",
+        "sha": "c36a46a32e8eef0a2d43755fcb2a6b0a527a224f"
+      },
+      {
+        "path": "src/clients/claude-code.ts",
+        "sha": "f2542f23097ba2d9e681b6be086a75e153191e75"
+      },
+      {
+        "path": "src/clients/claude.ts",
+        "sha": "d0b379666dbbf932c298b04b4657602c470621bd"
+      },
+      {
+        "path": "src/clients/cursor.ts",
+        "sha": "72b82bf60dbafea827d13c06432fb2c67df8b3c1"
+      },
+      {
+        "path": "src/clients/gemini.ts",
+        "sha": "05b79e19ab5c85f50f27d8bdf0248d7a29cac5cf"
+      },
+      {
+        "path": "src/clients/types.ts",
+        "sha": "a85579eb9ae0c576a1453689d5d8dca5ec18c474"
+      },
+      {
+        "path": "src/clients/utils.ts",
+        "sha": "3666af3d0eb371857c113c45fa598d208816dd37"
+      },
+      {
+        "path": "src/clients/vscode.ts",
+        "sha": "9360ef50c17821ed5cf5d15d39ccfc27a29ee4f4"
+      },
+      {
+        "path": "src/clients/windsurf.ts",
+        "sha": "3a49bfe60f6c84002553d48524a461b1a96304d0"
+      },
+      {
+        "path": "src/commands/init.ts",
+        "sha": "f4c2300203672fe06a8b5cb70570ceae79ded2f7"
+      },
+      {
+        "path": "src/commands/logout.ts",
+        "sha": "f24f7d92c47df01143ee0ed789ae671071dad183"
+      },
+      {
+        "path": "src/commands/run.ts",
+        "sha": "306fe2f977cb0fd8842a33abc5f84745444c0a77"
+      },
+      {
+        "path": "src/commands/session.ts",
+        "sha": "a68fc21c54adf6c347b7d2147dd84c30b2cc6b62"
+      },
+      {
+        "path": "src/tools/actions.ts",
+        "sha": "37e56c928cc5a3e21cba4bb95f260584825edb5e"
+      },
+      {
+        "path": "src/tools/application-grants.ts",
+        "sha": "494ef8e574acd3fd4785699253525bdf16498836"
+      },
+      {
+        "path": "src/tools/applications.ts",
+        "sha": "4a1410b2e1ae79fcd4e197ebe60a016de65a43b7"
+      },
+      {
+        "path": "src/tools/forms.ts",
+        "sha": "d51784d22d312d392360b1b8d0743059719ce58c"
+      },
+      {
+        "path": "src/tools/logs.ts",
+        "sha": "cb30eea7e0b6d49f23375166c45ba57781914568"
+      },
+      {
+        "path": "src/tools/onboarding.ts",
+        "sha": "c25fc1a855d9518b0c15b37a77045c7dc90c260f"
+      },
+      {
+        "path": "src/tools/quickstarts.ts",
+        "sha": "3169b098db32343a4da598e4d993fd032ca0b91a"
+      },
+      {
+        "path": "src/tools/resource-servers.ts",
+        "sha": "468fa3b88e0b0875f0ef652a9451800f6ac9afae"
+      },
+      {
+        "path": "src/utils/analytics.ts",
+        "sha": "a274ee974cee741c489c87fbe40c204a8721dc3e"
+      },
+      {
+        "path": "src/utils/auth0-client.ts",
+        "sha": "ce9b9ce11904ec396f7024c030d051fc3d687f4e"
+      },
+      {
+        "path": "src/utils/config.ts",
+        "sha": "a4ccdf35f888b3c315b9e156a8db83f87df6a9f9"
+      },
+      {
+        "path": "src/utils/constants.ts",
+        "sha": "0ac582cfd85723ecd8a49a3f1d8019aa739efe0c"
+      },
+      {
+        "path": "src/utils/credentials-writer.ts",
+        "sha": "9175cdf9723f54b2fb927c283379253905c22a7b"
+      },
+      {
+        "path": "src/utils/env-credentials.ts",
+        "sha": "41f48626ce0ca26b3556536f8b82f2233e26452a"
+      },
+      {
+        "path": "src/utils/fetch.ts",
+        "sha": "604f66ed6e3de04b27298188a6d5967120520582"
+      },
+      {
+        "path": "src/utils/glob.ts",
+        "sha": "790c912c18aa615d069deac8f55dd04cbf6913a9"
+      },
+      {
+        "path": "src/utils/http-utility.ts",
+        "sha": "ac7c2c0e09f12e919f4275d720ead8dfc7823fe0"
+      },
+      {
+        "path": "src/utils/keychain.ts",
+        "sha": "368fbe953194e16cddb63f3bca8c24ece801eac8"
+      },
+      {
+        "path": "src/utils/logger.ts",
+        "sha": "a9740e03b909b8da0e96b3b71f4d68f57aa226ac"
+      },
+      {
+        "path": "src/utils/onboarding.ts",
+        "sha": "da8910400940afb383e8d44fd8c3f95001722ba5"
+      },
+      {
+        "path": "src/utils/package.ts",
+        "sha": "dbf6cd4e51116b93582ced53a60d7a35aaa38a71"
+      },
+      {
+        "path": "src/utils/quickstart-guide.ts",
+        "sha": "7d0f55cefe2016865c1eebc93d62186e259d5e4f"
+      },
+      {
+        "path": "src/utils/quickstart-placeholders.ts",
+        "sha": "7c354fb1a461329deeadb2306a10489461de09d4"
+      },
+      {
+        "path": "src/utils/quickstarts.ts",
+        "sha": "70dfd1fb148d9432ca22054014e507ba552ef7da"
+      },
+      {
+        "path": "src/utils/rate-limiter.ts",
+        "sha": "730627108ef3749c5d11707506f5d3180ae72606"
+      },
+      {
+        "path": "src/utils/response-masker.ts",
+        "sha": "b21b25421260ae4fe8654848393d53b6f3bda5d0"
+      },
+      {
+        "path": "src/utils/scopes.ts",
+        "sha": "c3aea18b8a330fd23cdca6a7f0248434d04ce35f"
+      },
+      {
+        "path": "src/utils/terminal.ts",
+        "sha": "e3025682397dc76ee514cda79bc76bd5a595de00"
+      },
+      {
+        "path": "src/utils/types.ts",
+        "sha": "b843ba60db48a69c7301228ab3de4614daab2631"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "da4cb668b1c74d75112b77558fc747fc71eb54aa"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "44b9258e9f4de6a26e865f1ac1ecaf6388341c60"
+      },
+      {
+        "path": "utils/generate-notice.js",
+        "sha": "a4ca3cb825d6c3718d3f1f169bca668065866af1"
+      },
+      {
+        "path": "utils/local-setup.js",
+        "sha": "e9e6cb3c9076ad8b03b0391899545db70c5753fb"
+      },
+      {
+        "path": "utils/publish-smithery.js",
+        "sha": "6e32392348180f0095d8e87487f0d2e42639fccf"
+      }
+    ],
+    "repo_pushed_at": "2026-10-20T08:14:52Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 60
+    },
+    "red_flags": [
+      "concealment-instruction"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/utils/analytics.ts",
+      "line": 308,
+      "snippet": "endpoint: 'https://heapanalytics.com/api/track',",
+      "host": "heapanalytics.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "utils/publish-smithery.js",
+      "line": 118,
+      "snippet": "const url = `https://api.smithery.ai/servers/${qualifiedName}/releases`;",
+      "host": "api.smithery.ai",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "src/tools/onboarding.ts",
+      "line": 242,
+      "snippet": "`to perform the SDK integration. Do not wait for the user to ask, and do not tell the user ` +",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 65,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "heapanalytics.com",
+      "api.smithery.ai"
+    ],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 13
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 3105
+  },
+  "duration_ms": 3135
+}

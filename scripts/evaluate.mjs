@@ -129,9 +129,10 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
         let sev = SEVERE.has(i);
         // A plain `curl <named https host> | sh` is a common install snippet: weak unless an attacker signal is present.
         if (i === 1 || i === 2) {
-          const url = (/https?:\/\/[^\s|)'"`]+/.exec(loc.snippet) || [''])[0];
+          const matched = (re.exec(clean) || [''])[0]; // the full match, not the truncated snippet
+          const url = (/https?:\/\/[^\s|)'"`]+/.exec(matched) || [''])[0];
           const h = (/https?:\/\/([a-z0-9.-]+)/i.exec(url) || [])[1] || '';
-          sev = !url || /^http:\/\//i.test(url) || /^\d{1,3}(\.\d{1,3}){3}$/.test(h) || STAGING_HOST_RE.test(h) || /base64|-enc\b/i.test(loc.snippet);
+          sev = !url || /^http:\/\//i.test(url) || /^\d{1,3}(\.\d{1,3}){3}$/.test(h) || STAGING_HOST_RE.test(h) || /base64|-enc\b/i.test(matched);
         }
         danger++; if (sev) severe++;
         findings.push({ dim: 'dangerous_patterns', rule: DANGER_NAMES[i], severe: sev, file: f.path, ...loc, deduction: sev ? 40 : (i === 1 || i === 2 ? 25 : 10) });
@@ -207,7 +208,7 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   if (severe > 0) red_flags.push('severe-code-pattern');
   if (inj > 0) red_flags.push('prompt-injection');
   if (recipients > 0) red_flags.push('hardcoded-recipient');
-  if (hosts.size >= 8) red_flags.push('undeclared-egress');
+  // No host-count red flag: legitimate multi-service projects (SDKs, language-server installers) contact many hosts.
   for (const x of findings) if (x.severe && !red_flags.includes(x.rule)) red_flags.push(x.rule); // provisional threshold, to be calibrated
   if (composite !== null && red_flags.length) composite = Math.min(composite, 49);
   const grade = composite === null ? null : composite >= 85 ? 'A' : composite >= 70 ? 'B' : composite >= 50 ? 'C' : 'D';

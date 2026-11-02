@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T145410Z",
+  "target": {
+    "source": "github",
+    "id": "stripe/agent-toolkit",
+    "url": "https://github.com/stripe/agent-toolkit",
+    "name": "ai"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T14:59:38.805Z",
+  "method_version": "0.3.1",
+  "tool": {
+    "assay_commit": "4e5cad4c4b6f87ea5f443586fbaa406d8a909a7e",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "b3ab9149225f837894b7de08c1b14650d7cc64eb",
+    "files_scanned": 80,
+    "candidates": 351,
+    "excluded_non_shipped": 486,
+    "coverage": 0.23,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "llm/token-meter/index.ts",
+        "sha": "ea31fc8dfe8f49f528f9e8bf1fca215b21e0f79a"
+      },
+      {
+        "path": "scripts/sync.js",
+        "sha": "36674764baa472ddc73bc7eaef78f147019472ff"
+      },
+      {
+        "path": "tools/modelcontextprotocol/server.json",
+        "sha": "0a30ee1f96577b115322a6039da987565bd046a2"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "f64cc34c2afeb3d3c6ee1083761c5b124e6d7655"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "4fd08c0b99e15a1b4890250ca7281f038775b372"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "d91ef6ba831a768e6f83315242de56a91b7700c4"
+      },
+      {
+        "path": "llm/ai-sdk/meter/index.ts",
+        "sha": "18df03d95a7b3e8a05ee527a1cd208e32d2206c2"
+      },
+      {
+        "path": "llm/ai-sdk/provider/index.ts",
+        "sha": "b712502f27ab61a1fd6fd6f17756c8204a729eef"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "providers/agent-plugins/plugin/skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "providers/antigravity/plugin/skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "providers/claude/plugin/skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "providers/claude/plugin/skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "providers/claude/plugin/skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "providers/claude/plugin/skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "providers/cursor/plugin/skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-recommend/SKILL.md",
+        "sha": "2991160ea61d3db7726e6e89352f174267f7a0a4"
+      },
+      {
+        "path": "providers/grok/plugin/skills/connect-required-verification-information/SKILL.md",
+        "sha": "9d7d4261dcb9dbfe923fe215a20a97e3fff89e6c"
+      },
+      {
+        "path": "providers/grok/plugin/skills/metronome/SKILL.md",
+        "sha": "d1e7cfd4df8ba2933bc57faf8eafd0b4aa6aedb2"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-apps/SKILL.md",
+        "sha": "a2f78228d15caf3a953738e841da3d1916c0edbb"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-best-practices/SKILL.md",
+        "sha": "67412ead65464b49bd789a37869507877c99acd0"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-directory/SKILL.md",
+        "sha": "1cf5533e10ff5cf17a74bc6fc21dd7e473c5afba"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-docs/SKILL.md",
+        "sha": "45f3066c7c3392f71132055b846c10c0068d97a2"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-pay/SKILL.md",
+        "sha": "3a253344c8a304a04151b136c13a5398feba89e7"
+      },
+      {
+        "path": "providers/grok/plugin/skills/stripe-projects/SKILL.md",
+        "sha": "6531980ddcf45bb646faca883fcd275a210baaa2"
+      },
+      {
+        "path": "providers/grok/plugin/skills/upgrade-stripe/SKILL.md",
+        "sha": "e5f4d28059fd8dcb6d93d447e11e184ff7b7e970"
+      },
+      {
+        "path": "README.md",
+        "sha": "552aabdb67f1bd7be5db2e83cbb7d75a3949e2cd"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "dd1126ba44d3299762831195a04f8f769bdbf254"
+      },
+      {
+        "path": "tools/modelcontextprotocol/src/cli.ts",
+        "sha": "f63c2a115aeffb59d1e950db400d0a75ad82e031"
+      },
+      {
+        "path": "tools/modelcontextprotocol/src/index.ts",
+        "sha": "f4f83cec60f10a6245d700baab460036493848b1"
+      },
+      {
+        "path": "llm/ai-sdk/package.json",
+        "sha": "78e6ed88755d61276b2016b9f91cb2fdf8cea764"
+      },
+      {
+        "path": "llm/token-meter/package.json",
+        "sha": "a8720492e4f5fb0386111ef3cf24694521ae6a12"
+      },
+      {
+        "path": "tools/modelcontextprotocol/package.json",
+        "sha": "98fd79a80f6f9467b29b925a14141deb0d457cbc"
+      },
+      {
+        "path": "tools/typescript/package.json",
+        "sha": "17ce8f57ba338e8c5d77d9b96c32ce975cf9823c"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "3b3f5091f365ebaa027c4b3c0e2cff3c0e781921"
+      },
+      {
+        "path": ".cursor-plugin/marketplace.json",
+        "sha": "2c78683436ea7f04dc1ae5242b6359e6816a8004"
+      },
+      {
+        "path": ".grok-plugin/marketplace.json",
+        "sha": "74d634d6b02af5fd8df403a32826ccb90d4d066b"
+      },
+      {
+        "path": "llm/README.md",
+        "sha": "1852f14ab48452e654ef97742a80445fe9a33b77"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T00:32:53Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 1
+  },
+  "network": {
+    "calls": 33,
+    "failed": 0,
+    "ms": 11867
+  },
+  "duration_ms": 11908
+}

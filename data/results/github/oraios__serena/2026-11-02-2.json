@@ -1,0 +1,438 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T145410Z",
+  "target": {
+    "source": "github",
+    "id": "oraios/serena",
+    "url": "https://github.com/oraios/serena",
+    "name": "serena"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T14:57:59.845Z",
+  "method_version": "0.3.1",
+  "tool": {
+    "assay_commit": "4e5cad4c4b6f87ea5f443586fbaa406d8a909a7e",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "ede329aaf0c824bea75455a2926f01420d7aa620",
+    "files_scanned": 80,
+    "candidates": 273,
+    "excluded_non_shipped": 483,
+    "coverage": 0.29,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "a511127595a0fdf82f1a598e3871cd6da62abc2d"
+      },
+      {
+        "path": "src/serena/cli.py",
+        "sha": "9801040a3cccc0af1cb94b46fd8d37c6a0bf9ef1"
+      },
+      {
+        "path": "src/solidlsp/lsp_protocol_handler/server.py",
+        "sha": "002ab6245d8fecbc5f4564b6c62640a504158d0c"
+      },
+      {
+        "path": "scripts/add_spdx_headers.py",
+        "sha": "15ac9a665faa8c1beb32602515ba585758cbf808"
+      },
+      {
+        "path": "scripts/agno_agent.py",
+        "sha": "53f0dae00e70e6e7494d794db25bdabc8738b2a9"
+      },
+      {
+        "path": "scripts/build_news_json.py",
+        "sha": "c46e4962ec62711875655b1d4633bb110380e5eb"
+      },
+      {
+        "path": "scripts/bump_version.py",
+        "sha": "d25870e72fa8955ab04ba30d043ca259558c458d"
+      },
+      {
+        "path": "scripts/demo_cli_call.py",
+        "sha": "e42fd2b2100cc17b0347bbf2290570b43e693511"
+      },
+      {
+        "path": "scripts/demo_diagnostics.py",
+        "sha": "2ead12a44ed87515d0ada5a7de4dcd63b75b432b"
+      },
+      {
+        "path": "scripts/demo_find_defining_symbol.py",
+        "sha": "92107fe71098af69d68d01d8801bc96e920cce7c"
+      },
+      {
+        "path": "scripts/demo_find_implementing_symbol.py",
+        "sha": "87ea6c629dc5bce47eaee9162a4451ae44c5bc96"
+      },
+      {
+        "path": "scripts/demo_progressive_tool_shortening.py",
+        "sha": "0e06f1515090407912d01546a7a128161dad3ee2"
+      },
+      {
+        "path": "scripts/demo_run_tools.py",
+        "sha": "2dc6efbece03a5d9648118750832e85c20a02105"
+      },
+      {
+        "path": "scripts/gen_prompt_factory.py",
+        "sha": "e740c889d741f88455b43caf2e5e4c7eaa0aebdf"
+      },
+      {
+        "path": "scripts/gen_tool_capabilities.py",
+        "sha": "6cb8c287bc121237a9124eab28add226dfdbffcd"
+      },
+      {
+        "path": "scripts/live_test_grok.py",
+        "sha": "17b67949b3cfc7daf8994d90f276e634c4fd4fc2"
+      },
+      {
+        "path": "scripts/mcp_server.py",
+        "sha": "bf52cc119e1022306b2b34f0557513c8ed118869"
+      },
+      {
+        "path": "scripts/memory_graph.py",
+        "sha": "63db0ee9d05403401d99dd7f561a2edf782f900f"
+      },
+      {
+        "path": "scripts/print_language_list.py",
+        "sha": "05d301d0730c0466b971c752ec66e721d186a291"
+      },
+      {
+        "path": "scripts/print_mode_context_options.py",
+        "sha": "741939e769dc728560cd78c1956c5bc52d804cb0"
+      },
+      {
+        "path": "scripts/print_tool_overview.py",
+        "sha": "0313cab6ccb4c09406deb033c832c648c8785c74"
+      },
+      {
+        "path": "scripts/profile_search_text.py",
+        "sha": "00f9f25449424ab09dc795fa76bef52fb9e430df"
+      },
+      {
+        "path": "scripts/profile_tool_call.py",
+        "sha": "5d82a8863d3c8a7957d27652354d23f8140a1c61"
+      },
+      {
+        "path": "scripts/update_downloaded_dependency_hashes.py",
+        "sha": "55d4e6282ee478fc75f0c38007a4754a4fdb89c1"
+      },
+      {
+        "path": "src/README.md",
+        "sha": "41986273e25519be96751dc19678db48ca11501e"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "8b86e1e0b464d7dade8a841bd0576d4baf5f50bd"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "f352524b79b82d5f2fc9f8e7a84d89dea1f7af8f"
+      },
+      {
+        "path": "CLA.md",
+        "sha": "af72c03cfb7f13cb44f1e2e2c934dd48072cd03d"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+      },
+      {
+        "path": "compose.yaml",
+        "sha": "edd530f08d856e0118bbfc8b4b0e549906ea39fd"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "51a5d07ad779b1c486cbfea25936ea063713348d"
+      },
+      {
+        "path": "docker_build_and_run.sh",
+        "sha": "dd69afde419758aff5908ac349354458fade9a4a"
+      },
+      {
+        "path": "DOCKER.md",
+        "sha": "bb77040cd45eb33efe64f214b03629f182cf12a5"
+      },
+      {
+        "path": "README-dev.md",
+        "sha": "d4c23de18f220408f97510de6c6377b62d38dbe9"
+      },
+      {
+        "path": "README.md",
+        "sha": "5965015ca4ea4b3192d1d7c147a8bc325a40feaa"
+      },
+      {
+        "path": "repo_dir_sync.py",
+        "sha": "874a362fbb6d7f6ccab184fd3a321f8ef4aeb023"
+      },
+      {
+        "path": "src/interprompt/__init__.py",
+        "sha": "7df6eaa0277a25722d9fe4353fc62114e02e8251"
+      },
+      {
+        "path": "src/interprompt/jinja_template.py",
+        "sha": "8542579b24c816bfa67551c37911a0872ec2f5bc"
+      },
+      {
+        "path": "src/interprompt/multilang_prompt.py",
+        "sha": "57b25659096f9706b368cbe55384bbe60c167060"
+      },
+      {
+        "path": "src/interprompt/prompt_factory.py",
+        "sha": "0f4d58ecdbc3ff6fc08f28ee5730fa6179b38c5c"
+      },
+      {
+        "path": "src/serena/__init__.py",
+        "sha": "bdc2acb2798659463d6c8e5f93ba7425971af5c0"
+      },
+      {
+        "path": "src/serena/agent.py",
+        "sha": "e27fc397b850338f268f095706ef8d1fc242e649"
+      },
+      {
+        "path": "src/serena/agno.py",
+        "sha": "5f8a9c456646ee945684be2815f651b72c322fed"
+      },
+      {
+        "path": "src/serena/analytics.py",
+        "sha": "e12ae2ef9427964e2bd6b3130cf073fa886ad3bb"
+      },
+      {
+        "path": "src/serena/code_editor.py",
+        "sha": "5b466489492fa91363cd08861df04455bf74021f"
+      },
+      {
+        "path": "src/serena/constants.py",
+        "sha": "be45dc8eff57675b20d5085f8bdfa2d1ad60b501"
+      },
+      {
+        "path": "src/serena/gui_log_viewer.py",
+        "sha": "8d83ecd0a0e1e0aa0160d43cc97efd4d70129f47"
+      },
+      {
+        "path": "src/serena/hooks.py",
+        "sha": "d945edd0b536dcba191c4430c82d62608fb1ce73"
+      },
+      {
+        "path": "src/serena/language_backend.py",
+        "sha": "21f6b8785235aee6d97a23e63cc625754763aa1c"
+      },
+      {
+        "path": "src/serena/ls_manager.py",
+        "sha": "e6dcb17d1fe2b0b66e8b01f0c8761a3fc2d40943"
+      },
+      {
+        "path": "src/serena/mcp.py",
+        "sha": "bd2e01bfb793449490ac1abefa0211ce8e177117"
+      },
+      {
+        "path": "src/serena/project_server.py",
+        "sha": "abc2e3c084a718b250ec41fa1b97c52f1889b37a"
+      },
+      {
+        "path": "src/serena/project.py",
+        "sha": "a15088712a42476f5d11427f64d6e3973b2ad658"
+      },
+      {
+        "path": "src/serena/prompt_factory.py",
+        "sha": "801a6a4a4dc967727323b835e18d4b992b382e56"
+      },
+      {
+        "path": "src/serena/session.py",
+        "sha": "c331bb1267cc5323b1dd4f302080cfbd81e9e4de"
+      },
+      {
+        "path": "src/serena/symbol.py",
+        "sha": "e0d357369bf2e20fecfa7d8d580db8f55f3d6747"
+      },
+      {
+        "path": "src/serena/task_executor.py",
+        "sha": "7de4e0d3eb734d9282a82a40365ff0cd128d7627"
+      },
+      {
+        "path": "src/solidlsp/__init__.py",
+        "sha": "9d1640cb085414a2bcd7847c34b26aa8be507655"
+      },
+      {
+        "path": "src/solidlsp/dependency_provider.py",
+        "sha": "07ec0aa51a84af1299d0251718a5360f89582e43"
+      },
+      {
+        "path": "src/solidlsp/initialize_params.py",
+        "sha": "87fd36d3e604fa9145006d573154ab602ac686d4"
+      },
+      {
+        "path": "src/solidlsp/ls_config.py",
+        "sha": "d98e0a9d516b398c6b89fa4b1b38ed33fbde3cb9"
+      },
+      {
+        "path": "src/solidlsp/ls_exceptions.py",
+        "sha": "23e483b42505603412c1897268215685176d4fb4"
+      },
+      {
+        "path": "src/solidlsp/ls_process.py",
+        "sha": "5b0ad610cde07122de6cf1ed7832749011167698"
+      },
+      {
+        "path": "src/solidlsp/ls_request.py",
+        "sha": "b12226db5d70db73cd1f818690c55724ec468e7e"
+      },
+      {
+        "path": "src/solidlsp/ls_types.py",
+        "sha": "0960ea49afcf6bef58c8dff311cd3641c09d332f"
+      },
+      {
+        "path": "src/solidlsp/ls_utils.py",
+        "sha": "a74b01f834fdccba3e78be88649e6b979cce7c50"
+      },
+      {
+        "path": "src/solidlsp/settings.py",
+        "sha": "ab8eb5d503db1a607a0257fad19a37cbc3ca0581"
+      },
+      {
+        "path": "sync.py",
+        "sha": "08cb8d5d15d43f0a93f1c442c1fbdc7935a365eb"
+      },
+      {
+        "path": ".serena/project.yml",
+        "sha": "8745f0bc0562082f0719f860be164a9f6fed046f"
+      },
+      {
+        "path": "LICENSES/GPL-3.0-or-later.txt",
+        "sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+      },
+      {
+        "path": "LICENSES/MIT.txt",
+        "sha": "d27bba648a59b23cadf39b9e74fd0684ea2e15dd"
+      },
+      {
+        "path": "src/interprompt/util/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/interprompt/util/class_decorators.py",
+        "sha": "dc82b142ffc6b6427be9d055065afd8b6d39f7d3"
+      },
+      {
+        "path": "src/serena/config/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/serena/config/client_setup.py",
+        "sha": "5500d36e58a07aa476b88188a83c69fe6211cc0b"
+      },
+      {
+        "path": "src/serena/config/context_mode.py",
+        "sha": "eae373ed54f67438672a9d7a88ec916a98daea49"
+      },
+      {
+        "path": "src/serena/config/serena_config.py",
+        "sha": "50f396ec6f624b28544efea1532a51de1d3edf6c"
+      },
+      {
+        "path": "src/serena/config/serena_paths.py",
+        "sha": "2816d94fc1934f158002525961fcb4d3b84eb299"
+      },
+      {
+        "path": "src/serena/dashboard/dashboard_api.py",
+        "sha": "9cbf55b736a486e0d0628757aa1bc7006be0e734"
+      },
+      {
+        "path": "src/serena/dashboard/dashboard_tray_manager.py",
+        "sha": "5dd80ff7424f6dce4cf707b996ed967ec1a434dd"
+      }
+    ],
+    "repo_pushed_at": "2026-10-28T10:45:55Z",
+    "license": "LICENSE-file (type needs review)"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 87,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 70,
+      "egress": 85,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "os.system",
+      "severe": false,
+      "file": "scripts/build_news_json.py",
+      "line": 56,
+      "snippet": "os.system(f\"scp news/news.json {user}@hades:/var/www/html/oraios-software/serena_news.json\")",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "os.system",
+      "severe": false,
+      "file": "scripts/bump_version.py",
+      "line": 69,
+      "snippet": "os.system(f\"git tag v{new_version}\")",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "os.system",
+      "severe": false,
+      "file": "repo_dir_sync.py",
+      "line": 57,
+      "snippet": "os.system(f\"git commit --file={commitMsgFilename}\")",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "subprocess-shell",
+      "severe": false,
+      "file": "src/serena/agent.py",
+      "line": 1540,
+      "snippet": "p = subprocess.Popen(",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/serena/agent.py",
+      "line": 804,
+      "snippet": "requests.get(\"https://oraios-software.de/serena_usage.php\", params=params, timeout=5)",
+      "host": "oraios-software.de",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 4,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "oraios-software.de"
+    ],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 5
+  },
+  "network": {
+    "calls": 82,
+    "failed": 0,
+    "ms": 25027
+  },
+  "duration_ms": 25127
+}

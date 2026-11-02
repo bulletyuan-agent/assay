@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T145410Z",
+  "target": {
+    "source": "github",
+    "id": "mongodb-js/mongodb-mcp-server",
+    "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "name": "mongodb-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:56:16.282Z",
+  "method_version": "0.3.1",
+  "tool": {
+    "assay_commit": "4e5cad4c4b6f87ea5f443586fbaa406d8a909a7e",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "977662fda9b14820cc07a5e75a0291289eaf7a1b",
+    "files_scanned": 80,
+    "candidates": 493,
+    "excluded_non_shipped": 287,
+    "coverage": 0.16,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "packages/setup/src/installSkills.ts",
+        "sha": "b1a48a25ae16afa22d09170a98120006f6f9988d"
+      },
+      {
+        "path": "skills/mongodb-mcp-v3-migration/SKILL.md",
+        "sha": "006a47500bf95c116a7c04b9befc245d3fdbd0b2"
+      },
+      {
+        "path": "package.json",
+        "sha": "9c2db52e026fa37aff16938f830c14fe75783856"
+      },
+      {
+        "path": "packages/mongodb-mcp-server/server.json",
+        "sha": "694d97faac85d6a7af8f56353020241b04e88ecc"
+      },
+      {
+        "path": ".prettierrc.json",
+        "sha": "1afbde184554cfdda6ce91b16aabb71e0ce9b613"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "faa118b3af9a9fa1693035d5820e8efb511023a2"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha": "ab55ca60e759c91cf00aee442378ccb6515544fe"
+      },
+      {
+        "path": "knip.ts",
+        "sha": "219a913848fa7562b7b1ffbdc93979c2c87bdd4b"
+      },
+      {
+        "path": "licenses.json",
+        "sha": "d9bcc7633e3cf4f83a1d2a145838b46c0f3f3d12"
+      },
+      {
+        "path": "MCP_SERVER_LIBRARY.md",
+        "sha": "8908392bd9e03140a15da85e8d246a22ed63aa36"
+      },
+      {
+        "path": "packages/atlas-api-client/src/index.ts",
+        "sha": "a9d7ce338802c913b8f0f73092bc920e9d89c89f"
+      },
+      {
+        "path": "packages/atlas-telemetry/src/index.ts",
+        "sha": "61f4e080d82d840f7c9d3ad13c8b7bd85ad28b2c"
+      },
+      {
+        "path": "packages/cli/src/index.ts",
+        "sha": "54b010491800da9c4d8b89800befd47446b699f7"
+      },
+      {
+        "path": "packages/core/src/index.ts",
+        "sha": "c43e15ae17d4f75242bc15a51e6b34b13a4c4d4e"
+      },
+      {
+        "path": "packages/fetch/src/index.ts",
+        "sha": "988ae18df1a65f278cecbd7f5d0bc2110d8ab795"
+      },
+      {
+        "path": "packages/harness-tester/src/index.ts",
+        "sha": "8722d46966ba6cd39fe93b182ca6bfc131956db3"
+      },
+      {
+        "path": "packages/http-runners/src/index.ts",
+        "sha": "54102da612dc7203d7a7869b40c8ec654ff5feab"
+      },
+      {
+        "path": "packages/integration-tests/src/index.ts",
+        "sha": "031b95732fc16e55b536a34f6290a3e370f45beb"
+      },
+      {
+        "path": "packages/logging/src/index.ts",
+        "sha": "a389b599ba40999f0a7cf73e8e17a42c4ab5bc7b"
+      },
+      {
+        "path": "packages/metrics/src/index.ts",
+        "sha": "751b2116b5d24af8f002ed3022fe3a38cab64131"
+      },
+      {
+        "path": "packages/mongodb-atlas-mcp-remote/src/cli.ts",
+        "sha": "2dfa7bf55bfde82ca57a77e97fbedb3631909f34"
+      },
+      {
+        "path": "packages/mongodb-mcp-server/src/index.ts",
+        "sha": "5a97e217b9fe24ad9d971f18d416a76647810592"
+      },
+      {
+        "path": "packages/scripts/src/index.ts",
+        "sha": "e5aa7a9b19e17c3cc5ae2720c3d35a5893a02bc8"
+      },
+      {
+        "path": "packages/setup/src/index.ts",
+        "sha": "c4d94d043404426f58f68aa73139e1a85849a1ec"
+      },
+      {
+        "path": "packages/test-utils/src/index.ts",
+        "sha": "f3e16ca3fa2d2f85ade46ab4c2be3e4a8fc43817"
+      },
+      {
+        "path": "packages/tools-assistant/src/index.ts",
+        "sha": "5ba49a2a5cc9c19cbff2fcfb40f2a7c25b167497"
+      },
+      {
+        "path": "packages/tools-atlas-local/src/index.ts",
+        "sha": "64ff86b2f92631514418e008897521fcf42358cd"
+      },
+      {
+        "path": "packages/tools-atlas/src/index.ts",
+        "sha": "1d20caf62249f6e1199b21e7b4ee8747e0b90024"
+      },
+      {
+        "path": "packages/tools-mongodb/src/index.ts",
+        "sha": "d9237a7a275ad08e6f90b2f5d7282e14706d01fe"
+      },
+      {
+        "path": "packages/types/src/index.ts",
+        "sha": "77820f04e2f11d56a6463e62a91b2558042a768f"
+      },
+      {
+        "path": "packages/types/src/server.ts",
+        "sha": "3055433151355b101c153bca8a902d41fc79ba76"
+      },
+      {
+        "path": "packages/types/src/tool.ts",
+        "sha": "20e8aaaa2bf67dbcd3e62b9332f1ac7783d9ba1d"
+      },
+      {
+        "path": "packages/ui/src/index.ts",
+        "sha": "90c7f16730cdc2493f9ae5a6d836aed867739947"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha": "a6f42d63d9213d071a26fa7997464ebe54ea0d33"
+      },
+      {
+        "path": "README.md",
+        "sha": "7e04bd24ff505c62d6273187ddc6c7670599fa51"
+      },
+      {
+        "path": "tsconfig.base.json",
+        "sha": "e1c8ea824898363228c4a272b353f96d0b231e22"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "0bf0a5198470d98ef1c0e3be407eed8c45a3d294"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "0db1bae1cda92ebbb90390ad87897734426d464b"
+      },
+      {
+        "path": "packages/accuracy-tests/package.json",
+        "sha": "b298e4d53d56e0ae3590fab2a057a2ae398e3fdd"
+      },
+      {
+        "path": "packages/atlas-api-client/package.json",
+        "sha": "73ea35aa9f44abbbad3dc820c72a99cbb0159571"
+      },
+      {
+        "path": "packages/atlas-telemetry/package.json",
+        "sha": "01817ceeb5b80967d6f3ecabe27f014239844a32"
+      },
+      {
+        "path": "packages/browser-tests/package.json",
+        "sha": "f5aa40123e189a6e63a34ce443329c8e3f508ac6"
+      },
+      {
+        "path": "packages/cli/package.json",
+        "sha": "a5a819aa625c91f16b4421a35a4f23c8a6b80cb8"
+      },
+      {
+        "path": "packages/core/package.json",
+        "sha": "7e3c89e873eb6c6c04a945df1dc8b36e7dcd417b"
+      },
+      {
+        "path": "packages/e2e-tests/package.json",
+        "sha": "a5d9a0906b903cdb87c6c52ab154720e0269ffd8"
+      },
+      {
+        "path": "packages/eval-tests/package.json",
+        "sha": "00eb9d68c245d3dde9fd680dc64cabc963d00cb5"
+      },
+      {
+        "path": "packages/fetch/package.json",
+        "sha": "f94513dac37ea82a8d7a51722aa5eee20030af9d"
+      },
+      {
+        "path": "packages/harness-tester/package.json",
+        "sha": "48beaa1a7f9f7d9196793d39544a5d884069a74f"
+      },
+      {
+        "path": "packages/http-runners/package.json",
+        "sha": "b674b996bf78113f924c42c8265abae4c0f36743"
+      },
+      {
+        "path": "packages/integration-tests/package.json",
+        "sha": "77ff69b96049fde7ec024fb2e9fdfdb2a24faddc"
+      },
+      {
+        "path": "packages/logging/package.json",
+        "sha": "0f8af277273492675d5d57f1959178ed56e6b6fb"
+      },
+      {
+        "path": "packages/metrics/package.json",
+        "sha": "17c9e15d8f79af3f0e6f88c5b8d816ae69f6cb7c"
+      },
+      {
+        "path": "packages/mongodb-atlas-mcp-remote/package.json",
+        "sha": "9bf88ade996f19ac32bf80805749dc87cacfd3ba"
+      },
+      {
+        "path": "packages/mongodb-mcp-server/package.json",
+        "sha": "402b21d1ae57c7e24d1f2e7a1120418213c52483"
+      },
+      {
+        "path": "packages/scripts/package.json",
+        "sha": "241f25b99438e3640fc2195481da96e60d5e7710"
+      },
+      {
+        "path": "packages/setup/package.json",
+        "sha": "a438aa84e9a95d3389cdacbb5981708e5c5ace6f"
+      },
+      {
+        "path": "packages/test-utils/package.json",
+        "sha": "5b0a7c04c442004974bae5334bdc9e8384767271"
+      },
+      {
+        "path": "packages/tools-assistant/package.json",
+        "sha": "112b425113f857e32d8a16b84fceff0e894d8685"
+      },
+      {
+        "path": "packages/tools-atlas-local/package.json",
+        "sha": "ea41c40e2a57eb7abe655501a6912c0157b7ec6c"
+      },
+      {
+        "path": "packages/tools-atlas/package.json",
+        "sha": "8728b19bfc108a61ed6e319407231a717efe2867"
+      },
+      {
+        "path": "packages/tools-mongodb/package.json",
+        "sha": "cea310bddfbb46b6c9c61c57dcbd3d0b4a66f111"
+      },
+      {
+        "path": "packages/types/package.json",
+        "sha": "60b5441a5bcdb899d3c2fe9499ce64562db3391b"
+      },
+      {
+        "path": "packages/ui/package.json",
+        "sha": "47aaa101eac5c0e6931cfe89774c9ee602c58474"
+      },
+      {
+        "path": "eslint-rules/enforce-zod-v4.js",
+        "sha": "fed6a70d24a50c21042b55d3385d94a7a334da3c"
+      },
+      {
+        "path": "packages/browser-tests/polyfills/events/index.ts",
+        "sha": "9f79ca5534be40003b47a310b73adddbd0bf7e07"
+      },
+      {
+        "path": "packages/browser-tests/polyfills/fs/index.ts",
+        "sha": "92b9bc5af9c901ca22bb1bddcf05aaa2cdffc082"
+      },
+      {
+        "path": "packages/browser-tests/polyfills/process/index.ts",
+        "sha": "8446db6c33227c871091bddc173510c6f48d4f63"
+      },
+      {
+        "path": "packages/browser-tests/polyfills/stream/index.ts",
+        "sha": "5f7029306f19d6146dbf4268e87b6911ad162d43"
+      },
+      {
+        "path": "packages/browser-tests/polyfills/zlib/index.ts",
+        "sha": "b76db1ab57741d9bcc0395ee50f6b459a1e7e4e9"
+      },
+      {
+        "path": "packages/integration-tests/src/utils/index.ts",
+        "sha": "f5659671cefe695f2c254dd64687effc67e655ad"
+      },
+      {
+        "path": "packages/mongodb-atlas-mcp-remote/src/logging/index.ts",
+        "sha": "827be25dcbf3c2fa5ce6e78af9c869e1021ea7c3"
+      },
+      {
+        "path": "packages/mongodb-mcp-server/src/test-helpers/index.ts",
+        "sha": "7f9bd60490def9ec7bd71bb6d5db4e147f4452e0"
+      },
+      {
+        "path": "packages/mongodb-mcp-server/src/tools/index.ts",
+        "sha": "4a12bcd79f6c05d809b658e62c4fe993bd356154"
+      },
+      {
+        "path": "packages/scripts/src/sbomReport/index.ts",
+        "sha": "ae780c7d1bc591626480417ffd91f07c9fa3ecbb"
+      },
+      {
+        "path": "packages/tools-assistant/src/tools/tools.ts",
+        "sha": "b4d9b2fd28893b3f75bdd1d4043190e35d8375de"
+      },
+      {
+        "path": "packages/tools-atlas-local/src/tools/tools.ts",
+        "sha": "81b7473ac9cb97b802657a8dac2d451b29f3e7db"
+      },
+      {
+        "path": "packages/tools-atlas/src/tools/tools.ts",
+        "sha": "270f8c0f38c7b3af9638a8bdc5f15afb35ac70ab"
+      },
+      {
+        "path": "packages/tools-mongodb/src/tools/tools.ts",
+        "sha": "b7748a21b39c6e2de392a781944b47b63901af2b"
+      },
+      {
+        "path": "api-extractor/reports/core.public.api.md",
+        "sha": "37a2308d2c569254e70eb67f0d66326f364d9099"
+      },
+      {
+        "path": "api-extractor/reports/mongodb-mcp-server.public.api.md",
+        "sha": "8ea9b683a8a74ba91d568544a68cc198ed8158cc"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T07:53:40Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 25486
+  },
+  "duration_ms": 25569
+}

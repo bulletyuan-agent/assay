@@ -35,9 +35,7 @@ function locate(text, re, original = text) {
 export const NON_SHIPPED = /(^|\/)(tests?|__tests__|__mocks__|mocks?|spec|examples?|fixtures?|docs?|samples?|benchmarks?|e2e|\.github|\.devcontainer|\.husky|\.vscode)\/|(^|\/)[^/]*mocks?\/|\.(test|spec|stories)\.[a-z]+$|_test\.(go|py|rs|js|ts)$|(^|\/)test_[^/]*\.py$/i;
 const INJECTION = [
   /ignore (all |any |the )?(previous|prior|above) instructions/i,
-  /do not (tell|inform|mention (it )?to) the user/i,
   /忽略(之前|以上|所有|前面)的?指令/,
-  /不要(告诉|告知)用户/,
 ];
 // Replace comments with spaces, keeping every newline, so line numbers still match the original file.
 export function stripComments(text, path) {
@@ -59,6 +57,8 @@ const ALLOW_HOSTS = ['apache.org', 'opensource.org', 'creativecommons.org', 'gnu
   'example.com', 'openxmlformats.org', 'purl.org', 'schemas.microsoft.com', 'xmlsoap.org', 'ecma-international.org', 'dublincore.org', 'xmlns.com', 'modelcontextprotocol.io', 'anthropic.com', 'shields.io'];
 
 const CACHE = join(dirname(_fu(import.meta.url)), '..', '.cache', 'blobs'); // content-addressed by git blob sha
+const BUDGET = 400;
+const CONCURRENCY = 10;
 const clamp = (v) => Math.max(0, Math.min(100, Math.round(v)));
 
 export async function githubFiles(t, branch = 'HEAD') {
@@ -78,18 +78,27 @@ export async function githubFiles(t, branch = 'HEAD') {
   const candidates = tree.data.tree
     .filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path)) && !NON_SHIPPED.test(x.path))
     .sort((a, b) => rank(b.path) - rank(a.path) || a.path.localeCompare(b.path));
-  const picked = candidates.slice(0, 80);
+  const picked = candidates.slice(0, BUDGET);
   const excludedNonShipped = tree.data.tree.filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path)) && NON_SHIPPED.test(x.path)).length;
-  const out = [];
-  for (const f of picked) {
-    const cachePath = join(CACHE, `${f.sha}`);
-    let text = existsSync(cachePath) ? readFileSync(cachePath, 'utf8') : null;
-    if (text === null) {
-      const r = await http(`https://raw.githubusercontent.com/${t.id}/${branch}/${f.path}`, { json: false });
-      if (r.ok) { text = r.data; try { mkdirSync(CACHE, { recursive: true }); writeFileSync(cachePath, text); } catch { /* cache is optional */ } }
+  // Fetch with a small worker pool; results are placed by index so the order (and the score) never depends on timing.
+  const slots = new Array(picked.length).fill(null);
+  let next = 0;
+  async function worker() {
+    for (;;) {
+      const i = next++;
+      if (i >= picked.length) return;
+      const f = picked[i];
+      const cachePath = join(CACHE, `${f.sha}`);
+      let text = existsSync(cachePath) ? readFileSync(cachePath, 'utf8') : null;
+      if (text === null) {
+        const r = await http(`https://raw.githubusercontent.com/${t.id}/${branch}/${f.path}`, { json: false });
+        if (r.ok) { text = r.data; try { mkdirSync(CACHE, { recursive: true }); writeFileSync(cachePath, text); } catch { /* cache is optional */ } }
+      }
+      if (text !== null) slots[i] = { path: f.path, sha: f.sha, text };
     }
-    if (text !== null) out.push({ path: f.path, sha: f.sha, text });
   }
+  await Promise.all(Array.from({ length: CONCURRENCY }, worker));
+  const out = slots.filter(Boolean);
   // Fingerprint of exactly what was scanned. Same tree sha + same method version must give the same score.
   out.treeSha = tree.data.sha;
   out.candidates = candidates.length;

@@ -1,12 +1,12 @@
 {
-  "at": "2026-11-02T14:54:05.922Z",
+  "at": "2026-11-02T15:09:01.325Z",
   "summary": {
     "all": {
       "n_good": 2,
       "n_bad": 11,
       "mean_good": 94,
-      "mean_bad": 53,
-      "auc": 0.9545454545454546
+      "mean_bad": 49,
+      "auc": 1
     },
     "synthetic": {
       "n_good": 2,
@@ -228,7 +228,7 @@
         ],
         "danger_hits": 0,
         "severe_hits": 0,
-        "injection_hits": 8,
+        "injection_hits": 4,
         "undeclared_hosts": [],
         "declared_hosts": 0,
         "install_detected": true,
@@ -445,13 +445,13 @@
       "id": "holdout-nl-exfil",
       "label": "bad",
       "kind": "reconstructed",
-      "score": 94,
+      "score": 49,
       "dims": {
         "maintenance": 100,
         "install_docs": 60,
         "dangerous_patterns": 100,
         "egress": 100,
-        "instruction_hygiene": 100
+        "instruction_hygiene": 20
       },
       "evidence": {
         "files_scanned": 2,

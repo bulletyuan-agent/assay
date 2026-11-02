@@ -1,0 +1,374 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T145410Z",
+  "target": {
+    "source": "github",
+    "id": "GLips/Figma-Context-MCP",
+    "url": "https://github.com/GLips/Figma-Context-MCP",
+    "name": "Figma-Context-MCP"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:59:26.896Z",
+  "method_version": "0.3.1",
+  "tool": {
+    "assay_commit": "4e5cad4c4b6f87ea5f443586fbaa406d8a909a7e",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "c083d65c7e002923e7cb98f4e3bdafb105e90f6d",
+    "files_scanned": 76,
+    "candidates": 76,
+    "excluded_non_shipped": 24,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/index.ts",
+        "sha": "03677197d3ce68a1cb62ae8823e94a55df780491"
+      },
+      {
+        "path": "src/server.ts",
+        "sha": "136c8fc70aef5c76dd27d9f089e08254401a29ab"
+      },
+      {
+        "path": "server.json",
+        "sha": "ed0269cd1794d02ea3f43596432844fe866b932d"
+      },
+      {
+        "path": "src/extractors/index.ts",
+        "sha": "8c3dd08c0edf07bbc0aa1e553704e15295de371b"
+      },
+      {
+        "path": "src/mcp/index.ts",
+        "sha": "1ff61999be78e08b3f361efb3ce30184c7fd3a13"
+      },
+      {
+        "path": "src/telemetry/index.ts",
+        "sha": "61e8d78c0aae435189e0474c16aba068ebbd39f7"
+      },
+      {
+        "path": "src/mcp/tools/index.ts",
+        "sha": "a312b24a1363b04d4c99eb2567edb7aad126c9be"
+      },
+      {
+        "path": "src/services/errors/index.ts",
+        "sha": "0634327e47f93b5881c1c88ef0f903af414ddb36"
+      },
+      {
+        "path": "package.json",
+        "sha": "64a618a4709c33dd6445043c094c10bb987f0e62"
+      },
+      {
+        "path": "scripts/benchmark-simplify.ts",
+        "sha": "f5f58a004bbe8dcf9f702dbbbd71a13981eaedad"
+      },
+      {
+        "path": "scripts/compare-formats.ts",
+        "sha": "6ec514642307fe8b53e81a528169d8defb0f156a"
+      },
+      {
+        "path": "scripts/render-fixture.ts",
+        "sha": "84a79d6611b3846605d2a847d989f4a4892407a0"
+      },
+      {
+        "path": "scripts/scan-hidden-chars.mjs",
+        "sha": "c6a4ffed1dda1017dacd3c15c796f67bc7ba72de"
+      },
+      {
+        "path": "src/bin.ts",
+        "sha": "c6075341d6a36649f15b95678e632a41590085bc"
+      },
+      {
+        "path": "src/config.ts",
+        "sha": "97c98bcf70d2139b63235a6977d3aaf163cebda1"
+      },
+      {
+        "path": "src/mcp-server.ts",
+        "sha": "cd2c97b7d3146d11f5e4b427f213f82666b1e3d1"
+      },
+      {
+        "path": ".release-please-manifest.json",
+        "sha": "794cd27920ad987595ec967ce68a9cd22c9ea0a1"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "57b55b187e267af8b29e82109977b3abcfecad43"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "04ed20128cbb42ac843138726c776022fd2522ca"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "05a7bd173f9815f9ae985983f64bfde2df4bbea2"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha": "f7e644b26dfc3a143973dbdaf1848784c086c92a"
+      },
+      {
+        "path": "lefthook.yml",
+        "sha": "a38ceed4aaaa00c93932a8b1dadc79b03a9ff130"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "sha": "f4ef152a8531dc35ee98df34653e4dc7b80a039b"
+      },
+      {
+        "path": "README.md",
+        "sha": "9cdbf3d390182517966f54aa5033413f23aebc50"
+      },
+      {
+        "path": "release-please-config.json",
+        "sha": "69437f5083ac4f7215725663fd46c9b59ca6be32"
+      },
+      {
+        "path": "ROADMAP.md",
+        "sha": "2a017b7998ecc28709969caa5420cd49b4d7dbbd"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "6c79a4a6524f7231031ee8890748208efd479aa8"
+      },
+      {
+        "path": "src/commands/fetch.ts",
+        "sha": "7ab4d89c77e474fb0d3443394cc9ec62af2ad0c5"
+      },
+      {
+        "path": "src/extractors/built-in.ts",
+        "sha": "fb835b87e552c1051c31f08e98357404e73029e6"
+      },
+      {
+        "path": "src/extractors/design-extractor.ts",
+        "sha": "d590ef883b1a4d92bea1dab3acfada42e1313e95"
+      },
+      {
+        "path": "src/extractors/finalize.ts",
+        "sha": "d699377eebf63e7f4b95f1a6a653774474721e81"
+      },
+      {
+        "path": "src/extractors/node-walker.ts",
+        "sha": "914fef3ae869359ee2e06678257f2fea41221ff3"
+      },
+      {
+        "path": "src/extractors/README.md",
+        "sha": "1945084d775bf3795804e7b5b8a27d0af4e93f26"
+      },
+      {
+        "path": "src/extractors/types.ts",
+        "sha": "c74350cb0465d3d2e9a6bf428591c09815256a3e"
+      },
+      {
+        "path": "src/mcp/progress.ts",
+        "sha": "f92f6a09a1b4a17e4b56285e7aa725cc7712c4db"
+      },
+      {
+        "path": "src/mcp/validation-capture.ts",
+        "sha": "40de59396f9e3e19fd729e8831dc0a083b8b7204"
+      },
+      {
+        "path": "src/services/download-figma-images.ts",
+        "sha": "759e7c9206ffadf236b1cc21fc65f7fe8cdc1943"
+      },
+      {
+        "path": "src/services/figma.ts",
+        "sha": "b056844d35a206e517707fcb16ffcafafbc20086"
+      },
+      {
+        "path": "src/services/get-figma-data-metrics.ts",
+        "sha": "2295fc905f05ad1dc13c3bc0a0c2671c6e8230c6"
+      },
+      {
+        "path": "src/services/get-figma-data.ts",
+        "sha": "a144a4abef645a23f40c159b4db009fb611f9f25"
+      },
+      {
+        "path": "src/telemetry/capture.ts",
+        "sha": "c9d8a01a35c9a30d4e274208f5178a3a76d09ff5"
+      },
+      {
+        "path": "src/telemetry/client.ts",
+        "sha": "24b02a71d280caf044a1306a69c870f535859200"
+      },
+      {
+        "path": "src/telemetry/types.ts",
+        "sha": "63d88cea13c5e698e2de94b11db911ac75661662"
+      },
+      {
+        "path": "src/transformers/component.ts",
+        "sha": "faa5388719edf07cda4d2e3950c6a0264811df99"
+      },
+      {
+        "path": "src/transformers/effects.ts",
+        "sha": "edc02554aa0db798426ce317685e50bd8f2b1a54"
+      },
+      {
+        "path": "src/transformers/layout.ts",
+        "sha": "dae3d182fcb9e0e6c70dac79c51dfdcb1b9865ca"
+      },
+      {
+        "path": "src/transformers/style.ts",
+        "sha": "a58a116382926543612ed655f7549c6a1df86d57"
+      },
+      {
+        "path": "src/transformers/text.ts",
+        "sha": "13f3e718bacb96caf970404e137ba1d713420555"
+      },
+      {
+        "path": "src/utils/common.ts",
+        "sha": "4854974908a3e279413f6d24ae119bfd97df0fb2"
+      },
+      {
+        "path": "src/utils/error-meta.ts",
+        "sha": "f8dff38843fa323b8ea8c84ecffb9b46a75bea5a"
+      },
+      {
+        "path": "src/utils/fetch-json.ts",
+        "sha": "4382888f958cc07db24e0ac5c7c0683b6a428b96"
+      },
+      {
+        "path": "src/utils/figma-url.ts",
+        "sha": "557f86b08b1f5150e6bfe343a0642d8f1a52c261"
+      },
+      {
+        "path": "src/utils/identity.ts",
+        "sha": "7ec45059b0ac3008123e14f3c931a8191de5d8d5"
+      },
+      {
+        "path": "src/utils/image-processing.ts",
+        "sha": "a091006f62deac37c42e9bf2d5ad8c8678ce9b28"
+      },
+      {
+        "path": "src/utils/local-path.ts",
+        "sha": "603bd02f34df34d76c6b0caf232c14d9fc084297"
+      },
+      {
+        "path": "src/utils/logger.ts",
+        "sha": "8c7b077cc579b665d72e4d3a3c1d203251c65a61"
+      },
+      {
+        "path": "src/utils/node-names.ts",
+        "sha": "ea7ade00db2eb48fa6132a038ae3cf1c424202ad"
+      },
+      {
+        "path": "src/utils/proxy-env.ts",
+        "sha": "a36ddacc0cccb14581e99aa280f828ef6b93da9a"
+      },
+      {
+        "path": "src/utils/serializable-design.ts",
+        "sha": "71049fc6e4b9e838461deef73f8adfbe5bafb2ee"
+      },
+      {
+        "path": "src/utils/serialize-tree.ts",
+        "sha": "15c6821c92e649a2fc258a2d7a329342427718c5"
+      },
+      {
+        "path": "src/utils/serialize.ts",
+        "sha": "3ecab1799fb6f8c50d3148468289559fe8828b41"
+      },
+      {
+        "path": "src/utils/yaml-dump.ts",
+        "sha": "60025a7f0eaac57d89e92afe5253cdd914dca328"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "1cfed5c7b11c6828c19745dbf5ae6667a2dc92ef"
+      },
+      {
+        "path": "tsup.config.ts",
+        "sha": "dda15ac2d85f3688916e7d41dac37a7ffcc9fec0"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "18dd92bcc2fb8223bbb036a3fcf738b28c09fdbd"
+      },
+      {
+        "path": "src/mcp/tools/download-figma-images-tool.ts",
+        "sha": "25103568a0bcef33d2cadfad33918e29c20a284e"
+      },
+      {
+        "path": "src/mcp/tools/get-figma-data-tool.ts",
+        "sha": "89c19c28059686abf6e184b529c5544d3a658e3c"
+      },
+      {
+        "path": "src/services/errors/forbidden.ts",
+        "sha": "0dfe601c86fa27e98ae96efdcf7ab568d2510738"
+      },
+      {
+        "path": "src/services/errors/rate-limit.ts",
+        "sha": "cf6e686deea7f78b70c0eee8a3e14f0bb0b82780"
+      },
+      {
+        "path": "src/transformers/layout/common.ts",
+        "sha": "703fdc5f1a83aab67080b3cf9868769472a5bece"
+      },
+      {
+        "path": "src/transformers/layout/flex.ts",
+        "sha": "b9e07d77e2d611801a1c11f754f1dcc44e21b42b"
+      },
+      {
+        "path": "src/transformers/layout/grid.ts",
+        "sha": "eaa5edb0c14215a80ba69bee4c4c759def744431"
+      },
+      {
+        "path": "src/transformers/style/color.ts",
+        "sha": "f0a2829ce525cabfe5353859c11679c1058ea079"
+      },
+      {
+        "path": "src/transformers/style/gradient.ts",
+        "sha": "9b2fc773891e93ac73c278228ce39a0adade6235"
+      },
+      {
+        "path": "src/transformers/style/image.ts",
+        "sha": "350edbf3388977e996cb7c0458dc8c96a156c325"
+      },
+      {
+        "path": ".claude/commands/release.md",
+        "sha": "f251f464f439500c135300c6487c05667c7faa20"
+      }
+    ],
+    "repo_pushed_at": "2026-10-27T05:37:12Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": false,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 91,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 40,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 76,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 1,
+    "install_detected": false,
+    "age_days": 6
+  },
+  "network": {
+    "calls": 79,
+    "failed": 0,
+    "ms": 22927
+  },
+  "duration_ms": 22999
+}

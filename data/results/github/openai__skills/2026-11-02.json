@@ -1,0 +1,411 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T145410Z",
+  "target": {
+    "source": "github",
+    "id": "openai/skills",
+    "url": "https://github.com/openai/skills",
+    "name": "skills"
+  },
+  "type": "skill",
+  "evaluated_at": "2026-11-02T15:03:01.269Z",
+  "method_version": "0.3.1",
+  "tool": {
+    "assay_commit": "4e5cad4c4b6f87ea5f443586fbaa406d8a909a7e",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "49f948faa9258a0c61caceaf225e179651397431",
+    "files_scanned": 80,
+    "candidates": 688,
+    "excluded_non_shipped": 14,
+    "coverage": 0.12,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "skills/.curated/aspnet-core/SKILL.md",
+        "sha": "c71ed6e705c44038fbcd2e37a3e12c3a81683fdf"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/SKILL.md",
+        "sha": "6280a08c57db44ab622dcccbd853e01005edfcbd"
+      },
+      {
+        "path": "skills/.curated/cli-creator/SKILL.md",
+        "sha": "60e5a9a03f89cf66a60aa798bfc6f3c3fa5ed8c4"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/SKILL.md",
+        "sha": "e2d73abb7e5a550af3d9e40797a28259bddba97d"
+      },
+      {
+        "path": "skills/.curated/define-goal/SKILL.md",
+        "sha": "87f111bd700e0d993465f7ac741847b5daee57d6"
+      },
+      {
+        "path": "skills/.curated/figma-code-connect-components/SKILL.md",
+        "sha": "d417e16baf15bad3f1dd147d562c8b2578e4b4bd"
+      },
+      {
+        "path": "skills/.curated/figma-create-design-system-rules/SKILL.md",
+        "sha": "42cc4ce838276cb68a14bbb29c5a6f1e19b6e50d"
+      },
+      {
+        "path": "skills/.curated/figma-create-new-file/SKILL.md",
+        "sha": "8f74967b9bb4c26b3b8e2a8d102f004d6962ae0d"
+      },
+      {
+        "path": "skills/.curated/figma-generate-design/SKILL.md",
+        "sha": "f71d7e71600e84e95639ca2b3e2b8578ac50c3ea"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/SKILL.md",
+        "sha": "0c162901c29dba36094c324cd9ffabd2a6b33498"
+      },
+      {
+        "path": "skills/.curated/figma-implement-design/SKILL.md",
+        "sha": "9aacde6657a913db819d7938f3fd1888ff643c6a"
+      },
+      {
+        "path": "skills/.curated/figma-use/SKILL.md",
+        "sha": "4b0e23f53d8160e1623177f518535d1588a53c69"
+      },
+      {
+        "path": "skills/.curated/figma/SKILL.md",
+        "sha": "b4f18d2969fe827778b13b5a0fb08a158ec091b1"
+      },
+      {
+        "path": "skills/.curated/gh-address-comments/SKILL.md",
+        "sha": "0ee19e080dc9f0b082157080d1e65511ddc49e7e"
+      },
+      {
+        "path": "skills/.curated/gh-fix-ci/SKILL.md",
+        "sha": "76bdeb6a7bff93cbe924c0652f1fd7a3c3ffc46c"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/SKILL.md",
+        "sha": "5f6e79a444d2a1ccb38cec02fa6830c7bb2521ba"
+      },
+      {
+        "path": "skills/.curated/jupyter-notebook/SKILL.md",
+        "sha": "e1d1748cac9e9313c8229763751714628d1f6853"
+      },
+      {
+        "path": "skills/.curated/linear/SKILL.md",
+        "sha": "6982ccbe4835ed207f6c7c0b2f011d903dbe2960"
+      },
+      {
+        "path": "skills/.curated/migrate-to-codex/SKILL.md",
+        "sha": "b1c001b70e8cf326b8196e153b87811a43b23d48"
+      },
+      {
+        "path": "skills/.curated/netlify-deploy/SKILL.md",
+        "sha": "52075090a6644b104fc34837c9923b403d949369"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/SKILL.md",
+        "sha": "5d347f66e6b494328a81f3ecb4fd7865f95b0067"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/SKILL.md",
+        "sha": "efc716839ee614cf57efb3858fcfb538e0c4a8d9"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/SKILL.md",
+        "sha": "4bd40dbe0eb8d9d8920e3a4d705b38b4887623c7"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/SKILL.md",
+        "sha": "d6a0a0e0fb358f56e1d4893c54a25c6c2e04fc65"
+      },
+      {
+        "path": "skills/.curated/openai-docs/SKILL.md",
+        "sha": "ec6a2b06e4bca7b08e27c7be3ae512bc97008e8c"
+      },
+      {
+        "path": "skills/.curated/pdf/SKILL.md",
+        "sha": "fd5d56058f10202e4f50a30bc2906f39696024a1"
+      },
+      {
+        "path": "skills/.curated/playwright-interactive/SKILL.md",
+        "sha": "7d85f8284014c8c2690918a596a4b5bef7cb86e1"
+      },
+      {
+        "path": "skills/.curated/playwright/SKILL.md",
+        "sha": "77c01afb31aa602d0b002ae2438c2b67f0335fcb"
+      },
+      {
+        "path": "skills/.curated/render-deploy/SKILL.md",
+        "sha": "a0f78c13b07df3def82c16bccf4a1c17c4d8e30d"
+      },
+      {
+        "path": "skills/.curated/screenshot/SKILL.md",
+        "sha": "1d967bfb1d7d38874147b5810f2a19677bc3161b"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/SKILL.md",
+        "sha": "45ccbd8d671c4c4cc3e7e0645a16a3f80ec50de7"
+      },
+      {
+        "path": "skills/.curated/security-ownership-map/SKILL.md",
+        "sha": "0164d0d8809825dc5bccc99e87cafb8345a6be72"
+      },
+      {
+        "path": "skills/.curated/security-threat-model/SKILL.md",
+        "sha": "abd3c1c95d49c4e0e0664f198f4bf168c6291aec"
+      },
+      {
+        "path": "skills/.curated/sentry/SKILL.md",
+        "sha": "c94f7efa9d513f381d5fcd07912d56581ec3dc2a"
+      },
+      {
+        "path": "skills/.curated/speech/SKILL.md",
+        "sha": "54727b1f84831739e7262b4db8271ada026d20c7"
+      },
+      {
+        "path": "skills/.curated/transcribe/SKILL.md",
+        "sha": "757576f9bbd1782f14fcc28ca85159139a2b8fa5"
+      },
+      {
+        "path": "skills/.curated/vercel-deploy/SKILL.md",
+        "sha": "a7e6faf3b999d31e8224e232d39fbf58952b7a5b"
+      },
+      {
+        "path": "skills/.curated/winui-app/SKILL.md",
+        "sha": "28e67e8677f0ab74ac921ec85dd80888f7d53fa7"
+      },
+      {
+        "path": "skills/.curated/yeet/SKILL.md",
+        "sha": "acce5634f720e0a26c65c5e6048e0b43f6a3abd8"
+      },
+      {
+        "path": "skills/.system/imagegen/SKILL.md",
+        "sha": "88195882efdedbfab56e0eb2570dd4fd6d9e8610"
+      },
+      {
+        "path": "skills/.system/openai-docs/SKILL.md",
+        "sha": "df395fb442746703eefcc1d0cb9183efa39d9e66"
+      },
+      {
+        "path": "skills/.system/plugin-creator/SKILL.md",
+        "sha": "5108f549a7d6f93eb4b80dc9990bbd966157330a"
+      },
+      {
+        "path": "skills/.system/skill-creator/SKILL.md",
+        "sha": "72bc0b97e7a6476254a9d5c424c9971748402ec3"
+      },
+      {
+        "path": "skills/.system/skill-installer/scripts/install-skill-from-github.py",
+        "sha": "1c8ce89d0a4c54f1eb8ec00625e8fc0fa59301ae"
+      },
+      {
+        "path": "skills/.system/skill-installer/SKILL.md",
+        "sha": "8ca23bf833379d2272a0a67e0026c2709b8823f1"
+      },
+      {
+        "path": "contributing.md",
+        "sha": "cc833a5ccfb0d32b135a374dcf432d198e4d9a8f"
+      },
+      {
+        "path": "README.md",
+        "sha": "c205d307226b98189c28cbcce6ff792cbb7b2d05"
+      },
+      {
+        "path": "skills/.curated/migrate-to-codex/scripts/cli.py",
+        "sha": "9f01ea17753be62ddaa6fd50d1bf73fb6d6fa38e"
+      },
+      {
+        "path": "skills/.curated/playwright/references/cli.md",
+        "sha": "ec0b4e1aca28021a493ba84ce67489bd8ef9e876"
+      },
+      {
+        "path": "skills/.curated/speech/references/cli.md",
+        "sha": "d821eb94ca15b685d1c531b46c4d345563c6a99a"
+      },
+      {
+        "path": "skills/.system/imagegen/references/cli.md",
+        "sha": "cd8ec881b083a5a4d8ca19cc71040459f0df2586"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/LICENSE.txt",
+        "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/LICENSE.txt",
+        "sha": "145d9443e3e7da910ac0b1e7c8afda86cfefde3a"
+      },
+      {
+        "path": "skills/.curated/cli-creator/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/define-goal/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/figma-code-connect-components/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-create-design-system-rules/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-create-new-file/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-create-new-file/maintainers.yml",
+        "sha": "262e692e5225225306002b27136a66135a59ffa3"
+      },
+      {
+        "path": "skills/.curated/figma-generate-design/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-generate-design/maintainers.yml",
+        "sha": "262e692e5225225306002b27136a66135a59ffa3"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/maintainers.yml",
+        "sha": "a572caf65f0687561e83cb72cb8e4ea172dbe3f3"
+      },
+      {
+        "path": "skills/.curated/figma-implement-design/LICENSE.txt",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-use/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-use/maintainers.yml",
+        "sha": "262e692e5225225306002b27136a66135a59ffa3"
+      },
+      {
+        "path": "skills/.curated/figma/LICENSE.txt",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/gh-address-comments/LICENSE.txt",
+        "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+      },
+      {
+        "path": "skills/.curated/gh-fix-ci/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/jupyter-notebook/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/linear/LICENSE.txt",
+        "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+      },
+      {
+        "path": "skills/.curated/migrate-to-codex/LICENSE.txt",
+        "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+      },
+      {
+        "path": "skills/.curated/netlify-deploy/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/LICENSE.txt",
+        "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/LICENSE.txt",
+        "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/LICENSE.txt",
+        "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/LICENSE.txt",
+        "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04"
+      },
+      {
+        "path": "skills/.curated/openai-docs/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      }
+    ],
+    "repo_pushed_at": "2026-10-28T17:31:41Z",
+    "license": null
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": false,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 20,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [
+      "docs-pipe-to-shell"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": true,
+      "file": "skills/.curated/render-deploy/SKILL.md",
+      "line": 111,
+      "snippet": "- Linux/macOS: `curl -fsSL https://raw.githubusercontent.com/render-oss/cli/main/bin/install.sh | sh`",
+      "deduction": 40
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": true,
+      "file": "skills/.curated/sentry/SKILL.md",
+      "line": 18,
+      "snippet": "1. Install the Sentry CLI: `curl https://cli.sentry.dev/install -fsS | bash`",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 5
+  },
+  "network": {
+    "calls": 65,
+    "failed": 4,
+    "ms": 19390
+  },
+  "duration_ms": 19451
+}

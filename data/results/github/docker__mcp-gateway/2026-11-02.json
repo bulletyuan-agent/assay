@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T145410Z",
+  "target": {
+    "source": "github",
+    "id": "docker/mcp-gateway",
+    "url": "https://github.com/docker/mcp-gateway",
+    "name": "mcp-gateway"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:04:31.727Z",
+  "method_version": "0.3.1",
+  "tool": {
+    "assay_commit": "4e5cad4c4b6f87ea5f443586fbaa406d8a909a7e",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "7e0f34277c91855ad861eeff536b4fdc77420593",
+    "files_scanned": 80,
+    "candidates": 5700,
+    "excluded_non_shipped": 382,
+    "coverage": 0.01,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".claude/skills/otel-instrument/SKILL.md",
+        "sha": "35a8687823e19d49303154f7b0f6e9cae336a4a7"
+      },
+      {
+        "path": "cmd/docker-mcp/main.go",
+        "sha": "2ae3a41727838cb14df9e58b51d434a448325b43"
+      },
+      {
+        "path": "pkg/catalog_next/server.go",
+        "sha": "b357b106acc758b1890b33b9157198c1f57b3834"
+      },
+      {
+        "path": "pkg/config/tools.go",
+        "sha": "4cbca4e94ace4f57ed4d00288beb7d35566d8f1f"
+      },
+      {
+        "path": "pkg/workingset/server.go",
+        "sha": "79932676dc4c05e2aede2520fb0a13e401631f66"
+      },
+      {
+        "path": "pkg/workingset/tools.go",
+        "sha": "b2a9a79e4e10e69c6f314044a826c17a6e3c018f"
+      },
+      {
+        "path": "tools/docker-mcp-bridge/main.go",
+        "sha": "7fd9f22986ed087480053586d98b7bca288d4e1d"
+      },
+      {
+        "path": "tools/jcat/main.go",
+        "sha": "b273d9b69593acec746d0546b8b6c57cc1fea5f8"
+      },
+      {
+        "path": "tools/l7proxy/main.go",
+        "sha": "3ac8e55aed221f965992e36419e9656505963ca7"
+      },
+      {
+        "path": ".golangci.yml",
+        "sha": "0d92b3529a9aa6860a1c7e6144b1fac4e8ca711c"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "947c176bdf5fa725047705859c36ae1bc731ca19"
+      },
+      {
+        "path": "cmd/docker-mcp/commands/server.go",
+        "sha": "778cef27e62877ffb4631d4846e15fb3ce731c55"
+      },
+      {
+        "path": "cmd/docker-mcp/commands/tools.go",
+        "sha": "a20e4fd178e26e8ffbc7ce88059e6bf844ddb975"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "2d565c4d9c12c843e829e085f3ce650ad6d1bed0"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "aac1253f728266e8d8bb660b98b09fae7b29022a"
+      },
+      {
+        "path": "pkg/policy/policyutil/server.go",
+        "sha": "57bca14c664a2f4e705a36335774cd10a4dc731b"
+      },
+      {
+        "path": "pkg/workingset/testdata/server.json",
+        "sha": "6b6f449f85e688155c5c82cdc5fb0e3579d2e247"
+      },
+      {
+        "path": "pkg/workingset/testdata/server.yaml",
+        "sha": "9cdcb8bcade7d15b2f99f0bf848a4e6495261e29"
+      },
+      {
+        "path": "README.md",
+        "sha": "275b4458be666417931c83b826f8e4b978e8725d"
+      },
+      {
+        "path": "vendor/connectrpc.com/connect/handler.go",
+        "sha": "e33934ea2ebf63054759451bfc07175efc2a4250"
+      },
+      {
+        "path": "vendor/go.opentelemetry.io/otel/handler.go",
+        "sha": "07623b6791454d65d7d6672c487ebd62f0f33367"
+      },
+      {
+        "path": "vendor/google.golang.org/grpc/server.go",
+        "sha": "ddd377341191d05dbde6543be2f73710b6df6700"
+      },
+      {
+        "path": ".claude/config.json",
+        "sha": "19544f9cd206dc255a07b502148c1ea24dc2f1c6"
+      },
+      {
+        "path": ".claude/settings.json",
+        "sha": "bae5e89450de970201258178d9c2f2791626e7bb"
+      },
+      {
+        "path": "module-image/module-metadata.json",
+        "sha": "1b0b62396096eb7d533d5ecfa83f2717db57955b"
+      },
+      {
+        "path": "vendor/modules.txt",
+        "sha": "69939fd2a8d9faac21f5ffee044cc98c10569e1f"
+      },
+      {
+        "path": "cmd/docker-mcp/server/templates/basic/main.go",
+        "sha": "2c0bc873a95ceb6cd146e14b76b06cad3b716af9"
+      },
+      {
+        "path": "cmd/docker-mcp/server/templates/chatgpt-app-basic/main.go",
+        "sha": "433c00fa1721730a934a5b40f1d30f6db3351498"
+      },
+      {
+        "path": "pkg/catalog_next/catalog.go",
+        "sha": "5c0ece5fff97eb594ba69fb7de26a4d69c42de4c"
+      },
+      {
+        "path": "pkg/catalog_next/create.go",
+        "sha": "36eb84ff934b7eecd7701ee72c119550a8d3ad0e"
+      },
+      {
+        "path": "pkg/catalog_next/list.go",
+        "sha": "c0209286be1fa70472d499f3741c0912a4d8ef90"
+      },
+      {
+        "path": "pkg/catalog_next/oci.go",
+        "sha": "16a34dde410095de9d4f8e449528dce051d48769"
+      },
+      {
+        "path": "pkg/catalog_next/policy.go",
+        "sha": "3e082f28db8e5e5d9ae4d488543e3996630368e5"
+      },
+      {
+        "path": "pkg/catalog_next/pull.go",
+        "sha": "d5f8908fefcbbc9580896bd8c0c4212119a758c5"
+      },
+      {
+        "path": "pkg/catalog_next/push.go",
+        "sha": "d7dded38fbf54171b9cdcebebd1b159e2ac0d892"
+      },
+      {
+        "path": "pkg/catalog_next/remove.go",
+        "sha": "62d030fc0673931cae171bb8266d22716d079516"
+      },
+      {
+        "path": "pkg/catalog_next/show.go",
+        "sha": "fbf001d952c7a33d13413ef73a703d5a09e457a9"
+      },
+      {
+        "path": "pkg/catalog_next/tag.go",
+        "sha": "1bf4563b53c461f8890271099f02b9b51de8c7ca"
+      },
+      {
+        "path": "pkg/catalog/catalog.go",
+        "sha": "1fb4b408e90e65930ca4e5e8ef365760a2d4c7d2"
+      },
+      {
+        "path": "pkg/catalog/import_spec.go",
+        "sha": "2a9753a772aa26f52d852e6b0bb0f76894511c97"
+      },
+      {
+        "path": "pkg/catalog/npm.go",
+        "sha": "1058e38bddba36da997b1fe3b196cea70b184c53"
+      },
+      {
+        "path": "pkg/catalog/pypi.go",
+        "sha": "ebdcde44b3e4692048073dbc0dab7a27fb5ca330"
+      },
+      {
+        "path": "pkg/catalog/registry_to_catalog.go",
+        "sha": "fba289fb20a3e4d4c9e8d975f4e17093e27ef0dd"
+      },
+      {
+        "path": "pkg/catalog/types.go",
+        "sha": "bc11a72dac72e0b01a24516287eddafc2d4bfa33"
+      },
+      {
+        "path": "pkg/client/codex_handler.go",
+        "sha": "a89fe8f1778933f962cfb933166dbf77ae93f60f"
+      },
+      {
+        "path": "pkg/client/config.go",
+        "sha": "99c918ee25ac5f2ca3fd42578f7b70980a853ae0"
+      },
+      {
+        "path": "pkg/client/config.yml",
+        "sha": "f7ad508119367b05cdb2252722053ea7f9229ef6"
+      },
+      {
+        "path": "pkg/client/connect.go",
+        "sha": "ffe5c6ccf16573264720c9660bb4b2901ab12630"
+      },
+      {
+        "path": "pkg/client/disconnect.go",
+        "sha": "dfef88ef60be98b1666e0f8fc5f90e1463244dd2"
+      },
+      {
+        "path": "pkg/client/global.go",
+        "sha": "9f5b947194bec7e305cab8ff32b868a95b6a5684"
+      },
+      {
+        "path": "pkg/client/gordon_hack.go",
+        "sha": "53794d63cf6b8b780b729e076fe967cd104d1907"
+      },
+      {
+        "path": "pkg/client/local.go",
+        "sha": "1802b8b19c16887f1f871ff9985964f959a2d710"
+      },
+      {
+        "path": "pkg/client/parse.go",
+        "sha": "d99ae5b067656afd057c00b0b633b0776d1975e7"
+      },
+      {
+        "path": "pkg/client/profiles.go",
+        "sha": "bdf127b3d89e3f32630edbbc62246440b7b17acf"
+      },
+      {
+        "path": "pkg/client/yq.go",
+        "sha": "a5b23b0929addbbfa1509604edeebb5fe9ba6e28"
+      },
+      {
+        "path": "pkg/codemode/codemode.go",
+        "sha": "9df9e1848ad23f7f3e8fdc02b07d541c79ffd2aa"
+      },
+      {
+        "path": "pkg/codemode/console.go",
+        "sha": "9489fb27d971470ac6cf1bff21ba8d535c9bb64a"
+      },
+      {
+        "path": "pkg/codemode/exec.go",
+        "sha": "43facb027ac9c6958b57aca0272aa5b0882898c5"
+      },
+      {
+        "path": "pkg/codemode/functions.go",
+        "sha": "1d86a3d03427da7abb83e3bbe13ac15eaeec2933"
+      },
+      {
+        "path": "pkg/config/config.go",
+        "sha": "c7889126817cda94cb5d84b21604027b893ff656"
+      },
+      {
+        "path": "pkg/config/legacy.go",
+        "sha": "ea5d4ec9f54716f17cef44f0b2e35f64b3cee795"
+      },
+      {
+        "path": "pkg/config/readwrite.go",
+        "sha": "8467420cbbabb5793ea391b6fd298e7af9155462"
+      },
+      {
+        "path": "pkg/config/registry.go",
+        "sha": "1dffbb253b510d510a8d7cd73904b3aa3412b438"
+      },
+      {
+        "path": "pkg/contextkeys/keys.go",
+        "sha": "9a5384debe6b12da0e068174dbbc51de488fd312"
+      },
+      {
+        "path": "pkg/db/catalog.go",
+        "sha": "4e6213ad8fa9294279f3bebeb543a02058ac69d0"
+      },
+      {
+        "path": "pkg/db/db.go",
+        "sha": "eecdc75efcf076476a4d0fc7f13b37c4b1204cb8"
+      },
+      {
+        "path": "pkg/db/migration_status.go",
+        "sha": "1a04d29d48a936f403dfea0ad7fe41554547a77e"
+      },
+      {
+        "path": "pkg/db/pull_record.go",
+        "sha": "90e8f3c8073ce672204eea41d0c0adf9c9933750"
+      },
+      {
+        "path": "pkg/db/workingset.go",
+        "sha": "4cc44d5ed0d44d65ee607e1615d94988180a4a49"
+      },
+      {
+        "path": "pkg/desktop/auth.go",
+        "sha": "2cefb4b3838c2d0baeb9b98cb55f394aaec37d64"
+      },
+      {
+        "path": "pkg/desktop/connection_other.go",
+        "sha": "dba216bc7d28227c8bd6e7055a5922a63a438b28"
+      },
+      {
+        "path": "pkg/desktop/connection_windows.go",
+        "sha": "b253d90fbec3038c071f95de59681f68ebd026ab"
+      },
+      {
+        "path": "pkg/desktop/features.go",
+        "sha": "a286b788988f3da06c36ee0a7b43d1c6ec3192d5"
+      },
+      {
+        "path": "pkg/desktop/paths.go",
+        "sha": "a358bd75e769f144fb2aa587d1863f7ed5b0a7dd"
+      },
+      {
+        "path": "pkg/desktop/proxy_socket_other.go",
+        "sha": "6286f81527929bd0f68ec95a216101e309b1f495"
+      },
+      {
+        "path": "pkg/desktop/proxy_socket_windows.go",
+        "sha": "67a85a076e1806236b97d5ad4d6b42a2d2e0ef32"
+      },
+      {
+        "path": "pkg/desktop/raw_client.go",
+        "sha": "b2921cf0f216fe76f03679dbc5b52e039c4f9173"
+      },
+      {
+        "path": "pkg/desktop/sockets_darwin.go",
+        "sha": "9c3eed1e6126106976c02f140b208f7e70ca7980"
+      },
+      {
+        "path": "pkg/desktop/sockets_linux.go",
+        "sha": "5b1d4a6675c161a49eae87d356759ee9fc692759"
+      },
+      {
+        "path": "pkg/desktop/sockets_windows.go",
+        "sha": "c81b6b4426932cb7ea26203765883ec24ccf7065"
+      }
+    ],
+    "repo_pushed_at": "2026-10-26T18:57:04Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 7
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 31940
+  },
+  "duration_ms": 32048
+}

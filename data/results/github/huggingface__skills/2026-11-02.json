@@ -1,0 +1,411 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T145410Z",
+  "target": {
+    "source": "github",
+    "id": "huggingface/skills",
+    "url": "https://github.com/huggingface/skills",
+    "name": "skills"
+  },
+  "type": "skill",
+  "evaluated_at": "2026-11-02T15:03:29.227Z",
+  "method_version": "0.3.1",
+  "tool": {
+    "assay_commit": "4e5cad4c4b6f87ea5f443586fbaa406d8a909a7e",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "25910b3d0ba31a2ba102f901cdc9e008c278a69c",
+    "files_scanned": 80,
+    "candidates": 186,
+    "excluded_non_shipped": 12,
+    "coverage": 0.43,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "skills/hf-cli/SKILL.md",
+        "sha": "2a01cd0f144f19d283196b02f3d5726a37733293"
+      },
+      {
+        "path": "skills/hf-cloud-aws-context-discovery/SKILL.md",
+        "sha": "fbf62203595b187ea833904f67ca0ae2fdaf39a6"
+      },
+      {
+        "path": "skills/hf-cloud-python-env-setup/SKILL.md",
+        "sha": "462a6b99e7767576e1ba6c39c1456873d020de92"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-deployment-planner/SKILL.md",
+        "sha": "c8e1b321698a3f6ede5cb607cf73cdd2dfc0e63a"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-iam-preflight/SKILL.md",
+        "sha": "ca0fe8b8dfb0e7b307b1b3f0dc612f3da279750d"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/SKILL.md",
+        "sha": "0161c21c4a12e0f79ff231d3e04871fa61e15bc7"
+      },
+      {
+        "path": "skills/hf-cloud-serving-image-selection/SKILL.md",
+        "sha": "1709fff53a6fe3005a3bc3120f91019482cd0e23"
+      },
+      {
+        "path": "skills/hf-mem/SKILL.md",
+        "sha": "fadc48b0e2a510e21345e3860c69ac799255d9c0"
+      },
+      {
+        "path": "skills/huggingface-best/SKILL.md",
+        "sha": "766c5d84ee8fa5e5b0dfc51411ea3e62cf0a8f9f"
+      },
+      {
+        "path": "skills/huggingface-community-evals/SKILL.md",
+        "sha": "a68b2e79958930b3913cb8e7667e07000031e40b"
+      },
+      {
+        "path": "skills/huggingface-datasets/SKILL.md",
+        "sha": "abafddcbe62bd6e549c095ee9ce23b921081fe22"
+      },
+      {
+        "path": "skills/huggingface-gradio/SKILL.md",
+        "sha": "81dfb05834ab34a13cb0171a2fb03e4557b1e148"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/SKILL.md",
+        "sha": "74ad29af05eee633fb4c04376118f751c24cdd5e"
+      },
+      {
+        "path": "skills/huggingface-local-models/SKILL.md",
+        "sha": "ece849559de75eaa8e9709a51e0e957e6ae630d3"
+      },
+      {
+        "path": "skills/huggingface-lora-space-builder/SKILL.md",
+        "sha": "c1d0cbbfa60999ced1f97e136af5010ab86c814c"
+      },
+      {
+        "path": "skills/huggingface-paper-publisher/SKILL.md",
+        "sha": "01b7db0cb9e30912eda8aa2b73a744c17ab1e176"
+      },
+      {
+        "path": "skills/huggingface-papers/SKILL.md",
+        "sha": "e65fc90acabc30208883238ec89a27c4cdc1b57e"
+      },
+      {
+        "path": "skills/huggingface-spaces/SKILL.md",
+        "sha": "bbae4511df2dac10581bf2ab5ef7eb4d8ecb9f22"
+      },
+      {
+        "path": "skills/huggingface-tool-builder/SKILL.md",
+        "sha": "0634af706451240f82faf0871a15b0faac5f39a2"
+      },
+      {
+        "path": "skills/huggingface-trackio/SKILL.md",
+        "sha": "df231aa06d661bf031aaad00dfa286ca83df4940"
+      },
+      {
+        "path": "skills/huggingface-vision-trainer/SKILL.md",
+        "sha": "5a2c554b04218a9c411c184fd749ffb6eb0daabe"
+      },
+      {
+        "path": "skills/huggingface-zerogpu/SKILL.md",
+        "sha": "7171d2b71c94eab597cbd8a4b38ba5ca489276af"
+      },
+      {
+        "path": "skills/train-sentence-transformers/SKILL.md",
+        "sha": "e7d1b49f0907be1d41aeed7b0b00dbb2df622643"
+      },
+      {
+        "path": "skills/transformers-js/SKILL.md",
+        "sha": "bc62aa1a63bc31ea9aea9456fed65b334e5010bd"
+      },
+      {
+        "path": "skills/trl-training/SKILL.md",
+        "sha": "9046f03f975bcc061234266e70cb56ab43892526"
+      },
+      {
+        "path": "hf-mcp/skills/hf-mcp/SKILL.md",
+        "sha": "eb717f2c916d6a03f4322272b0a51fb10963b349"
+      },
+      {
+        "path": "apps/evals-leaderboard/app.py",
+        "sha": "ff3850b042b063158fa3856039bcb32283a81a95"
+      },
+      {
+        "path": "apps/hackers-leaderboard/app.py",
+        "sha": "59e32f422f0204d64252d915aa319a09544608c8"
+      },
+      {
+        "path": "scripts/AGENTS_TEMPLATE.md",
+        "sha": "c6bd117bcba7d74556341665440ac6e3007862a6"
+      },
+      {
+        "path": "scripts/build_skill_distribution.py",
+        "sha": "0c9f606aabc60eeb4b5aa1ba8215ac02513e1c7c"
+      },
+      {
+        "path": "scripts/build_skills_index.py",
+        "sha": "4c9fa1579e0138e64c387e2120253131e379980e"
+      },
+      {
+        "path": "scripts/generate_agents.py",
+        "sha": "90ac76849672da0aef7cf9a5b52154d11ce547f4"
+      },
+      {
+        "path": "scripts/generate_cursor_plugin.py",
+        "sha": "3b519e3e2ac07ac15b89e436a30612365e171188"
+      },
+      {
+        "path": "scripts/plugin_versions.py",
+        "sha": "807e53b9421a75af72a9d3ae55db400d38a10692"
+      },
+      {
+        "path": "scripts/publish.sh",
+        "sha": "93f13a0eb7b55fece7955b073a14ff6785d87999"
+      },
+      {
+        "path": "scripts/run_skills_help.py",
+        "sha": "eb8be228008863b001dc31dc39ec1f53d57f4680"
+      },
+      {
+        "path": "scripts/skills_index_queries.json",
+        "sha": "eeffda9e37b1d4b70e33b1868e97dbd013c6d3e9"
+      },
+      {
+        "path": "scripts/UV_RULES.md",
+        "sha": "b2f0c3dad1d885a9ef83f224226fe1655e4f2647"
+      },
+      {
+        "path": ".mcp.json",
+        "sha": "a9a3c69b4c75e04c07e53f9f865804ee29173e97"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "1ef8d0e9cb7a8d9d68ab44aef596f07c2bc8ff61"
+      },
+      {
+        "path": "README.md",
+        "sha": "203d082a1f626cc91073f7202b0c3f0c52145285"
+      },
+      {
+        "path": ".claude-plugin/marketplace-internal.json",
+        "sha": "966685bcd1a2d8243664da919c147e0ff6f497dc"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "239389bea792c4769edb01ca127ac7297d8b1faf"
+      },
+      {
+        "path": ".claude-plugin/plugin.json",
+        "sha": "6617d0c3ddc251dbb0515205500ee466502349cc"
+      },
+      {
+        "path": ".cursor-plugin/marketplace.json",
+        "sha": "239389bea792c4769edb01ca127ac7297d8b1faf"
+      },
+      {
+        "path": ".cursor-plugin/plugin.json",
+        "sha": "81f266ed6c1a8b8733e858ea77f402b3f3121ac8"
+      },
+      {
+        "path": "agentsmd/AGENTS.md",
+        "sha": "bf7386b9952008b3cce64790edddb758e898cabf"
+      },
+      {
+        "path": "apps/evals-leaderboard/collect_evals.py",
+        "sha": "a2e2a7721d794dad382412024467bbe2c9ad1b9a"
+      },
+      {
+        "path": "apps/evals-leaderboard/requirements.txt",
+        "sha": "64affda844b262e0facc7c3ea07e79cb72d66eb0"
+      },
+      {
+        "path": "apps/hackers-leaderboard/collect_points.py",
+        "sha": "e8ea5bf5ba47cf0633e0e09042b0dea9df42d61b"
+      },
+      {
+        "path": "apps/hackers-leaderboard/README.md",
+        "sha": "6011c67a18a77bd68403e3891452df22f97b11cf"
+      },
+      {
+        "path": "apps/hackers-leaderboard/requirements.txt",
+        "sha": "49503c5461f571d9f8097bf5f9d47758de791347"
+      },
+      {
+        "path": "apps/quests/02_evaluate-hub-model.md",
+        "sha": "b3cff82c0ccb76fc58288e7495f4636dcc107ee7"
+      },
+      {
+        "path": "apps/quests/03_publish-hub-dataset.md",
+        "sha": "8486a0c72153e5d7d270829fe756a7e5aa1386de"
+      },
+      {
+        "path": "apps/quests/04_sft-finetune-hub.md",
+        "sha": "4a8f2c478c3a4f7f96f93b7bd1e13b1a0a16bf33"
+      },
+      {
+        "path": "apps/quests/README.md",
+        "sha": "f8585932973b57b5fba7649331ccb388ace22bf7"
+      },
+      {
+        "path": "skills/hf-cloud-python-env-setup/requirements.txt",
+        "sha": "461cf1f933013fd99a24220efbfe0f303bb0e083"
+      },
+      {
+        "path": "skills/huggingface-gradio/examples.md",
+        "sha": "b48c4cdc6dddbef128d026c1ec47442ebca51788"
+      },
+      {
+        "path": "skills/huggingface-spaces/README.md",
+        "sha": "4c8197f4861879178b95c0788d66bad558db4842"
+      },
+      {
+        "path": "skills/hf-cloud-python-env-setup/scripts/check_versions.py",
+        "sha": "c863f8dd5caabfd1f45dcd9f918c7c0858176fe4"
+      },
+      {
+        "path": "skills/hf-cloud-python-env-setup/scripts/setup_env.py",
+        "sha": "c1f164ab29c162b74e956165fca714d4d94cbcbf"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-iam-preflight/references/minimum-permissions.json",
+        "sha": "e0c6e1dca9607ce192716d4d17790d1eaf839029"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-iam-preflight/references/trust-policy.json",
+        "sha": "459fa5217ca2a73c39993a4945f59a3f7beb4550"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-iam-preflight/scripts/check_role.py",
+        "sha": "1744158c05f33ff1bfc5aae0da408670539fb8e4"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-iam-preflight/scripts/create_role.py",
+        "sha": "608483ac2c4803b5feed9bb9016c3a19cce7bb18"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/references/deployment-template.md",
+        "sha": "c2b52bfdf53a7fc0084919047a4836fc5b410c9c"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/_common.py",
+        "sha": "c4f13ce80dbfba9ec3395e3e5ac689440457aaf6"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/deploy_async.py",
+        "sha": "779a301b6d10c1f6fabff3b4bdef0c17682d0ac5"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/deploy_ic.py",
+        "sha": "223801574e42beae53d164aab3e323bf60f40d4e"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/deploy.py",
+        "sha": "f870cc5fb0bd2c82f875c818152060f54ef91e27"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/invoke_endpoint.py",
+        "sha": "08245d39cb3651abf873b7c6280a930aedbc2275"
+      },
+      {
+        "path": "skills/hf-cloud-sagemaker-production-defaults/scripts/teardown.py",
+        "sha": "c85b230bf3f543bc088ee843e2bcc9ae859870ba"
+      },
+      {
+        "path": "skills/hf-cloud-serving-image-selection/references/model-to-image.md",
+        "sha": "09d3888d73a979308b61eac364815b88ed97eab1"
+      },
+      {
+        "path": "skills/hf-cloud-serving-image-selection/scripts/mirror_image.py",
+        "sha": "e3eab00d9bd828c8964f74a11735e387d79b67c3"
+      },
+      {
+        "path": "skills/huggingface-community-evals/scripts/inspect_eval_uv.py",
+        "sha": "d398bc60b0bf4dcb5571ae144ce5fef5226d2467"
+      },
+      {
+        "path": "skills/huggingface-community-evals/scripts/inspect_vllm_uv.py",
+        "sha": "f1454c5a6e2cd2934a60eeab8d5826f6075e102a"
+      },
+      {
+        "path": "skills/huggingface-community-evals/scripts/lighteval_vllm_uv.py",
+        "sha": "91ba83b33f68d8b0705c6f9abe089ecf97cbb9d5"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/gguf_conversion.md",
+        "sha": "a99ea0e888a24895ab2017bc8fdab3d809f66f88"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/hardware_guide.md",
+        "sha": "22eba945ad61b93725d547a94bd130c422f98b27"
+      },
+      {
+        "path": "skills/huggingface-llm-trainer/references/hub_saving.md",
+        "sha": "734e49b51de8b0224a3e2ee91084432a2fdb5a76"
+      }
+    ],
+    "repo_pushed_at": "2026-10-30T14:12:53Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 40,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [
+      "docs-pipe-to-shell"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": true,
+      "file": "skills/hf-cli/SKILL.md",
+      "line": 6,
+      "snippet": "Install: `curl -LsSf https://hf.co/cli/install.sh | bash -s`.",
+      "deduction": 40
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "apps/quests/README.md",
+      "line": 68,
+      "snippet": "curl -LsSf https://hf.co/cli/install.sh | bash",
+      "deduction": 20
+    }
+  ],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 3
+  },
+  "network": {
+    "calls": 82,
+    "failed": 0,
+    "ms": 27870
+  },
+  "duration_ms": 27958
+}

@@ -1,0 +1,422 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T145410Z",
+  "target": {
+    "source": "github",
+    "id": "awslabs/mcp",
+    "url": "https://github.com/awslabs/mcp",
+    "name": "mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:03:59.679Z",
+  "method_version": "0.3.1",
+  "tool": {
+    "assay_commit": "4e5cad4c4b6f87ea5f443586fbaa406d8a909a7e",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "dc8221efe04220a5b6a765dabda6f0db743eb6bd",
+    "files_scanned": 80,
+    "candidates": 1684,
+    "excluded_non_shipped": 1683,
+    "coverage": 0.05,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/amazon-aurora-dsql-skill/SKILL.md",
+        "sha": "12cbcd477f30a7103faa65ed5adf972f110a0cb6"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/aurora-dsql-skill/SKILL.md",
+        "sha": "5c855149f408395047422e443677ad483bdeda17"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/aws-dsql-skill/SKILL.md",
+        "sha": "4762629bea7d2f56b13a52ca8fb37d0e24853727"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/distributed-postgres-skill/SKILL.md",
+        "sha": "3a7a0ee4d797f695e3f7d41687d2331ce1f9bd16"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/distributed-sql-skill/SKILL.md",
+        "sha": "c7b283a57cd27f6d9ef285e02c86210cd90fde11"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/dsql-skill/SKILL.md",
+        "sha": "26dfbe46bf5d9db8910a22561d45377e8dc2ee9c"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/skills/agentcore-investigation/SKILL.md",
+        "sha": "a5f2f5402f6ef2651fdd487a225783983ae9be61"
+      },
+      {
+        "path": "src/ecs-mcp-server/server.json",
+        "sha": "a433c3a7bbd420827d3109f9d8ba5c02cc4bdd87"
+      },
+      {
+        "path": "docusaurus/i18n/ja/docusaurus-plugin-content-docs/current/installation.md",
+        "sha": "ee3644f02a6b18ec10a185181a94c53d4c295e41"
+      },
+      {
+        "path": "scripts/migrate-mcp-v2.py",
+        "sha": "4368aed7e3b0d7042443b6a1d26fd0afafa0d415"
+      },
+      {
+        "path": "scripts/README.md",
+        "sha": "aa325a3e6a1a86c4eb570896e3ce2dc1a862bcc9"
+      },
+      {
+        "path": "scripts/verify_awslabs_init.py",
+        "sha": "f3be7f63a28b8deed378789edaad447c6289b97d"
+      },
+      {
+        "path": "scripts/verify_package_name.py",
+        "sha": "79c1c29bc75395d0c5b24f1ac35a0ee689053b2b"
+      },
+      {
+        "path": "scripts/verify_tool_names.py",
+        "sha": "e5a17fb8b7b24843ad14edb8961f7b9662183395"
+      },
+      {
+        "path": "scripts/verify-mcp-v2-locks.py",
+        "sha": "a9193ab6b16108c100e34f7ca2e1c1eb41a172f3"
+      },
+      {
+        "path": "src/amazon-bedrock-agentcore-mcp-server/awslabs/amazon_bedrock_agentcore_mcp_server/server.py",
+        "sha": "e2bcba70cb0cfeff6e9159ab6e84052ffc42de0b"
+      },
+      {
+        "path": "src/amazon-kendra-index-mcp-server/awslabs/amazon_kendra_index_mcp_server/server.py",
+        "sha": "5ce9229bedcab1df48335e9f31a04507210ff2d9"
+      },
+      {
+        "path": "src/amazon-keyspaces-mcp-server/awslabs/amazon_keyspaces_mcp_server/server.py",
+        "sha": "dd1d57e684334eef8479844a4fb4776582af3b05"
+      },
+      {
+        "path": "src/amazon-mq-mcp-server/awslabs/amazon_mq_mcp_server/server.py",
+        "sha": "ffc9087bde7e2bcb2397fd1b70574d07d4568239"
+      },
+      {
+        "path": "src/amazon-neptune-mcp-server/awslabs/amazon_neptune_mcp_server/server.py",
+        "sha": "83744fcb96f3a243c4daa6abed495732b236f0f2"
+      },
+      {
+        "path": "src/amazon-qbusiness-anonymous-mcp-server/awslabs/amazon_qbusiness_anonymous_mcp_server/server.py",
+        "sha": "9e0b421168da77444e283d4c0c681a22be14d1e1"
+      },
+      {
+        "path": "src/amazon-qindex-mcp-server/awslabs/amazon_qindex_mcp_server/server.py",
+        "sha": "1257bce2926e6ac062e8fac39cedaa1e94d41478"
+      },
+      {
+        "path": "src/amazon-sns-sqs-mcp-server/awslabs/amazon_sns_sqs_mcp_server/server.py",
+        "sha": "2af2c04721385bc791ad9ed0ad328d88a6c6490e"
+      },
+      {
+        "path": "src/amazon-translate-mcp-server/awslabs/amazon_translate_mcp_server/server.py",
+        "sha": "c1e8c77dd93242e1aec713945c82f5f1237a1c31"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/awslabs/aurora_dsql_mcp_server/server.py",
+        "sha": "07488b1ca480d5a68a79d68de250d6c23085c8db"
+      },
+      {
+        "path": "src/aws-api-mcp-server/awslabs/aws_api_mcp_server/server.py",
+        "sha": "3deaba3f86506a700ea3b7ef0c5c5f8b51a967ac"
+      },
+      {
+        "path": "src/aws-appsync-mcp-server/awslabs/aws_appsync_mcp_server/server.py",
+        "sha": "e846be4be57c7cb80daace0d525b5dfae949ed01"
+      },
+      {
+        "path": "src/aws-bedrock-custom-model-import-mcp-server/awslabs/aws_bedrock_custom_model_import_mcp_server/server.py",
+        "sha": "f58fd4a3f198c8180fe323d03990c40b9836057f"
+      },
+      {
+        "path": "src/aws-dataprocessing-mcp-server/awslabs/aws_dataprocessing_mcp_server/server.py",
+        "sha": "08c66c331ccf79a7f0944559cf3e03d81eee6259"
+      },
+      {
+        "path": "src/aws-documentation-mcp-server/awslabs/aws_documentation_mcp_server/server.py",
+        "sha": "582ecd1595318a20d92aaf07e653ba9b7841ede9"
+      },
+      {
+        "path": "src/aws-for-sap-management-mcp-server/awslabs/aws_for_sap_management_mcp_server/server.py",
+        "sha": "0606af3257049b782a760fbd383eb3bb37fdaebb"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/awslabs/aws_healthomics_mcp_server/server.py",
+        "sha": "970b44f3be813f680cc65a426a35a442018356c6"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/integration/deploy/cli.py",
+        "sha": "87d722334af21d12ae9af2305a77bbf28625bea8"
+      },
+      {
+        "path": "src/aws-iac-mcp-server/awslabs/aws_iac_mcp_server/server.py",
+        "sha": "454cda27fb07997f905f1b4c7089ccc554108fee"
+      },
+      {
+        "path": "src/aws-iot-sitewise-mcp-server/awslabs/aws_iot_sitewise_mcp_server/server.py",
+        "sha": "ee8a27437d2f3c0610bec33ee5d1badd169e96fb"
+      },
+      {
+        "path": "src/aws-location-mcp-server/awslabs/aws_location_server/server.py",
+        "sha": "cf8ac77e4ce368abab4f78ac6a0c95af9687d2f0"
+      },
+      {
+        "path": "src/aws-network-mcp-server/awslabs/aws_network_mcp_server/server.py",
+        "sha": "bfa4bcf3aa2e33c7318b231122385309344e61c3"
+      },
+      {
+        "path": "src/aws-pricing-mcp-server/awslabs/aws_pricing_mcp_server/server.py",
+        "sha": "d30048293a1ca9914fba09659f6ce1411cbc4cce"
+      },
+      {
+        "path": "src/aws-serverless-mcp-server/awslabs/aws_serverless_mcp_server/server.py",
+        "sha": "f3c998c3a8890f43fec751081c8466ae3f55f25f"
+      },
+      {
+        "path": "src/aws-support-mcp-server/awslabs/aws_support_mcp_server/server.py",
+        "sha": "bcdb5cacddd2f6787960dd9730d4328f7e991495"
+      },
+      {
+        "path": "src/aws-transform-mcp-server/awslabs/aws_transform_mcp_server/server.py",
+        "sha": "045252770f992470b8c2a7bdeafc3cf64eb35531"
+      },
+      {
+        "path": "src/bedrock-kb-retrieval-mcp-server/awslabs/bedrock_kb_retrieval_mcp_server/server.py",
+        "sha": "7f495d59e09a4f3866112455f022f065864f54a5"
+      },
+      {
+        "path": "src/billing-cost-management-mcp-server/awslabs/billing_cost_management_mcp_server/server.py",
+        "sha": "98a6d3ec51571eb6a2dbb5c200a7e24c33c88281"
+      },
+      {
+        "path": "src/ccapi-mcp-server/awslabs/ccapi_mcp_server/server.py",
+        "sha": "41a0cad0cb66f16b05ce312ec00ed0d99b893bb5"
+      },
+      {
+        "path": "src/cloudtrail-mcp-server/awslabs/cloudtrail_mcp_server/server.py",
+        "sha": "484637d893e4a7f1d4b7cdcddf68268a2ce8d649"
+      },
+      {
+        "path": "src/cloudtrail-mcp-server/awslabs/cloudtrail_mcp_server/tools.py",
+        "sha": "a830f3174df31fb6da51322c9b54f5b5e3cf7df6"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/awslabs/cloudwatch_applicationsignals_mcp_server/server.py",
+        "sha": "aaf4e6930a78b77eb8f304353a74c9bd433f34d3"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/awslabs/cloudwatch_mcp_server/server.py",
+        "sha": "d0e18f9228a0c864846c7898bc382d0f381f2bee"
+      },
+      {
+        "path": "src/db2-mcp-server/awslabs/db2_mcp_server/server.py",
+        "sha": "ccf45dd95909de3432172aacf05a3ffb929a83b5"
+      },
+      {
+        "path": "src/document-loader-mcp-server/awslabs/document_loader_mcp_server/server.py",
+        "sha": "de3e1e2d75de75006b89f43ca8c26ed74c28d564"
+      },
+      {
+        "path": "src/documentdb-mcp-server/awslabs/documentdb_mcp_server/server.py",
+        "sha": "23122c8e54d86f311eb1ed589330271fab33cbbc"
+      },
+      {
+        "path": "src/dynamodb-mcp-server/awslabs/dynamodb_mcp_server/server.py",
+        "sha": "0d8ae5a67db4c35d23f77ea1ff4c14a9a2453df2"
+      },
+      {
+        "path": "src/ecs-mcp-server/awslabs/ecs_mcp_server/main.py",
+        "sha": "a6103f0e3689055bdf46be63ea850be9e580584b"
+      },
+      {
+        "path": "src/eks-mcp-server/awslabs/eks_mcp_server/server.py",
+        "sha": "3407ffa4ccee187e19c0c35c0bbe0d91309a172d"
+      },
+      {
+        "path": "src/elasticache-mcp-server/awslabs/elasticache_mcp_server/main.py",
+        "sha": "60cd2737414fe18fc19f1ff37aa547181dafade0"
+      },
+      {
+        "path": "src/finch-mcp-server/awslabs/finch_mcp_server/server.py",
+        "sha": "20c99ac960dc0b66370b12c9bdb03e3e28b67d4d"
+      },
+      {
+        "path": "src/healthimaging-mcp-server/awslabs/healthimaging_mcp_server/main.py",
+        "sha": "617a0e64f34045101de596bf39c4020bfc330ca1"
+      },
+      {
+        "path": "src/healthimaging-mcp-server/awslabs/healthimaging_mcp_server/server.py",
+        "sha": "df672ad6880bb408b3d0d595e84317634d76d07c"
+      },
+      {
+        "path": "src/healthlake-mcp-server/awslabs/healthlake_mcp_server/main.py",
+        "sha": "01c283af8a67372031bb63c59372dcd2f671a59f"
+      },
+      {
+        "path": "src/healthlake-mcp-server/awslabs/healthlake_mcp_server/server.py",
+        "sha": "b323d9aef5b88abe34cc9de38dabea2b429215c9"
+      },
+      {
+        "path": "src/iam-mcp-server/awslabs/iam_mcp_server/server.py",
+        "sha": "153ebad406eedea5f643a85add5eece399d4d032"
+      },
+      {
+        "path": "src/lambda-tool-mcp-server/awslabs/lambda_tool_mcp_server/server.py",
+        "sha": "392457e97e19392c48add7706c3d35a22dd3e731"
+      },
+      {
+        "path": "src/memcached-mcp-server/awslabs/memcached_mcp_server/main.py",
+        "sha": "9dc21898f9e5844e5a04e8c8987ee8857d739f36"
+      },
+      {
+        "path": "src/mssql-mcp-server/awslabs/mssql_mcp_server/server.py",
+        "sha": "49972e43260dc6c0e39ddf9b5aad79c479db86cd"
+      },
+      {
+        "path": "src/mysql-mcp-server/awslabs/mysql_mcp_server/server.py",
+        "sha": "95cc37f42cdab82d1c44bcc0962f53e3ddeca8ec"
+      },
+      {
+        "path": "src/openapi-mcp-server/awslabs/openapi_mcp_server/server.py",
+        "sha": "8a3023fb1f9fcd3dd838e3a5d493fbd20bf0a046"
+      },
+      {
+        "path": "src/oracle-mcp-server/awslabs/oracle_mcp_server/server.py",
+        "sha": "e5baf60155ab6c69d27b374ca3a241afb754c97b"
+      },
+      {
+        "path": "src/postgres-mcp-server/awslabs/postgres_mcp_server/server.py",
+        "sha": "b63b2e6c835ac1f9a4b62e49f23108d55ec171de"
+      },
+      {
+        "path": "src/prometheus-mcp-server/awslabs/prometheus_mcp_server/server.py",
+        "sha": "6f7c7ea17cd18dee66435673f80e28cbd74a75c8"
+      },
+      {
+        "path": "src/redshift-mcp-server/awslabs/redshift_mcp_server/server.py",
+        "sha": "5133a09e02e49f59ab7d296c3cee421ba1b4ffe9"
+      },
+      {
+        "path": "src/roda-mcp-server/awslabs/roda_mcp_server/server.py",
+        "sha": "0c843019085d27c110ad2afe6557c1c8f6c778aa"
+      },
+      {
+        "path": "src/s3-tables-mcp-server/awslabs/s3_tables_mcp_server/server.py",
+        "sha": "533f0bcbce4d2f6342cc7efa07a7d31abd292ebd"
+      },
+      {
+        "path": "src/sagemaker-ai-mcp-server/awslabs/sagemaker_ai_mcp_server/server.py",
+        "sha": "1effcde5436e0c841dfe4be78dd645b494468b0d"
+      },
+      {
+        "path": "src/security-agent-mcp-server/awslabs/security_agent_mcp_server/server.py",
+        "sha": "dcd7bb1c0534cfa8638208dafee30b97e0a8e5da"
+      },
+      {
+        "path": "src/stepfunctions-tool-mcp-server/awslabs/stepfunctions_tool_mcp_server/server.py",
+        "sha": "617214ce669729c17fa107b6904773e4347e764e"
+      },
+      {
+        "path": "src/timestream-for-influxdb-mcp-server/awslabs/timestream_for_influxdb_mcp_server/server.py",
+        "sha": "1c6936af37ef35a5875c13f94af9a2fddeb5ddeb"
+      },
+      {
+        "path": "src/valkey-mcp-server/awslabs/valkey_mcp_server/main.py",
+        "sha": "0ca7f32024cefd36759c7a4efb3f1c4d6ab82376"
+      },
+      {
+        "path": "src/well-architected-security-mcp-server/awslabs/well_architected_security_mcp_server/server.py",
+        "sha": "d351e62bae81b2654e7a27afaea227cd034fd6e3"
+      },
+      {
+        "path": "docusaurus/package.json",
+        "sha": "2871470a259cd4079ab8291e1284b5824d35ad40"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "9dd0ae5527d96c99216f0c21057d64b9f3763b01"
+      }
+    ],
+    "repo_pushed_at": "2026-11-01T23:20:34Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 89,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 55,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/aurora-dsql-mcp-server/awslabs/aurora_dsql_mcp_server/server.py",
+      "line": 83,
+      "snippet": "knowledge_server = 'https://d38p8g9d7yc7ms.cloudfront.net'",
+      "host": "d38p8g9d7yc7ms.cloudfront.net",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/aws-serverless-mcp-server/awslabs/aws_serverless_mcp_server/server.py",
+      "line": 117,
+      "snippet": "- Provides sample SAM templates for different serverless application types from [Serverless Land](https://serverlessland.com/)",
+      "host": "serverlessland.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/roda-mcp-server/awslabs/roda_mcp_server/server.py",
+      "line": 41,
+      "snippet": "REGISTRY_NDJSON_URL = 'https://registry.opendata.aws/index.ndjson'",
+      "host": "registry.opendata.aws",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "d38p8g9d7yc7ms.cloudfront.net",
+      "serverlessland.com",
+      "registry.opendata.aws"
+    ],
+    "declared_hosts": 3,
+    "install_detected": true,
+    "age_days": 1
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 30322
+  },
+  "duration_ms": 30451
+}

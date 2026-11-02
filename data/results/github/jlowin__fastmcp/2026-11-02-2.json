@@ -1,0 +1,402 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T145410Z",
+  "target": {
+    "source": "github",
+    "id": "jlowin/fastmcp",
+    "url": "https://github.com/jlowin/fastmcp",
+    "name": "fastmcp"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:00:59.011Z",
+  "method_version": "0.3.1",
+  "tool": {
+    "assay_commit": "4e5cad4c4b6f87ea5f443586fbaa406d8a909a7e",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "588297eb53c00d8a60291b05d4315fe753355c10",
+    "files_scanned": 80,
+    "candidates": 351,
+    "excluded_non_shipped": 856,
+    "coverage": 0.23,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "skills/fastmcp-client-cli/SKILL.md",
+        "sha": "ae66a5e3121c36c10d57236ffdae188d685ddeba"
+      },
+      {
+        "path": "skills/fastmcp-server/SKILL.md",
+        "sha": "7b71de3f1089f04496b58fd3ecdcc6782df134a6"
+      },
+      {
+        "path": ".agents/skills/adversarial-review/SKILL.md",
+        "sha": "99ca4115c3725dabdc27b186108e05b0a80c3ef3"
+      },
+      {
+        "path": ".agents/skills/fix-issue/SKILL.md",
+        "sha": "ba33d334d16d0253be012b833c4b1239442d5fcf"
+      },
+      {
+        "path": ".agents/skills/python-tests/SKILL.md",
+        "sha": "aa69967188968b4dfa9951a21c488ffe19052d96"
+      },
+      {
+        "path": ".agents/skills/release/SKILL.md",
+        "sha": "562a4456df8b6f5c661b8026876e4f83a9abe8dd"
+      },
+      {
+        "path": ".agents/skills/review-issue/SKILL.md",
+        "sha": "949a3cfb373beb16629aa32cd6622ce0be307334"
+      },
+      {
+        "path": ".agents/skills/review-pr/SKILL.md",
+        "sha": "4c03948dfa750563eebf51f50d009f90ecb87501"
+      },
+      {
+        "path": ".agents/skills/review-security-report/SKILL.md",
+        "sha": "a8d4490d9622d7e93fe41afad3606ae8b46b5296"
+      },
+      {
+        "path": ".agents/skills/triage/SKILL.md",
+        "sha": "300a45e9755b535037306b307febcca7add6d45f"
+      },
+      {
+        "path": "status-site/app.js",
+        "sha": "a892d3bcbb8ef5ad315923881159453db8411c73"
+      },
+      {
+        "path": "dev-docs/v4-notes/index.md",
+        "sha": "478eb79fe3b608e7d7c702d358860f1094fd52de"
+      },
+      {
+        "path": "fastmcp_remote/fastmcp_remote/cli.py",
+        "sha": "f72aacb6c91ed84a89d248b7dc62f2a2475a8b3b"
+      },
+      {
+        "path": "scripts/auto_close_duplicates.py",
+        "sha": "40318bfddeae813f80dbaf2976b105fd15ef97e4"
+      },
+      {
+        "path": "scripts/auto_close_needs_mre.py",
+        "sha": "240e83a01b91b527e6a7dc5ebf0e563a268b0308"
+      },
+      {
+        "path": "scripts/backlog_status.py",
+        "sha": "7b65b66e9d88fb6b2913f958f27a58089db4cacc"
+      },
+      {
+        "path": "scripts/benchmark_http_startup.py",
+        "sha": "54162ec4f85b1ddc7e3a7ef379ebb7094ffec53a"
+      },
+      {
+        "path": "scripts/benchmark_imports.py",
+        "sha": "6ad1dfe576460c8d8375b2247ce4aed3e81b8e7b"
+      },
+      {
+        "path": "scripts/maintenance_status.py",
+        "sha": "74406ed5a800a499e51bda51254d577178cd436b"
+      },
+      {
+        "path": "scripts/rank_issues.py",
+        "sha": "052675a59145e966f6cc55c0c691489a13bef9b7"
+      },
+      {
+        "path": "scripts/release_contributor_credit.py",
+        "sha": "d71b09973fd6734285e91c952e52c9da553b26f5"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "5f6ef5b6d6bb80c251bf616fab82ec7a82823de0"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "ddf9d8033903404dc599f34dba894476b25bcfcc"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "026b0a2cde1070b9e490bd6fcd7c13fbbf2777e4"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "84d4e10c28970e9aff9892e13155d900791fec33"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/apps/app.py",
+        "sha": "268ce929969a430f41ae4d218c55015e680625df"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/cli/cli.py",
+        "sha": "7cd8e6633cf4f5b5dd69c502a3ef074ad0aee138"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/server/server.py",
+        "sha": "53d00d5a5de610fd6c2328be3652ae8c8bb23058"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/utilities/cli.py",
+        "sha": "1f0a8d3605e50fc8384307b21cb591b5a9b31319"
+      },
+      {
+        "path": "README.md",
+        "sha": "436e1a9d3d88404dcb5c2ec904d60c8a27e57d23"
+      },
+      {
+        "path": "renovate.json",
+        "sha": "a61143b8c4a1f307384a2f4ccd48a986527b6a6f"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "bea822e9dadc9cf9bc0b2280a03cdb9bb7a58d0d"
+      },
+      {
+        "path": "fastmcp_remote/README.md",
+        "sha": "7f576eb705a5468549ea64f8063480190f621dd1"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/client/mixins/tools.py",
+        "sha": "d0548ed012fdeacfd5ba006ca213aff66a6c08c1"
+      },
+      {
+        "path": "fastmcp_slim/README.md",
+        "sha": "a9b155fc6671e4bc8c3bf907bdb086d03281927c"
+      },
+      {
+        "path": "fastmcp_tasks/README.md",
+        "sha": "f8564ea5e2b9cd80ab97b7a31623fb8571bd9cd8"
+      },
+      {
+        "path": "status-site/operations.js",
+        "sha": "84f47af0a5aab97ac4da8d7745f859b30a779de3"
+      },
+      {
+        "path": "status-site/README.md",
+        "sha": "31d52d9817adf22f292c4a83dd376180e3d26bac"
+      },
+      {
+        "path": "dev-docs/v3-notes/auth-provider-env-vars.md",
+        "sha": "c61f61cbea185094dee5319eeb69cc43c6119084"
+      },
+      {
+        "path": "dev-docs/v3-notes/get-methods-consolidation.md",
+        "sha": "70b64c9c7c2546514aa1f61e8ebc0c26fb700c29"
+      },
+      {
+        "path": "dev-docs/v3-notes/prompt-internal-types.md",
+        "sha": "addbd01c37640858dccd41059d2f3e5cbf723354"
+      },
+      {
+        "path": "dev-docs/v3-notes/provider-architecture.md",
+        "sha": "b1a0e80813b1dc847f3aef2bbd65660370592637"
+      },
+      {
+        "path": "dev-docs/v3-notes/provider-test-pattern.md",
+        "sha": "c37c14c8a250a420ed823e3af9ec1396bf048b00"
+      },
+      {
+        "path": "dev-docs/v3-notes/resource-internal-types.md",
+        "sha": "24cd6328ca0fdf4d9038a86232087e1beba4c0f4"
+      },
+      {
+        "path": "dev-docs/v3-notes/task-meta-parameter.md",
+        "sha": "4678c426e577845b06d0b2ab64e899e0a07c5ee4"
+      },
+      {
+        "path": "dev-docs/v3-notes/v3-features.md",
+        "sha": "62d11e0b161e9cf31da7493c9ec73e537ce39b51"
+      },
+      {
+        "path": "dev-docs/v3-notes/visibility.md",
+        "sha": "fa1c0406c10246c9d5fee7fbc582c9ddbdbda93f"
+      },
+      {
+        "path": "dev-docs/v4-notes/background-tasks.md",
+        "sha": "125c8ba73f066c08244be8190385bc5c79191478"
+      },
+      {
+        "path": "dev-docs/v4-notes/change-register.md",
+        "sha": "eb1db6549839c7dfd031665670630acc8c17d276"
+      },
+      {
+        "path": "dev-docs/v4-notes/client-groups.md",
+        "sha": "1ccc02bee49f97ac47836dcfa0a76817c428ff8c"
+      },
+      {
+        "path": "dev-docs/v4-notes/feature-program.md",
+        "sha": "8c7b9f0224e82838e21cadfafaa24b900d886c4b"
+      },
+      {
+        "path": "dev-docs/v4-notes/known-gaps.md",
+        "sha": "92c8f7cdff4775553a8d3f1aacd415ff489596a3"
+      },
+      {
+        "path": "dev-docs/v4-notes/protocol-2026.md",
+        "sha": "fb3ef54283962067b10993b000748a67f25328cf"
+      },
+      {
+        "path": "dev-docs/v4-notes/stateless-session-state.md",
+        "sha": "5b0bea73c6ae82a0bddfcb79aeceaa874ae4812a"
+      },
+      {
+        "path": "fastmcp_remote/fastmcp_remote/__init__.py",
+        "sha": "a8af334a295ef240b583a6e6a234cdf4e9513741"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/__init__.py",
+        "sha": "0204b5c30d7d09672dc5de1b158bf4c3f710f5da"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/_compat.py",
+        "sha": "cefc67b498b1295f6b4e1f4a5c1794f3564c1204"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/_install_hints.py",
+        "sha": "89c25f49029e8ba6ef8f8161b365b022cfcf1b4d"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/_warnings.py",
+        "sha": "c63b97a5deff006f1a5aa6cc55a0166dce443533"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/decorators.py",
+        "sha": "b61a90c625f34632b0a5e1a8be1070c5191ed45f"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/dependencies.py",
+        "sha": "2f0ac00eb307d986842d0d170b5ba6614845f452"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/exceptions.py",
+        "sha": "3fa255acd18005e33ca8806b4412153809a40581"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/mcp_config.py",
+        "sha": "c311da00d29dcd77ac4d7711e65769decf8c8a7b"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/settings.py",
+        "sha": "e58a28bf5d59d880de99279eb0de4b69c9663024"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/telemetry.py",
+        "sha": "61d751fede88f54dfd8583b12b398f53adfe3c95"
+      },
+      {
+        "path": "fastmcp_slim/fastmcp/types.py",
+        "sha": "b7ac46d8853c52d356413abcc86bdec166f0451c"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/__init__.py",
+        "sha": "7d6420426b64c5d0b6a423e195cd8c0902d48b09"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/client_models.py",
+        "sha": "3df5293dff0edda2fdf78055fba8bb0ae968ee41"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/client.py",
+        "sha": "82c9041d27e2122a11781fa879a1272be946d5e7"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/components.py",
+        "sha": "f4e6d3c221ce6da66182f3d323ea735520cda1a6"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/context.py",
+        "sha": "64d6f474b9a3ecbda1d07daec90f3d7426463633"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/creation.py",
+        "sha": "7fc65ead95172f04f06ef80cbf2925a0fa8e7f05"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/dependencies.py",
+        "sha": "0598fe6af65e3988aa6b4706e26cb1202ca904f3"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/encryption.py",
+        "sha": "34b4fec1235b0f43eaed64741bd47090dcc77435"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/extension.py",
+        "sha": "6c9488e90cc4626253e1bf5cafd995dc33647996"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/handlers.py",
+        "sha": "c6c9a22f012c387626aae558f9cfe568a6d7967f"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/input_loop.py",
+        "sha": "f1f146c094a1f5cc7e98970960904b8f3d32322e"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/input_store.py",
+        "sha": "6d2e20e3bb47b32d50dbe23405a223528c466401"
+      },
+      {
+        "path": "fastmcp_tasks/fastmcp_tasks/keys.py",
+        "sha": "e0bc4ae563154d1df9a0fae2b7afef8508cc6009"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T14:43:14Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 96,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 85,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "status-site/app.js",
+      "line": 3,
+      "snippet": "window.location.origin === \"https://prefecthq.github.io\"",
+      "host": "prefecthq.github.io",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "prefecthq.github.io"
+    ],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 82,
+    "failed": 0,
+    "ms": 27978
+  },
+  "duration_ms": 28070
+}

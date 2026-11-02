@@ -23,6 +23,9 @@ const EXEC_TEXT = [
   ['paste-command', /\b(paste|copy)\b[^\n]{0,80}\b(terminal|shell|command prompt|powershell|console)\b/i, 'doc-only'],
 ];
 
+// Hosting that is free, anonymous or short-lived and favoured for staging payloads, plus URL shorteners.
+const STAGING_HOST = /(^|\.)(glot\.io|bit\.ly|tinyurl\.com|t\.co|is\.gd|rb\.gy|cutt\.ly|ngrok(-free)?\.(io|app|dev)|trycloudflare\.com|workers\.dev|pages\.dev|herokuapp\.com|repl\.co|replit\.dev|web\.app|firebaseapp\.com|glitch\.me|000webhostapp\.com|duckdns\.org|no-ip\.(org|com)|pastebin\.com|paste\.ee|transfer\.sh|file\.io|0x0\.st|ix\.io)$/i;
+const IP_HOST = /^\d{1,3}(\.\d{1,3}){3}$/;
 const PERSIST = /(\bcrontab\s+-|\/etc\/cron|launchctl\s+(load|bootstrap)|LaunchAgents|systemctl\s+(--user\s+)?enable|>>\s*~?\/?\.?(bashrc|zshrc|profile|bash_profile|zprofile)\b|\bschtasks\b|reg\s+add[^\n]*\\Run\b)/i;
 const CRED = /(\.ssh\/(id_[a-z0-9]+|authorized_keys)|\.aws\/credentials|\.npmrc|\.netrc|\.docker\/config\.json|\.kube\/config|Login Data|Local Storage\/leveldb|\.config\/gcloud|\.gnupg|wallet\.dat|\.clawdbot\/\.env|\.pypirc|\.git-credentials)/i;
 const ENV_DUMP_PY = /(dict\(\s*os\.environ\s*\)|json\.dumps\(\s*(dict\()?\s*os\.environ|os\.environ\.items\(\))/;
@@ -64,9 +67,14 @@ export function extendedScan(shipped, ctx) {
         const loc = find(clean, re, f.text);
         if (!loc) continue;
         if (rule === 'pipe-to-shell') {
-          const h = hostOf(loc.snippet);
+          const url = (/https?:\/\/[^\s|)'"`]+/.exec(loc.snippet) || [''])[0];
+          const h = hostOf(url);
           if (!isSkill && h && hostAllowed(h, VENDOR_INSTALL_HOSTS)) continue; // normal vendor installers in README
-          add('dangerous_patterns', 'docs-' + rule, isSkill || SHELL.test(f.path), f, loc, isSkill || SHELL.test(f.path) ? 40 : 20);
+          // A plain `curl <named https host> | sh` is a normal, risky install style and is reported as a weak finding.
+          // It becomes severe with strong attacker signals: no TLS, bare IP, staging or shortener host, concealment, or encoded content.
+          const strong = !url || /^http:\/\//i.test(url) || IP_HOST.test(h || '') || STAGING_HOST.test(h || '') || CONCEAL.test(f.text) || /base64|-enc\b/i.test(loc.snippet);
+          const sev = (isSkill || SHELL.test(f.path)) && strong;
+          add('dangerous_patterns', 'docs-' + rule, sev, f, loc, sev ? 40 : 25);
         } else if (rule === 'paste-command') {
           // Only meaningful in a SKILL.md: skills should not ask the human to paste commands.
           if (isSkill) add('dangerous_patterns', 'skill-paste-command', true, f, loc, 40);
@@ -125,6 +133,13 @@ export function extendedScan(shipped, ctx) {
       const mark = find(f.text, POISON_MARK) || find(f.text, POISON_MARK_I);
       if (mark && (isSkill || isCode || isDoc)) {
         add('instruction_hygiene', 'tool-poisoning-marker', hasConceal, f, mark, hasConceal ? 40 : 15);
+      }
+      // Concealment wording alone appears in ordinary product prompts; it is severe only next to a sensitive action.
+      const concealLoc = find(f.text, CONCEAL);
+      if (concealLoc && (isSkill || isDoc || isCode)) {
+        const win = f.text.slice(Math.max(0, f.text.split('\n').slice(0, concealLoc.line - 1).join('\n').length - 300), f.text.split('\n').slice(0, concealLoc.line).join('\n').length + 300);
+        const action = /\b(send|upload|post|forward|transmit|exfiltrat\w*|read|cat|credentials?|ssh|token|password|secret|\.env|curl|wget)\b/i.test(win);
+        add('instruction_hygiene', 'concealment-instruction', action, f, concealLoc, action ? 40 : 15);
       }
       for (const re of INJECT_EXTRA) {
         const loc = find(f.text, re);

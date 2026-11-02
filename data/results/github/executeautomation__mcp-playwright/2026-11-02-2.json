@@ -1,0 +1,274 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T145410Z",
+  "target": {
+    "source": "github",
+    "id": "executeautomation/mcp-playwright",
+    "url": "https://github.com/executeautomation/mcp-playwright",
+    "name": "mcp-playwright"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:01:34.727Z",
+  "method_version": "0.3.1",
+  "tool": {
+    "assay_commit": "4e5cad4c4b6f87ea5f443586fbaa406d8a909a7e",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "2349c2891e7c499c8c07b7d78c7f3fb4c797a1da",
+    "files_scanned": 51,
+    "candidates": 51,
+    "excluded_non_shipped": 36,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/index.ts",
+        "sha": "acbd0df28e25460ddc155194c6a2eccf6b9ca322"
+      },
+      {
+        "path": "src/tools.ts",
+        "sha": "783fdaa76ca5532fed78019b0c3afd6c566774d5"
+      },
+      {
+        "path": "src/logging/index.ts",
+        "sha": "c8c226ed2d37f481eef8b42655d12125b8691ad2"
+      },
+      {
+        "path": "src/monitoring/index.ts",
+        "sha": "ed44b495e3b7a7fcd15d6610f0652964ac0c45ab"
+      },
+      {
+        "path": "src/rate-limiting/index.ts",
+        "sha": "fe5a833bb5939fc94f5fc3b352439ef0be30b906"
+      },
+      {
+        "path": "src/sse/index.ts",
+        "sha": "a5a30df9ce6f13624623cc7294a1274a22842e86"
+      },
+      {
+        "path": "src/sse/server.ts",
+        "sha": "de778fddab611eb09e26957f0711e890f3f1b3d3"
+      },
+      {
+        "path": "src/tools/index.ts",
+        "sha": "cb4e266655cecdc4e048daa64853fde5e04df6c0"
+      },
+      {
+        "path": "src/tools/api/index.ts",
+        "sha": "402160d6f37d0ed03c3652e64efd03399574b636"
+      },
+      {
+        "path": "src/tools/browser/index.ts",
+        "sha": "0d5f80e18074ee38225ec722ba89910cec57b283"
+      },
+      {
+        "path": "src/tools/codegen/index.ts",
+        "sha": "ef9d8da6144da81d1923d16bfc1b108df92ed056"
+      },
+      {
+        "path": "package.json",
+        "sha": "6a1f8ea8ad6f43a47c89d48d49e39d3ed15ff8fb"
+      },
+      {
+        "path": "src/http-server.ts",
+        "sha": "b7604506c68caef8fe176b0ca266c5e6d750bdb5"
+      },
+      {
+        "path": "src/requestHandler.ts",
+        "sha": "d819d4ecb46b023d0f714ea0c9ea50be290bea2b"
+      },
+      {
+        "path": "src/toolHandler.ts",
+        "sha": "846c57c282f527e291d5694e3b23025b4039d0a7"
+      },
+      {
+        "path": "src/types.ts",
+        "sha": "e1305fdd2928b4cc4f8c84d4bf01176ee075e6f7"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "0b30f84134633e54c68719f3bb204037e01fea48"
+      },
+      {
+        "path": "docker-build.sh",
+        "sha": "65ba3d4227953a72c7e42fcb2635bf31fcacaed8"
+      },
+      {
+        "path": "docker-compose.yml",
+        "sha": "36089196a50d9b8c2f93653b68d031cb39b6d20b"
+      },
+      {
+        "path": "DOCKER.md",
+        "sha": "11416a06870783ae5c7b4a4ee62849bd341d61ea"
+      },
+      {
+        "path": "mcp-config.json",
+        "sha": "445ad128bfdb14fb934beb6be350a0808f396b35"
+      },
+      {
+        "path": "README.md",
+        "sha": "8ca7b0993b56f1d7ecc5fe71226c2100d6f4362d"
+      },
+      {
+        "path": "run-tests.js",
+        "sha": "11a5320bba77c0a7cdac3b47b01e3cd7f89c45dd"
+      },
+      {
+        "path": "smithery.yaml",
+        "sha": "66e0e35cd1e6fd63761c6bc89f7059da12297ee8"
+      },
+      {
+        "path": "src/evals/evals.ts",
+        "sha": "f0ae46235ecd076f5977bd4ba0634491b0a49d25"
+      },
+      {
+        "path": "src/logging/logger.ts",
+        "sha": "d03228042ecd5a712bb74ae7491f3f3470559371"
+      },
+      {
+        "path": "src/logging/middleware.ts",
+        "sha": "a664ef9d21423318a2faf80f9425e87f061a068b"
+      },
+      {
+        "path": "src/logging/types.ts",
+        "sha": "7b9f70e705f14e4e0aea3c8ceb234cd15d2da6b0"
+      },
+      {
+        "path": "src/monitoring/system.ts",
+        "sha": "3cfb7657deb4e728f52d77c57c86ed6e18eaf13c"
+      },
+      {
+        "path": "src/monitoring/types.ts",
+        "sha": "f3d5b99050958a7ba6a97656164318e68eeb6346"
+      },
+      {
+        "path": "src/rate-limiting/limiter.ts",
+        "sha": "ab378e7c1cf6687626282081324d33e5e751567c"
+      },
+      {
+        "path": "src/rate-limiting/types.ts",
+        "sha": "fbdb624c2a028a65a869b6e9d37509d04fa0d5e9"
+      },
+      {
+        "path": "src/sse/types.ts",
+        "sha": "f5c2c142144449e65d15735710d8d30c20a92257"
+      },
+      {
+        "path": "test-import.js",
+        "sha": "1107fd9e41acae1523d05e1ee84197b9fb03a2af"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "78ebcadcea48cdb2c651c6d839aa301ecdec4cc6"
+      },
+      {
+        "path": "src/tools/api/base.ts",
+        "sha": "ebfee1014e18b638a76f6cd5e40adec76e7caf8e"
+      },
+      {
+        "path": "src/tools/api/requests.ts",
+        "sha": "c83f7c717b201102f7db8307015294989b881d3a"
+      },
+      {
+        "path": "src/tools/browser/base.ts",
+        "sha": "352c592eed97594cc388c2eeeebbbc001b9707ff"
+      },
+      {
+        "path": "src/tools/browser/console.ts",
+        "sha": "bf392f4e813f408ab905740080db6aa1a4957751"
+      },
+      {
+        "path": "src/tools/browser/interaction.ts",
+        "sha": "6a687cd80950818471cbb71ca628406e09832543"
+      },
+      {
+        "path": "src/tools/browser/navigation.ts",
+        "sha": "b0375fe605e5a82ed3b5928341568270dccab2ac"
+      },
+      {
+        "path": "src/tools/browser/output.ts",
+        "sha": "62f14ee9f3f688106b6f8155422946f643dcd442"
+      },
+      {
+        "path": "src/tools/browser/resize.ts",
+        "sha": "ba8354ce1604726dfc112b27531331d33b42af43"
+      },
+      {
+        "path": "src/tools/browser/response.ts",
+        "sha": "f8a1eea343d26c1b32da92237c87cb57bd2e0df6"
+      },
+      {
+        "path": "src/tools/browser/screenshot.ts",
+        "sha": "09cfc740d2d569dbf0dba15747af7ba7c97b821e"
+      },
+      {
+        "path": "src/tools/browser/useragent.ts",
+        "sha": "f349c51e7b15048f3ad8bfdf8c1dc8d1ee1a64a8"
+      },
+      {
+        "path": "src/tools/browser/visiblePage.ts",
+        "sha": "c398c4a597993c5382f8ba1b52db0d67d3666349"
+      },
+      {
+        "path": "src/tools/codegen/generator.ts",
+        "sha": "dc6b51bfbc3a30e4ef98bd8c3a11224567d8950a"
+      },
+      {
+        "path": "src/tools/codegen/recorder.ts",
+        "sha": "354f9525fcaf3e27818a1f0f76054ac59af6bb03"
+      },
+      {
+        "path": "src/tools/codegen/types.ts",
+        "sha": "e8b40002878962a3c41e0be30020544ffc6e4e09"
+      },
+      {
+        "path": "src/tools/common/types.ts",
+        "sha": "1aafedc1e54734c22d3d4e18790657c59352a97e"
+      }
+    ],
+    "repo_pushed_at": "2025-12-13T04:28:38Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": false,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 85,
+    "dims": {
+      "maintenance": 0,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 51,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 324
+  },
+  "network": {
+    "calls": 54,
+    "failed": 0,
+    "ms": 16098
+  },
+  "duration_ms": 16147
+}

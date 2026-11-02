@@ -1,0 +1,1330 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "anthropics/claude-cookbooks",
+    "url": "https://github.com/anthropics/claude-cookbooks",
+    "name": "claude-cookbooks"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:53:21.842Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "c43f56d0360b9b1f631bd090fd199231d4c880cc",
+    "files_scanned": 300,
+    "candidates": 300,
+    "excluded_non_shipped": 38,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".claude/skills/cookbook-audit/SKILL.md",
+        "sha": "3c6f82fc9c9b427abfe12cc6655c87f304661f4a"
+      },
+      {
+        "path": ".claude/agents/code-reviewer.md",
+        "sha": "c4cf73555a6b45c5e1cd32a9f8a381269ad7d895"
+      },
+      {
+        "path": ".claude/commands/add-registry.md",
+        "sha": "d941f9b21f4bd17934f4ef7080832b260c49e093"
+      },
+      {
+        "path": ".claude/commands/link-review.md",
+        "sha": "ccdaa6e3611e20702bbb94f3fbd59950d5a1a390"
+      },
+      {
+        "path": ".claude/commands/model-check.md",
+        "sha": "5e083bf07d0dcc46a74f87a51b139850b438837e"
+      },
+      {
+        "path": ".claude/commands/notebook-review.md",
+        "sha": "09534084663360677458659fd08e580fbe6ce7f4"
+      },
+      {
+        "path": ".claude/commands/review-issue.md",
+        "sha": "09540d2b37017772f30a729cdae9aee233251557"
+      },
+      {
+        "path": ".claude/commands/review-pr-ci.md",
+        "sha": "c4b5ebc644c4aecf3798bcf10fde4b146fc1d83e"
+      },
+      {
+        "path": ".claude/commands/review-pr.md",
+        "sha": "2d110ef114f730a1e63aceb91c0a0e1ac1c0c09a"
+      },
+      {
+        "path": ".github/workflows/claude-link-review.yml",
+        "sha": "b9a74c5bc489ac12b2f61f6e01cb9ba5c3f50861"
+      },
+      {
+        "path": ".github/workflows/claude-model-check.yml",
+        "sha": "2688c4b2fc109d5aabd9a23bf39153edc4ce1030"
+      },
+      {
+        "path": ".github/workflows/claude-pr-review.yml",
+        "sha": "48d1b352162967679f2f21239b6d8d9c9124e69f"
+      },
+      {
+        "path": ".github/workflows/links.yml",
+        "sha": "26ee62b32a518c044ff6b01c907e347df72ea59c"
+      },
+      {
+        "path": ".github/workflows/lint-format.yml",
+        "sha": "166895b080c74c807c47fcf9dd741e67311b5a24"
+      },
+      {
+        "path": ".github/workflows/notebook-diff-comment.yml",
+        "sha": "e12d5c29b7aba87473bdadd43e207a02fa2d918d"
+      },
+      {
+        "path": ".github/workflows/notebook-quality.yml",
+        "sha": "abf23ba6b5eaa7ff1ba6d60cfb041d19bd9dd154"
+      },
+      {
+        "path": ".github/workflows/notebook-tests.yml",
+        "sha": "ac888233a3e15794b9f466650298b364a627966f"
+      },
+      {
+        "path": ".github/workflows/verify-authors.yml",
+        "sha": "191f891ac004534888119d5f99a79b88236f233d"
+      },
+      {
+        "path": "skills/.claude/settings.json",
+        "sha": "c9f6f2e1c5d8310a049c101500a22a607010b452"
+      },
+      {
+        "path": ".claude/skills/cookbook-audit/.gitignore",
+        "sha": "2345ed2d6cf82be009c31297b5ba617a4d2f745b"
+      },
+      {
+        "path": ".claude/skills/cookbook-audit/style_guide.md",
+        "sha": "98ed1ceb150db2369ad1cc6706375166948d7922"
+      },
+      {
+        "path": ".claude/skills/cookbook-audit/validate_notebook.py",
+        "sha": "83387f55acd13cbf167ed29c8f19feca80603b45"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/.claude/settings.local.json",
+        "sha": "006b6b1f8bae076ce5d1452d76d324306e6016fe"
+      },
+      {
+        "path": "skills/.claude/hooks/pre-bash.sh",
+        "sha": "138da6671e5880292aceec6f48814fd676f20653"
+      },
+      {
+        "path": "skills/.claude/hooks/pre-write.sh",
+        "sha": "5341aeb97eb583dbd371a9a63d2b14d8b585b4dc"
+      },
+      {
+        "path": "skills/.claude/hooks/session-start.sh",
+        "sha": "afed40950eb20964d320df310ce7aabcac87a708"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/.claude/agents/financial-analyst.md",
+        "sha": "2bb3511e4afab6629ddf451c50d4cedd1698f424"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/.claude/agents/recruiter.md",
+        "sha": "86baa7f37278a55915e8cbfde439ccf95014d918"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/budget-impact.md",
+        "sha": "dacce2169a266c21d7d0aa8b1b4d0c8ab62ed9b7"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/slash-command-test.md",
+        "sha": "cac4001676978ce4d329c1b21c2c1f9b9364be69"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/strategic-brief.md",
+        "sha": "f9b123fc85a70f52879a28db539fc41e9129b083"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/.claude/commands/talent-scan.md",
+        "sha": "5ba93cd46af64d85f5f9f2313b4013a7dccdbdbc"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/.claude/hooks/report-tracker.py",
+        "sha": "a76107aaa0ff6ae5769fef433541965b1d2d2a79"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/.claude/hooks/script-usage-logger.py",
+        "sha": "ce7d05c2df182fe8fae459dd3e1d6a82d91c3575"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/.claude/output-styles/executive.md",
+        "sha": "6ed29b4fb9451fa86d45d98778f49e093b263a54"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/.claude/output-styles/technical.md",
+        "sha": "eeccc5f9c7c6da01149ff3185ba02ada57b0c605"
+      },
+      {
+        "path": "skills/custom_skills/analyzing-financial-statements/SKILL.md",
+        "sha": "6e87cb1db182261ce14198eb994f805828f2bc03"
+      },
+      {
+        "path": "skills/custom_skills/applying-brand-guidelines/SKILL.md",
+        "sha": "6d430aa8797227bd3d86a87185c557e1e9a40636"
+      },
+      {
+        "path": "skills/custom_skills/creating-financial-models/SKILL.md",
+        "sha": "5cdb0bdf9b0f9fda0bfb4dcb2fedf3cff26a2b2d"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/server.py",
+        "sha": "bce52742d1387857f4c352abed6e69774d24ab47"
+      },
+      {
+        "path": "managed_agents/mongodb_on_cma/tools.py",
+        "sha": "309f80d600f9423d2a1dd460cad82f94200b4c5c"
+      },
+      {
+        "path": "scripts/validate_all_notebooks.py",
+        "sha": "b5a59fd39871a7352ccf0b95affb5b86ffb4426c"
+      },
+      {
+        "path": "scripts/validate_authors_sorted.py",
+        "sha": "0dfdf53adec40243e06f0e49394399fed258f9c0"
+      },
+      {
+        "path": "scripts/validate_notebooks.py",
+        "sha": "e4b0ce1cb918b93166c2bdbd468fdb8fd9abc0d1"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "9ab4832822627f41932814be4e9282d1c6f46997"
+      },
+      {
+        "path": "authors.yaml",
+        "sha": "7542e038607d394ae66597d25e7bb00d00fe9b0d"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "864ddd034d280f9fab413ac309c8ca87e104cb34"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "6dbae8bc9ba61cc25c43315e6b3015b9f38fe2dd"
+      },
+      {
+        "path": "README.md",
+        "sha": "b6c1dee32ef16aade023b8c16ceeb82dff9b6699"
+      },
+      {
+        "path": "registry.yaml",
+        "sha": "b6b56c587411aa2f4104b364eca73e87038bf51b"
+      },
+      {
+        "path": "requirements-dev.txt",
+        "sha": "6a8edbc85837bbb0fb98e197f495c32597f19f1d"
+      },
+      {
+        "path": "scripts/detect-secrets/plugins.py",
+        "sha": "e72e8711a3a5c621b109f2f6ba98774968474cd9"
+      },
+      {
+        "path": "anthropic_cookbook/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "capabilities/README.md",
+        "sha": "52a1272e029cc37fb7acb9dee3badc7cef719076"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/gateway/main.py",
+        "sha": "63674a74a9ec5d3ec497c26808432199382753ce"
+      },
+      {
+        "path": "claude_agent_sdk/README.md",
+        "sha": "859865e6f0165392ca84e22afdcc1f5610e5dc90"
+      },
+      {
+        "path": "managed_agents/README.md",
+        "sha": "19a9380ee67963d44e125aa64efc5e97bd95afc7"
+      },
+      {
+        "path": "managed_agents/utilities.py",
+        "sha": "b2fb418b4afeecb6426f32650982aa51f2664c0a"
+      },
+      {
+        "path": "skills/CLAUDE.md",
+        "sha": "4ebc5f2fb9225fd54c1a2e1f3b2c39a5dd826bc0"
+      },
+      {
+        "path": "skills/file_utils.py",
+        "sha": "0b5e4080e5698f917c286c8248da04cf95786017"
+      },
+      {
+        "path": "skills/README.md",
+        "sha": "145bca5f0fd15bade6cb911d3a47b71ed05ec7b0"
+      },
+      {
+        "path": "skills/requirements.txt",
+        "sha": "224fe8a87916277a2cebe4a10da9d8aac74e90e7"
+      },
+      {
+        "path": "skills/skill_utils.py",
+        "sha": "962986107f9957f6295e3ba90868f64a8e3b9b15"
+      },
+      {
+        "path": "tool_use/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "tool_use/memory_tool.py",
+        "sha": "58aa6c5df0014fa9dc4c4a2a54d75db860510431"
+      },
+      {
+        "path": "tool_use/requirements.txt",
+        "sha": "1dd5b1b52611b0fa226b5368294156534b20431f"
+      },
+      {
+        "path": "capabilities/classification/README.md",
+        "sha": "83857075729cb11bc834a579f993e8d62963d22e"
+      },
+      {
+        "path": "capabilities/content_moderation/engine.py",
+        "sha": "4cb901bd3e09c62e45a44ddb576f8573085fdfd7"
+      },
+      {
+        "path": "capabilities/content_moderation/pipeline.py",
+        "sha": "cb7dfb5ffe2dbd084ec172f3e18f09fcd06b19cb"
+      },
+      {
+        "path": "capabilities/content_moderation/README.md",
+        "sha": "e1a752793749d056c8ff2f5d289d46c7cc7fde61"
+      },
+      {
+        "path": "capabilities/contextual-embeddings/README.md",
+        "sha": "ad21e94ebdbfcf168494a4ade8c9864da0dc482b"
+      },
+      {
+        "path": "capabilities/knowledge_graph/README.md",
+        "sha": "6451348bd0dd3cf5b3959d0dbb6d87445053c7c9"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/README.md",
+        "sha": "754ea3aebca5e984efabd4f400c5e8412f1fffaa"
+      },
+      {
+        "path": "capabilities/summarization/README.md",
+        "sha": "2ff9d0a590dc201be66c701c5e462382d5653f67"
+      },
+      {
+        "path": "capabilities/text_to_sql/README.md",
+        "sha": "3d47b2b3539c53401b15a63a6f7e1c62f129e666"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/agent.py",
+        "sha": "e54aef2a6c71a2d3ca4b59db1176b630e2bc3bd8"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/CLAUDE.md",
+        "sha": "152fc9297199152ad46b87ec0b4525cb172cf009"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/flow_diagram.md",
+        "sha": "b7a658d1a0312baeeb3f95a4c9bbdf48a867b286"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/entrypoint.sh",
+        "sha": "4c7fb612a319eeb4fce34e2595d3b814d972ead0"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/README.md",
+        "sha": "34380035c4e9381334ae7e2b10cb37de2ac4d655"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/requirements.txt",
+        "sha": "e01b185249322eea29b74c40173bc3eed5762cdb"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/run_once.py",
+        "sha": "a50a387f58d71cae14b2ae8d1df003c702bfd01e"
+      },
+      {
+        "path": "claude_agent_sdk/observability_agent/agent.py",
+        "sha": "60d09ce14e5955682d6038a716b84a50ca513a9c"
+      },
+      {
+        "path": "claude_agent_sdk/observability_agent/architecture_diagram.md",
+        "sha": "b25de7308615fd4d31c6375f30bfb63d03816419"
+      },
+      {
+        "path": "claude_agent_sdk/research_agent/agent.py",
+        "sha": "6b00b2024ec6c8cfad93c89b0c3803c1d2b8e81f"
+      },
+      {
+        "path": "claude_agent_sdk/research_agent/architecture_diagram.md",
+        "sha": "03c3cf134e14f2a20af0e3d8ee3c36fc8a2affb8"
+      },
+      {
+        "path": "claude_agent_sdk/scheduled_repository_reviewer/scheduled_review.py",
+        "sha": "681954c21a5d94a701613171b6e18d5f9749ac78"
+      },
+      {
+        "path": "claude_agent_sdk/site_reliability_agent/infra_setup.py",
+        "sha": "40f756824b219ff4f0da8c2d4ecac98e15fc555d"
+      },
+      {
+        "path": "claude_agent_sdk/site_reliability_agent/sre_mcp_server.py",
+        "sha": "13df39e49aefc4396ff8ad30170c18d7d114b42d"
+      },
+      {
+        "path": "claude_agent_sdk/utils/agent_visualizer.py",
+        "sha": "45ec21c95c1f9fc012efa3fdc092abd9a0e5cc9e"
+      },
+      {
+        "path": "claude_agent_sdk/utils/html_renderer.py",
+        "sha": "0af71a6da59dd963d77c76a9d3289df87528b57a"
+      },
+      {
+        "path": "cost_optimization/assets/policy_manual.md",
+        "sha": "d81dac7cc067a6721b57d89668114a6457eb41c7"
+      },
+      {
+        "path": "managed_agents/cma-mcp/README.md",
+        "sha": "a322dddfdbe88436b2343514728cfd3b5581eb2b"
+      },
+      {
+        "path": "managed_agents/example_data/OVERVIEW.md",
+        "sha": "4aa02e85f5f1217de24bcafa7d4e5d51bbd5e2f2"
+      },
+      {
+        "path": "managed_agents/linear/README.md",
+        "sha": "1341d782dd98ba80e00cfe1531910613b63d8eaf"
+      },
+      {
+        "path": "managed_agents/mongodb_on_cma/__init__.py",
+        "sha": "22234f050bff9ecb950d30a8f600d4a85e516243"
+      },
+      {
+        "path": "managed_agents/mongodb_on_cma/ap2_mandates.py",
+        "sha": "c4dfaaecc5871f4588cd109ef3c39e4e093d01fd"
+      },
+      {
+        "path": "managed_agents/mongodb_on_cma/config.py",
+        "sha": "09aa93ea4b91e8de85600aec0589a2072032b884"
+      },
+      {
+        "path": "managed_agents/mongodb_on_cma/embeddings.py",
+        "sha": "d4ac94968f75be27d859d95570a5ba7c487cf67d"
+      },
+      {
+        "path": "managed_agents/mongodb_on_cma/README.md",
+        "sha": "96bd6909ccb18e53d511ce8379c7f19f573ed6fe"
+      },
+      {
+        "path": "managed_agents/mongodb_on_cma/seed.py",
+        "sha": "74afc299d2b681f7542688e8f3977a29eaa2874b"
+      },
+      {
+        "path": "managed_agents/roadtrip_planner/README.md",
+        "sha": "9375b096abe4fe98f86efdf612592fb63d17bbdc"
+      },
+      {
+        "path": "managed_agents/self_hosted_sandboxes/README.md",
+        "sha": "47b3b83d883c1c5c39093e6823ed5ab216237ef7"
+      },
+      {
+        "path": "managed_agents/sentry/README.md",
+        "sha": "745b7df80238113d23ea2733e79c35cf3edb04a8"
+      },
+      {
+        "path": "managed_agents/slack/README.md",
+        "sha": "4de8892292efbed817779b47991d009bf84d6a69"
+      },
+      {
+        "path": "patterns/agents/README.md",
+        "sha": "7f6c6bbcb122230ad1c322b42d6ca6cfd02468c2"
+      },
+      {
+        "path": "patterns/agents/util.py",
+        "sha": "c19134ea28cb16c027616eedb6b101bdaba37ccd"
+      },
+      {
+        "path": "skills/sample_data/portfolio_holdings.json",
+        "sha": "7c25724b63212f29d310b25cc845fc671842102d"
+      },
+      {
+        "path": "skills/sample_data/quarterly_metrics.json",
+        "sha": "98eaf1bbddb494fa8c04218137a38b0ee2609a41"
+      },
+      {
+        "path": "third_party/Deepgram/README.md",
+        "sha": "28b83196e4684a4766f4af2de2ecc61a315b407a"
+      },
+      {
+        "path": "third_party/ElevenLabs/README.md",
+        "sha": "f617cd457c971ef1ecf6cb02d5b97c9ccee7891e"
+      },
+      {
+        "path": "third_party/ElevenLabs/requirements.txt",
+        "sha": "bf9fa70988a11316218a63ef0dce376aaf1e9a78"
+      },
+      {
+        "path": "third_party/ElevenLabs/stream_voice_assistant_websocket.py",
+        "sha": "7940f3405309dab51f0ef497807dd084b217f0cb"
+      },
+      {
+        "path": "third_party/LlamaIndex/README.md",
+        "sha": "7237f93d2791a381bd6b667d33a58180d3914003"
+      },
+      {
+        "path": "third_party/VoyageAI/how_to_create_embeddings.md",
+        "sha": "d66d43dd00d649ff9bd11c7e19193c95749e8502"
+      },
+      {
+        "path": "tool_use/context_engineering/research_corpus.py",
+        "sha": "4536ce383e9ba72c7be7cb1aed6fe5bbd20d2cfc"
+      },
+      {
+        "path": "tool_use/memory_demo/__init__.py",
+        "sha": "c45baeb75d4c67b09edac8d41ce6347d361f5592"
+      },
+      {
+        "path": "tool_use/memory_demo/code_review_demo.py",
+        "sha": "5c5b1198bbf5c24030aa206fe8abbfd8f7672333"
+      },
+      {
+        "path": "tool_use/memory_demo/demo_helpers.py",
+        "sha": "29d9622a74b03a88c2e8eb47d6acc08c27c6bb3d"
+      },
+      {
+        "path": "tool_use/utils/__init__.py",
+        "sha": "9c9f38ff4cbb3838230c584ee32fda0e0e7529d8"
+      },
+      {
+        "path": "tool_use/utils/customer_service_api.py",
+        "sha": "2bec85490fb74daa55b1ff798b1d381775617081"
+      },
+      {
+        "path": "tool_use/utils/customer_service_tools.py",
+        "sha": "098192aad49a80b43270292c5ecb1c7c4a7092df"
+      },
+      {
+        "path": "tool_use/utils/team_expense_api.py",
+        "sha": "c3854ac9469b310ffd3602b66c9b8b12d33f4db4"
+      },
+      {
+        "path": "tool_use/utils/visualize.py",
+        "sha": "7d33d50e1c6c61e7a69cd2a4014c45558c8a3eaf"
+      },
+      {
+        "path": "capabilities/classification/evaluation/promptfooconfig.yaml",
+        "sha": "b72bc2c549e80bd4a1f891598d98e1ca5eba6ab4"
+      },
+      {
+        "path": "capabilities/classification/evaluation/prompts.py",
+        "sha": "6de1c3fac18254a1f7de9a3296f43b8f2dff2051"
+      },
+      {
+        "path": "capabilities/classification/evaluation/README.md",
+        "sha": "95fc805769a63cf70f883e5795075a3025998eb6"
+      },
+      {
+        "path": "capabilities/classification/evaluation/transform.py",
+        "sha": "69c68bb06d003a5e99d46d39cc52381b0102710e"
+      },
+      {
+        "path": "capabilities/classification/evaluation/vectordb.py",
+        "sha": "8829cc126790cd5f50d85d1d4945c0912f0a1c84"
+      },
+      {
+        "path": "capabilities/content_moderation/evaluation/README.md",
+        "sha": "daf7935c751657740c2ff7ccc746781a3693e556"
+      },
+      {
+        "path": "capabilities/content_moderation/evaluation/run_eval.py",
+        "sha": "52af1d5cefe1031dd623344d0555a744822c27b2"
+      },
+      {
+        "path": "capabilities/contextual-embeddings/contextual-rag-lambda-function/inference_adapter.py",
+        "sha": "5d4f9616061afcb15a7cc6637d633f6867ec29d2"
+      },
+      {
+        "path": "capabilities/contextual-embeddings/contextual-rag-lambda-function/lambda_function.py",
+        "sha": "c8b11d908b98dcf224a172214ec291d68f5bab27"
+      },
+      {
+        "path": "capabilities/contextual-embeddings/contextual-rag-lambda-function/s3_adapter.py",
+        "sha": "dc0c85871f93c384bb54ff97c9d6048b222d3bb2"
+      },
+      {
+        "path": "capabilities/knowledge_graph/data/alias_map.json",
+        "sha": "9742b71d1ed3cf7becc5810baab11913a1c566c2"
+      },
+      {
+        "path": "capabilities/knowledge_graph/data/sample_triples.json",
+        "sha": "d34dba866439278421835e6dc2244a6b63db9c9c"
+      },
+      {
+        "path": "capabilities/knowledge_graph/evaluation/eval_extraction.py",
+        "sha": "e8a602d34dda0c1e1e6fb9c464ff6b225a499aa7"
+      },
+      {
+        "path": "capabilities/knowledge_graph/evaluation/README.md",
+        "sha": "3e4cd1603f38624b3bc1da2bf6616fad3bba4334"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/docs_evaluation_dataset.json",
+        "sha": "66cf7572c056edfc339e83b6a0459a5500b3b4e6"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/eval_end_to_end.py",
+        "sha": "abfbab5878c806ae7a222745d02a13b2644cfbb9"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/eval_retrieval.py",
+        "sha": "3fbae99ef99d10d2fc1e52ffa0ba158cde35130a"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/promptfooconfig_end_to_end.yaml",
+        "sha": "a7adf6396b48f6fedfe988b915991d1e202e396a"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/promptfooconfig_retrieval.yaml",
+        "sha": "345e2fed8e542812c6cd60c5c4664258c370db34"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/prompts.py",
+        "sha": "02892253b8b484253c7b74cd4b0bb3466dfdcf53"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/provider_retrieval.py",
+        "sha": "11c65210aaa7434e7ef213709f6c0df95e9dc387"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/README.md",
+        "sha": "ed903ace572d641b1066131934f3df5ce2bf8db9"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/vectordb.py",
+        "sha": "dd099bf0d151047339d2543735bf42cb3d429191"
+      },
+      {
+        "path": "capabilities/summarization/data/multiple_subleases.py",
+        "sha": "b4f0c109d335f4d3bff43151ac64031bb55a5343"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease1-summary.txt",
+        "sha": "cc3e46094abe08d86881546433bf934e88af6b04"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease2-summary.txt",
+        "sha": "3bad33230eae1db0a7ba85bd0dd89b7b2b2a93ae"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease2.txt",
+        "sha": "2629489dbb176a6734075d984ca10fdf4e3b24a4"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease3-summary.txt",
+        "sha": "a1c68ffb9b74b66a47734d6fc90ae32366868d71"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease4-summary.txt",
+        "sha": "4a1013a1f3832e69f0a06d4e8237a12320cee678"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease4.txt",
+        "sha": "c91561b3ae6bf1c5c87fb4f2d7dc81448583fc9c"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease5-summary.txt",
+        "sha": "3b7ec6945ee415b2d051254dbcda500f2073edf9"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease5.txt",
+        "sha": "e808d2e99bd9ccc88c1cfbc36a225ec7413eea78"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease6-summary.txt",
+        "sha": "f27c56ed23d2803724d540f30b48d1df620ec7c4"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease6.txt",
+        "sha": "79d0ebf1810e89ecac6e29538144256c996c03c1"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease7-summary.txt",
+        "sha": "18514f24e91be1c4b7170eb897b089d5efa9232f"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease7.txt",
+        "sha": "298a6a6912789f0fc666752cfca89aefee88cb9f"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease8-summary.txt",
+        "sha": "9550dbd04ba92ac34acbaf2a20bbe6ebab683293"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease8.txt",
+        "sha": "e851819b5c50a21bdd69787cfcde284340f0f778"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease9-summary.txt",
+        "sha": "39f6726c8844132ee0121449c7970157d40bdb2a"
+      },
+      {
+        "path": "capabilities/summarization/data/sample-lease9.txt",
+        "sha": "53fb191c8c90cb07b53426d2b4aeab2aa8f4acf7"
+      },
+      {
+        "path": "capabilities/summarization/evaluation/promptfooconfig.yaml",
+        "sha": "061fae500acfb20bde324ee7bce9ca04a1633a7f"
+      },
+      {
+        "path": "capabilities/summarization/evaluation/prompts.py",
+        "sha": "3e2c6f911b1435af53494eb041f624b17c5b63c0"
+      },
+      {
+        "path": "capabilities/summarization/evaluation/README.md",
+        "sha": "87eb2bff756a88ed9505cd8d5522471c76b0ad27"
+      },
+      {
+        "path": "capabilities/summarization/evaluation/tests.yaml",
+        "sha": "7cb00b266e5e2cc6dd2c143edc560b61f0fa7d29"
+      },
+      {
+        "path": "capabilities/text_to_sql/evaluation/promptfooconfig.yaml",
+        "sha": "566e3ba87349ba87d427537d03ee0e0253cc7149"
+      },
+      {
+        "path": "capabilities/text_to_sql/evaluation/prompts.py",
+        "sha": "349af41e245c795ac163f4dffd578da374b6b2c7"
+      },
+      {
+        "path": "capabilities/text_to_sql/evaluation/README.md",
+        "sha": "f549a2f65a8a6c2a9af05c18e769fad28902b75d"
+      },
+      {
+        "path": "capabilities/text_to_sql/evaluation/vectordb.py",
+        "sha": "084cc3738e46fc162337277a0e0f5dd541447751"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/audit/report_history.json",
+        "sha": "ac5313e5bcc1e4db2c682c25441ebf9806580613"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/audit/script_usage_log.json",
+        "sha": "be2940b6c7974819981bd895e9fdde651f2ed1e9"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/financial_data/revenue_forecast.json",
+        "sha": "fc4ed5e4809e510a917ed3c394c57a40f91fd92b"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/output_reports/hiring_decision.md",
+        "sha": "b8c673496d5e6dce03a4b9eca13f787ad572d482"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/output_reports/Q2_2024_Financial_Forecast.md",
+        "sha": "446b2f5c3b0946bb4b178b8f333e0a21033f866d"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/scripts/decision_matrix.py",
+        "sha": "ed720129b2f3ea0d1975c261b9b25c2a7f63f45e"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/scripts/financial_forecast.py",
+        "sha": "083adaedc8fdb1750fcbe6e85536ce87fd482b0b"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/scripts/hiring_impact.py",
+        "sha": "e3f14b2943a4563cfb3c966c483d6277b04d0a2d"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/scripts/simple_calculation.py",
+        "sha": "df301186ddb78b5653009de64b9ed542dfa22f8f"
+      },
+      {
+        "path": "claude_agent_sdk/chief_of_staff_agent/scripts/talent_scorer.py",
+        "sha": "0b5cc667cfdf79a23a68a6ad28db42c6b568ed89"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/docker/docker-compose.yml",
+        "sha": "f04926d3de59c288ddb1bf61e3dd890af02a5450"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/docker/README.md",
+        "sha": "3df49e2df9c7f266f6a6a186b50aedc291770a92"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/generate-certs.sh",
+        "sha": "65e6da2b2d30880f7a21efafabaf5c3c82245149"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/kind-quickstart.sh",
+        "sha": "df2209742d7376d0b71101d447b0dc1375e256b6"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/README.md",
+        "sha": "aa3ffd29abc438829618f15642efe2db5d75d44d"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/teardown.sh",
+        "sha": "f53b614d339d6c0770cd6c0a97afa135e2cae8b1"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/modal/modal_app.py",
+        "sha": "c595b0240d981dc91fc099eeda41249c96d22bf1"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/modal/README.md",
+        "sha": "5aa67bfd2103aef0043cafa6244ccfd2ac9379b2"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/modal/teardown.py",
+        "sha": "280efa2839b535f3dd4499ec13de6df51714858b"
+      },
+      {
+        "path": "claude_agent_sdk/observability_agent/docker/docker-compose.yml",
+        "sha": "91aa3506679edaee519342753a7c661278a0f446"
+      },
+      {
+        "path": "cost_optimization/assets/estimates/CLM-001.txt",
+        "sha": "e06b1093c84b94e7651a6481984b719d3216c492"
+      },
+      {
+        "path": "cost_optimization/assets/estimates/CLM-002.txt",
+        "sha": "92b6d08a33bb5691a4d46928170d29c99b52da3e"
+      },
+      {
+        "path": "cost_optimization/assets/estimates/CLM-003.txt",
+        "sha": "50f22fcd19eb985a6ad64d82ab504e237519a7de"
+      },
+      {
+        "path": "cost_optimization/assets/estimates/CLM-004.txt",
+        "sha": "ca5ff74b4ff83b5e06147c6f6c8eb21aa1e13045"
+      },
+      {
+        "path": "cost_optimization/assets/estimates/CLM-005.txt",
+        "sha": "ac003b26c525b09a490abbee9f79f93b8b5abb3b"
+      },
+      {
+        "path": "cost_optimization/assets/estimates/CLM-006.txt",
+        "sha": "c2b90ee40eb29fb90312498a444de7ea1ddc6df2"
+      },
+      {
+        "path": "cost_optimization/assets/estimates/CLM-007.txt",
+        "sha": "5a7912babbad7c457c191ccdcfa09bb83dedb6c9"
+      },
+      {
+        "path": "cost_optimization/assets/estimates/CLM-008.txt",
+        "sha": "53f09c59de0b58c2f87cc14795128092c783c798"
+      },
+      {
+        "path": "cost_optimization/assets/estimates/CLM-009.txt",
+        "sha": "f97775cb67e2430a01c7f041badeaa5a75ee66e2"
+      },
+      {
+        "path": "cost_optimization/assets/estimates/CLM-010.txt",
+        "sha": "f4131065311d3566957703850ea30576a5262021"
+      },
+      {
+        "path": "evals/agentic_search/utils/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "evals/agentic_search/utils/agentic_search.py",
+        "sha": "9f82b6f52261a3ce51cf4f5e8741d7be580a988f"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/DRAFT_PROMPT.md",
+        "sha": "88cf5ad6fa5fb59bc13b9c17b4d95a030c457840"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/REFERENCE.md",
+        "sha": "c7e31cb188c572c5511871537cb10b0a16e1a649"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/sample_report.txt",
+        "sha": "afc3baa7b96d68feb93d6228b513dbffbddc66e2"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/sample_verdict_sesn_011Inv09.json",
+        "sha": "b1f766ed6f08587a84d3c5685200ebd171b75ace"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/TEMPLATE.txt",
+        "sha": "f06b6947180217f40eade9f9d858f295634d0f6c"
+      },
+      {
+        "path": "managed_agents/example_data/gate/policy.yaml",
+        "sha": "ecdf965151098c438b798248e66d2f28a0d6aa51"
+      },
+      {
+        "path": "managed_agents/example_data/gate/README.md",
+        "sha": "bd4cec1d6bd50245d3bbf945f1fd5db96ffa5925"
+      },
+      {
+        "path": "managed_agents/example_data/iterate/calc.py",
+        "sha": "a4aee1598907395e3275130a7f0bb74fbf5d22d6"
+      },
+      {
+        "path": "managed_agents/example_data/iterate/README.md",
+        "sha": "f9ec336a59047c87cf66f39944ebf9d20ff9e1ec"
+      },
+      {
+        "path": "managed_agents/example_data/orchestrate/issue_42.json",
+        "sha": "2add73456d9f6ac8bf6096c0d303558a9457bdf9"
+      },
+      {
+        "path": "managed_agents/example_data/orchestrate/README.md",
+        "sha": "3dc6dc4efa8be210e0bfa1509ecb1cf02044b8fd"
+      },
+      {
+        "path": "managed_agents/example_data/slack_data_bot/slack_app_manifest.yaml",
+        "sha": "cd54417099c2ae0ad1873430641e50a639addd06"
+      },
+      {
+        "path": "managed_agents/example_data/sre/alert.json",
+        "sha": "62986495d22412883136cf51e873da8314a98b41"
+      },
+      {
+        "path": "managed_agents/mongodb_on_cma/self_hosted_sandbox/on-work.sh",
+        "sha": "5778db4294418d213c48e1759ae612f361c24212"
+      },
+      {
+        "path": "managed_agents/mongodb_on_cma/self_hosted_sandbox/README.md",
+        "sha": "0fc01be70b2a237a2c71f4a4ba182b13096aad18"
+      },
+      {
+        "path": "managed_agents/mongodb_on_cma/self_hosted_sandbox/start.sh",
+        "sha": "b6cc2aa8c870585e5f3244ff1d760452d9ac845a"
+      },
+      {
+        "path": "misc/data/help_center_articles/0.txt",
+        "sha": "d1bfd236f5353888bb60da62bbbb9e5a9229dfe0"
+      },
+      {
+        "path": "misc/data/help_center_articles/1.txt",
+        "sha": "ce0b333449b5c7b41c81824f9c227a28c1db892d"
+      },
+      {
+        "path": "misc/data/help_center_articles/2.txt",
+        "sha": "ae1c4a74770cfaa7d395c6d8200d164b5f3d8696"
+      },
+      {
+        "path": "misc/data/help_center_articles/3.txt",
+        "sha": "f297b2e6ed601e0826d1df5d1670ad721e6cc306"
+      },
+      {
+        "path": "misc/data/help_center_articles/4.txt",
+        "sha": "649bfb19572fc1e032d1c44205e3971d5b4d44ba"
+      },
+      {
+        "path": "misc/data/help_center_articles/5.txt",
+        "sha": "0813d78d8a5ffafd5555b59aa5b95c678bd99390"
+      },
+      {
+        "path": "misc/data/help_center_articles/6.txt",
+        "sha": "1cf02d47eb4670d78cfa06a3d099f526e69e66e2"
+      },
+      {
+        "path": "misc/data/help_center_articles/7.txt",
+        "sha": "2c9f67f080a18bcc1f9b4d929af5b58c3e446f4c"
+      },
+      {
+        "path": "misc/data/help_center_articles/8.txt",
+        "sha": "ca41724c6cddfd12574e17408f1f41254934b364"
+      },
+      {
+        "path": "misc/data/help_center_articles/9.txt",
+        "sha": "b75c0df837223f83b5dc079706bc4c23592b2da8"
+      },
+      {
+        "path": "patterns/agents/prompts/citations_agent.md",
+        "sha": "7e521079128193459aa458ff8dd34db54b6e2b0b"
+      },
+      {
+        "path": "patterns/agents/prompts/research_lead_agent.md",
+        "sha": "e02d9af3b8997061035ed28621fc522e1a46cee5"
+      },
+      {
+        "path": "patterns/agents/prompts/research_subagent.md",
+        "sha": "9cb7225b844cc346a6024fc11957bd409b3de973"
+      },
+      {
+        "path": "skills/custom_skills/analyzing-financial-statements/calculate_ratios.py",
+        "sha": "a927e4642667d19846669ad3dea1d601889e06bb"
+      },
+      {
+        "path": "skills/custom_skills/analyzing-financial-statements/interpret_ratios.py",
+        "sha": "5603b02f90eb280d5abc449a865ba6cdddcd81ac"
+      },
+      {
+        "path": "skills/custom_skills/applying-brand-guidelines/apply_brand.py",
+        "sha": "246146a651f8ed363eb7b4f3ab024a224cf63d38"
+      },
+      {
+        "path": "skills/custom_skills/applying-brand-guidelines/REFERENCE.md",
+        "sha": "c453dcaa3982275160e30a6b7546d2919a196375"
+      },
+      {
+        "path": "skills/custom_skills/applying-brand-guidelines/validate_brand.py",
+        "sha": "d2c4173ec538b08b3caab510daab224be268b336"
+      },
+      {
+        "path": "skills/custom_skills/creating-financial-models/dcf_model.py",
+        "sha": "5d3eedb58bba6b75ada2a068369eca6cf21a1abc"
+      },
+      {
+        "path": "skills/custom_skills/creating-financial-models/sensitivity_analysis.py",
+        "sha": "9674aad2e435917e60969d5b6daa816ccf7dc5b3"
+      },
+      {
+        "path": "tool_use/memory_demo/sample_code/api_client_v1.py",
+        "sha": "1c3c0c612c8e96293615f60a3ad24efc32e82b03"
+      },
+      {
+        "path": "tool_use/memory_demo/sample_code/cache_manager.py",
+        "sha": "3bf3f464377d4b3e8c1c909407061bbbb5965f52"
+      },
+      {
+        "path": "tool_use/memory_demo/sample_code/data_processor_v1.py",
+        "sha": "271b5e21d38435161720a446e8c830bd671e7836"
+      },
+      {
+        "path": "tool_use/memory_demo/sample_code/sql_query_builder.py",
+        "sha": "b146ad28c369f1585921af517826faf6b3af8876"
+      },
+      {
+        "path": "tool_use/memory_demo/sample_code/web_scraper_v1.py",
+        "sha": "cc805e034ef07970ee1fcee7683d3dd2284f5f62"
+      },
+      {
+        "path": "capabilities/content_moderation/data/ad_creatives/build_creatives.py",
+        "sha": "6cbe11753d683ed32a5d6b0cbe372df02aa1df8c"
+      },
+      {
+        "path": "capabilities/content_moderation/data/ad_creatives/context.json",
+        "sha": "830d748b2ed3d1e57cf674de9dde01679eae6d77"
+      },
+      {
+        "path": "capabilities/content_moderation/data/ad_creatives/policies.md",
+        "sha": "88f631cf99c8d4ee225065408514a1ebcaf849e4"
+      },
+      {
+        "path": "capabilities/content_moderation/data/ad_creatives/rules.golden.json",
+        "sha": "82a8ba713656a4f0cf49c5af5e80b7ad1c052847"
+      },
+      {
+        "path": "capabilities/content_moderation/data/ad_creatives/schema.json",
+        "sha": "4aa9e3a04cc72689e2979ac535d9dcc86d35d518"
+      },
+      {
+        "path": "capabilities/content_moderation/data/product_listings/context.json",
+        "sha": "bdd5c3333a4b77135523c42faf722c5186878aa0"
+      },
+      {
+        "path": "capabilities/content_moderation/data/product_listings/policies.md",
+        "sha": "453ab44105e8789138e547d35888667097a895ec"
+      },
+      {
+        "path": "capabilities/content_moderation/data/product_listings/schema.json",
+        "sha": "d9999524274bc1c26533f123b21f913421a403ed"
+      },
+      {
+        "path": "capabilities/content_moderation/data/ugc/context.json",
+        "sha": "24556420f71a968846a7a8b059414bbeb3e3b498"
+      },
+      {
+        "path": "capabilities/content_moderation/data/ugc/policies.md",
+        "sha": "854811a05a6eb2f86f1cbc6a378072ef5c766167"
+      },
+      {
+        "path": "capabilities/content_moderation/data/ugc/schema.json",
+        "sha": "030953b5b187c7f64126bc954345bd0cae658575"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/json_results/evaluation_results_level_three.json",
+        "sha": "3f8ba2e403d297c558ae731a497848d6dfcf2f6c"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/json_results/evaluation_results_level_two.json",
+        "sha": "52c52d9197cdd88d47888ac7389b6c34f2520be6"
+      },
+      {
+        "path": "capabilities/retrieval_augmented_generation/evaluation/json_results/evaluation_results_one.json",
+        "sha": "56cbb4e816ae9f6e38ce6306cf90ac568c78812c"
+      },
+      {
+        "path": "capabilities/summarization/evaluation/custom_evals/bleu_eval.py",
+        "sha": "b50264e635cbe2c8646cde262bc097a8abbfc7f1"
+      },
+      {
+        "path": "capabilities/summarization/evaluation/custom_evals/llm_eval.py",
+        "sha": "df1939a0465c25968906f2e3398ddfff6a8ad8cf"
+      },
+      {
+        "path": "capabilities/summarization/evaluation/custom_evals/rouge_eval.py",
+        "sha": "04cf2efdf015acfe402e19ff174f4e6eaf84e660"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/gateway/k8s.py",
+        "sha": "daf26ba2ef949576da740df18337d469c4ef023b"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/gateway/proxy.py",
+        "sha": "efb94fb573da66115879690a6af105f1404727a3"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/gateway/requirements.txt",
+        "sha": "43c1e4c80d53bb7f5d99e284a808495f8c67ee80"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/manifests/egress-proxy.yaml",
+        "sha": "25dde2de638aa09a737bb412727ea27be3685921"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/manifests/gateway.yaml",
+        "sha": "d23ad22f9933675fefbbbdb7d1ae4bb3177f2605"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/manifests/namespace.yaml",
+        "sha": "e3e7f0b454444ee744cc70f0cdb5ea87a754166a"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/manifests/network-policy.yaml",
+        "sha": "0216502372969ca2351db2f47f5144f6416278c1"
+      },
+      {
+        "path": "claude_agent_sdk/hosting/kubernetes/manifests/redis.yaml",
+        "sha": "cd1c6bbb3dd36b1b62946d6e78858c5dd521b79e"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/prompts/report_prompt.txt",
+        "sha": "ca61bd536f5c1ff0d3cab4c3ccfdc5d552640609"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/prompts/review_system.txt",
+        "sha": "f901d91814ac52e5657ecbd064faa23cb9a0cceb"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/prompts/verdict_schema.json",
+        "sha": "b9ee48fc81d80f4fd8f9dd7d175f03883917341d"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/rules/additional_rules.json",
+        "sha": "5f3699dee7c53c2a4f59b72596e18d02723b6843"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/rules/transcript_rules.json",
+        "sha": "b14e6c2f923f9978039858070674577610ee77fa"
+      },
+      {
+        "path": "managed_agents/example_data/orchestrate/src/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "managed_agents/example_data/orchestrate/src/blog.py",
+        "sha": "0b465ca67ff231621f6aa9ce97b23b0063d0c64b"
+      },
+      {
+        "path": "managed_agents/example_data/orchestrate/src/url_utils.py",
+        "sha": "a0ea3f060e1f958e65fd20e990105fc82616912a"
+      },
+      {
+        "path": "managed_agents/example_data/sre/runbooks/oom.md",
+        "sha": "6021795eadd436b1623d06bed0c5904554fb5760"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/agent_sdk/sdk_brief_01.json",
+        "sha": "e2fb29f422af45e0066758b9b15f2118adba9d9a"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/agent_sdk/sdk_brief_02.json",
+        "sha": "a045395531731f8d8b5e9c0ff0ad77ad5cf73c83"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/agent_sdk/sdk_brief_03.json",
+        "sha": "e86fc13ab3173e486ecf7b9a91f7d4e76ac267a8"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/agent_sdk/sdk_brief_04.json",
+        "sha": "4da5db7c12cceedfae1abaadc6c6ad74d300a01d"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/managed_agents/sesn_011Inv01.json",
+        "sha": "9adb11ccd4d28187109deb09c30dd6d08cc34706"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/managed_agents/sesn_011Inv02.json",
+        "sha": "743f830f25ef7fa83730fb1c4e702e950d61924d"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/managed_agents/sesn_011Inv03.json",
+        "sha": "f6d98d4561df8dd833107f771d679d10b9c4112d"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/managed_agents/sesn_011Inv04.json",
+        "sha": "c940d1f05759dd6a9e8426f4ffcba3d5fd924b4d"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/managed_agents/sesn_011Inv05.json",
+        "sha": "82f621e724608a8423b4e9712b5ca0abfb75cbd9"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/managed_agents/sesn_011Inv06.json",
+        "sha": "3d1f023be30ebc7b6c67bee39dd47cc11de11eed"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/managed_agents/sesn_011Inv07.json",
+        "sha": "7052ed732989d7e1c9cdb00ef3b7e2db97dfc04b"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/managed_agents/sesn_011Inv08.json",
+        "sha": "3e83dc381785dc64fd9721764cbb4c00b9cc7b85"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/managed_agents/sesn_011Inv09.json",
+        "sha": "c5babb2feabb6adbfa0f566dc51c9bc1b433da4d"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/managed_agents/sesn_011Inv10.json",
+        "sha": "dda4ad0438e7fa3fdbb8a78fd3ee339fba23cc54"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/messages_api/msgs_support_01.json",
+        "sha": "790a5317526d121de2c2a7447ee32b1ffa08042b"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/messages_api/msgs_support_02.json",
+        "sha": "38a37bdc90e95537be14ba353fc0cea562dfa910"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/messages_api/msgs_support_03.json",
+        "sha": "a3be015d162bebb6944f2967174b6e5cd9b9410a"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/messages_api/msgs_support_04.json",
+        "sha": "a492ae1ddf7c27360e55efcfd83410d748c96e3b"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/messages_api/msgs_support_05.json",
+        "sha": "d9ad6f9e90df38a3d8eb53f1bface47ecbdc7946"
+      },
+      {
+        "path": "managed_agents/example_data/agent_log_review/logs/messages_api/msgs_support_06.json",
+        "sha": "1bb8d48e1dabd6e84b5bb36e1abe0757cc483014"
+      },
+      {
+        "path": "managed_agents/example_data/sre/infra/k8s/checkout-deploy.yaml",
+        "sha": "992afabbd0582e34ada85f5cff723af173f93749"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T14:37:18Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": false,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 75,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 40,
+      "dangerous_patterns": 70,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "claude_agent_sdk/site_reliability_agent/sre_mcp_server.py",
+      "line": 45,
+      "snippet": "PAGERDUTY_BASE_URL = \"https://api.pagerduty.com\"",
+      "host": "api.pagerduty.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "capabilities/knowledge_graph/evaluation/eval_extraction.py",
+      "line": 18,
+      "snippet": "WIKI_API = \"https://en.wikipedia.org/api/rest_v1/page/summary/\"",
+      "host": "en.wikipedia.org",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "tool_use/memory_demo/sample_code/api_client_v1.py",
+      "line": 75,
+      "snippet": "client = AsyncAPIClient(\"https://jsonplaceholder.typicode.com\")",
+      "host": "jsonplaceholder.typicode.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "tool_use/memory_demo/sample_code/web_scraper_v1.py",
+      "line": 70,
+      "snippet": "\"https://httpbin.org/delay/1\",",
+      "host": "httpbin.org",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "agent-hook-command",
+      "severe": false,
+      "file": "skills/.claude/settings.json",
+      "line": 3,
+      "snippet": "\"SessionStart\": {",
+      "deduction": 15
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "agent-hook-command",
+      "severe": false,
+      "file": "claude_agent_sdk/chief_of_staff_agent/.claude/settings.local.json",
+      "line": 8,
+      "snippet": "\"PostToolUse\": [",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 300,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "api.pagerduty.com",
+      "en.wikipedia.org",
+      "jsonplaceholder.typicode.com",
+      "httpbin.org"
+    ],
+    "declared_hosts": 1,
+    "install_detected": false,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 299,
+    "failed": 0,
+    "ms": 94934
+  },
+  "duration_ms": 11938
+}

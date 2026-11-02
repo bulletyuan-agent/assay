@@ -1,0 +1,424 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "modelcontextprotocol/servers-archived",
+    "url": "https://github.com/modelcontextprotocol/servers-archived",
+    "name": "servers-archived"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:50:17.821Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "9be4674d1ddf8c469e6461a27a337eeb65f76c2e",
+    "files_scanned": 78,
+    "candidates": 78,
+    "excluded_non_shipped": 6,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/python.yml",
+        "sha": "a1edc0c9ce8701e61314cf9eea368e8628dd189c"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "4e0a657918e74b465352111e71cee2c2c3b77315"
+      },
+      {
+        "path": ".github/workflows/typescript.yml",
+        "sha": "a87cdd8f3f50346d3d7b3bc1a52e063a553ab344"
+      },
+      {
+        "path": ".github/workflows/version-check.yml",
+        "sha": "b327649fc597ed520f33a5648316f998c8de5905"
+      },
+      {
+        "path": "src/aws-kb-retrieval-server/index.ts",
+        "sha": "f60a544e31c34e02485d70ff01e9449b98b92d5f"
+      },
+      {
+        "path": "src/brave-search/index.ts",
+        "sha": "e0f6162333ff4914a6e709d41204efc4c49aefd4"
+      },
+      {
+        "path": "src/everart/index.ts",
+        "sha": "bfdb22774d4c21a681804b312fd71414e423a93b"
+      },
+      {
+        "path": "src/gdrive/index.ts",
+        "sha": "1fa4dc893b82a5963006e688b990cf5156f7687f"
+      },
+      {
+        "path": "src/github/index.ts",
+        "sha": "0315a898f260bf6a7b7df5dd673aeef81ea666fa"
+      },
+      {
+        "path": "src/gitlab/index.ts",
+        "sha": "06ac9d867558139556d98084da34333bcf9a51b4"
+      },
+      {
+        "path": "src/google-maps/index.ts",
+        "sha": "00bf6eaa31b7ff4746ce2d333b8677bab48885f3"
+      },
+      {
+        "path": "src/postgres/index.ts",
+        "sha": "24fabf3e584abd413a181d9732fb317220f28c89"
+      },
+      {
+        "path": "src/puppeteer/index.ts",
+        "sha": "63007799b8881fd014b39c3c9ef83afe737d112c"
+      },
+      {
+        "path": "src/slack/index.ts",
+        "sha": "f2135b36210d8401094dd69963395c197689ac22"
+      },
+      {
+        "path": "src/redis/src/index.ts",
+        "sha": "f3a21fb7870192f6313bddd282033b5c31f7615e"
+      },
+      {
+        "path": "package.json",
+        "sha": "c22d9fcd4fe58cc11af9adf736018456c2b45a9e"
+      },
+      {
+        "path": "src/aws-kb-retrieval-server/package.json",
+        "sha": "072fee119674b945b682c9dbc183197c7a7d5bc1"
+      },
+      {
+        "path": "src/brave-search/package.json",
+        "sha": "163e5afc90a432902d319648eb259fd2e6a77c8b"
+      },
+      {
+        "path": "src/everart/package.json",
+        "sha": "653c654b5cb661e11c184bb2230acb6ca008a894"
+      },
+      {
+        "path": "src/gdrive/package.json",
+        "sha": "a2d4be3773f4acfa339a28cec239504e3c76b2ff"
+      },
+      {
+        "path": "src/github/package.json",
+        "sha": "29f5296b6b90567647a04c872d3a1fea7b82f6cd"
+      },
+      {
+        "path": "src/gitlab/package.json",
+        "sha": "1259e241909b15440be4b471d0fcab7e88abccba"
+      },
+      {
+        "path": "src/google-maps/package.json",
+        "sha": "5e4c04c48fa1fed21b243a3ec83c7b8b8100214a"
+      },
+      {
+        "path": "src/postgres/package.json",
+        "sha": "70fa0dbd0ef4a54b17bde5bfe2c558e924be08ac"
+      },
+      {
+        "path": "src/puppeteer/package.json",
+        "sha": "6ca491578c1812d584b85b60003543441149b133"
+      },
+      {
+        "path": "src/redis/package.json",
+        "sha": "e2fa50b150c6b7f349bdb879480e91f55d5c89fb"
+      },
+      {
+        "path": "src/slack/package.json",
+        "sha": "337b9db08c1847d3a4e43d2ce8075b1312280ca4"
+      },
+      {
+        "path": "scripts/release.py",
+        "sha": "05d76c0a63432e94c86651b971e00817e9659001"
+      },
+      {
+        "path": "src/git/src/mcp_server_git/server.py",
+        "sha": "c6a346cfef2a1ac0d2f1084080bb8124aa18b239"
+      },
+      {
+        "path": "src/sentry/src/mcp_server_sentry/server.py",
+        "sha": "9f885bbc3bff00eef2d221e844d0707f31ec5c63"
+      },
+      {
+        "path": "src/sqlite/src/mcp_server_sqlite/server.py",
+        "sha": "44913c817f6456b20db780f7cabba91795637328"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "05c32c6053c1edd9a2faaf1b6ebf565c6650fa28"
+      },
+      {
+        "path": "README.md",
+        "sha": "dd08afeb459da81f774eded11fc90a8eb54b5698"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "2d9ba745282ca304d107aa7cc82236a6d33c6b01"
+      },
+      {
+        "path": "src/aws-kb-retrieval-server/README.md",
+        "sha": "6a91035d52ea76918f74fc564161a0c15142082d"
+      },
+      {
+        "path": "src/aws-kb-retrieval-server/tsconfig.json",
+        "sha": "98b13da09df713d5dd4d73cb92d33016ac342c7a"
+      },
+      {
+        "path": "src/brave-search/README.md",
+        "sha": "46213b6e5ff188bcf8b7a4f92855bffb5da03f15"
+      },
+      {
+        "path": "src/brave-search/tsconfig.json",
+        "sha": "087f641dce7a7f74010d204e8dc08831a951dad4"
+      },
+      {
+        "path": "src/everart/README.md",
+        "sha": "22045652d1cddc00219626071524a1b5c4e7e0ab"
+      },
+      {
+        "path": "src/everart/tsconfig.json",
+        "sha": "ec5da158255069962de75e8100bea5288d1c2198"
+      },
+      {
+        "path": "src/gdrive/README.md",
+        "sha": "89eb21e042e2f8f4166186215e26e4340351c6e7"
+      },
+      {
+        "path": "src/gdrive/replace_open.sh",
+        "sha": "6727854b8b9fbf0a0ff26074532adbdd10e3401c"
+      },
+      {
+        "path": "src/gdrive/tsconfig.json",
+        "sha": "ec5da158255069962de75e8100bea5288d1c2198"
+      },
+      {
+        "path": "src/git/README.md",
+        "sha": "6aaf81ac65c8e3bdf0f455a6b5b8f3f8adea94d6"
+      },
+      {
+        "path": "src/github/README.md",
+        "sha": "d1456be282573866d72ffb2dc19c471cc8bfdf02"
+      },
+      {
+        "path": "src/github/tsconfig.json",
+        "sha": "4d33cae1df3d762625343b5fd9a3e36089f4fcac"
+      },
+      {
+        "path": "src/gitlab/README.md",
+        "sha": "2687f6ed37b1d86668635a9e0e01a685a61df2f8"
+      },
+      {
+        "path": "src/gitlab/schemas.ts",
+        "sha": "af93380dd020d0075bdec42c3933786ad3da9766"
+      },
+      {
+        "path": "src/gitlab/tsconfig.json",
+        "sha": "4d33cae1df3d762625343b5fd9a3e36089f4fcac"
+      },
+      {
+        "path": "src/google-maps/README.md",
+        "sha": "54f0838f463b786e80920b4d15747d724ade12b5"
+      },
+      {
+        "path": "src/google-maps/tsconfig.json",
+        "sha": "ec5da158255069962de75e8100bea5288d1c2198"
+      },
+      {
+        "path": "src/postgres/README.md",
+        "sha": "cc92521a70e96d460edf6488dafe5b435768e860"
+      },
+      {
+        "path": "src/postgres/tsconfig.json",
+        "sha": "ec5da158255069962de75e8100bea5288d1c2198"
+      },
+      {
+        "path": "src/puppeteer/README.md",
+        "sha": "0ed3c0fa3009ed3226e9708e4db614362fbffff7"
+      },
+      {
+        "path": "src/puppeteer/tsconfig.json",
+        "sha": "ec5da158255069962de75e8100bea5288d1c2198"
+      },
+      {
+        "path": "src/redis/README.md",
+        "sha": "9d5b814e5a8b80addebc73e9943660e473f1e1a7"
+      },
+      {
+        "path": "src/redis/tsconfig.json",
+        "sha": "e4d02eb5311619aac5431871eefc39deb9f1913d"
+      },
+      {
+        "path": "src/sentry/README.md",
+        "sha": "216d9b5b9acad700c0b2913439c6a75723c23477"
+      },
+      {
+        "path": "src/slack/README.md",
+        "sha": "b2d5a0c124205ad577470ce0208f28699ec21f5d"
+      },
+      {
+        "path": "src/slack/tsconfig.json",
+        "sha": "4d33cae1df3d762625343b5fd9a3e36089f4fcac"
+      },
+      {
+        "path": "src/sqlite/README.md",
+        "sha": "8ffb3d70628ed68f4fc3fc2a35767aafda9a15ac"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "208ca01e412ce8718fbcfc9ab10f63abb1f6c588"
+      },
+      {
+        "path": "src/github/common/errors.ts",
+        "sha": "5b940f3b00bd286f580181557fb592a1bbb86943"
+      },
+      {
+        "path": "src/github/common/types.ts",
+        "sha": "1ff9c7cc41bc8db0a23d0f2ac24219d2c146f5a6"
+      },
+      {
+        "path": "src/github/common/utils.ts",
+        "sha": "e85691a0be0287c4544427ced71100c8c1c6780d"
+      },
+      {
+        "path": "src/github/common/version.ts",
+        "sha": "648f7c6b926819f4e78d06bd9a9aba1e2e8150a1"
+      },
+      {
+        "path": "src/github/operations/branches.ts",
+        "sha": "9b7033b57e99f2f285e260bfeea94d88334e9ecd"
+      },
+      {
+        "path": "src/github/operations/commits.ts",
+        "sha": "b10e1b5f4aecfca5efc8f7c61d0e862736179475"
+      },
+      {
+        "path": "src/github/operations/files.ts",
+        "sha": "9517946e46b37a0b04ed62fb74feae27c3d52861"
+      },
+      {
+        "path": "src/github/operations/issues.ts",
+        "sha": "d2907bf7055075036d44cf42ab66388f36fa8836"
+      },
+      {
+        "path": "src/github/operations/pulls.ts",
+        "sha": "3628e7072f2067db21f866813a2d834ec3ef697a"
+      },
+      {
+        "path": "src/github/operations/repository.ts",
+        "sha": "4cf0ab9bd26ea5066771cd825a759321c5ae3f41"
+      },
+      {
+        "path": "src/github/operations/search.ts",
+        "sha": "76faa72997c94fe384c31fe3f006cd778783b37f"
+      },
+      {
+        "path": "src/git/src/mcp_server_git/__init__.py",
+        "sha": "2270018733f5bbdb75cf097b3e69d04044e6c19a"
+      },
+      {
+        "path": "src/git/src/mcp_server_git/__main__.py",
+        "sha": "beda6b0eab59994c118a91084d540f7663651fc7"
+      },
+      {
+        "path": "src/sentry/src/mcp_server_sentry/__init__.py",
+        "sha": "8fc09807174ad9e2778271118e8748ae05869ace"
+      },
+      {
+        "path": "src/sentry/src/mcp_server_sentry/__main__.py",
+        "sha": "c9a93f1a5b06c758d5c153c1b6341d34e540c72f"
+      },
+      {
+        "path": "src/sqlite/src/mcp_server_sqlite/__init__.py",
+        "sha": "1dc9f0087d8f479fcb721e137d6c2151cc7030d7"
+      }
+    ],
+    "repo_pushed_at": "2025-05-28T17:57:12Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": false,
+    "install": false,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 69,
+    "dims": {
+      "maintenance": 0,
+      "install_docs": 40,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/brave-search/index.ts",
+      "line": 182,
+      "snippet": "const url = new URL('https://api.search.brave.com/res/v1/web/search');",
+      "host": "api.search.brave.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/google-maps/index.ts",
+      "line": 309,
+      "snippet": "const url = new URL(\"https://maps.googleapis.com/maps/api/geocode/json\");",
+      "host": "maps.googleapis.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/slack/index.ts",
+      "line": 238,
+      "snippet": "`https://slack.com/api/conversations.list?${params}`,",
+      "host": "slack.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/sentry/src/mcp_server_sentry/server.py",
+      "line": 13,
+      "snippet": "SENTRY_API_BASE = \"https://sentry.io/api/0/\"",
+      "host": "sentry.io",
+      "deduction": 0
+    }
+  ],
+  "evidence": {
+    "files_scanned": 78,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "api.search.brave.com",
+      "maps.googleapis.com",
+      "slack.com",
+      "sentry.io"
+    ],
+    "declared_hosts": 0,
+    "install_detected": false,
+    "age_days": 523
+  },
+  "network": {
+    "calls": 76,
+    "failed": 0,
+    "ms": 25639
+  },
+  "duration_ms": 4242
+}

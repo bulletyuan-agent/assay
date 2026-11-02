@@ -1,0 +1,1722 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "anthropics/anthropic-sdk-python",
+    "url": "https://github.com/anthropics/anthropic-sdk-python",
+    "name": "anthropic-sdk-python"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:53:09.904Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "202db72c87d7c6eaa72129c67ce67fd343a3a20c",
+    "files_scanned": 400,
+    "candidates": 2525,
+    "excluded_non_shipped": 314,
+    "coverage": 0.16,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".vscode/settings.json",
+        "sha": "5b01030785fafec33fdf6824265d11aeac343606"
+      },
+      {
+        "path": ".github/workflows/changelog.yml",
+        "sha": "03160e6d9072d8bf444f3312c964bafb3b09373e"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "d873284f6675d233ece7debdd2cccf81c32d30b1"
+      },
+      {
+        "path": ".github/workflows/publish-pypi.yml",
+        "sha": "71a1b3411ba9b19a3cb3304679fdf3b27173c34d"
+      },
+      {
+        "path": "tools.md",
+        "sha": "4ca0cc5e7e36562d0550052748142884f4d014e2"
+      },
+      {
+        "path": "src/anthropic/resources/beta/organization/plugins/installation_settings.py",
+        "sha": "a8fb2c9f3856deeb321947dd91e9309f93214090"
+      },
+      {
+        "path": "src/anthropic/types/beta/organization/plugins/installation_setting_list_params.py",
+        "sha": "c7baf22a5f067b3e383755b9c93f1dfd780f5ff8"
+      },
+      {
+        "path": "src/anthropic/types/beta/organization/plugins/installation_setting_set_params.py",
+        "sha": "8c7df0594c9815ae55595ae19c2ea1aedfca2ddd"
+      },
+      {
+        "path": "scripts/detect-breaking-changes.py",
+        "sha": "421667df3f7d2a10cb87a6b36a0c03183acb1580"
+      },
+      {
+        "path": ".stats.yml",
+        "sha": "8b9dc57d2d483a6d1c41a35f3cb7cfaae1d0e8b1"
+      },
+      {
+        "path": ".version-manifest.json",
+        "sha": "75ec52fc91df38273faa03bc97e1bc3da417546b"
+      },
+      {
+        "path": "browser-toolset.md",
+        "sha": "0938a26f05f39fd2718b9eda3ab34f73a108015c"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "2dd82fcd8ba273e83cb804c900e7012cff17b5fb"
+      },
+      {
+        "path": "computer-toolset.md",
+        "sha": "6a96470f5232c52d39e193081559393962a2502f"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "2b02eaf4f406a07f6ebb6eeb5d84807a6a193414"
+      },
+      {
+        "path": "helpers.md",
+        "sha": "5a5ae5d18d4a82bc8f712e08ee53a6377ceba901"
+      },
+      {
+        "path": "MIGRATION.md",
+        "sha": "db7f2be984b3984cdc9377b0d861376fb756e6b1"
+      },
+      {
+        "path": "README.md",
+        "sha": "ed22e255653a2ab344e7d16c56a60c4459a4f951"
+      },
+      {
+        "path": "REVIEW.md",
+        "sha": "b4bf08658e9f0c934ad4f611e5443ed0dc9b5600"
+      },
+      {
+        "path": "scripts/utils/check-dependency-caps.py",
+        "sha": "1a29aa5024d0a1f549626c20aed6c8898a611e38"
+      },
+      {
+        "path": "scripts/utils/ruffen-docs.py",
+        "sha": "dd5c1c3156c9b8e5b2518c8d310e98fd117a24cf"
+      },
+      {
+        "path": "scripts/utils/upload-artifact.sh",
+        "sha": "5005b6fcad62c57e39fecedabbe9eeb2ff6412ce"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "95b204aa321dcfadcde28fb2b77048b2e123315a"
+      },
+      {
+        "path": "src/anthropic/__init__.py",
+        "sha": "80f22f27f28ccea3593111e8e87a3eaf959eeaf5"
+      },
+      {
+        "path": "src/anthropic/_base_client.py",
+        "sha": "5e25e2300adbe8c64b8e8fd633a4231a0f44534b"
+      },
+      {
+        "path": "src/anthropic/_client.py",
+        "sha": "40512ee3787ae43b80374f47833db9318ac85171"
+      },
+      {
+        "path": "src/anthropic/_compat.py",
+        "sha": "eee0bc4c75c9ff54f7a31283056ae13065b33ef7"
+      },
+      {
+        "path": "src/anthropic/_constants.py",
+        "sha": "2c53ba8f11200670fcd068342e87de82d2e1460d"
+      },
+      {
+        "path": "src/anthropic/_exceptions.py",
+        "sha": "901ac066a29a0ce52ac85fd99feb01c0e448cb93"
+      },
+      {
+        "path": "src/anthropic/_files.py",
+        "sha": "c526fc605a49323aa490f0e14a05a4feb0bffb05"
+      },
+      {
+        "path": "src/anthropic/_middleware.py",
+        "sha": "c4df340f554b6569db7597a855d3eaa0985fcd65"
+      },
+      {
+        "path": "src/anthropic/_models.py",
+        "sha": "8b824bf6f988cc17e9bdbd4df0c6c1f344449e01"
+      },
+      {
+        "path": "src/anthropic/_qs.py",
+        "sha": "02741a530637b085e940eb00bcfdb5df3cf6c228"
+      },
+      {
+        "path": "src/anthropic/_request.py",
+        "sha": "4d3ed0a81a0663e2598dfd7c36fae67fd30a1ca0"
+      },
+      {
+        "path": "src/anthropic/_resource.py",
+        "sha": "6b4117cc2f6fa72cc3c35aa91b92b99e21ab30c1"
+      },
+      {
+        "path": "src/anthropic/_response.py",
+        "sha": "4e3dd01dfa559a2a79759714013b82463793aee1"
+      },
+      {
+        "path": "src/anthropic/_streaming.py",
+        "sha": "ae718ce106ab465bef247e694b51e70e27d086a2"
+      },
+      {
+        "path": "src/anthropic/_tracing.py",
+        "sha": "4f2836cb1915be5f76e63f61f7bd40dbb9655208"
+      },
+      {
+        "path": "src/anthropic/_types.py",
+        "sha": "c264f99405e4759f56a73587fc97650c98036592"
+      },
+      {
+        "path": "src/anthropic/_version.py",
+        "sha": "4f8a403ac9386ea0e96d80e25e9290b1a8297016"
+      },
+      {
+        "path": "src/anthropic/pagination.py",
+        "sha": "7d29aff626cb38ca9bf76d71ac443897aeedd65f"
+      },
+      {
+        "path": "src/anthropic/_data/__init__.py",
+        "sha": "10c2bf580a57d6fb27f3a4699f2763ffeb31de0f"
+      },
+      {
+        "path": "src/anthropic/_data/browser_toolset_members.py",
+        "sha": "c8d1e72898919abf04e28176e72200b8e5947b36"
+      },
+      {
+        "path": "src/anthropic/_data/deprecated_models.py",
+        "sha": "3d3641257d6aea1a98c4845420f4e754f8847056"
+      },
+      {
+        "path": "src/anthropic/_data/models_to_warn_with_thinking_enabled.py",
+        "sha": "d765781577ac99269535b66a8881ada28ec70e79"
+      },
+      {
+        "path": "src/anthropic/_decoders/jsonl.py",
+        "sha": "fa8f9214beee8da8f12e91008a8b444a0da4302d"
+      },
+      {
+        "path": "src/anthropic/_utils/__init__.py",
+        "sha": "51ac355b3d27685b454ea38490126fb46825044c"
+      },
+      {
+        "path": "src/anthropic/_utils/_compat.py",
+        "sha": "2792f42a74f765bd4d92ee1d9ec105257a447d52"
+      },
+      {
+        "path": "src/anthropic/_utils/_datetime_parse.py",
+        "sha": "7cb9d9e668c5a5efb1b12e72d115276298a70ec1"
+      },
+      {
+        "path": "src/anthropic/_utils/_httpx.py",
+        "sha": "a5cb114c5a1b1475df0233cc4a6e7027dd21c43f"
+      },
+      {
+        "path": "src/anthropic/_utils/_json.py",
+        "sha": "a4695b53226970cf3d6771ca7c1fc133578ee066"
+      },
+      {
+        "path": "src/anthropic/_utils/_logs.py",
+        "sha": "f53f61c9b99576dbd9b7551fcd57355f2a2f9e73"
+      },
+      {
+        "path": "src/anthropic/_utils/_path.py",
+        "sha": "4d6e1e4cbca09d0aa6e892fbe52b0f7aed3ba947"
+      },
+      {
+        "path": "src/anthropic/_utils/_prepare.py",
+        "sha": "271608c9d395e8a249c8ee1d22fe95615a4a3f44"
+      },
+      {
+        "path": "src/anthropic/_utils/_proxy.py",
+        "sha": "0f239a33c6df82d00988a48777a64ab13449b72f"
+      },
+      {
+        "path": "src/anthropic/_utils/_reflection.py",
+        "sha": "300543a36bac5c2781ff064dc1347e4c9be85146"
+      },
+      {
+        "path": "src/anthropic/_utils/_resources_proxy.py",
+        "sha": "1e9c6a9e575da7e793626562a25991a6e7171b32"
+      },
+      {
+        "path": "src/anthropic/_utils/_streams.py",
+        "sha": "f4a0208f01c069616000eeed319029fc92c03b56"
+      },
+      {
+        "path": "src/anthropic/_utils/_sync.py",
+        "sha": "f6027c183d1b6cdcdd7f798259f79824a067d5b2"
+      },
+      {
+        "path": "src/anthropic/_utils/_typing.py",
+        "sha": "9ec1944f7736c60ead74dac45fac75090f68a223"
+      },
+      {
+        "path": "src/anthropic/_utils/_utils.py",
+        "sha": "f76edb3f49be4488d230cc173e17602ab30637d4"
+      },
+      {
+        "path": "src/anthropic/_vendor/__init__.py",
+        "sha": "2cadb11da555feffa8b064042ec36e48671703f7"
+      },
+      {
+        "path": "src/anthropic/lib/__init__.py",
+        "sha": "076480d7bb6fc1e1733ca621e4dfe1f83a474c98"
+      },
+      {
+        "path": "src/anthropic/lib/_files.py",
+        "sha": "ad7b7e57a4ccf723ce1465b5c6d877de88d1b1de"
+      },
+      {
+        "path": "src/anthropic/lib/_retry.py",
+        "sha": "4365cdeffc6a76d754c3843f408f9fde7b827759"
+      },
+      {
+        "path": "src/anthropic/lib/_scoped_client.py",
+        "sha": "e2d58c096b74a2a5cf12ffb89504ef8236e6adbc"
+      },
+      {
+        "path": "src/anthropic/lib/_stainless_helpers.py",
+        "sha": "68fda625caaea6b3dc04f72db66bf39cd2bb5e97"
+      },
+      {
+        "path": "src/anthropic/lib/foundry.md",
+        "sha": "7709f0a1616c748d4ae59c294657c5ddc37a0166"
+      },
+      {
+        "path": "src/anthropic/lib/foundry.py",
+        "sha": "3b4608f5049b66169f5a93d85e129fecefd713eb"
+      },
+      {
+        "path": "src/anthropic/resources/__init__.py",
+        "sha": "7efc25be2bd389c056c84a5d5ad6bac99243ae3a"
+      },
+      {
+        "path": "src/anthropic/resources/files.py",
+        "sha": "ac9a1ea1f2327d9290aaebd3bb7e3fd9180d80dc"
+      },
+      {
+        "path": "src/anthropic/resources/models.py",
+        "sha": "cd8ab011734acebfb93faef40071fe57bb91e4ab"
+      },
+      {
+        "path": "src/anthropic/tools/__init__.py",
+        "sha": "894350ecd9c30db20f02aad6fd719cf9f7931160"
+      },
+      {
+        "path": "src/anthropic/tools/browser.py",
+        "sha": "1097fe54df9f7ad9c7fdf74073e314c38583ded1"
+      },
+      {
+        "path": "src/anthropic/tools/computer.py",
+        "sha": "7f5d9e032640501e72b99d9128e4d594b70b0d9a"
+      },
+      {
+        "path": "src/anthropic/tools/memory.py",
+        "sha": "3ed0106c3715c9554e0a323ca8a559f23f05bb89"
+      },
+      {
+        "path": "src/anthropic/types/__init__.py",
+        "sha": "8a12642a67edecf0e4fd9bc8114253f8a1f99541"
+      },
+      {
+        "path": "src/anthropic/types/anthropic_beta_param.py",
+        "sha": "45a4f65151a014b01746ff5da9bd3ca626357fae"
+      },
+      {
+        "path": "src/anthropic/types/assistant_message_param.py",
+        "sha": "be051b8c7650effd49224edd85036b44b8089f8a"
+      },
+      {
+        "path": "src/anthropic/types/base64_image_source_param.py",
+        "sha": "90a4bd5e852032fccb99c76101f16858337f41a1"
+      },
+      {
+        "path": "src/anthropic/types/base64_pdf_source_param.py",
+        "sha": "18774bbe3736417b3d3345b6006055a162f5cd3d"
+      },
+      {
+        "path": "src/anthropic/types/base64_pdf_source.py",
+        "sha": "f4aaba63f2384c1815a2f40d8db63909765bb7d3"
+      },
+      {
+        "path": "src/anthropic/types/bash_code_execution_output_block_param.py",
+        "sha": "2d7937f690d31c35bd6d79058b301f000c961fcc"
+      },
+      {
+        "path": "src/anthropic/types/bash_code_execution_output_block.py",
+        "sha": "b447e3f6a2aee0f52f0b7dac7e35aa9df407b5f6"
+      },
+      {
+        "path": "src/anthropic/types/bash_code_execution_result_block_param.py",
+        "sha": "13681c2270f3fd5d2d1359d78c9111db3d0ae8b7"
+      },
+      {
+        "path": "src/anthropic/types/bash_code_execution_result_block.py",
+        "sha": "c0d9e22098675f38a5a84076881fb621b84ebde1"
+      },
+      {
+        "path": "src/anthropic/types/bash_code_execution_tool_result_block_param.py",
+        "sha": "da6073aedc4f0a193250ff3408a6bb76c3a82bc5"
+      },
+      {
+        "path": "src/anthropic/types/bash_code_execution_tool_result_block.py",
+        "sha": "95433231c72af610bde212d89ee57dbf68a8b3e5"
+      },
+      {
+        "path": "src/anthropic/types/bash_code_execution_tool_result_error_code.py",
+        "sha": "396b7cda9e93eb98ccf2d6ee66919946670691f3"
+      },
+      {
+        "path": "src/anthropic/types/bash_code_execution_tool_result_error_param.py",
+        "sha": "f64c6072fd2df301ba6e41007f923d0a2476b5e5"
+      },
+      {
+        "path": "src/anthropic/types/bash_code_execution_tool_result_error.py",
+        "sha": "4a4c8cb661241828b38922dd2275ff3a7c877e8d"
+      },
+      {
+        "path": "src/anthropic/types/beta_api_error.py",
+        "sha": "1cbe0dd6cb4168ed98d9be80640392468b93c82b"
+      },
+      {
+        "path": "src/anthropic/types/beta_authentication_error.py",
+        "sha": "9f57bdf2ba94f9d49b3281805b744f6eefe2f3d9"
+      },
+      {
+        "path": "src/anthropic/types/beta_billing_error.py",
+        "sha": "7bc3e967e0b804206001adc5be551834cad1a01e"
+      },
+      {
+        "path": "src/anthropic/types/beta_currency.py",
+        "sha": "572cb4979a88b5efcd3f745569c5eccad502d2fb"
+      },
+      {
+        "path": "src/anthropic/types/beta_error_response.py",
+        "sha": "157c5cf7a110e1dcde86e5859086cc354f04055f"
+      },
+      {
+        "path": "src/anthropic/types/beta_error.py",
+        "sha": "48bf6966a8d342d65ad78f2fd3e2f2f84cc26720"
+      },
+      {
+        "path": "src/anthropic/types/beta_gateway_timeout_error.py",
+        "sha": "4a2bf528cb318b73e820892cdc9392212010cd61"
+      },
+      {
+        "path": "src/anthropic/types/beta_invalid_request_error.py",
+        "sha": "6040e3fac4b1affeef371474aa8b5f571b8d8b90"
+      },
+      {
+        "path": "src/anthropic/types/beta_monetary_amount_param.py",
+        "sha": "180ee5b1d8bd3f4c0ea0c427051e5fe847405d48"
+      },
+      {
+        "path": "src/anthropic/types/beta_monetary_amount.py",
+        "sha": "7c12a2788c58c024e6ba45d61244726d2c278b9c"
+      },
+      {
+        "path": "src/anthropic/types/beta_not_found_error.py",
+        "sha": "b984f3e0b40f90637bf7f88c905a496e491a0f6d"
+      },
+      {
+        "path": "src/anthropic/types/beta_overloaded_error.py",
+        "sha": "179c5964f52396086460a4e9c439ff299df1539d"
+      },
+      {
+        "path": "src/anthropic/types/beta_permission_error.py",
+        "sha": "97f1900b20037dd907727f6b320811340644f57e"
+      },
+      {
+        "path": "src/anthropic/types/beta_rate_limit_error.py",
+        "sha": "1a86dd085a565a44ddb3bb960d3151335ffa3b0e"
+      },
+      {
+        "path": "src/anthropic/types/browser_click_target.py",
+        "sha": "a6d31134d6607884aa1a31c62ae418ce5984dd03"
+      },
+      {
+        "path": "src/anthropic/types/browser_close_tab_config_param.py",
+        "sha": "05f426c72a300d89f41632822052c82fd20d121b"
+      },
+      {
+        "path": "src/anthropic/types/browser_close_tab_input.py",
+        "sha": "f8755e09f6651fb8738593fef4ca6221c107a53f"
+      },
+      {
+        "path": "src/anthropic/types/browser_close_tab_tool_use_block.py",
+        "sha": "92552bcf474a62fdef6c9fff150f931fe19bac33"
+      },
+      {
+        "path": "src/anthropic/types/browser_coordinate_target.py",
+        "sha": "6cbb7c79053a6b892efa0e42c6354fd04a21ebbb"
+      },
+      {
+        "path": "src/anthropic/types/browser_double_click_config_param.py",
+        "sha": "6fafd495a13c163f3322adead43ba93434e1e7ff"
+      },
+      {
+        "path": "src/anthropic/types/browser_double_click_input.py",
+        "sha": "350a5b4ae791992c217a5ff558e171b86c1e0518"
+      },
+      {
+        "path": "src/anthropic/types/browser_double_click_tool_use_block.py",
+        "sha": "143a24746919d39395174f60a382ea7397a78664"
+      },
+      {
+        "path": "src/anthropic/types/browser_file_upload_config_param.py",
+        "sha": "5ebf2d6d9426413d97846d69f70f69cebd983ac9"
+      },
+      {
+        "path": "src/anthropic/types/browser_file_upload_input.py",
+        "sha": "01e3447cedb7d2524f570fe6e2096424b7b2b7c5"
+      },
+      {
+        "path": "src/anthropic/types/browser_file_upload_tool_use_block.py",
+        "sha": "6e0ffaadf5a164bd71b0b34151435ff47ff38b02"
+      },
+      {
+        "path": "src/anthropic/types/browser_find_config_param.py",
+        "sha": "dd57ea0c84985b26f11b88909150bdb3196d63e0"
+      },
+      {
+        "path": "src/anthropic/types/browser_find_input.py",
+        "sha": "4b10b61877301d0f79c5a3b509fe3cf32fc536bf"
+      },
+      {
+        "path": "src/anthropic/types/browser_find_tool_use_block.py",
+        "sha": "b6126c52cc7128db7484a4baf6dc9a1b8becca1e"
+      },
+      {
+        "path": "src/anthropic/types/browser_form_input_config_param.py",
+        "sha": "06d2695a93f9011f8a96694c05355d8f0ea7c2ce"
+      },
+      {
+        "path": "src/anthropic/types/browser_form_input_input.py",
+        "sha": "b4498037e65ae06bf0316b8c4758ed4a0b3eb521"
+      },
+      {
+        "path": "src/anthropic/types/browser_form_input_tool_use_block.py",
+        "sha": "d2bd75d4badf238019e688e2f651c7ee360eaa58"
+      },
+      {
+        "path": "src/anthropic/types/browser_form_input_value.py",
+        "sha": "f269597ea7e733092fb7fdff081b7586539b3895"
+      },
+      {
+        "path": "src/anthropic/types/browser_get_page_text_config_param.py",
+        "sha": "34ecac8e473a5171357c8da559fbe851f29fbe8d"
+      },
+      {
+        "path": "src/anthropic/types/browser_get_page_text_input.py",
+        "sha": "494df4020039e40d58be7c668545535a55a2bf4a"
+      },
+      {
+        "path": "src/anthropic/types/browser_get_page_text_tool_use_block.py",
+        "sha": "85fb32d8de3f9b231f0cf7c19126417b6311c5d1"
+      },
+      {
+        "path": "src/anthropic/types/browser_hold_key_config_param.py",
+        "sha": "4b6519532a152c5641594cb2706d0524624307df"
+      },
+      {
+        "path": "src/anthropic/types/browser_hold_key_input.py",
+        "sha": "6604d8faeb8625b49caaa2b0e5dca66651c010dc"
+      },
+      {
+        "path": "src/anthropic/types/browser_hold_key_tool_use_block.py",
+        "sha": "7d30f2054df06d1c23339ac3fd60965cf8d50121"
+      },
+      {
+        "path": "src/anthropic/types/browser_hover_config_param.py",
+        "sha": "03695a0af4f5fe575dd6ca501ec796eb99076808"
+      },
+      {
+        "path": "src/anthropic/types/browser_hover_input.py",
+        "sha": "706ad4ede2b2bb3531058efeff81c3ef59ccc161"
+      },
+      {
+        "path": "src/anthropic/types/browser_hover_tool_use_block.py",
+        "sha": "9b31282836ed1aa7177cbfb734b7e96402f6c204"
+      },
+      {
+        "path": "src/anthropic/types/browser_javascript_exec_config_param.py",
+        "sha": "50beec91bba06bde570738dac5feddf856a5c54f"
+      },
+      {
+        "path": "src/anthropic/types/browser_javascript_exec_input.py",
+        "sha": "ed26a6d62cbad422e61a6c0be09f6af93853a0fb"
+      },
+      {
+        "path": "src/anthropic/types/browser_javascript_exec_tool_use_block.py",
+        "sha": "3a2745489f2d7e00b711348db37ba7b5765b32af"
+      },
+      {
+        "path": "src/anthropic/types/browser_key_config_param.py",
+        "sha": "e7717a949b551434e7183284b5b857c77ffe9db7"
+      },
+      {
+        "path": "src/anthropic/types/browser_key_input.py",
+        "sha": "dd8038da8809b9eb4d41cf1207cfc6165d927f6e"
+      },
+      {
+        "path": "src/anthropic/types/browser_key_tool_use_block.py",
+        "sha": "a45c73175a3d7418ed64bf839cad63c84ea6534b"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_click_config_param.py",
+        "sha": "f4c89e780cbd800bd3650172c6c0c95db85ccb80"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_click_drag_config_param.py",
+        "sha": "bb534eaecf650565e4847dc512949296ce79cc5d"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_click_drag_input.py",
+        "sha": "9d3a9cc82020dc11b78ad5a55e4c33adb649084c"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_click_drag_tool_use_block.py",
+        "sha": "2ddb45654db2c7c7ec6ed0a7697ddc698f62c383"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_click_input.py",
+        "sha": "4041a1d720af2a8a83885f8f58bbd1b1bc54cda4"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_click_tool_use_block.py",
+        "sha": "ac9546e5dbd51789089d1cd6470fca8a8bd2b819"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_mouse_down_config_param.py",
+        "sha": "0cad4cf2aa3b6ba8500a022cf999104eef2c09be"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_mouse_down_input.py",
+        "sha": "b43268c7893e825f3bd7411a22c242f67835eca2"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_mouse_down_tool_use_block.py",
+        "sha": "393d785efd6245239e98708d6283fe1deffad03c"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_mouse_up_config_param.py",
+        "sha": "e7e8312719e965fa669198577415c5c08fe0bd69"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_mouse_up_input.py",
+        "sha": "a46d20f79dafd2d0f494605ed2857d02cea09e54"
+      },
+      {
+        "path": "src/anthropic/types/browser_left_mouse_up_tool_use_block.py",
+        "sha": "9669ac300639913abfc8448b891c6f0a23e62586"
+      },
+      {
+        "path": "src/anthropic/types/browser_list_tabs_config_param.py",
+        "sha": "daabda7e8345e731e16a4af0ab0ce2752e6bc61a"
+      },
+      {
+        "path": "src/anthropic/types/browser_list_tabs_input.py",
+        "sha": "721b3ea646699a7af8676ae45c9a2c8e2861eb28"
+      },
+      {
+        "path": "src/anthropic/types/browser_list_tabs_tool_use_block.py",
+        "sha": "278bb4675f84f7c9b604d098c8fb145fd0514c2d"
+      },
+      {
+        "path": "src/anthropic/types/browser_member_input.py",
+        "sha": "a020df954aa07386a5e5bc0586ffebdb033d3594"
+      },
+      {
+        "path": "src/anthropic/types/browser_member_name.py",
+        "sha": "03e83e5226ce1f7434862d6296a36208dd794eb2"
+      },
+      {
+        "path": "src/anthropic/types/browser_middle_click_config_param.py",
+        "sha": "a331148317c77f0aea21e6a583abd0ad34359d4d"
+      },
+      {
+        "path": "src/anthropic/types/browser_middle_click_input.py",
+        "sha": "54167bd8354b50e354911d4166ca576f9651bd12"
+      },
+      {
+        "path": "src/anthropic/types/browser_middle_click_tool_use_block.py",
+        "sha": "c116da3cee72b83f67da4b4a4a299532f3cae54f"
+      },
+      {
+        "path": "src/anthropic/types/browser_mouse_move_config_param.py",
+        "sha": "93e30f9160b6fb357cb95d9d5a3e16b2524358d5"
+      },
+      {
+        "path": "src/anthropic/types/browser_mouse_move_input.py",
+        "sha": "9742d88a62ce3318f2469d98cb985c932e931612"
+      },
+      {
+        "path": "src/anthropic/types/browser_mouse_move_tool_use_block.py",
+        "sha": "1ae0d16bb89aabf66d854c74eb8d10dc2e9dc386"
+      },
+      {
+        "path": "src/anthropic/types/browser_navigate_config_param.py",
+        "sha": "b3009301f5aa1ba1401469f15f49c78214c48099"
+      },
+      {
+        "path": "src/anthropic/types/browser_navigate_input.py",
+        "sha": "ce0ab045423222624b2bd56cd2d2e7ce2153a21a"
+      },
+      {
+        "path": "src/anthropic/types/browser_navigate_tool_use_block.py",
+        "sha": "fd59504b9374e1436807de2d11ba07d3052894b1"
+      },
+      {
+        "path": "src/anthropic/types/browser_new_tab_config_param.py",
+        "sha": "81fa546b64a4c5e7002407d0d763e0cdc03a5ac3"
+      },
+      {
+        "path": "src/anthropic/types/browser_new_tab_input.py",
+        "sha": "1a2688de7c878e2cef9ee425bdd0cebe5151b146"
+      },
+      {
+        "path": "src/anthropic/types/browser_new_tab_tool_use_block.py",
+        "sha": "f1991c7d91af807b3074f8a8ee38453c71e3c446"
+      },
+      {
+        "path": "src/anthropic/types/browser_read_console_config_param.py",
+        "sha": "b6f7e1aa14018d41f977bdc0ae3a95d112329a3a"
+      },
+      {
+        "path": "src/anthropic/types/browser_read_console_input.py",
+        "sha": "a330d04cc611c0f4912fcddea054576301b6bafe"
+      },
+      {
+        "path": "src/anthropic/types/browser_read_console_tool_use_block.py",
+        "sha": "6b1a3221adc97a211d9d9a3d80ad3d0ce91f4d6e"
+      },
+      {
+        "path": "src/anthropic/types/browser_read_network_config_param.py",
+        "sha": "77020cf13a0f2ea56ddbf3cc5a6bdb3c51a82c39"
+      },
+      {
+        "path": "src/anthropic/types/browser_read_network_input.py",
+        "sha": "55f426705501e83f62cd2c89f841e27cac6b1cad"
+      },
+      {
+        "path": "src/anthropic/types/browser_read_network_tool_use_block.py",
+        "sha": "dc289d01491628977f5447839d6873d95b522f80"
+      },
+      {
+        "path": "src/anthropic/types/browser_read_page_config_param.py",
+        "sha": "c4f84432fb4f8c5ef4adcfc7291595a7240f169f"
+      },
+      {
+        "path": "src/anthropic/types/browser_read_page_filter.py",
+        "sha": "6e70287bd570d93f1f0c3a4977e494b2dde7feba"
+      },
+      {
+        "path": "src/anthropic/types/browser_read_page_input.py",
+        "sha": "f63bf9e08b9f92a668679309aed92f8280fd075d"
+      },
+      {
+        "path": "src/anthropic/types/browser_read_page_tool_use_block.py",
+        "sha": "09cde5ccdb6d57044ff05789936bed5fee7d3f8d"
+      },
+      {
+        "path": "src/anthropic/types/browser_ref_target.py",
+        "sha": "a4247a2d8b6ee5dbb5a12d757f3dcfcf0aa9b641"
+      },
+      {
+        "path": "src/anthropic/types/browser_right_click_config_param.py",
+        "sha": "d309e78bd44e5a553e153a7af1b6b0374417c342"
+      },
+      {
+        "path": "src/anthropic/types/browser_right_click_input.py",
+        "sha": "a4966727ab292477b56167757c04cb9ae4207bdb"
+      },
+      {
+        "path": "src/anthropic/types/browser_right_click_tool_use_block.py",
+        "sha": "112ac8c9c448d7d96183b2b3913be9ea297efe68"
+      },
+      {
+        "path": "src/anthropic/types/browser_screenshot_config_param.py",
+        "sha": "90404e24a616f1f5a2a2c8f218ca74ced2678fa7"
+      },
+      {
+        "path": "src/anthropic/types/browser_screenshot_input.py",
+        "sha": "22ede2752e0ef82fed535e747fb5b0458d889e96"
+      },
+      {
+        "path": "src/anthropic/types/browser_screenshot_tool_use_block.py",
+        "sha": "1b97886df5d664920961e54c285eed968c50483d"
+      },
+      {
+        "path": "src/anthropic/types/browser_scroll_config_param.py",
+        "sha": "fa9e89e7efd451c27f00fa3b7dd151a33d7e1b9c"
+      },
+      {
+        "path": "src/anthropic/types/browser_scroll_direction.py",
+        "sha": "b7358f41d690297dc33caeccccd4fc8a91b6e7b7"
+      },
+      {
+        "path": "src/anthropic/types/browser_scroll_input.py",
+        "sha": "ee69ce5dc93bc3ff033747a84dfd721225e22e19"
+      },
+      {
+        "path": "src/anthropic/types/browser_scroll_to_config_param.py",
+        "sha": "b1731eb58798ef7f9b1aab90b4b26e46a4a1c33a"
+      },
+      {
+        "path": "src/anthropic/types/browser_scroll_to_input.py",
+        "sha": "f49d3cd61433492c6794b70a41293ea73e7581c4"
+      },
+      {
+        "path": "src/anthropic/types/browser_scroll_to_tool_use_block.py",
+        "sha": "713a5d1dc72a70ede41183b4271b7dad73413178"
+      },
+      {
+        "path": "src/anthropic/types/browser_scroll_tool_use_block.py",
+        "sha": "fa628ebaba65ae8c5420d06a87c4135f1488c0e2"
+      },
+      {
+        "path": "src/anthropic/types/browser_state_block_param.py",
+        "sha": "4de90109df64aa98b85519fa9037684056e42771"
+      },
+      {
+        "path": "src/anthropic/types/browser_state_change_download_completed_param.py",
+        "sha": "996738272d976059274b392de983a20730935a3a"
+      },
+      {
+        "path": "src/anthropic/types/browser_state_change_download_failed_param.py",
+        "sha": "3326f9af05a237c92860e6f4783d5fc34d3aecc5"
+      },
+      {
+        "path": "src/anthropic/types/browser_state_change_download_started_param.py",
+        "sha": "6094314829d09c7079740018620aefb709d89ac2"
+      },
+      {
+        "path": "src/anthropic/types/browser_state_change_param.py",
+        "sha": "e32ac2ea3ce1199fc150066bf34d81b26075bb7f"
+      },
+      {
+        "path": "src/anthropic/types/browser_state_change_tab_opened_param.py",
+        "sha": "b8d686fe303ea634e270d4c7d19f4774d91a6506"
+      },
+      {
+        "path": "src/anthropic/types/browser_state_tab_entry_param.py",
+        "sha": "e82ad67ab5a708ceda0fa9c3cc6b68bc8db2a2ad"
+      },
+      {
+        "path": "src/anthropic/types/browser_switch_tab_config_param.py",
+        "sha": "9cab90ee24852adcb3882e927d6ee1be59b3ede0"
+      },
+      {
+        "path": "src/anthropic/types/browser_switch_tab_input.py",
+        "sha": "5486807e68baf41647aba46de17abd6a7e75d851"
+      },
+      {
+        "path": "src/anthropic/types/browser_switch_tab_tool_use_block.py",
+        "sha": "4b527943984bfd6389420c1a8667d2623c7fec2d"
+      },
+      {
+        "path": "src/anthropic/types/browser_tool_use_block.py",
+        "sha": "8dbbe1cce4c79af577b4f4be73bf77cd51f92fef"
+      },
+      {
+        "path": "src/anthropic/types/browser_toolset_20260801_param.py",
+        "sha": "d17d0ba4ac1fcbc753be81db8645686527e0d56a"
+      },
+      {
+        "path": "src/anthropic/types/browser_toolset_configs_param.py",
+        "sha": "a0f23914ae3a82baef7fde1459bc5eb15c499d9a"
+      },
+      {
+        "path": "src/anthropic/types/browser_triple_click_config_param.py",
+        "sha": "064e72978d14eed5fa1fd0fe42a37b060f7f5c57"
+      },
+      {
+        "path": "src/anthropic/types/browser_triple_click_input.py",
+        "sha": "596c2fe4fb24a28199f2d2a601b79838292469e7"
+      },
+      {
+        "path": "src/anthropic/types/browser_triple_click_tool_use_block.py",
+        "sha": "ce79217fb47c7bae2151237231ad5ff48c3430a4"
+      },
+      {
+        "path": "src/anthropic/types/browser_type_config_param.py",
+        "sha": "c9918541141ef3cca26d6b1381346469e306c397"
+      },
+      {
+        "path": "src/anthropic/types/browser_type_input.py",
+        "sha": "7360a3d2fc1fef62b19b9898faccf6d0be2e561e"
+      },
+      {
+        "path": "src/anthropic/types/browser_type_tool_use_block.py",
+        "sha": "27956866b1427426f53695f07b1ceae7180e0a72"
+      },
+      {
+        "path": "src/anthropic/types/browser_wait_config_param.py",
+        "sha": "3ef5e41bafdff82f195a5407eaf5187ffbfd1bf6"
+      },
+      {
+        "path": "src/anthropic/types/browser_wait_input.py",
+        "sha": "24fa2e091e27141f5fc0bb9210db66a8b09f4b58"
+      },
+      {
+        "path": "src/anthropic/types/browser_wait_tool_use_block.py",
+        "sha": "f6b79a024cdf49751b9bb51a099fdf12d354c3dd"
+      },
+      {
+        "path": "src/anthropic/types/browser_zoom_config_param.py",
+        "sha": "785a49d66923139806515ced25375ccda722c6eb"
+      },
+      {
+        "path": "src/anthropic/types/browser_zoom_input.py",
+        "sha": "dbc1499154581496f2f625408893b6e8e2edfe89"
+      },
+      {
+        "path": "src/anthropic/types/browser_zoom_tool_use_block.py",
+        "sha": "5f176631c86344b1bbdcbb790c470f7a80e97c54"
+      },
+      {
+        "path": "src/anthropic/types/cache_control_ephemeral_param.py",
+        "sha": "d0aab3ab36261dbbffcb69d2795d7e44a7fa8a43"
+      },
+      {
+        "path": "src/anthropic/types/cache_creation.py",
+        "sha": "6759b5bc1140de423a09ae616761d49496c7fb46"
+      },
+      {
+        "path": "src/anthropic/types/cache_miss_messages_changed.py",
+        "sha": "2bd5d0637f078280c67d9094f09ce692265557ce"
+      },
+      {
+        "path": "src/anthropic/types/cache_miss_model_changed.py",
+        "sha": "df7596613305c82d8c5bcf1ebc18dbda04536294"
+      },
+      {
+        "path": "src/anthropic/types/cache_miss_previous_message_not_found.py",
+        "sha": "df84a8bf7f51fb9e3d93d7af0b8e078c1cbaced7"
+      },
+      {
+        "path": "src/anthropic/types/cache_miss_reason.py",
+        "sha": "406671dff01c01d1deda6d43c2253f7837d206ea"
+      },
+      {
+        "path": "src/anthropic/types/cache_miss_system_changed.py",
+        "sha": "180f2a49c69dbc2f485afbe27852c86e06ccc9f1"
+      },
+      {
+        "path": "src/anthropic/types/cache_miss_tools_changed.py",
+        "sha": "3d21a4cd7d3c1c862954c3c40a5e2befa462fa2e"
+      },
+      {
+        "path": "src/anthropic/types/cache_miss_unavailable.py",
+        "sha": "05d4c85e16ab9c9460c09bd53fcb01dabc9edcb2"
+      },
+      {
+        "path": "src/anthropic/types/capability_support.py",
+        "sha": "82c011603ab1842ae0d65b8e9e8df294b4bdc0a9"
+      },
+      {
+        "path": "src/anthropic/types/citation_char_location_param.py",
+        "sha": "58fbaa1eed7165609661e7e483c55beab8aff3ff"
+      },
+      {
+        "path": "src/anthropic/types/citation_char_location.py",
+        "sha": "405b0dcae42636d05ed58bae0b53a0f9f8e0b3b6"
+      },
+      {
+        "path": "src/anthropic/types/citation_content_block_location_param.py",
+        "sha": "73ec7d27b1164cddb3d3e4f770ee2355001f321e"
+      },
+      {
+        "path": "src/anthropic/types/citation_content_block_location.py",
+        "sha": "95a053b35124c90aaf44e9e7d7e8c52dfeaf2da0"
+      },
+      {
+        "path": "src/anthropic/types/citation_page_location_param.py",
+        "sha": "4f54fb7b3b1856580986714c6576af1a5b9b0a0a"
+      },
+      {
+        "path": "src/anthropic/types/citation_page_location.py",
+        "sha": "ae43a7950820f68617ed940e17561f27a13fbca0"
+      },
+      {
+        "path": "src/anthropic/types/citation_search_result_location_param.py",
+        "sha": "607e0c7babc9d45923ab743f04de1c50d01303e0"
+      },
+      {
+        "path": "src/anthropic/types/citation_web_search_result_location_param.py",
+        "sha": "9e8e917880c9138694221c3d87fdc9ffe04a8287"
+      },
+      {
+        "path": "src/anthropic/types/citations_config_param.py",
+        "sha": "c48d03df4bb9a1b87d873a51a0ee5e6b75cfc826"
+      },
+      {
+        "path": "src/anthropic/types/citations_config.py",
+        "sha": "2f5c1cc3fa7c871162b337bc91c629105eda563b"
+      },
+      {
+        "path": "src/anthropic/types/citations_delta.py",
+        "sha": "f0c1dabca40b6c7a7026336ce69a5c509c6f1db2"
+      },
+      {
+        "path": "src/anthropic/types/citations_search_result_location.py",
+        "sha": "b542a08cdfed7b057417053a3060830e05ab445a"
+      },
+      {
+        "path": "src/anthropic/types/citations_web_search_result_location.py",
+        "sha": "07852f1e0bbf2240c52494e964a813f0fc5d373f"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_output_block_param.py",
+        "sha": "aca56e3ee8ce8a4d055493755e3e68573be9c1a2"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_output_block.py",
+        "sha": "de885f8bd26d34a18075f0f65131bff017df4b56"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_result_block_param.py",
+        "sha": "85f78a8ec192110e153494e76e6fd167ae2078f2"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_result_block.py",
+        "sha": "6b4afbe8266bbef235f02848109cbe650760adcf"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_tool_20250522_param.py",
+        "sha": "7eab75544679695318c24fb889152578fe7093dd"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_tool_20250825_param.py",
+        "sha": "5e774b7708501868591a5b4b4a45cf6ef51361d4"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_tool_20260120_param.py",
+        "sha": "aed2ab7d3758334cd77531db0f4e9121884b4583"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_tool_20260521_param.py",
+        "sha": "6233a8c2b99adbee3650728b48ea2ed9cb32134e"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_tool_result_block_content.py",
+        "sha": "2de57229aa57608f4f8adbfa434244fe580621dd"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_tool_result_block_param_content_param.py",
+        "sha": "fd6f1fac103a3a6042453b2737a6cb6f0e28af83"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_tool_result_block_param.py",
+        "sha": "5f9a170a977e5f35ce38ccfc94335d676fddd004"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_tool_result_block.py",
+        "sha": "19c9770a5c33a392b2f91379336500ef98b94bc8"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_tool_result_error_code.py",
+        "sha": "6125efbb22f5f447b29917ed089d4c398473c8a2"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_tool_result_error_param.py",
+        "sha": "6abf0ccb76a2e867ccea07d40749aad8a2096a88"
+      },
+      {
+        "path": "src/anthropic/types/code_execution_tool_result_error.py",
+        "sha": "677ef103ddafde53baed389f5af70eaf7238a5c1"
+      },
+      {
+        "path": "src/anthropic/types/computer_cursor_position_config_param.py",
+        "sha": "e22d67dcaeadd2abf10ff45c20bf172fb836fdf1"
+      },
+      {
+        "path": "src/anthropic/types/computer_cursor_position_input.py",
+        "sha": "b6991a0eb55abbf5cef98a7b7c98f7dd687dd4ed"
+      },
+      {
+        "path": "src/anthropic/types/computer_cursor_position_tool_use_block.py",
+        "sha": "a0f2dad6f97c2b63757f5ca8b3af2e17d84873b0"
+      },
+      {
+        "path": "src/anthropic/types/computer_double_click_config_param.py",
+        "sha": "e5d2e78a04d4ac431f8d098c09976290ee7ae1dd"
+      },
+      {
+        "path": "src/anthropic/types/computer_double_click_input.py",
+        "sha": "d7c00b3264624a3f419c390915c376066c2b150d"
+      },
+      {
+        "path": "src/anthropic/types/computer_double_click_tool_use_block.py",
+        "sha": "49c62bd6b31f036fec5d18f8895c71a816abe861"
+      },
+      {
+        "path": "src/anthropic/types/computer_hold_key_config_param.py",
+        "sha": "7be76e058ba9c0eefe41b84db101d5a5d6cb3103"
+      },
+      {
+        "path": "src/anthropic/types/computer_hold_key_input.py",
+        "sha": "bef9d4250e6b5adb8065a96a1e7365c369908789"
+      },
+      {
+        "path": "src/anthropic/types/computer_hold_key_tool_use_block.py",
+        "sha": "d7c18fb952d00b1b32a715f76d0dd668caff3834"
+      },
+      {
+        "path": "src/anthropic/types/computer_key_config_param.py",
+        "sha": "567a8cb149571423552d07212ffcbe2568eeef1c"
+      },
+      {
+        "path": "src/anthropic/types/computer_key_input.py",
+        "sha": "af31500b5c3fa4b388b37215c17147ba48df4617"
+      },
+      {
+        "path": "src/anthropic/types/computer_key_tool_use_block.py",
+        "sha": "9e9d90896b440ffb2fd0d66f9f461bbdf13310a3"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_click_config_param.py",
+        "sha": "adb3f05b8a0c4d09dd22d6a8918c4d9c46340b9a"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_click_drag_config_param.py",
+        "sha": "58abc393e75d7f7049bd80751833c32747c48471"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_click_drag_input.py",
+        "sha": "a832169fea3de0d756d4830c0dd713ff5724a252"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_click_drag_tool_use_block.py",
+        "sha": "cbcce6794e97dd16d58a8a2e006bfbda3ef3fbfe"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_click_input.py",
+        "sha": "ecee701b229e565fe989ffaaa5345526bdd48577"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_click_tool_use_block.py",
+        "sha": "f150744461a38bd6413cca839c117b593eff4363"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_mouse_down_config_param.py",
+        "sha": "0d872f7eebfee42096b57956e77a8f4a2c82e9e9"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_mouse_down_input.py",
+        "sha": "bcc6643ebdbf6bcacad287016ef98d459c90a9f3"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_mouse_down_tool_use_block.py",
+        "sha": "17dd88438ae5e58a77e26585ec60151ae5ad1018"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_mouse_up_config_param.py",
+        "sha": "02c7f8fec4d7c38bb167f9bced5ed0211a64daab"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_mouse_up_input.py",
+        "sha": "cca75d4b0b9c417a951e94e3d104342f6be0ee68"
+      },
+      {
+        "path": "src/anthropic/types/computer_left_mouse_up_tool_use_block.py",
+        "sha": "8cd50c4d3f9ba292f9c4b41d7ef576b72208037e"
+      },
+      {
+        "path": "src/anthropic/types/computer_member_input.py",
+        "sha": "1bface916625ba852c0293f8e8bd982326eb9f32"
+      },
+      {
+        "path": "src/anthropic/types/computer_member_name.py",
+        "sha": "2f13ec6f362baa8a6316730b9cc2b1eb55fb137e"
+      },
+      {
+        "path": "src/anthropic/types/computer_middle_click_config_param.py",
+        "sha": "f5edc627f8365754b474f67dfc4ed467956dccaf"
+      },
+      {
+        "path": "src/anthropic/types/computer_middle_click_input.py",
+        "sha": "c47686f0ecade74403989efae65627f183c4161f"
+      },
+      {
+        "path": "src/anthropic/types/computer_middle_click_tool_use_block.py",
+        "sha": "a6450fa1fec7542ce7519e860a662f7c31bde4d6"
+      },
+      {
+        "path": "src/anthropic/types/computer_mouse_move_config_param.py",
+        "sha": "c693cf2fbfd78c4ce7361c72c741dc60712d34e9"
+      },
+      {
+        "path": "src/anthropic/types/computer_mouse_move_input.py",
+        "sha": "f241b027ec5cea0b41c37569b72dc2d92d13b973"
+      },
+      {
+        "path": "src/anthropic/types/computer_mouse_move_tool_use_block.py",
+        "sha": "56e695d783c4af8f98921a71bf286bef2fda65ec"
+      },
+      {
+        "path": "src/anthropic/types/computer_right_click_config_param.py",
+        "sha": "b2d7291f8d983bc4e7909f94f1eb98a8e4b53b34"
+      },
+      {
+        "path": "src/anthropic/types/computer_right_click_input.py",
+        "sha": "9fa6cc3b42624d3de4f9e8b6dd3af390f998bffa"
+      },
+      {
+        "path": "src/anthropic/types/computer_right_click_tool_use_block.py",
+        "sha": "27390103765f377ac6f57a9d1b6cfda872b47251"
+      },
+      {
+        "path": "src/anthropic/types/computer_screenshot_config_param.py",
+        "sha": "09f1296d6d10f844fed181ad15ff81af0505579a"
+      },
+      {
+        "path": "src/anthropic/types/computer_screenshot_input.py",
+        "sha": "17fdffd429aa43afb76fa6218aa79b15ad813277"
+      },
+      {
+        "path": "src/anthropic/types/computer_screenshot_tool_use_block.py",
+        "sha": "a5dba384583f4708d4f53bb5d6f302bbc8567744"
+      },
+      {
+        "path": "src/anthropic/types/computer_scroll_config_param.py",
+        "sha": "dcafd521cbe8bfdbf41e3111f35aecf11d821f3b"
+      },
+      {
+        "path": "src/anthropic/types/computer_scroll_direction.py",
+        "sha": "895f63a1e1234e9539b632bddc0f27165285f80a"
+      },
+      {
+        "path": "src/anthropic/types/computer_scroll_input.py",
+        "sha": "d36d1fa31ff2415c7d9b3701470ed6c3e7fa8c95"
+      },
+      {
+        "path": "src/anthropic/types/computer_scroll_tool_use_block.py",
+        "sha": "3e0ac605f5556c3c5da19c2eb683ee888a6970f7"
+      },
+      {
+        "path": "src/anthropic/types/computer_tool_use_block.py",
+        "sha": "6e818ad8b5560d9b7aa382e6d5153946d26b0753"
+      },
+      {
+        "path": "src/anthropic/types/computer_toolset_20260801_param.py",
+        "sha": "2a5bc1b0fa589d0792ad631e8fa1583a2f300eae"
+      },
+      {
+        "path": "src/anthropic/types/computer_toolset_configs_param.py",
+        "sha": "916311194e206edf8a97b419b326b418e669d769"
+      },
+      {
+        "path": "src/anthropic/types/computer_triple_click_config_param.py",
+        "sha": "df5090a7999e74b7a5cee2b650a0b86d9b19e4f0"
+      },
+      {
+        "path": "src/anthropic/types/computer_triple_click_input.py",
+        "sha": "a8eda31453e216113c428a2492fa6217ab6fda19"
+      },
+      {
+        "path": "src/anthropic/types/computer_triple_click_tool_use_block.py",
+        "sha": "42d219626962355d1702f49aae2a5521deee72c8"
+      },
+      {
+        "path": "src/anthropic/types/computer_type_config_param.py",
+        "sha": "1e39c72e4c9fccf74bb3d2ba85912b4510c48c69"
+      },
+      {
+        "path": "src/anthropic/types/computer_type_input.py",
+        "sha": "959601479bc3a885ae5c2c31279ebb48e2316ef7"
+      },
+      {
+        "path": "src/anthropic/types/computer_type_tool_use_block.py",
+        "sha": "da799d343d53f3e7e57a1eecde988bdd5cfdee9e"
+      },
+      {
+        "path": "src/anthropic/types/computer_wait_config_param.py",
+        "sha": "4a8bb2f9002c55eaf7adc40bbbcff8dae1ef214f"
+      },
+      {
+        "path": "src/anthropic/types/computer_wait_input.py",
+        "sha": "22cde2a0415bd9a15f507ffb707db280535fb338"
+      },
+      {
+        "path": "src/anthropic/types/computer_wait_tool_use_block.py",
+        "sha": "d976a85830d173b0e76a7c1da77ac34887f11a70"
+      },
+      {
+        "path": "src/anthropic/types/computer_zoom_config_param.py",
+        "sha": "0d2f6848be687ab52c2862b8fb707c75a66ba25b"
+      },
+      {
+        "path": "src/anthropic/types/computer_zoom_input.py",
+        "sha": "8e34821ffedb9f4d4cd12bb96cf9b7dc4d04206d"
+      },
+      {
+        "path": "src/anthropic/types/computer_zoom_tool_use_block.py",
+        "sha": "cbe302d2310c140cfb12d3106afd3d0e9c15a801"
+      },
+      {
+        "path": "src/anthropic/types/container_params.py",
+        "sha": "70776d8a1fc6eb011f4f2f7b8c8081ac1233b7f0"
+      },
+      {
+        "path": "src/anthropic/types/container_skill.py",
+        "sha": "0d81f4431107a73c8cd79589a5eca78e4bd403d3"
+      },
+      {
+        "path": "src/anthropic/types/container_upload_block_param.py",
+        "sha": "0dd63b81a11d4941079a2022760375de4082f49e"
+      },
+      {
+        "path": "src/anthropic/types/container_upload_block.py",
+        "sha": "f8134b6f64b943dc609e5ecd233b685e74c6c491"
+      },
+      {
+        "path": "src/anthropic/types/container.py",
+        "sha": "83544c2d9e3c0e08c4b630b6edbb10db489ab1b4"
+      },
+      {
+        "path": "src/anthropic/types/content_block_delta_event.py",
+        "sha": "8579758dfa8e845d152c2c30f2a2920d511c3497"
+      },
+      {
+        "path": "src/anthropic/types/content_block_param.py",
+        "sha": "b6a481a0ab64424475760b6e63316ed9177dc532"
+      },
+      {
+        "path": "src/anthropic/types/content_block_source_content_param.py",
+        "sha": "5a651c64e08fdeafd9a77ef35f0a481597f15260"
+      },
+      {
+        "path": "src/anthropic/types/content_block_source_param.py",
+        "sha": "7dc7138d26ef663b5468f470c63d30aaf1297073"
+      },
+      {
+        "path": "src/anthropic/types/content_block_start_event.py",
+        "sha": "3b4c360e9c2b9987b457c58ed246ee42c7d89056"
+      },
+      {
+        "path": "src/anthropic/types/content_block_stop_event.py",
+        "sha": "058ce66b389515abf45b911858d663c492fd06fb"
+      },
+      {
+        "path": "src/anthropic/types/content_block.py",
+        "sha": "a0baaeb69bab7c74ae6e6aa9613f3381ad416811"
+      },
+      {
+        "path": "src/anthropic/types/context_management_capability.py",
+        "sha": "eadd9c3af0aabfc39b6004f1de12fb3fddf389d1"
+      },
+      {
+        "path": "src/anthropic/types/deleted_file.py",
+        "sha": "36b737566dcda5828a037ffa42e12d02b0bc0358"
+      },
+      {
+        "path": "src/anthropic/types/deleted_skill.py",
+        "sha": "aadba8ebe390de19bf6c7ffe076821cddbee03d8"
+      },
+      {
+        "path": "src/anthropic/types/deleted_user_profile.py",
+        "sha": "d65e7afb5f40a8d22c55979d382740ec1850cd18"
+      },
+      {
+        "path": "src/anthropic/types/diagnostics_param.py",
+        "sha": "75c4d4e3b452a83d07aef3b5f49b499c1f958777"
+      },
+      {
+        "path": "src/anthropic/types/diagnostics.py",
+        "sha": "ecaec3456f6c208a866e6fb1b13c30aad4f17534"
+      },
+      {
+        "path": "src/anthropic/types/direct_caller_param.py",
+        "sha": "e2f2127a91b1beb901f0c6206e6a572751fde22b"
+      },
+      {
+        "path": "src/anthropic/types/direct_caller.py",
+        "sha": "89a6c1de03558c1738533d1ef66a52804ca56300"
+      },
+      {
+        "path": "src/anthropic/types/document_block_param.py",
+        "sha": "9de7acbcd570103dc1fc33869888dc734d3eea27"
+      },
+      {
+        "path": "src/anthropic/types/document_block.py",
+        "sha": "faad258d120e4bf7b5bc1fa8626e3ed3b85d423d"
+      },
+      {
+        "path": "src/anthropic/types/effort_capability.py",
+        "sha": "d34d23f2e7bf30e5cf6cc2c66f8d31307cbf725f"
+      },
+      {
+        "path": "src/anthropic/types/encrypted_code_execution_result_block_param.py",
+        "sha": "8d1bdfec2d76967178e0986f45f2e70a698aca6c"
+      },
+      {
+        "path": "src/anthropic/types/encrypted_code_execution_result_block.py",
+        "sha": "c7e7e85f9ea647c2dcb86d8710aa4e614f91bc6b"
+      },
+      {
+        "path": "src/anthropic/types/file_document_source_param.py",
+        "sha": "8eb4c92b8e4cd388af774a67615b18cab3028826"
+      },
+      {
+        "path": "src/anthropic/types/file_image_source_param.py",
+        "sha": "a7bd9c78b79ba6337946c7011605664557e11863"
+      },
+      {
+        "path": "src/anthropic/types/file_list_params.py",
+        "sha": "d26f432472877d7d2cadf42970a59c3f8df5498a"
+      },
+      {
+        "path": "src/anthropic/types/file_metadata.py",
+        "sha": "18dceca1e0802564f8ee38372e580c50280cb30f"
+      },
+      {
+        "path": "src/anthropic/types/file_upload_params.py",
+        "sha": "0e2e3e8f855caaf694131ea08ec888d2202ba2fa"
+      },
+      {
+        "path": "src/anthropic/types/image_block_param.py",
+        "sha": "ddd91ffed5c0126003e9ddc6bd9c2fa4e238883c"
+      },
+      {
+        "path": "src/anthropic/types/image_transformations_param.py",
+        "sha": "bfbb28afa746c9b1b6c77f7c3668ae931859c365"
+      },
+      {
+        "path": "src/anthropic/types/input_json_delta.py",
+        "sha": "25c98a7b091493d8d8615cf004eb5cf72214d18f"
+      },
+      {
+        "path": "src/anthropic/types/json_output_format_param.py",
+        "sha": "8d4eab864dfb5efb7a4a7973f027166c73e37c2e"
+      },
+      {
+        "path": "src/anthropic/types/memory_tool_20250818_param.py",
+        "sha": "a8bcd6307e15271abb6708ebc7414186c915f818"
+      },
+      {
+        "path": "src/anthropic/types/message_content_param.py",
+        "sha": "c71dc0e79cacad5092b17bf34c28bcb5ad54b812"
+      },
+      {
+        "path": "src/anthropic/types/message_count_tokens_params.py",
+        "sha": "2924fa97f7dac9a8ee9ba2f38ebb0980894a97f6"
+      },
+      {
+        "path": "src/anthropic/types/message_count_tokens_tool_param.py",
+        "sha": "bd7c6522ee189e2cdf1a16797d4575422847ac5f"
+      },
+      {
+        "path": "src/anthropic/types/message_create_params_container_param.py",
+        "sha": "4f86010f33663593df09c3897beb8dacd7cbecfc"
+      },
+      {
+        "path": "src/anthropic/types/message_create_params.py",
+        "sha": "3ca26fa41bb42419c89bb373a90193b24194c084"
+      },
+      {
+        "path": "src/anthropic/types/message_delta_event.py",
+        "sha": "95b0510e4b3a0b1ae9942305b5b5d0741c885c37"
+      },
+      {
+        "path": "src/anthropic/types/message_delta_usage.py",
+        "sha": "c71d748b30e81b09ca8c70ed995d85ebba283afd"
+      },
+      {
+        "path": "src/anthropic/types/message_param.py",
+        "sha": "bb28c9a3e525e0c56d55b6243828ff451543f4b4"
+      },
+      {
+        "path": "src/anthropic/types/message_start_event.py",
+        "sha": "d9482d4925ad60a1f86a8ba9f768706b4a273fd5"
+      },
+      {
+        "path": "src/anthropic/types/message_stop_event.py",
+        "sha": "3aa827c0783039eea6160eac73743a12708db862"
+      },
+      {
+        "path": "src/anthropic/types/message_stream_event.py",
+        "sha": "7f4de71866c3fc51e936f877e6a9c68656e9c2d5"
+      },
+      {
+        "path": "src/anthropic/types/message_tokens_count.py",
+        "sha": "6a026a2f54047cb4abc1f8cea990546460fb6b39"
+      },
+      {
+        "path": "src/anthropic/types/message.py",
+        "sha": "8bc6e0d44809ef02eebcf452db0c4160fb5f2dd6"
+      },
+      {
+        "path": "src/anthropic/types/metadata_param.py",
+        "sha": "ad804106123395055b4ccb30890ce0fdc549d577"
+      },
+      {
+        "path": "src/anthropic/types/model_capabilities.py",
+        "sha": "b2499bc2ee64e7f8515eb2736728c9271038a260"
+      },
+      {
+        "path": "src/anthropic/types/model_info.py",
+        "sha": "69a8c815aa63bc10b3507782aa9b4c0cd02f2e07"
+      },
+      {
+        "path": "src/anthropic/types/model_line.py",
+        "sha": "b6d41b8a2c8cb6048d0720f4a91d5ece00b6e086"
+      },
+      {
+        "path": "src/anthropic/types/model_list_params.py",
+        "sha": "40277f5b107544c19137d9ad84b1a7fe7dc70b0d"
+      },
+      {
+        "path": "src/anthropic/types/model_param.py",
+        "sha": "c0223d6308dbf1e7abfe30dab203d48766e0fdba"
+      },
+      {
+        "path": "src/anthropic/types/model.py",
+        "sha": "28351440b6b0dea1e48a708fe2f37b49b7f98aca"
+      },
+      {
+        "path": "src/anthropic/types/organization_info.py",
+        "sha": "ea73def04796d5ad69c0af4cae5ca516dd9e0954"
+      },
+      {
+        "path": "src/anthropic/types/organization_role.py",
+        "sha": "ca77870364c5c1c495fbbd17070cfcc882933aeb"
+      },
+      {
+        "path": "src/anthropic/types/output_config_param.py",
+        "sha": "a2f26eb93bb4120098abe41b0ba0f1fc695968fc"
+      },
+      {
+        "path": "src/anthropic/types/output_tokens_details.py",
+        "sha": "13883b8ea92b5f0584bc5d6d75dba2f9ba76ac7d"
+      },
+      {
+        "path": "src/anthropic/types/parsed_message.py",
+        "sha": "a8fd4f172d33b508416a5d358dc45eb0a31e3944"
+      },
+      {
+        "path": "src/anthropic/types/plain_text_source_param.py",
+        "sha": "0f932047783844820c5dceaf38ef482e3c8ff73d"
+      },
+      {
+        "path": "src/anthropic/types/plain_text_source.py",
+        "sha": "670d7e04ee0c05323ac812ab535873af2b3191f8"
+      },
+      {
+        "path": "src/anthropic/types/raw_content_block_delta_event.py",
+        "sha": "0a72fcad33fd8026d850df223465490dc70c7648"
+      },
+      {
+        "path": "src/anthropic/types/raw_content_block_delta.py",
+        "sha": "7a7daf065bd7f9a6145739b8c79836bb6d2cf89c"
+      },
+      {
+        "path": "src/anthropic/types/raw_content_block_start_event.py",
+        "sha": "ff11cdaf2e44851db595f1cc99216e3422c23035"
+      },
+      {
+        "path": "src/anthropic/types/raw_content_block_stop_event.py",
+        "sha": "58b24ff090e374eeb1d3723774be261211b98296"
+      },
+      {
+        "path": "src/anthropic/types/raw_message_delta_event.py",
+        "sha": "f0ba9692c70aaf916e27a9aaf1ea43bca27fabb0"
+      },
+      {
+        "path": "src/anthropic/types/raw_message_start_event.py",
+        "sha": "139c155497db4331a6e296951b807311d8d128fa"
+      },
+      {
+        "path": "src/anthropic/types/raw_message_stop_event.py",
+        "sha": "1bd5778fa16e179119c526d93623fd804cee398f"
+      },
+      {
+        "path": "src/anthropic/types/raw_message_stream_event.py",
+        "sha": "1639ff2fec9ccfefe13f0bc0c2041edd264e8389"
+      },
+      {
+        "path": "src/anthropic/types/redacted_thinking_block_param.py",
+        "sha": "065e0569e849675861ba9048218a296c6ba3fe5c"
+      },
+      {
+        "path": "src/anthropic/types/redacted_thinking_block.py",
+        "sha": "6ecbd7924328f51a92d0115be1c023de497d1d7c"
+      },
+      {
+        "path": "src/anthropic/types/refusal_stop_details.py",
+        "sha": "f186759e66a7f4a1b4eff59dbdbcaa5cc896d693"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_close_tab_tool_use_block.py",
+        "sha": "5be03b8e234b655cc5a10167e79aa7faf963181a"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_double_click_tool_use_block.py",
+        "sha": "cf3fdbfd2663ff82575f227be6651eb7bdbc9799"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_file_upload_tool_use_block.py",
+        "sha": "d0d7fae11ef79620aedd2fb045421ce5cb6dda58"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_find_tool_use_block.py",
+        "sha": "765eabdccfe83b3594157970b0750d3516104fe5"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_form_input_tool_use_block.py",
+        "sha": "23ee7482135b87298bf5f384082546bfc5403a47"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_get_page_text_tool_use_block.py",
+        "sha": "56087659d34b49133f0ae34a7155b22a86558d8f"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_hold_key_tool_use_block.py",
+        "sha": "f7d28e2e89458740b315d6d540792ffc07dcb550"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_hover_tool_use_block.py",
+        "sha": "ba1e90bbad9588af6122c764d01783d627b10650"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_javascript_exec_tool_use_block.py",
+        "sha": "5042bf4754da9cfa57a8feeec211e867c08ab525"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_key_tool_use_block.py",
+        "sha": "9b5d1cd6f914fac4b55c0f4037ed8eb2fafaf9b7"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_left_click_drag_tool_use_block.py",
+        "sha": "4809c249f458091991bdae44a674493cac0c30ec"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_left_click_tool_use_block.py",
+        "sha": "d102041f311b870fecf045458e4f2586ee7d0cfd"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_left_mouse_down_tool_use_block.py",
+        "sha": "6bf27642f9ead46d5f49eab483def0ba4ebcd1cc"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_left_mouse_up_tool_use_block.py",
+        "sha": "823977e052cf588237cc1f8c3795e32f249c93db"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_list_tabs_tool_use_block.py",
+        "sha": "4d087cbd56010694233f46a212ff367c9e0c6e58"
+      },
+      {
+        "path": "src/anthropic/types/response_browser_middle_click_tool_use_block.py",
+        "sha": "005c5498c6bae1331f27d7647d97626b42923538"
+      }
+    ],
+    "repo_pushed_at": "2026-10-23T23:18:21Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 93,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "scripts/utils/upload-artifact.sh",
+      "line": 23,
+      "snippet": "echo -e \"\\033[32mInstallation: pip install 'https://pkg.stainless.com/s/anthropic-python/$SHA/$FILENAME'\\033[0m\"",
+      "host": "pkg.stainless.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/anthropic/_base_client.py",
+      "line": 875,
+      "snippet": "About the Retry-After header: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After",
+      "host": "developer.mozilla.org",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/anthropic/_models.py",
+      "line": 323,
+      "snippet": "\"\"\"Usage docs: https://docs.pydantic.dev/2.4/concepts/serialization/#modelmodel_dump",
+      "host": "docs.pydantic.dev",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/anthropic/_utils/_path.py",
+      "line": 21,
+      "snippet": "https://datatracker.ietf.org/doc/html/rfc3986#section-3.3",
+      "host": "datatracker.ietf.org",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/anthropic/lib/foundry.py",
+      "line": 155,
+      "snippet": "resource: Your Foundry resource name, e.g. `example-resource` for `https://example-resource.services.ai.azure.com/anthropic/`",
+      "host": "example-resource.services.ai.azure.com",
+      "deduction": 0
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "pkg.stainless.com",
+      "developer.mozilla.org",
+      "docs.pydantic.dev",
+      "datatracker.ietf.org",
+      "example-resource.services.ai.azure.com"
+    ],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 10
+  },
+  "network": {
+    "calls": 403,
+    "failed": 0,
+    "ms": 129742
+  },
+  "duration_ms": 15320
+}

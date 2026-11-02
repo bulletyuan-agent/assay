@@ -1,0 +1,594 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "mark3labs/mcp-go",
+    "url": "https://github.com/mark3labs/mcp-go",
+    "name": "mcp-go"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:51:05.878Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "575e2822eba858f782764e9f0f831459151768e7",
+    "files_scanned": 131,
+    "candidates": 131,
+    "excluded_non_shipped": 252,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "62d09d35eaa852b34db3694ff8a5580cc6b5a22f"
+      },
+      {
+        "path": ".github/workflows/conformance.yml",
+        "sha": "19d68aa0d0f0dedd6d2cedbddd648261864084f1"
+      },
+      {
+        "path": ".github/workflows/golangci-lint.yml",
+        "sha": "f33b8ed53042216ad5e632b826570505a6ae4bda"
+      },
+      {
+        "path": ".github/workflows/pages.yml",
+        "sha": "e8568d2957683c8707617a6b814edc510bb05778"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "ef6be695d3e7e2c28309f4e6ed9857250ca9e09a"
+      },
+      {
+        "path": "mcp/tools.go",
+        "sha": "626bd344b975d6272bb799615503a040d33559b7"
+      },
+      {
+        "path": "server/server.go",
+        "sha": "3bb6ec4ad3d045c5c58f9b8f5afea062c9a6d759"
+      },
+      {
+        "path": "scripts/check_conformance.py",
+        "sha": "8e7f413510eb3101a5c98dbe165cc24c9d113f9c"
+      },
+      {
+        "path": "www/package.json",
+        "sha": "09b3dbad15a382505604114f9cfd324838f072db"
+      },
+      {
+        "path": ".golangci.yml",
+        "sha": "31b765a08538e93230b3b15a8232041024270fc0"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "0be8d5d7378f0bb3a94e3e1405437662eb5fa9ac"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "042f3c33b87e4295c7a8a0023f39e67e905605a4"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "a98ef80074bb8199c3bf9ceb05587a9adc768a87"
+      },
+      {
+        "path": "README.md",
+        "sha": "0c669c0f176f169edc9649b42e7424d4acb967df"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "342a2abd5b9dd0058b777e8a179c940f2b231a0d"
+      },
+      {
+        "path": "server/internal/gen/main.go",
+        "sha": "4fe5d6026bce8d92acdf64fdf2ca0284cfebc76f"
+      },
+      {
+        "path": "client/client.go",
+        "sha": "725dcc9566e5f7e8f4f27aff3dea9bfd0c566292"
+      },
+      {
+        "path": "client/elicitation.go",
+        "sha": "5148787286dc121662456cdd0f14a124d4fb2aa0"
+      },
+      {
+        "path": "client/http.go",
+        "sha": "d001a1e63d08e42d7457adbf5c497d93d029e203"
+      },
+      {
+        "path": "client/inprocess.go",
+        "sha": "b7071a07e7ceb6201c859a80b7d600c6ed816521"
+      },
+      {
+        "path": "client/interface.go",
+        "sha": "233ca495ac81ad03e52740f8ed8125636243564e"
+      },
+      {
+        "path": "client/iter.go",
+        "sha": "9769e4be05be0f65741cb8734ce9f2e987461345"
+      },
+      {
+        "path": "client/mrtr.go",
+        "sha": "96dfc9faaccc7bb2050bf8e197ce4b79d4d7d605"
+      },
+      {
+        "path": "client/oauth.go",
+        "sha": "1aadf1147bd6ac1a06a8f05843738f7820d066a2"
+      },
+      {
+        "path": "client/protocol.go",
+        "sha": "0948639677e37b93b021b6024db9db969b3960ad"
+      },
+      {
+        "path": "client/roots.go",
+        "sha": "0a17aaf7ab89a80cca4f97af3fc35486eb10ff17"
+      },
+      {
+        "path": "client/sampling.go",
+        "sha": "245e2c1f7f305ddb75658a345eddcaba5e2898e3"
+      },
+      {
+        "path": "client/sse.go",
+        "sha": "390d909228ddaae4bdb2b4264fa21451e38ee2f9"
+      },
+      {
+        "path": "client/stdio.go",
+        "sha": "6573fcf6fd858b690e4af67abdee98ce0b17ab6b"
+      },
+      {
+        "path": "client/subscriptions.go",
+        "sha": "d7bba498e1b8b2a9a69715e58519070003449ba5"
+      },
+      {
+        "path": "client/task_wait.go",
+        "sha": "0fc903c02961dd49dae6b2014a21ed9a155df1bf"
+      },
+      {
+        "path": "client/tracing.go",
+        "sha": "9742b18b875818337b49857c3af1a5cf32d78a98"
+      },
+      {
+        "path": "mcp/consts.go",
+        "sha": "271ea86d83a1d6ba03fc2efa0e9b65de4419d837"
+      },
+      {
+        "path": "mcp/discover.go",
+        "sha": "b86ddcd70af0d8a78915b99b15a1d13533c52783"
+      },
+      {
+        "path": "mcp/errors.go",
+        "sha": "f720b8d66467d95f607b3cd0b3869eceb92ba41e"
+      },
+      {
+        "path": "mcp/headers.go",
+        "sha": "6bcbe979a50fd06e7d87c940f0b87193412564e0"
+      },
+      {
+        "path": "mcp/meta.go",
+        "sha": "6529659328558910fe45e939da7d4bd0a5d62e97"
+      },
+      {
+        "path": "mcp/mrtr.go",
+        "sha": "01499220497c4a6c301ebc4d3b0c00d5ea805c11"
+      },
+      {
+        "path": "mcp/prompts.go",
+        "sha": "93f49fcc2a9625592ccfed61c2c9ee5a0f58a35e"
+      },
+      {
+        "path": "mcp/request_id_number.go",
+        "sha": "19b47559700bbe74a88cef130f9e5fb108be987c"
+      },
+      {
+        "path": "mcp/resources.go",
+        "sha": "3583360e8c848da84af2c27701bd5413da38f8eb"
+      },
+      {
+        "path": "mcp/result.go",
+        "sha": "355729643681d2eafb060ef03c5b766fff0cdd56"
+      },
+      {
+        "path": "mcp/schema_cache.go",
+        "sha": "de9adacf1f59c514b298caedd5e19c26184f7248"
+      },
+      {
+        "path": "mcp/struct_schema.go",
+        "sha": "e0057fc31a124a86338b785d664fac340945c8de"
+      },
+      {
+        "path": "mcp/tasks.go",
+        "sha": "ca6f1e4d6a39a62d5aba6bcf95d62822745a2691"
+      },
+      {
+        "path": "mcp/typed_tools.go",
+        "sha": "4a9ddb8f6d0a57801a024db44d68dc4fca10c441"
+      },
+      {
+        "path": "mcp/types.go",
+        "sha": "4600c1dbbdbf77cd656f76b22d8c419339c87274"
+      },
+      {
+        "path": "mcp/utils.go",
+        "sha": "d4a4066c3b6e069e109d4abf698b182f56bb1228"
+      },
+      {
+        "path": "mcp/version.go",
+        "sha": "1769038280130b8c20ea282e3a7e7b9ee708b3a9"
+      },
+      {
+        "path": "mcptest/mcptest.go",
+        "sha": "6776d035290d43fdfb50d0b20cf47276aa88db2d"
+      },
+      {
+        "path": "otel/logger.go",
+        "sha": "0d191fe82d7924b1511576839b030c98c6eb3d7e"
+      },
+      {
+        "path": "otel/meta_carrier.go",
+        "sha": "3a2a25fb187ff841d307df519b1208e99a891b36"
+      },
+      {
+        "path": "otel/options.go",
+        "sha": "3197d8d9d79e7192388a176fe15c0046f440e0a9"
+      },
+      {
+        "path": "otel/README.md",
+        "sha": "649bd1d85dcf04e6d311c306c912e5d9ff507ccc"
+      },
+      {
+        "path": "otel/tracer.go",
+        "sha": "aea032d806d85e16a211e0212d249dcfa301f1a0"
+      },
+      {
+        "path": "server/client_info_store.go",
+        "sha": "dd055e11ac0bd1d2f779fba527746756e849d8fa"
+      },
+      {
+        "path": "server/completion.go",
+        "sha": "48fbf6d9321989149e3735de8005f763b84c98eb"
+      },
+      {
+        "path": "server/constants.go",
+        "sha": "e071b2ef4536bb626639491784714410215365dc"
+      },
+      {
+        "path": "server/ctx.go",
+        "sha": "43f01bb68b7432ccfd5d203e6d3044658a1bcfb6"
+      },
+      {
+        "path": "server/discover.go",
+        "sha": "584f8e42b1fbacfbe88657e1a9a2aad2187e67e4"
+      },
+      {
+        "path": "server/elicitation.go",
+        "sha": "8e6e988109f28df94c21367905c39a77817dcf20"
+      },
+      {
+        "path": "server/errors.go",
+        "sha": "7fbe28a49922241f43ff75a8ef227b0c74de1491"
+      },
+      {
+        "path": "server/event_store.go",
+        "sha": "60333be4bf21ed3ac4073f2189fc5369016c959b"
+      },
+      {
+        "path": "server/handler_errors.go",
+        "sha": "3cf11c6543dcd7cd555a03e0a7f5e3009f9435e9"
+      },
+      {
+        "path": "server/hooks.go",
+        "sha": "0e5823497b7ecddc930df68f60f6de0846a3c40e"
+      },
+      {
+        "path": "server/http_cors.go",
+        "sha": "4993761f452f7debf1b2394e58702e7bfe3d9920"
+      },
+      {
+        "path": "server/http_localhost.go",
+        "sha": "5890484202e06b8e19d3687a5f76990fae174272"
+      },
+      {
+        "path": "server/http_transport_options.go",
+        "sha": "4f5ad53d0d7b8896181def2b83030c8d6bd19d6a"
+      },
+      {
+        "path": "server/inprocess_session.go",
+        "sha": "20820fd0d7b90080188a24a95be2575d0caad9ad"
+      },
+      {
+        "path": "server/input_validation.go",
+        "sha": "8bf180425f741480176a5f880b74ea779dbfdfa1"
+      },
+      {
+        "path": "server/jsonrpc_error.go",
+        "sha": "1c13358d00ed3bcc9a1189c734ca17b8acd3b26f"
+      },
+      {
+        "path": "server/logger.go",
+        "sha": "77a670cbaac1c5ba14c0e19fcd359c7e75cca20b"
+      },
+      {
+        "path": "server/mrtr.go",
+        "sha": "e5b228fded0d77230a9141062466dd2cae0d6d30"
+      },
+      {
+        "path": "server/output_validation.go",
+        "sha": "8ceebe211eed03f1ffd9d68a1f75f5defb991468"
+      },
+      {
+        "path": "server/protected_resource.go",
+        "sha": "0cbad4b43764cec2690c108c417bb6a213bfe346"
+      },
+      {
+        "path": "server/protocol.go",
+        "sha": "38929576f36361daab5d6ade631e66f7b840d648"
+      },
+      {
+        "path": "server/request_handler.go",
+        "sha": "97fc8251e41ff32d328a7bde7c8d667c251fa92c"
+      },
+      {
+        "path": "server/resource_errors.go",
+        "sha": "b50ecf21f13dd9de5027d90e1b3c066f3289de3f"
+      },
+      {
+        "path": "server/response.go",
+        "sha": "ce457c136323a7a0d1f6fcf01c29eebf2bb0748b"
+      },
+      {
+        "path": "server/roots.go",
+        "sha": "b56bf0b1c6c5f5d21efca0252261ce0cb85f07c6"
+      },
+      {
+        "path": "server/sampling.go",
+        "sha": "852f503afc0f7c3e53f10183938d66029d5f4e5c"
+      },
+      {
+        "path": "server/session.go",
+        "sha": "0965a662432a301bb9b68f79f3304e1ef27da09f"
+      },
+      {
+        "path": "server/sse.go",
+        "sha": "e936b27ce990f8342c43623f31f4c3558e94c247"
+      },
+      {
+        "path": "server/stdio.go",
+        "sha": "998a6480fd88ea40fbaf88a5591991351d80f690"
+      },
+      {
+        "path": "server/streamable_http_handle.go",
+        "sha": "5f12ce266ce93ffaeb2d1c08c40c59e1237efa93"
+      },
+      {
+        "path": "server/streamable_http_modern.go",
+        "sha": "19b66ba1f13fb88fdcb445aa3cfc4570fec72c80"
+      },
+      {
+        "path": "server/streamable_http_resume.go",
+        "sha": "c7c40c7bc2d59e2bfca06437a5e706218569977b"
+      },
+      {
+        "path": "server/streamable_http.go",
+        "sha": "363119a94d3c3588212fcdecfe0e0fca18f12458"
+      },
+      {
+        "path": "server/subscriptions.go",
+        "sha": "cce64eea9350a3d7ec3827600245c1dbd66e96db"
+      },
+      {
+        "path": "server/task_hooks.go",
+        "sha": "558529dd65f626387a73d83cf44562fdcd676c41"
+      },
+      {
+        "path": "server/tracing.go",
+        "sha": "bb5af8e7c957ca2fb0832a9add8d4b65bdbb3dbd"
+      },
+      {
+        "path": "testdata/mockstdio_server.go",
+        "sha": "6a83f1841aa48df144f699f480a0168cd938b9dd"
+      },
+      {
+        "path": "testdata/mockstdio_stderr_flood_server.go",
+        "sha": "275efb9a3220f6c2a368935a152bebb4542f39a0"
+      },
+      {
+        "path": "testdata/mockstdio_stderr_server.go",
+        "sha": "db45ba62b5d3163bd31aa1f3a24105b0c7216742"
+      },
+      {
+        "path": "tracing/tracing.go",
+        "sha": "2f64b060f0da716c6f80647b8ff7832f89648cd6"
+      },
+      {
+        "path": "www/README.md",
+        "sha": "3bb11a44a0a68261d428b28cd4a9182d547ad941"
+      },
+      {
+        "path": "www/tsconfig.json",
+        "sha": "d2636aac47ec385c845f162385d451b05a735e22"
+      },
+      {
+        "path": "www/vocs.config.ts",
+        "sha": "12444eb46587ab4ae4629666f4e727f7e3a786b7"
+      },
+      {
+        "path": ".kit/prompts/code-audit.md",
+        "sha": "ec498247288dc0942587522b52ecedcad3371f1e"
+      },
+      {
+        "path": ".kit/prompts/commit-push.md",
+        "sha": "fb21ab97eec2f648a5d419c53eff244716764d7a"
+      },
+      {
+        "path": ".kit/prompts/create-pr.md",
+        "sha": "33fc1f5bd9d78521b14390b7e60b1fb19462e063"
+      },
+      {
+        "path": ".kit/prompts/feature-request.md",
+        "sha": "9f71d7ab0b44664b806d1dbec14fa25d29b462b5"
+      },
+      {
+        "path": ".kit/prompts/file-issue.md",
+        "sha": "049f880ebb1d02af5d0aa015ed3ffb0fa16ee277"
+      },
+      {
+        "path": ".kit/prompts/fix-issue.md",
+        "sha": "1692e90ddc8d0a72244ebc7246eae8f8a13999e8"
+      },
+      {
+        "path": ".kit/prompts/new-prompt.md",
+        "sha": "83f54cef49280ca019dd604875252b00dc16025f"
+      },
+      {
+        "path": ".kit/prompts/release-tagger.md",
+        "sha": "95e04a962dcac8699560b037616127bde62e6a9b"
+      },
+      {
+        "path": ".kit/prompts/resolve-reviews.md",
+        "sha": "e81158815b303aacdcb4922258ad23ec5421027e"
+      },
+      {
+        "path": ".kit/prompts/review-pr.md",
+        "sha": "04ae6002e04f62074867480f9526f2a77ca21836"
+      },
+      {
+        "path": ".kit/prompts/update-docs.md",
+        "sha": "ee987a3bab79de578d0f16ecb44d2a889eb22b1e"
+      },
+      {
+        "path": "client/transport/command.go",
+        "sha": "716941a83daa836b6d28540b30475f66ebae7e3a"
+      },
+      {
+        "path": "client/transport/constants.go",
+        "sha": "2fb5030841134d0a47924e561c21247a4d233c97"
+      },
+      {
+        "path": "client/transport/error.go",
+        "sha": "1f029944af9d6168fb37c88a676db4eea7bc0291"
+      },
+      {
+        "path": "client/transport/inprocess.go",
+        "sha": "1b664427672cc125598c6e10a79a168e307a639e"
+      },
+      {
+        "path": "client/transport/interface.go",
+        "sha": "e35a5f3180040b0d4c86c27442e3472121defb7c"
+      },
+      {
+        "path": "client/transport/logging.go",
+        "sha": "565bef0f91116b4ff446a00f50acf021ca36b6bb"
+      },
+      {
+        "path": "client/transport/message_limit.go",
+        "sha": "9e0e465d99a4cc230e3d24fda04603aa7cb53098"
+      },
+      {
+        "path": "client/transport/oauth_binding.go",
+        "sha": "ac2a0185a11156269d64bb685d53fb181019f291"
+      },
+      {
+        "path": "client/transport/oauth_utils.go",
+        "sha": "cb3873b5f84259d9d8fd5218488678976fe39a5b"
+      },
+      {
+        "path": "client/transport/oauth.go",
+        "sha": "52b5d231adef6aa90091dc68108219b800c56497"
+      },
+      {
+        "path": "client/transport/sse.go",
+        "sha": "c02faa694130301ca2361580c9dfd88c99684275"
+      },
+      {
+        "path": "client/transport/stdio.go",
+        "sha": "fc6da4579d9743b8142e975dfba9324d2c522045"
+      },
+      {
+        "path": "client/transport/streamable_http.go",
+        "sha": "e62a05901f16b7dbd121e31bc6971ebea13a294c"
+      },
+      {
+        "path": "client/transport/utils.go",
+        "sha": "2d0e847daa4d45de4dee0e3632880b112c518b6c"
+      },
+      {
+        "path": "conformance/server/expected-failures.yml",
+        "sha": "12369252cb766487d0462b9018359dbf9b1355e9"
+      },
+      {
+        "path": "server/servertest/doc.go",
+        "sha": "148b100306aaa78b67e54fc7b550373683e4ab93"
+      },
+      {
+        "path": "server/servertest/sse.go",
+        "sha": "e9c05b689db764d106edd130323d8cb5b0d79fcb"
+      },
+      {
+        "path": "server/servertest/streamable.go",
+        "sha": "6d4a3f0607c98185217e39ae66a5ceef6c8766fb"
+      },
+      {
+        "path": "server/internal/gen/data.go",
+        "sha": "2fb4dc7de30ca98de0835deba05115cd3d4b5507"
+      },
+      {
+        "path": "server/internal/gen/README.md",
+        "sha": "e7fc890b099ce93ff3d26bfb1c92355b9d7f4348"
+      },
+      {
+        "path": "mcp/testdata/schema_cache/first/models.go",
+        "sha": "d6a3aa835e19f77050099149fd34035574708eb3"
+      },
+      {
+        "path": "mcp/testdata/schema_cache/second/models.go",
+        "sha": "97402687ef16644e32627166ff7032708b096cd8"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T14:07:35Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": false,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 91,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 40,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 131,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": false,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 134,
+    "failed": 0,
+    "ms": 44055
+  },
+  "duration_ms": 6194
+}

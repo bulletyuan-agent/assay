@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "ref-tools/ref-tools-mcp",
+    "url": "https://github.com/ref-tools/ref-tools-mcp",
+    "name": "ref-tools-mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:50:44.461Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "f5feb829cc7bdd18fb9b276c27e3f391b2c4132c",
+    "files_scanned": 8,
+    "candidates": 8,
+    "excluded_non_shipped": 1,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/build-bundle.yml",
+        "sha": "3132c862cd528eae84e2b4ae2035d1dde93f0e4c"
+      },
+      {
+        "path": "index.ts",
+        "sha": "119cac0be362a40a5b68bf9f1f95db9a7bb004e8"
+      },
+      {
+        "path": "server.json",
+        "sha": "8bde505885c5cb84b4773598502eff4ce288664c"
+      },
+      {
+        "path": "package.json",
+        "sha": "315329ee8485c0094ad6cf68088b8319ec8459d0"
+      },
+      {
+        "path": "manifest.json",
+        "sha": "b76bada4cbca906667a3dd1fa2ce9e30bf631ec5"
+      },
+      {
+        "path": "README.md",
+        "sha": "7f6567de1de41dc85c49ac05f3be536c34431909"
+      },
+      {
+        "path": "smithery.yaml",
+        "sha": "0002f97f102b4c64d75f907e00f902563a338975"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "0c0e740be2754b509fa9eb5304e48bc000ff3d72"
+      }
+    ],
+    "repo_pushed_at": "2026-10-24T00:25:58Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 8,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 10
+  },
+  "network": {
+    "calls": 11,
+    "failed": 0,
+    "ms": 4153
+  },
+  "duration_ms": 1898
+}

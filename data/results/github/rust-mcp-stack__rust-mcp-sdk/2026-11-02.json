@@ -1,0 +1,266 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "rust-mcp-stack/rust-mcp-sdk",
+    "url": "https://github.com/rust-mcp-stack/rust-mcp-sdk",
+    "name": "rust-mcp-sdk"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:51:12.640Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "7975d854c01bca7497002276a443e6f482ff5534",
+    "files_scanned": 49,
+    "candidates": 49,
+    "excluded_non_shipped": 24,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "6d86aac17daf595ba25f6e2dc8d46d03b9b444ae"
+      },
+      {
+        "path": ".github/workflows/conformance.yml",
+        "sha": "05187204d73cb4ed30b5f68df4398a7c143d9295"
+      },
+      {
+        "path": ".github/workflows/docs-version.yml",
+        "sha": "007e4e9e85962d342c039d28a8c4eebe951e37d1"
+      },
+      {
+        "path": ".github/workflows/docs.yml",
+        "sha": "e40cc533ca383c35b5be442e9948dcb95252e0f3"
+      },
+      {
+        "path": ".github/workflows/lint-pr.yml",
+        "sha": "b386853c3b86dd909c40d75d65a7f67b7e48418d"
+      },
+      {
+        "path": ".github/workflows/publish.yml",
+        "sha": "59be25f8373a4ce2b871bb333de3a3caf18b9fb1"
+      },
+      {
+        "path": ".github/workflows/release-pr.yml",
+        "sha": "e55419f98bb1b3cd5862b8ee309d35ddcc4029f2"
+      },
+      {
+        "path": ".github/workflows/stale.yml",
+        "sha": "e62af94d806f727f09d8fb533472550e9f0943ab"
+      },
+      {
+        "path": ".github/workflows/tier-check.yml",
+        "sha": "68a2b93b931206841c3774cd17d0edcfa8df6139"
+      },
+      {
+        "path": "docs-site/package.json",
+        "sha": "e471bacb81ff261467360ef632a6de631784ed99"
+      },
+      {
+        "path": ".release-config.json",
+        "sha": "f62a8ae893d144998859971f8866d6ba8ff7e1d5"
+      },
+      {
+        "path": ".release-manifest.json",
+        "sha": "6e271b5f23c972790ba02af89763158a12963e78"
+      },
+      {
+        "path": "BREAKING_CHANGES.md",
+        "sha": "fcfb1e7a5d0c5060cdcc6118ce39fcbe60612fa2"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "1d19dfb21024fd9f056be8741902bdc9007148dd"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "89a7ac15fa1a1c2823650bebe87e54b9fd0d0096"
+      },
+      {
+        "path": "DEPENDENCY_POLICY.md",
+        "sha": "84b3c4183bdb67ad4d4822afc800ab3e6fd6755d"
+      },
+      {
+        "path": "development.md",
+        "sha": "e17dd17fe45bea92fb94e2d24b3632780fa9f9ee"
+      },
+      {
+        "path": "docs-site/src/pages/index.tsx",
+        "sha": "5c7150281cc7eb3a62c364288e988e9364372317"
+      },
+      {
+        "path": "README.md",
+        "sha": "819deef513a433a46983e21f405af36627f670c5"
+      },
+      {
+        "path": "renovate.json",
+        "sha": "6132aecd0b8b56df3ee081e420e02d56e81f2be3"
+      },
+      {
+        "path": "ROADMAP.md",
+        "sha": "806d4cd89efbaa5c400da65607e570091381f8c4"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "1fb73b8d69bd0ebc2b62004083ff427869d98f6d"
+      },
+      {
+        "path": "UPGRADING.md",
+        "sha": "e81569f3299428eeb142d3d19224f751241a2a25"
+      },
+      {
+        "path": "VERSIONING.md",
+        "sha": "aa3a4bc8ec4e60c93eceff24a703db70a86ad158"
+      },
+      {
+        "path": "docs-site/agent.md",
+        "sha": "e844024e49f4b749e79bc934728b9e53724b19da"
+      },
+      {
+        "path": "docs-site/docusaurus.config.ts",
+        "sha": "ddf2cab4d6b631f152a70788ed7abab0db5a12e5"
+      },
+      {
+        "path": "docs-site/README.md",
+        "sha": "e319f51ffb2c7bcb275506f7bdea6dfa11fd9eaa"
+      },
+      {
+        "path": "docs-site/sidebars.ts",
+        "sha": "214b7b34bade2d9b4ac7592087944596838c0e74"
+      },
+      {
+        "path": "docs-site/src/components/HomepageFeatures/index.tsx",
+        "sha": "c2551fb9b8047ef3f4caf57b9a59f1f7c3c164a2"
+      },
+      {
+        "path": "docs-site/src/theme/Root/index.tsx",
+        "sha": "0dfedbb4c1ff7c760ea02dc0db5b5e8240da163a"
+      },
+      {
+        "path": "docs-site/tsconfig.json",
+        "sha": "8bbcb17bfc6dd4f7cb37cc359d30d7d0d3462e46"
+      },
+      {
+        "path": "docs-site/version-labels.json",
+        "sha": "146f2cfdce10229f806353f4e8106a988ecb1626"
+      },
+      {
+        "path": "docs-site/versions.json",
+        "sha": "fd4e814ac518b49a0a20b1df68f3c8142763ffd1"
+      },
+      {
+        "path": "crates/conformance-server/README.md",
+        "sha": "ea77e9f2ebf7ccdf5cee27e510e8a6e775de850d"
+      },
+      {
+        "path": "crates/rust-mcp-actix/CHANGELOG.md",
+        "sha": "f8da9538311eec5191a64b4d17936edcdf30b84e"
+      },
+      {
+        "path": "crates/rust-mcp-actix/README.md",
+        "sha": "14787220f0a99628f4408e3762979b467f958694"
+      },
+      {
+        "path": "crates/rust-mcp-axum/CHANGELOG.md",
+        "sha": "80d0923809293d3b1e4b898b10397d69f603f48b"
+      },
+      {
+        "path": "crates/rust-mcp-axum/README.md",
+        "sha": "016ddb6613c3ef8ed212636145914677e66acf60"
+      },
+      {
+        "path": "crates/rust-mcp-extra/CHANGELOG.md",
+        "sha": "9fa4dcdb81f8b943d9869cabf65cb05ba6328636"
+      },
+      {
+        "path": "crates/rust-mcp-extra/README.md",
+        "sha": "b8430f990f8c1732d7e555de8fa649919b38bed4"
+      },
+      {
+        "path": "crates/rust-mcp-macros/CHANGELOG.md",
+        "sha": "fc22c7bc12eb53f9b665c5e2b21e23d871f59b3e"
+      },
+      {
+        "path": "crates/rust-mcp-macros/README.md",
+        "sha": "d5fa6096badfc50a1a96e430852857f99098f212"
+      },
+      {
+        "path": "crates/rust-mcp-sdk/CHANGELOG.md",
+        "sha": "1d19dfb21024fd9f056be8741902bdc9007148dd"
+      },
+      {
+        "path": "crates/rust-mcp-sdk/README.md",
+        "sha": "819deef513a433a46983e21f405af36627f670c5"
+      },
+      {
+        "path": "crates/rust-mcp-transport/CHANGELOG.md",
+        "sha": "173692bdae5d8d9869e79ef02ac71cc1f65194df"
+      },
+      {
+        "path": "crates/rust-mcp-transport/README.md",
+        "sha": "3d035068c810ef70887eb4f926504b5de198fabb"
+      },
+      {
+        "path": "docs-site/src/global.d.ts",
+        "sha": "096e9ae4a20114ac8e45196cca6e2fb98ea52d89"
+      },
+      {
+        "path": "docs-site/versioned_sidebars/version-1.x-sidebars.json",
+        "sha": "9be4628ffef6abe2365361cdaef4423c326b03e7"
+      },
+      {
+        "path": "docs-site/versioned_sidebars/version-2.x-sidebars.json",
+        "sha": "926e233b74839f9f9d93f63a6318020acc0f3adc"
+      }
+    ],
+    "repo_pushed_at": "2026-10-26T19:04:02Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 49,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 7
+  },
+  "network": {
+    "calls": 50,
+    "failed": 0,
+    "ms": 17373
+  },
+  "duration_ms": 3758
+}

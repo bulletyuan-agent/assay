@@ -1,0 +1,231 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "ahujasid/blender-mcp",
+    "url": "https://github.com/ahujasid/blender-mcp",
+    "name": "mcp-for-blender"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:51:48.743Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "992233bb258975a05eec8b5691465c50c2831e34",
+    "files_scanned": 31,
+    "candidates": 31,
+    "excluded_non_shipped": 28,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "install.sh",
+        "sha": "aad7b9aea1cbb5e0f7abd66070ca1cb0ef740e8b"
+      },
+      {
+        "path": "integrations/codex/plugins/mcp-for-blender/.mcp.json",
+        "sha": "74edeecce92e315ec316c62ee7edb72749873c71"
+      },
+      {
+        "path": "main.py",
+        "sha": "97e02b645edb0c8ee09586abb4a8a0d69280c1a8"
+      },
+      {
+        "path": "src/blender_mcp/server.py",
+        "sha": "3fe343054fe1e7a4e45b2f13f3071f03c9560382"
+      },
+      {
+        "path": "README.md",
+        "sha": "57f0ac8c8cc9972058462ca6035c06cce39ab5e2"
+      },
+      {
+        "path": "src/blender_mcp/__init__.py",
+        "sha": "fa56d585d749b9915343021a0ccef93a9308a8cb"
+      },
+      {
+        "path": "src/blender_mcp/addon_manager.py",
+        "sha": "e6528e895a1c4a02aae39168651361d44910a8f9"
+      },
+      {
+        "path": "src/blender_mcp/blender_scripts.py",
+        "sha": "8d8f4d02dcb46a7952e45fdb8bba2e37c141099a"
+      },
+      {
+        "path": "src/blender_mcp/consent_prompt.py",
+        "sha": "2be532ab62188348143ecb3eacfbbe55cd190364"
+      },
+      {
+        "path": "src/blender_mcp/context_log.py",
+        "sha": "793464d0405069a04906ba7c0ff950f0953a5fe1"
+      },
+      {
+        "path": "src/blender_mcp/generation.py",
+        "sha": "ebf2a6baf1606f8aaf6c6e4ece5db61c5532d0eb"
+      },
+      {
+        "path": "src/blender_mcp/guides.py",
+        "sha": "e40ba4b47e6ef278c78176991e2d6e8c4824b70a"
+      },
+      {
+        "path": "src/blender_mcp/openai_apps.py",
+        "sha": "b04691a3e49e1618876cbf53b939eb28536765a3"
+      },
+      {
+        "path": "src/blender_mcp/premium_hint.py",
+        "sha": "22153dc6ee3d42b3866a403e154a371c664975a3"
+      },
+      {
+        "path": "src/blender_mcp/safe_mode.py",
+        "sha": "812d954f1e7dee0e3ad898a77cbe404b3817b8d0"
+      },
+      {
+        "path": "src/blender_mcp/setup_cli.py",
+        "sha": "1eec625a84df058bf812873b77232d22feb65fa5"
+      },
+      {
+        "path": "src/blender_mcp/telemetry_decorator.py",
+        "sha": "5740be0d5bbaac158c7525e0ca4dd6891f2f1def"
+      },
+      {
+        "path": "src/blender_mcp/telemetry.py",
+        "sha": "fe87bc569f6ee1009d4de62f3bda885b538fa697"
+      },
+      {
+        "path": "src/blender_mcp/trajectory.py",
+        "sha": "ca98c109500fee00179031ee38a9357611ca0d53"
+      },
+      {
+        "path": "src/blender_mcp/update_cli.py",
+        "sha": "84a88370741cd8227abe73707f8e4949eda09fe2"
+      },
+      {
+        "path": "TERMS_AND_CONDITIONS.md",
+        "sha": "d688676f66d3b50c2513f3429db61b0e123eada6"
+      },
+      {
+        "path": "src/blender_mcp/bundled/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/blender_mcp/guides/animation.md",
+        "sha": "362693a7a7a8b9117a2489d55b202ef40386ad96"
+      },
+      {
+        "path": "src/blender_mcp/guides/bpy.md",
+        "sha": "0cdee30414fe7c1f477eb52e2974f5f283158df3"
+      },
+      {
+        "path": "src/blender_mcp/guides/level-design.md",
+        "sha": "a979cb318097e0e9ae3868d4aee36abea42d00ae"
+      },
+      {
+        "path": "src/blender_mcp/guides/materials.md",
+        "sha": "f0391b69caa2da32a5070114b17fd05590f85756"
+      },
+      {
+        "path": "src/blender_mcp/guides/retopology.md",
+        "sha": "010d5395c98cba6ccedebf33ae8892f234e0f616"
+      },
+      {
+        "path": "src/blender_mcp/guides/rigging.md",
+        "sha": "1924dcc60359b92ac19d3d34ed660c1cff0d10f5"
+      },
+      {
+        "path": "src/blender_mcp/guides/scene.md",
+        "sha": "39171414a4cca1e1a6b94af15f44446be7ba8396"
+      },
+      {
+        "path": "integrations/codex/.agents/plugins/marketplace.json",
+        "sha": "67cfe603856b3b267b60b001c5b0a3ab96f44a2b"
+      },
+      {
+        "path": "integrations/codex/plugins/mcp-for-blender/.codex-plugin/plugin.json",
+        "sha": "87be20e20ad6bc65f3ecb3db11c3725b48a81619"
+      }
+    ],
+    "repo_pushed_at": "2026-10-29T09:13:34Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 91,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 70,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "curl-pipe-sh",
+      "severe": false,
+      "file": "install.sh",
+      "line": 33,
+      "snippet": "curl -LsSf https://astral.sh/uv/install.sh | sh",
+      "deduction": 25
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "wget-pipe-sh",
+      "severe": false,
+      "file": "install.sh",
+      "line": 35,
+      "snippet": "wget -qO- https://astral.sh/uv/install.sh | sh",
+      "deduction": 5
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "src/blender_mcp/safe_mode.py",
+      "line": 199,
+      "snippet": "\"eval\": \"eval() executes arbitrary expressions\",",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "README.md",
+      "line": 46,
+      "snippet": "curl -LsSf https://www.mcp-for-blender.com/install.sh | sh",
+      "deduction": 0
+    }
+  ],
+  "evidence": {
+    "files_scanned": 31,
+    "files_excluded": 0,
+    "danger_hits": 3,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 4,
+    "install_detected": true,
+    "age_days": 4
+  },
+  "network": {
+    "calls": 33,
+    "failed": 0,
+    "ms": 12133
+  },
+  "duration_ms": 3709
+}

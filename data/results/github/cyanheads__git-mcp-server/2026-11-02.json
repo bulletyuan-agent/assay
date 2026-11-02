@@ -1,0 +1,794 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "cyanheads/git-mcp-server",
+    "url": "https://github.com/cyanheads/git-mcp-server",
+    "name": "git-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:50:37.150Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "d34d83af201dc0c9012ca501336c3df6171da932",
+    "files_scanned": 181,
+    "candidates": 181,
+    "excluded_non_shipped": 108,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "314a0bf7b6543ba2a677eb0e1e2d1a1bdbb3545a"
+      },
+      {
+        "path": "src/index.ts",
+        "sha": "cc98d38cd51b25da8813c146648c998d09f7de6f"
+      },
+      {
+        "path": "server.json",
+        "sha": "b61611e7b20e3a41d4d29cd9b7a56da5a176d823"
+      },
+      {
+        "path": "skills/field-test/SKILL.md",
+        "sha": "2ef7eef2460ef1345fe32cfece334dc1cfb58906"
+      },
+      {
+        "path": "skills/maintenance/SKILL.md",
+        "sha": "293fbfd6b6a7cf5373cd8e4ede59624d30a83491"
+      },
+      {
+        "path": "skills/polish-docs-meta/SKILL.md",
+        "sha": "75bf1e278be1a9452b31fb0ef8073a9554e124c0"
+      },
+      {
+        "path": "skills/release-and-publish/SKILL.md",
+        "sha": "b09e23d1e6a55bddd9e13c85de789484859fed1d"
+      },
+      {
+        "path": "skills/report-issue/SKILL.md",
+        "sha": "2e1a0b51fd42384bdfe162e8dbb14219ae1a6bc1"
+      },
+      {
+        "path": "src/config/index.ts",
+        "sha": "ccae51766989079f6b755b006d66e35b73633749"
+      },
+      {
+        "path": "src/container/index.ts",
+        "sha": "743992cd36574974e7d29806db76101b03ffe84b"
+      },
+      {
+        "path": "src/mcp-server/server.ts",
+        "sha": "b44dedc50ce2d1bc497baa5303eb0d02755138a7"
+      },
+      {
+        "path": "src/storage/index.ts",
+        "sha": "d522522ca8a0e596d19e18cc605af77e1be85fcd"
+      },
+      {
+        "path": "src/utils/index.ts",
+        "sha": "f322e2d0543522d5c3575cabbcc24c726679ed26"
+      },
+      {
+        "path": "src/services/git/index.ts",
+        "sha": "fd4646df7aa90164003abbfa89668dccf3d0c208"
+      },
+      {
+        "path": "src/utils/internal/index.ts",
+        "sha": "a906ee1fa3855be9286b385d61f5206869297aa3"
+      },
+      {
+        "path": "src/utils/metrics/index.ts",
+        "sha": "f43460187f9f386c519fedf806497b649fa38f08"
+      },
+      {
+        "path": "src/utils/security/index.ts",
+        "sha": "e330bb5bca0162d2f141de0c119e69903df8a8a4"
+      },
+      {
+        "path": "src/utils/telemetry/index.ts",
+        "sha": "4e019b7f37b41a22c6ad8144c2767e1991b035a6"
+      },
+      {
+        "path": "package.json",
+        "sha": "1e7fd644457168dbcd2d7ad5f7c1646c148c8db7"
+      },
+      {
+        "path": "scripts/clean.ts",
+        "sha": "7578b8b36c6734e3c0dca8feb6b06b930da3e13a"
+      },
+      {
+        "path": "scripts/devcheck.ts",
+        "sha": "7fec29a24a5dd40173fafac77aff59623852eb43"
+      },
+      {
+        "path": "scripts/devdocs.ts",
+        "sha": "7b661329711c76f0a41523b1fe29e9d5913ea17b"
+      },
+      {
+        "path": "scripts/fetch-openapi-spec.ts",
+        "sha": "163fd46fa44fa9a074bc974bdee12b7978318589"
+      },
+      {
+        "path": "scripts/make-executable.ts",
+        "sha": "fb1ac5d4f7f565094be800776987d30716a3560e"
+      },
+      {
+        "path": "scripts/tree.ts",
+        "sha": "7cacd0fc5a01b47e18cfef1fa248524841a6d66b"
+      },
+      {
+        "path": "scripts/validate-mcp-publish-schema.ts",
+        "sha": "0590187b605843ec948d429ffc835c2162046b3a"
+      },
+      {
+        "path": "src/mcp-server/prompts/definitions/index.ts",
+        "sha": "2d292a93a25ab4342bbe203766741b5bcad6ef0f"
+      },
+      {
+        "path": "src/mcp-server/resources/definitions/index.ts",
+        "sha": "e12516283a58ff99b2183b952bc4eed58957bcac"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/index.ts",
+        "sha": "20f40d3d4d6ad4905de2a0b61764c6a74f90dc5a"
+      },
+      {
+        "path": "src/mcp-server/transports/auth/index.ts",
+        "sha": "2721967d0e7955141efe47adf1eb4f4fbe103be6"
+      },
+      {
+        "path": "src/mcp-server/transports/http/index.ts",
+        "sha": "354e9d6c55b45901a958c5d9bb245d4cf88e090d"
+      },
+      {
+        "path": "src/mcp-server/transports/stdio/index.ts",
+        "sha": "7d3d9e28c2a9a5b589c6ad12154cae5236b6e335"
+      },
+      {
+        "path": "src/storage/providers/cloudflare/index.ts",
+        "sha": "baccb38ab7a9177255caa80b2f195e12b8445b12"
+      },
+      {
+        "path": "src/utils/internal/error-handler/index.ts",
+        "sha": "2e1088bcc6722250f74beb1122f8786f60e38166"
+      },
+      {
+        "path": "src/worker.ts",
+        "sha": "ebfcf8de3add930da3a0f8d64b03ceaf7f44ad89"
+      },
+      {
+        "path": ".prettierrc.json",
+        "sha": "3f4a6150d428bff28b05766243e62d53d2111304"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "681311eb9cf453d0faddf3aacaec7357e97ba8e9"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "6c41ffb4816d4b413764358bc8e5a3d588fa6c03"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "4ba9dd9ec0094262d5ec1b874c6422a10e2f8ae7"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha": "56a6393aaf8acb2334931bd186ca41b42c2877f9"
+      },
+      {
+        "path": "README.md",
+        "sha": "ed82b9dc0cd09f3f545ec365c433f5cece82bb10"
+      },
+      {
+        "path": "repomix.config.json",
+        "sha": "8f828c466722a9b21ad4730ed64d075af427f584"
+      },
+      {
+        "path": "smithery.yaml",
+        "sha": "bf56bcc311b446dc5fc2ef02e759f245f3186bee"
+      },
+      {
+        "path": "src/container/tokens.ts",
+        "sha": "323e7795e6c39a5ddfbb1c97ac77cea07ad4ceb5"
+      },
+      {
+        "path": "src/services/git/providers/cli/index.ts",
+        "sha": "3873209c70b90bc0ec38dc8762d2192ae765bb19"
+      },
+      {
+        "path": "src/types-global/errors.ts",
+        "sha": "6e55ffbadf6df40388f6187ef76c06e1f3a261a6"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "c52db98b2bbc859500717e19335aa9b8a3b88e27"
+      },
+      {
+        "path": "tsdoc.json",
+        "sha": "b89839ca227ad98e7e6c84e1abe11eed63ff8cdb"
+      },
+      {
+        "path": "typedoc.json",
+        "sha": "1cd58ad0a45d87b92c219099daedc871514739d3"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "9026796a3ddc56c17d045dfcfbf1a55450f442ea"
+      },
+      {
+        "path": "skills/README.md",
+        "sha": "ef43c6b8fb51501e2547e91cb76e883d89b6bd45"
+      },
+      {
+        "path": "src/container/registrations/core.ts",
+        "sha": "b031135121030200c9a16036e1fa21c732ab4d65"
+      },
+      {
+        "path": "src/container/registrations/mcp.ts",
+        "sha": "24cd7fcf069dc8ceb024d3da5fb625ef2a6d2510"
+      },
+      {
+        "path": "src/mcp-server/prompts/prompt-registration.ts",
+        "sha": "1c1cdb7343137f57cc4ce07bd0526eb1230ed2a1"
+      },
+      {
+        "path": "src/mcp-server/resources/resource-registration.ts",
+        "sha": "3b1f79c816bf07656ff149491c5f152182158b42"
+      },
+      {
+        "path": "src/mcp-server/tools/tool-registration.ts",
+        "sha": "3ff056092ebf31b6314d74ca7d0436a82401bba1"
+      },
+      {
+        "path": "src/mcp-server/transports/ITransport.ts",
+        "sha": "518ee710c8257fbe8205b577c9ffbb842b72b0c0"
+      },
+      {
+        "path": "src/mcp-server/transports/manager.ts",
+        "sha": "8aa0bf321701187b8df0fe315b11097589812fdc"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/index.ts",
+        "sha": "5b4c3599b95442eb51406a8d6ffbbd0542dc1ddd"
+      },
+      {
+        "path": "src/services/git/providers/cli/utils/index.ts",
+        "sha": "a92efb7648d054681414f4f72e7711f5de157209"
+      },
+      {
+        "path": "src/services/git/types.ts",
+        "sha": "94d42be29bb9ebdd508bacc4ea19c6a2529f5add"
+      },
+      {
+        "path": "src/storage/core/IStorageProvider.ts",
+        "sha": "5dcf078dbe7809e54682c9ae3ea16588f84a2bca"
+      },
+      {
+        "path": "src/storage/core/storageFactory.ts",
+        "sha": "4f92ec9444544072ae09a306b31a1de7cb0ef68b"
+      },
+      {
+        "path": "src/storage/core/StorageService.ts",
+        "sha": "8588a65d3e13a91e535357cc32781513dd4b4d50"
+      },
+      {
+        "path": "src/storage/core/storageValidation.ts",
+        "sha": "7e7c3818932b16d30be07b720424134feef7cc8b"
+      },
+      {
+        "path": "src/utils/internal/encoding.ts",
+        "sha": "d68f2a0d71edc1bebaa5966947706fab585b55c0"
+      },
+      {
+        "path": "src/utils/internal/health.ts",
+        "sha": "d9e29759d6d0e791a81adccc21aebfb67e230780"
+      },
+      {
+        "path": "src/utils/internal/logger.ts",
+        "sha": "43e1e8cefc04a82ab488ae1ca1782c4d0737972a"
+      },
+      {
+        "path": "src/utils/internal/performance.ts",
+        "sha": "3712f1e78e556860f64a5c0bbea1174867982c48"
+      },
+      {
+        "path": "src/utils/internal/requestContext.ts",
+        "sha": "60dcf8cc5c4e8309c8decccfe198fba12d869346"
+      },
+      {
+        "path": "src/utils/internal/runtime.ts",
+        "sha": "0f31656a0958c2a95e73a4333fdc0d3944c7df11"
+      },
+      {
+        "path": "src/utils/internal/startupBanner.ts",
+        "sha": "5b3275dd5ec20632c393104274474e8327f72f24"
+      },
+      {
+        "path": "src/utils/metrics/registry.ts",
+        "sha": "6f313b1502c3a9ef5b1d0ac601934c5d37c45420"
+      },
+      {
+        "path": "src/utils/metrics/tokenCounter.ts",
+        "sha": "df157e64ba78074f7f9cf46a0d56420660646815"
+      },
+      {
+        "path": "src/utils/security/idGenerator.ts",
+        "sha": "21e0566005904e92c48e79534334e49b0d02e992"
+      },
+      {
+        "path": "src/utils/security/rateLimiter.ts",
+        "sha": "a79504246c779b44a6f72e400718ec4a5f70df06"
+      },
+      {
+        "path": "src/utils/security/sanitization.ts",
+        "sha": "b2d63542c8305f7e5ca24198ba1a74333093ce90"
+      },
+      {
+        "path": "src/utils/telemetry/instrumentation.ts",
+        "sha": "ff780f44fce1ec8a6443e6803622f3c9e9017981"
+      },
+      {
+        "path": "src/utils/telemetry/semconv.ts",
+        "sha": "a0423c8a9b03a40388279ae02113f817e2f85346"
+      },
+      {
+        "path": "src/utils/telemetry/trace.ts",
+        "sha": "28b1651547985593661d3860343674031a7143fb"
+      },
+      {
+        "path": "src/mcp-server/prompts/definitions/git-wrapup.prompt.ts",
+        "sha": "d1dcd705d637096a346a5eaaa8da71c5292f5438"
+      },
+      {
+        "path": "src/mcp-server/prompts/utils/promptDefinition.ts",
+        "sha": "abe8991402afe3297db7a845d90b58358dee46ad"
+      },
+      {
+        "path": "src/mcp-server/resources/definitions/git-working-directory.resource.ts",
+        "sha": "83b20d654a14c67aef776b2f6ac7f6c16c1f4561"
+      },
+      {
+        "path": "src/mcp-server/resources/utils/resourceDefinition.ts",
+        "sha": "6689db85eaf7664ca9e8f738a1d0e8c941cde523"
+      },
+      {
+        "path": "src/mcp-server/resources/utils/resourceHandlerFactory.ts",
+        "sha": "024c9abe9ec26be9a4e1ac571abb923bb9998da9"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-add.tool.ts",
+        "sha": "a82a90b5c99f933057c9c49f4693eb90005ef3b0"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-blame.tool.ts",
+        "sha": "c0c056c48b8f799dc77013dc6ae61606279e8160"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-branch.tool.ts",
+        "sha": "39b2b8180a6f144d7f174484c73878d73fd38ccd"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-changelog-analyze.tool.ts",
+        "sha": "d076b845b9c2cafdaa00f12a5c49d59c330747fb"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-checkout.tool.ts",
+        "sha": "ebc82b6854810d3eb8c67508a107b2a3f9a289b1"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-cherry-pick.tool.ts",
+        "sha": "542a022050be2a820d9f4040b6a28762c0b8e6ad"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-clean.tool.ts",
+        "sha": "c4db1739a316bae30fb0560cd247e9bfcecca3a9"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-clear-working-dir.tool.ts",
+        "sha": "fe384ce8e026c0acea41536be19ebcd8738512b5"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-clone.tool.ts",
+        "sha": "ee3cd942a7648a58716ece3681cde1fe8e27e441"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-commit.tool.ts",
+        "sha": "2fdaac595da0cbda3b150baa4f7dd05398db8947"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-diff.tool.ts",
+        "sha": "69b7d29141a52446a2b97ab7f5760d91c0cad62b"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-fetch.tool.ts",
+        "sha": "3d94a7457797a1046f7ce6ebeeba0ede3ec6b340"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-init.tool.ts",
+        "sha": "daec9e7862f1127fa75bad94819f7e8c21ec93af"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-log.tool.ts",
+        "sha": "c4647273d10372d5e4f87a3bbf3bea02458499d1"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-merge.tool.ts",
+        "sha": "ba14d2441a4b691d9ded7d25b042c01bbd473af5"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-pull.tool.ts",
+        "sha": "7a0e4f110cfab94beb70fb445b6e17c7be6f5969"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-push.tool.ts",
+        "sha": "0e5a279fe89e09edcb93c62c9094bdc6eb289869"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-rebase.tool.ts",
+        "sha": "429474ccc6cd33eb00b40c63b03ae3c9d9c01f02"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-reflog.tool.ts",
+        "sha": "b68c169539d4ec97d6cb0510ad41d8ea94f0bdde"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-remote.tool.ts",
+        "sha": "1e6d187a7b9f2c32051d16434b6a8ffe13022074"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-reset.tool.ts",
+        "sha": "3f827d25e20b1ac53759813db73b8cab775c2337"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-set-working-dir.tool.ts",
+        "sha": "394af806c9aab1e8133c47d9e0320ad67ecf3bf6"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-show.tool.ts",
+        "sha": "3f851b7cde50ad12a5e60efb639270fd75a8a0d8"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-stash.tool.ts",
+        "sha": "e476230fe95666df46aeea45033a448f756668ac"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-status.tool.ts",
+        "sha": "1a87cf1bf2d5a04d3be76508f29895fa41710d00"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-tag.tool.ts",
+        "sha": "526bcb8531dd00106a4afe92b59865263352cea7"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-worktree.tool.ts",
+        "sha": "9345a7bae78fe2d4db063d1ebb25ca318e6c3e4c"
+      },
+      {
+        "path": "src/mcp-server/tools/definitions/git-wrapup-instructions.tool.ts",
+        "sha": "d27c8ee4470f2202060f923576cfa371b3c39240"
+      },
+      {
+        "path": "src/mcp-server/tools/schemas/common.ts",
+        "sha": "f230be6778c9aebab176b4b0d47896318d950c01"
+      },
+      {
+        "path": "src/mcp-server/tools/utils/git-formatters.ts",
+        "sha": "b3da4e06e50ac8285b5b99c78650cab89af62958"
+      },
+      {
+        "path": "src/mcp-server/tools/utils/git-validators.ts",
+        "sha": "b9a111d1419e9f1c2be384b6dadf4c29872ba9ad"
+      },
+      {
+        "path": "src/mcp-server/tools/utils/json-response-formatter.ts",
+        "sha": "e93a7022c3a20da293c4b848174281ecbf36e927"
+      },
+      {
+        "path": "src/mcp-server/tools/utils/markdown-builder.ts",
+        "sha": "269cf5019646280d7457fb97a2718e059e833986"
+      },
+      {
+        "path": "src/mcp-server/tools/utils/repo-snapshot.ts",
+        "sha": "8bfcd3dfc5105af82fd9072d0177253bb6e4c78a"
+      },
+      {
+        "path": "src/mcp-server/tools/utils/toolDefinition.ts",
+        "sha": "a4003ae7beec8bb58288def4fce0779e2ccdb6e0"
+      },
+      {
+        "path": "src/mcp-server/tools/utils/toolHandlerFactory.ts",
+        "sha": "bd67c11b1b2481cf149f8dff9d14d7698b1f9892"
+      },
+      {
+        "path": "src/mcp-server/tools/utils/toolListing.ts",
+        "sha": "1360f1d738928fa615e570cbe31e85100f929c6f"
+      },
+      {
+        "path": "src/mcp-server/transports/auth/authFactory.ts",
+        "sha": "ecfb52907f4ecbe8ff924146c31bc4578447e08e"
+      },
+      {
+        "path": "src/mcp-server/transports/auth/authMiddleware.ts",
+        "sha": "e0c05de9e41524dc4260c8de6e8fe4ca8ab51114"
+      },
+      {
+        "path": "src/mcp-server/transports/http/httpErrorHandler.ts",
+        "sha": "7ae23f216cced877f1373f392dcd45dbb87898a2"
+      },
+      {
+        "path": "src/mcp-server/transports/http/httpTransport.ts",
+        "sha": "d94d960ea5f9c6394a093a0ff8df542569789fef"
+      },
+      {
+        "path": "src/mcp-server/transports/http/httpTypes.ts",
+        "sha": "c713a8068aeb12d421f74bc808f73f1cb386b303"
+      },
+      {
+        "path": "src/mcp-server/transports/http/sessionManager.ts",
+        "sha": "b51d031f9fb17d666a2b7330ad2915dd0cbd1e21"
+      },
+      {
+        "path": "src/mcp-server/transports/stdio/stdioTransport.ts",
+        "sha": "64227424c484e1514bfa71c5c2644f2aa00fcb31"
+      },
+      {
+        "path": "src/services/git/core/BaseGitProvider.ts",
+        "sha": "e9116a845390f5d8750205661bb0a5aa39f28496"
+      },
+      {
+        "path": "src/services/git/core/GitProviderFactory.ts",
+        "sha": "4478cc8047739551f33800ce7b1d35f6295e500a"
+      },
+      {
+        "path": "src/services/git/core/IGitProvider.ts",
+        "sha": "8e0c8391c59347ff7a12578ad97c7262ed4b8d56"
+      },
+      {
+        "path": "src/storage/providers/cloudflare/kvProvider.ts",
+        "sha": "53bdd271e0a500c94864df4ae704cbe4c6df75f7"
+      },
+      {
+        "path": "src/storage/providers/cloudflare/r2Provider.ts",
+        "sha": "cd404f041777e3e94ed41e4f2c90b30b73bc70dd"
+      },
+      {
+        "path": "src/storage/providers/fileSystem/fileSystemProvider.ts",
+        "sha": "28bd387db2d915e3d3a86a7b6399b3b0322a052b"
+      },
+      {
+        "path": "src/storage/providers/inMemory/inMemoryProvider.ts",
+        "sha": "d59324613538006d000f1227f9dbe4fee260f129"
+      },
+      {
+        "path": "src/storage/providers/supabase/supabase.types.ts",
+        "sha": "4fa34d75b63f86db746afb43188851a84d9e74f7"
+      },
+      {
+        "path": "src/storage/providers/supabase/supabaseProvider.ts",
+        "sha": "a8d0516f13075f175d31c53aee2260b39601743f"
+      },
+      {
+        "path": "src/utils/internal/error-handler/errorHandler.ts",
+        "sha": "c33aed473bca0436fdfca308ffab4cfa937abff7"
+      },
+      {
+        "path": "src/utils/internal/error-handler/helpers.ts",
+        "sha": "3ba69a174cb6e89972d783761e1bf402642bb868"
+      },
+      {
+        "path": "src/utils/internal/error-handler/mappings.ts",
+        "sha": "fbba3a70d09531030b94466daa9cbf13e8052abb"
+      },
+      {
+        "path": "src/utils/internal/error-handler/types.ts",
+        "sha": "863850b43141dc0a10d253ba26f931514976c48c"
+      },
+      {
+        "path": "src/mcp-server/transports/auth/lib/authContext.ts",
+        "sha": "d11d38ab566cf20fd6db8eafbb168410aa7e4bc9"
+      },
+      {
+        "path": "src/mcp-server/transports/auth/lib/authTypes.ts",
+        "sha": "db0fb379db724eb2e36d67df32073328d9d0d385"
+      },
+      {
+        "path": "src/mcp-server/transports/auth/lib/authUtils.ts",
+        "sha": "c6ef3a71deca504ef3d8ba912a0b131f8c488adf"
+      },
+      {
+        "path": "src/mcp-server/transports/auth/lib/withAuth.ts",
+        "sha": "c66e755f551d1124975df6eeaf8261506d04c3e9"
+      },
+      {
+        "path": "src/mcp-server/transports/auth/strategies/authStrategy.ts",
+        "sha": "f5e2db05996a31358398bae79cbdcf388816ac6c"
+      },
+      {
+        "path": "src/mcp-server/transports/auth/strategies/jwtStrategy.ts",
+        "sha": "885517859fc4eeff9613d5641a68dfb6e50af9e4"
+      },
+      {
+        "path": "src/mcp-server/transports/auth/strategies/oauthStrategy.ts",
+        "sha": "a1bdfe5d416db1f362256af0b215411ec887b17f"
+      },
+      {
+        "path": "src/services/git/providers/cli/CliGitProvider.ts",
+        "sha": "f887942212ead6aa96d5bb18e3b113ab23c5ee17"
+      },
+      {
+        "path": "src/services/git/providers/cli/utils/command-builder.ts",
+        "sha": "903e080f548245f6b4060df9ce7b49d803b6994b"
+      },
+      {
+        "path": "src/services/git/providers/cli/utils/config-helper.ts",
+        "sha": "e1e23b41eb1f3a6e93d3b18f85860278beb7d72a"
+      },
+      {
+        "path": "src/services/git/providers/cli/utils/error-mapper.ts",
+        "sha": "e22400fd9d1ab5d641dcb14d7de9daa10ab9f701"
+      },
+      {
+        "path": "src/services/git/providers/cli/utils/git-executor.ts",
+        "sha": "63bbfb35342c9d4afa294fc9949af6e37b8b5c32"
+      },
+      {
+        "path": "src/services/git/providers/cli/utils/git-validators.ts",
+        "sha": "e48ff41a77af927d32ed4f68986e74819852b32a"
+      },
+      {
+        "path": "src/services/git/providers/cli/utils/output-parser.ts",
+        "sha": "10f17cd47999cde062d82015497d91f085fdea1f"
+      },
+      {
+        "path": "src/services/git/providers/cli/utils/runtime-adapter.ts",
+        "sha": "e896b813afa3b5b2705a1c3176821132781852bb"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/branches/branch.ts",
+        "sha": "d61543e253c7a43254f30f672562fd065c157221"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/branches/checkout.ts",
+        "sha": "7a69e52bda3b5e247a979a01979c7243be56a028"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/branches/cherry-pick.ts",
+        "sha": "4d15b09acef72433855c8bbb2974b3a8c36caffe"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/branches/merge.ts",
+        "sha": "f22e1d9c8ecb64a1bd95bbabdc00076752445c9b"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/branches/rebase.ts",
+        "sha": "a8fd79dd3c4b14ada81866dabef5a50804a20f8c"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/commits/commit.ts",
+        "sha": "92493a0f01ba320366826410731691cef736c7bf"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/commits/diff.ts",
+        "sha": "8c8b0026d4b6fdadf5170a541b1c07e353dcd93a"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/commits/log.ts",
+        "sha": "0a6a2318121099f95a54588e47901637bfb2785c"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/commits/show.ts",
+        "sha": "64f3b11234c95cf6f8af29a482974c3e16dd0d76"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/core/clean.ts",
+        "sha": "151a77e5a6a0bca10c0b55d8bc65e275810f9bc2"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/core/clone.ts",
+        "sha": "3d4240dd6f693c2bc11b62ff1754e681adeabced"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/core/init.ts",
+        "sha": "45930da4d3b85419714d10c7c3a7acb936e91b61"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/core/status.ts",
+        "sha": "bacdefd0f8e04a720a940be8a08ea414fd70fd36"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/history/blame.ts",
+        "sha": "151e158ea90a6139e19ffbc8e6699e8e53c28b3e"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/history/reflog.ts",
+        "sha": "a876627a3b8a0f510c2d78502b65c61aeccaa124"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/remotes/fetch.ts",
+        "sha": "bdf422d2bd093963715f43d263c1da7277b9fa71"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/remotes/pull.ts",
+        "sha": "3e1aa34a8a82b35e5652ad65c75482fcbd4da5b4"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/remotes/push.ts",
+        "sha": "591467fd5e3113671988bcb3d9daba4adcf4864e"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/remotes/remote.ts",
+        "sha": "e7672dd4d9d99a3086aa1a08733d84b82d5202d0"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/staging/add.ts",
+        "sha": "7906837c34e86f38be226b1f3135fae84c3936b9"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/staging/reset.ts",
+        "sha": "2980f7e0aa3a973c0bb44ca717a0608d78aaac5e"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/stash/stash.ts",
+        "sha": "fc622ea142d86edebb3e269a83533e36733f2925"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/tags/tag.ts",
+        "sha": "9de25e4ec8e55588dcf6ee4fdaea7ca7aa61f1a7"
+      },
+      {
+        "path": "src/services/git/providers/cli/operations/worktree/worktree.ts",
+        "sha": "aaac718e32d0b3af7a6e03222b6db9d48f1f2b6e"
+      }
+    ],
+    "repo_pushed_at": "2026-09-26T21:23:28Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 98,
+    "dims": {
+      "maintenance": 85,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 181,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 37
+  },
+  "network": {
+    "calls": 184,
+    "failed": 0,
+    "ms": 75212
+  },
+  "duration_ms": 9269
+}

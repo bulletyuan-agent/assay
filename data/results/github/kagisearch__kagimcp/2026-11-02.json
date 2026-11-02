@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "kagisearch/kagimcp",
+    "url": "https://github.com/kagisearch/kagimcp",
+    "name": "kagimcp"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:51:19.773Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "4dc1dc97ca8dead8458c7025e4fcc36d2e3d6ec4",
+    "files_scanned": 31,
+    "candidates": 31,
+    "excluded_non_shipped": 0,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/kagimcp/server.py",
+        "sha": "2dc84eee2e712e1a0f2201a2414e1f45edbf3db1"
+      },
+      {
+        "path": "README.md",
+        "sha": "4215db944e70f375f4b974c1b1ce6373485ea2d4"
+      },
+      {
+        "path": "src/kagimcp/__init__.py",
+        "sha": "32ddcf811a92ece6c9f86c300e4ea2a26c9710b2"
+      },
+      {
+        "path": "src/openapi_client/__init__.py",
+        "sha": "3cde7267bd397b312519e234f887f1e78a5e19b0"
+      },
+      {
+        "path": "src/openapi_client/api_client.py",
+        "sha": "02faff9a108047cd7455da7cb0653ec1624ee895"
+      },
+      {
+        "path": "src/openapi_client/api_response.py",
+        "sha": "9bc7c11f6b9f3fd7d144275aabe7082a7b83bfc5"
+      },
+      {
+        "path": "src/openapi_client/configuration.py",
+        "sha": "899c2d2dace15d911e312d9c7456acd77f606e21"
+      },
+      {
+        "path": "src/openapi_client/exceptions.py",
+        "sha": "55cb14d446de98899f75eadd3a9a341e6906bafb"
+      },
+      {
+        "path": "src/openapi_client/rest.py",
+        "sha": "f0042e6ed5b0f251c1218e2e8efb3e328da716a2"
+      },
+      {
+        "path": "src/openapi_client/api/__init__.py",
+        "sha": "5f648c55350004c668930e25ec7fd2a7ee9f761a"
+      },
+      {
+        "path": "src/openapi_client/api/extract_api.py",
+        "sha": "824e827f59299e9b6fd5a1cb46dba9dd04c800fa"
+      },
+      {
+        "path": "src/openapi_client/api/search_api.py",
+        "sha": "b409599eab1f245be39f1012a6c7c8d66d34fbb6"
+      },
+      {
+        "path": "src/openapi_client/models/__init__.py",
+        "sha": "cf8af3d2dd674a44887178b0469c6bd2b7fc4128"
+      },
+      {
+        "path": "src/openapi_client/models/error_detail.py",
+        "sha": "7f975812f5565d73e1b8cd3914b14d1d448466e5"
+      },
+      {
+        "path": "src/openapi_client/models/error_envelope.py",
+        "sha": "716f4b1c60cac63f7191d69b5a0c2011fb701148"
+      },
+      {
+        "path": "src/openapi_client/models/extract_request.py",
+        "sha": "d051df305cae7569e92dd4dd94e19e83ea808de5"
+      },
+      {
+        "path": "src/openapi_client/models/extract_response.py",
+        "sha": "7839f53834e3ab5f838352fe230fb628488b96c3"
+      },
+      {
+        "path": "src/openapi_client/models/meta.py",
+        "sha": "eec10a49edf99f8fe583d9d8fcf0e1671b772639"
+      },
+      {
+        "path": "src/openapi_client/models/page_input.py",
+        "sha": "3f3892b52696ade5c18c614ce929082117f1cf2e"
+      },
+      {
+        "path": "src/openapi_client/models/page_output.py",
+        "sha": "4d6fb1afc6436835b0b0d50c70a902841c5cde14"
+      },
+      {
+        "path": "src/openapi_client/models/search_request_extract.py",
+        "sha": "cacead4620d103e11524e2b7506103614749923a"
+      },
+      {
+        "path": "src/openapi_client/models/search_request_filters.py",
+        "sha": "b3d312d84e9cd573f2fcda584b5abac71cac9428"
+      },
+      {
+        "path": "src/openapi_client/models/search_request_lens.py",
+        "sha": "49bddbe18abf4169b164ba342f8a2dffa039cabb"
+      },
+      {
+        "path": "src/openapi_client/models/search_request_personalizations_domains_inner.py",
+        "sha": "a6aca1f9882d3cde85f22908b65dbca052a19e0a"
+      },
+      {
+        "path": "src/openapi_client/models/search_request_personalizations_regexes_inner.py",
+        "sha": "e692b0b42a79de82719e4b8926d51fa2a49d91d0"
+      },
+      {
+        "path": "src/openapi_client/models/search_request_personalizations.py",
+        "sha": "d8a31d38f323a799dce5e9fa3c3b68493c4b8fc4"
+      },
+      {
+        "path": "src/openapi_client/models/search_request.py",
+        "sha": "33afe2acef57be3b3608430a256b65483249cc88"
+      },
+      {
+        "path": "src/openapi_client/models/search_result_image.py",
+        "sha": "78ae50eb5f7489276f76c03ba27e01ce673f9c95"
+      },
+      {
+        "path": "src/openapi_client/models/search_result.py",
+        "sha": "14dc2bbc18bcfab0560134f7fe1f82348e6b639c"
+      },
+      {
+        "path": "src/openapi_client/models/search200_response_data.py",
+        "sha": "54e83610eb36df92beee1f861e4ded6d73de61f9"
+      },
+      {
+        "path": "src/openapi_client/models/search200_response.py",
+        "sha": "2b64a8643c4f5b047ccf253adf12c1ca02b51cee"
+      }
+    ],
+    "repo_pushed_at": "2026-10-28T13:39:24Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 96,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 85,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/openapi_client/api_client.py",
+      "line": 8,
+      "snippet": "Generated by OpenAPI Generator (https://openapi-generator.tech)",
+      "host": "openapi-generator.tech",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 31,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "openapi-generator.tech"
+    ],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 5
+  },
+  "network": {
+    "calls": 34,
+    "failed": 0,
+    "ms": 12140
+  },
+  "duration_ms": 3053
+}

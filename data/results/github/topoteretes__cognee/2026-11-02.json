@@ -1,0 +1,1749 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "topoteretes/cognee",
+    "url": "https://github.com/topoteretes/cognee",
+    "name": "cognee"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:51:45.033Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "525b1d1179c550cd5b5661bcbf8f00f57a676928",
+    "files_scanned": 400,
+    "candidates": 2741,
+    "excluded_non_shipped": 1820,
+    "coverage": 0.15,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".claude/settings.json",
+        "sha": "184671eb4a44c33a5338fbcaf4b87ad25fca2bba"
+      },
+      {
+        "path": ".claude/skills",
+        "sha": "2b7a412b8fa0fb7e985b0793321bd4e698f2b6cd"
+      },
+      {
+        "path": ".claude/hooks/link-skills.sh",
+        "sha": "6685b084d2e3a2d37dc1f42e482ecbde7502bae3"
+      },
+      {
+        "path": ".github/workflows/adapter_caching_tests.yml",
+        "sha": "f8555d4c4b20ab103e28e05788359ad8217bb069"
+      },
+      {
+        "path": ".github/workflows/approve_dco.yaml",
+        "sha": "8aabd2ba9100d54612d907d222c2dcd9028ce887"
+      },
+      {
+        "path": ".github/workflows/backend_docker_build_test.yml",
+        "sha": "879e255bf00764e6f575687e76776f3ae2212e1a"
+      },
+      {
+        "path": ".github/workflows/basic_tests.yml",
+        "sha": "8512f1e1cc2683ccbd8d7b631ad39fb04b376d8f"
+      },
+      {
+        "path": ".github/workflows/catalog.yml",
+        "sha": "58bf18d032a3628567e49f21670de2c2770ec880"
+      },
+      {
+        "path": ".github/workflows/clean_stale_pr.yaml",
+        "sha": "7fc36e7211b1e400aa4d7e172815cb6eee0fd392"
+      },
+      {
+        "path": ".github/workflows/cli_tests.yml",
+        "sha": "0c563383ff31a59dcf76fa43c0c59fc28fc3ee58"
+      },
+      {
+        "path": ".github/workflows/community_greetings.yml",
+        "sha": "26110487bed0fb0431a9251d68803083b486bd84"
+      },
+      {
+        "path": ".github/workflows/cve_alert.yml",
+        "sha": "8565712d5e53e88ac8dce64e86479503881c7784"
+      },
+      {
+        "path": ".github/workflows/dev_canary_release.yml",
+        "sha": "71fa78dd8be38bc26b4b6c7c5c830f0ed1bdcad8"
+      },
+      {
+        "path": ".github/workflows/dev_previous_day_commits.yml",
+        "sha": "7aba963bf383cae53ef75640017b4b1cb5e9cafe"
+      },
+      {
+        "path": ".github/workflows/docker_compose.yml",
+        "sha": "9e7379b6065d7e630a342f9a238fc5f1112f72ff"
+      },
+      {
+        "path": ".github/workflows/docker_validation_nightly.yml",
+        "sha": "65c04a95f2b4c2c7feaf6df0d406411978dbd0f9"
+      },
+      {
+        "path": ".github/workflows/dockerhub-mcp.yml",
+        "sha": "e62bf4fe248e587090402ae802566ff1821bcf56"
+      },
+      {
+        "path": ".github/workflows/dockerhub-ui.yml",
+        "sha": "0b74628bcaf35661969cdbc3dc8755e55adced7d"
+      },
+      {
+        "path": ".github/workflows/dockerhub.yml",
+        "sha": "da540e396a3e9f51a1b300b8a6ebada477088ff1"
+      },
+      {
+        "path": ".github/workflows/docs_issue_triage.yml",
+        "sha": "b161e1112b3bfa3043f4ee8518d0820a5b5bbcd5"
+      },
+      {
+        "path": ".github/workflows/e2e_tests.yml",
+        "sha": "21244940fee212d79e7e6b9ed5e2152979a7499e"
+      },
+      {
+        "path": ".github/workflows/examples_tests.yml",
+        "sha": "cc049ec51cdcd35acd38f74ed5f5dfe478d40e94"
+      },
+      {
+        "path": ".github/workflows/frontend_docker_build_test.yml",
+        "sha": "91d6b50c3062f32ecb07757f24156da1c80ac69f"
+      },
+      {
+        "path": ".github/workflows/graph_db_tests.yml",
+        "sha": "27d63a4b006653668615524c9ff8ec198a2aa89d"
+      },
+      {
+        "path": ".github/workflows/helm-ci.yml",
+        "sha": "a635b1d80a2b0c0d196cb2632828be5933fc99a8"
+      },
+      {
+        "path": ".github/workflows/integration_tests.yml",
+        "sha": "a1bdd1fbbd094f068a80001588b7ea9aff8ebb25"
+      },
+      {
+        "path": ".github/workflows/journey_tests.yml",
+        "sha": "02243782bbb627c0e9b9258f663959d7a0ade915"
+      },
+      {
+        "path": ".github/workflows/label-core-team.yml",
+        "sha": "cdf3f39e23fb6af81276ea56112439128a3b9767"
+      },
+      {
+        "path": ".github/workflows/latest_libraries.yml",
+        "sha": "165c651bb3f52f1191e77ef99be97d66666b1f14"
+      },
+      {
+        "path": ".github/workflows/linear_review_tickets.yml",
+        "sha": "215ec4fa317d64cbfa032a2bc17efb4e37ffdc98"
+      },
+      {
+        "path": ".github/workflows/load_tests.yml",
+        "sha": "6a7b3ce33f3e477513c60b83510770853412e55e"
+      },
+      {
+        "path": ".github/workflows/mirror-images.yml",
+        "sha": "2bbb4e8c9405b3b65c6aa761453db84abb245902"
+      },
+      {
+        "path": ".github/workflows/nightly_scheduler.yml",
+        "sha": "7e6204bd791c843a753336b35aff5a8a6a1c7d96"
+      },
+      {
+        "path": ".github/workflows/nightly_tests.yml",
+        "sha": "5090a88b01200b072a83cd40d34fe16a5897a518"
+      },
+      {
+        "path": ".github/workflows/notebooks_tests.yml",
+        "sha": "77662ce0e4f5a0fe35c994ab946764cd03193a5c"
+      },
+      {
+        "path": ".github/workflows/performance_report_cloud.yml",
+        "sha": "3f3dd5358af9de0b1e658178764b717a9b1fcb58"
+      },
+      {
+        "path": ".github/workflows/performance_report_rust.yml",
+        "sha": "339f8ffb8d2deb1f27e3b915c6c81096cdee29f8"
+      },
+      {
+        "path": ".github/workflows/performance_report.yml",
+        "sha": "6ce598bba77c2f7c39386029c6c508c6fb38ac60"
+      },
+      {
+        "path": ".github/workflows/pr_lint.yml",
+        "sha": "f0e739813a5f6934d1b3273be8b889c9d2a18c1c"
+      },
+      {
+        "path": ".github/workflows/pre_test.yml",
+        "sha": "333ab58fe47f66d6a6e00c456e253e7ea1c6f226"
+      },
+      {
+        "path": ".github/workflows/relational_db_migration_tests.yml",
+        "sha": "9eb2ccc833126b21a2b7907fe86a60fc9fa3d60b"
+      },
+      {
+        "path": ".github/workflows/release_discord_action.yml",
+        "sha": "04d2d1ab1a4b0457355080e65be756a0ff958019"
+      },
+      {
+        "path": ".github/workflows/release_mcp.yml",
+        "sha": "22d0e164c2dd0aea2b8196840fc10592d56308f5"
+      },
+      {
+        "path": ".github/workflows/release_test.yml",
+        "sha": "0956ffcad9123d751a95caf7fc0bd6316bf019a8"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "ce19b9cc620599ec73c5b22d22f99f41054684b9"
+      },
+      {
+        "path": ".github/workflows/require-linear-issue.yml",
+        "sha": "de63b55728c4bf8cd61b6db4c3f1c1f8e15d00af"
+      },
+      {
+        "path": ".github/workflows/reusable_notebook.yml",
+        "sha": "a30f669826121f6a4d6227e7fc8546fa807f9f2d"
+      },
+      {
+        "path": ".github/workflows/router_docstring_sync.yml",
+        "sha": "610f35a5e9c977806577afcef993219b63d8b788"
+      },
+      {
+        "path": ".github/workflows/scorecard.yml",
+        "sha": "45b4e85c270bc1ca34dcabfb8108eedf728fb897"
+      },
+      {
+        "path": ".github/workflows/search_db_tests.yml",
+        "sha": "6529185c0f9fdbe34b305e139096f4216be029ed"
+      },
+      {
+        "path": ".github/workflows/skills_link_check.yml",
+        "sha": "18a887958bdea42f6cba75e47a3aae22588413d4"
+      },
+      {
+        "path": ".github/workflows/slow_e2e_tests.yml",
+        "sha": "d9470374fff05d92cceb92068bcb87f6ca22308d"
+      },
+      {
+        "path": ".github/workflows/spec_extras_sync.yml",
+        "sha": "62c86ff409a2750db96f8073a3bb2bfd8db58c26"
+      },
+      {
+        "path": ".github/workflows/sync_mintlify_docs.yml",
+        "sha": "bf7803377fb8e70e541fc4aef66150a9451a801d"
+      },
+      {
+        "path": ".github/workflows/telemetry-insights.yml",
+        "sha": "f8532004f3a1ed748dfe88ffc02318113eea0198"
+      },
+      {
+        "path": ".github/workflows/test_deployment_mcp.yml",
+        "sha": "707e560d8bc92bc0da8fc986205d557abd55a6ed"
+      },
+      {
+        "path": ".github/workflows/test_different_operating_systems.yml",
+        "sha": "fd51468ae8de96ef6936fc278cde38f4cf139c67"
+      },
+      {
+        "path": ".github/workflows/test_llamacpp.yml",
+        "sha": "d5e9656eb0b10380dfedec68af2a3ca883a94f46"
+      },
+      {
+        "path": ".github/workflows/test_llms.yml",
+        "sha": "1f2e009c058e752d95173bbf1f4602d90dd4513c"
+      },
+      {
+        "path": ".github/workflows/test_mcp.yml",
+        "sha": "fac44e8685906e3bf17b059f85cb96669821ad25"
+      },
+      {
+        "path": ".github/workflows/test_ollama.yml",
+        "sha": "2d7aa069efe44c9e1de5c924ff498983596ccb4b"
+      },
+      {
+        "path": ".github/workflows/test_s3_file_storage.yml",
+        "sha": "c88ef16a5fc96ab475f61ac80318013af0aaf855"
+      },
+      {
+        "path": ".github/workflows/test_suites.yml",
+        "sha": "aacee7ea7aa27f5960982933f03661e722bf6faf"
+      },
+      {
+        "path": ".github/workflows/update-contributors.yml",
+        "sha": "60673856454b76356bd15739f38ae676a10871c1"
+      },
+      {
+        "path": ".github/workflows/vector_db_tests.yml",
+        "sha": "79b84241515b764bd0ff47e16a5b2b9630e2bc24"
+      },
+      {
+        "path": ".github/workflows/weekly-ticket-proposals.yml",
+        "sha": "a2a177a9e9f23f854e40a2f7c4cf1a903b643b7c"
+      },
+      {
+        "path": "cognee/modules/engine/operations/setup.py",
+        "sha": "4992931f22149f59309b7a9cd52c1432feff8700"
+      },
+      {
+        "path": ".agents/skills/cognee-cli/SKILL.md",
+        "sha": "45f08a1e3bad35ac732cf1dc29ab452871842e8e"
+      },
+      {
+        "path": ".agents/skills/cognee-community/SKILL.md",
+        "sha": "f5ac624e0dadde5fe03a9f9445da8758d2d6640d"
+      },
+      {
+        "path": ".agents/skills/cognee-custom-graph-models/SKILL.md",
+        "sha": "63c62d20ee08111a45c722cb01a7cb5918ab2dae"
+      },
+      {
+        "path": ".agents/skills/cognee-custom-pipelines/SKILL.md",
+        "sha": "b126cbe50bd9cec92c8ffa5bf7546152f0704701"
+      },
+      {
+        "path": ".agents/skills/cognee-docker/SKILL.md",
+        "sha": "7f7d021bea4fa6b4050308056be2f529110e447b"
+      },
+      {
+        "path": ".agents/skills/cognee-forget/SKILL.md",
+        "sha": "d66818e02edfad978e247a79d8566568915d851e"
+      },
+      {
+        "path": ".agents/skills/cognee-improve-sessions/SKILL.md",
+        "sha": "4c84c003e606039947782482c864c9323997dbe3"
+      },
+      {
+        "path": ".agents/skills/cognee-ingestion/SKILL.md",
+        "sha": "3bf535e1aa941bf989b765c071e3fe07f893c4cf"
+      },
+      {
+        "path": ".agents/skills/cognee-install/SKILL.md",
+        "sha": "4c53007b513702ca91c7513ef9edeb350e5a2247"
+      },
+      {
+        "path": ".agents/skills/cognee-integrations/SKILL.md",
+        "sha": "d1ec1b938ce8d00801595cd630b46981a6cd5353"
+      },
+      {
+        "path": ".agents/skills/cognee-migrations/SKILL.md",
+        "sha": "b1658fb4bd3db23726ebfcfb0880037d194f3dbb"
+      },
+      {
+        "path": ".agents/skills/cognee-performance/SKILL.md",
+        "sha": "ccbc7e2b507f053d9eea88b13e3dc262334f5f2a"
+      },
+      {
+        "path": ".agents/skills/cognee-permissions/SKILL.md",
+        "sha": "76392be844af8e333594d0b267ea63dd8551024f"
+      },
+      {
+        "path": ".agents/skills/cognee-recall/SKILL.md",
+        "sha": "7734f918639f5c8a61ce570b4bde191bc60c5153"
+      },
+      {
+        "path": ".agents/skills/cognee-server/SKILL.md",
+        "sha": "76be97cf962673b3962953bf3eda3d247067dc92"
+      },
+      {
+        "path": ".agents/skills/company-brain-company-qa/SKILL.md",
+        "sha": "197fede5a689e912b7af1e43f40927f31bbd119a"
+      },
+      {
+        "path": ".agents/skills/company-brain-follow-up-agent/SKILL.md",
+        "sha": "dcfa681afaf396b610fecf3a13181f8e06006535"
+      },
+      {
+        "path": ".agents/skills/google-workspace-memory/SKILL.md",
+        "sha": "a0dea507a777636a5a883336f1060f487b3f2ef1"
+      },
+      {
+        "path": ".agents/skills/multiagent-memory-setup/SKILL.md",
+        "sha": "2a202a9d1732dcbb41efe2be5c3731ffa2872685"
+      },
+      {
+        "path": ".agents/skills/personalized-email/SKILL.md",
+        "sha": "c6e2898e4f516bf09e45599d003070c37bc8ad61"
+      },
+      {
+        "path": ".agents/skills/self-hosted-companion/SKILL.md",
+        "sha": "1f500812c27fd72f18c7cab90c7ef519fc6eadca"
+      },
+      {
+        "path": "cognee/tasks/graph/gliner_demo/install.py",
+        "sha": "f3063f41ee912b6d955cf57f17b5a7a2ec63a323"
+      },
+      {
+        "path": "cognee-mcp/src/server.py",
+        "sha": "0a81c2e061942bd37d6ca9a7c389c24a6efcb1ac"
+      },
+      {
+        "path": "scripts/check_license_compatibility.py",
+        "sha": "acd4d3b56ee6ee1f1a1c648b90e4f8921666c8ea"
+      },
+      {
+        "path": "scripts/docker_validation.sh",
+        "sha": "dfa4fd4ac0aeab1a97441da467b611c6daee5707"
+      },
+      {
+        "path": "scripts/fetch_ladybug_json_extension.sh",
+        "sha": "9f9f6e17c41f2f5dca38fb81a3d3275b23927199"
+      },
+      {
+        "path": "scripts/ladybug_extension_versions.py",
+        "sha": "c15fbbadd56c75e1a75ccff05b475a77b26813ee"
+      },
+      {
+        "path": "scripts/slack-app-manifest.sdk.yml",
+        "sha": "9466ea81c50883e586da177683cd3863d484164f"
+      },
+      {
+        "path": "cognee-frontend/package.json",
+        "sha": "4c10ced51bd8e9c19f3e2a63a0d0dd8fc901970c"
+      },
+      {
+        "path": ".coderabbit.yaml",
+        "sha": "ecb3966edf014a9bc6d308bd3a7a647b79b7c73d"
+      },
+      {
+        "path": ".gitguardian.yml",
+        "sha": "f796591b5a658ed41c131b509992c359551afc37"
+      },
+      {
+        "path": ".mergify.yml",
+        "sha": "c8aef74bf9b973b55728b7774e213a5da3d5c1eb"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "0b4fc4ce497a339a1fe14a260c4428cf91e4f0fa"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "f731e1f490b12711fae52e1d70731cd4db05b661"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "3c003046e285d33dc4252682de52591de138a3c5"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "1f1b2ee8cafa79c6649bf11b59b8cfeabc21f883"
+      },
+      {
+        "path": "cognee-frontend/src/utils/index.ts",
+        "sha": "43189d164ae7a79f805aafa67ed5ea44db9078f4"
+      },
+      {
+        "path": "cognee/eval_framework/token_usage_analysis/cli.py",
+        "sha": "d185ad22166eb7c313a05553983b9d5f03a37feb"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "65808f300f6bb4182d5000558fec580e281ad3f8"
+      },
+      {
+        "path": "CONTRIBUTORS.md",
+        "sha": "523695a95a894ee3f1601e3488e5acc79d3d031e"
+      },
+      {
+        "path": "DCO.md",
+        "sha": "e2a2401c6cd103b4c446314666cf9251d75ad3ed"
+      },
+      {
+        "path": "docker-compose.yml",
+        "sha": "245299e69b2576c4d490300d415599419418724c"
+      },
+      {
+        "path": "entrypoint.sh",
+        "sha": "9e2a2b37c3c2704f8e085cec7a01a12e2648b73d"
+      },
+      {
+        "path": "NOTICE.md",
+        "sha": "0f264a35c2f031159d3055061f6d95ff47c83337"
+      },
+      {
+        "path": "README_ko.md",
+        "sha": "f537bfc67bf0ec794e295650ad11194f6d40f442"
+      },
+      {
+        "path": "README.md",
+        "sha": "f59ba46b83f79864dd56bcfc95596b993c6ef8ca"
+      },
+      {
+        "path": "scripts/weekly_tickets/fetch_context.py",
+        "sha": "3c0c08f58cdc232c88f1aef6c843471f5009f042"
+      },
+      {
+        "path": "scripts/weekly_tickets/issue_body.py",
+        "sha": "23fe246fcd8aaa50f0c83e4d7d59ca11d03d99d8"
+      },
+      {
+        "path": "scripts/weekly_tickets/prompt.md",
+        "sha": "204f152cb16abfc61dc3086ec9f407166acaa59c"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "d3481aa9d3f8dcc27c9974d782651da99fcb8148"
+      },
+      {
+        "path": "slack-app-manifest.yml",
+        "sha": "5f5a9a49516f2ad3c9c7987323fda4aecb6f9021"
+      },
+      {
+        "path": "catalog/__init__.py",
+        "sha": "68185d73373e3f2425599a9323ba2d6e31d99e6b"
+      },
+      {
+        "path": "catalog/inventory_sync.py",
+        "sha": "6c9c8ebe940f17a3d8810ca60f0c736afc4fa980"
+      },
+      {
+        "path": "catalog/loader.py",
+        "sha": "760126a68c761b6f30d0cc5087c76abe1e740e17"
+      },
+      {
+        "path": "catalog/schema.json",
+        "sha": "56a06cc79f58465688b2085545c1cd65293b9eb6"
+      },
+      {
+        "path": "cognee_db_workers/__init__.py",
+        "sha": "ecffcfab2716e60687b0b347e892d8c69c4be5e8"
+      },
+      {
+        "path": "cognee_db_workers/_kuzu_helpers.py",
+        "sha": "398671e112d1cc66e1156f83fc6bf548cafcf000"
+      },
+      {
+        "path": "cognee_db_workers/_windows_openssl.py",
+        "sha": "94ba02639e0f17330c99d4dd835c449b2cf28024"
+      },
+      {
+        "path": "cognee_db_workers/harness.py",
+        "sha": "b9b834a24b3868f32b94970fe9d763119dd75737"
+      },
+      {
+        "path": "cognee_db_workers/kuzu_protocol.py",
+        "sha": "c98becadf9039da9215e48fe79408f07080fb5ad"
+      },
+      {
+        "path": "cognee_db_workers/kuzu_worker.py",
+        "sha": "b632f74ab3559b65fc898c10251a22a56b35aa68"
+      },
+      {
+        "path": "cognee_db_workers/ladybug_migrate.py",
+        "sha": "fa2a8d9f70b30b104beb44fd4c11223aef1fe5a9"
+      },
+      {
+        "path": "cognee_db_workers/lancedb_compaction.py",
+        "sha": "37f1f1e09a7847bd7a0a33e306465a12ac050068"
+      },
+      {
+        "path": "cognee_db_workers/lancedb_protocol.py",
+        "sha": "b16d81d1d3e05bca095db93571ece4e2a42dde9e"
+      },
+      {
+        "path": "cognee_db_workers/lancedb_worker.py",
+        "sha": "69eed0c0016400e73a0054dc71f203b27cde174a"
+      },
+      {
+        "path": "cognee-frontend/.eslintrc.json",
+        "sha": "bffb357a7122523ec94045523758c4b825b448ef"
+      },
+      {
+        "path": "cognee-frontend/docker-entrypoint.sh",
+        "sha": "962a7b7dead3fa1be9003dcf5e4297943ef9c6ca"
+      },
+      {
+        "path": "cognee-frontend/eslint.config.mjs",
+        "sha": "f7e42ca8cef68bd3ce33ef4b8dbbd108761455af"
+      },
+      {
+        "path": "cognee-frontend/jest.config.mjs",
+        "sha": "659be173c7a32829a312e8fd14b23dc0c02519e8"
+      },
+      {
+        "path": "cognee-frontend/jest.setup.ts",
+        "sha": "6813b54dba468bc61ee718886118f81f82a1ff4d"
+      },
+      {
+        "path": "cognee-frontend/next.config.ts",
+        "sha": "8ae639928645ffb77ab2c822c71bd2d348630b1d"
+      },
+      {
+        "path": "cognee-frontend/postcss.config.mjs",
+        "sha": "4d6cc7b806893297b6a2ee015b309317e219823e"
+      },
+      {
+        "path": "cognee-frontend/README.md",
+        "sha": "2cccd9a60ee9504dcf25de3a21e8e1da93102b11"
+      },
+      {
+        "path": "cognee-frontend/src/modules/analytics/index.ts",
+        "sha": "93edc502fcebffb5bbb3d35792ed9e678f13e49b"
+      },
+      {
+        "path": "cognee-frontend/src/modules/local/index.ts",
+        "sha": "2b103771ac4d565d57fe23f141deac627ea521bf"
+      },
+      {
+        "path": "cognee-frontend/src/services/http/index.ts",
+        "sha": "8aedbb22650a53d7f768df1a3fc50753289c802c"
+      },
+      {
+        "path": "cognee-frontend/src/ui/app/index.ts",
+        "sha": "1409c09654b9b3fc3476aee0dd772907b9a31e1f"
+      },
+      {
+        "path": "cognee-frontend/src/ui/elements/index.ts",
+        "sha": "d5673a5f6a7e9c3ddab8551c862b2b76fbcd8533"
+      },
+      {
+        "path": "cognee-frontend/src/ui/icons/index.ts",
+        "sha": "971c411f79ce446f8d39ebbcef8167946171c58b"
+      },
+      {
+        "path": "cognee-frontend/src/ui/layout/index.ts",
+        "sha": "a87da236dc86c2e4e0f3784de16ac7fbcf787061"
+      },
+      {
+        "path": "cognee-frontend/tsconfig.json",
+        "sha": "d0e392708cca89de382c0ae7699fc96833e4fc7b"
+      },
+      {
+        "path": "cognee-mcp/entrypoint.sh",
+        "sha": "7144821d83e1c42f7934229f19e0797807d309ce"
+      },
+      {
+        "path": "cognee-mcp/README.md",
+        "sha": "72694ddab1a2cfcda48157d58f476e057f9ab84c"
+      },
+      {
+        "path": "cognee-starter-kit/README.md",
+        "sha": "5848c11c7c9370eef45c633a6fdc566f19a08cf4"
+      },
+      {
+        "path": "cognee/__init__.py",
+        "sha": "fd117b0460e4405a32ccc4ace2e398a93a705f5b"
+      },
+      {
+        "path": "cognee/__main__.py",
+        "sha": "296dcb1c249fd05f7477184665fc7741e8310069"
+      },
+      {
+        "path": "cognee/api/v1/tools/tools.py",
+        "sha": "077f5ef59f214b541a03e36b9b1a1cea36a4df51"
+      },
+      {
+        "path": "cognee/base_config.py",
+        "sha": "a94c3651aea494d9199e2dcd41ceb116e11c6d6d"
+      },
+      {
+        "path": "cognee/context_global_variables.py",
+        "sha": "bf1ec875fc64957131c7534f44754c8d4a20342d"
+      },
+      {
+        "path": "cognee/low_level.py",
+        "sha": "c1c1c84ced0906e29cb69ffd4721db6a42158437"
+      },
+      {
+        "path": "cognee/modules/engine/models/Tool.py",
+        "sha": "23251a2fd8e6f713dfffdec6ddd60ea5171c9f72"
+      },
+      {
+        "path": "cognee/modules/search/dataset_routing/index.py",
+        "sha": "a85383b6cc2de7f78bc57c43c8f61f2d5a2b5847"
+      },
+      {
+        "path": "cognee/root_dir.py",
+        "sha": "1b7645070701c7f841bb3a720ff9f73a8dd04168"
+      },
+      {
+        "path": "cognee/run_migrations.py",
+        "sha": "e4a1278b3774174e0bcf6f0bc1dacd05e3ca70ce"
+      },
+      {
+        "path": "cognee/skill.md",
+        "sha": "2d32b9e893a6369de9e11039931359c993161223"
+      },
+      {
+        "path": "cognee/version.py",
+        "sha": "f2262018c4d547cd94d01b7f77c2bee8178c088a"
+      },
+      {
+        "path": "deployment/setup_ubuntu_instance.sh",
+        "sha": "c54e8f3f2e60397b7b7d848d8f1e81f2d6ec5ca6"
+      },
+      {
+        "path": "evals/README.md",
+        "sha": "71e500f60ee2341e972d9aef2497cdb023eb1556"
+      },
+      {
+        "path": "kuzu/__init__.py",
+        "sha": "2188b18b25117bcb5557b32c966b49b08522848c"
+      },
+      {
+        "path": "kuzu/database.py",
+        "sha": "0af88f918a5f8e9c56d93336be51c0119309d558"
+      },
+      {
+        "path": "licenses/README.md",
+        "sha": "8b3d13963ec9e5c4d5d301dc1b821b0bfd5ec399"
+      },
+      {
+        "path": "logs/README.md",
+        "sha": "96ef613b56647a8ca24d9a770489dcac4d58dc4c"
+      },
+      {
+        "path": "tools/assess_branch_notes.py",
+        "sha": "588e671c9a09a4d3ca0c1b4d730839ab9a83f236"
+      },
+      {
+        "path": "tools/build_demo_archive.py",
+        "sha": "c7cffc3d47533427925039ead3071dbabb3fc567"
+      },
+      {
+        "path": "tools/check_router_docstrings.py",
+        "sha": "eabfd6d555f24610f1f26567247befeff601e801"
+      },
+      {
+        "path": "tools/check_spec_extras.py",
+        "sha": "a67a0c977c45fed2277916d23ee75e50472094c8"
+      },
+      {
+        "path": "tools/check-package.sh",
+        "sha": "ca3fc1c138a894f2445349c50838df25c29ca125"
+      },
+      {
+        "path": "tools/describe_router_params.py",
+        "sha": "49c90a269404c9a009dcce7e90c88b6a78950469"
+      },
+      {
+        "path": "tools/docs_issue_filter.py",
+        "sha": "8bf35ac6ab7c3d39a5c0a288a77f3672e08dbcd5"
+      },
+      {
+        "path": "tools/docs_issue_triage.py",
+        "sha": "f459e7cccef2cc94cdf29e7db1f39d17619128ea"
+      },
+      {
+        "path": "tools/fix_router_docstrings.py",
+        "sha": "4f2badf4f81d430a8b2fbc6fb2ccba456fb91bc7"
+      },
+      {
+        "path": "tools/fix_spec_extras.py",
+        "sha": "910f2a9a8553c6f035b677b432df15c6020b5d2f"
+      },
+      {
+        "path": "tools/generate_branch_notes.py",
+        "sha": "12d5802581b2c22379eddaa5c8af642c64ea2172"
+      },
+      {
+        "path": "tools/generate_release_notes.py",
+        "sha": "264f7d28c91502eda296422cfd7e8f9c8bf605b5"
+      },
+      {
+        "path": "tools/manage_docs_pr.py",
+        "sha": "5c4a3981e4051b12dd4b53f191a3c3c1b9d82e44"
+      },
+      {
+        "path": "tools/merge_branch_diff.py",
+        "sha": "b7a9276956f1010a3935ace46ee4114ef9f55274"
+      },
+      {
+        "path": "tools/poetry-deps.sh",
+        "sha": "79b0b77d43fc963cc2b2b06a655b0b5cc4fe9b78"
+      },
+      {
+        "path": "tools/prepare_docs_edit_scope.py",
+        "sha": "7b419bb46b93ab0a27c6d81fff65171d23ad28fc"
+      },
+      {
+        "path": "tools/prepare_docs_pr_content.py",
+        "sha": "062258529ba4176b9eca015fa6185c1811f66525"
+      },
+      {
+        "path": "tools/prepare_merged_branches.py",
+        "sha": "6e03fb7182eb4436f3702ea13f72d8823ece0ea1"
+      },
+      {
+        "path": "tools/send_failure_email.py",
+        "sha": "cf6a3eec42b1e4242b1503b99f10032a394073ed"
+      },
+      {
+        "path": "tools/simulate_agent.py",
+        "sha": "e25eee073560bee1de35126895599c10cd414d3d"
+      },
+      {
+        "path": "tools/spec_extras.json",
+        "sha": "cec1184a327c4ccb3e3fa3ece8fd0f2d9276d5ab"
+      },
+      {
+        "path": "tools/sync_release_docs.py",
+        "sha": "c76685bff2bc5d4a1fb1946d110a110a06ebc2b4"
+      },
+      {
+        "path": "tools/write_docs_assessment_outputs.py",
+        "sha": "c90e2bfecd035102fe4b6fa965e7df59b814dc44"
+      },
+      {
+        "path": "tools/write_docs_scope_plan_outputs.py",
+        "sha": "b200c59732fe2703138f53121a54765ca6406f06"
+      },
+      {
+        "path": "assets/community/README.pt.md",
+        "sha": "ffc53ee68c0cc1a3818636786afb17a2affb7d3f"
+      },
+      {
+        "path": "assets/community/README.ru.md",
+        "sha": "7a9d28939cabe1694ff062db3c7483abf8cdf122"
+      },
+      {
+        "path": "assets/community/README.zh.md",
+        "sha": "c08e4b995dcdb72cf7f2f54d7c4f67182f41c363"
+      },
+      {
+        "path": "cognee_db_workers/ladybug_extensions/README.md",
+        "sha": "9dc6d7f30faf435d3142fdc1d9291fd51de72a84"
+      },
+      {
+        "path": "cognee-frontend/postcss/mantineLeavesControlFontsToTailwind.cjs",
+        "sha": "6d13004ecc3afe8a4c05e7a67ed3650c84ba7b90"
+      },
+      {
+        "path": "cognee-frontend/src/instrumentation.ts",
+        "sha": "63747bfcc1b495e8bd2bdc00e853246a1c12ca2f"
+      },
+      {
+        "path": "cognee-frontend/src/middleware.ts",
+        "sha": "e59924f1ec340f142db8abb4b02a3a127c10f5f1"
+      },
+      {
+        "path": "cognee-frontend/src/ui/elements/Auth/index.ts",
+        "sha": "5ff29406b3ce6cd235531e584d3001541956e592"
+      },
+      {
+        "path": "cognee-frontend/src/ui/elements/Modal/index.ts",
+        "sha": "b4740f10ce196ebba9a1c100dc784cb4537e9959"
+      },
+      {
+        "path": "cognee-frontend/types/d3-force-3d.d.ts",
+        "sha": "9d0185f95db329a42a40044dedfa3a1595e1f84f"
+      },
+      {
+        "path": "cognee-frontend/types/troika-three-text.d.ts",
+        "sha": "3ea9ba05a60656278fb956402fd5c1ce6dc3aaf2"
+      },
+      {
+        "path": "cognee-frontend/types/troika-three-utils.d.ts",
+        "sha": "80b0e947347d88b42efc5028b4acd2fb6c866f33"
+      },
+      {
+        "path": "cognee-mcp/src/__init__.py",
+        "sha": "1876031bd81fa1b41cac7e0c80ee09fe70b60021"
+      },
+      {
+        "path": "cognee-mcp/src/client.py",
+        "sha": "b850df385970ea967816ff319d049ca90833cd2d"
+      },
+      {
+        "path": "cognee-mcp/src/cognee_client.py",
+        "sha": "a6dea47bc5414c78756c3fa89a277994e1bdd433"
+      },
+      {
+        "path": "cognee-mcp/src/retrieval_utils.py",
+        "sha": "ae19fe4b435188ba9b41a3f31febe234449ddd00"
+      },
+      {
+        "path": "cognee-mcp/src/server_utils.py",
+        "sha": "b077bf0143a9a1f741b1ea82b036036e20bfb8ef"
+      },
+      {
+        "path": "cognee-mcp/src/tool_registry.py",
+        "sha": "b9c522855c63480fdc0b3711d89b0b2b5b2b4021"
+      },
+      {
+        "path": "cognee/alembic/__init__.py",
+        "sha": "fc883622db04c0befbe164f48e04af07615cebf7"
+      },
+      {
+        "path": "cognee/alembic/env.py",
+        "sha": "a6ec382a1315cc803529d0cf9bd0391e85f754cc"
+      },
+      {
+        "path": "cognee/alembic/frozen_schema.py",
+        "sha": "b0e1b267a2ff433270ee3199f5638114969ab3ca"
+      },
+      {
+        "path": "cognee/api/__init__.py",
+        "sha": "dc455d76d4c4802eed04e31275eb03b352c4dc3b"
+      },
+      {
+        "path": "cognee/api/client.py",
+        "sha": "fe31b108457db3187fbb727f9746625fcf1e2e64"
+      },
+      {
+        "path": "cognee/api/DTO.py",
+        "sha": "4a2c4b3dd362182a0c9bf24bcf5ee56aad018b8c"
+      },
+      {
+        "path": "cognee/api/exception_telemetry.py",
+        "sha": "5dd8a4be1f9960daf5e22fbd9571b459f47168b3"
+      },
+      {
+        "path": "cognee/api/sse.py",
+        "sha": "8df35d2673d824f59a9a9130be7126ea172f04c9"
+      },
+      {
+        "path": "cognee/api/startup_checks.py",
+        "sha": "61a62daa351dfbedde4bd2c3449d31ecade5fe7e"
+      },
+      {
+        "path": "cognee/api/upload_fields.py",
+        "sha": "77951727eedc0c551e7548cf7a28c2b55c377649"
+      },
+      {
+        "path": "cognee/cli/__init__.py",
+        "sha": "1a811a3d326dc38f89314791988be6c5ffb3561e"
+      },
+      {
+        "path": "cognee/cli/_cognee.py",
+        "sha": "b447ad06628e85a707f95fdf19e884bc59adea49"
+      },
+      {
+        "path": "cognee/cli/api_client.py",
+        "sha": "2c8fe274425cc3f9357a865520d6102a9225c32b"
+      },
+      {
+        "path": "cognee/cli/api_dispatch.py",
+        "sha": "a303db3fe936b2c7b8e37f2bbb9f600d412f5b74"
+      },
+      {
+        "path": "cognee/cli/code_search.py",
+        "sha": "ffe8eaf8abf9d43bc009c17dac5b0d42f5aa4e8f"
+      },
+      {
+        "path": "cognee/cli/config.py",
+        "sha": "5cf5c4a536c927edc5fc38843b6bb3601a94e99b"
+      },
+      {
+        "path": "cognee/cli/debug.py",
+        "sha": "cad0b5898de4288109be286e3b6d9a527cd09fbe"
+      },
+      {
+        "path": "cognee/cli/echo.py",
+        "sha": "b47411cec32f1985d974724fb18d05b5973b38f5"
+      },
+      {
+        "path": "cognee/cli/exceptions.py",
+        "sha": "75004a3ecfa3c45533e0a8d3119514f17ae5119c"
+      },
+      {
+        "path": "cognee/cli/hints.py",
+        "sha": "207c52d927269661f0aaba25b132bb81623d4b83"
+      },
+      {
+        "path": "cognee/cli/minimal_cli.py",
+        "sha": "18e3a3bce6b04a7b63b6ee004a27a0529c34e911"
+      },
+      {
+        "path": "cognee/cli/recall_output.py",
+        "sha": "72c3970a2a9c2aed8d44ae0991b84e3d0b082393"
+      },
+      {
+        "path": "cognee/cli/reference.py",
+        "sha": "65008f9d3ea91e1f11442bcdfe593d7cb506e3e0"
+      },
+      {
+        "path": "cognee/cli/remediation.py",
+        "sha": "5b421c05b005bdbc0e8a6ad2637c28d0af841868"
+      },
+      {
+        "path": "cognee/cli/suppress_logging.py",
+        "sha": "a7bf4c2d0c9d930b304b43e8e66c72ef08ce1243"
+      },
+      {
+        "path": "cognee/cli/user_resolution.py",
+        "sha": "9e2ab87814d69dc54dae7c787e92196fdc5d29d8"
+      },
+      {
+        "path": "cognee/eval_framework/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "cognee/eval_framework/__main__.py",
+        "sha": "d46e084bd3a956877ff43dfc0adc107dc98bd7d8"
+      },
+      {
+        "path": "cognee/eval_framework/eval_config.py",
+        "sha": "d3610692a623fbd2f77de5c01e678e23bf9dde70"
+      },
+      {
+        "path": "cognee/eval_framework/metrics_dashboard.py",
+        "sha": "05618f20919a4025e9312cc6c85902845d39d8a6"
+      },
+      {
+        "path": "cognee/eval_framework/modal_eval_dashboard.py",
+        "sha": "ba8efc74a8b2565d1e2fbd189d1b06520bc471fd"
+      },
+      {
+        "path": "cognee/eval_framework/modal_run_eval.py",
+        "sha": "f267b3385d8548ce78ee80842845a335f8a3dbba"
+      },
+      {
+        "path": "cognee/eval_framework/README.md",
+        "sha": "8b4901cb1151f36510ef780cd496a84276dde030"
+      },
+      {
+        "path": "cognee/eval_framework/run_beam_eval.py",
+        "sha": "10109a622626f2f14a834b8675bd3753b58d02dd"
+      },
+      {
+        "path": "cognee/eval_framework/run_eval.py",
+        "sha": "0265b1143ff07f8404a9101138ae3bc499f768f4"
+      },
+      {
+        "path": "cognee/eval_framework/runner.py",
+        "sha": "067e85c4abb2ae7f4f27ad2fb4f89a928378440f"
+      },
+      {
+        "path": "cognee/exceptions/__init__.py",
+        "sha": "8bf5b8030cefd8c7d436c91151b66fe280ef132f"
+      },
+      {
+        "path": "cognee/exceptions/exceptions.py",
+        "sha": "330a33c278647fdf02deb4628013b0251fe584e3"
+      },
+      {
+        "path": "cognee/exceptions/remediation.py",
+        "sha": "ff4644fc8bb889a40aeb8ceeee5bb775bf7e23e1"
+      },
+      {
+        "path": "cognee/infrastructure/__init__.py",
+        "sha": "77b712ca70b74be5874f513f71d0bd50f06fbbbe"
+      },
+      {
+        "path": "cognee/infrastructure/background_tasks.py",
+        "sha": "1b8f88489e58eacaccdb03782d3520b3a5807450"
+      },
+      {
+        "path": "cognee/memify_pipelines/__init__.py",
+        "sha": "dc6e1d66e36a5ebf4589d27e957141c7666e218b"
+      },
+      {
+        "path": "cognee/memify_pipelines/apply_feedback_weights.py",
+        "sha": "04e646c5bcea65e3ca7dd62f0d8d235dec516ee9"
+      },
+      {
+        "path": "cognee/memify_pipelines/cognify_code_docs.py",
+        "sha": "a077be59b16a58fbfe2ace4e1fb780c09462a714"
+      },
+      {
+        "path": "cognee/memify_pipelines/consolidate_entities.py",
+        "sha": "b6c7a1b8f68e9ff0036e94ed90fc62e8aa30ae33"
+      },
+      {
+        "path": "cognee/memify_pipelines/consolidate_entity_descriptions.py",
+        "sha": "6bdfca506ad18b46101caefe072d3d25d99d65cb"
+      },
+      {
+        "path": "cognee/memify_pipelines/cross_connect_entities.py",
+        "sha": "7e95ea4addb7e21561efc85bca271f7e286877d3"
+      },
+      {
+        "path": "cognee/memify_pipelines/global_context_index.py",
+        "sha": "b553204e38a5f62f8fe05a97bf41e862b9ce5d48"
+      },
+      {
+        "path": "cognee/memify_pipelines/memify_task_registry.py",
+        "sha": "890070a98c5f84d790712ac53adaf35e4ff68434"
+      },
+      {
+        "path": "cognee/memify_pipelines/persist_agent_trace_feedbacks_in_knowledge_graph.py",
+        "sha": "100d627fca495641008f608b242fabab230541c4"
+      },
+      {
+        "path": "cognee/memify_pipelines/persist_sessions_in_knowledge_graph.py",
+        "sha": "74971153a2db77de6d16693640a283cc8e64cd78"
+      },
+      {
+        "path": "cognee/memify_pipelines/review_conflicts_pipeline.py",
+        "sha": "ac6e654afe4837e33607b5b0d0afc283ca2809ce"
+      },
+      {
+        "path": "cognee/memory/__init__.py",
+        "sha": "c0f437c808ebfbe0ac9a77b9ca0854ad8b8a281d"
+      },
+      {
+        "path": "cognee/memory/entries.py",
+        "sha": "ea0b2f46320798d5124241340d6b18e96df2ad80"
+      },
+      {
+        "path": "cognee/migration/__init__.py",
+        "sha": "f8eae56d1362849936436ad1b404f7cc260de915"
+      },
+      {
+        "path": "cognee/modules/__init__.py",
+        "sha": "0fcacab58753119c1c5e515593f70bac70870413"
+      },
+      {
+        "path": "cognee/pipelines/__init__.py",
+        "sha": "3f24b0aa8c5482d092b48c020f90a253f74940ac"
+      },
+      {
+        "path": "cognee/pipelines/types.py",
+        "sha": "ad4190647f4443c64de84b6434e90ade554657bc"
+      },
+      {
+        "path": "cognee/shared/__init__.py",
+        "sha": "8e0e889e1c16c94cef0a85ae5da34c3aa0830496"
+      },
+      {
+        "path": "cognee/shared/async_utils.py",
+        "sha": "9acdb274c4501ad74501134a9b4545c8b0353eba"
+      },
+      {
+        "path": "cognee/shared/cache.py",
+        "sha": "a61989fc805b8cddd3e78bcad1fa0ef2ee2a512b"
+      },
+      {
+        "path": "cognee/shared/CodeGraphEntities.py",
+        "sha": "adc24a92f640f45b498d677ec0a3c21405a23a78"
+      },
+      {
+        "path": "cognee/shared/data_models.py",
+        "sha": "a99ee19e36e7e9a95c51ff49462523dd03c920b8"
+      },
+      {
+        "path": "cognee/shared/dict_keys.py",
+        "sha": "6fb9cee71583b1a969b3c53a79d12a1957fee05a"
+      },
+      {
+        "path": "cognee/shared/encode_uuid.py",
+        "sha": "230fd7c270f317f2835161a130af55d3a46d567f"
+      },
+      {
+        "path": "cognee/shared/env_file.py",
+        "sha": "14b809707054d95972df953373380ab0be4c541a"
+      },
+      {
+        "path": "cognee/shared/GithubClassification.py",
+        "sha": "66e82d5f6eced6835bbbac84fb526e33acfb4d50"
+      },
+      {
+        "path": "cognee/shared/GithubTopology.py",
+        "sha": "79eed62591b52acad49fdf525e683e02dd5ffd6a"
+      },
+      {
+        "path": "cognee/shared/graph_model_utils.py",
+        "sha": "06a0529b15542e3911816e3612fc48a0f69f325e"
+      },
+      {
+        "path": "cognee/shared/llm_graph_model.py",
+        "sha": "4f8806887bad39a9ccc9a5c3dd96dc847afec65e"
+      },
+      {
+        "path": "cognee/shared/logging_utils.py",
+        "sha": "b93a7b920b25ed12db874ef9592c970cf19670c6"
+      },
+      {
+        "path": "cognee/shared/lru_cache.py",
+        "sha": "6044287afbd1bd7687cbf087d20b5c63197c91ba"
+      },
+      {
+        "path": "cognee/shared/model_download_notice.py",
+        "sha": "e8eca9a330409749201377e046094a373af8e727"
+      },
+      {
+        "path": "cognee/shared/pipeline_names.py",
+        "sha": "f4932bac5365bcc88ab973cad979c07e6743a3f6"
+      },
+      {
+        "path": "cognee/shared/rate_limiting.py",
+        "sha": "ed9dfef1d6e282ee5951bc065d761e28bc208974"
+      },
+      {
+        "path": "cognee/shared/SourceCodeGraph.py",
+        "sha": "d8336d927018c9405adad21b757c69c0797c6c6a"
+      },
+      {
+        "path": "cognee/shared/telemetry_sender.py",
+        "sha": "4c48b10d40134d5b46939a5d697783b8175de6a2"
+      },
+      {
+        "path": "cognee/shared/usage_logger.py",
+        "sha": "2996a636bf31f1aff97d10a285a34c97b1fd697b"
+      },
+      {
+        "path": "cognee/shared/utils.py",
+        "sha": "4e7ba02fbd2d57adeaf319968e29c0931a61a7fd"
+      },
+      {
+        "path": "cognee/tasks/__init__.py",
+        "sha": "eddc8fcf7bb0a5680e616554fedf68dc908e0fc8"
+      },
+      {
+        "path": "cognee/tasks/README.md",
+        "sha": "718f714ba0f880c46b129ef1af3e80d830971e56"
+      },
+      {
+        "path": "deployment/helm/Chart.yaml",
+        "sha": "ab9e087df03677e85bc3cc35ab31e242cea30ab4"
+      },
+      {
+        "path": "deployment/helm/README.md",
+        "sha": "8698ce2a47e15550f5d6940de20f9e7231d02872"
+      },
+      {
+        "path": "deployment/helm/values.schema.json",
+        "sha": "9866bec6a34137512d85481beec36198086732b5"
+      },
+      {
+        "path": "deployment/helm/values.yaml",
+        "sha": "e986814aa6613e31c73016d7df7bb0f4ae8b8e47"
+      },
+      {
+        "path": "distributed/deploy/daytona_sandbox.py",
+        "sha": "995ad077e6815e5663ea3c6cbc8a565decd2483a"
+      },
+      {
+        "path": "distributed/deploy/daytona.yaml",
+        "sha": "7ab7b7b1a8777d45e7383fee9e847dca79b4713a"
+      },
+      {
+        "path": "distributed/deploy/devcontainer.json",
+        "sha": "7f6d6f006cb88fb852b794adfab59e9db0250d78"
+      },
+      {
+        "path": "distributed/deploy/fly-deploy.sh",
+        "sha": "801cfc4d465b8b520f77e9445690830afbe64e4d"
+      },
+      {
+        "path": "distributed/deploy/islo_sandbox.py",
+        "sha": "63d3e4792bbd0ad3fd3de2524b8592813e0cebda"
+      },
+      {
+        "path": "distributed/deploy/modal_app.py",
+        "sha": "a2927450a0f1f64d2ac842f3429be9b9efc1b809"
+      },
+      {
+        "path": "distributed/deploy/modal-deploy.sh",
+        "sha": "e9ae89a6dfb35f30c0e0dc5a158b248c0cafc342"
+      },
+      {
+        "path": "distributed/deploy/railway-template.json",
+        "sha": "14e571f910b7435b6ae157213dbf1642b9f754a4"
+      },
+      {
+        "path": "distributed/deploy/README.md",
+        "sha": "4039d18e3ddd9da88b8b0e1456779cd51b6a489f"
+      },
+      {
+        "path": "distributed/deploy/render.yaml",
+        "sha": "d884c1d24ac2e49a0f7e105f4a6b293b29641ebd"
+      },
+      {
+        "path": "evals/old/hotpot_50_qa_pairs.json",
+        "sha": "c99ad6c1e6b1d723c6365134a051350541852f66"
+      },
+      {
+        "path": "notebooks/data/copilot_conversations.json",
+        "sha": "dcab8ddc630e8b895cffe1712b14f995c38021a7"
+      },
+      {
+        "path": "notebooks/data/guido_contributions.json",
+        "sha": "6424d7a552ae47aabf620d5a91a7711e00585ead"
+      },
+      {
+        "path": "notebooks/data/my_developer_rules.md",
+        "sha": "751fda2bd4c004508256df7e80731b96a63b3d91"
+      },
+      {
+        "path": "notebooks/data/pep_style_guide.md",
+        "sha": "bc646632475c9ddef167f04503c02a32e01db0ae"
+      },
+      {
+        "path": "notebooks/data/zen_principles.md",
+        "sha": "d49dc9c13b69513ea43cb80fb91df6eb9b9ae207"
+      },
+      {
+        "path": "tools/prompts/branch_notes_system.txt",
+        "sha": "31b982a8e0eaaac269818f9ef45b6497f97a2be6"
+      },
+      {
+        "path": "tools/prompts/docs_assessment_system.txt",
+        "sha": "60ddb86c44ed0affe6c178493ae2c5c60220cc0a"
+      },
+      {
+        "path": "tools/prompts/docs_issue_site_check.txt",
+        "sha": "e8946149f1d1d7a34533513958d56df512c1714f"
+      },
+      {
+        "path": "tools/prompts/docs_issue_source_check.txt",
+        "sha": "98f0abd66298ffd94763cace373b8657651f7b53"
+      },
+      {
+        "path": "catalog/entries/integrations/claude-code.yaml",
+        "sha": "f51df7f6abc31210702527baeee462fd8e63cc5e"
+      },
+      {
+        "path": "catalog/entries/integrations/codex.yaml",
+        "sha": "43cbdda148e5744b22c802aaed1b7e1cbeadb676"
+      },
+      {
+        "path": "catalog/entries/integrations/langgraph.yaml",
+        "sha": "8f171e57c3f13f70193f0e428c204be6553e552d"
+      },
+      {
+        "path": "catalog/entries/integrations/openclaw.yaml",
+        "sha": "871c57f28d2d604e42cf17a84572320735a4bbe3"
+      },
+      {
+        "path": "catalog/entries/packages/qdrant.yaml",
+        "sha": "999c5a542c758c687005ceb1d0191df26f14f7ef"
+      },
+      {
+        "path": "catalog/entries/packages/weaviate.yaml",
+        "sha": "5bfe9aefe8a49425b0eb2b47371e950c4bf7ac97"
+      },
+      {
+        "path": "catalog/entries/use-cases/agent-memory.yaml",
+        "sha": "b223dc4c8e8b36b3ff4cb8657e9b72010b1459eb"
+      },
+      {
+        "path": "catalog/entries/use-cases/custom-ontology.yaml",
+        "sha": "52274c00bbca4e8cc9e830fe1587aca37f3b4ee7"
+      },
+      {
+        "path": "catalog/entries/use-cases/document-qa.yaml",
+        "sha": "c9c11b9504e65d372bae637c70bc77eb2fa3e810"
+      },
+      {
+        "path": "catalog/entries/use-cases/temporal-reasoning.yaml",
+        "sha": "304fe76a19d7aa991a78c937909157bc6b610231"
+      },
+      {
+        "path": "cognee-frontend/src/app/error.tsx",
+        "sha": "37a3cf1ac63fe70cce5706c3f8335517a4dae1c5"
+      },
+      {
+        "path": "cognee-frontend/src/app/global-error.tsx",
+        "sha": "20f46a4a7dcafd7cc520e61efe2f8cd1298eba13"
+      },
+      {
+        "path": "cognee-frontend/src/app/layout.tsx",
+        "sha": "dc199a62329eaaf37111c6678bb9853472079443"
+      },
+      {
+        "path": "cognee-frontend/src/app/loading.tsx",
+        "sha": "5e0d044d9c3c7eaa17c6ef0c90ae43bfe39431bd"
+      },
+      {
+        "path": "cognee-frontend/src/data/prompts.ts",
+        "sha": "fca878a58e7cc495cf75ff5b2fa7026665d6e44f"
+      },
+      {
+        "path": "cognee-frontend/src/types/jest-dom.d.ts",
+        "sha": "f96af80af80939188de9abe0de09df8060f90467"
+      },
+      {
+        "path": "cognee-frontend/src/utils/avatarColor.ts",
+        "sha": "494a8272393791e643362061ddca61a7005de194"
+      },
+      {
+        "path": "cognee-frontend/src/utils/browserStorage.ts",
+        "sha": "8bbbdda2143ecaa53cdb19a978b395b554b2bc26"
+      },
+      {
+        "path": "cognee-frontend/src/utils/csv.ts",
+        "sha": "46a91c4334f99dd7112813ca904f24183762c90d"
+      },
+      {
+        "path": "cognee-frontend/src/utils/cutToLength.ts",
+        "sha": "6d1803b1a5554a757549be0555eefb490af4865d"
+      },
+      {
+        "path": "cognee-frontend/src/utils/fileFormat.ts",
+        "sha": "c71902b3925ddc8f30b9b7f49545213c7d679932"
+      },
+      {
+        "path": "cognee-frontend/src/utils/firstTouch.ts",
+        "sha": "cdb0c15967cf30f9df78e0e89b8f7267e8e5d8f7"
+      },
+      {
+        "path": "cognee-frontend/src/utils/forEachWithConcurrency.ts",
+        "sha": "9a0af6fec8f0d3cb3979a5baccbd0c8c2d2b2a6f"
+      },
+      {
+        "path": "cognee-frontend/src/utils/formatCount.ts",
+        "sha": "4d2bffb293e9d5d56a1b34afde2d8d668602485f"
+      },
+      {
+        "path": "cognee-frontend/src/utils/formatDate.ts",
+        "sha": "25ac29bcf984f40a300b4f06a02408b310111600"
+      },
+      {
+        "path": "cognee-frontend/src/utils/handleServerErrors.ts",
+        "sha": "604a860543a6b1ba76d0dcbbf4eb7a62821af31b"
+      },
+      {
+        "path": "cognee-frontend/src/utils/insufficientCredits.ts",
+        "sha": "31b9c5edf53ddb6e2473968edf4dead9ca3ab9bf"
+      },
+      {
+        "path": "cognee-frontend/src/utils/isCloudEnvironment.ts",
+        "sha": "73e13df32871446387b2775b38c5ee9674366495"
+      },
+      {
+        "path": "cognee-frontend/src/utils/isRolloutEnabled.ts",
+        "sha": "91a68f8e84df645412b46b2c2f8679b6b0f019cd"
+      },
+      {
+        "path": "cognee-frontend/src/utils/joinDistinct.ts",
+        "sha": "aa3c7300c772b4e404359272a4dc6ef8daa6fc83"
+      },
+      {
+        "path": "cognee-frontend/src/utils/memberNotifications.ts",
+        "sha": "f9876005c3dd1e5f0df239b12725148343884f14"
+      },
+      {
+        "path": "cognee-frontend/src/utils/monitoring.ts",
+        "sha": "a264b2cecd551fcf0b279e982bf74b08a0e2a656"
+      },
+      {
+        "path": "cognee-frontend/src/utils/navigateTo.ts",
+        "sha": "a665b4bb087c4dfab66364e2bfdebacd702ca358"
+      },
+      {
+        "path": "cognee-frontend/src/utils/newOnboardingRollout.ts",
+        "sha": "74195daea77b90e6bbb13536bee2b8111f69cb33"
+      },
+      {
+        "path": "cognee-frontend/src/utils/nextRedirect.ts",
+        "sha": "fda45b66ba3675e940e892627fc6afaebbd48f21"
+      },
+      {
+        "path": "cognee-frontend/src/utils/onboardingPaths.ts",
+        "sha": "84a89e05e86acf2ca18346d4efd245a3fd8e9215"
+      },
+      {
+        "path": "cognee-frontend/src/utils/osCommands.ts",
+        "sha": "b6d4f36e6ab095218cc07abcddd6ef63d3de1e26"
+      },
+      {
+        "path": "cognee-frontend/src/utils/readTextPrefix.ts",
+        "sha": "e5cb386313f89bd81235d79537e98e44f500bd01"
+      },
+      {
+        "path": "cognee-frontend/src/utils/reloadPage.ts",
+        "sha": "855c54f6b2a8721821d754602e762f8289d1d5d8"
+      },
+      {
+        "path": "cognee-frontend/src/utils/sessionRecordingWithdrawal.ts",
+        "sha": "3dbe750237327aff9fc4a3904cfae4e37d8f964b"
+      },
+      {
+        "path": "cognee-frontend/src/utils/sessionRoutes.ts",
+        "sha": "03e0eca9c411457ad0f9dabce7a51d2a30425527"
+      },
+      {
+        "path": "cognee-frontend/src/utils/sessionScopedStorage.ts",
+        "sha": "d6df101ade7ede502663b557ad50b4ea6a843d48"
+      },
+      {
+        "path": "cognee-frontend/src/utils/timeAgo.ts",
+        "sha": "ac7b0ef426b558efd48cc10f1dbb376e2c5e23dc"
+      },
+      {
+        "path": "cognee-frontend/src/utils/useBoolean.ts",
+        "sha": "6105c8e4716e5fae9c0e3d9e267d33e684cef6d5"
+      },
+      {
+        "path": "cognee-frontend/src/utils/useBoundedPoll.ts",
+        "sha": "448896e09f7bb3ae1e454610c2b131915c9c6b1d"
+      },
+      {
+        "path": "cognee-frontend/src/utils/useIsMounted.ts",
+        "sha": "c666b1f7ef065ea3f89a2cd3630eb824e95c38c9"
+      },
+      {
+        "path": "cognee-frontend/src/utils/useIsNarrowViewport.ts",
+        "sha": "0448e723fe479e7fea33837fe489e5956065f317"
+      },
+      {
+        "path": "cognee-frontend/src/utils/useOutsideClick.ts",
+        "sha": "ddabdc459df6e0d26566c364d070b72fbc5569df"
+      },
+      {
+        "path": "cognee-starter-kit/src/data/companies.json",
+        "sha": "c402ec802771591b13274f1cb15f01017055e6bc"
+      },
+      {
+        "path": "cognee-starter-kit/src/data/people.json",
+        "sha": "3474d87948f6e7f2d8371ca4d5251cb87c6f36ef"
+      },
+      {
+        "path": "cognee-starter-kit/src/pipelines/custom-model.py",
+        "sha": "0f63afe0e498d6b7ef181a4e2225c9c0a6b93378"
+      },
+      {
+        "path": "cognee-starter-kit/src/pipelines/default.py",
+        "sha": "358e8e7bd4c67ae4f8c97bd5376a290d194d4038"
+      },
+      {
+        "path": "cognee-starter-kit/src/pipelines/low_level.py",
+        "sha": "224c54303a553dce31307a5ba732637030fe79ca"
+      },
+      {
+        "path": "cognee/alembic/versions/18f01b0a0b4c_create_principal_configuration_table.py",
+        "sha": "69bc6a50186c56c53b4119e15fa814536428dead"
+      },
+      {
+        "path": "cognee/alembic/versions/1a58b986e6e1_enable_delete_for_old_tutorial_notebooks.py",
+        "sha": "002440ed56569229e97e067c24d98297167ea205"
+      },
+      {
+        "path": "cognee/alembic/versions/1c22e6cb5aec_reconcile_to_frozen_schema.py",
+        "sha": "5ac54965dbfe0a6df477d48d8acd1cb4641b7de2"
+      },
+      {
+        "path": "cognee/alembic/versions/1d0bb7fede17_add_pipeline_run_status.py",
+        "sha": "a32a8c1f1165227a4de27796ce4b170e386c9424"
+      },
+      {
+        "path": "cognee/alembic/versions/1daae0df1866_incremental_loading.py",
+        "sha": "2c8fcd9f6a6ffc5e96eccf9ccd94d771689a100b"
+      },
+      {
+        "path": "cognee/alembic/versions/211ab850ef3d_add_sync_operations_table.py",
+        "sha": "689b883409cabe373e31b33627b1bbaa3e5e8c8f"
+      },
+      {
+        "path": "cognee/alembic/versions/24f5d4f64d0d_add_session_lifecycle_tables.py",
+        "sha": "2a6a74b2b268fb5f7f04a4f33e9c3ed6f3d5b41f"
+      },
+      {
+        "path": "cognee/alembic/versions/45957f0a9849_add_notebook_table.py",
+        "sha": "9bd247ce409d0f8443286b7fd94e20e2a4170729"
+      },
+      {
+        "path": "cognee/alembic/versions/46a6ce2bd2b2_expand_dataset_database_with_json_.py",
+        "sha": "2e2b413bf6f8ca69428e69808e880cad3e2a7545"
+      },
+      {
+        "path": "cognee/alembic/versions/482cd6517ce4_add_default_user.py",
+        "sha": "cddd7a5c167a9d4a81fe92ca9702c5afb850d0da"
+      },
+      {
+        "path": "cognee/alembic/versions/6ee94db7381f_remove_unique_constraint_tenant_name.py",
+        "sha": "bc767990c80eb39b634ab1dbcd759daf78d018aa"
+      },
+      {
+        "path": "cognee/alembic/versions/760ef4f08ef0_change_node_label_and_type_to_text.py",
+        "sha": "ef0e9cc1f10266790c5ccc583ee3988e315b6a73"
+      },
+      {
+        "path": "cognee/alembic/versions/76625596c5c3_expand_dataset_database_for_multi_user.py",
+        "sha": "c2a45084e24243ab83c834822c0f8e1c4b683bec"
+      },
+      {
+        "path": "cognee/alembic/versions/7c5d4e2f8a91_add_parent_user_id_to_users.py",
+        "sha": "4ac68acd8e7505df2014ce6ffebbb4c9c4a14f9e"
+      },
+      {
+        "path": "cognee/alembic/versions/8057ae7329c2_initial_migration.py",
+        "sha": "3d42710c8aff5ae8486d830af902683533577230"
+      },
+      {
+        "path": "cognee/alembic/versions/84e5d08260d6_replace_graph_ledger_table_with_nodes_.py",
+        "sha": "15b215f27f29fa69be80d20db60764687b1957e9"
+      },
+      {
+        "path": "cognee/alembic/versions/9e7a3cb85175_loader_separation.py",
+        "sha": "c42e79611de6c211068d6efa44bc4d1b8fe4713d"
+      },
+      {
+        "path": "cognee/alembic/versions/a1b2c3d4e5f6_add_label_column_to_data.py",
+        "sha": "4953ab2560ff09929a84944b98ef630d039e7432"
+      },
+      {
+        "path": "cognee/alembic/versions/a7c2e9f4b8d1_add_session_records_agent_id.py",
+        "sha": "a55b36bad2b4719869d2b17752bf4aadd8c45b17"
+      },
+      {
+        "path": "cognee/alembic/versions/a7f3c9e1b5d2_extend_pipeline_runs_operation_record.py",
+        "sha": "dd09380f2022813efc65ca6599641a06f7d584dc"
+      },
+      {
+        "path": "cognee/alembic/versions/aa753a730673_add_pipeline_run_id_to_nodes_and_edges.py",
+        "sha": "f22c9a3897361d97f1f232d66619d1acefe284d4"
+      },
+      {
+        "path": "cognee/alembic/versions/ab7e313804ae_permission_system_rework.py",
+        "sha": "5f09a1dc0addfe95f8eae5abe36793bec2f24ebb"
+      },
+      {
+        "path": "cognee/alembic/versions/b1c2d3e4f5a6_add_user_api_key_table.py",
+        "sha": "d4e316976602e20150b7d6028e4b6c1fcee5b929"
+      },
+      {
+        "path": "cognee/alembic/versions/b2c3d4e5f6a7_add_search_history_indexes.py",
+        "sha": "7b402fc88393e2ff3598eebc64adb65bccb113be"
+      },
+      {
+        "path": "cognee/alembic/versions/b2c4d6e8f0a1_add_integration_credentials_table.py",
+        "sha": "4789c4cd82bc198e8dd9824ec1ac3cda9638f48d"
+      },
+      {
+        "path": "cognee/alembic/versions/b3d5f7a9c1e2_add_graph_metrics_has_full_metrics.py",
+        "sha": "cb04b3eaabdd3b0a36d8db5459af64544e4b41bf"
+      },
+      {
+        "path": "cognee/alembic/versions/b7e4c2a9d6f1_drop_run_info_data.py",
+        "sha": "16d140c90ba834a6476efd9ed3c269d5c033ef70"
+      },
+      {
+        "path": "cognee/alembic/versions/b8c1d3e5f7a9_add_provenance_entries_table.py",
+        "sha": "3e1f0be249ac9540969a8ea5cbf86976633821db"
+      },
+      {
+        "path": "cognee/alembic/versions/b9274c27a25a_kuzu_11_migration.py",
+        "sha": "1c96d7a1991003d53472064f3706f25e2f410cc2"
+      },
+      {
+        "path": "cognee/alembic/versions/c1a2b3d4e5f9_add_db_version_tracking.py",
+        "sha": "5ae018331dfb7dbecca8618418dd37e37bf62079"
+      },
+      {
+        "path": "cognee/alembic/versions/c3d5e7f9a1b2_dedupe_session_context_add_unique_index.py",
+        "sha": "46ba641fb851ff35e5e90a1fd4197f251a8fedc1"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T15:42:26Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 84,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 70,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "curl-pipe-sh",
+      "severe": false,
+      "file": "cognee-frontend/src/utils/osCommands.ts",
+      "line": 125,
+      "snippet": "return os === \"windows\" ? \"irm https://astral.sh/uv/install.ps1 | iex\" : \"curl -LsSf https://astral.sh/uv/install.sh | sh\";",
+      "deduction": 25
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "scripts/weekly_tickets/fetch_context.py",
+      "line": 126,
+      "snippet": "\"https://api.linear.app/graphql\",",
+      "host": "api.linear.app",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "deployment/setup_ubuntu_instance.sh",
+      "line": 4,
+      "snippet": "sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc",
+      "host": "download.docker.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "cognee/shared/utils.py",
+      "line": 23,
+      "snippet": "proxy_url = \"https://test.prometh.ai\"",
+      "host": "test.prometh.ai",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "distributed/deploy/daytona_sandbox.py",
+      "line": 12,
+      "snippet": "DAYTONA_API_KEY  — your Daytona API key (from https://app.daytona.io)",
+      "host": "app.daytona.io",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "distributed/deploy/islo_sandbox.py",
+      "line": 4,
+      "snippet": "Islo (https://islo.dev) provides isolated cloud sandbox VMs for autonomous",
+      "host": "islo.dev",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "distributed/deploy/README.md",
+      "line": 75,
+      "snippet": "curl -L https://fly.io/install.sh | sh && fly auth login",
+      "deduction": 5
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "agent-hook-command",
+      "severe": false,
+      "file": ".claude/settings.json",
+      "line": 3,
+      "snippet": "\"SessionStart\": [",
+      "deduction": 0
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 1,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "api.linear.app",
+      "download.docker.com",
+      "test.prometh.ai",
+      "app.daytona.io",
+      "islo.dev"
+    ],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 401,
+    "failed": 0,
+    "ms": 136487
+  },
+  "duration_ms": 16053
+}

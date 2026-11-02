@@ -1,0 +1,1078 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "wonderwhy-er/DesktopCommanderMCP",
+    "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+    "name": "DesktopCommanderMCP"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:50:27.881Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "c2b87956217b58d170de58a0c951a3569b068ee3",
+    "files_scanned": 225,
+    "candidates": 225,
+    "excluded_non_shipped": 259,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".mcp.json",
+        "sha": "f7e1a37ac30e93c0081cb12942f0a61aa3e68f97"
+      },
+      {
+        "path": ".claude/settings.local.json",
+        "sha": "b6cbab0e4cc8ae694851bcc1eb143b5bec759eae"
+      },
+      {
+        "path": "install-docker.sh",
+        "sha": "2627dc5a0d0489ce8bfc9b98749a3d395aa76179"
+      },
+      {
+        "path": "install.sh",
+        "sha": "300228ba6e88b3c87e2350142967e0e1b97be8da"
+      },
+      {
+        "path": ".github/workflows/codespell.yml",
+        "sha": "c59e0473766dbc4960fc781c0f8c6ec7296fafa7"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "d0b1edb9a238925359b24bd218f341fc7e203dee"
+      },
+      {
+        "path": "src/index.ts",
+        "sha": "1cd207c4a248e8b7d0cb4d6e3e4489827e06d533"
+      },
+      {
+        "path": "src/server.ts",
+        "sha": "800ab9f55b294e24708d0ad3e8fc43b042f332ad"
+      },
+      {
+        "path": "server.json",
+        "sha": "f53f2a584d4d59ebb24024a13446bbe65d4bf470"
+      },
+      {
+        "path": "server.yaml",
+        "sha": "8ed6010591aa057a97b83f0d3578e568db3746f5"
+      },
+      {
+        "path": "skills/ai-tools-setup/SKILL.md",
+        "sha": "e8ce05c63c8bd7378dc049fc0f0645cbcab3ce1d"
+      },
+      {
+        "path": "skills/computer-health-check/SKILL.md",
+        "sha": "9fde7efb77333ed31a8a4668c9aa286d5ddd20ab"
+      },
+      {
+        "path": "skills/desktop-commander-overview/SKILL.md",
+        "sha": "7fc41024bfcb4a014ecad06459c2c5faf1a4fadc"
+      },
+      {
+        "path": "skills/knowledge-base/SKILL.md",
+        "sha": "b3c228922cdbf1e1936a0bb1098838300c5066ff"
+      },
+      {
+        "path": "skills/obsidian-vault/SKILL.md",
+        "sha": "c8e8d9b255c98a90ed9bbc0fdda68fac37e32135"
+      },
+      {
+        "path": "skills/terminal/SKILL.md",
+        "sha": "a82eb6bb835adaeb088a5c33ee888a528c9521d7"
+      },
+      {
+        "path": "src/handlers/index.ts",
+        "sha": "1ac19090a7a4d85de43a215481162423a833ee1f"
+      },
+      {
+        "path": "src/tools/pdf/index.ts",
+        "sha": "7693477faeaa325c711892afd885610d7550bd44"
+      },
+      {
+        "path": "src/utils/files/index.ts",
+        "sha": "037440811342888894b82b4616fd200a45f1a1c5"
+      },
+      {
+        "path": "package.json",
+        "sha": "b5a02cb755b3eddc150cb8df2c14a6bd95f752a0"
+      },
+      {
+        "path": "plugins/claude/skills/ai-tools-setup/SKILL.md",
+        "sha": "e8ce05c63c8bd7378dc049fc0f0645cbcab3ce1d"
+      },
+      {
+        "path": "plugins/claude/skills/computer-health-check/SKILL.md",
+        "sha": "9fde7efb77333ed31a8a4668c9aa286d5ddd20ab"
+      },
+      {
+        "path": "plugins/claude/skills/desktop-commander-overview/SKILL.md",
+        "sha": "7fc41024bfcb4a014ecad06459c2c5faf1a4fadc"
+      },
+      {
+        "path": "plugins/claude/skills/knowledge-base/SKILL.md",
+        "sha": "b3c228922cdbf1e1936a0bb1098838300c5066ff"
+      },
+      {
+        "path": "plugins/claude/skills/obsidian-vault/SKILL.md",
+        "sha": "c8e8d9b255c98a90ed9bbc0fdda68fac37e32135"
+      },
+      {
+        "path": "plugins/claude/skills/terminal/SKILL.md",
+        "sha": "a82eb6bb835adaeb088a5c33ee888a528c9521d7"
+      },
+      {
+        "path": "plugins/cursor/skills/ai-tools-setup/SKILL.md",
+        "sha": "29a512937ff29efcba53dd1cce02c49d3d3ac1e6"
+      },
+      {
+        "path": "plugins/cursor/skills/computer-health-check/SKILL.md",
+        "sha": "05b29ef799ba907468efee0fbb34a65b4222b83f"
+      },
+      {
+        "path": "plugins/cursor/skills/desktop-commander-overview/SKILL.md",
+        "sha": "7fc41024bfcb4a014ecad06459c2c5faf1a4fadc"
+      },
+      {
+        "path": "plugins/cursor/skills/knowledge-base/SKILL.md",
+        "sha": "b3c228922cdbf1e1936a0bb1098838300c5066ff"
+      },
+      {
+        "path": "plugins/cursor/skills/obsidian-vault/SKILL.md",
+        "sha": "c8e8d9b255c98a90ed9bbc0fdda68fac37e32135"
+      },
+      {
+        "path": "plugins/cursor/skills/terminal/SKILL.md",
+        "sha": "a82eb6bb835adaeb088a5c33ee888a528c9521d7"
+      },
+      {
+        "path": "scripts/analyze-fuzzy-logs.js",
+        "sha": "d64db208e18eefa02a326dda3060caa70658f405"
+      },
+      {
+        "path": "scripts/build-mcpb.cjs",
+        "sha": "1f3e60f9511cd4106f37fb2def2a8169cc02c8de"
+      },
+      {
+        "path": "scripts/build-ui-runtime.cjs",
+        "sha": "7d944cb5a6859ec31a0ce983d7ff202c4536a6bc"
+      },
+      {
+        "path": "scripts/clear-fuzzy-logs.js",
+        "sha": "a5ee9b42e2e88b8c332f907cf6103b4afc26d493"
+      },
+      {
+        "path": "scripts/count-tokens.js",
+        "sha": "ff396fc7ffa1374553a5bd67c3839655da658114"
+      },
+      {
+        "path": "scripts/download-all-ripgrep.cjs",
+        "sha": "6bf136f948527eb6c1d6df3823f2045ea3fbee4e"
+      },
+      {
+        "path": "scripts/export-fuzzy-logs.js",
+        "sha": "2728018b0f6ac8d5ad039bb3a7e50443d2ca4d3c"
+      },
+      {
+        "path": "scripts/publish-release.cjs",
+        "sha": "19858a0104e0b15a61c02fbc76f2e67bbef85f28"
+      },
+      {
+        "path": "scripts/ripgrep-wrapper.js",
+        "sha": "62b33b9962536b086684dd98f73fed10a6057a44"
+      },
+      {
+        "path": "scripts/sync-version.js",
+        "sha": "983aa680e3202cdeebb4b24031b71ef184204d0f"
+      },
+      {
+        "path": "scripts/validate-tools-sync.js",
+        "sha": "ee6da462378bf37e822e1e25567d0330bad42d1e"
+      },
+      {
+        "path": "scripts/view-fuzzy-logs.js",
+        "sha": "66fe58b68c433dae9037052264b5ccca73e588e5"
+      },
+      {
+        "path": "src/bootstrap.ts",
+        "sha": "eb9f03f2d143696051e2389de8ce6d51f9bbf681"
+      },
+      {
+        "path": "src/command-manager.ts",
+        "sha": "88c655a1cdd3ddeb9d6a40409f77363440a60c37"
+      },
+      {
+        "path": "src/config-field-definitions.ts",
+        "sha": "77efa9bf329d1a2bf80ba76651fd2330fc99d3e1"
+      },
+      {
+        "path": "src/config-manager.ts",
+        "sha": "4cb89f2d5fdc3fd0b81b1cd192fbdbcdcd5251fd"
+      },
+      {
+        "path": "src/config-recovery.ts",
+        "sha": "79d50ed304d11588c05ccb2fe4e19cc9beba6ce3"
+      },
+      {
+        "path": "src/config.ts",
+        "sha": "bb1f879d969d896291347a81f2c15169448de180"
+      },
+      {
+        "path": "src/custom-stdio.ts",
+        "sha": "e1c3bb4c29dfbf53e1c7120e17ca59a682f450e0"
+      },
+      {
+        "path": "src/error-handlers.ts",
+        "sha": "a08918411dc19c3979408154675ee74474c9b72d"
+      },
+      {
+        "path": "src/search-manager.ts",
+        "sha": "f37df7539d4853e66b76be73a463ef33bcba1d0d"
+      },
+      {
+        "path": "src/terminal-manager.ts",
+        "sha": "f4ea01d6197de70c36abfc1923346acec7dfd097"
+      },
+      {
+        "path": "src/types.ts",
+        "sha": "fe0ffb0425ce6664322b69c9bc4105a491c9287f"
+      },
+      {
+        "path": "src/ui/config-editor/src/app.ts",
+        "sha": "49fcdef41974562a3652c564e418137f3f0089ea"
+      },
+      {
+        "path": "src/ui/config-editor/src/main.ts",
+        "sha": "e08bff33b8cb40b2508da54b8b581b623dccfc56"
+      },
+      {
+        "path": "src/ui/file-preview/src/app.ts",
+        "sha": "63d15bf0d3d40ae2db23f0186462b746e0d995d5"
+      },
+      {
+        "path": "src/ui/file-preview/src/main.ts",
+        "sha": "44046dddbccd51990af0d371572ec4c18b8972cc"
+      },
+      {
+        "path": "src/version.ts",
+        "sha": "d9a6219bd29e4567c7860fc6129c219281423a2a"
+      },
+      {
+        "path": "CLINE_NOTIFICATION_PROBLEM.md",
+        "sha": "7dc55a67b6de2858abade11ada0ec76ad3537da5"
+      },
+      {
+        "path": "config.json",
+        "sha": "793a281bc88939fe2c1eacd0c0939ef250f532d9"
+      },
+      {
+        "path": "CUSTOM_STDIO_EXPLANATION.md",
+        "sha": "b2a6f6986316c738880f6a6416f6b9c9aa999c33"
+      },
+      {
+        "path": "FAQ.md",
+        "sha": "c4ead1b1ce5ac3d6dcdc47c85f5435f332a426af"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "a3ab581ee1d9ba6247c10e2ab2cd1ed27f7a0e97"
+      },
+      {
+        "path": "manifest.template.json",
+        "sha": "31d0b68a82150ce734de5d9e4ac9ed74ebdc10c4"
+      },
+      {
+        "path": "plugin.json",
+        "sha": "2569637ab6c97e3f817120aaf6abd4c901576939"
+      },
+      {
+        "path": "plugin.yaml",
+        "sha": "691ca54228b292dbc4a166e1763f892192c3aaf8"
+      },
+      {
+        "path": "PRIVACY.md",
+        "sha": "4953d232af27ddd1a8dd8133f4ec1eff158444c4"
+      },
+      {
+        "path": "PUBLISH.md",
+        "sha": "82135413e8c14e4dc6c1cdf37302120e00f51940"
+      },
+      {
+        "path": "README.md",
+        "sha": "a2a82eee8bd6a8b09b37f0c1190438213fa5c5dd"
+      },
+      {
+        "path": "scripts/remote/README.md",
+        "sha": "1d40f764897ff4e5c6d42ac751e4223912f64948"
+      },
+      {
+        "path": "scripts/remote/remote-linux.sh",
+        "sha": "6a7a6cb1e9b06a13e6dd1e4fde16fc58f9e2ee04"
+      },
+      {
+        "path": "scripts/remote/remote-macos.sh",
+        "sha": "fb8aeca3dc36a1a0b8117e00e1d525e9e913f6b1"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "8646b7e2951a426706ae3a17359afdaab6868cd0"
+      },
+      {
+        "path": "setup-claude-server.js",
+        "sha": "95ad3c6cf2ded7bfda9ef3f10920f3f30b7714ee"
+      },
+      {
+        "path": "smithery.yaml",
+        "sha": "c58adc262d7576b5a0468dc525f5374dfe061839"
+      },
+      {
+        "path": "src/data/onboarding-prompts.json",
+        "sha": "40c7c9ba726dd628829b5cfb21af6e1bc273526b"
+      },
+      {
+        "path": "src/handlers/edit-search-handlers.ts",
+        "sha": "7f677c6553a4ffd6a39a60d107dfb93cd45a2d56"
+      },
+      {
+        "path": "src/handlers/filesystem-handlers.ts",
+        "sha": "e79ddaa72b62316d4d8a204ff1292685f1a234a5"
+      },
+      {
+        "path": "src/handlers/history-handlers.ts",
+        "sha": "1c65a6c2eded665afbea2c54b60a98ef4ead43d4"
+      },
+      {
+        "path": "src/handlers/process-handlers.ts",
+        "sha": "fef82042b75324d6ccf7ab566f737daad5c09487"
+      },
+      {
+        "path": "src/handlers/search-answers.ts",
+        "sha": "4a35080726aeccda7736fed5055d5e2f933106a5"
+      },
+      {
+        "path": "src/handlers/search-handlers.ts",
+        "sha": "d89d37d680d80340f59ae75de7a3198379c9d168"
+      },
+      {
+        "path": "src/handlers/terminal-handlers.ts",
+        "sha": "1f6930fdd6dcf28aebecd99036eab2585edaac23"
+      },
+      {
+        "path": "src/npm-scripts/remote.ts",
+        "sha": "30d69946b9739b02754bf32716090df6882c7817"
+      },
+      {
+        "path": "src/npm-scripts/setup.ts",
+        "sha": "87f3d4caba2e365414d2cb02cf76b74e44ff78b7"
+      },
+      {
+        "path": "src/npm-scripts/uninstall.ts",
+        "sha": "1321a9c7d38ddea88fc41284dbae5884d9d361d5"
+      },
+      {
+        "path": "src/npm-scripts/verify-ripgrep.ts",
+        "sha": "403e7ffedc8f9bb112522648d76f68e3740a083d"
+      },
+      {
+        "path": "src/remote-device/desktop-commander-integration.ts",
+        "sha": "37337024ba1c4c1d055304c76b99c4a422602816"
+      },
+      {
+        "path": "src/remote-device/device-authenticator.ts",
+        "sha": "fba2b83efa51d32b34f6384d8321ba875012692f"
+      },
+      {
+        "path": "src/remote-device/device.ts",
+        "sha": "f732d93e6a5730dc088185dff7372efdac75040a"
+      },
+      {
+        "path": "src/remote-device/README.md",
+        "sha": "5f5fc0a8979fe0fa55b7f0431990541be8ff134b"
+      },
+      {
+        "path": "src/remote-device/realtime-health-telemetry.ts",
+        "sha": "513066b579b925d9abb4e02997124e1134c051d8"
+      },
+      {
+        "path": "src/remote-device/remote-channel.ts",
+        "sha": "fd0c83f278c3b5a84a3d2b928d85f07a1395f788"
+      },
+      {
+        "path": "src/remote-device/rollouts.ts",
+        "sha": "3183f8ead6dc113d1d24dbbfd5e3a0a14c13dfae"
+      },
+      {
+        "path": "src/remote-device/transport-telemetry.ts",
+        "sha": "2711d51c7e8e5711e3932b23acf0079584df3fda"
+      },
+      {
+        "path": "src/tools/config.ts",
+        "sha": "eba9debe1f1dddf8789986d9cc688a75fffe4c17"
+      },
+      {
+        "path": "src/tools/edit.ts",
+        "sha": "61810f58f3a4791903eab60fabf260cbb923141c"
+      },
+      {
+        "path": "src/tools/feedback.ts",
+        "sha": "454869f64e98ed64545d5f0711c37534484bc72a"
+      },
+      {
+        "path": "src/tools/filesystem.ts",
+        "sha": "ac9f516d77e2e066f9e5362b63a55c3d31b5d8d0"
+      },
+      {
+        "path": "src/tools/fuzzySearch.ts",
+        "sha": "f1328e9e4cc199fa7347c559d3ef8d950780d39a"
+      },
+      {
+        "path": "src/tools/fuzzySearchCore.ts",
+        "sha": "22a6b541744ccfa732eb22e601afe524c1811078"
+      },
+      {
+        "path": "src/tools/improved-process-tools.ts",
+        "sha": "986fce6e1c6c380d5937084c9bf19e773016fb59"
+      },
+      {
+        "path": "src/tools/mime-types.ts",
+        "sha": "5e6694d8ffc8cdb07fa43cee4ee1bb2b3f1d7b2c"
+      },
+      {
+        "path": "src/tools/process.ts",
+        "sha": "14d66597d37bea782f957cd3396498bd07b132e6"
+      },
+      {
+        "path": "src/tools/prompts.ts",
+        "sha": "2018b78c66f0b9773ea06045ecd389da242dac82"
+      },
+      {
+        "path": "src/tools/schemas.ts",
+        "sha": "bbdb466a2af295e1c20c2f88e09736fb207ead01"
+      },
+      {
+        "path": "src/tools/usage.ts",
+        "sha": "68cd91bb68142d1fb5e96508b76a7ae8b1112470"
+      },
+      {
+        "path": "src/types/caffeinate.d.ts",
+        "sha": "6fa0decd964c02832c0ce2e2ecfca747701063e5"
+      },
+      {
+        "path": "src/ui/contracts.ts",
+        "sha": "4ea2d2a6bd8ecc586350a21ffdb19da7a8f0e645"
+      },
+      {
+        "path": "src/ui/resources.ts",
+        "sha": "e7caf7820cc106f0a6de365f4e2a2bd5d56c359b"
+      },
+      {
+        "path": "src/utils/ab-test.ts",
+        "sha": "feb0f306f09b6aa530983c170d4b5460a22d5f21"
+      },
+      {
+        "path": "src/utils/atomic-write.ts",
+        "sha": "01238b09939c6c4b26dac97ab183ac2a8f581c02"
+      },
+      {
+        "path": "src/utils/capture.ts",
+        "sha": "26f576a382ed32655cf549255da51b62de5ea5be"
+      },
+      {
+        "path": "src/utils/dockerPrompt.ts",
+        "sha": "fb9bd1e3757e9b5e0ee904f6ca3bfbca54938c7f"
+      },
+      {
+        "path": "src/utils/exit-process.ts",
+        "sha": "40b7caf6e2f591449fb2f5fb4275b6ac81a3360e"
+      },
+      {
+        "path": "src/utils/feature-flags.ts",
+        "sha": "e530bd758b6cbd324102cf00769144fa26be0610"
+      },
+      {
+        "path": "src/utils/fuzzySearchLogger.ts",
+        "sha": "5dc7379d7674734b98bf25bf559e9a1e50dc49a0"
+      },
+      {
+        "path": "src/utils/internal-facts.ts",
+        "sha": "760d819376c1f04098e0f726c6616eb906e96ea7"
+      },
+      {
+        "path": "src/utils/lazy-package.ts",
+        "sha": "80afeffea9730cfb17c0fc01d36736cba48553a4"
+      },
+      {
+        "path": "src/utils/lineEndingHandler.ts",
+        "sha": "7df95b4d42b57c20113f36c4c4a9c34c707d5e14"
+      },
+      {
+        "path": "src/utils/logger.ts",
+        "sha": "0d1bc9a4e48ab51c12b892868610b4f5b838ca8c"
+      },
+      {
+        "path": "src/utils/mcp-ui-ab-test.ts",
+        "sha": "fa19504b9bfc3029a3823feeeab4720e387eb6e2"
+      },
+      {
+        "path": "src/utils/open-browser.ts",
+        "sha": "b837936632400acb5446f9aa68af1a40e0637400"
+      },
+      {
+        "path": "src/utils/process-detection.ts",
+        "sha": "23d19ddb8cccbdfac56c4b0068466e6f3a9bddc9"
+      },
+      {
+        "path": "src/utils/process-tree.ts",
+        "sha": "b6438b07cf3e91d65f8adfae7a54a1786c6941e8"
+      },
+      {
+        "path": "src/utils/rename.ts",
+        "sha": "b4e495a273e70d6af6d66e80607b3a648a49032a"
+      },
+      {
+        "path": "src/utils/ripgrep-resolver.ts",
+        "sha": "2fdf6a48da1f2216fe02fb4e972e6ab71eea249c"
+      },
+      {
+        "path": "src/utils/shell.ts",
+        "sha": "c65e0f6448c4ac9cf5e8612171add585fd1ded51"
+      },
+      {
+        "path": "src/utils/system-info.ts",
+        "sha": "70430f20fb71da1bbb7b62a919de8d0c38c5dd43"
+      },
+      {
+        "path": "src/utils/terminal-timestamps.ts",
+        "sha": "c1a605a08695ff39b6b5b55ffb90b50110e2583f"
+      },
+      {
+        "path": "src/utils/toolHistory.ts",
+        "sha": "6c9d548812316eb4c32ef7f010c66100af902a34"
+      },
+      {
+        "path": "src/utils/trackTools.ts",
+        "sha": "fe1f193c126bca75d4fb1bfb4c9844fef16fbe1e"
+      },
+      {
+        "path": "src/utils/unsupportedParams.ts",
+        "sha": "31ff27eb874a7486d46c150501b19250082a5d45"
+      },
+      {
+        "path": "src/utils/usageTracker.ts",
+        "sha": "865aa3b5dedad798d0f6f4a50da3d52316656516"
+      },
+      {
+        "path": "src/utils/welcome-onboarding.ts",
+        "sha": "f0db518c1c166601281cc6629b30f4053a0df0ba"
+      },
+      {
+        "path": "src/utils/withTimeout.ts",
+        "sha": "13baba68bac229c46c407944dd03495123f8aec2"
+      },
+      {
+        "path": "test-listener-bug.js",
+        "sha": "28390881956beb0c8c819d08839fa6183e623334"
+      },
+      {
+        "path": "track-installation.js",
+        "sha": "cd9c975588973ce0129b8bc8b088c29354e88bc4"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "a7a550623fa22bb2d39fa3bb45138bd9d6549226"
+      },
+      {
+        "path": "uninstall-claude-server.js",
+        "sha": "be1e5c8c393c57623369d4bce4f1d03a7ac5d585"
+      },
+      {
+        "path": "vendor/telemetry-contract/package.json",
+        "sha": "515df1850d6327963bb351386deb9f70bb96b099"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "b5a657ab79ef0ee9a7e4b291084d7832594001f9"
+      },
+      {
+        "path": ".cursor-plugin/marketplace.json",
+        "sha": "6d219dd92c0e03b48f47c1d1e5300a185c95ad73"
+      },
+      {
+        "path": "rules/desktop-commander-default.mdc",
+        "sha": "f61818a8d652419427067634c51fd96ae962747b"
+      },
+      {
+        "path": "src/remote-device/diagnostics/device-log.ts",
+        "sha": "41b3c9894e64a5f35caa35afe6014a0f59f87492"
+      },
+      {
+        "path": "src/remote-device/diagnostics/redact.ts",
+        "sha": "251510ef3f5ed769b37ea45215a58b373db63975"
+      },
+      {
+        "path": "src/remote-device/diagnostics/report.ts",
+        "sha": "ab28dee1bde55abe163da74d6f94618ef49f6333"
+      },
+      {
+        "path": "src/remote-device/diagnostics/upload.ts",
+        "sha": "26a8da9ab7700546c9439cd6faf8860af88ac696"
+      },
+      {
+        "path": "src/remote-device/scripts/blocking-offline-update.js",
+        "sha": "f93a4d4af4f1501ab84df5fd213e68b65d6082fc"
+      },
+      {
+        "path": "src/tools/pdf/extract-images.ts",
+        "sha": "ba523f6496a1fb489462b56d0912d4aee165549d"
+      },
+      {
+        "path": "src/tools/pdf/manipulations.ts",
+        "sha": "90e7027a98c731d840f5033583fe1940b3ae3898"
+      },
+      {
+        "path": "src/tools/pdf/markdown.ts",
+        "sha": "62e5ce9c2284cfc50293ca1d6c5b5a6cdc8e559a"
+      },
+      {
+        "path": "src/tools/pdf/utils.ts",
+        "sha": "d35530ecd4ce0d571f7c16087e4dfc2a7842942e"
+      },
+      {
+        "path": "src/ui/shared/compact-row.ts",
+        "sha": "796c3c2c409a24038c64d8cc44fd019ad57537ba"
+      },
+      {
+        "path": "src/ui/shared/escape-html.ts",
+        "sha": "29422ecccf8d3152521786abc995cf763f6b8b98"
+      },
+      {
+        "path": "src/ui/shared/host-context.ts",
+        "sha": "e6c6ca5c752a84662bbf725ae91fd30510df283e"
+      },
+      {
+        "path": "src/ui/shared/tool-bridge.ts",
+        "sha": "0f43b6c91b1f43e90c3f9f482435890b21dab274"
+      },
+      {
+        "path": "src/ui/shared/tool-shell.ts",
+        "sha": "99444f9100a2912452946d9390026d57dc4b5315"
+      },
+      {
+        "path": "src/ui/shared/ui-event-tracker.ts",
+        "sha": "9ddde38ba2ea7ba3658b210cb9b714d151af4f5a"
+      },
+      {
+        "path": "src/ui/shared/widget-state.ts",
+        "sha": "a8f46d7ce5915ae4703a44bd1f021edbbaaaad25"
+      },
+      {
+        "path": "src/utils/files/base.ts",
+        "sha": "2801631c033541c3085b705fd5d645c7701155f1"
+      },
+      {
+        "path": "src/utils/files/binary.ts",
+        "sha": "245bb01f4cb00491cbd22b60dc96c487869d4f36"
+      },
+      {
+        "path": "src/utils/files/docx.ts",
+        "sha": "e38de23aeb5af10e08da0073df18c2ef1db84c0f"
+      },
+      {
+        "path": "src/utils/files/excel.ts",
+        "sha": "ac10ecc3ca19fd6a627824e97b0486d9639b160a"
+      },
+      {
+        "path": "src/utils/files/factory.ts",
+        "sha": "7facab073afa3868c654144914743ac13ad58d29"
+      },
+      {
+        "path": "src/utils/files/image.ts",
+        "sha": "03b801da604b66dbe64ea9c026c9f182aa17fbe7"
+      },
+      {
+        "path": "src/utils/files/pdf.ts",
+        "sha": "a38edbe4aab2a0af8417071cfc7bbd722b62a57e"
+      },
+      {
+        "path": "src/utils/files/text.ts",
+        "sha": "479447e855968e97afa83b21aa16b67bb2e3567b"
+      },
+      {
+        "path": "plugins/claude/README.md",
+        "sha": "7acd4c9d512f1091784266a7a047816ebb41821f"
+      },
+      {
+        "path": "plugins/cursor/README.md",
+        "sha": "9b44f3ae5d10af69054629f912f7eeab4be3c69c"
+      },
+      {
+        "path": "src/tools/pdf/lib/pdf2md.ts",
+        "sha": "72d1cb154131a1513be4a719f72aa5f40211adb3"
+      },
+      {
+        "path": "src/ui/config-editor/src/array-modal.ts",
+        "sha": "ac68178878b55ebcccb1976346ae1cc197652c7e"
+      },
+      {
+        "path": "src/ui/file-preview/shared/preview-file-types.ts",
+        "sha": "bff829eff18be956cfb9bf0cefd1a178101e7f61"
+      },
+      {
+        "path": "src/ui/file-preview/src/directory-controller.ts",
+        "sha": "4f521e780a0c55e1ad496f69dc163526a430a1d3"
+      },
+      {
+        "path": "src/ui/file-preview/src/document-layout.ts",
+        "sha": "d8364a5b35c913b385b064973c50d752bb87a152"
+      },
+      {
+        "path": "src/ui/file-preview/src/document-outline.ts",
+        "sha": "30a61f2d1d91f3f6f8743bfba22173b8472dfe2f"
+      },
+      {
+        "path": "src/ui/file-preview/src/document-workspace.ts",
+        "sha": "bc2dd94ed2369fc0756f3a1289a8de47141a82f1"
+      },
+      {
+        "path": "src/ui/file-preview/src/file-type-handlers.ts",
+        "sha": "ff562070cbaf568ac02fc91de0a7ef28078bfb7c"
+      },
+      {
+        "path": "src/ui/file-preview/src/image-preview.ts",
+        "sha": "b0a2a9a1265f2ef2ec91e3d2a1bfdcd5cd0e288a"
+      },
+      {
+        "path": "src/ui/file-preview/src/model.ts",
+        "sha": "c7bde5eb9ac44631520198cd294170b2971651ce"
+      },
+      {
+        "path": "src/ui/file-preview/src/panel-actions.ts",
+        "sha": "7c7213dd14c6ed9dcd1108a5911c714d91f64576"
+      },
+      {
+        "path": "src/ui/file-preview/src/path-utils.ts",
+        "sha": "1a69731560e269375b4790fbe5210c9d9881017a"
+      },
+      {
+        "path": "src/ui/file-preview/src/payload-utils.ts",
+        "sha": "9ad048000a140f51d685ade5b7b5ed6eb6cae59e"
+      },
+      {
+        "path": "src/ui/file-preview/src/types.ts",
+        "sha": "a159ee3bda9815d7feb2a6e4bcd5c875254da684"
+      },
+      {
+        "path": "vendor/telemetry-contract/README.md",
+        "sha": "e61826f8fb38589ad11cf078b299d0ac9f52ee01"
+      },
+      {
+        "path": "vendor/telemetry-contract/transport.d.ts",
+        "sha": "55b29de3b9604e84d5e3e661fdc33aa049ed71bd"
+      },
+      {
+        "path": "vendor/telemetry-contract/transport.js",
+        "sha": "a92ec8247716c8b4648fe57a226b892b9e4257ba"
+      },
+      {
+        "path": "plugins/claude/.claude-plugin/plugin.json",
+        "sha": "d9fbf77ed065cf0da1ab8de43b1de3a8de4cecc5"
+      },
+      {
+        "path": "plugins/cursor/.cursor-plugin/plugin.json",
+        "sha": "2d5f678ba0065f7682be12866559883176b74cf9"
+      },
+      {
+        "path": "plugins/cursor/rules/desktop-commander-default.mdc",
+        "sha": "f61818a8d652419427067634c51fd96ae962747b"
+      },
+      {
+        "path": "skills/ai-tools-setup/references/claude-desktop-mcp.md",
+        "sha": "cd812cd30101f3ea8bec1c722570e18af3cc7faa"
+      },
+      {
+        "path": "skills/ai-tools-setup/references/hermes.md",
+        "sha": "5d3946991830324a294e47a0ff93e0127862cc6f"
+      },
+      {
+        "path": "skills/ai-tools-setup/references/openclaw.md",
+        "sha": "598f46db2fd84e8b7cf757ab0a4dff2ec8ee1655"
+      },
+      {
+        "path": "skills/computer-health-check/references/linux.md",
+        "sha": "4789483d94cabe56775e43f3e0023b1af212083e"
+      },
+      {
+        "path": "skills/computer-health-check/references/macos.md",
+        "sha": "a30644cde3bd271b5c13cc32bdcc6f96e6ab6260"
+      },
+      {
+        "path": "skills/computer-health-check/references/windows.md",
+        "sha": "7cc48430667c6c6d8bad9396a126e37f03db631f"
+      },
+      {
+        "path": "src/ui/file-preview/src/components/code-viewer.ts",
+        "sha": "2df96baf5e84ac43c39a8b2a5cdd9c369ad81264"
+      },
+      {
+        "path": "src/ui/file-preview/src/components/highlighting.ts",
+        "sha": "263908bf89ca5e89d6361d8c23cff316b9cabf36"
+      },
+      {
+        "path": "src/ui/file-preview/src/components/html-renderer.ts",
+        "sha": "efb32903e78b7a539113d2b4df0c9cdd090e6cc9"
+      },
+      {
+        "path": "src/ui/file-preview/src/components/markdown-renderer.ts",
+        "sha": "5f7d0aa03921ebd9424a633b9548918a497d5865"
+      },
+      {
+        "path": "src/ui/file-preview/src/host/external-actions.ts",
+        "sha": "2df4ee68632a6c47230aa203f76dc60b77f7e291"
+      },
+      {
+        "path": "src/ui/file-preview/src/host/selection-context.ts",
+        "sha": "18b62a3a0a7b8fbe32f8bebed1856b26d5611064"
+      },
+      {
+        "path": "src/ui/file-preview/src/markdown/conflict-dialog.ts",
+        "sha": "b63e9389e0f4fe3144908b106e86f8e445664c5c"
+      },
+      {
+        "path": "src/ui/file-preview/src/markdown/controller.ts",
+        "sha": "5e5f6ae959994e7762e3ebe9da80cc0cd8671ddd"
+      },
+      {
+        "path": "src/ui/file-preview/src/markdown/editor.ts",
+        "sha": "1b3319e1a8702a8fefb14a811e005e74cef98591"
+      },
+      {
+        "path": "src/ui/file-preview/src/markdown/linking.ts",
+        "sha": "dfe0baac729a13d4f8aebd1b86e5d02da7bd1881"
+      },
+      {
+        "path": "src/ui/file-preview/src/markdown/outline.ts",
+        "sha": "36ec29a08970715cc6553ba2a42a4fce2141a065"
+      },
+      {
+        "path": "src/ui/file-preview/src/markdown/parser.ts",
+        "sha": "83888b6a64e44610d39e5ee31a4d933a676c3bb6"
+      },
+      {
+        "path": "src/ui/file-preview/src/markdown/preview.ts",
+        "sha": "a8364d6312f2e0b9340ff50e56b870e734563ec5"
+      },
+      {
+        "path": "src/ui/file-preview/src/markdown/slugify.ts",
+        "sha": "4724ba00e763b19e55cc1cf59f25e4395c888f8c"
+      },
+      {
+        "path": "src/ui/file-preview/src/markdown/utils.ts",
+        "sha": "a7a0e7ca646fb46124d8f623fd732336aed12dc7"
+      },
+      {
+        "path": "plugins/claude/skills/ai-tools-setup/references/claude-desktop-mcp.md",
+        "sha": "cd812cd30101f3ea8bec1c722570e18af3cc7faa"
+      },
+      {
+        "path": "plugins/claude/skills/ai-tools-setup/references/hermes.md",
+        "sha": "5d3946991830324a294e47a0ff93e0127862cc6f"
+      },
+      {
+        "path": "plugins/claude/skills/ai-tools-setup/references/openclaw.md",
+        "sha": "598f46db2fd84e8b7cf757ab0a4dff2ec8ee1655"
+      },
+      {
+        "path": "plugins/claude/skills/computer-health-check/references/linux.md",
+        "sha": "4789483d94cabe56775e43f3e0023b1af212083e"
+      },
+      {
+        "path": "plugins/claude/skills/computer-health-check/references/macos.md",
+        "sha": "a30644cde3bd271b5c13cc32bdcc6f96e6ab6260"
+      },
+      {
+        "path": "plugins/claude/skills/computer-health-check/references/windows.md",
+        "sha": "7cc48430667c6c6d8bad9396a126e37f03db631f"
+      },
+      {
+        "path": "plugins/cursor/skills/ai-tools-setup/references/claude-desktop-mcp.md",
+        "sha": "cd812cd30101f3ea8bec1c722570e18af3cc7faa"
+      },
+      {
+        "path": "plugins/cursor/skills/ai-tools-setup/references/hermes.md",
+        "sha": "5d3946991830324a294e47a0ff93e0127862cc6f"
+      },
+      {
+        "path": "plugins/cursor/skills/ai-tools-setup/references/openclaw.md",
+        "sha": "598f46db2fd84e8b7cf757ab0a4dff2ec8ee1655"
+      },
+      {
+        "path": "plugins/cursor/skills/computer-health-check/references/linux.md",
+        "sha": "4789483d94cabe56775e43f3e0023b1af212083e"
+      },
+      {
+        "path": "plugins/cursor/skills/computer-health-check/references/macos.md",
+        "sha": "a30644cde3bd271b5c13cc32bdcc6f96e6ab6260"
+      },
+      {
+        "path": "plugins/cursor/skills/computer-health-check/references/windows.md",
+        "sha": "7cc48430667c6c6d8bad9396a126e37f03db631f"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T14:35:55Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 0,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [
+      "docs-pipe-to-shell",
+      "install-hook-exec"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "scripts/remote/remote-linux.sh",
+      "line": 35,
+      "snippet": "manual_download_url=\"https://nodejs.org/dist/v24.22.1/node-v24.22.1-linux-$arch.tar.gz\"",
+      "host": "nodejs.org",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "setup-claude-server.js",
+      "line": 15,
+      "snippet": "const TELEMETRY_PROXY_FALLBACK_URL = 'https://dc-telemetry-proxy-83847352264.europe-west1.run.app/mp/collect';",
+      "host": "dc-telemetry-proxy-83847352264.europe-west1.run.app",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "setup-claude-server.js",
+      "line": 621,
+      "snippet": "logToFile(\"https://calendar.app.google/SHMNZN5MJznJWC5A7 \\n\\n\")",
+      "host": "calendar.app.google",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/tools/feedback.ts",
+      "line": 91,
+      "snippet": "`You can still access our feedback form directly at: https://tally.so/r/mKqoKg\\n\\n` +",
+      "host": "tally.so",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": true,
+      "file": "skills/terminal/SKILL.md",
+      "line": 112,
+      "snippet": "(`curl ... | sh`) — that's untrusted code execution; show it and confirm first.",
+      "deduction": 40
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "install-hook-exec",
+      "severe": true,
+      "file": "package.json",
+      "line": 1,
+      "snippet": "postinstall: node dist/track-installation.js && node dist/npm-scripts/verify-ripgrep.js || node -e \"process.exit(0)\"",
+      "deduction": 40
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": true,
+      "file": "plugins/claude/skills/terminal/SKILL.md",
+      "line": 112,
+      "snippet": "(`curl ... | sh`) — that's untrusted code execution; show it and confirm first.",
+      "deduction": 40
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": true,
+      "file": "plugins/cursor/skills/terminal/SKILL.md",
+      "line": 112,
+      "snippet": "(`curl ... | sh`) — that's untrusted code execution; show it and confirm first.",
+      "deduction": 40
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "skills/ai-tools-setup/references/hermes.md",
+      "line": 26,
+      "snippet": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash",
+      "deduction": 25
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "plugins/claude/skills/ai-tools-setup/references/hermes.md",
+      "line": 26,
+      "snippet": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash",
+      "deduction": 5
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "plugins/cursor/skills/ai-tools-setup/references/hermes.md",
+      "line": 26,
+      "snippet": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash",
+      "deduction": 0
+    }
+  ],
+  "evidence": {
+    "files_scanned": 225,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "nodejs.org",
+      "dc-telemetry-proxy-83847352264.europe-west1.run.app",
+      "calendar.app.google",
+      "tally.so"
+    ],
+    "declared_hosts": 4,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 211,
+    "failed": 0,
+    "ms": 67538
+  },
+  "duration_ms": 8460
+}

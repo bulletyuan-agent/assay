@@ -1,0 +1,529 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "idosal/git-mcp",
+    "url": "https://github.com/idosal/git-mcp",
+    "name": "git-mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:50:42.562Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "c487a29895dcfcb5b672247e646426a56e2051c1",
+    "files_scanned": 107,
+    "candidates": 107,
+    "excluded_non_shipped": 13,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".husky/pre-commit",
+        "sha": "cb2c84d5c3c6cf8a76a3f007b875398b854369ca"
+      },
+      {
+        "path": ".github/workflows/e2e-tests.yml",
+        "sha": "228d15bfb8d46527ad9d7445532835a6a25318f5"
+      },
+      {
+        "path": ".github/workflows/run-tests.yml",
+        "sha": "04bb4ef3d9420e0cf748d9ebee8208454ad4e2ab"
+      },
+      {
+        "path": "src/index.ts",
+        "sha": "6353f75854aa24ccb6938fa3690200e29b87c489"
+      },
+      {
+        "path": "dist/server.js",
+        "sha": "b6fcac911a9421ad06137a999408eccd699c3ca7"
+      },
+      {
+        "path": "src/api/tools/index.ts",
+        "sha": "4fd9fba8090933831a35d1689d06dbd07e71cbf3"
+      },
+      {
+        "path": "package.json",
+        "sha": "457f84b25e33cdf264fd9ef2c7ac8b60bca16eb2"
+      },
+      {
+        "path": "dist/tools/index.js",
+        "sha": "e78017a83ed8b072530a421b58af3266456326eb"
+      },
+      {
+        "path": "src/utils.ts",
+        "sha": "2c7f2554d7c06132bb9d7a22a0f8a0a05fa04fb5"
+      },
+      {
+        "path": "biome.json",
+        "sha": "13b23ad3531e6242be68f3f480cbe4a9b7bd6a22"
+      },
+      {
+        "path": "components.json",
+        "sha": "5a3c7506d04ec327bedd759a52abc127316cc1d1"
+      },
+      {
+        "path": "playwright.config.ts",
+        "sha": "3cd3d1343de7b7cbc86044f50f9e1c21b6fb4041"
+      },
+      {
+        "path": "postcss.config.mjs",
+        "sha": "df2cc950ab1bce77b24d082eaf8ab5af4fbca91b"
+      },
+      {
+        "path": "react-router.config.ts",
+        "sha": "fea33dc53afdb83f3028051e67003874c547d5d0"
+      },
+      {
+        "path": "README.md",
+        "sha": "e40e731b0e70f1eef29d362b475ca69c3bd5458a"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "2d8aecd090995293e06ead9d04a5c0d7d8abf280"
+      },
+      {
+        "path": "src/api/test-setup.ts",
+        "sha": "928d7cd45c0a6dff3b105864db1084780bc038d5"
+      },
+      {
+        "path": "src/shared/nameUtils.ts",
+        "sha": "0c650daee7ac9388bc816107436c01fd4103ea85"
+      },
+      {
+        "path": "src/shared/repoData.ts",
+        "sha": "08d0b3f2f57ea55ee245e0cf085234f6d2200dac"
+      },
+      {
+        "path": "src/shared/urlUtils.ts",
+        "sha": "27e2348d5f2bff9148f5f57226ef30f232f3a2de"
+      },
+      {
+        "path": "tailwind.config.js",
+        "sha": "26319b95e78f33972fbf1d7c65598f4cd7c0999f"
+      },
+      {
+        "path": "tsconfig.cloudflare.json",
+        "sha": "7d1f51715ee3a3fb790caea9fce217c30b1baf3a"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "98d3208a635ec2adb647a2024154116c7e0a29a4"
+      },
+      {
+        "path": "tsconfig.node.json",
+        "sha": "8e3f1d34727091bb5f3098c2b2dd2a94a05fc68e"
+      },
+      {
+        "path": "vite.config.ts",
+        "sha": "49043558442436978547bb458c28cce7389932a1"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "1e87d8fd86821ef0092526bc2138168da5fe35d1"
+      },
+      {
+        "path": "app/entry.server.tsx",
+        "sha": "113e32c94ead7312a5faf589b54e5a9fdf6dac06"
+      },
+      {
+        "path": "app/root.tsx",
+        "sha": "b7e96344af5b46d5d9d7d1d2c2c0e3ba96f9ece7"
+      },
+      {
+        "path": "app/routes.ts",
+        "sha": "4c05936cb638b690a4cfbf08f1e13248a57e9314"
+      },
+      {
+        "path": "dist/server.d.ts",
+        "sha": "2a0771c1addf80b0800aeef57a34fed3ebb0b664"
+      },
+      {
+        "path": "src/api/tools/commonTools.ts",
+        "sha": "bff78437fa79c2bddf8448e327e6481c917ce620"
+      },
+      {
+        "path": "src/api/utils/cache.ts",
+        "sha": "d9bef5b4930ed8631e64638236f92f8154f04e8a"
+      },
+      {
+        "path": "src/api/utils/github.ts",
+        "sha": "7d5a385d9ce9fcf2ac28f7bccb70ccd579f5305a"
+      },
+      {
+        "path": "src/api/utils/githubClient.ts",
+        "sha": "83989c36f452e1aed654fa7fe0fd045cf2da024b"
+      },
+      {
+        "path": "src/api/utils/helpers.ts",
+        "sha": "d0616f9a25dd40421f9cd89f503786ba0b671a5a"
+      },
+      {
+        "path": "src/api/utils/r2.ts",
+        "sha": "4114afa180febecbded9b0a4b2efd69ca50174ac"
+      },
+      {
+        "path": "src/api/utils/robotsTxt.ts",
+        "sha": "3131b34aad1beacff4e104fe7f9e92e5d940604c"
+      },
+      {
+        "path": "src/api/utils/vectorStore.ts",
+        "sha": "18b3c41a2bee6c8c92d042e8723a209f2ab15fdc"
+      },
+      {
+        "path": "static/README.md",
+        "sha": "dfe10b682673630544de5bd1a48fe64b56847e73"
+      },
+      {
+        "path": ".react-router/types/+register.ts",
+        "sha": "501aff1c1c5a1fbe823a5a173106329db1be0aad"
+      },
+      {
+        "path": ".react-router/types/+virtual.d.ts",
+        "sha": "512fadf85d7ba8699dbdc537197e788d8451eedb"
+      },
+      {
+        "path": "app/components/chatPage.tsx",
+        "sha": "282a474cebca9b4419a17898a4634a88591db559"
+      },
+      {
+        "path": "app/components/content.tsx",
+        "sha": "9dd4f5d43c917a13b8cae7420a0701afe53e2f98"
+      },
+      {
+        "path": "app/routes/_index.tsx",
+        "sha": "6b0722ce4980892fd99045e146858bdce9392137"
+      },
+      {
+        "path": "app/routes/$.tsx",
+        "sha": "51cf30c8430c8ba5460ad3a36df731403338fcd2"
+      },
+      {
+        "path": "app/routes/api.chat.ts",
+        "sha": "a05d272cdfef9113fc52ab22c772be7c321a4562"
+      },
+      {
+        "path": "dist/tools/index.d.ts",
+        "sha": "13214225020575f8e9c07b6099ea7c25ade697dc"
+      },
+      {
+        "path": "src/api/tools/repoHandlers/DefaultRepoHandler.ts",
+        "sha": "354d73646f66c33612ec6cd348205c4334e30400"
+      },
+      {
+        "path": "src/api/tools/repoHandlers/GenericRepoHandler.ts",
+        "sha": "e8e21f9cb040f852fae1f975719425150849ed52"
+      },
+      {
+        "path": "src/api/tools/repoHandlers/handlers.ts",
+        "sha": "25ba2caf340d90b0a45b81076889cd46a4947409"
+      },
+      {
+        "path": "src/api/tools/repoHandlers/ReactRouterRepoHandler.ts",
+        "sha": "4a1c0c20300bd287a0ba48eebc105ed5ade71c70"
+      },
+      {
+        "path": "src/api/tools/repoHandlers/RepoHandler.ts",
+        "sha": "1250fc5ee1316be174bba38bd61a8ed61d637024"
+      },
+      {
+        "path": "src/api/tools/repoHandlers/ThreejsRepoHandler.ts",
+        "sha": "ff9950592ee845b52907213816186c1e27ee2b83"
+      },
+      {
+        "path": "app/chat/ai/providers.server.ts",
+        "sha": "0a19132397ce6aa4022c63ba8c551c59a8359a93"
+      },
+      {
+        "path": "app/chat/ai/providers.shared.ts",
+        "sha": "8b1b57e6d3df0947db80f50a5632b860fca443bb"
+      },
+      {
+        "path": "app/chat/components/api-key-manager.tsx",
+        "sha": "e75a1cf2a1733ee942f6a09672ae6a122a7ee86f"
+      },
+      {
+        "path": "app/chat/components/api-keys-provider.tsx",
+        "sha": "d0c676c2343926f488245873115f7aa6e26cfb5f"
+      },
+      {
+        "path": "app/chat/components/chat-sidebar.tsx",
+        "sha": "8962cf3641daf826989b2b2f73b8e2db1dfb5922"
+      },
+      {
+        "path": "app/chat/components/chat.tsx",
+        "sha": "13471a3a9eea9f5262dd5810bb89ddad80385587"
+      },
+      {
+        "path": "app/chat/components/copy-button.tsx",
+        "sha": "9eab3f0db1b2148d9a679a14f8b6c1a95d902a42"
+      },
+      {
+        "path": "app/chat/components/icons.tsx",
+        "sha": "dfe9642e6553e26e2124051083e3e145dbddbfdd"
+      },
+      {
+        "path": "app/chat/components/input.tsx",
+        "sha": "00e7df204082314bd9f76f463713e4066f9247a6"
+      },
+      {
+        "path": "app/chat/components/markdown.tsx",
+        "sha": "ef3b5597130653f46e35b508e3eee138777372be"
+      },
+      {
+        "path": "app/chat/components/mcp-server-manager.tsx",
+        "sha": "41df0c1ac2363ec960f9431a91b89dbfe00ca58e"
+      },
+      {
+        "path": "app/chat/components/message.tsx",
+        "sha": "45a051d0c49b97c7f6ab7e2c77806b1c2259bed6"
+      },
+      {
+        "path": "app/chat/components/messages.tsx",
+        "sha": "cd53667e8f6a07ccf7c34c56e49224078f4a6c96"
+      },
+      {
+        "path": "app/chat/components/model-picker.tsx",
+        "sha": "ba462bbbe39f2e92dcb543d307a41bec125b3c25"
+      },
+      {
+        "path": "app/chat/components/project-overview.tsx",
+        "sha": "b50a8652e648e77ca49803d384170d7d7c7e9179"
+      },
+      {
+        "path": "app/chat/components/suggested-prompts.tsx",
+        "sha": "6fefed542acfa091c181b02351ed65a628670389"
+      },
+      {
+        "path": "app/chat/components/textarea.tsx",
+        "sha": "84ffb63424a9ac424df82f9a968e299da6ec0d95"
+      },
+      {
+        "path": "app/chat/components/theme-provider.tsx",
+        "sha": "c6a90218fc9031c0d8fa2eceb3ebab582df58921"
+      },
+      {
+        "path": "app/chat/components/theme-toggle.tsx",
+        "sha": "4c16345f956910c8b0d0603f603029a9098b97da"
+      },
+      {
+        "path": "app/chat/components/tool-invocation.tsx",
+        "sha": "1aaf78fd76920fb159a10b48894d45be1a7eba08"
+      },
+      {
+        "path": "app/chat/hooks/use-mobile.ts",
+        "sha": "a93d58393804b4dcda698e6a6e475f65a6889356"
+      },
+      {
+        "path": "app/chat/lib/constants.ts",
+        "sha": "2fa948134542e1227ba61b4a9d1a73e34a146587"
+      },
+      {
+        "path": "app/chat/lib/user-id.ts",
+        "sha": "e4d8e3d920ca2f95340b064d19ea88a41a631221"
+      },
+      {
+        "path": "app/chat/lib/utils.ts",
+        "sha": "5bff1781c10a2f255470bdb552adf45c780e4f3e"
+      },
+      {
+        "path": "app/components/.client/chatPage.client.tsx",
+        "sha": "85d543980e137bad6b26330be4e5f0611467d522"
+      },
+      {
+        "path": "src/api/tools/repoHandlers/threejs/utils.ts",
+        "sha": "df920d0651bb5d0d3cd070b31751d77a86468f3e"
+      },
+      {
+        "path": ".react-router/types/app/+types/root.ts",
+        "sha": "d79f2523a69d04358517d2001930fe2e0edd2c53"
+      },
+      {
+        "path": "app/chat/components/ui/accordion.tsx",
+        "sha": "36a992552beb3f0d98ec300ec69626861582a963"
+      },
+      {
+        "path": "app/chat/components/ui/avatar.tsx",
+        "sha": "d312354ec8a527df64ecc6f1df5ed5b6f5e60c83"
+      },
+      {
+        "path": "app/chat/components/ui/badge.tsx",
+        "sha": "30f02b073d36b1bf053c9c181b52bc68502a6057"
+      },
+      {
+        "path": "app/chat/components/ui/button.tsx",
+        "sha": "ba3243f16e83ffabaeebb33acda2663c86525ad8"
+      },
+      {
+        "path": "app/chat/components/ui/dialog.tsx",
+        "sha": "912ca324de030c323fe85ff835c9d354150f9e7c"
+      },
+      {
+        "path": "app/chat/components/ui/dropdown-menu.tsx",
+        "sha": "a734ca6f964c5cd57be8c89947d7bf50dac26df3"
+      },
+      {
+        "path": "app/chat/components/ui/input.tsx",
+        "sha": "a66e999307b88c74c5340c05dc906729ee9d955d"
+      },
+      {
+        "path": "app/chat/components/ui/label.tsx",
+        "sha": "df3c7a05555ff447d7ac3f6636ff1962e1edd6c1"
+      },
+      {
+        "path": "app/chat/components/ui/popover.tsx",
+        "sha": "aea3fc0c1338326ddcd0ce2a476f98c3f9bd1ffd"
+      },
+      {
+        "path": "app/chat/components/ui/scroll-area.tsx",
+        "sha": "c9e0ca6919fd7926f48122f38037628fcba7beae"
+      },
+      {
+        "path": "app/chat/components/ui/select.tsx",
+        "sha": "48b1a16d99023baf3944f09256d9c250e507712a"
+      },
+      {
+        "path": "app/chat/components/ui/separator.tsx",
+        "sha": "ded320f60610445952c45b3dc61c9d2737a2ca96"
+      },
+      {
+        "path": "app/chat/components/ui/sheet.tsx",
+        "sha": "54fba398b6483125cd318c62e8002541ecb7eb9a"
+      },
+      {
+        "path": "app/chat/components/ui/sidebar.tsx",
+        "sha": "c56f09f9477c152cdef1ec3550f334b2075872a3"
+      },
+      {
+        "path": "app/chat/components/ui/skeleton.tsx",
+        "sha": "45053b67d1de497742d29ba543046848b2f67b7d"
+      },
+      {
+        "path": "app/chat/components/ui/sonner.tsx",
+        "sha": "f96a98d91f0541f86a1eea09994506a6b6883e3b"
+      },
+      {
+        "path": "app/chat/components/ui/text-morph.tsx",
+        "sha": "b5e84557cae299b2b8a2cfd792816b3f2497dc67"
+      },
+      {
+        "path": "app/chat/components/ui/textarea.tsx",
+        "sha": "3fe7dbeef5946935f47532a5cf57c57891d94945"
+      },
+      {
+        "path": "app/chat/components/ui/tooltip.tsx",
+        "sha": "0127997e693a38a5364bf1da8a24aa1d7749a19d"
+      },
+      {
+        "path": "app/chat/lib/context/mcp-context.tsx",
+        "sha": "ba6fd881f42875da0d26e963d1d8a360cf3d7c85"
+      },
+      {
+        "path": "app/chat/lib/db/schema.ts",
+        "sha": "8741480935ef564e76f791595d7946678c912a17"
+      },
+      {
+        "path": "app/chat/lib/hooks/use-copy.ts",
+        "sha": "3ecb13035c33b527ba5142aed691e643d4f5f03a"
+      },
+      {
+        "path": "app/chat/lib/hooks/use-local-storage.ts",
+        "sha": "b7b36cdcb98fe01d6dffd6177499d6ea42a89bfd"
+      },
+      {
+        "path": "app/chat/lib/hooks/use-scroll-to-bottom.tsx",
+        "sha": "4303350c61ae559279b84dbb629fcd1d1b76d9c5"
+      },
+      {
+        "path": ".react-router/types/app/routes/+types/_index.ts",
+        "sha": "734f0ece7d01eb7e0eeab4ae0f4cf5844a4b1cfd"
+      },
+      {
+        "path": ".react-router/types/app/routes/+types/$.ts",
+        "sha": "2bf59ccd95e3580ef5d6ea228ffe67b3dd539796"
+      },
+      {
+        "path": ".react-router/types/app/routes/+types/api.chat.ts",
+        "sha": "f7b008cd1b71494c3be5f489605d760c6c6d0cdb"
+      }
+    ],
+    "repo_pushed_at": "2026-05-08T14:21:24Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 82,
+    "dims": {
+      "maintenance": 60,
+      "install_docs": 100,
+      "dangerous_patterns": 85,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/utils.ts",
+      "line": 22,
+      "snippet": "<script src=\"https://cdn.tailwindcss.com\"></script>",
+      "host": "cdn.tailwindcss.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/utils.ts",
+      "line": 41,
+      "snippet": "@import url(\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap\");",
+      "host": "fonts.googleapis.com",
+      "deduction": 15
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": false,
+      "file": ".husky/pre-commit",
+      "line": 1,
+      "snippet": "pnpm lint-staged",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 107,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "cdn.tailwindcss.com",
+      "fonts.googleapis.com"
+    ],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 178
+  },
+  "network": {
+    "calls": 110,
+    "failed": 0,
+    "ms": 37460
+  },
+  "duration_ms": 5412
+}

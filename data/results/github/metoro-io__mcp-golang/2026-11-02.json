@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "metoro-io/mcp-golang",
+    "url": "https://github.com/metoro-io/mcp-golang",
+    "name": "mcp-golang"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:51:08.881Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "e5d629c5cd43e3470dcd3bf4cbc675a90bfcf513",
+    "files_scanned": 33,
+    "candidates": 33,
+    "excluded_non_shipped": 27,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".cursorrules",
+        "sha": "20221fd6389abbda60a95abd6ffd93efb21fe116"
+      },
+      {
+        "path": ".github/workflows/go-test.yml",
+        "sha": "6eec71cfcfe6547e3edc5a4a9079a1ab6e32c10a"
+      },
+      {
+        "path": ".github/workflows/goreleaser.yml",
+        "sha": "96a0aee2cfa33f331f0d03d0ba22934cc742ca3c"
+      },
+      {
+        "path": "server.go",
+        "sha": "b3865b5aea4cc8050f6355f121e277347f60faf6"
+      },
+      {
+        "path": ".goreleaser.yml",
+        "sha": "00331a3c0a23ccd70b4ccbd9dc70298b3f76bd52"
+      },
+      {
+        "path": "client.go",
+        "sha": "a0e3536b9cd2a3081b65fa2c97e2b5f6eede86ac"
+      },
+      {
+        "path": "content_api.go",
+        "sha": "b8de1a592f21eccc5abbdc01c2e49e36dca8718a"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "5710a01bc42ac00cddbd8cee754e867b87591f01"
+      },
+      {
+        "path": "prompt_api.go",
+        "sha": "8265ba2dd8a32d7ac20c40b1e9b87ea09b1b1912"
+      },
+      {
+        "path": "prompt_response_types.go",
+        "sha": "3f1753537d4eb4a8e8e641f9e8958bebc129f69e"
+      },
+      {
+        "path": "README.md",
+        "sha": "74f4ec567b3ec5accea1eb39b6e5a44fadd6862c"
+      },
+      {
+        "path": "resource_api.go",
+        "sha": "e83a71070fc2cbac4fd2813f41c1fbb8bd9205c4"
+      },
+      {
+        "path": "resource_response_types.go",
+        "sha": "2dd5e8dd1831c34e5c3d0ed2c8321e01b7c51ddb"
+      },
+      {
+        "path": "tool_api.go",
+        "sha": "bcbe35cc7404e0e50c67a91664cdab9e21f12025"
+      },
+      {
+        "path": "tool_response_types.go",
+        "sha": "f9e8345e6380401817a82f43816451c03b5739f3"
+      },
+      {
+        "path": "transport/transport.go",
+        "sha": "e27c235a2c19319e92581c41d2263685654f6d1f"
+      },
+      {
+        "path": "transport/types.go",
+        "sha": "d2627f8803da0f9067fc2f9ddb7f69417e43ff03"
+      },
+      {
+        "path": "internal/datastructures/generic_sync_map.go",
+        "sha": "32559d00364d1e961d517c2100be26cbc071ea6c"
+      },
+      {
+        "path": "internal/protocol/protocol.go",
+        "sha": "f3302c58c6bd912abb22f2c57c665392fb0605ae"
+      },
+      {
+        "path": "internal/protocol/types.go",
+        "sha": "4f3d0c4196ca7905cb45c381e415c9eb0f90bfbb"
+      },
+      {
+        "path": "internal/schema/generate.go",
+        "sha": "88b7a4acb3a9450a2737e7554dd167e76011e700"
+      },
+      {
+        "path": "internal/schema/mcp-schema-2024-10-07.json",
+        "sha": "fb5e6c49ea27deeebbdce1957627400a3047fd06"
+      },
+      {
+        "path": "internal/schema/README.md",
+        "sha": "6106f0ef192b715d8ac08bf15a0f150dbbda1708"
+      },
+      {
+        "path": "internal/testingutils/mock_transport.go",
+        "sha": "19196d99a9982dccf9882f49c407f8da8d6afb41"
+      },
+      {
+        "path": "internal/tools/tool_types.go",
+        "sha": "1b5b6bc5cc257ac07d70b4522ea0f44d82e0ce19"
+      },
+      {
+        "path": "transport/http/common.go",
+        "sha": "2f335b73cdced334c8e500280f597ee9f83e838a"
+      },
+      {
+        "path": "transport/http/gin.go",
+        "sha": "bbc6c7c3bd67db61aade4673e6311385d95196ef"
+      },
+      {
+        "path": "transport/http/http_client.go",
+        "sha": "d1e635dd06951e81bff4dbd0a8f90a5052265626"
+      },
+      {
+        "path": "transport/http/http.go",
+        "sha": "d03ccf0ae1eaf24b315a5909d8865964b3bb142e"
+      },
+      {
+        "path": "transport/sse/sse_server.go",
+        "sha": "e3fa67a6aac7134cf62c4cf7942fbaee7a3e22ab"
+      },
+      {
+        "path": "transport/stdio/stdio_server.go",
+        "sha": "36d52f2e965876e172c2c7a1fe0b51c78a46ba7f"
+      },
+      {
+        "path": "transport/sse/internal/sse/sse.go",
+        "sha": "d42d804dc61fe116987a161505f6d0311c22153e"
+      },
+      {
+        "path": "transport/stdio/internal/stdio/stdio.go",
+        "sha": "9b856984a9e0763e9f16677dd5c6caaab9912919"
+      }
+    ],
+    "repo_pushed_at": "2026-02-25T20:58:05Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": false,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 85,
+    "dims": {
+      "maintenance": 0,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 33,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 250
+  },
+  "network": {
+    "calls": 36,
+    "failed": 0,
+    "ms": 12564
+  },
+  "duration_ms": 3002
+}

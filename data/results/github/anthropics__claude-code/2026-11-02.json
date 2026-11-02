@@ -1,0 +1,1670 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "anthropics/claude-code",
+    "url": "https://github.com/anthropics/claude-code",
+    "name": "claude-code"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:52:54.584Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "f0b737f94f3b09bafd851ce47414f9877e06922e",
+    "files_scanned": 400,
+    "candidates": 996,
+    "excluded_non_shipped": 459,
+    "coverage": 0.4,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".vscode/extensions.json",
+        "sha": "4842f83d2186e9688e0326f495ac303465375ec9"
+      },
+      {
+        "path": ".claude/commands/commit-push-pr.md",
+        "sha": "0a624d60abf93743961338886e4e7ed33834e305"
+      },
+      {
+        "path": ".claude/commands/dedupe.md",
+        "sha": "d83fa2793bb733d655ca380765ac0ed39e1b13f7"
+      },
+      {
+        "path": ".claude/commands/triage-issue.md",
+        "sha": "4d63784bb298077d27f44ab93c2b2cb58e354d2b"
+      },
+      {
+        "path": ".github/workflows/auto-close-duplicates.yml",
+        "sha": "7f67a057ab079cb4e501527dc2d8b8fb61d06075"
+      },
+      {
+        "path": ".github/workflows/backfill-duplicate-comments.yml",
+        "sha": "16a39b977b31b2649b7215bc159a7483bf7d977a"
+      },
+      {
+        "path": ".github/workflows/claude-dedupe-issues.yml",
+        "sha": "dfdd1fdf2521142a6955a173233d5d636e00b48f"
+      },
+      {
+        "path": ".github/workflows/claude-issue-triage.yml",
+        "sha": "765a5cd8548ff8f4290b527d082f8f404a37ba2b"
+      },
+      {
+        "path": ".github/workflows/claude.yml",
+        "sha": "3e418ed18c38042c9b68a852cd4cc20655637c84"
+      },
+      {
+        "path": ".github/workflows/issue-lifecycle-comment.yml",
+        "sha": "1acffef2e4a45885ac1d946a207b6fdcdb609b4f"
+      },
+      {
+        "path": ".github/workflows/issue-opened-dispatch.yml",
+        "sha": "39d27ea057f3efb30d1be975b701316306225dbf"
+      },
+      {
+        "path": ".github/workflows/lock-closed-issues.yml",
+        "sha": "6d8e15f5d737d40c3d1c7a92f1d8a1b29cd5407c"
+      },
+      {
+        "path": ".github/workflows/log-issue-events.yml",
+        "sha": "f23d4fbe9883c19174141c32e1ce85774253fd04"
+      },
+      {
+        "path": ".github/workflows/mod-tests.yml",
+        "sha": "45d5a2cbace5d0816ac4063a2de109d2259d1cdb"
+      },
+      {
+        "path": ".github/workflows/non-write-users-check.yml",
+        "sha": "584bc7ddb3a39e0cb1a83714caa91de1436c7d5f"
+      },
+      {
+        "path": ".github/workflows/remove-autoclose-label.yml",
+        "sha": "5fc681b28ad38baff444957f8ebb8afa17be5522"
+      },
+      {
+        "path": ".github/workflows/sweep.yml",
+        "sha": "345616b4094fa2ec828fb15d3f6f59e2c011368d"
+      },
+      {
+        "path": ".github/workflows/workflow-hardening.yml",
+        "sha": "92f8651a257116d836a1e5b8a43759e58041ef53"
+      },
+      {
+        "path": "mods/diff/hooks/backend/installed-backend-probes.ts",
+        "sha": "e9c9670efa3dbf85a2c1ed276c4869fffd81de11"
+      },
+      {
+        "path": "scripts/auto-close-duplicates.ts",
+        "sha": "2ad3bd3112abe8fe70375c602e3d93afe0525f1d"
+      },
+      {
+        "path": "scripts/backfill-duplicate-comments.ts",
+        "sha": "f79ab431604adea8c230da32608c3e5c6ca39c51"
+      },
+      {
+        "path": "scripts/comment-on-duplicates.sh",
+        "sha": "c59e1aa645903acc75e40db19cd876deb09957f2"
+      },
+      {
+        "path": "scripts/edit-issue-labels.sh",
+        "sha": "8a95a87a49defb1133a95906bb06884050a5575f"
+      },
+      {
+        "path": "scripts/gh.sh",
+        "sha": "06c15c847b2795e7a05fde75b7b1b846f026a39e"
+      },
+      {
+        "path": "scripts/issue-lifecycle.ts",
+        "sha": "304b520c0d82dcfa3f1bdf2dddac6044877b4460"
+      },
+      {
+        "path": "scripts/lifecycle-comment.ts",
+        "sha": "3edbae7c5ef81da2eab91d6a8ccb5c13c7c112b9"
+      },
+      {
+        "path": "scripts/sweep.ts",
+        "sha": "4709290be3f7076dd30d26875d2b6d0efbabcb4e"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "410ad0f67663043920889a2b4cc380867acc1e3b"
+      },
+      {
+        "path": "LICENSE.md",
+        "sha": "645a5d67c6d1e16437bec850dad5bd3b6c81f77c"
+      },
+      {
+        "path": "mods/agents-md/hooks/index.ts",
+        "sha": "1cfa5cced4b6225f87aebf139c9cc09fe748caaa"
+      },
+      {
+        "path": "mods/diff/hooks/index.ts",
+        "sha": "1fefe4b523eeb40329c44216cf63a9e9757e54ad"
+      },
+      {
+        "path": "mods/sec-default/hooks/index.ts",
+        "sha": "c5fffdbc079f29b5eb17f28b7249708ac05c49d4"
+      },
+      {
+        "path": "mods/telemetry/hooks/index.ts",
+        "sha": "d8c206e633b69516da742c195cc0f213c4dd6979"
+      },
+      {
+        "path": "README.md",
+        "sha": "70754c523454ad5fd94e5ef910cc347cf69e6f6b"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "d6724b2bbc8dac70775da8a5fb281aa42fe62fe5"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "770a6fbf194b8afff73ad197a93b63ffacb53472"
+      },
+      {
+        "path": "mods/agents-md/hooks/files/index.ts",
+        "sha": "a383585c55f5c867ca90cba822560f2ded862ef2"
+      },
+      {
+        "path": "mods/agents-md/hooks/frames/index.ts",
+        "sha": "4d2639b787bab4b2af55f291010767f916b8fc1c"
+      },
+      {
+        "path": "mods/agents-md/hooks/modes/index.ts",
+        "sha": "153128bd64d807de671801317aa928f239ee159d"
+      },
+      {
+        "path": "mods/agents-md/hooks/names/index.ts",
+        "sha": "123124070f5c761478a50e633fc7b2450d9f48a2"
+      },
+      {
+        "path": "mods/agents-md/hooks/switches/index.ts",
+        "sha": "b2895b121866d11800d182aa43ced5e5cd1a65fc"
+      },
+      {
+        "path": "mods/agents-md/hooks/telemetry/index.ts",
+        "sha": "aa1162fee833e4e72afc2a6295acb9cdab1a22f0"
+      },
+      {
+        "path": "mods/diff/hooks/array-of/index.ts",
+        "sha": "0ccf2dc564f78f2d922f32ac339820eaee0cbc2b"
+      },
+      {
+        "path": "mods/diff/hooks/ask/index.ts",
+        "sha": "db49ce7a7b2ee144c6ce98a6b1bd76093a4d8b0f"
+      },
+      {
+        "path": "mods/diff/hooks/backend/index.ts",
+        "sha": "69344a6e34e7822a9a1217d1e250271c13125e1c"
+      },
+      {
+        "path": "mods/diff/hooks/classify/index.ts",
+        "sha": "b9a1d20c07b6d1698331baafa23194d2c1319105"
+      },
+      {
+        "path": "mods/diff/hooks/command-spec/index.ts",
+        "sha": "861ab9b13025184e07e840cdb356eceae28fd069"
+      },
+      {
+        "path": "mods/diff/hooks/count-of/index.ts",
+        "sha": "6c6256c3886a40ef5f0145b70a2daa6adf444478"
+      },
+      {
+        "path": "mods/diff/hooks/drawn-files-of/index.ts",
+        "sha": "8f9a4dfb5c34e78a58b0bad0dfc0e66a619a0831"
+      },
+      {
+        "path": "mods/diff/hooks/entry-kinds-of/index.ts",
+        "sha": "97b3c17456500f93dfb5e9fabb36c1d2ad81aee3"
+      },
+      {
+        "path": "mods/diff/hooks/git/index.ts",
+        "sha": "343f65f1d96e27fa15735a1efaac085827718ff2"
+      },
+      {
+        "path": "mods/diff/hooks/host/index.ts",
+        "sha": "5abe18a84a75f673885372a3525ec02fa19fd881"
+      },
+      {
+        "path": "mods/diff/hooks/is-checkpointing/index.ts",
+        "sha": "6a4daaee15851c2c834e64ea2dcd188eb15ea45b"
+      },
+      {
+        "path": "mods/diff/hooks/is-on-pane-surface/index.ts",
+        "sha": "f9fce2e788d607683ba0ed69c662e98cef06942e"
+      },
+      {
+        "path": "mods/diff/hooks/is-record/index.ts",
+        "sha": "b3255fa137aac45bd1e3619cd5b89e35bb672011"
+      },
+      {
+        "path": "mods/diff/hooks/kept-of/index.ts",
+        "sha": "679992a36027f3e9c4191e115135083ab61f7d41"
+      },
+      {
+        "path": "mods/diff/hooks/limits/index.ts",
+        "sha": "c5f06d81e6c83739db30c86ffdce6a498fa37228"
+      },
+      {
+        "path": "mods/diff/hooks/message-of/index.ts",
+        "sha": "1de1dae45430780667e5133563c26b3dc1d700b9"
+      },
+      {
+        "path": "mods/diff/hooks/mtime-of/index.ts",
+        "sha": "6298941ef7af4ce60b4765a1116145988556e837"
+      },
+      {
+        "path": "mods/diff/hooks/names/index.ts",
+        "sha": "7b6da9debe43a8238be729b49aeb4bb107adcde7"
+      },
+      {
+        "path": "mods/diff/hooks/open-outcome/index.ts",
+        "sha": "6b9eb193fb732a1c195d19128cda26c43c77db71"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/index.ts",
+        "sha": "33e7edfaffea54bb9d980e2c3ccc133189f08ebd"
+      },
+      {
+        "path": "mods/diff/hooks/pane-toggle/index.ts",
+        "sha": "3730c79311521a865948aab3c16a04e7dc8f0c8c"
+      },
+      {
+        "path": "mods/diff/hooks/record/index.ts",
+        "sha": "25284729c497aee404dab1e61ef0423459233613"
+      },
+      {
+        "path": "mods/diff/hooks/refresh-rest-of/index.ts",
+        "sha": "9111fef32220d497f07a759ddf3c3882773656b4"
+      },
+      {
+        "path": "mods/diff/hooks/todos/index.ts",
+        "sha": "0ce645daaaffd37efcb2ebe8534717ff6adeaef8"
+      },
+      {
+        "path": "mods/diff/hooks/tools/index.ts",
+        "sha": "aaff64523a2419d024b6140149b543b885e7958b"
+      },
+      {
+        "path": "mods/diff/hooks/turns/index.ts",
+        "sha": "c2fb45095335656ae567ab9c0e933fb157da75a6"
+      },
+      {
+        "path": "mods/diff/hooks/views/index.ts",
+        "sha": "2727d089e549b83f70300c08c054b0322a581ff6"
+      },
+      {
+        "path": "mods/README.md",
+        "sha": "4d94c749cec5009b375f505322ac94a629387026"
+      },
+      {
+        "path": "mods/sec-default/hooks/admission-failure/index.ts",
+        "sha": "d7ceff2555d4fc43f2fb678feaed1cf768aafcb0"
+      },
+      {
+        "path": "mods/sec-default/hooks/held-verdict/index.ts",
+        "sha": "db516b353d44c754bf3027f3ea9420ed349da8b7"
+      },
+      {
+        "path": "mods/sec-default/hooks/managed-mods-only-refusal/index.ts",
+        "sha": "563e9b62da96cd15da364282c22c875cbd4fa66d"
+      },
+      {
+        "path": "mods/sec-default/hooks/past-users/index.ts",
+        "sha": "b6ee2675a4cb778f9706bc576af8c85c165b396f"
+      },
+      {
+        "path": "mods/sec-default/hooks/pinned-variable-refusal/index.ts",
+        "sha": "e902a124252329cd461a8bb1b58a7c8b8236c67f"
+      },
+      {
+        "path": "mods/sec-default/hooks/policy/index.ts",
+        "sha": "4235a6edb4f92e8679d5e2ea5d31e90627edd18d"
+      },
+      {
+        "path": "mods/sec-default/hooks/skill-row/index.ts",
+        "sha": "c550590be7d871ba1b5caa81e6c3f76aa6dd67b0"
+      },
+      {
+        "path": "mods/sec-default/hooks/tool-register-refusal/index.ts",
+        "sha": "4f0dc420b2af9850cb7d8919a2f2a6bebcb8fdb3"
+      },
+      {
+        "path": "mods/telemetry/hooks/answer-of/index.ts",
+        "sha": "a92ea05a0b2d1b23c5adad5f65f560534aec1548"
+      },
+      {
+        "path": "mods/telemetry/hooks/batching/index.ts",
+        "sha": "c328a18d817a8aa408706052ef36ebbfeff212ba"
+      },
+      {
+        "path": "mods/telemetry/hooks/config-location/index.ts",
+        "sha": "bccfc1b6f92beeac4bfba8ff91b9eacd4d6af5b6"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/index.ts",
+        "sha": "244123e17097600090f910e718a64c97d6175591"
+      },
+      {
+        "path": "mods/telemetry/hooks/deployment/index.ts",
+        "sha": "97f2f9d298fe9e31f4983e09eb42fcaba8964998"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/index.ts",
+        "sha": "0b481e2d705b5e6bbd62b74e71f869af6b4f3b89"
+      },
+      {
+        "path": "mods/telemetry/hooks/environment/index.ts",
+        "sha": "e9d00dca9e63ffb4f562b3537a13948b16767f72"
+      },
+      {
+        "path": "mods/telemetry/hooks/facts/index.ts",
+        "sha": "00a6f44b48e1c75989b9262eec0f9138e7beab39"
+      },
+      {
+        "path": "mods/telemetry/hooks/gate/index.ts",
+        "sha": "3606b1ed8c1af5ecad26c34bc728a6fcf244ca71"
+      },
+      {
+        "path": "mods/telemetry/hooks/is-analytics-off/index.ts",
+        "sha": "29119ffff0efbc382e3f464631e6c4d59bf7951f"
+      },
+      {
+        "path": "mods/telemetry/hooks/policy-pins/index.ts",
+        "sha": "ff9853acd87e1143dadec1b768f75503763b3057"
+      },
+      {
+        "path": "mods/telemetry/hooks/sender/index.ts",
+        "sha": "0441d047586bad166277c38c9cd713be6be846df"
+      },
+      {
+        "path": "mods/telemetry/hooks/telemetry-deps/index.ts",
+        "sha": "ba5ab0c8761ecd4a160d4b92f0ca5c33c16922cb"
+      },
+      {
+        "path": "mods/telemetry/hooks/telemetry-of/index.ts",
+        "sha": "0facc6fa88b615efe2fa3631b2c8274856b97a7f"
+      },
+      {
+        "path": "mods/tsconfig.json",
+        "sha": "a5f39036e6295055e5d308d9ee83161cb3a14d83"
+      },
+      {
+        "path": "plugins/README.md",
+        "sha": "46e91fd05cda4a1f003de229dc98ed232858c08b"
+      },
+      {
+        "path": "mods/agents-md/hooks/modes/types/index.ts",
+        "sha": "77853f71cdbe0e238dd2c357787c8cef7cf8a5bc"
+      },
+      {
+        "path": "mods/agents-md/hooks/telemetry/types/index.ts",
+        "sha": "385620f73ab72ad9f6ccfbce103f02981d7dbc76"
+      },
+      {
+        "path": "mods/agents-md/README.md",
+        "sha": "a199ddd8ba586781ea935b27d83f671f0f469ce9"
+      },
+      {
+        "path": "mods/diff/hooks/ask/armed-ask/index.ts",
+        "sha": "c6efab893c558c1b9dea831f76ca2377e2458c50"
+      },
+      {
+        "path": "mods/diff/hooks/ask/ask-cut-note/index.ts",
+        "sha": "f18978fc434c01c53d559b5c780b0a1c6d4b2f22"
+      },
+      {
+        "path": "mods/diff/hooks/backend/types/index.ts",
+        "sha": "a4e249ce2343d53301111ea3b36b6171fbf293d3"
+      },
+      {
+        "path": "mods/diff/hooks/classify/base-name-of/index.ts",
+        "sha": "af27a138cdcfbdbee52e00810e4dedea2310c5b9"
+      },
+      {
+        "path": "mods/diff/hooks/classify/is-generated-file/index.ts",
+        "sha": "13d013089881971021d49dfb9313897c879292fb"
+      },
+      {
+        "path": "mods/diff/hooks/classify/is-test-file/index.ts",
+        "sha": "def0bac974e35906140bb41f70d2eef0da980de4"
+      },
+      {
+        "path": "mods/diff/hooks/classify/rooted-path-of/index.ts",
+        "sha": "827b27f32f2c45c92a6cd2c76b306369a9aff199"
+      },
+      {
+        "path": "mods/diff/hooks/git/argv/index.ts",
+        "sha": "8dbb32c325013ee69ffc818932851467a1d978d6"
+      },
+      {
+        "path": "mods/diff/hooks/git/cut-hunks/index.ts",
+        "sha": "25e0de49af66b8ce43d339bd882b52d3ef5b9869"
+      },
+      {
+        "path": "mods/diff/hooks/git/display-path-of/index.ts",
+        "sha": "cc631ae8a664e2eed3a3b7674e494efe36054924"
+      },
+      {
+        "path": "mods/diff/hooks/git/empty-file-hunks/index.ts",
+        "sha": "f702b35429a839b3d8dfe010df38d4858bc023ce"
+      },
+      {
+        "path": "mods/diff/hooks/git/failed-run/index.ts",
+        "sha": "1a9f26785bf2bd553788ab7cbe3c736a702a0443"
+      },
+      {
+        "path": "mods/diff/hooks/git/fetch-diff/index.ts",
+        "sha": "18c8b1307f94737a66d4de968169d892e3bad43e"
+      },
+      {
+        "path": "mods/diff/hooks/git/fetch-hunks/index.ts",
+        "sha": "ae61669c33f22ffa6087c94b1eee1ac35a869ee9"
+      },
+      {
+        "path": "mods/diff/hooks/git/git-base-modes/index.ts",
+        "sha": "506b35bae7e039b9256226dd94a639f16d423d47"
+      },
+      {
+        "path": "mods/diff/hooks/git/git-words/index.ts",
+        "sha": "c0b1c24d828ca79f511c65b9415fce75c7dc9442"
+      },
+      {
+        "path": "mods/diff/hooks/git/hunk-of/index.ts",
+        "sha": "9dc9d6d5cde9b5e2b326a512e7f3a61e644f82a8"
+      },
+      {
+        "path": "mods/diff/hooks/git/large-file-hunks/index.ts",
+        "sha": "2a8706bae015729a2cd50bc4742ba07b1c617bd0"
+      },
+      {
+        "path": "mods/diff/hooks/git/parse/index.ts",
+        "sha": "913632e1b76c60d85948df43f44e2bf437b3b782"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/index.ts",
+        "sha": "b087bd5ede75fb10f51a6ff252bb522f6660ce43"
+      },
+      {
+        "path": "mods/diff/hooks/git/rename-display-of/index.ts",
+        "sha": "fba9eb84682833155f31c8f86bf4045ceb9cdd15"
+      },
+      {
+        "path": "mods/diff/hooks/git/tiers/index.ts",
+        "sha": "34d059b485c265bb6134bb4300855425c907993b"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/index.ts",
+        "sha": "0d022ab1eede837556e71fd307099ef2c8ab0c0a"
+      },
+      {
+        "path": "mods/diff/hooks/limits/columns/index.ts",
+        "sha": "6b8ddd35a7342c0cf5aaf5fcad8db92e9b2fddf0"
+      },
+      {
+        "path": "mods/diff/hooks/limits/sizes/index.ts",
+        "sha": "b55745a4817681b0a219e250bef1ceb765f56572"
+      },
+      {
+        "path": "mods/diff/hooks/limits/timing/index.ts",
+        "sha": "c6c2f39fced4e86a1d4c0e94ae0d091534cac8af"
+      },
+      {
+        "path": "mods/diff/hooks/names/keys/index.ts",
+        "sha": "754b99ce989251a4f65e31868b1f70c625a99798"
+      },
+      {
+        "path": "mods/diff/hooks/names/texts/index.ts",
+        "sha": "58df1c9bd3135ddb8b38e11d2ee090266340ab08"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/after-fetch/index.ts",
+        "sha": "227de9d375672607bcca08ca76f67728589b4694"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/after-new-session/index.ts",
+        "sha": "04346ab5da35d41bc673778ad2623f99dd9812e0"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/base-mode-of/index.ts",
+        "sha": "3479978c1af1fec8fc6b4f17ddcd2eb227ebeb69"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/bodies/index.ts",
+        "sha": "81ce6a52dd67a3f1a5f6b9fbb3f32a6ff7b2e5e5"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/dialog-focus/index.ts",
+        "sha": "f85ca7bd769deae7d61e162aba8e9212a36fb6c5"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/dialog-title/index.ts",
+        "sha": "cbe34f5c8bcaf76ec8ba51c718ab375e9b118479"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/empty-state/index.ts",
+        "sha": "6a00dc2d2e04c5c04b6968c4303dbb23b4fd4fa5"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/header-totals/index.ts",
+        "sha": "3b4702cac1bef13ff5038eb6b030c1084152925e"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/initial-model/index.ts",
+        "sha": "912d01fa872e3a4b56339513a9cc947b10671d6f"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/mode-label-of/index.ts",
+        "sha": "04fb5c40c413d9d7bb45b808d8cffa10281d58a4"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/no-bodies/index.ts",
+        "sha": "43ea111f7394ebd9bbe7616ce6a6172414e3c6e2"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/pane-model/index.ts",
+        "sha": "4195968877b79a6b9c51ebb5f1259234e8ac92d1"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/partition/index.ts",
+        "sha": "993d49fef0c557abdb007d002a9c8a13cf054de4"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/picked-turn-of/index.ts",
+        "sha": "024515313df7c9dc151c133406f9590fb9407915"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/source/index.ts",
+        "sha": "f1b0da3a89156d43838ffdd9e1bba6cc07027e56"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/turn-title-of/index.ts",
+        "sha": "0d068ba1bd1e309c014fad20ce77519ad3e21a03"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/turn-totals-of/index.ts",
+        "sha": "e33459e007ae721d9a9d6ecf0237a5cd7c067485"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/zero-totals/index.ts",
+        "sha": "59d381c3690a6b8eb1e1baf3da25de43af99806f"
+      },
+      {
+        "path": "mods/diff/hooks/pane-toggle/pane-belief/index.ts",
+        "sha": "921fcf308ab415bc9da9d03437b412464c0b775a"
+      },
+      {
+        "path": "mods/diff/hooks/record/base-outcomes/index.ts",
+        "sha": "54bae72a4b9f9c0e07d9318791a35004a5ab2b40"
+      },
+      {
+        "path": "mods/diff/hooks/record/features/index.ts",
+        "sha": "672d470c52134d6c2991012bb72f6fbbc3f6c48f"
+      },
+      {
+        "path": "mods/diff/hooks/record/mark-outcome/index.ts",
+        "sha": "d6e1809167bacae05f907474cb7b61dfb449d337"
+      },
+      {
+        "path": "mods/diff/hooks/record/recorder/index.ts",
+        "sha": "ffa2cf745b739dd89d5f1b58ccc1fc4b24acb2e4"
+      },
+      {
+        "path": "mods/diff/hooks/record/safely/index.ts",
+        "sha": "002c90f9e8a5d2ae9607a656527aca5d11f6f958"
+      },
+      {
+        "path": "mods/diff/hooks/record/shown-triggers/index.ts",
+        "sha": "0c963ba667b0ac62787801cb9b67260c20109838"
+      },
+      {
+        "path": "mods/diff/hooks/record/tabs/index.ts",
+        "sha": "27f7c5bb8aeca418fe24c234bd9d3219de325353"
+      },
+      {
+        "path": "mods/diff/hooks/record/width-bucket-of/index.ts",
+        "sha": "9127054c1c3ef7887cbbc2bf52a537acdb79ed03"
+      },
+      {
+        "path": "mods/diff/hooks/record/width-buckets/index.ts",
+        "sha": "14a139cd9c954b25b7d11db94e72b9219cca6f39"
+      },
+      {
+        "path": "mods/diff/hooks/todos/todo-progress/index.ts",
+        "sha": "0ab3b873448b83edd36d62bd65eb7bbc178d38e6"
+      },
+      {
+        "path": "mods/diff/hooks/turns/turn-of/index.ts",
+        "sha": "33f8048a19db3a8efc411e362b4d2c35ba9022c2"
+      },
+      {
+        "path": "mods/diff/hooks/turns/types/index.ts",
+        "sha": "3c5ba82bf74441b09abd638e3a379a530434c147"
+      },
+      {
+        "path": "mods/diff/hooks/views/body/index.ts",
+        "sha": "37d56a6e345c93caa2c5392a857d3a13bfbeeeb6"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/index.ts",
+        "sha": "79cacdb7affa1e4e6e572bfd9002c79dbe08b9ed"
+      },
+      {
+        "path": "mods/diff/hooks/views/dialog-pane/index.ts",
+        "sha": "3cf665d22a3bd033f0897dd79f425f983038e809"
+      },
+      {
+        "path": "mods/diff/hooks/views/entries/index.ts",
+        "sha": "c0fbc61e47530ee2df535eabc6e17b5b8e894421"
+      },
+      {
+        "path": "mods/diff/hooks/views/inset-of/index.ts",
+        "sha": "0b8643012278c342c58cfc03757c85989b86d733"
+      },
+      {
+        "path": "mods/diff/hooks/views/kit/index.ts",
+        "sha": "ae1cb7959aa999f65a712f6e2f8762b88f9c7513"
+      },
+      {
+        "path": "mods/diff/hooks/views/layout/index.ts",
+        "sha": "520e4ad49ecf8f1eb476714d4c510c9789cb7fa2"
+      },
+      {
+        "path": "mods/diff/hooks/views/pane-actions/index.ts",
+        "sha": "c76c6da767b3b2c6b2108e1f0d9d231fe59826e9"
+      },
+      {
+        "path": "mods/diff/hooks/views/pane-seat/index.ts",
+        "sha": "e42ed895bfa9f419ba6dd1423d4e86e7f08991c0"
+      },
+      {
+        "path": "mods/diff/hooks/views/prelude-of/index.ts",
+        "sha": "aabd699723a7b22de1ce3154427151878995aa04"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/index.ts",
+        "sha": "b4840c7db592bdfb3d834131d338db17cc4699f0"
+      },
+      {
+        "path": "mods/diff/hooks/views/sidebar-pane/index.ts",
+        "sha": "92e8409de703870dd7bb47dabf4d95228cd13397"
+      },
+      {
+        "path": "mods/diff/README.md",
+        "sha": "98d3781adba3c98cd970617be5f29144cb12735f"
+      },
+      {
+        "path": "mods/sec-default/hooks/held-verdict/verdicts/index.ts",
+        "sha": "8e8928f94e292b630c2396d1ce1c8c3203452d4a"
+      },
+      {
+        "path": "mods/sec-default/hooks/past-users/provided/index.ts",
+        "sha": "afb8511e1d3ef164b00f8f9114035cf80eab83c2"
+      },
+      {
+        "path": "mods/sec-default/hooks/past-users/user-reachable-tiers/index.ts",
+        "sha": "4cc4ca686d771c64a3b58e9dc02a21b33de72872"
+      },
+      {
+        "path": "mods/sec-default/hooks/policy/create-policy-memo/index.ts",
+        "sha": "725bbbf5d47acb9f3017f38e9080df3e69e80dd9"
+      },
+      {
+        "path": "mods/sec-default/hooks/policy/managed-tools-restored/index.ts",
+        "sha": "3a59b3b0baefb2e9645e24fa840f583cd17b3296"
+      },
+      {
+        "path": "mods/sec-default/hooks/policy/own-option/index.ts",
+        "sha": "797babd43691050e951043467d6b7840edc73cf2"
+      },
+      {
+        "path": "mods/sec-default/README.md",
+        "sha": "2e7efdd617795206b5c86bd574ae62b98a009897"
+      },
+      {
+        "path": "mods/telemetry/hooks/batching/batch-rows/index.ts",
+        "sha": "a56e2c1aa8f3bc5b11a781ce554c62d9e9f3ffa0"
+      },
+      {
+        "path": "mods/telemetry/hooks/batching/batch-window-ms/index.ts",
+        "sha": "84d823638a68de96a8e822337569edd276761b90"
+      },
+      {
+        "path": "mods/telemetry/hooks/batching/is-retriable/index.ts",
+        "sha": "19e4adcd46399586a6247d67f137b2d2eb956e39"
+      },
+      {
+        "path": "mods/telemetry/hooks/batching/message-of/index.ts",
+        "sha": "1de1dae45430780667e5133563c26b3dc1d700b9"
+      },
+      {
+        "path": "mods/telemetry/hooks/batching/pending-row/index.ts",
+        "sha": "d521cabe1f9c82234380209041df38236836e078"
+      },
+      {
+        "path": "mods/telemetry/hooks/batching/retry-delay-ms/index.ts",
+        "sha": "4e2380072d0f5937a04a62291bab68e8cf891136"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/client-type-of/index.ts",
+        "sha": "46e82a1e166ff7d9862cc25a905389d7268b270f"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/context/index.ts",
+        "sha": "9a92dbdf90813e69b96205de998c85dc9b4cf63c"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/entrypoint-of/index.ts",
+        "sha": "408a1b7a112d2c98369a2229f243f9963753ffe7"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/environment-fields-of/index.ts",
+        "sha": "f4b1daf429634e7ba9ec76fe22168da1b5db6a16"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/environment-fields/index.ts",
+        "sha": "a6b29102e689165c50fb52cbe5697c42cbee4d85"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/identity/index.ts",
+        "sha": "920ad8b302d7b7cadde5710f6cfda231fa01c95c"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/linux-distro-of/index.ts",
+        "sha": "ce3b467e0440db5476b8fc503218df5af6c5fd08"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/machine/index.ts",
+        "sha": "ad84770c47b537d515f625fe60a0b8542bffb550"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/probe-of/index.ts",
+        "sha": "d944637299fc923e1a561e368f3f1e960942ff16"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/probe/index.ts",
+        "sha": "d374442ea0b27075016602c60369ce19912c2eb7"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/remote-hash-of/index.ts",
+        "sha": "2df066854b5d0e501a4da60f5f17dfaf76ec9cd7"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/session-fields-of/index.ts",
+        "sha": "c6d7bf2a050c0e995612c6b2204a32979f01a4a6"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/session-fields/index.ts",
+        "sha": "767f71291422206026d88766953ee4fc334b510c"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/shell-of/index.ts",
+        "sha": "5e40c92a07ca5a7654a379d27465ca56872582f4"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/terminal-of/index.ts",
+        "sha": "25c7047a65a4f33032e29877d0400177b2824b01"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/vcs-of/index.ts",
+        "sha": "60cf1adf8dcd006feba91d0950e7a7d58b34a7e0"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/version-of/index.ts",
+        "sha": "e115d6d3f68c4b24bcf6f128948bca87e909a1c6"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/wsl-version-of/index.ts",
+        "sha": "b3aa27e56f39718377fd841a5dc7d3485b437ec4"
+      },
+      {
+        "path": "mods/telemetry/hooks/deployment/deployment-name/index.ts",
+        "sha": "deafbf7100e812461c3d4fa4e7b5dc41bd60e041"
+      },
+      {
+        "path": "mods/telemetry/hooks/deployment/deployment-signal/index.ts",
+        "sha": "2bc82862976a01fbef7bce028e0c945f89b65918"
+      },
+      {
+        "path": "mods/telemetry/hooks/deployment/deployments/index.ts",
+        "sha": "e7ac5a1271a7e3c5e65ea76ade0b1c0de444c9c3"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/batch-stamp/index.ts",
+        "sha": "4d3534c477818e7108d30ccf810b4a3ce56fbb07"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/checked-props/index.ts",
+        "sha": "8e5c2fae2844fdc461a0e3bb8abd404f540e3feb"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/checked-value/index.ts",
+        "sha": "319b97e7df39de78dc5f23308515ac4e854c23d4"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/choice-token/index.ts",
+        "sha": "6cccdbd5531548b61b660c16a3d2182474a8c244"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/choices-limit/index.ts",
+        "sha": "f83ac2b4ba885c317bb6d98660a017e68b4c0802"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/core-event-prefix/index.ts",
+        "sha": "3a821a39117fb3d6de99bd3d62f5bc59a8c8fd81"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/event-data-of/index.ts",
+        "sha": "07c613d1d542e39019316334dd3327a1d38e29c1"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/event-prefix/index.ts",
+        "sha": "d1f98bafaa5a83b52e07b1fb7a26b539156a7d20"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/feature-prefix/index.ts",
+        "sha": "57ab8343f7b46afbd550ab5fdea793f49089ca21"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/fields-of/index.ts",
+        "sha": "266ba2970dc0c4ac0292659b93f25cb69ea7e54a"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/fields/index.ts",
+        "sha": "f650daefbd826208774eb1808a204277f1a665d9"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/is-mark-kind/index.ts",
+        "sha": "f096be79d6cb2209bba4e83e176bbd1b634980b4"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/is-record/index.ts",
+        "sha": "b3255fa137aac45bd1e3619cd5b89e35bb672011"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/is-refused-entry/index.ts",
+        "sha": "cc4da5efd9be96c847cd925ce3091e1d79ca7f8f"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/mark-fields-of/index.ts",
+        "sha": "4b210cd485dc2b6a31d8c27106e0bdec5913466e"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/mark-kinds/index.ts",
+        "sha": "81be6cf73c75265f872ff3b0d419f289a0103916"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/mark/index.ts",
+        "sha": "c2450bf2c9f882fd0c100b405c2ff085c8da35ee"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/method/index.ts",
+        "sha": "800b679910195452bd246f20b63c878728862595"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/prop-limit/index.ts",
+        "sha": "7b49b376e393cc8b6c250410d19199ea278d35d5"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/refusal/index.ts",
+        "sha": "a3405db2148763b8ead33bfdf98fe84a4084cfc1"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/refused-entry/index.ts",
+        "sha": "68d58e3711b252da87cfc925762a482f69a90a92"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/token/index.ts",
+        "sha": "79e7863d8afe8316af1b03289568f7a5ffe3d9bd"
+      },
+      {
+        "path": "mods/telemetry/hooks/entries/wire-of/index.ts",
+        "sha": "057757d223e85fe85a0e4d8765b777132c54ebf2"
+      },
+      {
+        "path": "mods/telemetry/hooks/gate/caught/index.ts",
+        "sha": "78e737597a1d12891f15533497003acf1793ffeb"
+      },
+      {
+        "path": "mods/telemetry/hooks/gate/gate-next/index.ts",
+        "sha": "5fa988cb1446a848fe9521d9bb36dbca593969f5"
+      },
+      {
+        "path": "mods/telemetry/hooks/gate/refused/index.ts",
+        "sha": "bf42c557a80e5a3874b379d9df8153f788ba1f7f"
+      },
+      {
+        "path": "mods/telemetry/hooks/gate/served-tiers/index.ts",
+        "sha": "abde6a41ef6f33ae83792f36584c33bedd824339"
+      },
+      {
+        "path": "mods/telemetry/hooks/gate/served/index.ts",
+        "sha": "8840c3afdfb0afd5168c36a8547f26090e1d3aa7"
+      },
+      {
+        "path": "mods/telemetry/hooks/is-analytics-off/is-env-set/index.ts",
+        "sha": "863fe80462b8a96204d7e3c10ac46a2c5ee6866c"
+      },
+      {
+        "path": "mods/telemetry/hooks/is-analytics-off/is-env-truthy/index.ts",
+        "sha": "e96e568ef0a76115014d63dde87b74b74e2c62b4"
+      },
+      {
+        "path": "mods/telemetry/README.md",
+        "sha": "e859919d7c00beafd0af1a512b406b1a6b310bb7"
+      },
+      {
+        "path": "mods/agents-md/.claude-plugin/plugin.json",
+        "sha": "fe2c5dcc3cccef44859294c252c57c36ee8d31c2"
+      },
+      {
+        "path": "mods/agents-md/hooks/hooks.json",
+        "sha": "126286074c9866f6031c4032f8fcfeb19f3443ae"
+      },
+      {
+        "path": "mods/agents-md/hooks/modes/types/mode/index.ts",
+        "sha": "3ff287b3042eaff812c18687b3b7274518a5d10d"
+      },
+      {
+        "path": "mods/agents-md/hooks/register.ts",
+        "sha": "d9f7a608449095c33eae55be05a59997f6e22350"
+      },
+      {
+        "path": "mods/agents-md/hooks/telemetry/types/load-counts/index.ts",
+        "sha": "0aeedd808b2dd8408877e4a9df9e30e6f1fe43f6"
+      },
+      {
+        "path": "mods/agents-md/hooks/telemetry/types/telemetry-mark/index.ts",
+        "sha": "b096495d05864e0db87cf52544f94d7f5ecd3d38"
+      },
+      {
+        "path": "mods/agents-md/hooks/telemetry/types/telemetry-prop/index.ts",
+        "sha": "d04343532de2b9ed6273b47448cfe4283eeab850"
+      },
+      {
+        "path": "mods/agents-md/hooks/telemetry/types/telemetry-row/index.ts",
+        "sha": "af9dfecab7c9a3099d52d647c457fc2636d4a88f"
+      },
+      {
+        "path": "mods/diff/.claude-plugin/plugin.json",
+        "sha": "6ccd58321752baed05346480e073d2e7cb33ce39"
+      },
+      {
+        "path": "mods/diff/hooks/backend/types/backend-host/index.ts",
+        "sha": "cd04819f2cc4a6f2ed497266431266d3d4b72724"
+      },
+      {
+        "path": "mods/diff/hooks/backend/types/backend-probe/index.ts",
+        "sha": "47f881811320b8a6da746e168ca77fa494f3ec2b"
+      },
+      {
+        "path": "mods/diff/hooks/backend/types/backend-words/index.ts",
+        "sha": "8fc8e52711586492e8bf7c9af9ed8869d6be5d61"
+      },
+      {
+        "path": "mods/diff/hooks/backend/types/backend/index.ts",
+        "sha": "7c3a5c071d40e4ca97948aa3daeb590c0c140282"
+      },
+      {
+        "path": "mods/diff/hooks/classify/is-generated-file/generated-directories/index.ts",
+        "sha": "13a8df21511ca02a107d8d70d3481e4a04c183c5"
+      },
+      {
+        "path": "mods/diff/hooks/classify/is-generated-file/generated-filename-patterns/index.ts",
+        "sha": "c01ca1456171420abc51f8268d5a9e33af912998"
+      },
+      {
+        "path": "mods/diff/hooks/classify/is-generated-file/generated-filenames/index.ts",
+        "sha": "84bf2e29bc9f04a71fc1f27eac8073067113f2af"
+      },
+      {
+        "path": "mods/diff/hooks/classify/is-generated-file/generated-suffixes/index.ts",
+        "sha": "c53be33e94063642eb08dd200e6a54c8885f298a"
+      },
+      {
+        "path": "mods/diff/hooks/classify/is-test-file/test-directories/index.ts",
+        "sha": "cecf4b11d44164ed9c59a78862acf3399cb3a313"
+      },
+      {
+        "path": "mods/diff/hooks/classify/is-test-file/test-filename-patterns/index.ts",
+        "sha": "56f60e7855be6f084c838509556636a70111aabf"
+      },
+      {
+        "path": "mods/diff/hooks/git/argv/git-child-env/index.ts",
+        "sha": "07d69588b7e3c36079d2163d880f700196c7829b"
+      },
+      {
+        "path": "mods/diff/hooks/git/argv/hunks-args/index.ts",
+        "sha": "935d26ce96df9ccc9f53a39ff26d2fad4a9ab248"
+      },
+      {
+        "path": "mods/diff/hooks/git/argv/pinned-lead-of/index.ts",
+        "sha": "440afd54e4ab7baee4b18ff7ea979c999e4a943b"
+      },
+      {
+        "path": "mods/diff/hooks/git/fetch-hunks/is-last-of-diff/index.ts",
+        "sha": "127f870459f919ecbfb8855598c7f854eb033190"
+      },
+      {
+        "path": "mods/diff/hooks/git/fetch-hunks/with-closing-line/index.ts",
+        "sha": "c6bf8e1cb7e75b54ea58c2161b955e114e2e5e98"
+      },
+      {
+        "path": "mods/diff/hooks/git/parse/file-header-start/index.ts",
+        "sha": "126c9c2ce73b9e87fe48d56000beda283a27559a"
+      },
+      {
+        "path": "mods/diff/hooks/git/parse/hunk-header/index.ts",
+        "sha": "25a979e270dc3607934393ba7c1437364c94fc62"
+      },
+      {
+        "path": "mods/diff/hooks/git/parse/is-body-line/index.ts",
+        "sha": "deb69448dc472acefd639af274184e200096407e"
+      },
+      {
+        "path": "mods/diff/hooks/git/parse/is-whole-answer/index.ts",
+        "sha": "4a80f3e1caef16daab0f4ef17d912274022a655d"
+      },
+      {
+        "path": "mods/diff/hooks/git/parse/is-whole-listing/index.ts",
+        "sha": "b4c9874a897a954f6e94dd3e8b22dd11e4f43abd"
+      },
+      {
+        "path": "mods/diff/hooks/git/parse/parse-file-diffs/index.ts",
+        "sha": "8cea784be8554a98d30d83d6500dee7f835f4361"
+      },
+      {
+        "path": "mods/diff/hooks/git/parse/quoted-header-start/index.ts",
+        "sha": "ba439b7b7d077913d31eebdf99506a1fce9ddaa6"
+      },
+      {
+        "path": "mods/diff/hooks/git/parse/rename-records/index.ts",
+        "sha": "f29fdeba1345fa133c9e59d87da9409f3276e93a"
+      },
+      {
+        "path": "mods/diff/hooks/git/parse/shortstat-pattern/index.ts",
+        "sha": "ce789a7a00066232a19b982dff658a22406a0ea6"
+      },
+      {
+        "path": "mods/diff/hooks/git/parse/unmerged-status/index.ts",
+        "sha": "10f0556342bbb6e6a027d7e9399dc1e06b8886b0"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/branch-base-of/index.ts",
+        "sha": "ababaf982120c4976a2364e0e820e3a43a3915b7"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/conventional-default-branches/index.ts",
+        "sha": "883c38a5d5c427f78b69f282dc966b7b136f9d34"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/current-branch-of/index.ts",
+        "sha": "cae908ba110489df0a9f11a7d17e27b69af9b20a"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/datings-of/index.ts",
+        "sha": "370c3cfd4a7a753be30ca01510e9d89bfca92c84"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/default-branch-of/index.ts",
+        "sha": "bfb45edb6eeafc5c749c502e4b744e0d7e62e075"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/dirty-paths-of/index.ts",
+        "sha": "dd0d03bb44e0ff55cd732f2ba20be827f3f210e5"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/head-key-of/index.ts",
+        "sha": "52ac966e69d839f91a8ebd395631720f776ef26e"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/is-absolute-path/index.ts",
+        "sha": "d9cd599eba06550967eab9b9ede802bdda68c17b"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/is-safe-ref-name/index.ts",
+        "sha": "be3dc8d903144483fa701847d686f9f776a82a7b"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/is-sha/index.ts",
+        "sha": "0cbf1a6ddeb4db8d530c4803e3cac840d6990216"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/kind-walk-of/index.ts",
+        "sha": "bd5a1efbd34a7009cf647373271b803f75221d9d"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/merge-base-candidates-of/index.ts",
+        "sha": "777dcb013ed7a3b1e43fe4006ba05e65a6795ffd"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/missing-base-of/index.ts",
+        "sha": "9bb88e78035f037b6245cf7ebf10d6652424fc41"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/rebase-marks/index.ts",
+        "sha": "930c585fd2a7e1d96379993348255a4f1bad4772"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/repository-lines/index.ts",
+        "sha": "47f95bf9538cef4905ef55ff6e575272d2e49d96"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/repository-of/index.ts",
+        "sha": "3a5a77e74f6d025d42f305cc8748be0b4d41f57c"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/stamp-if-file/index.ts",
+        "sha": "35623ede7923a3a3df9532384ea4e91837a7ee66"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/stamp-probe-of/index.ts",
+        "sha": "15094899204e117ee857c719932c5f7dcac5e74a"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/transient-state-files/index.ts",
+        "sha": "bbf7938f35a4b80944929cf248bfd5695239ea16"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/untracked-files/index.ts",
+        "sha": "addc27ea402da0c36d20b0dcde23cf97b97ccb63"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/untracked-place/index.ts",
+        "sha": "1b89a40e58214991d26605229419e9ba763776d5"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/untracked-rows-of/index.ts",
+        "sha": "d398924248717bf6434e4beafc751c3d03915346"
+      },
+      {
+        "path": "mods/diff/hooks/git/probes/was-dirty-at-start/index.ts",
+        "sha": "0db2a69e6339ce5ab76442a63c2c2641f28f9a69"
+      },
+      {
+        "path": "mods/diff/hooks/git/tiers/branch-source-of/index.ts",
+        "sha": "3e05a93f5f1d1c34a77ba41af65522ba64b3c368"
+      },
+      {
+        "path": "mods/diff/hooks/git/tiers/diff-data-of/index.ts",
+        "sha": "98736de9014a79a72afa138e095818e2feadd5e5"
+      },
+      {
+        "path": "mods/diff/hooks/git/tiers/fetch-context-of/index.ts",
+        "sha": "868c2c298021359eb604756fdf6ed4c2cb1f2ddb"
+      },
+      {
+        "path": "mods/diff/hooks/git/tiers/is-past-details/index.ts",
+        "sha": "61d9811a8b7350f7a61e68a214c1ea48938307dd"
+      },
+      {
+        "path": "mods/diff/hooks/git/tiers/unborn-tier/index.ts",
+        "sha": "6b3a769a03433cd5a1dbc8902ce7d31e3d955872"
+      },
+      {
+        "path": "mods/diff/hooks/git/tiers/with-untracked/index.ts",
+        "sha": "9f5791caa89801b88fd2373b8022901cba1bf33f"
+      },
+      {
+        "path": "mods/diff/hooks/git/tiers/working-tree-basis/index.ts",
+        "sha": "dffa72a5651aad62a7292eac304e228f22f5d89f"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/base-mode/index.ts",
+        "sha": "d67c2450efcef3da027b0e78a4536ea5003369e2"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/branch-base/index.ts",
+        "sha": "0b33834346a29e12a141df2fa846593711676e18"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/dating-context/index.ts",
+        "sha": "2bb07592681f6a034ec740572e4ae1da19911130"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/dating/index.ts",
+        "sha": "57b5af7f6ebe89daa8a30f25740681e57f7cdc4c"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/diff-data/index.ts",
+        "sha": "9933d5291a9b5a55a4317be70df5d30b6e9b4717"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/diff-source/index.ts",
+        "sha": "e2bcaba69225d64b032b576cad69f37ce5b75095"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/diff-stats/index.ts",
+        "sha": "47582ad2e946ad7499934bf40061d584e04b8140"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/entry-kind/index.ts",
+        "sha": "dbbbe547d9ce6e3bdfe31b9bae2c49de6c409c26"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/file-stat/index.ts",
+        "sha": "15a8b3a33317d11dd9dd7ffb7eed30a5c7f79aff"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/git-deps/index.ts",
+        "sha": "200b088d5eeaf0b2d2cc79e8bf4b7fd3f10884c6"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/git-run/index.ts",
+        "sha": "50d96509e3bf1d75f241ee6105e631d8bf0cab2b"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/head-key-deps/index.ts",
+        "sha": "9dfd2ee3ad58d1b519a2d9a90195987289bf9b06"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/hunk/index.ts",
+        "sha": "bd22de7fd22089aace67a408d0c25313a45e1e48"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/kind-walk/index.ts",
+        "sha": "cb3fe9f077c20ccff7767df1ea9218110f4cfc46"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/merged-result/index.ts",
+        "sha": "0d4a85da6705fc495dedfea8741f6fa2b924aab1"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/repository/index.ts",
+        "sha": "8b45030b97943c5c6a6dc5924dfedda78cc391d6"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/resolved-branch-base/index.ts",
+        "sha": "529169e983ad963bc19445967f755922766c8f5a"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/run-result/index.ts",
+        "sha": "b003dbca8c21620b8a66664f8e43578a465984c7"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/stamp-probe/index.ts",
+        "sha": "4c29c50f9e78fd93927ad4214009058c3aeb7b5b"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/stamp/index.ts",
+        "sha": "2f851597902d2d290e0767ea1b3a480922872b2f"
+      },
+      {
+        "path": "mods/diff/hooks/git/types/walk-kind/index.ts",
+        "sha": "a210ca329cc8638cd110f99b486954ff9055e876"
+      },
+      {
+        "path": "mods/diff/hooks/hooks.json",
+        "sha": "42164197dd51f1b05f62422c9d108e825e5f1a08"
+      },
+      {
+        "path": "mods/diff/hooks/limits/sizes/bytes/index.ts",
+        "sha": "d0f573676e347249fb24b807cad36a7400387222"
+      },
+      {
+        "path": "mods/diff/hooks/limits/sizes/max-pathspec-chars/index.ts",
+        "sha": "441dc05039357b1898976c5ffda0c06a19d65099"
+      },
+      {
+        "path": "mods/diff/hooks/limits/sizes/pane/index.ts",
+        "sha": "f1eba31c15cac6739c32cf2bd5a0cdd6e7d8701e"
+      },
+      {
+        "path": "mods/diff/hooks/names/texts/panel-toggle/index.ts",
+        "sha": "bf4293cb780a290c92642ea924b932e356677b91"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/after-fetch/fetched/index.ts",
+        "sha": "7262baa1935f5e4cd0a19604e255609b3c8ae193"
+      },
+      {
+        "path": "mods/diff/hooks/pane-state/after-new-session/new-session-fields/index.ts",
+        "sha": "e57f39c830d34e2da8f31afd500f75f1b8543870"
+      },
+      {
+        "path": "mods/diff/hooks/register.ts",
+        "sha": "ce2c46e9e9780a263a59b45754242df772c6d1d7"
+      },
+      {
+        "path": "mods/diff/hooks/turns/turn-of/file-edit-of/index.ts",
+        "sha": "b03ef90492eb571b6ad20b1dfc2fda68c580c0c4"
+      },
+      {
+        "path": "mods/diff/hooks/turns/turn-of/is-prompt-row/index.ts",
+        "sha": "486694e91d0025f7eb03249e6ee044e6b40d7042"
+      },
+      {
+        "path": "mods/diff/hooks/turns/turn-of/preview-chars/index.ts",
+        "sha": "114ed80bbc804877e46abaf14f235e6896e539ca"
+      },
+      {
+        "path": "mods/diff/hooks/turns/types/turn-file/index.ts",
+        "sha": "abb92a493729c703042eaf303731ee85c9b54e9a"
+      },
+      {
+        "path": "mods/diff/hooks/views/body/plan/index.ts",
+        "sha": "25e8bac3622e2cfd64b6dc9af8e3eb35e5d61be5"
+      },
+      {
+        "path": "mods/diff/hooks/views/body/types/index.ts",
+        "sha": "55892e63668b48ec7ae2c319b4288133ff5f61ba"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/body-budget/index.ts",
+        "sha": "2fba2bd1cd7dfea461de2529a9d78f757d1f7652"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/code-blocks-of/index.ts",
+        "sha": "f279db5609fe5e1cb276b36e6323b942ffb0a713"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/detail-model/index.ts",
+        "sha": "b0404f71c9d459ae2c7098cf677fb62cbe6fe241"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/file-frame-nodes/index.ts",
+        "sha": "ebec2484fcd35aa459474e2551ebf6bc2e1ab24d"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/hunk-header-of/index.ts",
+        "sha": "5eb801a975c82dcd6d7677240173eeab3421fbbf"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/hunk-source-of/index.ts",
+        "sha": "87be857236696665df684701e922b61d10db4689"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/leading-hunk-of/index.ts",
+        "sha": "efc0949757da60b02408cdac9c8efd4d75ef633f"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/max-body-chars/index.ts",
+        "sha": "560568831b9ff5c8538ddd55cb9083cf65a610bf"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/max-body-nodes/index.ts",
+        "sha": "b81bd72538dd88446c276d7fa94273e787430db4"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/max-code-chars/index.ts",
+        "sha": "a45f7d5372848248ad2c45a5eafaabdc1ed8b43d"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/placeholder-of/index.ts",
+        "sha": "36afd40d6f472456353e3210c7dd8f35c511eca1"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/sub-hunks-of/index.ts",
+        "sha": "cf1c98deee2648d0a559bbf0a2cdf7db4f30c68e"
+      },
+      {
+        "path": "mods/diff/hooks/views/detail/types/index.ts",
+        "sha": "f01505f178b69aace71ecae1a5edde086b980619"
+      },
+      {
+        "path": "mods/diff/hooks/views/dialog-pane/dialog-entries-of/index.ts",
+        "sha": "7151916fe162f00ee44a0e240127d0bb9c5af453"
+      },
+      {
+        "path": "mods/diff/hooks/views/dialog-pane/dialog-window-of/index.ts",
+        "sha": "f50f3d1c39c22074e0ca8a3766d4c2baeaf670b6"
+      },
+      {
+        "path": "mods/diff/hooks/views/dialog-pane/list-body-of/index.ts",
+        "sha": "96fa17f5336a67aa92873400d512f88a2e0a7e0e"
+      },
+      {
+        "path": "mods/diff/hooks/views/dialog-pane/message-pane-of/index.ts",
+        "sha": "8a4704e07aa001d15671b4074182653d313a0f4b"
+      },
+      {
+        "path": "mods/diff/hooks/views/entries/body-entry-of/index.ts",
+        "sha": "2fae4424fc1fab389041ab2de19ecb4c43a8bb93"
+      },
+      {
+        "path": "mods/diff/hooks/views/entries/body-entry/index.ts",
+        "sha": "57e0a21564667ea53997e1cf6c9146c7dca2ae3e"
+      },
+      {
+        "path": "mods/diff/hooks/views/entries/detail-model-of/index.ts",
+        "sha": "de2d84c5c8e0c49631d36f9cc60b3a4cdd43e2da"
+      },
+      {
+        "path": "mods/diff/hooks/views/entries/turn-entry-of/index.ts",
+        "sha": "626047cf70864f096de7d3a10b5de2959a366a62"
+      },
+      {
+        "path": "mods/diff/hooks/views/kit/ui/index.ts",
+        "sha": "9d8eb46ef7a2e72faf0b22b3f77de6e3195de3d3"
+      },
+      {
+        "path": "mods/diff/hooks/views/layout/cell-width/index.ts",
+        "sha": "1b3ef08cd69a41239b74b84d29a93a8490380842"
+      },
+      {
+        "path": "mods/diff/hooks/views/layout/charged-width/index.ts",
+        "sha": "bbb7075bb33441a82892520d59d8837b8f36a029"
+      },
+      {
+        "path": "mods/diff/hooks/views/layout/pad-end/index.ts",
+        "sha": "aa07fddf740ca703afc4be8e71de0bca45abbe5b"
+      },
+      {
+        "path": "mods/diff/hooks/views/layout/plural/index.ts",
+        "sha": "c3ed00c1767306e4a16fcd18cad274f2005b11c3"
+      },
+      {
+        "path": "mods/diff/hooks/views/layout/sanitize-line/index.ts",
+        "sha": "da8f4c56d192c6c3d4fb29798556f406b7fa7297"
+      },
+      {
+        "path": "mods/diff/hooks/views/layout/sanitize-name/index.ts",
+        "sha": "fce8ca0c3b3e8d41d4676aaafe58ee3c531e25fa"
+      },
+      {
+        "path": "mods/diff/hooks/views/layout/tab-width/index.ts",
+        "sha": "a5c8786b72a299f4b27b54cff65826dc26406fbd"
+      },
+      {
+        "path": "mods/diff/hooks/views/layout/truncate-start/index.ts",
+        "sha": "615b34a732a0832aa6afdb7a3620bb1b1dadf0f4"
+      },
+      {
+        "path": "mods/diff/hooks/views/layout/wrapped-lines/index.ts",
+        "sha": "2c41c4d5f8434490be1ae2cced84f01a50df722f"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/ask-key-of/index.ts",
+        "sha": "7d6b428c0434e9db57f7994cd291e0e0e5c637d1"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/dialog-file-row/index.ts",
+        "sha": "4e60674b3423f003e4a6ed6f70562a96eab8af98"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/diff-stat/index.ts",
+        "sha": "afaeb9c57bda991763deb504ea4fa4c184c923fb"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/dim-note/index.ts",
+        "sha": "7adf3e29e8960e8ad23a316cccdc17a126eb9611"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/file-key-of/index.ts",
+        "sha": "c7db4eb43595a52900b5f31c2c149acf9356f60e"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/file-row-model/index.ts",
+        "sha": "9bac45bae3de313dfa17c0347832cbe5b3e5f7a1"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/file-row/index.ts",
+        "sha": "1394b6f679ef41984a7dea216f2c621142cf5e42"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/keyed-pressable/index.ts",
+        "sha": "ddcdd6dd750d4986513433637d45cbe633a748ec"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/list-edge-button/index.ts",
+        "sha": "99509f2282da5fdcde8e656f9f5a6feb7c28a87e"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/list-row/index.ts",
+        "sha": "0bb830e59ff68ca484597e8fbfe5df7b9ee53549"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/name-row/index.ts",
+        "sha": "3daf5106881f2b115018b04dd2bd22ecfc081e11"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/pointer/index.ts",
+        "sha": "eb89af57ff0454d801ae649d5869aad96953175f"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/present/index.ts",
+        "sha": "ae76f18f8194f06efb506649534b0040ff70af69"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/pressable/index.ts",
+        "sha": "8d5fc84f834f24d1d3f0d74dadfb4c42f141fe65"
+      },
+      {
+        "path": "mods/diff/hooks/views/sections/stat-text-of/index.ts",
+        "sha": "11204da21eaf56271d97d348a1453f93e995f690"
+      },
+      {
+        "path": "mods/sec-default/.claude-plugin/plugin.json",
+        "sha": "32efacdeb19da67666006f53eebf042bf8506460"
+      },
+      {
+        "path": "mods/sec-default/hooks/held-verdict/verdicts/ranking/index.ts",
+        "sha": "f065238b9644d91b8c2f0772be7cb1732f488a5b"
+      },
+      {
+        "path": "mods/sec-default/hooks/hooks.json",
+        "sha": "ef85bd3dae3e55b62cb6040170a3191acd4d85d9"
+      },
+      {
+        "path": "mods/sec-default/hooks/policy/managed-tools-restored/is-org-tool/index.ts",
+        "sha": "5d5298691522c4bee07664c0a1d7308255b04e79"
+      },
+      {
+        "path": "mods/sec-default/hooks/policy/own-option/member-of/index.ts",
+        "sha": "6f18ceb53bb45dc49965bb93dc84f9fc848de2fc"
+      },
+      {
+        "path": "mods/sec-default/hooks/policy/own-option/own-options-path/index.ts",
+        "sha": "cf522f85a82c2af329df402b08f117c202a6684f"
+      },
+      {
+        "path": "mods/sec-default/hooks/register.ts",
+        "sha": "d93dc393511beb08846ebb3bd394984d550070e3"
+      },
+      {
+        "path": "mods/telemetry/.claude-plugin/plugin.json",
+        "sha": "b402fb81e3b5be28b228347caea3573f7b28d4b9"
+      },
+      {
+        "path": "mods/telemetry/hooks/batching/is-retriable/status-request-timeout/index.ts",
+        "sha": "aa2595a812e3ceb16e7823f0c283843a1e1d50a7"
+      },
+      {
+        "path": "mods/telemetry/hooks/batching/is-retriable/status-server-error/index.ts",
+        "sha": "3584ce31ba0a28cc600562c0e328036a8cb64759"
+      },
+      {
+        "path": "mods/telemetry/hooks/batching/is-retriable/status-too-many-requests/index.ts",
+        "sha": "2b3dc14271cb969c9485a2ec537ae9e137f58ef1"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/client-type-of/client-type-by-entrypoint/index.ts",
+        "sha": "14b71b342b3ba6b511bc38992088610c994f4005"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/environment-fields-of/action-ref-of/index.ts",
+        "sha": "4cd3ed6df495d10a4d00f25d7a86cc31cdebe8b8"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/environment-fields-of/github-actions-fields-of/index.ts",
+        "sha": "e192abe438e199ec7b11c80234aa6191518bd009"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/environment-fields-of/tags-of/index.ts",
+        "sha": "29eb5b98d0358e4b0fe703421db1aa3eb2c9b87b"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/environment-fields/github-actions-fields/index.ts",
+        "sha": "270aa04df02599e3d2e3a349c10c0a7e6962ae90"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/identity/global-config-path/index.ts",
+        "sha": "dda1c31a9f79ee6493df857ea6df09b233a4b35a"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/identity/identity/index.ts",
+        "sha": "794483fa9f31bed477e07f8723cbedfa506d48ab"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/identity/plausible-uuid/index.ts",
+        "sha": "ddcb331cef89e9821fad7a786272f6448f8580b3"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/linux-distro-of/linux-distro/index.ts",
+        "sha": "47399088e9b0924bc8c385c087396d48fb8bf822"
+      },
+      {
+        "path": "mods/telemetry/hooks/context/linux-distro-of/os-release-value/index.ts",
+        "sha": "46ad821e9271c7a33a864c3dcc2d31d8b0b1da59"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T07:12:58Z",
+    "license": "LICENSE-file (type needs review)"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 403,
+    "failed": 1,
+    "ms": 133539
+  },
+  "duration_ms": 15768
+}

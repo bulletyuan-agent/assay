@@ -1,0 +1,276 @@
+{
+  "holdout": "data/calibration/holdout-v4",
+  "method_version": "0.5.0",
+  "run_at": "2026-11-02T15:49:42.025Z",
+  "hit_rule": "score<70 or any red flag",
+  "recall": 0.20833333333333334,
+  "wilson95": [
+    0.09244689104788088,
+    0.40470844485235474
+  ],
+  "k": 5,
+  "n": 24,
+  "by_difficulty": {
+    "plain": "3/9",
+    "obfuscated": "1/10",
+    "instruction-only": "1/5"
+  },
+  "by_type": {
+    "npm-package": "2/5",
+    "config": "2/7",
+    "pypi-package": "1/4",
+    "other": "0/5",
+    "mcp": "0/1",
+    "skill": "0/2"
+  },
+  "rows": [
+    {
+      "id": "01-npm-worm-token-republish",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "install-time-credential-read"
+      ],
+      "rules": [
+        "install-time-credential-read"
+      ],
+      "hit": true
+    },
+    {
+      "id": "02-gha-pull-request-target-exfil",
+      "type": "config",
+      "difficulty": "plain",
+      "score": 81,
+      "red_flags": [],
+      "rules": [
+        "gha-pull-request-target-checkout"
+      ],
+      "hit": false
+    },
+    {
+      "id": "03-dns-exfil-npm",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "04-browser-cookie-theft-npm",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "05-clipboard-address-swapper",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "06-reverse-shell-pypi",
+      "type": "pypi-package",
+      "difficulty": "obfuscated",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "07-cryptominer-postinstall",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "cryptominer"
+      ],
+      "rules": [
+        "undeclared-host",
+        "install-time-network",
+        "cryptominer"
+      ],
+      "hit": true
+    },
+    {
+      "id": "08-ssh-authorized-keys-backdoor",
+      "type": "other",
+      "difficulty": "plain",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "09-git-hook-injection",
+      "type": "other",
+      "difficulty": "obfuscated",
+      "score": 81,
+      "red_flags": [],
+      "rules": [
+        "ships-git-hooks"
+      ],
+      "hit": false
+    },
+    {
+      "id": "10-vscode-tasks-runon-folderopen",
+      "type": "config",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "folder-open-autorun"
+      ],
+      "rules": [
+        "folder-open-autorun"
+      ],
+      "hit": true
+    },
+    {
+      "id": "11-vscode-tasks-helper-payload",
+      "type": "other",
+      "difficulty": "obfuscated",
+      "score": 79,
+      "red_flags": [],
+      "rules": [
+        "folder-open-autorun"
+      ],
+      "hit": false
+    },
+    {
+      "id": "12-mcp-json-autoapprove",
+      "type": "config",
+      "difficulty": "plain",
+      "score": 81,
+      "red_flags": [],
+      "rules": [
+        "mcp-shell-wrapped"
+      ],
+      "hit": false
+    },
+    {
+      "id": "13-claude-md-injection",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "concealment-instruction"
+      ],
+      "rules": [
+        "concealment-instruction"
+      ],
+      "hit": true
+    },
+    {
+      "id": "14-agents-md-injection",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "15-cursorrules-injection",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "16-setup-py-cmdclass-install",
+      "type": "pypi-package",
+      "difficulty": "plain",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "17-pth-persistence-pypi",
+      "type": "pypi-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "pth-import-hook"
+      ],
+      "rules": [
+        "pth-import-hook"
+      ],
+      "hit": true
+    },
+    {
+      "id": "18-pypi-typosquat",
+      "type": "pypi-package",
+      "difficulty": "plain",
+      "score": 81,
+      "red_flags": [],
+      "rules": [
+        "install-time-network"
+      ],
+      "hit": false
+    },
+    {
+      "id": "19-ruby-extconf-exfil",
+      "type": "other",
+      "difficulty": "plain",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "20-go-init-exfil",
+      "type": "other",
+      "difficulty": "obfuscated",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "21-mcp-credential-logger",
+      "type": "mcp",
+      "difficulty": "obfuscated",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "22-skill-remote-instructions",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "23-skill-helper-payload",
+      "type": "skill",
+      "difficulty": "obfuscated",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "24-config-remote-prompt-fetch",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    }
+  ]
+}

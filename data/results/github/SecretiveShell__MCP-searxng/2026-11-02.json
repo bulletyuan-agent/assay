@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "SecretiveShell/MCP-searxng",
+    "url": "https://github.com/SecretiveShell/MCP-searxng",
+    "name": "MCP-searxng"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:50:19.420Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "7aba5ed80656818132ebaff35bde50c9c6d757be",
+    "files_scanned": 8,
+    "candidates": 8,
+    "excluded_non_shipped": 1,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/mcp_searxng/main.py",
+        "sha": "5b618320a4c99c45b76d20cfdc4464fdacfa7a67"
+      },
+      {
+        "path": "src/mcp_searxng/server.py",
+        "sha": "bb707a8c59f1c433c6e36d4d9a4ba31e70a111ab"
+      },
+      {
+        "path": "src/mcp_searxng/tools.py",
+        "sha": "7516fe41b255d87acdf0a3a27b22cda56c2c49de"
+      },
+      {
+        "path": "README.md",
+        "sha": "9309eb4becf2d48401403f29803c7b4e17f7e466"
+      },
+      {
+        "path": "smithery.yaml",
+        "sha": "773375314c1d583aad6f762fd3a6bc9ce9a4b0d4"
+      },
+      {
+        "path": "src/mcp_searxng/__init__.py",
+        "sha": "fc2440ac2ef4fb8a97a5f392bc45f213a40d749c"
+      },
+      {
+        "path": "src/mcp_searxng/prompts.py",
+        "sha": "078a743a6c32f47a91f60ec757ad499118a6b060"
+      },
+      {
+        "path": "src/mcp_searxng/search.py",
+        "sha": "0352795bbce30894d596c31d79c856fa9e1f4923"
+      }
+    ],
+    "repo_pushed_at": "2026-05-29T20:54:33Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 94,
+    "dims": {
+      "maintenance": 60,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 8,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 157
+  },
+  "network": {
+    "calls": 11,
+    "failed": 0,
+    "ms": 3875
+  },
+  "duration_ms": 1598
+}

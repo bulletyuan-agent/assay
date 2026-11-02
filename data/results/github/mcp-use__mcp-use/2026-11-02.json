@@ -1,0 +1,1792 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "mcp-use/mcp-use",
+    "url": "https://github.com/mcp-use/mcp-use",
+    "name": "mcp-use"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:52:21.909Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "f40099eb00085bded2b2c50b816b9070bc08f22b",
+    "files_scanned": 400,
+    "candidates": 926,
+    "excluded_non_shipped": 848,
+    "coverage": 0.43,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".mcp.json",
+        "sha": "4fc92cce9fd662c9ffebb7bbc2a3cc18b9e35fc8"
+      },
+      {
+        "path": ".github/workflows/approve-fork-pr.yml",
+        "sha": "8ee4e43a9ef980a47704f2492494c7543044de5c"
+      },
+      {
+        "path": ".github/workflows/auto-label.yml",
+        "sha": "5620780978a1a1def067172c078add0ed581b3c0"
+      },
+      {
+        "path": ".github/workflows/bump-mcp-use-reusable.yml",
+        "sha": "c35adee30e9568b61bc5622ad88d8d5d2edb7150"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "c29e5123b59447e265d63f45d474693a58c5d4b0"
+      },
+      {
+        "path": ".github/workflows/claude.yml",
+        "sha": "ef315a866902903b08c2e8f78a349b64d2a6d692"
+      },
+      {
+        "path": ".github/workflows/close-python-prs.yml",
+        "sha": "ed7090c842f4b2e6f81ecbb17f0b91cc50f19c36"
+      },
+      {
+        "path": ".github/workflows/conformance-comment.yml",
+        "sha": "08c586363b30ecfe85c221018e604b98a463652a"
+      },
+      {
+        "path": ".github/workflows/conformance.yml",
+        "sha": "ac03b63a747a14a56482d1fa4b9456522f54d386"
+      },
+      {
+        "path": ".github/workflows/create-app-e2e-canary.yml",
+        "sha": "d1a905fd5b6787693483d5369594d7eca50612c2"
+      },
+      {
+        "path": ".github/workflows/dependabot-changesets.yml",
+        "sha": "f96ae742376ad9f5863821462d45c7153f4847bd"
+      },
+      {
+        "path": ".github/workflows/docs.yml",
+        "sha": "7f3f3916bca8ef2a85fd81c3a63fe39a665e64a9"
+      },
+      {
+        "path": ".github/workflows/everything-typecheck.yml",
+        "sha": "a274cbf49a2f96d8b7bf636eed0681eac8fe2ff4"
+      },
+      {
+        "path": ".github/workflows/inspector-e2e-sequential.yml",
+        "sha": "563b672814af690e48c1abc8063c0b0411c7a056"
+      },
+      {
+        "path": ".github/workflows/inspector-e2e.yml",
+        "sha": "0ccd0707a982135d06bee4e6622a58eb48f0ab51"
+      },
+      {
+        "path": ".github/workflows/links.yml",
+        "sha": "9b17815df22911bc68831aba697a9d56df151e42"
+      },
+      {
+        "path": ".github/workflows/pr-labeler.yml",
+        "sha": "b501aab179f3f1a72945c18af2cdaa909d16b89a"
+      },
+      {
+        "path": ".github/workflows/publish-inspector-docker.yml",
+        "sha": "fc01397484366aa3b579924a93f2fe1de4180e71"
+      },
+      {
+        "path": ".github/workflows/python-release.yml",
+        "sha": "0f55c25298ee58dca8703c5c85ae7331666add1c"
+      },
+      {
+        "path": ".github/workflows/release-notes.yml",
+        "sha": "63766deb6fd49b4dacb85711a8525a1260c7b457"
+      },
+      {
+        "path": ".github/workflows/sdk-evals-synthesis.yml",
+        "sha": "9da88a808aa7ed810316254f9296e1ddb85bdf2b"
+      },
+      {
+        "path": ".github/workflows/sdk-evals.yml",
+        "sha": "87fb0f78f60b5662cfcff98a1c999bb2d861bca6"
+      },
+      {
+        "path": ".github/workflows/server-examples.yml",
+        "sha": "7605c0e6d56cdcf04feca6f350397849ffb18c72"
+      },
+      {
+        "path": ".github/workflows/stale.yml",
+        "sha": "c325cfb43fb2c898f6d15296e06ca82f2d55f243"
+      },
+      {
+        "path": ".github/workflows/sync-cli.yml",
+        "sha": "056ff2eb75f9afd69af867f9007a82b8498c0f58"
+      },
+      {
+        "path": ".github/workflows/sync-inspector.yml",
+        "sha": "22dd002f96ee7f48cca2f7c7b8a6bb28543ce8f9"
+      },
+      {
+        "path": ".github/workflows/test-release-notifications.yml",
+        "sha": "f3517dc953cdc18e25a6a4d072e5efbd9d1e27eb"
+      },
+      {
+        "path": ".github/workflows/typescript-pr-preview.yml",
+        "sha": "fd90b6ac31dfe66850c9d12be739e4140a85c6ee"
+      },
+      {
+        "path": ".github/workflows/typescript-release.yml",
+        "sha": "bfea1a98d97fad7981e8be2b632060401d6418f1"
+      },
+      {
+        "path": "skills/chatgpt-app-builder/SKILL.md",
+        "sha": "6e171b0032bf725fec0c4f926b2f00b88835b8ad"
+      },
+      {
+        "path": "skills/mcp-apps-builder/SKILL.md",
+        "sha": "f5b56a46c38d3849ecf628388da0d1dd3783d4ba"
+      },
+      {
+        "path": "skills/mcp-builder/SKILL.md",
+        "sha": "49246a6a30d485cf3fbe739b341525e3bd712e65"
+      },
+      {
+        "path": "skills/openapi-to-mcp/SKILL.md",
+        "sha": "e6f5fdb8d81fea83af49442585b1c375bcbd5732"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/install-targets.ts",
+        "sha": "fbc112971488dd233b8432e8a562e9614941baae"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "e97a90e4c9e425cc9a09ac70907f8a9cdb877ae2"
+      },
+      {
+        "path": "benchmark.md",
+        "sha": "7b80870390cca7b9216c31b5a86c21beddb60e28"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "d82ac5628f1475685f9ea8359d4a126b0adb52a6"
+      },
+      {
+        "path": "context7.json",
+        "sha": "1702bec4cb71ea2784e946eb8f035fdf41635e7b"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "c419db1a91ff4e4c5479310f528053331b7a5595"
+      },
+      {
+        "path": "README.md",
+        "sha": "7a475d6445c61655d6589466e998bfd78c0fdc85"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "1d3c690575b4a8192d0353a09cf27fb90324b37b"
+      },
+      {
+        "path": "skills/chatgpt-app-builder/references/server.md",
+        "sha": "0d0c8f22bc30d8b4b4cf78814770d0c4dca907ce"
+      },
+      {
+        "path": "skills/mcp-apps-builder/references/server.md",
+        "sha": "0d0c8f22bc30d8b4b4cf78814770d0c4dca907ce"
+      },
+      {
+        "path": "skills/mcp-builder/references/server.md",
+        "sha": "0d0c8f22bc30d8b4b4cf78814770d0c4dca907ce"
+      },
+      {
+        "path": "libraries/typescript/package.json",
+        "sha": "ac76a76b64aea4bc4ce28417904cda5b9d0384c5"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "bf5e9dfa8248b6071b5ccd1c1378d84c6f133131"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/server.py",
+        "sha": "26cbba8341d62d684d6106f2bf21734bbb2ece30"
+      },
+      {
+        "path": "libraries/python/.pre-commit-config.yaml",
+        "sha": "13ce42749b16d21f801a62d0fe9f7a4051386cb5"
+      },
+      {
+        "path": "libraries/python/DEPENDENCY_POLICY.md",
+        "sha": "7ab2e0d8a8e3a9033aa6b303d04079ad6f178fba"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/templates/cli.py",
+        "sha": "fdd13e2f768a218d501ecbaf6d48d0b6a8693d39"
+      },
+      {
+        "path": "libraries/python/README.md",
+        "sha": "eb94782c58b6f72d47a9232f6064ff7dcfb66c69"
+      },
+      {
+        "path": "libraries/python/ROADMAP.md",
+        "sha": "abad5fef62fd766cc4334468f14ef7ddd95a69dc"
+      },
+      {
+        "path": "libraries/typescript/.prettierrc.json",
+        "sha": "e01347d987a9b27fdf2cbb532f14feac294a2e9c"
+      },
+      {
+        "path": "libraries/typescript/API.md",
+        "sha": "2207dfe0c93674d938d2c3effebfb1a8ab6bb10b"
+      },
+      {
+        "path": "libraries/typescript/eslint.config.js",
+        "sha": "a50de09b6ba5b32beb181f8d0247c69900d7b07b"
+      },
+      {
+        "path": "libraries/typescript/knip.json",
+        "sha": "9a0078562a10d7cef3842341591c61f36e47b500"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/index.ts",
+        "sha": "d84e8212e6ac48ed07054e64556493600f2d71a0"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/src/index.ts",
+        "sha": "5131c4f298e0423369b2aadc0cc45bbe4d1fe26e"
+      },
+      {
+        "path": "libraries/typescript/packages/client/src/index.ts",
+        "sha": "80a9319c3186d804dc672e5b02fde3111ddad970"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/src/index.ts",
+        "sha": "6b7e002242fc1f4804d1f133a5b3e4ce9c23b06d"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/index.ts",
+        "sha": "2d867f02b22794ce4d68f7e7b8d2ec79a16cb49b"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/server.ts",
+        "sha": "4c014f490a1c1122566a6961655a8e3e1696df24"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/tools.ts",
+        "sha": "59599c1ac22a5578b5e7af5a349f7146eda3137a"
+      },
+      {
+        "path": "libraries/typescript/packages/tunnel/src/cli.ts",
+        "sha": "10b747d6f522ff498a1df0e70009de7a1ba822e6"
+      },
+      {
+        "path": "libraries/typescript/packages/tunnel/src/index.ts",
+        "sha": "6f0727d1320e2b3ebac7b8861eab62835a3e1725"
+      },
+      {
+        "path": "libraries/typescript/pnpm-workspace.yaml",
+        "sha": "c7afe845c3991cccd39f9572dd47bc33263f0920"
+      },
+      {
+        "path": "libraries/typescript/README.md",
+        "sha": "e9be28452c0e01df28d0ae55cb9fafec07cc5ba0"
+      },
+      {
+        "path": "libraries/typescript/tsconfig.json",
+        "sha": "707ed10e4a115092c5a9ed6559adf9c336dd2785"
+      },
+      {
+        "path": "libraries/typescript/tsdoc.json",
+        "sha": "3a5da334ceb6a138864db4e7e22e3f1fd4f38a81"
+      },
+      {
+        "path": "libraries/typescript/typedoc.options.json",
+        "sha": "285ccc638cebdd568d8d1ac7fd4e71145faf0ba5"
+      },
+      {
+        "path": "libraries/typescript/vercel.json",
+        "sha": "d47c911d020dfa0086d16668075e124fd0fbe24b"
+      },
+      {
+        "path": "skills/chatgpt-app-builder/LICENSE.txt",
+        "sha": "f6a9638f5f3767083926164cac588afeda0f58a7"
+      },
+      {
+        "path": "skills/mcp-apps-builder/LICENSE.txt",
+        "sha": "f6a9638f5f3767083926164cac588afeda0f58a7"
+      },
+      {
+        "path": "skills/mcp-builder/LICENSE.txt",
+        "sha": "f6a9638f5f3767083926164cac588afeda0f58a7"
+      },
+      {
+        "path": "skills/openapi-to-mcp/LICENSE.txt",
+        "sha": "f6a9638f5f3767083926164cac588afeda0f58a7"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/package.json",
+        "sha": "7789923f07b67785f9d2f271b011342cd0db15e5"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/package.json",
+        "sha": "6661b129eba33a6c42b5c0806fc444ac9685f7f5"
+      },
+      {
+        "path": "libraries/typescript/packages/client/package.json",
+        "sha": "f91881ba08863d8d79e07e49ea18d4d4f0a1b452"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/package.json",
+        "sha": "9e6912bd808bc1e26e0d4a92ccba602aa0842451"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/package.json",
+        "sha": "4320ef0cd2361d30329cc28c146ccd99e983276c"
+      },
+      {
+        "path": "libraries/typescript/packages/server/package.json",
+        "sha": "9d05d8309aece975112101e92f372839198049b5"
+      },
+      {
+        "path": "libraries/typescript/packages/tunnel/package.json",
+        "sha": "d66e813a71c000e5765368591e68eda0d917f56b"
+      },
+      {
+        "path": "libraries/python/mcp_use/__init__.py",
+        "sha": "ff8ce2bccb721ef3a91946b347065a1cc45a1984"
+      },
+      {
+        "path": "libraries/python/mcp_use/client.py",
+        "sha": "fed5112ca831297ce342985b82106d92ea9efa2e"
+      },
+      {
+        "path": "libraries/python/mcp_use/config.py",
+        "sha": "cd3e37ee1cc5769e2da34d7b5b75df30c2ffd711"
+      },
+      {
+        "path": "libraries/python/mcp_use/exceptions.py",
+        "sha": "d77823ec034952be5b00cd1a12d8716c091f6f3d"
+      },
+      {
+        "path": "libraries/python/mcp_use/logging.py",
+        "sha": "c516a74f49651a02c5160a19544ea79c66c042bf"
+      },
+      {
+        "path": "libraries/python/mcp_use/session.py",
+        "sha": "541a74dbaf2a89a67e4de911491069718fe82d63"
+      },
+      {
+        "path": "libraries/python/mcp_use/utils.py",
+        "sha": "f9994e7af1c57446bba9f46f0279717d66abd543"
+      },
+      {
+        "path": "libraries/typescript/.changeset/config.json",
+        "sha": "dfa0f35cf7aa56dcf29a938289e0a9923beee1b2"
+      },
+      {
+        "path": "libraries/typescript/.changeset/README.md",
+        "sha": "5553da9ae45ebfd0af9c686025fe8424c528b4de"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/adapters/index.ts",
+        "sha": "c7643fb04d800fb63e7481f5ca1d83f5a2036f36"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/observability/index.ts",
+        "sha": "b294432810af3e496d50242d2e5a2e2197097b9b"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/src/bin/main.ts",
+        "sha": "3455df73737bab15ed64030842c0cd24b35901b3"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/src/cli/index.ts",
+        "sha": "1f2752e4ab18a312a941ebb8c80e477b174ad5e5"
+      },
+      {
+        "path": "libraries/typescript/packages/client/src/react/index.ts",
+        "sha": "e13e4828a24681b78208d9960f58315d6d72a57b"
+      },
+      {
+        "path": "libraries/typescript/packages/client/src/telemetry/index.ts",
+        "sha": "c59d58dbc182a19cbb55692877076fce6bdac866"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/src/client/App.tsx",
+        "sha": "74dc4091577693540192b36499320557a6f2f23c"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/src/client/index.ts",
+        "sha": "2171319e8e2256d71c80bbd7ae70d5e91744239e"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/src/client/main.tsx",
+        "sha": "ec45790688728edef34dc8cac3a9f3d262e29e08"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/src/server/cli.ts",
+        "sha": "72695c4fe930cab13b6500a486bf6d8f506d12f1"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/src/server/index.ts",
+        "sha": "633c804652ef7fe8a2edc2fb6be00ead20bfb214"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/src/server/server.ts",
+        "sha": "3a7687f2ba5ef5606cc9b1beae85656740d5df98"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/next/handler.ts",
+        "sha": "13bc6364ff75bde3078711769029abdb473faa93"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/next/index.ts",
+        "sha": "c2fb4b0ec46c2b389e76bfd43243a294fc939ba3"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/oauth/index.ts",
+        "sha": "14670368aea098516c05888f76a34679beb222dd"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/openapi/index.ts",
+        "sha": "8df0b0b427a40f45692f6fd65656692c75192020"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/react/index.ts",
+        "sha": "fc4a2320418344b169fc7bf40fd204adcd1683b9"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/tanstack-start/index.ts",
+        "sha": "78ad27d5a9a4986e782354f3b362f09f3d09f9b4"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/views/index.ts",
+        "sha": "cf81bb8f91e369fd11319e29286ff07d6ec2fced"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/vite/index.ts",
+        "sha": "43a96dbb558a6a0795de78f7bb11dd5dfd777a94"
+      },
+      {
+        "path": "libraries/typescript/scripts/package-readme.mjs",
+        "sha": "f74e6a06ba29dc6c610eccd2ae51a23518a97cbf"
+      },
+      {
+        "path": "libraries/typescript/scripts/release-artifact.mjs",
+        "sha": "d69cd1898e5a46ac87d019023210d084bafdb809"
+      },
+      {
+        "path": "libraries/typescript/scripts/release-channel.mjs",
+        "sha": "178b1e2f923d43f8bad7ea6d97ed71d09f4b7c8b"
+      },
+      {
+        "path": "libraries/typescript/scripts/release-propagation.mjs",
+        "sha": "0a298c544f972d1ea7c6270f5013fd70b6c47e11"
+      },
+      {
+        "path": "libraries/typescript/scripts/RELEASING.md",
+        "sha": "a69201d022d57524ac6e9dd17502ff3b96ec99c8"
+      },
+      {
+        "path": "libraries/typescript/scripts/summarize-conformance.mjs",
+        "sha": "42c7a28b086ac186f93066720327c19188fa3f86"
+      },
+      {
+        "path": "libraries/typescript/scripts/typedoc-navigation-plugin.mjs",
+        "sha": "c01f2168d6277bb2b80caceeadeae020be038e4b"
+      },
+      {
+        "path": "libraries/typescript/scripts/verify-release-install.mjs",
+        "sha": "ce2981102d4a554d82f186ca7eabbba34336bef5"
+      },
+      {
+        "path": "libraries/typescript/scripts/version-packages.mjs",
+        "sha": "297eabe59a6ac42e2da09dab845f7bc6726d7a7c"
+      },
+      {
+        "path": "skills/chatgpt-app-builder/references/advanced-features.md",
+        "sha": "8f11ef8d41903f7b154c383b9f36c9a2f8d40dcd"
+      },
+      {
+        "path": "skills/chatgpt-app-builder/references/auth.md",
+        "sha": "4317479bafe7bf2cf447930dada93968c105f93a"
+      },
+      {
+        "path": "skills/chatgpt-app-builder/references/migration.md",
+        "sha": "ae65f0c42281479a6da04196e7ee02cb5aa432b0"
+      },
+      {
+        "path": "skills/chatgpt-app-builder/references/skills-over-mcp.md",
+        "sha": "5e9db25691be7812ed15ff594917a19b8bbaddd3"
+      },
+      {
+        "path": "skills/chatgpt-app-builder/references/verification.md",
+        "sha": "85734f58e0c2a6a417e70155e0a898e4bd97a31d"
+      },
+      {
+        "path": "skills/chatgpt-app-builder/references/views.md",
+        "sha": "f5f108fae628301fc9be6e99202dbf7058cf846c"
+      },
+      {
+        "path": "skills/mcp-apps-builder/references/advanced-features.md",
+        "sha": "8f11ef8d41903f7b154c383b9f36c9a2f8d40dcd"
+      },
+      {
+        "path": "skills/mcp-apps-builder/references/auth.md",
+        "sha": "4317479bafe7bf2cf447930dada93968c105f93a"
+      },
+      {
+        "path": "skills/mcp-apps-builder/references/migration.md",
+        "sha": "ae65f0c42281479a6da04196e7ee02cb5aa432b0"
+      },
+      {
+        "path": "skills/mcp-apps-builder/references/skills-over-mcp.md",
+        "sha": "5e9db25691be7812ed15ff594917a19b8bbaddd3"
+      },
+      {
+        "path": "skills/mcp-apps-builder/references/verification.md",
+        "sha": "85734f58e0c2a6a417e70155e0a898e4bd97a31d"
+      },
+      {
+        "path": "skills/mcp-apps-builder/references/views.md",
+        "sha": "f5f108fae628301fc9be6e99202dbf7058cf846c"
+      },
+      {
+        "path": "skills/mcp-builder/references/advanced-features.md",
+        "sha": "8f11ef8d41903f7b154c383b9f36c9a2f8d40dcd"
+      },
+      {
+        "path": "skills/mcp-builder/references/auth.md",
+        "sha": "4317479bafe7bf2cf447930dada93968c105f93a"
+      },
+      {
+        "path": "skills/mcp-builder/references/migration.md",
+        "sha": "ae65f0c42281479a6da04196e7ee02cb5aa432b0"
+      },
+      {
+        "path": "skills/mcp-builder/references/skills-over-mcp.md",
+        "sha": "5e9db25691be7812ed15ff594917a19b8bbaddd3"
+      },
+      {
+        "path": "skills/mcp-builder/references/verification.md",
+        "sha": "85734f58e0c2a6a417e70155e0a898e4bd97a31d"
+      },
+      {
+        "path": "skills/mcp-builder/references/views.md",
+        "sha": "f5f108fae628301fc9be6e99202dbf7058cf846c"
+      },
+      {
+        "path": "skills/openapi-to-mcp/references/auth.md",
+        "sha": "803216bba8680ffc964afd57912cfd8d72672899"
+      },
+      {
+        "path": "skills/openapi-to-mcp/references/code-templates.md",
+        "sha": "5c8a6f28d898ec5cbdd741d8fa96b43c1048a6ba"
+      },
+      {
+        "path": "skills/openapi-to-mcp/references/deploy.md",
+        "sha": "12fd627d560331567f4f0532df40084f38058486"
+      },
+      {
+        "path": "skills/openapi-to-mcp/references/mapping-rules.md",
+        "sha": "c144171b3950cd54fd2f92e942f3a0625621ff6b"
+      },
+      {
+        "path": "skills/openapi-to-mcp/references/testing.md",
+        "sha": "c6bc65b5b7cf74c0c5d88d974fc91535836b726f"
+      },
+      {
+        "path": "libraries/python/mcp_use/adapters/__init__.py",
+        "sha": "a0b7ff7c59c27bbeb297592fbb5660bbcd1a78fa"
+      },
+      {
+        "path": "libraries/python/mcp_use/adapters/base.py",
+        "sha": "d1a2892ceb2bd2d4753029b5ea9c8d1be19040dd"
+      },
+      {
+        "path": "libraries/python/mcp_use/adapters/langchain_adapter.py",
+        "sha": "656cb32d814bfe4be60dabf9d64e1d9dd803fcb0"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/__init__.py",
+        "sha": "20957f9801e8c6ce597c52c201dd151bcc1635da"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/base.py",
+        "sha": "7b977c79e9f99f84efff0b7d911e935e8816b54d"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/display.py",
+        "sha": "8694c445f762dbdf25aa1328a3349741345c3976"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/mcpagent.py",
+        "sha": "e5fa6926c115ca1fa97729040e5d479c44b47aa8"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/remote.py",
+        "sha": "f016ef38202f12245f9e41aea3768614510215c2"
+      },
+      {
+        "path": "libraries/python/mcp_use/auth/__init__.py",
+        "sha": "f5849281ef1a161d874663a9c250676d10d0e3ea"
+      },
+      {
+        "path": "libraries/python/mcp_use/auth/bearer.py",
+        "sha": "98ae7c5f87436ad643d286fa33045ce28390d74d"
+      },
+      {
+        "path": "libraries/python/mcp_use/auth/oauth_callback.py",
+        "sha": "31974372e7b09a401723934b6304e847603b299b"
+      },
+      {
+        "path": "libraries/python/mcp_use/auth/oauth.py",
+        "sha": "fca4eae65ec8a05da2449f9b4a8236b9902868d7"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/__init__.py",
+        "sha": "008ba1b07202e350f8e3d6d5cda50971daef8e31"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/client.py",
+        "sha": "fe8fa2c64105f74b587fe2f8bce9f1182863c56a"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/code_executor.py",
+        "sha": "f3b219b1890800734cad8f869e4fa2088453540d"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/config.py",
+        "sha": "63195a75e60408f9d4582afbdb7ca3892c9d2683"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/exceptions.py",
+        "sha": "6c943a780a472c6a77227cea33d1f2544aa03ddd"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/prompts.py",
+        "sha": "0ba6ab3a5d53c107c6ae4386bd651b40471ed8b2"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/session.py",
+        "sha": "e4b71bba82e0ad556723ee7ea49eac7e122f59d3"
+      },
+      {
+        "path": "libraries/python/mcp_use/connectors/__init__.py",
+        "sha": "616731135f1258db479f27f427cd065c330a578f"
+      },
+      {
+        "path": "libraries/python/mcp_use/connectors/base.py",
+        "sha": "bc4d5753b1f7bd4133cea4cab091e486ecbc518a"
+      },
+      {
+        "path": "libraries/python/mcp_use/connectors/http.py",
+        "sha": "8f21a707b2f6876884b0bf78f0e4deaa0b2d2746"
+      },
+      {
+        "path": "libraries/python/mcp_use/connectors/sandbox.py",
+        "sha": "29cd308b93e582553333e273a9adb67ec79347ef"
+      },
+      {
+        "path": "libraries/python/mcp_use/connectors/stdio.py",
+        "sha": "54f72f645e7f95fd0125b387359743021889e733"
+      },
+      {
+        "path": "libraries/python/mcp_use/connectors/utils.py",
+        "sha": "96ee0bcc409b71ddbdaba4cf17e1acdb2dea4701"
+      },
+      {
+        "path": "libraries/python/mcp_use/connectors/websocket.py",
+        "sha": "77f9df2b5de4793c27e58120458e004a88323d66"
+      },
+      {
+        "path": "libraries/python/mcp_use/errors/__init__.py",
+        "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc"
+      },
+      {
+        "path": "libraries/python/mcp_use/errors/error_formatting.py",
+        "sha": "c47030c5542449ebe8a9b48fd6b9112168aa5483"
+      },
+      {
+        "path": "libraries/python/mcp_use/managers/__init__.py",
+        "sha": "9d7e578deef4665e39819ecd9621a14c0615889e"
+      },
+      {
+        "path": "libraries/python/mcp_use/managers/base.py",
+        "sha": "a212ca75a0f8328256fb22ed8bfd8b0c68743f9f"
+      },
+      {
+        "path": "libraries/python/mcp_use/managers/server_manager.py",
+        "sha": "6b0a717358852344a4f352c5aa66b897361f13c6"
+      },
+      {
+        "path": "libraries/python/mcp_use/middleware/__init__.py",
+        "sha": "f2c44247f25ac349db2b94942a61929a0a93fec3"
+      },
+      {
+        "path": "libraries/python/mcp_use/middleware/logging.py",
+        "sha": "915ee9cd219c616598121d55b9df78d0768215ec"
+      },
+      {
+        "path": "libraries/python/mcp_use/middleware/metrics.py",
+        "sha": "862545e88537186960c53c3c6ed05f0483007be1"
+      },
+      {
+        "path": "libraries/python/mcp_use/middleware/middleware.py",
+        "sha": "bd439db8f301b99f26954e225d664281f8dc9780"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/__fastmcp.py",
+        "sha": "ca5b2f6027e5f4d82a326cd876410dbb1b91aec4"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/__init__.py",
+        "sha": "613ca13e3cb43f65e49040414542b793f1b34052"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/context.py",
+        "sha": "cb817f5fa3f89082e5b1a38222654d67304d5036"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/router.py",
+        "sha": "d73b877e7a989956960d200d65bcf1cf253110b1"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/runner.py",
+        "sha": "8a065b1030f8c6b6d22ae2338260f806fda9ae11"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/types.py",
+        "sha": "5be2781136395340e1fe3f1da85b244e1084c382"
+      },
+      {
+        "path": "libraries/python/mcp_use/task_managers/__init__.py",
+        "sha": "674ddf266a31e377b3bbaa03369645ec87b5e08f"
+      },
+      {
+        "path": "libraries/python/mcp_use/task_managers/base.py",
+        "sha": "68cf202322353769306fa0f94eafb096d1cda69d"
+      },
+      {
+        "path": "libraries/python/mcp_use/task_managers/sse.py",
+        "sha": "cd869377e34f08c027bb544acf81abf5cc885431"
+      },
+      {
+        "path": "libraries/python/mcp_use/task_managers/stdio.py",
+        "sha": "73e09247f7879525500bdc577f8bb832337b9f1b"
+      },
+      {
+        "path": "libraries/python/mcp_use/task_managers/streamable_http.py",
+        "sha": "ba10c442fe0454cdecc14cd16e71aedd72f3c0fd"
+      },
+      {
+        "path": "libraries/python/mcp_use/task_managers/websocket.py",
+        "sha": "9c94fda15caf81c72a0172a307b20a50dfa793a1"
+      },
+      {
+        "path": "libraries/python/mcp_use/telemetry/__init__.py",
+        "sha": "2d3570b8ab958ddead5ca5f09eabf5de68a290c4"
+      },
+      {
+        "path": "libraries/python/mcp_use/telemetry/events.py",
+        "sha": "5c11520381a6c46d156c396820bced13dc91cbfe"
+      },
+      {
+        "path": "libraries/python/mcp_use/telemetry/telemetry.py",
+        "sha": "fd59348d507bef73a5e0333fa1e5195e07a3ddfb"
+      },
+      {
+        "path": "libraries/python/mcp_use/telemetry/utils.py",
+        "sha": "cc10d72908af615abd3a87051ddb91df1b07fdb9"
+      },
+      {
+        "path": "libraries/python/mcp_use/types/sandbox.py",
+        "sha": "0e5d4f462338455a1a0151296c824c43e059df5f"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/CHANGELOG.md",
+        "sha": "d9c1b3473f92b71604cacdde4c891cbda8456939"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/README.md",
+        "sha": "f3dbd84dc2e07c83a5c5d75c4d41324b7849a36a"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/agents/prompts/index.ts",
+        "sha": "1aa84cd37008a9d03a31ec29346acef259603146"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/agents/utils/index.ts",
+        "sha": "68aa52fce077a3e4e19aa650c2f39694567fde4c"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/llm/providers/index.ts",
+        "sha": "62bf91e881463030bc05d14b386ab2b1e438be60"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/managers/tools/index.ts",
+        "sha": "b1be2515e6a4efba6fc40fdd84c8505d7bf167f4"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/tsconfig.json",
+        "sha": "7f0ec384c2730e612a619737b8b7a6175f0808e8"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/tsup.config.ts",
+        "sha": "d494754e0e4c590cddb6766a219830d3b4132588"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/typedoc.json",
+        "sha": "a3aa4ae3d79d694b6400f73777b2bd114c35468a"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/vitest.config.ts",
+        "sha": "01de88d3bd0ef58697f74d18930e4066e8206b52"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/CHANGELOG.md",
+        "sha": "96775748eeb0687fb775e75a045b116289ff7f3f"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/README.md",
+        "sha": "28f653428be2bb8988733c5fad56a8b0c1914da6"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/THIRD_PARTY_NOTICES.md",
+        "sha": "0e5149af5ba16cb9f29515fabc5734d69d270849"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/tsconfig.json",
+        "sha": "a787001e2519d78c1827bf44b4253054533cab6c"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/tsup.config.ts",
+        "sha": "c193c94ed99f91a569b7e6e3660c4283dce8bb84"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/vitest.config.ts",
+        "sha": "aaf61e623fe7fc377eb404be7b7994304bc90722"
+      },
+      {
+        "path": "libraries/typescript/packages/client/CHANGELOG.md",
+        "sha": "82a517e254cef70be02fff4014e02989d9d9aacf"
+      },
+      {
+        "path": "libraries/typescript/packages/client/README.md",
+        "sha": "a73ebbf7de5f751702dd6a4fc5e469f645a51a28"
+      },
+      {
+        "path": "libraries/typescript/packages/client/tsconfig.json",
+        "sha": "a76bd4422852236d1d2fcb148c045245d65693af"
+      },
+      {
+        "path": "libraries/typescript/packages/client/tsdoc.json",
+        "sha": "f5a4dc61a92434ad2f252810acc49a6d5a74f91e"
+      },
+      {
+        "path": "libraries/typescript/packages/client/tsup.config.ts",
+        "sha": "a51d785f36adef3ae75ddb61c0e766b26636f60e"
+      },
+      {
+        "path": "libraries/typescript/packages/client/typedoc.json",
+        "sha": "fa54a56ac0c01300404244714b4a2d65fc22718a"
+      },
+      {
+        "path": "libraries/typescript/packages/client/vitest.config.ts",
+        "sha": "a4155c427b207c7264fed45b4ca41881b3c1c5f4"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/CHANGELOG.md",
+        "sha": "d4d90d14199fe70e754afbe6161dfca930389521"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/README.md",
+        "sha": "453d01166dd2cbbf5e7ae4c9ea076457879e2c47"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/src/templates/blank/index.ts",
+        "sha": "c2437477de5a920de8873dfcaab2ea911f43eb24"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/src/templates/mcp-apps/index.ts",
+        "sha": "9333e405c1d78a5625bfacdd8280dfcc097cece2"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/src/templates/mcp-server/index.ts",
+        "sha": "5c3fc4f2199a99c3b05c36b613a0d9dcf5d89140"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/test-cli.sh",
+        "sha": "647cdb12e3c2208d4a44cac5674d17b29fe78a79"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/TESTING.md",
+        "sha": "9e23029833889bf63163e679480f38190ff7bb73"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/tsconfig.json",
+        "sha": "60d79bdde4687b5a00647c64718c819fa053942e"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/.yarnrc.yml",
+        "sha": "e2fc2e8758333ecbb662c9dc71e3595d9fc08ff6"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/components.json",
+        "sha": "aa7124a028e693145098673f8296eb1652ab1ae9"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/playwright.config.ts",
+        "sha": "82493fd3006a5cc2ddc1de66888d3341f741c6a8"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/pnpm-lock.yaml",
+        "sha": "3d4b46e2332e75523bf388d0884344d9d6859c0f"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/README.md",
+        "sha": "d9e4a5e1fb368cb38fc7da929c0e8ab7f44a2e1b"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/src/client/telemetry/index.ts",
+        "sha": "491f4ee4e6eada90ad9bc42759bc170a7a236b1d"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/src/server/proxy/index.ts",
+        "sha": "79042194bdb519315d6115c81a71556aadc32fcd"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/start-auth-servers.ts",
+        "sha": "633baa32bd816cf9d49579cd518eb11540d60d6c"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/tsconfig.client.json",
+        "sha": "10de7ddb165c83f991d6e42b91ab42904c2acf13"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/tsconfig.json",
+        "sha": "cfffa3cf7d029402fa993b07246aa0e32799ecab"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/tsconfig.node.json",
+        "sha": "25f31b251cabb854d4f45f5b62a2403622877b00"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/tsconfig.server.json",
+        "sha": "3959d98212071d05caf122d024bfc1cc10771934"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/tsup.client.ts",
+        "sha": "cbb93ea1d6f0475d6278d1ed73a357991287670b"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/tsup.server.ts",
+        "sha": "d7844b0df35edcd7306db42fb47e57f31e0e8d4f"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/vite.app.config.ts",
+        "sha": "6bd69318f4088d89f0d307e2a0cdf5d5be09cafa"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/vite.config.ts",
+        "sha": "9527bda998dfd0ce69684f60a7ff78ec6aca7694"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/vitest.config.ts",
+        "sha": "f82a6d1fa64979b059f37518225f205ca09189f5"
+      },
+      {
+        "path": "libraries/typescript/packages/server/AGENTS.md",
+        "sha": "217148f6700a7549cc76716a5aeaf276e393e498"
+      },
+      {
+        "path": "libraries/typescript/packages/server/CHANGELOG.md",
+        "sha": "a87cf3153f24871594153ab741867a0035b7f803"
+      },
+      {
+        "path": "libraries/typescript/packages/server/CLAUDE.md",
+        "sha": "217148f6700a7549cc76716a5aeaf276e393e498"
+      },
+      {
+        "path": "libraries/typescript/packages/server/doctor.config.json",
+        "sha": "702cba9a1d76f9d241792660bb59a5ae9e94ffaa"
+      },
+      {
+        "path": "libraries/typescript/packages/server/README.md",
+        "sha": "7a475d6445c61655d6589466e998bfd78c0fdc85"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/oauth/proxy/index.ts",
+        "sha": "b5e863c80c9f6c9aa07151f60d04975d28bb427c"
+      },
+      {
+        "path": "libraries/typescript/packages/server/tsconfig.json",
+        "sha": "e522733bd82c29c2e4aa15bd5e4a02a565d9e61c"
+      },
+      {
+        "path": "libraries/typescript/packages/server/tsup.config.ts",
+        "sha": "df6468d15eb92a9c02889d021740ea4df47714b2"
+      },
+      {
+        "path": "libraries/typescript/packages/server/typedoc.json",
+        "sha": "408847c9dc1e9d07cff3ec50c989c10de68df08f"
+      },
+      {
+        "path": "libraries/typescript/packages/server/vitest.config.ts",
+        "sha": "4d83acdb876b8c10bfbb59e788b9c2bd867e1ab7"
+      },
+      {
+        "path": "libraries/typescript/packages/tunnel/CHANGELOG.md",
+        "sha": "05a727802f9fb7d0359b26816a49ace9e5b0e259"
+      },
+      {
+        "path": "libraries/typescript/packages/tunnel/README.md",
+        "sha": "7186257d0fa5f8ce57ab99420ed6ab407189aeb7"
+      },
+      {
+        "path": "libraries/typescript/packages/tunnel/tsconfig.json",
+        "sha": "fe5fb4c72be83a42cb972f78e97e00455a1c9a27"
+      },
+      {
+        "path": "libraries/typescript/packages/tunnel/tsup.config.ts",
+        "sha": "644bcf3fa0b098957d6b32d9e1680f26ceebb61d"
+      },
+      {
+        "path": "libraries/typescript/packages/tunnel/typedoc.json",
+        "sha": "fac3a93d1645c68eefa30dfa427c6292d41d23d3"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/adapters/__init__.py",
+        "sha": "93b6d66e013f00a74ce10a88504b0f5fdc9cad67"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/adapters/anthropic.py",
+        "sha": "552eb0cfd842f94ad213d64738e5e87d4865c15d"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/adapters/base.py",
+        "sha": "ce8cc2aaec95b3dfd513392bd3039b43090abff1"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/adapters/google.py",
+        "sha": "13aae79ff89161fcbb1d3d096f018713a3519c5f"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/adapters/langchain_adapter.py",
+        "sha": "3ef7b82f33075b40cd24c8d278e6a33af6fdcfc4"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/adapters/openai.py",
+        "sha": "08ab558490fb69da246d331ce353db6a5d210f25"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/managers/__init__.py",
+        "sha": "3311c4ed9f7e01cacddc7ce4e8d37fcd9c0ad610"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/managers/base.py",
+        "sha": "f6809f6a57e82121d33f467ff941b5b2c2c91deb"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/managers/server_manager.py",
+        "sha": "09da3b0150d9e997bf65c944d08a2d26b7c5225e"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/middleware/__init__.py",
+        "sha": "2781eabf50fb218f7152d58e4bd5fff060bce8f9"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/middleware/tool_error_middleware.py",
+        "sha": "ff0ad280fd92920aa37ef57305977d8d72ff365f"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/observability/__init__.py",
+        "sha": "360769acfe4b4a48c3512ab687959b7969a38630"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/observability/callbacks_manager.py",
+        "sha": "a87240a269e40c7043eb3d5aac3f43bdab0ce244"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/observability/laminar.py",
+        "sha": "dc89de808ccb60effeb20661366ee5efaebd5d67"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/observability/langfuse.py",
+        "sha": "7c05dd63d54a0423223f2cfd6eef0c64d36defd1"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/prompts/system_prompt_builder.py",
+        "sha": "23915bac69dbf87f45b6d636880741d04daa07ae"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/prompts/templates.py",
+        "sha": "69e3663597fc3aaf43bccb4a5af3f2cd9ff7e53f"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/auth/__init__.py",
+        "sha": "561b46d508ebda6b53f0c234a108da0fff10765f"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/auth/bearer.py",
+        "sha": "c802a2492c852150dc5555bc98be50cbfb3970e6"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/auth/oauth_callback.py",
+        "sha": "13752786bb2263879a25283d3aaa7895044183c0"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/auth/oauth.py",
+        "sha": "a855a2128616b04c223c7dd12ec265222d2cdddf"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/connectors/__init__.py",
+        "sha": "000b7707c30e0343dc99795dbf254c785b4ba26e"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/connectors/base.py",
+        "sha": "117aee089d2a25162f18d5dd6d6f7658600a6724"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/connectors/code_mode.py",
+        "sha": "b1daa5fb62d4e6c3f97897f21f4ef502233571f0"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/connectors/http.py",
+        "sha": "f41ebb4cb7d1c0c0f9b67a0885fa69079e55440c"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/connectors/sandbox.py",
+        "sha": "6044c10ee20c8238061a6462342a2f1fd4494b7c"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/connectors/stdio.py",
+        "sha": "c9f97d4793c1e3338f79448e1e3eb452271aa3f0"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/connectors/utils.py",
+        "sha": "a3b0a0c4a8041936e969061bc0e7e8e969e17b0a"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/connectors/websocket.py",
+        "sha": "653b78f0500b218dc8d6e11db652f270cacd5486"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/middleware/__init__.py",
+        "sha": "fad104cb2030c51392aafabc7fba95d4cb2fbb41"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/middleware/logging.py",
+        "sha": "4d0e3865925c7230ad9d15b72e04b8016527dffa"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/middleware/metrics.py",
+        "sha": "a6f1de2a780f93507515a858ee1ce9e0fcc570ca"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/middleware/middleware.py",
+        "sha": "b2e7e234cada6194d6837798eb2df406625b1f4c"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/task_managers/__init__.py",
+        "sha": "edb337db8a8e0de71805eece3af2b6156bfa9345"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/task_managers/base.py",
+        "sha": "c80fc2d0804c1544969fb5bb39192399a1971701"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/task_managers/sse.py",
+        "sha": "29bbd6f4ffeeb0257eacbdfc789e6a8a952e008f"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/task_managers/stdio.py",
+        "sha": "a9bd72f75d710b71a978d30cb4993fa118b67ea3"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/task_managers/streamable_http.py",
+        "sha": "1a43298f1565533212dba3e2d05a5b1adc7cab52"
+      },
+      {
+        "path": "libraries/python/mcp_use/client/task_managers/websocket.py",
+        "sha": "893cf785a3e85a926c0747b065e3753ba9c36eda"
+      },
+      {
+        "path": "libraries/python/mcp_use/managers/tools/__init__.py",
+        "sha": "4e47f0e4d4ea6eef7402da45a28fd12e35b894c2"
+      },
+      {
+        "path": "libraries/python/mcp_use/managers/tools/base_tool.py",
+        "sha": "8db3b62a3230dc54d1904f5602a67e9604c9f29b"
+      },
+      {
+        "path": "libraries/python/mcp_use/managers/tools/connect_server.py",
+        "sha": "828e1a46b6b73b297608cecc35f7ad591eb686f1"
+      },
+      {
+        "path": "libraries/python/mcp_use/managers/tools/disconnect_server.py",
+        "sha": "d99851c871b26ae00a09cddc1480cd5102e5d59e"
+      },
+      {
+        "path": "libraries/python/mcp_use/managers/tools/get_active_server.py",
+        "sha": "9df7a45d9118101b995cafddf4f9a102a22c80f2"
+      },
+      {
+        "path": "libraries/python/mcp_use/managers/tools/list_servers_tool.py",
+        "sha": "6dafe8ec35d1cb9803dc77804a6490c338308741"
+      },
+      {
+        "path": "libraries/python/mcp_use/managers/tools/search_tools.py",
+        "sha": "979916894d7eb6d5d363cc1a911f05a6249f939e"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/auth/__init__.py",
+        "sha": "11e642e0ad8fc0f5916cf3afff64400d9b65a33b"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/auth/bearer.py",
+        "sha": "b36248a8a30495e65c38eb30f4b92d26b29a07f8"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/auth/dependencies.py",
+        "sha": "074fbc5e811a9689df6115eaf560fe5b1e36dcf9"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/auth/middleware.py",
+        "sha": "505d3cdd17a34aee386b2ccdb5bc869d4d35b640"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/auth/models.py",
+        "sha": "28433c0470bb00c5b8ae5818b461b8c0647d099e"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/logging/__init__.py",
+        "sha": "ecec708496ae04fa4aba98e6edf71f6184c638b3"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/logging/config.py",
+        "sha": "8eb9879e785984d60f11dc747f777757a19bdd24"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/logging/formatters.py",
+        "sha": "d883fcb81b18f54308a5b415a47c237769dba7eb"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/logging/middleware.py",
+        "sha": "b34b072ec65e1e4cffed4489429fca9fd3a4379c"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/logging/startup.py",
+        "sha": "d3ac34d39ecefe1c7038e635e650c437832bd155"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/logging/state.py",
+        "sha": "aed8bcc1f01f64d893ad214bec5490c6601e02e8"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/middleware/__init__.py",
+        "sha": "c79deaf4b96344d3041e5daf4919950f416b309d"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/middleware/middleware.py",
+        "sha": "5f3d68606f5d93e87f4e9af87396c400dea9a11c"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/middleware/server_session.py",
+        "sha": "acb71f8a2dfdbea68a024ec9edec97c3d26b633e"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/middleware/telemetry.py",
+        "sha": "62997aaeaaa46e07d56cf24ae3388878a6829a85"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/templates/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/utils/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/utils/inspector.py",
+        "sha": "2b31d767fdd820c1d0166991ac40b9d0df0b6759"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/utils/json_schema.py",
+        "sha": "204429c0c48bf8d2a69408247ff0b91feafa4ae7"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/utils/openmcp.py",
+        "sha": "26228f8ca1b2923d25c47893657082c43b30a22a"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/utils/routes.py",
+        "sha": "1f4731eddf0c1ac0d3e11c1af8ae21c3518e8bd7"
+      },
+      {
+        "path": "libraries/python/mcp_use/server/utils/utils.py",
+        "sha": "db86fadd27287f432c43f1bae9f7f634a43f6df6"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/langchain.ts",
+        "sha": "7c318069e9eb530b2681e34fd840cc11472deb0f"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/llm/providers/ollama/index.ts",
+        "sha": "3a127caa53815a6acd136abb2b0f47c426115a85"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/version.ts",
+        "sha": "c3bc83b3bc1515f5e29fe5b099ec1b3d10ceb2c2"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/scripts/copy-third-party-licenses.mjs",
+        "sha": "c8d4138493f1254857bcdf94201b27f78061fd0a"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/scripts/verify-package.mjs",
+        "sha": "d0fe9ecfd22f2d296aafb8b9c0fa979d9cd8eb4a"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/src/base-path.ts",
+        "sha": "c22c54e2b67f8d566a6a554b9466eb8f20468968"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/src/bin.ts",
+        "sha": "65e550244612eaee1546df0e356a4f288d1c3448"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/src/fetch-app.ts",
+        "sha": "c6b7736860d0caa859a049d464938c6ca3479371"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/src/listen-address.ts",
+        "sha": "38b0ffafcea164412c389e877749a8b5d69b18ff"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/types/index.d.ts",
+        "sha": "a80ac79620965f4554b11cd3ca78a043de197fa3"
+      },
+      {
+        "path": "libraries/typescript/packages/cli/types/vite-client.d.ts",
+        "sha": "5bde74be92bba3dd313be1c12d7fc6e6890e5f4c"
+      },
+      {
+        "path": "libraries/typescript/packages/client/src/index-browser.ts",
+        "sha": "9e8fc434db0ff5503dd408b12fb1801a63910d9e"
+      },
+      {
+        "path": "libraries/typescript/packages/client/src/sandbox.ts",
+        "sha": "bffa059b15ad7a488b0003dafee156f3d3479074"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/scripts/copy-templates.js",
+        "sha": "5964d2308eea981f4c4a318e21d58955929e769b"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/src/ansi.ts",
+        "sha": "ce67bd05ec5dcf50039e0051c55ee7e6068da569"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/src/prompts.ts",
+        "sha": "3240aa31a7324798ab3a3efdf28900e5bd14bcb6"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/src/skills-config.ts",
+        "sha": "80e78c41fbde655f9379b86fbe460a66b0949f9f"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/src/utils.ts",
+        "sha": "c13aea8d9bb1186e3237054c415caa2dc2c263e9"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/scripts/compress-app.mjs",
+        "sha": "4642f97638d6717a1e7c24f4d33711b46029fbbf"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/scripts/copy-client-styles.mjs",
+        "sha": "cc54933b271b2a9d532d3a944d442f7b82b86aed"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/scripts/verify-package.mjs",
+        "sha": "1c5b61764f2f615203f86ca7d8682a4cd626040f"
+      },
+      {
+        "path": "libraries/typescript/packages/inspector/src/client/components/shared/index.ts",
+        "sha": "fa4f277be8922981ea6efdaef1331e26c4a34da2"
+      },
+      {
+        "path": "libraries/typescript/packages/server/scripts/env-url-csp-runtime-test.mjs",
+        "sha": "b0f07528bd7f95be3ab9856c874865426cb845fa"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/bin.ts",
+        "sha": "4cbb1af138bff6b32b648033dded470219c8fd85"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/branding.ts",
+        "sha": "d3ef83afc43d944dd177abbc85a520bfcceb843c"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/buffered-response.ts",
+        "sha": "19fbeccab14d84f1576e7247ab8984a2896162b6"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/build-phase.ts",
+        "sha": "f6a578bf1f3abc3c9abd1cdf513217612a5334ee"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/completable.ts",
+        "sha": "31b8ef33aeb56a38394c3c58f79852743eb7ddca"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/config.ts",
+        "sha": "6e674a1e261f1bddc6e2d42302f34dca15043984"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/context.ts",
+        "sha": "693c6006f6418fff0d840e5f08c9a012fff4b5ed"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/fetch-app.ts",
+        "sha": "ef197faf9f3bee7993beca5b221642bedfbcfd71"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/internal-imports.d.ts",
+        "sha": "7b4c4a6cdd9d167f1d401fb577297c06a6b1292f"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/landing-data.ts",
+        "sha": "5ab9b7a82111a6c0d377d531a363a64e5e44bcb6"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/landing-handler.ts",
+        "sha": "ba91418d3d83248c2d4ad7a51b0bd72643a55ac2"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/landing.ts",
+        "sha": "5ce0b9000c556a641eb23919b54267227d1ad48d"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/listen-address.ts",
+        "sha": "936c18076b6db2ed7c930256c0f8ce9073e0cbc5"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/logging.ts",
+        "sha": "20c28bb2f24df639e613df776fd501de348e8df4"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/mcp-proxy.ts",
+        "sha": "8aa8330db5044e2c1c8608cd028825c020153d8b"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/mentions.ts",
+        "sha": "794d9f823601248b24805d1bf5cfa272f6390ea3"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/mount-mcp.ts",
+        "sha": "15f930b5e2dc77762b15e6ff23b4748b9cf47dda"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/node-bridge.ts",
+        "sha": "bf5f5e41fab2337a41347620f9069c3937e022e6"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/node-http-unavailable.ts",
+        "sha": "dcebe1c35ef757cdc27677973c1a78470a27d1c4"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/node-http.ts",
+        "sha": "a916528d2c199b486e101050f5eded887b151e26"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/prompts.ts",
+        "sha": "184b7f5f70792830fdfaafcf724f7d2e9e59f34a"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/resource-completion.ts",
+        "sha": "0b64c4c984c44cfe48858a090dc9fd4c036bf891"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/resources.ts",
+        "sha": "ee1fa342a037532363312cdf6dadc3d562a1aa7f"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/response-conversion.ts",
+        "sha": "1c1d628a8282d20b775d1c8d5fa5215b5ad36582"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/response-helpers.ts",
+        "sha": "09acb2faef884606e909c6ac765a6257bc07e107"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/settings.ts",
+        "sha": "2f61bac6ce99d04641f1f7d551627d9d21e87aed"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/usage.ts",
+        "sha": "780b576570362b648a2dae5833c0c419672f64e7"
+      },
+      {
+        "path": "libraries/typescript/packages/server/src/vite-client.ts",
+        "sha": "678ca6f75a303f3b3a5118d5f079bd92b6075bc0"
+      },
+      {
+        "path": "libraries/typescript/packages/tunnel/src/bin.ts",
+        "sha": "ca98adb103f0c0cc0e72a948229ecb684bf4e6f0"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/src/templates/blank/package.json",
+        "sha": "ec092a4ffa64ef540827d038a28e972ebded162c"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/src/templates/mcp-apps/package.json",
+        "sha": "1b01524a00e74c22f56f8e70fdae13e8353cbc81"
+      },
+      {
+        "path": "libraries/typescript/packages/create-mcp-use-app/src/templates/mcp-server/package.json",
+        "sha": "d53133418ac497dcee41be28cbfe84eafb103043"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/managers/tools/__init__.py",
+        "sha": "406cf92487e68af4125fa178920629c7be1fa22a"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/managers/tools/base_tool.py",
+        "sha": "c2768085941b0b9447a5f44008915d5e5864cc25"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/managers/tools/connect_server.py",
+        "sha": "b209cba22a83d013849c3e00722e1d18d45929db"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/managers/tools/disconnect_server.py",
+        "sha": "f83aa27992d051e7d60ccfae1765585e0b1a2a41"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/managers/tools/get_active_server.py",
+        "sha": "95cca95f0b7680b311bf9168ee539b784a49e439"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/managers/tools/list_servers_tool.py",
+        "sha": "6cb6fee52be72d52587c37f58c4e095a0f01c502"
+      },
+      {
+        "path": "libraries/python/mcp_use/agents/managers/tools/search_tools.py",
+        "sha": "40deaa2c710dcb78336ec552660014620e6eaf48"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/adapters/base.ts",
+        "sha": "b7f510d4ebdb5c6de1b2fd697e9b7965de37cad2"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/adapters/langchain_adapter.ts",
+        "sha": "3303b3861d73e16fd96a84966ddbe2b40dbd65eb"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/adapters/native_adapter.ts",
+        "sha": "3789c9465d45e0f35e0ff7913bab602097a8bebd"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/agents/agent_options.ts",
+        "sha": "9c9d0392eaa9ca85ece511158091294d4d2aa227"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/agents/display.ts",
+        "sha": "2e2414d6e70e266cb3771f2becc1b5825562224a"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/agents/mcp_agent_langchain.ts",
+        "sha": "e466f928dbda6f54aa0d92dcfcba680e793e2a83"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/agents/mcp_agent.ts",
+        "sha": "ba4187c95b5e5fd884a4e6c4aad44ce0a89e1881"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/agents/normalize_run_options.ts",
+        "sha": "aee1a79538fcd7ec9c204c5d00e98dcb1d087a19"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/agents/remote.ts",
+        "sha": "afa6fdb0af8df17118740a5f54f938ea322621c6"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/agents/run_options.ts",
+        "sha": "4462080bc8ce02ba22738ab600a0239f30d53a39"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/agents/types.ts",
+        "sha": "069e9df608dde6fc419b9da1bd89b2f42e64c62a"
+      },
+      {
+        "path": "libraries/typescript/packages/agent/src/llm/chat.ts",
+        "sha": "868ce3189c414d1981a099f96f5187e2cded8c62"
+      }
+    ],
+    "repo_pushed_at": "2026-10-30T22:29:57Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 60
+    },
+    "red_flags": [
+      "instruction-enable-autorun"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "libraries/typescript/packages/create-mcp-use-app/src/index.ts",
+      "line": 160,
+      "snippet": "const TELEMETRY_URL = \"https://add-skill.vercel.sh/t\";",
+      "host": "add-skill.vercel.sh",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "libraries/typescript/packages/tunnel/src/index.ts",
+      "line": 17,
+      "snippet": "const DEFAULT_TUNNEL_API = \"https://api.tunnel.mcp-use.run\";",
+      "host": "api.tunnel.mcp-use.run",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "libraries/python/mcp_use/agents/observability/langfuse.py",
+      "line": 52,
+      "snippet": "host=os.getenv(\"LANGFUSE_HOST\", \"https://cloud.langfuse.com\"),",
+      "host": "cloud.langfuse.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "libraries/python/mcp_use/server/utils/inspector.py",
+      "line": 14,
+      "snippet": "\"https://unpkg.com/@mcp-use/inspector@latest/dist/web\",",
+      "host": "unpkg.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "libraries/typescript/packages/server/scripts/env-url-csp-runtime-test.mjs",
+      "line": 263,
+      "snippet": "process.env.CSP_URLS = \"https://supabase.co,https://api.example.com\";",
+      "host": "supabase.co",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "libraries/typescript/packages/server/scripts/env-url-csp-runtime-test.mjs",
+      "line": 311,
+      "snippet": "process.env.CSP_URLS = \"https://a.com,https://b.com\";",
+      "host": "a.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "libraries/typescript/packages/server/src/landing.ts",
+      "line": 391,
+      "snippet": "\"@context\": \"https://schema.org\",",
+      "host": "schema.org",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "libraries/typescript/packages/server/src/landing.ts",
+      "line": 453,
+      "snippet": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+      "host": "fonts.googleapis.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "libraries/typescript/packages/server/src/landing.ts",
+      "line": 454,
+      "snippet": "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+      "host": "fonts.gstatic.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "libraries/typescript/packages/server/src/usage.ts",
+      "line": 14,
+      "snippet": "const ENDPOINT = \"https://eu.i.posthog.com/i/v0/e/\";",
+      "host": "eu.i.posthog.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "severe": false,
+      "file": "libraries/typescript/packages/tunnel/src/index.ts",
+      "line": 397,
+      "snippet": "host: 127.0.0.1",
+      "deduction": 0
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "instruction-enable-autorun",
+      "severe": true,
+      "file": "CONTRIBUTING.md",
+      "line": 265,
+      "snippet": "if [ \"$(git config --local --get core.hooksPath)\" = \"libraries/typescript/.husky/_\" ]; then",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "add-skill.vercel.sh",
+      "api.tunnel.mcp-use.run",
+      "cloud.langfuse.com",
+      "unpkg.com",
+      "supabase.co",
+      "a.com",
+      "schema.org",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "eu.i.posthog.com"
+    ],
+    "declared_hosts": 5,
+    "install_detected": true,
+    "age_days": 3
+  },
+  "network": {
+    "calls": 396,
+    "failed": 0,
+    "ms": 138120
+  },
+  "duration_ms": 16387
+}

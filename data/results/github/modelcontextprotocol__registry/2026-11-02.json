@@ -1,0 +1,1271 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "modelcontextprotocol/registry",
+    "url": "https://github.com/modelcontextprotocol/registry",
+    "name": "registry"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:53:33.511Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "01e5c936ad3048d16562be503d879e523e36d267",
+    "files_scanned": 280,
+    "candidates": 280,
+    "excluded_non_shipped": 141,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".githooks/pre-commit",
+        "sha": "27f97988cbe905ca1ebe0b9591e0ddeb751d8ff8"
+      },
+      {
+        "path": ".github/copilot-instructions.md",
+        "sha": "e37366155bf1b6290a3e7ad2d2ac6fcc3be60bca"
+      },
+      {
+        "path": ".vscode/launch.json",
+        "sha": "8038ebe1ae183844757f33486482ed4304a18fc1"
+      },
+      {
+        "path": ".github/workflows/cancel-pulumi-lock.yml",
+        "sha": "a42911fb58a52214a256bd3a931c795a9be101c7"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "37a8d013f9d4fb080bec5889430c96fe6b080339"
+      },
+      {
+        "path": ".github/workflows/claude.yml",
+        "sha": "01e2b0608332b1ed35d28ff15617f43f0e92f87d"
+      },
+      {
+        "path": ".github/workflows/close-invalid-publish-prs.yml",
+        "sha": "0aec4ec543e1c64c5c608e5ed4cad037da5b1cad"
+      },
+      {
+        "path": ".github/workflows/deploy-production.yml",
+        "sha": "6ee0d3f682d0f58292c53e9c1fb73eeda980fc32"
+      },
+      {
+        "path": ".github/workflows/deploy-staging.yml",
+        "sha": "adf55ac17dd6ecf41fc4385ed5e1e6297d221691"
+      },
+      {
+        "path": ".github/workflows/detect-invalid-publish-prs.yml",
+        "sha": "c35e5609247d181f8f6023b61f15b053c49f1d9d"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "69a442a7d66b411c9468d1ca82bd467365c513d0"
+      },
+      {
+        "path": ".github/workflows/sync-db.yml",
+        "sha": "c2328eec4e001d5f688567e5f53b1bf228bdf17f"
+      },
+      {
+        "path": ".github/workflows/sync-schema.yml",
+        "sha": "7fbe6a72834af920b1ca0b7d1fcc1a6e3f55ea85"
+      },
+      {
+        "path": "deploy/main.go",
+        "sha": "c208d858bf2cec5be8ce37ef830a1b53a95cb3d5"
+      },
+      {
+        "path": "cmd/publisher/main.go",
+        "sha": "8f7de090c144122c417bafd279d59607c5914cdc"
+      },
+      {
+        "path": "cmd/registry/main.go",
+        "sha": "4101375e1911d60b229d10573f6226dcf3b0f297"
+      },
+      {
+        "path": "internal/api/server.go",
+        "sha": "c8ce97ca6e5222ee8ef021dd0fcbde580fde972e"
+      },
+      {
+        "path": "scripts/test_endpoints.sh",
+        "sha": "35a34858e6bf868ffc771f61d987a5bd1966cc2e"
+      },
+      {
+        "path": "scripts/test_publish.sh",
+        "sha": "33730d5b3d663fdd33fa845a140fd62af9444486"
+      },
+      {
+        "path": "tools/extract-server-schema/main.go",
+        "sha": "e7e5bd16d046a21cb1a02cf1123a5bfc7b928cdf"
+      },
+      {
+        "path": "tools/ingressbench/main.go",
+        "sha": "9a484ea1e46abaa59dc63fb92836840ffa59c021"
+      },
+      {
+        "path": "tools/prepare-listing-json/main.go",
+        "sha": "eff7b1b7ec438e7664599d62ee2939bb38a8ca8b"
+      },
+      {
+        "path": "tools/readbench/main.go",
+        "sha": "33416742ce4b0308cc8c6d2f6aed65697d10f76a"
+      },
+      {
+        "path": "tools/validate-examples/main.go",
+        "sha": "4c48ae649885ef30535c591420f48a9ac9805735"
+      },
+      {
+        "path": "tools/validate-schemas/main.go",
+        "sha": "aebda5bd19b48ec3d6119055de3b5ac7c4d674a9"
+      },
+      {
+        "path": ".golangci.yml",
+        "sha": "571ead5d25b3d4a853b9a206765db232b284795e"
+      },
+      {
+        "path": ".goreleaser.yaml",
+        "sha": "877ebad91c9a7b55e0d6961a6911d263f2f6a2cd"
+      },
+      {
+        "path": ".ko.yaml",
+        "sha": "e6f1d1b2a5651f9ab59bfe11ce45f62b9e53a619"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "681311eb9cf453d0faddf3aacaec7357e97ba8e9"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "8aab6a517bf2eb5bb0a97dc158e19c4bd9263787"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "7a1e1b5f2f3dce73ef83387452a7ab6adbe2ddc3"
+      },
+      {
+        "path": "docker-compose.yml",
+        "sha": "3fff7bca12e6262a9e7f7ebb27c398a70362356e"
+      },
+      {
+        "path": "README.md",
+        "sha": "7f6f196740e279b1302d21ec5f0be96356b42286"
+      },
+      {
+        "path": "scripts/mirror_data/fetch_production_data.go",
+        "sha": "ea2d32ecd40f31bef4b203a3b78934132fa8bb65"
+      },
+      {
+        "path": "scripts/mirror_data/load_production_data.go",
+        "sha": "71094467cc91859deab357cf6995b5c2ae2ca3c4"
+      },
+      {
+        "path": "scripts/mirror_data/README.md",
+        "sha": "2cc3a87b3c428f8cdb984a272d924e731f6f3303"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "50292420096eb98f07f3945dc30325fe8b17a2af"
+      },
+      {
+        "path": "data/seed.json",
+        "sha": "7f65a4a62a1132a6da970711e773c0690c3892f3"
+      },
+      {
+        "path": "deploy/Pulumi.gcpProd.yaml",
+        "sha": "58bbede58218d9a0b157f441bac3cea7aa12da67"
+      },
+      {
+        "path": "deploy/Pulumi.gcpStaging.yaml",
+        "sha": "0df104603308f737f56e318b39997217b9410a88"
+      },
+      {
+        "path": "deploy/Pulumi.local.yaml",
+        "sha": "a1a92dc9e502a4efbd89b657cca6cace41a617c4"
+      },
+      {
+        "path": "deploy/Pulumi.yaml",
+        "sha": "940a212cbf4cc8d9b53e9879e5d96e9dd6f8b32f"
+      },
+      {
+        "path": "deploy/README.md",
+        "sha": "d8b5bb7269236d525d6746e5ba53033663df4b0b"
+      },
+      {
+        "path": "tools/validate-examples.sh",
+        "sha": "377e9700f8c41605cf46df357c6c76c10c0d94e4"
+      },
+      {
+        "path": "tools/validate-schemas.sh",
+        "sha": "2c390876c37f80b135e960ffdf2688cb6a185426"
+      },
+      {
+        "path": "cmd/publisher/README.md",
+        "sha": "3a5a79297f8cc3429cb3d387ccd5d1ea506a2a42"
+      },
+      {
+        "path": "deploy/imports/gcpProd-database-backups.json",
+        "sha": "4bec075e8ac8ac852022cc7e5cd07a6021e6820d"
+      },
+      {
+        "path": "deploy/scripts/adopt_staging_capacity.py",
+        "sha": "2b7568dab579e5c6866bae63500e6f9490920f2a"
+      },
+      {
+        "path": "deploy/scripts/check_production_scaling.py",
+        "sha": "aeea4769ad373943ade9ee19d429e77c0e642aad"
+      },
+      {
+        "path": "deploy/scripts/production_apply.py",
+        "sha": "45adc1ad4ca01de272bc93436283b43444e86899"
+      },
+      {
+        "path": "deploy/scripts/staging_idle_apply.py",
+        "sha": "0cc8e6c642fc97353f32011874bf1d5521efad81"
+      },
+      {
+        "path": "internal/api/handlers/v0/auth/main.go",
+        "sha": "62d9883d87c1213222d24f99f0603b76b944947a"
+      },
+      {
+        "path": "internal/auth/blocks.go",
+        "sha": "c839f50a8c9d0fb3b3a993c97cbd853da39d5bb2"
+      },
+      {
+        "path": "internal/auth/jwt.go",
+        "sha": "88c8f76f118d22be2f53fefab0a0fe22c065eb3c"
+      },
+      {
+        "path": "internal/auth/types.go",
+        "sha": "38b7959aeead1d5e01ac90cad27216d2c828eab6"
+      },
+      {
+        "path": "internal/config/config.go",
+        "sha": "e08037d4d0d84495f61e5afab601b2480708a366"
+      },
+      {
+        "path": "internal/database/database.go",
+        "sha": "b4a797fae9f29572b2f4b0ebd24073898e454feb"
+      },
+      {
+        "path": "internal/database/listing_backfill.go",
+        "sha": "53facf479b1a5ef8aee3f89eb943c037c4c09acf"
+      },
+      {
+        "path": "internal/database/listing_json.go",
+        "sha": "3eb819283011d073fe068fa057cc531b798a9306"
+      },
+      {
+        "path": "internal/database/migrate.go",
+        "sha": "6713155fd8e52bdfc27fdf9ddef514a8cdcfa6fc"
+      },
+      {
+        "path": "internal/database/pool_limits.go",
+        "sha": "22cd20bbdbda686b7002635232e537380cc39a2d"
+      },
+      {
+        "path": "internal/database/postgres.go",
+        "sha": "5b4144fa536d9e1b26d00de3520d2077a18f9974"
+      },
+      {
+        "path": "internal/database/testutil.go",
+        "sha": "8fbdb60c6372677e2e2a352da10ba88dac62cd6a"
+      },
+      {
+        "path": "internal/importer/importer.go",
+        "sha": "4a418d184cba6cbd39fb4a266c3069fa39267341"
+      },
+      {
+        "path": "internal/service/registry_service.go",
+        "sha": "a581fe80454fadd015f8837d1cd49abeee392522"
+      },
+      {
+        "path": "internal/service/service.go",
+        "sha": "7591b7daf59255da0ebecd375e7f31ef29540b3b"
+      },
+      {
+        "path": "internal/service/versioning.go",
+        "sha": "02e1ee5bc3b28ccf1f5d5c96e87117b01e44863e"
+      },
+      {
+        "path": "internal/telemetry/database.go",
+        "sha": "9f8304bea77f6b4e786909c8b408d5b9138f6828"
+      },
+      {
+        "path": "internal/telemetry/listing.go",
+        "sha": "2f19c445760128758bda44145dc6c7c5a82868a3"
+      },
+      {
+        "path": "internal/telemetry/metrics.go",
+        "sha": "1734331ec92de077696e725d1dbccbc88e64eda7"
+      },
+      {
+        "path": "internal/telemetry/profiling.go",
+        "sha": "d7b3785840b2bf41e4a5eda17e7d749ceb40d804"
+      },
+      {
+        "path": "internal/validators/constants.go",
+        "sha": "8305a4862db71ec07fd92fa680438be42985f562"
+      },
+      {
+        "path": "internal/validators/package.go",
+        "sha": "b458244b15c67508c76197d107bb39ae21c3471a"
+      },
+      {
+        "path": "internal/validators/schema.go",
+        "sha": "37d335eaf79ad088ed9cb465e98034659482287d"
+      },
+      {
+        "path": "internal/validators/utils.go",
+        "sha": "49e65071a3e1b8cfdf00cce66361d10b969d6034"
+      },
+      {
+        "path": "internal/validators/validation_types.go",
+        "sha": "4de21b49bb4a8b2718337bcc54fee12580b90843"
+      },
+      {
+        "path": "internal/validators/validators.go",
+        "sha": "6f902420282457d165a6b07909f2a9884c4971ab"
+      },
+      {
+        "path": "pkg/model/argument.go",
+        "sha": "c9105e5f2d9c40831030dae4ce3f057dea9c71ff"
+      },
+      {
+        "path": "pkg/model/constants.go",
+        "sha": "98a3ba189e4a039887b1ed15076c5e0c265aacc3"
+      },
+      {
+        "path": "pkg/model/types.go",
+        "sha": "5c55296b24b850fbe4d807324dd0ebad73c4ff9f"
+      },
+      {
+        "path": "tools/admin/auth.sh",
+        "sha": "8062e4415f9c6926fc28b3deee3fc585cb5b36b2"
+      },
+      {
+        "path": "tools/admin/configure-backup-alerts.py",
+        "sha": "7f1d51d710f1816a81540988122f0bfef81e88b6"
+      },
+      {
+        "path": "tools/admin/takedown.sh",
+        "sha": "f9fceedd6c45c6be59631efa74f507240fb1ba50"
+      },
+      {
+        "path": "tools/ingressbench/collect_profile_logs.py",
+        "sha": "f00d7b635d97d647d3bfcc9bea2081ca688e237f"
+      },
+      {
+        "path": "tools/ingressbench/CONNECTION_CPU_VALIDATION.md",
+        "sha": "1df229718c994c8674300d1c036bd13198f21d0e"
+      },
+      {
+        "path": "tools/ingressbench/COORDINATED_CAPACITY.md",
+        "sha": "605f4fe5c5cdbcd34100a6fb948e687e20c89560"
+      },
+      {
+        "path": "tools/ingressbench/DELIVERY_VALIDATION.md",
+        "sha": "6d58cad46bb11d57b0953b81fbba44c082b2c451"
+      },
+      {
+        "path": "tools/ingressbench/ISOLATED_PLACEMENT.md",
+        "sha": "9c38c8d609a9679712f335458a94b663173c70bd"
+      },
+      {
+        "path": "tools/ingressbench/page_workload.go",
+        "sha": "173c6c416eb1f6ea3c19e5d8b71dd727e22ea8b7"
+      },
+      {
+        "path": "tools/ingressbench/phases.go",
+        "sha": "9f3bc9081f5d197d28e2711824fe7dfcf8b4d8c7"
+      },
+      {
+        "path": "tools/ingressbench/profile_logs.py",
+        "sha": "36140bac02b4eb9d18effdfa50a784378d246e46"
+      },
+      {
+        "path": "tools/ingressbench/PROFILE_VALIDATION.md",
+        "sha": "e534e7d2feee8b1abf38a99908fa7164f75a121d"
+      },
+      {
+        "path": "tools/ingressbench/read_trace.go",
+        "sha": "7095a918d726d349e2d5f252b957aae328e6c794"
+      },
+      {
+        "path": "tools/ingressbench/README.md",
+        "sha": "2f3f7898838950a5375843b2bc805466f2769149"
+      },
+      {
+        "path": "tools/ingressbench/REPLICA_CAPACITY_VALIDATION.md",
+        "sha": "32075a85586d332a7075248572f8c84379335027"
+      },
+      {
+        "path": "tools/ingressbench/timeline.go",
+        "sha": "bf38db83fa6df5cbe23f6776426d9a510eda084d"
+      },
+      {
+        "path": "tools/ingressbench/VALIDATION.md",
+        "sha": "a7f3019e70d618431f5dfc80aca9d5de150fcff4"
+      },
+      {
+        "path": "tools/ingressbench/WARM_CAPACITY_VALIDATION.md",
+        "sha": "5ff7e9ffd82ae2f069c538867f11af389c497719"
+      },
+      {
+        "path": "tools/ingressbench/WORKLOAD_COMPARISON.md",
+        "sha": "d6b9fd1feb6d4a3077f619d7c107bc468265136d"
+      },
+      {
+        "path": "tools/ingressbench/WORKLOAD_PROFILE.md",
+        "sha": "3819130f6eb1dbdbb162ce362d3c0548fac1ecf2"
+      },
+      {
+        "path": "tools/readbench/cache.py",
+        "sha": "77fa5b2482b6496838caf88c3f88664bfdf8722f"
+      },
+      {
+        "path": "tools/readbench/compare.py",
+        "sha": "f1962c81f500e206f6f1dba68e0220792c306f12"
+      },
+      {
+        "path": "tools/readbench/CONSTRAINED_RESULTS.md",
+        "sha": "6064550e639cfe357685dddd3c10e7d9b65e2536"
+      },
+      {
+        "path": "tools/readbench/cycles.go",
+        "sha": "0506625e99af584be2ac29c6f457aac56e361e07"
+      },
+      {
+        "path": "tools/readbench/cycles.py",
+        "sha": "c9355dea1408111f6c153e6bcd2fbcd8b3011290"
+      },
+      {
+        "path": "tools/readbench/CYCLIC_RESULTS.md",
+        "sha": "202289633e76bcf605bfad09509d9390dd1e840d"
+      },
+      {
+        "path": "tools/readbench/fixture.go",
+        "sha": "49dc59bde666f11ef6781bebfdea64f08d84a99e"
+      },
+      {
+        "path": "tools/readbench/load.go",
+        "sha": "bcb6a457c5a7845266888dc58bf6f35ed4ff4883"
+      },
+      {
+        "path": "tools/readbench/README.md",
+        "sha": "f01b8b229869e2b2910fdef25dfccc3cf2d726c3"
+      },
+      {
+        "path": "tools/readbench/RESULTS.md",
+        "sha": "56305ad7ecaf2f15c89b5f20e3e7a9d29bcd2a61"
+      },
+      {
+        "path": "tools/readbench/run-constrained.sh",
+        "sha": "4f85cfb7cf6d0d0f0b1cae75e9319c2c12fee34f"
+      },
+      {
+        "path": "tools/readbench/run-cycles.sh",
+        "sha": "e2dc0e8413aadf17bdb6d4afd7f9d113dde367c1"
+      },
+      {
+        "path": "tools/readbench/run-local.sh",
+        "sha": "6b1762cb51317d229ffc8b3b8cdb7f424a4b56a3"
+      },
+      {
+        "path": "tools/readbench/STAGING_SEARCH_RESULTS.md",
+        "sha": "01b39930c81f37eb905ee5b345f4c6d3571a3925"
+      },
+      {
+        "path": "tools/readbench/verify-search.py",
+        "sha": "778c63a79af987f3bd6ae6f0c724804cb3366e7e"
+      },
+      {
+        "path": "tools/readbench/verify.py",
+        "sha": "76158c2b2dd1f0bb735389a38eb7f990a69a9b02"
+      },
+      {
+        "path": "cmd/publisher/auth/common.go",
+        "sha": "2147074f19577370a9e132036d383c17f5cab6ab"
+      },
+      {
+        "path": "cmd/publisher/auth/dns.go",
+        "sha": "af81a1c552df78772b0cbaf869c1c3ebaa5cc13b"
+      },
+      {
+        "path": "cmd/publisher/auth/github-at.go",
+        "sha": "fef3774da7233d4cb880def8e1194830411eeaf6"
+      },
+      {
+        "path": "cmd/publisher/auth/github-oidc.go",
+        "sha": "9b32e44de7397cf52e14ee85456229f683ec8e72"
+      },
+      {
+        "path": "cmd/publisher/auth/http.go",
+        "sha": "2d44781b87d32466ffe152379e77970dad8ec03c"
+      },
+      {
+        "path": "cmd/publisher/auth/interface.go",
+        "sha": "1e3561fb8fce619ef7ba36d42a96c2c506f9790c"
+      },
+      {
+        "path": "cmd/publisher/auth/none.go",
+        "sha": "967db24ff0d32832e86a235e497da03b1981f08a"
+      },
+      {
+        "path": "cmd/publisher/commands/init.go",
+        "sha": "48498b91f19540461fbae402c13283b9c066fa9f"
+      },
+      {
+        "path": "cmd/publisher/commands/login.go",
+        "sha": "3b97211ac52a9b231720ada3e21bdcbef03cb4cc"
+      },
+      {
+        "path": "cmd/publisher/commands/logout.go",
+        "sha": "25adfd891e669377865871f692e57afdfe9d2408"
+      },
+      {
+        "path": "cmd/publisher/commands/publish.go",
+        "sha": "cccf2c87f3532965ce81c4b2c5d141be58267152"
+      },
+      {
+        "path": "cmd/publisher/commands/status.go",
+        "sha": "8132fa203bce47ae39a7f3728182a42d73622f7d"
+      },
+      {
+        "path": "cmd/publisher/commands/unicode.go",
+        "sha": "11f515334292b021c83427d99dde89b261a951f2"
+      },
+      {
+        "path": "cmd/publisher/commands/validate.go",
+        "sha": "012e8fe78d999e8ed0da1149f9bdd58f7f9a55df"
+      },
+      {
+        "path": "deploy/pkg/k8s/autoscaling.go",
+        "sha": "1c9b9edbdfe6cbce089837ec5bede7520338f438"
+      },
+      {
+        "path": "deploy/pkg/k8s/backup.go",
+        "sha": "b2d65e62c56cf619ec9029208955f6d19c1a4d76"
+      },
+      {
+        "path": "deploy/pkg/k8s/capacity.go",
+        "sha": "1f92db87e5be285308bb52da154e61c9a96c0543"
+      },
+      {
+        "path": "deploy/pkg/k8s/cert_manager.go",
+        "sha": "cad75bb94683603981e201e9d89a35be2368e7a9"
+      },
+      {
+        "path": "deploy/pkg/k8s/deploy.go",
+        "sha": "25118358defa35cacbb9a644dc54bfbeb9e25a21"
+      },
+      {
+        "path": "deploy/pkg/k8s/ingress.go",
+        "sha": "02cf6a5d5d4d52f1f5245e805bc120bc7fc792f3"
+      },
+      {
+        "path": "deploy/pkg/k8s/monitoring.go",
+        "sha": "c6badeacc197830224b1e47da0be83af29e7fa62"
+      },
+      {
+        "path": "deploy/pkg/k8s/placement.go",
+        "sha": "8a82dfa4d25b7f8369175f90355b38a42f6da856"
+      },
+      {
+        "path": "deploy/pkg/k8s/postgres_backup_job.go",
+        "sha": "05061c38762b7185c1a545c2ad3c70a77017b5cb"
+      },
+      {
+        "path": "deploy/pkg/k8s/postgres_backup_job.json",
+        "sha": "1d313f90c8ae7dbd1d3e38281d358f7772ecd2f9"
+      },
+      {
+        "path": "deploy/pkg/k8s/postgres.go",
+        "sha": "494b1657c381bfa146bfb08a918b499fef0dd892"
+      },
+      {
+        "path": "deploy/pkg/k8s/registry.go",
+        "sha": "b7f1b6d7c508b12494ae9b9f73e55f447294b91c"
+      },
+      {
+        "path": "deploy/pkg/providers/types.go",
+        "sha": "d2a6787a82ec12a6aa4f4e1d459f6d8a32bce15a"
+      },
+      {
+        "path": "internal/api/router/router.go",
+        "sha": "76cd74d48d043c7a59b5701de2220007b058a0b4"
+      },
+      {
+        "path": "internal/api/router/v0.go",
+        "sha": "eb035e5080c8897092c1207f9f49bf22ce7197dc"
+      },
+      {
+        "path": "internal/validators/registries/cargo.go",
+        "sha": "5aa72b1092a08ef2311e4e384aaec81eb5c24278"
+      },
+      {
+        "path": "internal/validators/registries/mcpb.go",
+        "sha": "82ba4d98655ff7ff67d0c61b29786e6517336aa7"
+      },
+      {
+        "path": "internal/validators/registries/mcpname.go",
+        "sha": "527aefb1415928db93e88f18102b0ab7d6ec5103"
+      },
+      {
+        "path": "internal/validators/registries/npm.go",
+        "sha": "a6ed170236f5a970ba85d81fed94e3e729b9cb74"
+      },
+      {
+        "path": "internal/validators/registries/nuget.go",
+        "sha": "c229ba02c5739ce4bbff4c7e525cf707c83604d8"
+      },
+      {
+        "path": "internal/validators/registries/oci.go",
+        "sha": "f3032677c515300ec06b104c3ceabec0344efaf5"
+      },
+      {
+        "path": "internal/validators/registries/pypi.go",
+        "sha": "339ed911e7b81cbb9c55710dc3f505f0d3aed07b"
+      },
+      {
+        "path": "internal/validators/schemas/2025-07-09.json",
+        "sha": "e4e0a9271bdc8e72b0945bba9728fc02660b184b"
+      },
+      {
+        "path": "internal/validators/schemas/2025-09-16.json",
+        "sha": "8766b2a49d545eb6d11b5344ded1f1008462f680"
+      },
+      {
+        "path": "internal/validators/schemas/2025-09-29.json",
+        "sha": "bcf5ba5af6a33ac2de5344d24eb3db48860e4e73"
+      },
+      {
+        "path": "internal/validators/schemas/2025-10-11.json",
+        "sha": "8022347ae2bb618c07af5801bbf2a52dc6a9af85"
+      },
+      {
+        "path": "internal/validators/schemas/2025-10-17.json",
+        "sha": "59967b5a383c24a8ac4ab6726534302e09e54d30"
+      },
+      {
+        "path": "internal/validators/schemas/2025-12-11.json",
+        "sha": "718aacae964bf3b497ab203b29657d5179bebd52"
+      },
+      {
+        "path": "internal/validators/schemas/README.md",
+        "sha": "33f1e6894269c309094173dff6895ffd4eacba26"
+      },
+      {
+        "path": "pkg/api/v0/types.go",
+        "sha": "f63437fbf5018d870ca6913af857144b14c066d8"
+      },
+      {
+        "path": "tools/ingressbench/results/2026-10-28-connection-cpu.json",
+        "sha": "5655d9c89a7668d26591112149ec1d08e4c1e7f8"
+      },
+      {
+        "path": "tools/ingressbench/results/2026-10-28-warm-capacity.json",
+        "sha": "8e32807977f893afbff06e62672c870c35822fbb"
+      },
+      {
+        "path": "tools/readbench/results/2026-10-26.json",
+        "sha": "49280d173d0c10135ca6d9c7156ef81adad96a3c"
+      },
+      {
+        "path": "tools/readbench/results/2026-10-27-constrained.json",
+        "sha": "7c1c4cb5595e6a61817d92d859fce81e4f25da61"
+      },
+      {
+        "path": "tools/readbench/results/2026-10-27-cycles.json",
+        "sha": "32cf902613ff9c57f6e0ab0e60d369b9726bf96a"
+      },
+      {
+        "path": "tools/readbench/results/2026-10-27-staging-search.json",
+        "sha": "6fe48e067e3d506999ecae04787ec13c8c4d718b"
+      },
+      {
+        "path": "cmd/publisher/auth/azurekeyvault/common.go",
+        "sha": "776ed1468b698e96823c3c4bc07792480c3d096f"
+      },
+      {
+        "path": "cmd/publisher/auth/googlekms/common.go",
+        "sha": "f5538051a789dfd6cc502053637b18863710f252"
+      },
+      {
+        "path": "deploy/pkg/providers/gcp/database_pool.go",
+        "sha": "392f488054feaba476eb30c430f824dad82e1010"
+      },
+      {
+        "path": "deploy/pkg/providers/gcp/node_scaling.go",
+        "sha": "6680c7f72e662bf09c064bc2d77fc949e226f7f6"
+      },
+      {
+        "path": "deploy/pkg/providers/gcp/provider.go",
+        "sha": "2b5dd59d5e2eee53421fb80806369a38006f1ad3"
+      },
+      {
+        "path": "deploy/pkg/providers/local/provider.go",
+        "sha": "c06434b93306730e265a4c8b3cbab4388179cde7"
+      },
+      {
+        "path": "internal/api/handlers/v0/edit.go",
+        "sha": "e552bbec06ea7e8fbaff41c7ceefee953c3add08"
+      },
+      {
+        "path": "internal/api/handlers/v0/health.go",
+        "sha": "a9e89140ed7e5d2e5c3510e7cf3690c04843e5d3"
+      },
+      {
+        "path": "internal/api/handlers/v0/list_errors.go",
+        "sha": "b83f04e5a5669197a97aa1805189021b58150057"
+      },
+      {
+        "path": "internal/api/handlers/v0/openapi.go",
+        "sha": "2dee9fd8e583a706a6082ca14774bfa931c99086"
+      },
+      {
+        "path": "internal/api/handlers/v0/ping.go",
+        "sha": "c03a5f4d88634634911ae295e304598f7ea6a9c7"
+      },
+      {
+        "path": "internal/api/handlers/v0/publish.go",
+        "sha": "ce9b397d9dbbe780fb1bd110af1c34efc89164ba"
+      },
+      {
+        "path": "internal/api/handlers/v0/response.go",
+        "sha": "6421ecd1f2bf5d1514fac4d6e62a1604d1eaecf5"
+      },
+      {
+        "path": "internal/api/handlers/v0/servers.go",
+        "sha": "1c16a2477bd1a1cabe291d41c39e24709d381a17"
+      },
+      {
+        "path": "internal/api/handlers/v0/status.go",
+        "sha": "f3cca858eed672a63516f75fc184f99bf7626c6b"
+      },
+      {
+        "path": "internal/api/handlers/v0/ui.go",
+        "sha": "32aadd4e203c09bf6f0dd53f9bcaae1fd794e42e"
+      },
+      {
+        "path": "internal/api/handlers/v0/validate.go",
+        "sha": "0601f14e9432f3d80b96a78a8dd2fcc9aad793a9"
+      },
+      {
+        "path": "internal/api/handlers/v0/version.go",
+        "sha": "a690b0403ea113a1310f261f2bab2e6f3ed20206"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/cache-check-checkout-summary.json",
+        "sha": "faaffaa647a0334a59ce48f5f778df90938d43a2"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/comparison.json",
+        "sha": "b6fab47998c2a7ca19303ebdad65702255f468cb"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/diagnosis-checkout-summary.json",
+        "sha": "96cbfe688f4faf9b690242e821974a74e82794a6"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-backfill.json",
+        "sha": "f0bf41f26305212449adbce9bb2f02fef42f2407"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-check-app-pressure-summary.json",
+        "sha": "23d04535ae4053c46c96fb45e68637d808dea400"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-check-checkout-summary.json",
+        "sha": "c4dde124151cec84ac8ec7c3f3e2e4348fd571e0"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-check-container-cpu-summary.json",
+        "sha": "e99febf195da96057640c5e5bfaab26d3f4946dc"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-check-runtime-integrity.json",
+        "sha": "e614c7b7d4a165159cf9af530ed1b88f258d1322"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-coverage.json",
+        "sha": "875d8893203e7645c5a5321687d2776be218f7b8"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-cpu-check-app-pressure-summary.json",
+        "sha": "d8cfa3a99936f91d5d8210177f5c1e5c06ecd97a"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-cpu-check-checkout-summary.json",
+        "sha": "2a1dc28fe7b5ccdb14b7db022b03af16938f2b15"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-cpu-check-container-cpu-summary.json",
+        "sha": "328c40086d15d4f426c0df2e1e4b0739e53d4f43"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-cpu-check-db-burst-statement-deltas.json",
+        "sha": "71ec5f7771d5703ba251c2c8939ce839f079b9dc"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-cpu-check-generator-summary.json",
+        "sha": "6c0109a73a0cf1bdaff2eb6c4888554637b457f7"
+      },
+      {
+        "path": "tools/ingressbench/evidence/app-profile-2026-10-28/prepared-cpu-check-runtime-integrity.json",
+        "sha": "ecfa7cd5738e68b6560372e253d07e79312524ba"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/app-pressure-summary.json",
+        "sha": "77b3fb0e27c3c3f988244066ed3f8279c530dd74"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/burst-gate.json",
+        "sha": "0256710a973a7acf1e0f272dad739fc37daeb1e6"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/calibration.json",
+        "sha": "ac2f3f71967f50493e1107e013c7069ff7e7982e"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/checkout-summary.json",
+        "sha": "67edec74cbbab50c766a9c3e4c345a8375bbde01"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/cleanup.json",
+        "sha": "1cc1480240b25ffb084cff40625f293c07f906aa"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/coordinated-burst.json",
+        "sha": "86467b46456385b5acc1470c06c6537ec7dbc2a1"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/coordinated-preparation.json",
+        "sha": "791ae6a4e4d5200b96227e6dccc0156a4c403d2c"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/coordinated-recovery.json",
+        "sha": "bd4b01ca4a9f32afba6be4896437c03f2a26371a"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/cpu-budget.json",
+        "sha": "7822a04ce60439d3e37f743358561b65e1408c42"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/equivalence-restored.json",
+        "sha": "0d2c88e4195dd987e30f18112e46e1596356e2e3"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/generator-summary.json",
+        "sha": "a81d9a10ca41fca919140d9fe1aa7b2973d7974c"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/preflight.json",
+        "sha": "afae320a59ff115bfe4a0217d6c302ff082b97a5"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/restored-corpus.json",
+        "sha": "2ae4026aa37cadeba578f52325c4efd98961b598"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/runtime-integrity.json",
+        "sha": "cfeef7637e729b5419674b4685f259fbcf5a2e99"
+      },
+      {
+        "path": "tools/ingressbench/evidence/coordinated-capacity-2026-10-28/summary.json",
+        "sha": "c4abf20e3c870267c49778d10b1a39656495f733"
+      },
+      {
+        "path": "tools/ingressbench/evidence/db-isolated-capacity-2026-10-29/summary.json",
+        "sha": "d735944bd646ed58f9fa7c6864740ea6345bf24c"
+      },
+      {
+        "path": "tools/ingressbench/evidence/delivery-validation-2026-10-28/cleanup.json",
+        "sha": "453c21649edf6878d9fd3481c0b496943f3e0146"
+      },
+      {
+        "path": "tools/ingressbench/evidence/delivery-validation-2026-10-28/experiment.json",
+        "sha": "92d676fafa1f6e70200c5d3826d3b10ed96a38ae"
+      },
+      {
+        "path": "tools/ingressbench/evidence/delivery-validation-2026-10-28/four-windows.json",
+        "sha": "25ffba04436a70720c99fd2f19b1bcdfcfead208"
+      },
+      {
+        "path": "tools/ingressbench/evidence/delivery-validation-2026-10-28/isolated-windows.json",
+        "sha": "8260dbcc80cd0652d3891b5249626eda9e00ab56"
+      },
+      {
+        "path": "tools/ingressbench/evidence/delivery-validation-2026-10-28/isolation-layout.json",
+        "sha": "a052ef2cced3ccefdf1f4d9225ee1a5c81f6b268"
+      },
+      {
+        "path": "tools/ingressbench/evidence/delivery-validation-2026-10-28/restoration-verification.json",
+        "sha": "ba33a7015d2c98b52a6b0c2980c91fd2c47a8cff"
+      },
+      {
+        "path": "tools/ingressbench/evidence/delivery-validation-2026-10-28/summary.json",
+        "sha": "ffc8ae927505ecd614c60d347b4b0a0eb6358226"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/cleanup-progress.json",
+        "sha": "b5a26c5322ddd12f85b32e688c6e6f3af68a10a0"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/cleanup.json",
+        "sha": "86ccfc182be6a2a222273dda4cbfab9a0e6077c8"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/comparison.json",
+        "sha": "bfa6ad063416cbfe26f200ba11b749d49afd0031"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/experiment.json",
+        "sha": "a27126c51240d3875a068c924de7c4246bbb7c5c"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/four-app-pressure-summary.json",
+        "sha": "e3eac52a6b41019e70ae4f1ca0cabd21acf9d263"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/four-checkout-summary.json",
+        "sha": "c2cc16fc6112bd2ed4d6a6f29e239aaec6deeba1"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/four-db-burst-statement-deltas.json",
+        "sha": "645a7e0e1e0bd0a3a453e87cc41014430c906a22"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/four-generator-summary.json",
+        "sha": "a53a35e600d5c17390fd27cf21c0bd824058e7ee"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/four-request-path-summary.json",
+        "sha": "5c5b1a33865cbcab20ed7e7b2dfd181ec8891962"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/four-runtime-integrity.json",
+        "sha": "6585a3a7c749c4439f82d758a0cb7780961cc269"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/two-app-pressure-summary.json",
+        "sha": "b75ab64228d38b61b9ea9a84988a97f49eb80993"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/two-checkout-summary.json",
+        "sha": "3c97da975a3fc9478f7fa2031cf1a21ca23e8ec3"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/two-db-burst-statement-deltas.json",
+        "sha": "2c0b0d45ba611b1403ee6092a37ae93003bc2599"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/two-generator-summary.json",
+        "sha": "5c3cfbb5e0c070f3ec983cf2aa857c63e56a91dc"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/two-request-path-summary.json",
+        "sha": "c3b6c8f22c0d8cd083194d1d8b9c418108ad22d4"
+      },
+      {
+        "path": "tools/ingressbench/evidence/replica-capacity-2026-10-28/two-runtime-integrity.json",
+        "sha": "d96704ea2e755df81c6eee32a99ef957e0187f9a"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/baseline-trace-assessment.json",
+        "sha": "10facb013bac9b54df48cee364b3d985e9d76c7f"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/broad-comparison.json",
+        "sha": "b4e3da2931f257eea1b210325925d823da592630"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/cache-transition-summary.json",
+        "sha": "4c8dc99691d3034ec7ce3e0304e2d8c295b65b32"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/cleanup-summary.json",
+        "sha": "8761239a68c09664d0b99cb66b05d2b5185beea5"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/comparison-matrix.json",
+        "sha": "b7071891c302fe5c94fa29d57c80578e52675ea7"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/equivalence-app-summary.json",
+        "sha": "a7b4617c189701e8507ba9420af0924673eb0330"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/final-summary.json",
+        "sha": "d478f872ca9221f51ca26e50488939c378841c97"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/generator-cleanup.json",
+        "sha": "7a525e9c6ca14c7dafaa9275b7f461663e90603b"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/next-gates.json",
+        "sha": "4bd5afb414979812153de42c4c3ea6e694fd5a4e"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/peak-trace-summary.json",
+        "sha": "5a4b0a82670671baa6f3b89d260a47cd743dd7af"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/production-image-check.json",
+        "sha": "0060dc6f9ed965c1c5c6468325547caa8a38abde"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/read-trace-summary.json",
+        "sha": "3af6d79bf0357b2ddb885e347caec8b9ef3bab6f"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/recovery-comparison.json",
+        "sha": "1276fc3a0ab6b7bc5d9290996cdb8c6ee69422f6"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/restoration-scaling-events.json",
+        "sha": "09ca42722bcb2139ed7e409a48f1822c5c11902b"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/restoration.json",
+        "sha": "b357874b08a969f2cdbdc8ccaeacde87e49807ad"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/telemetry-integrity.json",
+        "sha": "f59b29f20612e0926cd41d0aef980c6dce456f09"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-profile-2026-10-28/catalog-metadata.json",
+        "sha": "e5f0f14fc88d5045a29db80ada88a262c226e212"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-profile-2026-10-28/cycle-log-coverage.json",
+        "sha": "b5e1e3a35249e6c649f1a771da93d8a896ffdb13"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-profile-2026-10-28/local-profile-smoke.json",
+        "sha": "1f23ec30844c87f7407fa2e8443c6f233c8c5a3e"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-profile-2026-10-28/measured-pages.json",
+        "sha": "bdc1e8c46cd7ee9a5c322a7f5a7a77183c790a4a"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-profile-2026-10-28/profile-summary.json",
+        "sha": "fc84475982647d4a649103dd6f1e3b9634fbb01a"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-profile-2026-10-28/staging-profile-smoke.json",
+        "sha": "a646d250fdf818d8d9bbd623abec516c3f71e8fd"
+      },
+      {
+        "path": "internal/api/handlers/v0/auth/common.go",
+        "sha": "f1665e45b1d0fae0311aec1c618e3a94a255342d"
+      },
+      {
+        "path": "internal/api/handlers/v0/auth/dns.go",
+        "sha": "73508c99ba19993d146cad0577f08278fba500c8"
+      },
+      {
+        "path": "internal/api/handlers/v0/auth/github_at.go",
+        "sha": "e11d4f0eb2b917699cdf6ec17bb2a0b8ae773861"
+      },
+      {
+        "path": "internal/api/handlers/v0/auth/github_oidc.go",
+        "sha": "de95c6755fc7f5dc14999c66c344de5babb2dd9b"
+      },
+      {
+        "path": "internal/api/handlers/v0/auth/http.go",
+        "sha": "b13a090ca1452f4eeff7c02b792222ddc8b72391"
+      },
+      {
+        "path": "internal/api/handlers/v0/auth/none.go",
+        "sha": "2549208344360e53d6a82f4fec11134ad1ed39cd"
+      },
+      {
+        "path": "internal/api/handlers/v0/auth/oidc.go",
+        "sha": "1b63daf812c39d9a40ae992c0088cebfbd4f9ec8"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/app-trace/app-pressure-summary.json",
+        "sha": "ad289cd9cf52d55fe382dffb4c5a2cc51071c1c0"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/app-trace/capacity-timeline.json",
+        "sha": "17e97f8f01f34aaae889e2c8d05e305b28de639c"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/app-trace/checkout-summary.json",
+        "sha": "a765f960a47aeda1076deccc4cbdea715df7795e"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/app-trace/generator-summary.json",
+        "sha": "8a5dc3fbd70537f942745bf36334fb79173d3757"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/app-trace/metric-summary.json",
+        "sha": "1177984d7fe70c5cfd0db4d841cbadfa0bd15010"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/baseline-trace/app-pressure-summary.json",
+        "sha": "934a35953c1010e3d5225d6405256fb9c4d7f568"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/baseline-trace/capacity-timeline.json",
+        "sha": "5c79385d956827c9dd033c492f8fd328921a3571"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/baseline-trace/generator-summary.json",
+        "sha": "92909dac8292e68759680358229efab0e00f92fc"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/baseline-trace/metric-summary.json",
+        "sha": "ec0dc956de12a0be344424ffc7c9c2fef96604f6"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/infra-trace/capacity-timeline.json",
+        "sha": "06c27fd68f053a6fdcfcf8b1fe5feee1d40a03e2"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/infra-trace/generator-summary.json",
+        "sha": "687ea405ae18beefbb20221cc142dcfe3d19dab5"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/infra-trace/lb-summary.json",
+        "sha": "d36debade2128d3643f3317b192d241571444f76"
+      },
+      {
+        "path": "tools/ingressbench/evidence/workload-comparison-2026-10-29/infra-trace/metric-summary.json",
+        "sha": "c96e9468c30cde84db493665e78f0ca0180a8c83"
+      }
+    ],
+    "repo_pushed_at": "2026-10-31T20:57:49Z",
+    "license": "LICENSE-file (type needs review)"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 88,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 85,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "tools/admin/configure-backup-alerts.py",
+      "line": 64,
+      "snippet": "\"query\": '(sum(sum_over_time({__name__=\"logging.googleapis.com/user/'",
+      "host": "logging.googleapis.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "tools/admin/configure-backup-alerts.py",
+      "line": 110,
+      "snippet": "base = f\"https://monitoring.googleapis.com/v3/projects/{args.project}\"",
+      "host": "monitoring.googleapis.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "deploy/pkg/k8s/ingress.go",
+      "line": 110,
+      "snippet": "Repo: pulumi.String(\"https://kubernetes.github.io/ingress-nginx\"),",
+      "host": "kubernetes.github.io",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "deploy/pkg/k8s/monitoring.go",
+      "line": 45,
+      "snippet": "Repo: pulumi.String(\"https://victoriametrics.github.io/helm-charts/\"),",
+      "host": "victoriametrics.github.io",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "deploy/pkg/k8s/monitoring.go",
+      "line": 188,
+      "snippet": "Repo: pulumi.String(\"https://open-telemetry.github.io/opentelemetry-helm-charts\"),",
+      "host": "open-telemetry.github.io",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "deploy/pkg/k8s/monitoring.go",
+      "line": 559,
+      "snippet": "Repo: pulumi.String(\"https://grafana.github.io/helm-charts\"),",
+      "host": "grafana.github.io",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "deploy/pkg/k8s/postgres.go",
+      "line": 33,
+      "snippet": "Repo: pulumi.String(\"https://cloudnative-pg.github.io/charts\"),",
+      "host": "cloudnative-pg.github.io",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": false,
+      "file": ".githooks/pre-commit",
+      "line": 1,
+      "snippet": "#!/bin/bash",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 280,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "logging.googleapis.com",
+      "monitoring.googleapis.com",
+      "kubernetes.github.io",
+      "victoriametrics.github.io",
+      "open-telemetry.github.io",
+      "grafana.github.io",
+      "cloudnative-pg.github.io"
+    ],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 2
+  },
+  "network": {
+    "calls": 282,
+    "failed": 0,
+    "ms": 94595
+  },
+  "duration_ms": 11669
+}

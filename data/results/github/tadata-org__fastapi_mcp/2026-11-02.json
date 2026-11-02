@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "tadata-org/fastapi_mcp",
+    "url": "https://github.com/tadata-org/fastapi_mcp",
+    "name": "fastapi_mcp"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:51:14.730Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "e5cad13cabfc725bbcb047e526816d887d96da62",
+    "files_scanned": 19,
+    "candidates": 19,
+    "excluded_non_shipped": 42,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "01087de630b7046d6132a863ce9da18fea1e8f6d"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "0a4acd3cf0cc7d6dbdf47d8762a28e33485bc078"
+      },
+      {
+        "path": "fastapi_mcp/server.py",
+        "sha": "bb751067c43785f591640e120cfcf42265c7da5b"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "3217262fed4865dd48cac1c951a620561423ca1a"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "16209ab67efb93864ae99eef84eaa436a33e5ea5"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "848b3cba22d84e4a389575372de5349a059b7599"
+      },
+      {
+        "path": "README_zh-CN.md",
+        "sha": "0dff46e5adaad3ab77880ceb7e3ff1f29b55c760"
+      },
+      {
+        "path": "README.md",
+        "sha": "789ea7c862a75488bb33c9878dc3b0cbd4487e82"
+      },
+      {
+        "path": "fastapi_mcp/__init__.py",
+        "sha": "f7487126db1db3d739856cb6fdae0912f496ed74"
+      },
+      {
+        "path": "fastapi_mcp/types.py",
+        "sha": "2e8cf2e500a0f7b546235f138d53d5e20a0f35a9"
+      },
+      {
+        "path": "fastapi_mcp/auth/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "fastapi_mcp/auth/proxy.py",
+        "sha": "3cf3fa5e87832e6a7af6964d942d9d26e19fd136"
+      },
+      {
+        "path": "fastapi_mcp/openapi/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "fastapi_mcp/openapi/convert.py",
+        "sha": "22e5c5e1ae0eaa0e6d5e035d39844035e4f1ebf0"
+      },
+      {
+        "path": "fastapi_mcp/openapi/utils.py",
+        "sha": "1821d5724cbd44ed1d214cc47df140b78c202804"
+      },
+      {
+        "path": "fastapi_mcp/transport/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "fastapi_mcp/transport/http.py",
+        "sha": "47af6f06d09e07b6fbfd88a1cdadcdecfb28e810"
+      },
+      {
+        "path": "fastapi_mcp/transport/sse.py",
+        "sha": "4b64a430a15eede5d241ccff91441ead5cd56529"
+      },
+      {
+        "path": "fastapi_mcp/utils/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      }
+    ],
+    "repo_pushed_at": "2025-11-24T14:51:54Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": false,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 85,
+    "dims": {
+      "maintenance": 0,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 19,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 343
+  },
+  "network": {
+    "calls": 18,
+    "failed": 0,
+    "ms": 6197
+  },
+  "duration_ms": 2088
+}

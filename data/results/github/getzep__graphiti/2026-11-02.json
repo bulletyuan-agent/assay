@@ -1,0 +1,1074 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "getzep/graphiti",
+    "url": "https://github.com/getzep/graphiti",
+    "name": "graphiti"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:51:28.979Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "16bf514380de4e44884aed6779bece220e6fe470",
+    "files_scanned": 236,
+    "candidates": 236,
+    "excluded_non_shipped": 165,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/copilot-instructions.md",
+        "sha": "bb813c7ba050afd28136d3679adbcea00ced66f3"
+      },
+      {
+        "path": ".github/workflows/ai-moderator.yml",
+        "sha": "261cd2e51efd4a8383bfd9f4034c635fef9911f7"
+      },
+      {
+        "path": ".github/workflows/cla.yml",
+        "sha": "6cd1b141fc3caeea7d8abd94f5070cbe359f721c"
+      },
+      {
+        "path": ".github/workflows/codeql.yml",
+        "sha": "cf7dc6f00e3378675c088edb062b74bd1783c364"
+      },
+      {
+        "path": ".github/workflows/issue-intake.yml",
+        "sha": "294e9956766f84367a5717cb10f027bbfbae0098"
+      },
+      {
+        "path": ".github/workflows/lint.yml",
+        "sha": "e5c61a42fe5ab529cf7646bb2168aaef77f18afe"
+      },
+      {
+        "path": ".github/workflows/mcp-server-tests.yml",
+        "sha": "ecd7387156d77524e03f3c4bea7db22f9f9c92ba"
+      },
+      {
+        "path": ".github/workflows/pr-intake.yml",
+        "sha": "f06bbaea1241abafd86a0ae7e47846f9485a5995"
+      },
+      {
+        "path": ".github/workflows/release-graphiti-core.yml",
+        "sha": "ca1a23cbb5ce2c2fbb0d1f2caff0a4baab5e0334"
+      },
+      {
+        "path": ".github/workflows/release-mcp-server.yml",
+        "sha": "0d67560e5124bf38c672f9bd41628bd0edbc37d2"
+      },
+      {
+        "path": ".github/workflows/release-server-container.yml",
+        "sha": "7426bcad1d6a4eeb41e788e3c63480b523ace4ee"
+      },
+      {
+        "path": ".github/workflows/server-tests.yml",
+        "sha": "9e703b754cec92872f8d4081750e16c43a160dda"
+      },
+      {
+        "path": ".github/workflows/socket-firewall-connectivity.yml",
+        "sha": "762c3c7ec0ecfeda5a43e9ca37be40b85691b06f"
+      },
+      {
+        "path": ".github/workflows/stale.yml",
+        "sha": "3a77632ba8e9dc473b412576126207224f398415"
+      },
+      {
+        "path": ".github/workflows/typecheck.yml",
+        "sha": "2197c0ae8509b227bb49d34b36d5a766821c5195"
+      },
+      {
+        "path": ".github/workflows/unit_tests.yml",
+        "sha": "c05879bc961a159df1db9cbc32e1dc8ce04d6fb5"
+      },
+      {
+        "path": "mcp_server/main.py",
+        "sha": "27545396a7d1dea50783ea4dade67b3a5ce59cb4"
+      },
+      {
+        "path": "server/graph_service/main.py",
+        "sha": "e85638ecc3a0c8e1c5b62436718c31ed5f6f526d"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "977ab8b9a2e2c0298b650d88692f16eea25d0452"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "56db43c63e7564d3ab54a976b82168d3f04343c4"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "d227e5c6a0543ff822c11932b9337665c7f40af9"
+      },
+      {
+        "path": "conftest.py",
+        "sha": "945120a4f83e16581de1a7cd51ceb87650e1d106"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "3950230cf9b72c6c119e3660b16719407922fba4"
+      },
+      {
+        "path": "depot.json",
+        "sha": "e7fd9b6132910598ec1df8e429b6d19c84be357d"
+      },
+      {
+        "path": "docker-compose.yml",
+        "sha": "3942d070413baccc4468c370c9c4b555cce1b26c"
+      },
+      {
+        "path": "OTEL_TRACING.md",
+        "sha": "8f5bdb85b369d4669dfdc2277dc9f61dabf52030"
+      },
+      {
+        "path": "README.md",
+        "sha": "64fb8be4524f09fcdc222eba36db02c6413549bc"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "4c4ee69e036a4a05c9155dcdac7a266fc2779652"
+      },
+      {
+        "path": "Zep-CLA.md",
+        "sha": "60e6b6d0ba07ce8c0f7103ee4f229b980fe033f9"
+      },
+      {
+        "path": "graphiti_core/__init__.py",
+        "sha": "0ba72ffccb4b9060c6c49e6bf48fa9e07cedded2"
+      },
+      {
+        "path": "graphiti_core/decorators.py",
+        "sha": "80bb8700cd622204f3022e7c0bddf32b8e8d9d01"
+      },
+      {
+        "path": "graphiti_core/edges.py",
+        "sha": "6800438d9da1ea0f9d566a93bb4489c206726e2c"
+      },
+      {
+        "path": "graphiti_core/errors.py",
+        "sha": "40ae36eada9112f4502f43fdeef2b3e60a7eb94f"
+      },
+      {
+        "path": "graphiti_core/graph_queries.py",
+        "sha": "9df7a728efad5446ff884e0a085da2344b65536e"
+      },
+      {
+        "path": "graphiti_core/graphiti_types.py",
+        "sha": "23bc4f9a3f0123cc31fea26b36e0db19575e6b17"
+      },
+      {
+        "path": "graphiti_core/graphiti.py",
+        "sha": "bd46a19e5f9ee129fb20df43dced053416c7e9f4"
+      },
+      {
+        "path": "graphiti_core/helpers.py",
+        "sha": "9edf65c9787525b319d1d60db2abd707099c2731"
+      },
+      {
+        "path": "graphiti_core/nodes.py",
+        "sha": "f7e5806a165f232e18681bb0060f8d84ebc52f04"
+      },
+      {
+        "path": "graphiti_core/tracer.py",
+        "sha": "841515dd2709f9fc2f08e6a8eb05b04ea439ba6d"
+      },
+      {
+        "path": "mcp_server/README.md",
+        "sha": "e7698a7ec42969bf3f9a3024ce79266bdba56e1c"
+      },
+      {
+        "path": "server/README.md",
+        "sha": "86004298239787e1e85ff6f4b27b87fde5983717"
+      },
+      {
+        "path": "graphiti_core/cross_encoder/__init__.py",
+        "sha": "64a231cfd912df728f2c5bdf7957a73c353473f9"
+      },
+      {
+        "path": "graphiti_core/cross_encoder/bge_reranker_client.py",
+        "sha": "9baf1c663efe920a0813ba43bc3cc1b772ac7062"
+      },
+      {
+        "path": "graphiti_core/cross_encoder/client.py",
+        "sha": "a7645ed18639104c995ee713d174b8fe3c260da0"
+      },
+      {
+        "path": "graphiti_core/cross_encoder/gemini_reranker_client.py",
+        "sha": "b51892b4428289f59302fc3907694858672e6800"
+      },
+      {
+        "path": "graphiti_core/cross_encoder/openai_reranker_client.py",
+        "sha": "eac5f3615eec1ae6671a8f1d9e6192a4aac364d8"
+      },
+      {
+        "path": "graphiti_core/driver/__init__.py",
+        "sha": "39c002933fc431b34f4782327cb0859c595ea8ad"
+      },
+      {
+        "path": "graphiti_core/driver/driver.py",
+        "sha": "bf7d868a8d296bdc26878f8c8d91b03dafaa96eb"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb_driver.py",
+        "sha": "484bafbd6c2c26d65d618b9fe281d8cc0906f3d7"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu_driver.py",
+        "sha": "80947fca758349ca8159ec888079b29a08fb7ed3"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j_driver.py",
+        "sha": "350287966b5b2af2fa2d496c015190b32885e3bb"
+      },
+      {
+        "path": "graphiti_core/driver/neptune_driver.py",
+        "sha": "0ec7b0c17ff0e48767d5af265503a4a0039c94fe"
+      },
+      {
+        "path": "graphiti_core/driver/query_executor.py",
+        "sha": "963b7ddd097dab198836a0e1e80abc24eeb0f0de"
+      },
+      {
+        "path": "graphiti_core/driver/record_parsers.py",
+        "sha": "7256b235add2613df487dc88def788d181c96a95"
+      },
+      {
+        "path": "graphiti_core/embedder/__init__.py",
+        "sha": "aea15619b51cedfb6ebed03d6a0a143bc202b5e3"
+      },
+      {
+        "path": "graphiti_core/embedder/azure_openai.py",
+        "sha": "ced6f22d6810c74c947d62e64744262d994205bf"
+      },
+      {
+        "path": "graphiti_core/embedder/client.py",
+        "sha": "9e05a088577c4b5524d8b9ac1bbf89da1db6400a"
+      },
+      {
+        "path": "graphiti_core/embedder/gemini.py",
+        "sha": "2c16884cd80dd365c5c894239a934487bb65b071"
+      },
+      {
+        "path": "graphiti_core/embedder/openai.py",
+        "sha": "ed2908498c8fbf6d5d34874662f6279e5cc0f7ab"
+      },
+      {
+        "path": "graphiti_core/embedder/voyage.py",
+        "sha": "ed3775711bf3ca4137e1d22b75a6de775a1d006c"
+      },
+      {
+        "path": "graphiti_core/llm_client/__init__.py",
+        "sha": "44c63f825dfca17dde6eb8e25fe49f04835496fc"
+      },
+      {
+        "path": "graphiti_core/llm_client/anthropic_client.py",
+        "sha": "bef80d7662b85197e20bd898584f94c0ab9e1b48"
+      },
+      {
+        "path": "graphiti_core/llm_client/azure_openai_client.py",
+        "sha": "2e45d14bdb601b2327bf038bcb0351ba0268b9af"
+      },
+      {
+        "path": "graphiti_core/llm_client/cache.py",
+        "sha": "e7973b0b921bf714b5559356685417a95e2c0dfe"
+      },
+      {
+        "path": "graphiti_core/llm_client/client.py",
+        "sha": "738a3ae88193ef295f741f6f8442c108c836265e"
+      },
+      {
+        "path": "graphiti_core/llm_client/config.py",
+        "sha": "023d8599bd79cb5cddc51ec6d53dc6ad91261f9a"
+      },
+      {
+        "path": "graphiti_core/llm_client/decision_prompts.py",
+        "sha": "2e1e18d46d154eb045becd1a617366fdf81c84c7"
+      },
+      {
+        "path": "graphiti_core/llm_client/errors.py",
+        "sha": "362f62ad1652b73810f5a8f9a9d17350bba44bf9"
+      },
+      {
+        "path": "graphiti_core/llm_client/gemini_client.py",
+        "sha": "673edb830d5c593861cebc2ccad8563a60b2de55"
+      },
+      {
+        "path": "graphiti_core/llm_client/gliner2_client.py",
+        "sha": "d4e63831e75b571650bdb6dddb5b449d8e5d087a"
+      },
+      {
+        "path": "graphiti_core/llm_client/groq_client.py",
+        "sha": "e9f8e6f83fa72c95d27b20f4c69a186834942399"
+      },
+      {
+        "path": "graphiti_core/llm_client/jev_client.py",
+        "sha": "733199fb7ff6fc4998abc4aec7c8e3eb79196c05"
+      },
+      {
+        "path": "graphiti_core/llm_client/llm_runtime.py",
+        "sha": "f9068d3b5244dd3f2a8db1c06391a902018a5731"
+      },
+      {
+        "path": "graphiti_core/llm_client/openai_base_client.py",
+        "sha": "afea57f82d3e25f9e8a6c2efadfcab8b9c8c5544"
+      },
+      {
+        "path": "graphiti_core/llm_client/openai_client.py",
+        "sha": "fbf2065b790c39fb0b87247f9c83506b4dd0cdc2"
+      },
+      {
+        "path": "graphiti_core/llm_client/openai_decisions_client.py",
+        "sha": "49173985328937f1ef5a779e454a02ae8cd1ac15"
+      },
+      {
+        "path": "graphiti_core/llm_client/openai_generic_client.py",
+        "sha": "b4c15eac6cde56904ecb61e8a6fe6cb363762044"
+      },
+      {
+        "path": "graphiti_core/llm_client/prompt_config.py",
+        "sha": "4115645ae28fa5417860f803b54d219eac212abd"
+      },
+      {
+        "path": "graphiti_core/llm_client/token_tracker.py",
+        "sha": "b9b118ce431f93ed7e64b122b095fc0812fd5317"
+      },
+      {
+        "path": "graphiti_core/llm_client/utils.py",
+        "sha": "e7639ae1ad8e617eb1729cd7dc41285e70cfcd5e"
+      },
+      {
+        "path": "graphiti_core/migrations/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "graphiti_core/models/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "graphiti_core/namespaces/__init__.py",
+        "sha": "e7365e6b7d0edae5765215480f95af7ff9cf4b3b"
+      },
+      {
+        "path": "graphiti_core/namespaces/edges.py",
+        "sha": "9fe13e517bdb364edd6feeb5bcda51021b509cf3"
+      },
+      {
+        "path": "graphiti_core/namespaces/nodes.py",
+        "sha": "bebeed73f9c1727b2eec1b3def948091f7f3322a"
+      },
+      {
+        "path": "graphiti_core/prompts/__init__.py",
+        "sha": "07e3a5a8a259af530016b44a4bc1d752a03b3ea3"
+      },
+      {
+        "path": "graphiti_core/prompts/dedupe_edges.py",
+        "sha": "c67a94241dcdf49ef6c95355e2eab98675acd5a5"
+      },
+      {
+        "path": "graphiti_core/prompts/dedupe_nodes.py",
+        "sha": "5430ae27b8c7d05c548e602233c121db4f9df7e1"
+      },
+      {
+        "path": "graphiti_core/prompts/eval.py",
+        "sha": "065d6a9c01e5fdaa16300a9ace2ac60e5d83b3ae"
+      },
+      {
+        "path": "graphiti_core/prompts/extract_edges.py",
+        "sha": "c814e57858e8efd4a4df64ed590ae0376ea58ae4"
+      },
+      {
+        "path": "graphiti_core/prompts/extract_nodes_and_edges.py",
+        "sha": "7bf6affb179ffd36d2d8f1c0454d4a1b61052e95"
+      },
+      {
+        "path": "graphiti_core/prompts/extract_nodes.py",
+        "sha": "73420395d779a19a4d597d0061de17faaabae2dc"
+      },
+      {
+        "path": "graphiti_core/prompts/lib.py",
+        "sha": "8a8ecb434f709ea69c93e57660d4cbebabc89030"
+      },
+      {
+        "path": "graphiti_core/prompts/models.py",
+        "sha": "1436f7065783aeaf388f33641cea2c0987316fb2"
+      },
+      {
+        "path": "graphiti_core/prompts/names.py",
+        "sha": "6db5ff99dc1ef57774df3ec3091d5115e7b16a5e"
+      },
+      {
+        "path": "graphiti_core/prompts/prompt_helpers.py",
+        "sha": "10e693125b1b67711a93d3416df9a4a714ba4563"
+      },
+      {
+        "path": "graphiti_core/prompts/snippets.py",
+        "sha": "b3ea6ab2c1cfbff5d7c44f77c9fa3570dc2e2a8c"
+      },
+      {
+        "path": "graphiti_core/prompts/summarize_nodes.py",
+        "sha": "c58227de17f5c586b7e77eee78e656b0fc6595ab"
+      },
+      {
+        "path": "graphiti_core/prompts/summarize_sagas.py",
+        "sha": "c6213bfa7a38b7b05c931fe730138ec1b0e70202"
+      },
+      {
+        "path": "graphiti_core/search/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "graphiti_core/search/search_config_recipes.py",
+        "sha": "4b8bc5a363baf730e3f00e6f576a730664516f59"
+      },
+      {
+        "path": "graphiti_core/search/search_config.py",
+        "sha": "7e5714f5fafaec7e362b6a68a67522dde20395ef"
+      },
+      {
+        "path": "graphiti_core/search/search_filters.py",
+        "sha": "b2d08d07ce434a89bdcebcb9d189f592e275002f"
+      },
+      {
+        "path": "graphiti_core/search/search_helpers.py",
+        "sha": "5ee530c01358b959ebbffa8fedc7f3ca1a745cd9"
+      },
+      {
+        "path": "graphiti_core/search/search_utils.py",
+        "sha": "b1570343331959607e9e2ea3a8b38082c3c8e171"
+      },
+      {
+        "path": "graphiti_core/search/search.py",
+        "sha": "9a74c84172dd15a159d4d5e2e35c10fb14d56f4a"
+      },
+      {
+        "path": "graphiti_core/telemetry/__init__.py",
+        "sha": "26bb77a7f18b379e387245c64439e1752451afa8"
+      },
+      {
+        "path": "graphiti_core/telemetry/telemetry.py",
+        "sha": "8d15285ff86ad91abd20b497f97d44b20fcae914"
+      },
+      {
+        "path": "graphiti_core/utils/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "graphiti_core/utils/bulk_utils.py",
+        "sha": "9c13c1b09ec0fb45ce1682a976777ea8b8184a8d"
+      },
+      {
+        "path": "graphiti_core/utils/content_chunking.py",
+        "sha": "0aea471c21d5ea8aa689c591145645c990db4d6c"
+      },
+      {
+        "path": "graphiti_core/utils/datetime_utils.py",
+        "sha": "06f4057c3d6d0448db7b48046b7a1ac82dea15b6"
+      },
+      {
+        "path": "graphiti_core/utils/text_utils.py",
+        "sha": "46acd2be6aaad37d0ab2edbc777c2e346f3793e5"
+      },
+      {
+        "path": "mcp_server/config/config-docker-falkordb-combined.yaml",
+        "sha": "de63ffd42b7ee6d16ba8def11c6b072f1c3010a9"
+      },
+      {
+        "path": "mcp_server/config/config-docker-falkordb.yaml",
+        "sha": "bb57aa3ec400e84bd40349a37d1656806652cffc"
+      },
+      {
+        "path": "mcp_server/config/config-docker-neo4j.yaml",
+        "sha": "67e2fa0f9c99913c7ffc0bce99df75f3ee0c0885"
+      },
+      {
+        "path": "mcp_server/config/config.yaml",
+        "sha": "7055e3906d6a81ace258573e5422534c6c7ae898"
+      },
+      {
+        "path": "mcp_server/config/mcp_config_stdio_example.json",
+        "sha": "7f1d9faf38099cc333b0801e7b452d4b68e9d3a6"
+      },
+      {
+        "path": "mcp_server/docker/build-standalone.sh",
+        "sha": "6938bd0d61ac57ecddd0f4641b573bfabe72a453"
+      },
+      {
+        "path": "mcp_server/docker/build-with-version.sh",
+        "sha": "2dbc96ba9e0333818d3d0e7df9640aabcef9629e"
+      },
+      {
+        "path": "mcp_server/docker/docker-compose-falkordb.yml",
+        "sha": "dcc55faa278d349d6b6261c0692f5da5d5c53a58"
+      },
+      {
+        "path": "mcp_server/docker/docker-compose-neo4j.yml",
+        "sha": "57feedf6b37f3b0ef40c5c4e4a2655e7df404e43"
+      },
+      {
+        "path": "mcp_server/docker/docker-compose.yml",
+        "sha": "8bcd9acbcfe32dd022d89f63f9d657b182bff2ab"
+      },
+      {
+        "path": "mcp_server/docker/github-actions-example.yml",
+        "sha": "f65d38f0da51de415e7c7c02aa471f84d63c75b0"
+      },
+      {
+        "path": "mcp_server/docker/README-falkordb-combined.md",
+        "sha": "ffe11ed7c4ae0e444747e56815b9766cdde99729"
+      },
+      {
+        "path": "mcp_server/docker/README.md",
+        "sha": "dae26966d649d41abdc7186b2d453b30dffe7cd8"
+      },
+      {
+        "path": "mcp_server/src/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "mcp_server/src/graphiti_mcp_server.py",
+        "sha": "bd478769ff0059b334f2217012c4f2ef1cf01402"
+      },
+      {
+        "path": "server/graph_service/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "server/graph_service/config.py",
+        "sha": "b35ac3a84502a79063b13907e9badb801a06af6e"
+      },
+      {
+        "path": "server/graph_service/zep_graphiti.py",
+        "sha": "29e188b66179393913969d998e93a566b7a41c97"
+      },
+      {
+        "path": "signatures/version1/cla.json",
+        "sha": "d84166a7caab09001dfcd44b7c62f7946f9e69e1"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/__init__.py",
+        "sha": "5cbd809421463c5634f0c8dc1d854b01329d35c5"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/fulltext.py",
+        "sha": "7f7608c1ae57c7af194c5d741cd59378301adfe1"
+      },
+      {
+        "path": "graphiti_core/driver/graph_operations/graph_operations.py",
+        "sha": "f670a4f3b0b08c45a3dc1233123fa5ce676d4cbc"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "graphiti_core/driver/operations/__init__.py",
+        "sha": "57a597eecc51ba9b66049d842f79881342854f9b"
+      },
+      {
+        "path": "graphiti_core/driver/operations/community_edge_ops.py",
+        "sha": "8b8104c9b41e44a82e21baedb1c8fbc875d08e8f"
+      },
+      {
+        "path": "graphiti_core/driver/operations/community_node_ops.py",
+        "sha": "59499a264d76f03a8de312ffa7d13ab84a9d1e5d"
+      },
+      {
+        "path": "graphiti_core/driver/operations/entity_edge_ops.py",
+        "sha": "11afe6c5b74b315817aba7b79468192b4dcc0ae2"
+      },
+      {
+        "path": "graphiti_core/driver/operations/entity_node_ops.py",
+        "sha": "0a5c5826e8ccc7348840e0385a4b13bb79b2dcd0"
+      },
+      {
+        "path": "graphiti_core/driver/operations/episode_node_ops.py",
+        "sha": "7374531f740cc3cd478d3a6497486eabcf9903d0"
+      },
+      {
+        "path": "graphiti_core/driver/operations/episodic_edge_ops.py",
+        "sha": "a87726501b9f4968dffbfd11ef5426fc34680600"
+      },
+      {
+        "path": "graphiti_core/driver/operations/graph_ops.py",
+        "sha": "1ad029a930cda1aacb0fa37ac3687a988ce1c478"
+      },
+      {
+        "path": "graphiti_core/driver/operations/graph_utils.py",
+        "sha": "fbb69abe06e587de210b5bf3cc00c7c441741873"
+      },
+      {
+        "path": "graphiti_core/driver/operations/has_episode_edge_ops.py",
+        "sha": "5c9c3f73b3dad438798fcb096ef3fba7e73de981"
+      },
+      {
+        "path": "graphiti_core/driver/operations/next_episode_edge_ops.py",
+        "sha": "a637b0f3eea738534ed12ef6e7ebaea88dabed8c"
+      },
+      {
+        "path": "graphiti_core/driver/operations/saga_node_ops.py",
+        "sha": "817c21875d009e21a4b5a33d8fc637891a3b3abc"
+      },
+      {
+        "path": "graphiti_core/driver/operations/search_ops.py",
+        "sha": "59f50d00f3dc51099865baa79944af0759f176f0"
+      },
+      {
+        "path": "graphiti_core/driver/search_interface/search_interface.py",
+        "sha": "2a3be8db50dfc2a99905b0f324f3cf67644c3688"
+      },
+      {
+        "path": "graphiti_core/models/edges/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "graphiti_core/models/edges/edge_db_queries.py",
+        "sha": "c76cf178690ae2da83587e2e686088f2055deb15"
+      },
+      {
+        "path": "graphiti_core/models/nodes/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "graphiti_core/models/nodes/node_db_queries.py",
+        "sha": "10dec807c53a2711bbcce0f441bc56917930677a"
+      },
+      {
+        "path": "graphiti_core/utils/maintenance/__init__.py",
+        "sha": "b6d9da08065a3fbe1fef7b5666cb59422388e649"
+      },
+      {
+        "path": "graphiti_core/utils/maintenance/attribute_utils.py",
+        "sha": "6d34e92119bad39df308a079c038e663e2596ac7"
+      },
+      {
+        "path": "graphiti_core/utils/maintenance/combined_extraction.py",
+        "sha": "e8c2050d893a3ecdb7caa4fa5cf8d7095140a888"
+      },
+      {
+        "path": "graphiti_core/utils/maintenance/community_operations.py",
+        "sha": "c6fc85dd00fd70acdc61924d69a8bdb83cc757f3"
+      },
+      {
+        "path": "graphiti_core/utils/maintenance/dangling_endpoints.py",
+        "sha": "6ce8466a30f288c9258c87977543db52374cc70a"
+      },
+      {
+        "path": "graphiti_core/utils/maintenance/dedup_helpers.py",
+        "sha": "44ea502246506a27eec95cf224d06c8363aa2686"
+      },
+      {
+        "path": "graphiti_core/utils/maintenance/edge_operations.py",
+        "sha": "465259e71a1e31a0b3e7c0b4fa7acc5701a6d21c"
+      },
+      {
+        "path": "graphiti_core/utils/maintenance/graph_data_operations.py",
+        "sha": "42aa87f3144363198e2b767d3e92295708c8ea26"
+      },
+      {
+        "path": "graphiti_core/utils/maintenance/node_operations.py",
+        "sha": "68afb9f990c88f718a1893aed9b606e38a401aff"
+      },
+      {
+        "path": "graphiti_core/utils/maintenance/temporal_edge_utils.py",
+        "sha": "6a8e161e7510fcd5349828ff773ff686c6f05f78"
+      },
+      {
+        "path": "graphiti_core/utils/ontology_utils/entity_types_utils.py",
+        "sha": "bbc07af772d623cfd757aa7b6b5149687c714030"
+      },
+      {
+        "path": "mcp_server/src/config/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "mcp_server/src/config/schema.py",
+        "sha": "8c21ad470c8b8cba57d6a1677b2785e9251b59d3"
+      },
+      {
+        "path": "mcp_server/src/models/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "mcp_server/src/models/edge_types.py",
+        "sha": "00b61dc9d32ebf79b83e78b7479a841d7182ead9"
+      },
+      {
+        "path": "mcp_server/src/models/entity_types.py",
+        "sha": "5218916ef9ff818cd8a493b0b318562f9c93709d"
+      },
+      {
+        "path": "mcp_server/src/models/response_types.py",
+        "sha": "387f9b106177912f2f48936cfaf967f880d164eb"
+      },
+      {
+        "path": "mcp_server/src/services/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "mcp_server/src/services/factories.py",
+        "sha": "30a6e258e1d48eda81304a4538ee02207c4ea7fc"
+      },
+      {
+        "path": "mcp_server/src/services/queue_service.py",
+        "sha": "c64f7497b94645ab9d35c241d7478241818da415"
+      },
+      {
+        "path": "mcp_server/src/utils/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "mcp_server/src/utils/formatting.py",
+        "sha": "1b5b7f3b1a1138081a5e72c5902b0e767c1c680b"
+      },
+      {
+        "path": "mcp_server/src/utils/type_config.py",
+        "sha": "03bb384a60249e7b2f3234b7fd82452c26390bf0"
+      },
+      {
+        "path": "mcp_server/src/utils/utils.py",
+        "sha": "ec9b4e51260cdf3b31b3598b64e76afec75b71ab"
+      },
+      {
+        "path": "server/graph_service/dto/__init__.py",
+        "sha": "375c9c432f67b543c69d7d87e9ababf44541c95e"
+      },
+      {
+        "path": "server/graph_service/dto/common.py",
+        "sha": "5103470e6460ff94e38a508c6f6865edca6a6cc6"
+      },
+      {
+        "path": "server/graph_service/dto/ingest.py",
+        "sha": "9b0159c859807593880ede6f79f9fe8a31e82570"
+      },
+      {
+        "path": "server/graph_service/dto/retrieve.py",
+        "sha": "a3b8a37d60a1bf275ffd14830aef5473bf768d6b"
+      },
+      {
+        "path": "server/graph_service/routers/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "server/graph_service/routers/ingest.py",
+        "sha": "d03563105772468e5db2b06cfbfe5c0d04bd52d0"
+      },
+      {
+        "path": "server/graph_service/routers/retrieve.py",
+        "sha": "d42df2a332b1b83517e51e0f12a941e9563afc90"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/__init__.py",
+        "sha": "1ca4e83170013428a3179059127a2a2d7e302e56"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/community_edge_ops.py",
+        "sha": "0c0608485a9bad03b971f91e2bb93a2a0795992e"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/community_node_ops.py",
+        "sha": "3684b47b79bcbd021697038ecf23966387dde8ef"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/entity_edge_ops.py",
+        "sha": "75e74ac87731aea208ca29a3834433fe0172fb6e"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/entity_node_ops.py",
+        "sha": "669cc174792ace3ef74b528d848a9faf57102167"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/episode_node_ops.py",
+        "sha": "21cad639682b987d993debada0352e168f44e143"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/episodic_edge_ops.py",
+        "sha": "1f22b9f520f9796a88fd5764bb91e645eade858e"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/graph_ops.py",
+        "sha": "d7096fe61071a8b9e86b1f05d07b2a94824b2b47"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/has_episode_edge_ops.py",
+        "sha": "acb08df000b5081484c65635988ea813f63a6a68"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/next_episode_edge_ops.py",
+        "sha": "c1b004deaddb6045321f764fef0ee295745f1f07"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/saga_node_ops.py",
+        "sha": "3074b90291b85d72ec825818ea41393b6a41d330"
+      },
+      {
+        "path": "graphiti_core/driver/falkordb/operations/search_ops.py",
+        "sha": "43408e81130311908335cb3eb15d98c1040451f8"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/__init__.py",
+        "sha": "107a4bffa0b95e9c2aabb3ae39fc3c6440a07236"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/community_edge_ops.py",
+        "sha": "2d5ef1341bef3312ef0a52e209a293f63b68ee8b"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/community_node_ops.py",
+        "sha": "96c9aa1e29ccdeb0b432d17520ceb09b3363f46e"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/entity_edge_ops.py",
+        "sha": "2ef0299f1105ca52a3148078c177366c15cca156"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/entity_node_ops.py",
+        "sha": "23b208b7dcb4a48a2745ebcc6edeee3a6de27d93"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/episode_node_ops.py",
+        "sha": "dba24048ff1c16e2fc3bf0df6e0d2f07d61c3054"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/episodic_edge_ops.py",
+        "sha": "eb1e5797312e67cdbb3c7323fa18d8efe041df06"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/graph_ops.py",
+        "sha": "8cfd0d7d879e2fb4726d18b9049c743a61380a8a"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/has_episode_edge_ops.py",
+        "sha": "0f1483e12503a741bb561a0b1b0199a3e5fc9c91"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/next_episode_edge_ops.py",
+        "sha": "8ba9a0371de4d7eb7add73c568f34629a60199db"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/record_parsers.py",
+        "sha": "145aa127af6373f8d58d1b934dbaa829629991ed"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/saga_node_ops.py",
+        "sha": "43debb3fb45d6d143685209b56ac32533b135fab"
+      },
+      {
+        "path": "graphiti_core/driver/kuzu/operations/search_ops.py",
+        "sha": "2e7def3fee020073bd2e93a4b7b1717a8a46b3b5"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/__init__.py",
+        "sha": "67ddc310c644937ae9043ecd2229f523df3d1bcc"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/community_edge_ops.py",
+        "sha": "cb4be579ebb7763d5a2e261809c256219e7fad30"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/community_node_ops.py",
+        "sha": "31e6e3141c0ce5142b57a1e910d8dd70cf30b9c9"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/entity_edge_ops.py",
+        "sha": "2ead941b7978b30f7dd94c8f9d53dfd8786524c4"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/entity_node_ops.py",
+        "sha": "e2c3e22e68680c8d28d01eebc38636c77d3e4db9"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/episode_node_ops.py",
+        "sha": "2efbf3aa639a71dfa05ca88d3a3ea5e67450589c"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/episodic_edge_ops.py",
+        "sha": "0ef9a362552db6b7005ab578f766d2b83abab04e"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/graph_ops.py",
+        "sha": "43f33f3a7e16f80acc490f7e4761ac3b6c1510dc"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/has_episode_edge_ops.py",
+        "sha": "3dcb67b16397bb5c236a4ae2b4bbadcf9640112b"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/next_episode_edge_ops.py",
+        "sha": "086fe44a9f78f62e78f19661aee472dac4de5224"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/saga_node_ops.py",
+        "sha": "892aaeedb332799cdf9e22fd8c7985203dad38f3"
+      },
+      {
+        "path": "graphiti_core/driver/neo4j/operations/search_ops.py",
+        "sha": "9f0e308e39ddaec35d6f23dc31555f19037527be"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/__init__.py",
+        "sha": "7824b947bc0ff104bb699e8846cad0b9437edd1d"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/community_edge_ops.py",
+        "sha": "a4b6463dd6db9fe71c3e9324747befe673676fc9"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/community_node_ops.py",
+        "sha": "97bc40881100804768ebdbe85bd9ad8aa3c6c658"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/entity_edge_ops.py",
+        "sha": "1a4589c64af028338cd89552e0b8abe04d75ccfa"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/entity_node_ops.py",
+        "sha": "20a0b1719ed1e26784888942b974ff5c01a7cd3f"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/episode_node_ops.py",
+        "sha": "e4ec68516990455f0a17edfe05ebf75aab770ead"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/episodic_edge_ops.py",
+        "sha": "36f3fcb5a1234a17682d1ed338f4001104179517"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/graph_ops.py",
+        "sha": "dd1317161d839347bee6a853a8cb746196e82600"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/has_episode_edge_ops.py",
+        "sha": "6425f2678001020d334d85d680329ae925b09ea2"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/next_episode_edge_ops.py",
+        "sha": "e114a157acebdd45831b9782f657cb613ed3b28c"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/saga_node_ops.py",
+        "sha": "b507c8c320f00bb8156e462ae96fe5f859b36eea"
+      },
+      {
+        "path": "graphiti_core/driver/neptune/operations/search_ops.py",
+        "sha": "07ae5a72af12bbe688697d5bb06dde7383417ab7"
+      }
+    ],
+    "repo_pushed_at": "2026-11-01T01:05:00Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 85,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 75,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "graphiti_core/prompts/lib.py",
+      "line": 397,
+      "snippet": "def eval(self) -> EvalPrompts: ...",
+      "deduction": 10
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "graphiti_core/llm_client/config.py",
+      "line": 57,
+      "snippet": "Defaults to \"https://api.openai.com\", which is OpenAI's standard API endpoint.",
+      "host": "api.openai.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "graphiti_core/llm_client/jev_client.py",
+      "line": 92,
+      "snippet": "base_url: str = 'https://api.typesafe.ai/v1/systemone',",
+      "host": "api.typesafe.ai",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "mcp_server/src/config/schema.py",
+      "line": 125,
+      "snippet": "api_url: str = 'https://api.groq.com/openai/v1'",
+      "host": "api.groq.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "mcp_server/src/config/schema.py",
+      "line": 132,
+      "snippet": "api_url: str = 'https://api.voyageai.com/v1'",
+      "host": "api.voyageai.com",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "gha-pull-request-target-checkout",
+      "severe": false,
+      "file": ".github/workflows/lint.yml",
+      "line": 3,
+      "snippet": "# SECURITY: this workflow uses `pull_request_target` so that ruff lint/format runs",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 236,
+    "files_excluded": 0,
+    "danger_hits": 1,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "api.openai.com",
+      "api.typesafe.ai",
+      "api.groq.com",
+      "api.voyageai.com"
+    ],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 2
+  },
+  "network": {
+    "calls": 223,
+    "failed": 0,
+    "ms": 72704
+  },
+  "duration_ms": 9206
+}

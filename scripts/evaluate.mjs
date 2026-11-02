@@ -14,8 +14,13 @@ const DANGER = [
   /os\.system\s*\(/,
   /subprocess\.\w+\([^)]*shell\s*=\s*True/,
   /base64[^\n]{0,40}\|\s*(ba)?sh/,
-  /process\.env[\s\S]{0,300}(fetch|axios|http\.request)\s*\(/,
+  // Bulk environment dump next to a network call. Reading one declared token (process.env.X) is normal and is not matched.
+  /(JSON\.stringify\(\s*process\.env\s*\)|Object\.(entries|keys|values)\(\s*process\.env\s*\))[\s\S]{0,300}(fetch|axios|http\.request)\s*\(/,
 ];
+// Indexes into DANGER that are severe on their own: destructive deletes, pipe-to-shell, env exfiltration.
+const SEVERE = new Set([0, 1, 2, 8, 9]);
+// Tests, examples and docs routinely contain eval, rm -rf and foreign URLs. They are not shipped behaviour.
+export const NON_SHIPPED = /(^|\/)(tests?|__tests__|spec|examples?|fixtures?|docs?|samples?|benchmarks?|e2e)\/|\.(test|spec)\.[a-z]+$/i;
 const INJECTION = [
   /ignore (all |any |the )?(previous|prior|above) instructions/i,
   /do not (tell|inform|mention (it )?to) the user/i,
@@ -52,22 +57,30 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   const install_docs = clamp((installDetected ? 60 : 0) + (readme.length >= 500 ? 40 : 0));
 
   const hasFiles = Array.isArray(files);
-  const code = hasFiles ? files.filter((f) => CODE_RE.test(f.path)) : [];
+  const shipped = hasFiles ? files.filter((f) => !NON_SHIPPED.test(f.path)) : [];
+  const code = shipped.filter((f) => CODE_RE.test(f.path));
   let danger = 0;
-  for (const f of code) for (const re of DANGER) if (re.test(f.text)) danger++;
+  let severe = 0;
+  for (const f of code) DANGER.forEach((re, i) => { if (re.test(f.text)) { danger++; if (SEVERE.has(i)) severe++; } });
   const dangerous_patterns = hasFiles ? clamp(100 - 25 * danger) : null;
 
+  // Egress: a host is fine when the README declares it (by host or registrable domain). Only undeclared hosts count.
+  const readmeLower = readme.toLowerCase();
+  const reg = (h) => h.split('.').slice(-2).join('.');
   const hosts = new Set();
+  const declared = new Set();
   for (const f of code) {
     for (const m of f.text.matchAll(/https?:\/\/([a-z0-9.-]+)/gi)) {
       const h = m[1].toLowerCase();
-      if (h !== ownHost && !ALLOW_HOSTS.some((a) => h === a || h.endsWith(`.${a}`))) hosts.add(h);
+      if (h !== ownHost && !ALLOW_HOSTS.some((a) => h === a || h.endsWith(`.${a}`))) {
+        if (readmeLower.includes(h) || readmeLower.includes(reg(h))) declared.add(h); else hosts.add(h);
+      }
     }
   }
   const egress = hasFiles ? clamp(100 - 15 * Math.min(hosts.size, 6)) : null;
 
   let inj = 0;
-  for (const f of hasFiles ? files : []) for (const re of INJECTION) if (re.test(f.text)) inj++;
+  for (const f of shipped) for (const re of INJECTION) if (re.test(f.text)) inj++;
   const instruction_hygiene = hasFiles ? clamp(100 - 30 * inj) : null;
 
   const dims = { maintenance, install_docs, dangerous_patterns, egress, instruction_hygiene };
@@ -78,13 +91,19 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
     num += WEIGHTS[k] * v;
     den += WEIGHTS[k];
   }
-  const composite = den ? Math.round(num / den) : null;
+  let composite = den ? Math.round(num / den) : null;
+  // Severity cap: one severe finding must not be averaged away.
+  const red_flags = [];
+  if (severe > 0) red_flags.push('severe-code-pattern');
+  if (inj > 0) red_flags.push('prompt-injection');
+  if (hosts.size >= 4) red_flags.push('undeclared-egress'); // provisional threshold, to be calibrated
+  if (composite !== null && red_flags.length) composite = Math.min(composite, 49);
   const grade = composite === null ? null : composite >= 85 ? 'A' : composite >= 70 ? 'B' : composite >= 50 ? 'C' : 'D';
   return {
-    dims, composite, grade, coverage: Number(den.toFixed(2)), static_scan: hasFiles,
+    dims, composite, grade, red_flags, coverage: Number(den.toFixed(2)), static_scan: hasFiles,
     evidence: {
-      files_scanned: hasFiles ? files.length : 0, danger_hits: danger, injection_hits: inj,
-      external_hosts: [...hosts].slice(0, 10), install_detected: installDetected, age_days: Math.round(age),
+      files_scanned: hasFiles ? shipped.length : 0, files_excluded: hasFiles ? files.length - shipped.length : 0, danger_hits: danger, severe_hits: severe, injection_hits: inj,
+      undeclared_hosts: [...hosts].slice(0, 10), declared_hosts: declared.size, install_detected: installDetected, age_days: Math.round(age),
     },
   };
 }

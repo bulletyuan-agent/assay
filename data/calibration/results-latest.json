@@ -1,24 +1,24 @@
 {
-  "at": "2026-11-02T13:21:26.147Z",
+  "at": "2026-11-02T14:01:22.635Z",
   "summary": {
     "all": {
       "n_good": 9,
       "n_bad": 5,
-      "mean_good": 87,
-      "mean_bad": 72,
-      "auc": 0.8888888888888888
+      "mean_good": 96,
+      "mean_bad": 49,
+      "auc": 1
     },
     "synthetic": {
       "n_good": 2,
       "n_bad": 5,
       "mean_good": 94,
-      "mean_bad": 72,
+      "mean_bad": 49,
       "auc": 1
     },
     "real": {
       "n_good": 7,
       "n_bad": 0,
-      "mean_good": 85,
+      "mean_good": 96,
       "mean_bad": null,
       "auc": null
     }
@@ -38,9 +38,12 @@
       },
       "evidence": {
         "files_scanned": 2,
+        "files_excluded": 0,
         "danger_hits": 0,
+        "severe_hits": 0,
         "injection_hits": 0,
-        "external_hosts": [],
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
         "install_detected": true,
         "age_days": 0
       }
@@ -59,9 +62,12 @@
       },
       "evidence": {
         "files_scanned": 2,
+        "files_excluded": 0,
         "danger_hits": 0,
+        "severe_hits": 0,
         "injection_hits": 0,
-        "external_hosts": [],
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
         "install_detected": true,
         "age_days": 0
       }
@@ -70,7 +76,7 @@
       "id": "bad-pipe-shell",
       "label": "bad",
       "kind": "synthetic",
-      "score": 75,
+      "score": 49,
       "dims": {
         "maintenance": 100,
         "install_docs": 60,
@@ -80,11 +86,14 @@
       },
       "evidence": {
         "files_scanned": 2,
+        "files_excluded": 0,
         "danger_hits": 2,
+        "severe_hits": 2,
         "injection_hits": 0,
-        "external_hosts": [
+        "undeclared_hosts": [
           "cdn.sketchy-host.example"
         ],
+        "declared_hosts": 0,
         "install_detected": true,
         "age_days": 0
       }
@@ -93,7 +102,7 @@
       "id": "bad-env-exfil",
       "label": "bad",
       "kind": "synthetic",
-      "score": 75,
+      "score": 49,
       "dims": {
         "maintenance": 100,
         "install_docs": 60,
@@ -103,11 +112,14 @@
       },
       "evidence": {
         "files_scanned": 2,
+        "files_excluded": 0,
         "danger_hits": 2,
+        "severe_hits": 1,
         "injection_hits": 0,
-        "external_hosts": [
+        "undeclared_hosts": [
           "collect.tracker-host.example"
         ],
+        "declared_hosts": 0,
         "install_detected": true,
         "age_days": 0
       }
@@ -116,7 +128,7 @@
       "id": "bad-egress-hosts",
       "label": "bad",
       "kind": "synthetic",
-      "score": 72,
+      "score": 49,
       "dims": {
         "maintenance": 100,
         "install_docs": 60,
@@ -126,9 +138,11 @@
       },
       "evidence": {
         "files_scanned": 2,
+        "files_excluded": 0,
         "danger_hits": 0,
+        "severe_hits": 0,
         "injection_hits": 0,
-        "external_hosts": [
+        "undeclared_hosts": [
           "a.analytics-one.example",
           "b.analytics-two.example",
           "c.telemetry-three.example",
@@ -136,6 +150,7 @@
           "e.pixel-five.example",
           "f.stats-six.example"
         ],
+        "declared_hosts": 0,
         "install_detected": true,
         "age_days": 0
       }
@@ -144,7 +159,7 @@
       "id": "bad-injection-skill",
       "label": "bad",
       "kind": "synthetic",
-      "score": 79,
+      "score": 49,
       "dims": {
         "maintenance": 100,
         "install_docs": 60,
@@ -154,9 +169,12 @@
       },
       "evidence": {
         "files_scanned": 2,
+        "files_excluded": 0,
         "danger_hits": 0,
+        "severe_hits": 0,
         "injection_hits": 8,
-        "external_hosts": [],
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
         "install_detected": true,
         "age_days": 0
       }
@@ -165,7 +183,7 @@
       "id": "bad-destructive",
       "label": "bad",
       "kind": "synthetic",
-      "score": 60,
+      "score": 49,
       "dims": {
         "maintenance": 100,
         "install_docs": 60,
@@ -175,17 +193,149 @@
       },
       "evidence": {
         "files_scanned": 2,
+        "files_excluded": 0,
         "danger_hits": 4,
+        "severe_hits": 2,
         "injection_hits": 0,
-        "external_hosts": [
+        "undeclared_hosts": [
           "x.example"
         ],
+        "declared_hosts": 0,
         "install_detected": true,
         "age_days": 0
       }
     },
     {
       "id": "g-servers",
+      "label": "good",
+      "kind": "real",
+      "score": 100,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 62,
+        "files_excluded": 18,
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 4
+      }
+    },
+    {
+      "id": "g-github-mcp",
+      "label": "good",
+      "kind": "real",
+      "score": 100,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 48,
+        "files_excluded": 32,
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 2,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "g-chrome-devtools",
+      "label": "good",
+      "kind": "real",
+      "score": 93,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 70,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 70,
+        "files_excluded": 10,
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [
+          "v8.dev",
+          "www.apache.org"
+        ],
+        "declared_hosts": 2,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "g-playwright",
+      "label": "good",
+      "kind": "real",
+      "score": 93,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 70,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 30,
+        "files_excluded": 7,
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [
+          "www.apache.org",
+          "portal.microsofticm.com"
+        ],
+        "declared_hosts": 1,
+        "install_detected": true,
+        "age_days": 1
+      }
+    },
+    {
+      "id": "g-firecrawl",
+      "label": "good",
+      "kind": "real",
+      "score": 93,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 70,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 56,
+        "files_excluded": 24,
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [
+          "client.example",
+          "status.example"
+        ],
+        "declared_hosts": 5,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "g-notion",
       "label": "good",
       "kind": "real",
       "score": 93,
@@ -197,146 +347,13 @@
         "instruction_hygiene": 100
       },
       "evidence": {
-        "files_scanned": 80,
+        "files_scanned": 27,
+        "files_excluded": 14,
         "danger_hits": 1,
+        "severe_hits": 0,
         "injection_hits": 0,
-        "external_hosts": [],
-        "install_detected": true,
-        "age_days": 4
-      }
-    },
-    {
-      "id": "g-github-mcp",
-      "label": "good",
-      "kind": "real",
-      "score": 81,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 25,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 80,
-        "danger_hits": 0,
-        "injection_hits": 0,
-        "external_hosts": [
-          "api.githubcopilot.com",
-          "insiders.vscode.dev",
-          "example.ghe.com",
-          "api.example.ghe.com",
-          "uploads.example.ghe.com"
-        ],
-        "install_detected": true,
-        "age_days": 0
-      }
-    },
-    {
-      "id": "g-chrome-devtools",
-      "label": "good",
-      "kind": "real",
-      "score": 85,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 40,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 80,
-        "danger_hits": 0,
-        "injection_hits": 0,
-        "external_hosts": [
-          "v8.dev",
-          "www.apache.org",
-          "b",
-          "developers.chrome.com"
-        ],
-        "install_detected": true,
-        "age_days": 0
-      }
-    },
-    {
-      "id": "g-playwright",
-      "label": "good",
-      "kind": "real",
-      "score": 89,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 55,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 37,
-        "danger_hits": 0,
-        "injection_hits": 0,
-        "external_hosts": [
-          "www.apache.org",
-          "playwright.dev",
-          "portal.microsofticm.com"
-        ],
-        "install_detected": true,
-        "age_days": 1
-      }
-    },
-    {
-      "id": "g-firecrawl",
-      "label": "good",
-      "kind": "real",
-      "score": 78,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 10,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 80,
-        "danger_hits": 0,
-        "injection_hits": 0,
-        "external_hosts": [
-          "client.example",
-          "status.example",
-          "firecrawl.dev",
-          "api.firecrawl.dev",
-          "docs.firecrawl.dev",
-          "www.firecrawl.dev",
-          "mcp.firecrawl.dev",
-          "benzinga.example",
-          "mcp.example.test",
-          "evil.com"
-        ],
-        "install_detected": true,
-        "age_days": 0
-      }
-    },
-    {
-      "id": "g-notion",
-      "label": "good",
-      "kind": "real",
-      "score": 70,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 50,
-        "egress": 40,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 41,
-        "danger_hits": 2,
-        "injection_hits": 0,
-        "external_hosts": [
-          "api.notion.com",
-          "www.notion.so",
-          "test.com",
-          "test-api.com"
-        ],
+        "undeclared_hosts": [],
+        "declared_hosts": 2,
         "install_detected": true,
         "age_days": 4
       }
@@ -355,9 +372,12 @@
       },
       "evidence": {
         "files_scanned": 80,
+        "files_excluded": 0,
         "danger_hits": 0,
+        "severe_hits": 0,
         "injection_hits": 0,
-        "external_hosts": [],
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
         "install_detected": true,
         "age_days": 5
       }

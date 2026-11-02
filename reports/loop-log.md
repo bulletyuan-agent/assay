@@ -67,3 +67,6 @@ Fixtures: 27, written by an independent author who never saw the detector, froze
 
 ## Round 8 correction · good-set-v2 final result
 My round-8 entry reported 6/28 flagged, read from a run that was still in progress. The completed run `run-20261102T154949Z` has 38 results. Flagged (score<70 or red flag): **10/38 = 26.3%, Wilson 95% 15.0% to 42.0%**. Gate G2 requires at most 8%, so G2 still fails, now with the full set. Additional flags: block/goose (severe-code-pattern, rm-rf, curl-pipe-sh, reverse-shell), spec-kit (rm-rf, agent-cli-bypass-flags), cline and continue (injection phrases). 9 network calls failed during the run (log `net_failed`), not investigated. Coverage ≥0.8 on 27/38.
+
+## Round 9 · failed-fetch audit of good-set-v2 run (no method change)
+The 9 failed network calls in `run-20261102T154949Z` fall on three repos: Doriandarko/claude-engineer (4 of 33), anthropics/claude-code (1 of 403), daytonaio/daytona (4 of 8, only 1 file scanned). Failed file fetches are dropped silently, and `coverage` is computed against files fetched, so a repo can report coverage 1 while part of its tree was never read. That overstates coverage and understates findings. Required fix before any release: count failed fetches as unscanned, retry, and mark the result PARTIAL. These three results are unreliable. No gate figure changed; G1 and G2 remain failed.

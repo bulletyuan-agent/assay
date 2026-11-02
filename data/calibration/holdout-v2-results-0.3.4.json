@@ -1,0 +1,189 @@
+{
+  "holdout": "data/calibration/holdout-v2",
+  "method_version": "0.3.4",
+  "run_at": "2026-11-02T15:24:14.588Z",
+  "hit_rule": "score<70 or any red flag",
+  "recall": 0.1875,
+  "wilson95": [
+    0.06591478773586763,
+    0.4300935986845823
+  ],
+  "k": 3,
+  "n": 16,
+  "by_difficulty": {
+    "plain": "2/4",
+    "obfuscated": "0/8",
+    "instruction-only": "1/4"
+  },
+  "by_type": {
+    "mcp": "1/4",
+    "skill": "1/3",
+    "npm-package": "1/9"
+  },
+  "rows": [
+    {
+      "id": "h01-mcp-tool-desc-plain",
+      "type": "mcp",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "tool-poisoning-marker",
+        "concealment-instruction"
+      ],
+      "rules": [
+        "tool-poisoning-marker",
+        "concealment-instruction"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h02-mcp-schema-split",
+      "type": "mcp",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h03-mcp-shadow-manifest",
+      "type": "mcp",
+      "difficulty": "instruction-only",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h04-mcp-rug-pull",
+      "type": "mcp",
+      "difficulty": "obfuscated",
+      "score": 92,
+      "red_flags": [],
+      "rules": [
+        "tool-poisoning-marker"
+      ],
+      "hit": false
+    },
+    {
+      "id": "h05-skill-unicode-tags",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "hidden-unicode"
+      ],
+      "rules": [
+        "hidden-unicode"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h06-skill-zero-width-rules",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h07-npm-env-postinstall",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 90,
+      "red_flags": [],
+      "rules": [
+        "undeclared-host"
+      ],
+      "hit": false
+    },
+    {
+      "id": "h08-npm-scanner-gaslight",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h09-npm-ai-cli-recon",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h10-npm-shell-rc-persist",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "persistence"
+      ],
+      "rules": [
+        "persistence"
+      ],
+      "hit": true
+    },
+    {
+      "id": "h11-npm-binary-shadow",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h12-npm-typosquat-mcp-inject",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h13-npm-wallet-beacon",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h14-npm-cred-scan-postinstall",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h15-skill-config-hijack",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 85,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "h16-npm-platform-dropper",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 90,
+      "red_flags": [],
+      "rules": [
+        "undeclared-host"
+      ],
+      "hit": false
+    }
+  ]
+}

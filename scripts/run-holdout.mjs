@@ -4,7 +4,7 @@
 import { readFileSync, readdirSync, statSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { evaluateStatic } from './evaluate.mjs';
-import { wilson } from './summarize-run.mjs';
+import { wilson } from './stats.mjs';
 
 const dir = process.argv[2];
 const method = process.argv[3];

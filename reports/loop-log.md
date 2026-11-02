@@ -21,6 +21,21 @@ Other noise: URLs in error messages or docstrings, XML namespace hosts, `[system
 **Retrospective.** The extended detectors work on the development set but are too eager on prose and test data. These fixes are tuned on `good-set-v1` and `holdout-v1`, so both are now **development sets**. G2 will be measured on `good-set-v2` (pre-registered, unscored) and G1 on `holdout-v2` (frozen, unscored). I did not read the holdout-v2 fixtures.
 
 ## Round 2 · false-positive fixes (method 0.3.1)
-**Change.** Non-shipped paths widened (mocks, `.github`, `.devcontainer`, `*_test.*`); single-label, `.internal`, `.lan` hosts and XML-namespace hosts treated as non-egress; a URL preceded by prose words is a message, not a call target; weak signals (`eval`, `os.system`, shell=True) deduct 10 each, capped at 30 in total, severe ones unchanged at 40; `| source` needs `curl` or `wget` on the same line; poison marker made case-sensitive for `[SYSTEM]`; blob cache keyed by git blob sha.
+**Change.** Non-shipped paths widened; placeholder, single-label, `.internal` hosts and XML-namespace hosts ignored; a URL preceded by prose is a message, not a call target; weak signals capped; `| source` needs `curl`/`wget` on the line; `[SYSTEM]` marker case-sensitive; blob cache.
+**Result.** On `good-set-v1` (first 40 files budget): 5 of 40 flagged, all false positives (vendor installer one-liners in SKILL.md, a concealment sentence in an agent prompt). Coverage only 50%.
+**Retrospective.** The truncation to 80 files had been hiding noise. The coverage fix in round 3 exposed it.
 
-**Test.** Full rerun of `good-set-v1` (in progress).
+## Round 3 · coverage 400 files, concurrent fetch (method 0.3.2)
+**Change.** File budget 80 → 400, fetched by 10 workers in a fixed order; a plain `curl <named https host> | sh` is weak unless attacker signals exist (no TLS, bare IP, staging host, encoded content); concealment wording needs a sensitive action.
+**Result: false-positive explosion.** Coverage reached 100% for most repos, but **21 of 39 repos were flagged**. Causes found by aggregating findings by rule: `concealment-instruction` fired 398 times because the wording list contained "silently", "secretly", "don't show"; `curl | sh` strings in docs-site configs; `rm -rf /var/lib/apt/lists/*` matched as destructive; many-host red flag fired on SDKs; `dict(os.environ)` for subprocess env was read as an exfiltration.
+**Retrospective.** I added the concealment rule without measuring it against a large clean corpus. The lesson is process: every new detector must be run on the good set before the next step, and findings must be aggregated by rule, not eyeballed.
+
+## Round 4 · precision pass (methods 0.3.3 and 0.3.4)
+**Change.** Concealment narrowed to explicit "do not tell the user" wording and emitted only next to a sensitive action; `rm -rf` severe only for `/`, `~`, `$HOME` and system roots; weak findings capped at 30 per dimension; the many-hosts red flag removed (legitimate multi-service projects contact many hosts); the install-snippet URL is read from the full match, not the truncated snippet; `env` dump only when the environment is the request payload.
+**Result on `good-set-v1` (development): 1 of 40 flagged (2.5%, Wilson 0.4% to 12.9%), 35 of 40 with coverage of at least 80%.** The one flag is `auth0/auth0-mcp-server`: an onboarding prompt that tells the agent not to tell the user about a step. Intent cannot be separated statically; left as a measured false positive.
+**Cost.** Removing the host-count flag made the synthetic `bad-egress-hosts` fixture a miss (87).
+
+## Round 5 · first independent holdout (holdout-v2, method 0.3.4) — G1 FAILED
+Fixtures were written by an independent author who never saw the detector, frozen in commit `aeaa4ef`, and scored once.
+**Result: recall 3 of 16 = 18.8% (Wilson 95% 6.6% to 43.0%).** plain 2/4, obfuscated 0/8, instruction-only 1/4. Hits: tool-description poisoning with concealment, Unicode tag characters, shell rc persistence. Misses include env-posting postinstall hooks, a postinstall that spawns AI CLIs with permission-bypass flags, credential harvesting split across path segments, wallet beacons, a typosquat that writes MCP config, split-string payloads, zero-width steganography, config hijack by instruction.
+**Retrospective.** Real attackers put the payload in install-time scripts and split or encode strings. The current rules look at literal strings in single files and ignore install-time context. Gate G1 requires recall of at least 0.80; it is at 0.19. `holdout-v2` is now a development set; a fresh holdout is required before any claim.

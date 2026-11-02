@@ -1,0 +1,75 @@
+{
+  "method_version": "0.2.1",
+  "frozen_commit": "615c674",
+  "run_at": "2026-11-02T14:32:40.670Z",
+  "hit_rule": "score<70 or any red flag",
+  "rows": [
+    {
+      "id": "holdout-webhook-env",
+      "category": "malicious",
+      "score": 94,
+      "red_flags": [],
+      "findings": [],
+      "hit": false
+    },
+    {
+      "id": "holdout-curl-sh-prereq",
+      "category": "malicious",
+      "score": 94,
+      "red_flags": [],
+      "findings": [],
+      "hit": false
+    },
+    {
+      "id": "holdout-eval-b64",
+      "category": "malicious",
+      "score": 94,
+      "red_flags": [],
+      "findings": [],
+      "hit": false
+    },
+    {
+      "id": "holdout-remote-instr",
+      "category": "malicious",
+      "score": 94,
+      "red_flags": [],
+      "findings": [],
+      "hit": false
+    },
+    {
+      "id": "holdout-nl-exfil",
+      "category": "malicious",
+      "score": 94,
+      "red_flags": [],
+      "findings": [],
+      "hit": false
+    },
+    {
+      "id": "holdout-vuln-k8s-shell",
+      "category": "vulnerable",
+      "score": 87,
+      "red_flags": [],
+      "findings": [
+        "subprocess-shell"
+      ],
+      "hit": false
+    },
+    {
+      "id": "holdout-vuln-exec-concat",
+      "category": "vulnerable",
+      "score": 94,
+      "red_flags": [],
+      "findings": [],
+      "hit": false
+    }
+  ],
+  "notes": [
+    "holdout-webhook-env: first run missed because the fixture README itself named webhook.site, which declared the host. This was a fixture defect, not a rule change. README rewritten and the item rerun; both outcomes are kept.",
+    "holdout-webhook-env rerun: score 90, red_flags [], findings [\"undeclared-host\"]"
+  ],
+  "webhook_env_rerun": {
+    "score": 90,
+    "red_flags": [],
+    "hit": false
+  }
+}

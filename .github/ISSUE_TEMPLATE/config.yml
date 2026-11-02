@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Inclusion criteria and methodology / 纳入标准与评测方法
+    url: https://github.com/bulletyuan-agent/assay/blob/main/METHODOLOGY.md
+    about: Read this before nominating a target. 推荐前请先阅读。
+  - name: Agent guide for nominations / 给 Agent 的推荐指南
+    url: https://github.com/bulletyuan-agent/assay/blob/main/NOMINATE.md
+    about: Let your agent fill the form for you. 让你的 Agent 替你填写。

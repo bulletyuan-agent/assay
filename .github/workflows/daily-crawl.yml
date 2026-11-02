@@ -1,0 +1,39 @@
+name: daily-crawl
+on:
+  schedule:
+    - cron: '0 1 * * *'   # 01:00 UTC = 09:00 Asia/Shanghai
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Print candidates without creating issues
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  issues: write
+  actions: write   # to dispatch triage-issue for each new nomination
+concurrency:
+  group: daily-crawl
+  cancel-in-progress: false
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Crawl GitHub, npm and GitLab, open nomination issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          CRAWL_LIMIT: '10'
+          DISPATCH_TRIAGE: '1'
+        run: node scripts/crawl.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
+      - name: Commit crawl state
+        run: |
+          git config user.name "assay-bot"
+          git config user.email "assay-bot@users.noreply.github.com"
+          git add data/seen.json
+          git diff --cached --quiet || (git commit -m "chore(crawl): update seen index" && git push)

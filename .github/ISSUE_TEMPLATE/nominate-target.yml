@@ -1,0 +1,111 @@
+name: 推荐待测对象 · Nominate a target
+description: 推荐一个 MCP server 或 Skill 进入 Assay 评测 / Nominate an MCP server or Skill for Assay to evaluate
+title: "[Nominate] "
+labels: ["nomination", "status:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢推荐。只接受**公开**的仓库或包。提交后会自动分类、检查纳入门槛,并运行静态评测。
+        Thanks! Only **public** repositories or packages are accepted. Triage and static evaluation run automatically after you submit.
+
+        <details><summary><b>🤖 给你的 Agent 的提示词 · Prompt for your agent</b></summary>
+
+        ```text
+        请阅读 https://github.com/bulletyuan-agent/assay/blob/main/NOMINATE.md ,
+        按其中的字段为我推荐一个待测对象(MCP server 或 Skill),
+        然后用 gh 在 bulletyuan-agent/assay 创建一个 issue(模版 nominate-target.yml)。
+        推荐对象: <在这里粘贴 GitHub / npm / GitLab 地址>
+        如果该对象不满足纳入标准,或你与它有利益关系,请直接告诉我,不要提交。
+        ```
+
+        </details>
+  - type: dropdown
+    id: type
+    attributes:
+      label: Target type / 对象类型
+      options:
+        - MCP server
+        - Skill
+        - Agent or other (out of phase-1 scope / 第一阶段范围外)
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name / 名称
+      placeholder: e.g. filesystem-mcp
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Repository or package URL / 仓库或包地址
+      placeholder: https://github.com/owner/repo  or  https://www.npmjs.com/package/name  or  https://gitlab.com/group/project
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Source / 来源
+      options:
+        - GitHub
+        - npm
+        - GitLab
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: Scenario / 垂直场景
+      options:
+        - Office: documents
+        - Office: spreadsheets
+        - Office: calendar
+        - Office: mail
+        - Developer: code & repos
+        - Databases
+        - Design & media
+        - Search & research
+        - Finance
+        - DevOps & cloud
+        - Customer support
+        - Education
+        - Browser automation
+        - Cloud storage
+        - Project management
+        - Translation
+        - Data & visualization
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: install
+    attributes:
+      label: How to install or run / 安装与运行方式
+      description: The exact command, e.g. npx ..., uvx ..., or a docker command.
+      render: shell
+  - type: textarea
+    id: claims
+    attributes:
+      label: Claimed capabilities and permissions / 声称的能力与权限
+      description: What the README says it can do, and what access it asks for (files, network, credentials).
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it is worth testing / 推荐理由
+      description: Who uses it, what risk you suspect, or what you want verified.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmations / 确认事项
+      options:
+        - label: The repository or package is public / 仓库或包是公开的
+          required: true
+        - label: Its license permits testing / 许可证允许测试
+          required: true
+        - label: I have no commercial interest in this target / 我与该对象没有商业利益关系
+          required: true

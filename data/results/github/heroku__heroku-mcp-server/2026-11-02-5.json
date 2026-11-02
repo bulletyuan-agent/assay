@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T153006Z",
+  "target": {
+    "source": "github",
+    "id": "heroku/heroku-mcp-server",
+    "url": "https://github.com/heroku/heroku-mcp-server",
+    "name": "heroku-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:31:26.183Z",
+  "method_version": "0.4.0",
+  "tool": {
+    "assay_commit": "0d54b15c908aa12ddde2f2301c162f8ca747bad7",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.4.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "51089088f6da9220d721981f685d96ac4d82316d",
+    "files_scanned": 47,
+    "candidates": 47,
+    "excluded_non_shipped": 32,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/index.ts",
+        "sha": "5b5c5feabb549119705dfa82ef563324efc7017c"
+      },
+      {
+        "path": "app.json",
+        "sha": "57c089bb5135ef0f61a611753adc505276ac7040"
+      },
+      {
+        "path": "package.json",
+        "sha": "837cfd730cc8f858e82a019e7ae9783d40326ca4"
+      },
+      {
+        "path": "bin/heroku-mcp-server.mjs",
+        "sha": "c52acbbe4b12f27a278673ae34331260f05c453d"
+      },
+      {
+        "path": ".mocharc.json",
+        "sha": "4a6a4d400dcec7bdc73deaecfd17de8e9b59f7db"
+      },
+      {
+        "path": ".nycrc.json",
+        "sha": "ecda7c0d4165a091a9e0cc81fd55ad9e0253f4be"
+      },
+      {
+        "path": ".prettier.mjs",
+        "sha": "095e64b515403188b0d4890b4a93c41e6cf6f066"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "79d0fa1082e29da69f121b1b24d1a865e591a4e7"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "2119acac10b86265724f5e8c14770661d443ccf2"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "8461582efcc0ce36bb17d47a2419ac98015844cf"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "sha": "7fcb13abede143874b113fc2d14196e941e2221d"
+      },
+      {
+        "path": "LICENSE.txt",
+        "sha": "bf3e62868960fa2c733b1c3993f7ba23849737c3"
+      },
+      {
+        "path": "manifest.json",
+        "sha": "b13880bd474d3a615d80f840379e13ddde5e1087"
+      },
+      {
+        "path": "README.md",
+        "sha": "01eeb7d00d21f08bb5c77dc31f9c7b2a181ce84d"
+      },
+      {
+        "path": "release-channels.yml",
+        "sha": "0d8e0d2893676ce7a9374c118c949d097f4eef05"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "33c0c771bacaac5d28443914d2b797a8e359d469"
+      },
+      {
+        "path": "src/repl/heroku-cli-repl.ts",
+        "sha": "b1bcaef5a1aaaab926a050acefcd021ee3f297f1"
+      },
+      {
+        "path": "src/resources/dev-center-resource.ts",
+        "sha": "3114632c3e4dcba146a572f504b6abe63c5c7544"
+      },
+      {
+        "path": "src/services/app-service.ts",
+        "sha": "dcb7cb878e5622c1db08bfde8677e147c57765f3"
+      },
+      {
+        "path": "src/services/app-setup-service.ts",
+        "sha": "6d8d625160b592b82893510670721520830f1492"
+      },
+      {
+        "path": "src/services/build-service.ts",
+        "sha": "ecd8c9e21ce0ef9924034c13fd2cfe2fce4fe950"
+      },
+      {
+        "path": "src/services/dyno-service.ts",
+        "sha": "deda54211c8e43de826dc745bfb3c641fb379ae8"
+      },
+      {
+        "path": "src/services/rendezvous.ts",
+        "sha": "06ed69690ee1cec70822990d5e62bcea88c35a04"
+      },
+      {
+        "path": "src/services/source-service.ts",
+        "sha": "7392c16bfb4edfce1fbb073ecd95d6fd239b9f5d"
+      },
+      {
+        "path": "src/tools/addons.ts",
+        "sha": "1d52741875e5e4889cf9a9d13269ad6e41796928"
+      },
+      {
+        "path": "src/tools/ai.ts",
+        "sha": "b8c89360808ded8a9e197b62e482320ca6036423"
+      },
+      {
+        "path": "src/tools/apps.ts",
+        "sha": "37989ee893727918cc13c7be37b5ceeefc632bf9"
+      },
+      {
+        "path": "src/tools/data.ts",
+        "sha": "d58bac70b5423c209025400dfe689241c4014eaf"
+      },
+      {
+        "path": "src/tools/deploy-to-heroku.ts",
+        "sha": "1d1fce66e6140c08d4c488f6b825ac6a791dcdcd"
+      },
+      {
+        "path": "src/tools/logs.ts",
+        "sha": "7c183439fbe170bf0f9216cac211b65fb35727ca"
+      },
+      {
+        "path": "src/tools/maintenance.ts",
+        "sha": "cd44fd262b79bdd4538bf7fe92c551cde570aefa"
+      },
+      {
+        "path": "src/tools/pipelines.ts",
+        "sha": "b5e2a771e249b7126596e225428d704db8db23f0"
+      },
+      {
+        "path": "src/tools/ps.ts",
+        "sha": "4b7ac37a1b42f819ca0ac2188b17d60e1155c217"
+      },
+      {
+        "path": "src/tools/spaces.ts",
+        "sha": "deff4d7daa60b091bc637ed20ef6c9ae2ad533c1"
+      },
+      {
+        "path": "src/tools/teams.ts",
+        "sha": "b4b39b149a1b22eb9cc0dfc6026bbf7e905679b9"
+      },
+      {
+        "path": "src/utils/agent-request.schema.json",
+        "sha": "df0af8916f114395fc8f60a7916dabfcc2aab23b"
+      },
+      {
+        "path": "src/utils/app-json.schema.json",
+        "sha": "bc21ad2bf2766a02d152974917637365836943dd"
+      },
+      {
+        "path": "src/utils/command-builder.ts",
+        "sha": "16d746b1af19d2fec4fb97ee92e2ad62e408e79e"
+      },
+      {
+        "path": "src/utils/generate-request-init.ts",
+        "sha": "3489d55049e9275a35cb2f9ca4864ab086ff4176"
+      },
+      {
+        "path": "src/utils/handle-cli-output.ts",
+        "sha": "db87ded16eb40393d56b99ec6575d8586d2bf517"
+      },
+      {
+        "path": "src/utils/mcp-tool-mocks.spechelper.ts",
+        "sha": "518b79d6404c2dafbedb5e82698c26db15bde82c"
+      },
+      {
+        "path": "src/utils/mcp-tool-response.ts",
+        "sha": "fd672f8805e44c3f4acf3ae312f54b84332f6187"
+      },
+      {
+        "path": "src/utils/plugin-detector.ts",
+        "sha": "a0e914befa79ba9366c11d8b84ec3ad9c2411197"
+      },
+      {
+        "path": "src/utils/read-app-json.ts",
+        "sha": "f4263d221547fca094581cda273a18e54517398a"
+      },
+      {
+        "path": "src/utils/tarball.ts",
+        "sha": "2a074ca885ae2d29b7731553432b10852c2b851a"
+      },
+      {
+        "path": "src/utils/tool-commands.ts",
+        "sha": "ab8438c511af3979553b32b6739a48323b6dc626"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "15d4ce94d03fca887779c2cf2b6251decbd9ac15"
+      }
+    ],
+    "repo_pushed_at": "2026-11-01T20:05:49Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 47,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 1
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1479
+  },
+  "duration_ms": 1505
+}

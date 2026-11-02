@@ -33,7 +33,7 @@ const CRED = /(\.ssh\/(id_[a-z0-9]+|authorized_keys)|\.aws\/credentials|\.npmrc|
 const ENV_DUMP_PY = /(json\.dumps\(\s*(dict\()?\s*os\.environ|\b(data|json|body|params|payload)\s*=\s*(dict\()?\s*os\.environ\b)/;
 const CONCEAL = /\b(do not|don't|never)\s+(tell|inform|notify|reveal to|disclose to|mention (this|it|that|these)( to)?)\b[^.\n]{0,30}\b(the )?(user|human|operator)\b|\b(do not|don't|never)\s+(mention|reveal|disclose)\s+(this|it|that|these|the)\s+(\w+\s+)?(step|action|instruction|request|call|task)s?\b|\bwithout\s+(telling|informing|notifying)\s+(the\s+)?(user|human)\b|不要(告诉|告知|提及)用户|不得(告诉|告知)用户/i;
 const SEND_TO_URL = /\b(send|upload|post|forward|transmit|submit|email|exfiltrat\w*|copy)\b[^.\n]{0,140}\b(to|at|via)\b[^.\n]{0,60}https?:\/\/[^\s)'"`>]+/i;
-const POISON_MARK = /<\s*(IMPORTANT|system|instructions?)\s*>|\[SYSTEM\]/;
+const POISON_MARK = /<\s*IMPORTANT\s*>|\[SYSTEM\]/;
 const POISON_MARK_I = /<\s*IMPORTANT\s*>/i;
 const INJECT_EXTRA = [/disregard (all |any |the )?(previous|prior|above)/i, /override (the )?(system|safety)/i, /you are now (in )?(developer|dan|unrestricted)/i];
 const TAG_CHARS = /[\u{E0000}-\u{E007F}]/u;
@@ -204,7 +204,7 @@ export function extendedScan(shipped, ctx) {
       // 2g. Writing agent configuration that the README never mentions.
       if (AGENT_CONFIG.test(clean) && FS_MUTATE.test(clean) && OUTSIDE_PKG.test(clean)) {
         const ac = find(clean, AGENT_CONFIG, f.text);
-        if (ac && !readme.includes((ac.match[0] || '').toLowerCase())) add('dangerous_patterns', 'agent-config-write', true, f, ac, 40);
+        if (ac && !readme.includes((ac.match[0] || '').toLowerCase())) add('dangerous_patterns', 'agent-config-write', installTime, f, ac, installTime ? 40 : 15); // severe only at install time; MCP installers legitimately edit client configs
       }
       // 2h. Encoded payloads that decode to commands or URLs.
       for (const d of decodedPayloads(clean).slice(0, 2)) add('dangerous_patterns', 'encoded-payload', true, f, { line: clean.slice(0, d.index).split('\n').length, snippet: `decodes to: ${d.decoded}`.slice(0, 160) }, 40);
@@ -260,7 +260,7 @@ export function extendedScan(shipped, ctx) {
       if (zw >= 8) add('instruction_hygiene', 'hidden-zero-width', true, f, { line: 1, snippet: `(${zw} zero-width characters)` }, 40);
       if (/\.(json|py|m?[jt]sx?)$/.test(f.path) || isSkill) {
         const sh = find(txt, TOOL_SHADOW);
-        if (sh) add('instruction_hygiene', 'tool-shadowing', true, f, sh, 40);
+        if (sh) add('instruction_hygiene', 'tool-shadowing', false, f, sh, 15); // weak: 'before calling other tools' is common in honest descriptions
       }
       if (/\.(json|py|m?[jt]sx?)$/.test(f.path) || isSkill) {
         const nm = find(txt, NOTE_FOR_MODEL);

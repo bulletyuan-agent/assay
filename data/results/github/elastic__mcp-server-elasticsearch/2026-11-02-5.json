@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T153006Z",
+  "target": {
+    "source": "github",
+    "id": "elastic/mcp-server-elasticsearch",
+    "url": "https://github.com/elastic/mcp-server-elasticsearch",
+    "name": "mcp-server-elasticsearch"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:31:09.693Z",
+  "method_version": "0.4.0",
+  "tool": {
+    "assay_commit": "0d54b15c908aa12ddde2f2301c162f8ca747bad7",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.4.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "9e64b842f22269eb214793e1a4885128dc4a8fd8",
+    "files_scanned": 8,
+    "candidates": 8,
+    "excluded_non_shipped": 4,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "scripts/cargo-run.sh",
+        "sha": "a866e48fc71c9770f28329404d54440726b782f8"
+      },
+      {
+        "path": "catalog-info.yaml",
+        "sha": "83abd5a9c26faa2c04a489ad9572694b36d98e38"
+      },
+      {
+        "path": "NOTICE.txt",
+        "sha": "9cba2b009fc742b96de634a2c68d61cee2bfb630"
+      },
+      {
+        "path": "README.md",
+        "sha": "45c1fdcee8ba1f39c6b5ca35ec96fd780e19896b"
+      },
+      {
+        "path": "renovate.json",
+        "sha": "278941327e19bdac4e6f7ddaeeff449c8c4b4fb2"
+      },
+      {
+        "path": ".buildkite/docker.yml",
+        "sha": "6f9b8666032bd156d93aefc5f3d1a92d2c552ff3"
+      },
+      {
+        "path": ".buildkite/pipeline.yml",
+        "sha": "faf9e62c4724d06dd7963c2f33da899535eb32cf"
+      },
+      {
+        "path": ".buildkite/pull-requests.json",
+        "sha": "e2c368088f806bde0a4d3157f8c91b44aa61523e"
+      }
+    ],
+    "repo_pushed_at": "2026-10-28T23:46:45Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 8,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 5
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1414
+  },
+  "duration_ms": 1417
+}

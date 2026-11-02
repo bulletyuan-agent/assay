@@ -30,18 +30,20 @@ Respect terms of service. Authors get a notice period before negative findings a
 
 ---
 
-## What the static screen checks (method 0.3.x) · 静态初筛检查项
+## What the static screen checks (method 0.4.x) · 静态初筛检查项
 
-The screen reads files; it never executes anything. It is a **hygiene and known-pattern check, not a security guarantee and not a trust rating.** Unknown, obfuscated or dynamically assembled attacks can pass. A result is a screening score plus a list of findings, each with file, line and snippet.
+The screen reads files; it never executes anything. It is a **hygiene and known-pattern check, not a security guarantee and not a trust rating.** Unknown, heavily obfuscated, dynamically assembled or runtime-downloaded attacks can pass. A result is a screening score plus findings, each with file, line and snippet.
 
-Dimensions (score = 100 minus the deductions of its findings): maintenance, install documentation, dangerous patterns, egress, instruction hygiene. Any severe finding caps the score at 49 and sets a red flag.
+Score = per-dimension scores (maintenance, install documentation, dangerous patterns, egress, instruction hygiene), each 100 minus the deductions of its findings. Any severe finding caps the score at 49 and sets a red flag. Weak findings are capped at 30 points per dimension.
 
-Severe findings include: destructive deletes; piping a download into a shell or `source`; `eval` of decoded content; encrypted archives; encoded PowerShell; asking the user to paste a command into a terminal (in a SKILL.md); install hooks in package.json that fetch or run code; sending data to capture or staging services (webhook.site and similar) or to undeclared chat webhooks; reading credential files in code that can reach the network; dumping the whole environment next to a network call; persistence (cron, launchd, shell rc files); hard-coded copy/forward email recipients; prompt-injection phrases; hidden Unicode tag characters; natural-language instructions to send data to a URL together with concealment; tool-poisoning markers together with concealment.
+**What is read.** Up to 400 shipped files, install hooks and entry points first. Tests, mocks, examples, demos, docs and CI configuration are not read as shipped behaviour. Comments are ignored. Literal-only string splits (`"a"+"b"`, `["a","b"].join("")`, `"".join([...])`, a named literal list that is joined) are folded before matching. Base64 literals that decode to commands or URLs are reported.
 
-Weak signals (small capped deductions): `eval`, `os.system`, `shell=True`, undeclared hosts, a URL a skill sends data to.
+**Install-time context.** Files run by `preinstall`/`install`/`postinstall` in package.json, and local modules they require (three hops), are read more strictly: credential or wallet file reads, detached background processes, writes outside the package directory (home, global bin, shell startup files), and sending data (POST, request bodies) are severe there; plain downloads stay weak.
 
-Not scanned as shipped behaviour: tests, mocks, examples, docs, CI configuration and similar. Hosts mentioned in the README are treated as declared.
+**Severe findings.** Destructive deletes of `/`, `~` or system roots; piping a download into a shell or `source` with attacker signals (no TLS, bare IP, staging or shortener host, encoded content); `eval` of decoded content; encrypted archives; encoded PowerShell; download-then-`chmod +x`; install hooks that fetch or run code; capture or staging services (webhook.site and similar) and undeclared chat webhooks; credential or wallet files read by code that can reach the network; the environment placed in a request payload; persistence (cron, launchd, shell startup files); permission-bypass flags passed to agent CLIs; agent configuration written at install time; hard-coded copy/forward email recipients; prompt-injection phrases; hidden Unicode tag characters or runs of zero-width characters; `<IMPORTANT>`/`[SYSTEM]` markers in code or JSON; instructions to send data to a URL or to alter agent configuration, combined with concealment; notes addressed to the model that direct tool behaviour; text that tries to talk a reviewer or scanner out of flagging the package.
 
-Coverage: the screen reads up to 80 files per repository, spending the budget on install hooks and entry points first. Results state how many shipped files were read. Partial coverage is flagged on every result.
+**Weak findings.** `eval`, `os.system`, `shell=True`, undeclared hosts, plain installer one-liners, instructions in a skill to call an undeclared URL, wording about other tools.
 
-Every result stores: method version, tool commit, tree sha of the scanned repository, scanned file paths with blob shas, findings, network log and run log. `scripts/verify-run.mjs` recomputes the score from the findings.
+**Coverage and honesty.** Every result states how many shipped files were read and flags partial coverage. Hosts mentioned in the README count as declared. Every result stores the method version, tool commit, tree sha, scanned paths with blob shas, findings, network log and run log; `scripts/verify-run.mjs` recomputes the score from the findings.
+
+**Measured performance** is published with every release in `reports/`: recall on frozen independent holdouts, false-positive rate on reputable projects, both with Wilson 95% intervals, and the evasion rate found by an independent red team.

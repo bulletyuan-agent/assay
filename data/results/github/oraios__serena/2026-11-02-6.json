@@ -1,0 +1,1360 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T153006Z",
+  "target": {
+    "source": "github",
+    "id": "oraios/serena",
+    "url": "https://github.com/oraios/serena",
+    "name": "serena"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:30:30.644Z",
+  "method_version": "0.4.0",
+  "tool": {
+    "assay_commit": "0d54b15c908aa12ddde2f2301c162f8ca747bad7",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.4.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "ede329aaf0c824bea75455a2926f01420d7aa620",
+    "files_scanned": 274,
+    "candidates": 274,
+    "excluded_non_shipped": 483,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "a511127595a0fdf82f1a598e3871cd6da62abc2d"
+      },
+      {
+        "path": "src/serena/cli.py",
+        "sha": "9801040a3cccc0af1cb94b46fd8d37c6a0bf9ef1"
+      },
+      {
+        "path": "src/solidlsp/lsp_protocol_handler/server.py",
+        "sha": "002ab6245d8fecbc5f4564b6c62640a504158d0c"
+      },
+      {
+        "path": "scripts/add_spdx_headers.py",
+        "sha": "15ac9a665faa8c1beb32602515ba585758cbf808"
+      },
+      {
+        "path": "scripts/agno_agent.py",
+        "sha": "53f0dae00e70e6e7494d794db25bdabc8738b2a9"
+      },
+      {
+        "path": "scripts/build_news_json.py",
+        "sha": "c46e4962ec62711875655b1d4633bb110380e5eb"
+      },
+      {
+        "path": "scripts/bump_version.py",
+        "sha": "d25870e72fa8955ab04ba30d043ca259558c458d"
+      },
+      {
+        "path": "scripts/demo_cli_call.py",
+        "sha": "e42fd2b2100cc17b0347bbf2290570b43e693511"
+      },
+      {
+        "path": "scripts/demo_diagnostics.py",
+        "sha": "2ead12a44ed87515d0ada5a7de4dcd63b75b432b"
+      },
+      {
+        "path": "scripts/demo_find_defining_symbol.py",
+        "sha": "92107fe71098af69d68d01d8801bc96e920cce7c"
+      },
+      {
+        "path": "scripts/demo_find_implementing_symbol.py",
+        "sha": "87ea6c629dc5bce47eaee9162a4451ae44c5bc96"
+      },
+      {
+        "path": "scripts/demo_progressive_tool_shortening.py",
+        "sha": "0e06f1515090407912d01546a7a128161dad3ee2"
+      },
+      {
+        "path": "scripts/demo_run_tools.py",
+        "sha": "2dc6efbece03a5d9648118750832e85c20a02105"
+      },
+      {
+        "path": "scripts/gen_prompt_factory.py",
+        "sha": "e740c889d741f88455b43caf2e5e4c7eaa0aebdf"
+      },
+      {
+        "path": "scripts/gen_tool_capabilities.py",
+        "sha": "6cb8c287bc121237a9124eab28add226dfdbffcd"
+      },
+      {
+        "path": "scripts/live_test_grok.py",
+        "sha": "17b67949b3cfc7daf8994d90f276e634c4fd4fc2"
+      },
+      {
+        "path": "scripts/mcp_server.py",
+        "sha": "bf52cc119e1022306b2b34f0557513c8ed118869"
+      },
+      {
+        "path": "scripts/memory_graph.py",
+        "sha": "63db0ee9d05403401d99dd7f561a2edf782f900f"
+      },
+      {
+        "path": "scripts/print_language_list.py",
+        "sha": "05d301d0730c0466b971c752ec66e721d186a291"
+      },
+      {
+        "path": "scripts/print_mode_context_options.py",
+        "sha": "741939e769dc728560cd78c1956c5bc52d804cb0"
+      },
+      {
+        "path": "scripts/print_tool_overview.py",
+        "sha": "0313cab6ccb4c09406deb033c832c648c8785c74"
+      },
+      {
+        "path": "scripts/profile_search_text.py",
+        "sha": "00f9f25449424ab09dc795fa76bef52fb9e430df"
+      },
+      {
+        "path": "scripts/profile_tool_call.py",
+        "sha": "5d82a8863d3c8a7957d27652354d23f8140a1c61"
+      },
+      {
+        "path": "scripts/update_downloaded_dependency_hashes.py",
+        "sha": "55d4e6282ee478fc75f0c38007a4754a4fdb89c1"
+      },
+      {
+        "path": "src/README.md",
+        "sha": "41986273e25519be96751dc19678db48ca11501e"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "8b86e1e0b464d7dade8a841bd0576d4baf5f50bd"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "f352524b79b82d5f2fc9f8e7a84d89dea1f7af8f"
+      },
+      {
+        "path": "CLA.md",
+        "sha": "af72c03cfb7f13cb44f1e2e2c934dd48072cd03d"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+      },
+      {
+        "path": "compose.yaml",
+        "sha": "edd530f08d856e0118bbfc8b4b0e549906ea39fd"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "51a5d07ad779b1c486cbfea25936ea063713348d"
+      },
+      {
+        "path": "docker_build_and_run.sh",
+        "sha": "dd69afde419758aff5908ac349354458fade9a4a"
+      },
+      {
+        "path": "DOCKER.md",
+        "sha": "bb77040cd45eb33efe64f214b03629f182cf12a5"
+      },
+      {
+        "path": "README-dev.md",
+        "sha": "d4c23de18f220408f97510de6c6377b62d38dbe9"
+      },
+      {
+        "path": "README.md",
+        "sha": "5965015ca4ea4b3192d1d7c147a8bc325a40feaa"
+      },
+      {
+        "path": "repo_dir_sync.py",
+        "sha": "874a362fbb6d7f6ccab184fd3a321f8ef4aeb023"
+      },
+      {
+        "path": "src/interprompt/__init__.py",
+        "sha": "7df6eaa0277a25722d9fe4353fc62114e02e8251"
+      },
+      {
+        "path": "src/interprompt/jinja_template.py",
+        "sha": "8542579b24c816bfa67551c37911a0872ec2f5bc"
+      },
+      {
+        "path": "src/interprompt/multilang_prompt.py",
+        "sha": "57b25659096f9706b368cbe55384bbe60c167060"
+      },
+      {
+        "path": "src/interprompt/prompt_factory.py",
+        "sha": "0f4d58ecdbc3ff6fc08f28ee5730fa6179b38c5c"
+      },
+      {
+        "path": "src/serena/__init__.py",
+        "sha": "bdc2acb2798659463d6c8e5f93ba7425971af5c0"
+      },
+      {
+        "path": "src/serena/agent.py",
+        "sha": "e27fc397b850338f268f095706ef8d1fc242e649"
+      },
+      {
+        "path": "src/serena/agno.py",
+        "sha": "5f8a9c456646ee945684be2815f651b72c322fed"
+      },
+      {
+        "path": "src/serena/analytics.py",
+        "sha": "e12ae2ef9427964e2bd6b3130cf073fa886ad3bb"
+      },
+      {
+        "path": "src/serena/code_editor.py",
+        "sha": "5b466489492fa91363cd08861df04455bf74021f"
+      },
+      {
+        "path": "src/serena/constants.py",
+        "sha": "be45dc8eff57675b20d5085f8bdfa2d1ad60b501"
+      },
+      {
+        "path": "src/serena/gui_log_viewer.py",
+        "sha": "8d83ecd0a0e1e0aa0160d43cc97efd4d70129f47"
+      },
+      {
+        "path": "src/serena/hooks.py",
+        "sha": "d945edd0b536dcba191c4430c82d62608fb1ce73"
+      },
+      {
+        "path": "src/serena/language_backend.py",
+        "sha": "21f6b8785235aee6d97a23e63cc625754763aa1c"
+      },
+      {
+        "path": "src/serena/ls_manager.py",
+        "sha": "e6dcb17d1fe2b0b66e8b01f0c8761a3fc2d40943"
+      },
+      {
+        "path": "src/serena/mcp.py",
+        "sha": "bd2e01bfb793449490ac1abefa0211ce8e177117"
+      },
+      {
+        "path": "src/serena/project_server.py",
+        "sha": "abc2e3c084a718b250ec41fa1b97c52f1889b37a"
+      },
+      {
+        "path": "src/serena/project.py",
+        "sha": "a15088712a42476f5d11427f64d6e3973b2ad658"
+      },
+      {
+        "path": "src/serena/prompt_factory.py",
+        "sha": "801a6a4a4dc967727323b835e18d4b992b382e56"
+      },
+      {
+        "path": "src/serena/session.py",
+        "sha": "c331bb1267cc5323b1dd4f302080cfbd81e9e4de"
+      },
+      {
+        "path": "src/serena/symbol.py",
+        "sha": "e0d357369bf2e20fecfa7d8d580db8f55f3d6747"
+      },
+      {
+        "path": "src/serena/task_executor.py",
+        "sha": "7de4e0d3eb734d9282a82a40365ff0cd128d7627"
+      },
+      {
+        "path": "src/solidlsp/__init__.py",
+        "sha": "9d1640cb085414a2bcd7847c34b26aa8be507655"
+      },
+      {
+        "path": "src/solidlsp/dependency_provider.py",
+        "sha": "07ec0aa51a84af1299d0251718a5360f89582e43"
+      },
+      {
+        "path": "src/solidlsp/initialize_params.py",
+        "sha": "87fd36d3e604fa9145006d573154ab602ac686d4"
+      },
+      {
+        "path": "src/solidlsp/ls_config.py",
+        "sha": "d98e0a9d516b398c6b89fa4b1b38ed33fbde3cb9"
+      },
+      {
+        "path": "src/solidlsp/ls_exceptions.py",
+        "sha": "23e483b42505603412c1897268215685176d4fb4"
+      },
+      {
+        "path": "src/solidlsp/ls_process.py",
+        "sha": "5b0ad610cde07122de6cf1ed7832749011167698"
+      },
+      {
+        "path": "src/solidlsp/ls_request.py",
+        "sha": "b12226db5d70db73cd1f818690c55724ec468e7e"
+      },
+      {
+        "path": "src/solidlsp/ls_types.py",
+        "sha": "0960ea49afcf6bef58c8dff311cd3641c09d332f"
+      },
+      {
+        "path": "src/solidlsp/ls_utils.py",
+        "sha": "a74b01f834fdccba3e78be88649e6b979cce7c50"
+      },
+      {
+        "path": "src/solidlsp/settings.py",
+        "sha": "ab8eb5d503db1a607a0257fad19a37cbc3ca0581"
+      },
+      {
+        "path": "sync.py",
+        "sha": "08cb8d5d15d43f0a93f1c442c1fbdc7935a365eb"
+      },
+      {
+        "path": ".serena/project.yml",
+        "sha": "8745f0bc0562082f0719f860be164a9f6fed046f"
+      },
+      {
+        "path": "LICENSES/GPL-3.0-or-later.txt",
+        "sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+      },
+      {
+        "path": "LICENSES/MIT.txt",
+        "sha": "d27bba648a59b23cadf39b9e74fd0684ea2e15dd"
+      },
+      {
+        "path": "src/interprompt/util/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/interprompt/util/class_decorators.py",
+        "sha": "dc82b142ffc6b6427be9d055065afd8b6d39f7d3"
+      },
+      {
+        "path": "src/serena/config/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/serena/config/client_setup.py",
+        "sha": "5500d36e58a07aa476b88188a83c69fe6211cc0b"
+      },
+      {
+        "path": "src/serena/config/context_mode.py",
+        "sha": "eae373ed54f67438672a9d7a88ec916a98daea49"
+      },
+      {
+        "path": "src/serena/config/serena_config.py",
+        "sha": "50f396ec6f624b28544efea1532a51de1d3edf6c"
+      },
+      {
+        "path": "src/serena/config/serena_paths.py",
+        "sha": "2816d94fc1934f158002525961fcb4d3b84eb299"
+      },
+      {
+        "path": "src/serena/dashboard/dashboard_api.py",
+        "sha": "9cbf55b736a486e0d0628757aa1bc7006be0e734"
+      },
+      {
+        "path": "src/serena/dashboard/dashboard_tray_manager.py",
+        "sha": "5dd80ff7424f6dce4cf707b996ed967ec1a434dd"
+      },
+      {
+        "path": "src/serena/dashboard/dashboard_viewer.py",
+        "sha": "cc6d9fde088cdd40aeefb9fab716e9ac03b5818a"
+      },
+      {
+        "path": "src/serena/generated/generated_prompt_factory.py",
+        "sha": "035055ccd1aafd5fca3664398d84d6f9f5312158"
+      },
+      {
+        "path": "src/serena/generated/tool_capabilities.py",
+        "sha": "38d5b9dc62881c4747408730ce8c5a7c37437925"
+      },
+      {
+        "path": "src/serena/jetbrains/jetbrains_backend.py",
+        "sha": "c504a951251feff2ac55ffc44699e5afaadafa30"
+      },
+      {
+        "path": "src/serena/jetbrains/jetbrains_plugin_client.py",
+        "sha": "d7a65fa6f501fc813f1c45335c4814e1bd1910be"
+      },
+      {
+        "path": "src/serena/jetbrains/jetbrains_types.py",
+        "sha": "5ccd561b7ec8dd2e9817470b96bc8f477d8899e1"
+      },
+      {
+        "path": "src/serena/jetbrains/launch_coordinator.py",
+        "sha": "57a2d6a63c7b748fe0618cc3b032935142c912a9"
+      },
+      {
+        "path": "src/serena/lsp/lsp_backend.py",
+        "sha": "133f2e7514e7fa48872ba2731bbe79265ac472ea"
+      },
+      {
+        "path": "src/serena/lsp/lsp_diagnostics.py",
+        "sha": "4d0a0844fa14efc62644a85b134c78962da0f71c"
+      },
+      {
+        "path": "src/serena/memories/memory_manager.py",
+        "sha": "c185ff18ea861837eba8cb2c734227a50f620481"
+      },
+      {
+        "path": "src/serena/memories/memory_reference_analysis.py",
+        "sha": "03b84e615327a988aae53423cf0111101c93d9ec"
+      },
+      {
+        "path": "src/serena/olb/olb_jvm_backend.py",
+        "sha": "be98d2c414add7914f040dd1ad3702f411d6b744"
+      },
+      {
+        "path": "src/serena/repl/external_project.py",
+        "sha": "401c2d1935f33ef3a69dc680bdccef644510db22"
+      },
+      {
+        "path": "src/serena/repl/facade.py",
+        "sha": "20eb752ea1739a567218de1fb7138e08e220554b"
+      },
+      {
+        "path": "src/serena/repl/repl.py",
+        "sha": "9dc1b7b133707fc0c564141da9d4cb0038b27e27"
+      },
+      {
+        "path": "src/serena/repl/representable.py",
+        "sha": "069d712cafc70daa703c148704029aaed86ffc4f"
+      },
+      {
+        "path": "src/serena/resources/memory_maintenance.md",
+        "sha": "6f84514d7c073ad726a1572c4c3e221ddf4ce7f2"
+      },
+      {
+        "path": "src/serena/resources/project.local.template.yml",
+        "sha": "36cd3defd719a2bf479631b0eff650f14447499b"
+      },
+      {
+        "path": "src/serena/resources/project.template.yml",
+        "sha": "369f1feeb02527f8349618d763547794af1890ef"
+      },
+      {
+        "path": "src/serena/resources/serena_config.template.yml",
+        "sha": "047955195f5fcf50d9fb061ca3e0bbd1e5d5ee3c"
+      },
+      {
+        "path": "src/serena/tools/__init__.py",
+        "sha": "0ed2e6bf7057aadf19f9ce8cd81a96594cd6bb71"
+      },
+      {
+        "path": "src/serena/tools/cmd_tools.py",
+        "sha": "51357995c36d257fab3f90c9c41794e891de29e8"
+      },
+      {
+        "path": "src/serena/tools/config_tools.py",
+        "sha": "afe21fec0939fc788b556d3e86494a69d5dbe68d"
+      },
+      {
+        "path": "src/serena/tools/file_tools.py",
+        "sha": "dd15148c6616f86a9dca2ae0bdb5785294598539"
+      },
+      {
+        "path": "src/serena/tools/jetbrains_tools.py",
+        "sha": "2d286ce279d8885dbdd8fca468ac9673273f965e"
+      },
+      {
+        "path": "src/serena/tools/memory_tools.py",
+        "sha": "cfbbf3e4546767bcd91903cf06c92bc392604ce1"
+      },
+      {
+        "path": "src/serena/tools/query_project_tools.py",
+        "sha": "8e6d559febf8ac57951862ff96dbb29b4461e350"
+      },
+      {
+        "path": "src/serena/tools/repl_tools.py",
+        "sha": "7d097cfb4a0b660b775c6ee5f5acf71e035d04e4"
+      },
+      {
+        "path": "src/serena/tools/symbol_tools.py",
+        "sha": "9712b8213a8028d5c853cc1cfa281588707a4b0c"
+      },
+      {
+        "path": "src/serena/tools/tools_base.py",
+        "sha": "123d390ac4230c049c5b4d81edc940c2f1e0ed48"
+      },
+      {
+        "path": "src/serena/tools/workflow_tools.py",
+        "sha": "a306acad3d24017b3a8a2da64ee6b48420c2140e"
+      },
+      {
+        "path": "src/serena/util/class_decorators.py",
+        "sha": "4bb0ee7fe8a6d5515d9bded807d1375f89a55c0e"
+      },
+      {
+        "path": "src/serena/util/cli_util.py",
+        "sha": "9257f7e56fda239c5759182d40f74b5d672526ce"
+      },
+      {
+        "path": "src/serena/util/dataclass.py",
+        "sha": "9edfa9de7fe1cc2334fcbc3ddaf81cf5167a63c4"
+      },
+      {
+        "path": "src/serena/util/dotnet.py",
+        "sha": "20dcaf3091ea8f443e59c05b5c881a3ccdde2c33"
+      },
+      {
+        "path": "src/serena/util/exception.py",
+        "sha": "04c7667a6a600acb2b4c0cefd9eeacd8ed94a29b"
+      },
+      {
+        "path": "src/serena/util/file_proxy.py",
+        "sha": "5c58f25df66f02269f1c5f3dbd7bdb05925d3c68"
+      },
+      {
+        "path": "src/serena/util/file_system.py",
+        "sha": "bf026b53dd230b618645f30a050f46a0d64be1b4"
+      },
+      {
+        "path": "src/serena/util/git.py",
+        "sha": "9b84b0622e7a12c8531464a80111e81d4de46cf8"
+      },
+      {
+        "path": "src/serena/util/gui.py",
+        "sha": "3bea782890a2781dd87933c61452d5078e9f4778"
+      },
+      {
+        "path": "src/serena/util/inspection.py",
+        "sha": "642fa99c9a9521672af4829b43f93322b7319d10"
+      },
+      {
+        "path": "src/serena/util/logging.py",
+        "sha": "cf8e88df5d0c47585186e6bd28cb2924ce9d7c98"
+      },
+      {
+        "path": "src/serena/util/pypi.py",
+        "sha": "bba20040749a247880552dbddfd9b89d575c5599"
+      },
+      {
+        "path": "src/serena/util/pywebview.py",
+        "sha": "1a5df654fb6a82b9fd29604bc861edf40e732490"
+      },
+      {
+        "path": "src/serena/util/shell.py",
+        "sha": "f6efddbe9e3086aa0647ff4332450d3705e24b7e"
+      },
+      {
+        "path": "src/serena/util/text_utils.py",
+        "sha": "4b7671155344d0733662eef58d6b4332891acfc8"
+      },
+      {
+        "path": "src/serena/util/thread.py",
+        "sha": "6a7640621b5375d3526fde5a763c0944a79a4d5e"
+      },
+      {
+        "path": "src/serena/util/version.py",
+        "sha": "bd49936ba5add1ecc4cf18eb0fb26aab4a868e5d"
+      },
+      {
+        "path": "src/serena/util/yaml.py",
+        "sha": "e42520c533f5a29844d4787581e51bf526e918fa"
+      },
+      {
+        "path": "src/solidlsp/language_servers/ada_language_server.py",
+        "sha": "12de13693e85881f3ecbdba4ddec48efff1669cd"
+      },
+      {
+        "path": "src/solidlsp/language_servers/al_language_server.py",
+        "sha": "3e1f0190d2908dda788d258a87fe16eff64e74d1"
+      },
+      {
+        "path": "src/solidlsp/language_servers/angular_language_server.py",
+        "sha": "2cbd56cdd5b080b0f183057c63552571c51e69b1"
+      },
+      {
+        "path": "src/solidlsp/language_servers/ansible_language_server.py",
+        "sha": "7f301681bceeb50508448de0406384d4f5c1302c"
+      },
+      {
+        "path": "src/solidlsp/language_servers/astro_language_server.py",
+        "sha": "f54a278ca2b7b6b7dd2dcb4eaabe7860c829ce86"
+      },
+      {
+        "path": "src/solidlsp/language_servers/basedpyright_server.py",
+        "sha": "b77ef7e9d7f6b355f9865a5872f8e5a1109c09c2"
+      },
+      {
+        "path": "src/solidlsp/language_servers/bash_language_server.py",
+        "sha": "71250107e420652033aa0a5128c6d868f9cea3a9"
+      },
+      {
+        "path": "src/solidlsp/language_servers/bsl_language_server.py",
+        "sha": "0d7cf429a9ea19d60a981a561bfeba299c04646d"
+      },
+      {
+        "path": "src/solidlsp/language_servers/ccls_language_server.py",
+        "sha": "83ffea6480bfc8b1df0d13dc111f138a98762c82"
+      },
+      {
+        "path": "src/solidlsp/language_servers/clangd_language_server.py",
+        "sha": "9847b9e97d42aba0445afff0c73bbdd8610d2615"
+      },
+      {
+        "path": "src/solidlsp/language_servers/clojure_lsp.py",
+        "sha": "ea9a58a1f8297f30d59fd23acb994f5a2e1df082"
+      },
+      {
+        "path": "src/solidlsp/language_servers/common.py",
+        "sha": "29daa1402e8b0fcda2ff4c1cb113c50e4ba4ab01"
+      },
+      {
+        "path": "src/solidlsp/language_servers/crystal_language_server.py",
+        "sha": "8f755ee56e7cea7a82ebff026c00592d549803b6"
+      },
+      {
+        "path": "src/solidlsp/language_servers/csharp_language_server.py",
+        "sha": "d4e91c16afbbee2bfe4c93fbf0dc1c899002b106"
+      },
+      {
+        "path": "src/solidlsp/language_servers/cue_language_server.py",
+        "sha": "dd040061bee8af64e9e40077ef0a3b943727b2c5"
+      },
+      {
+        "path": "src/solidlsp/language_servers/dart_language_server.py",
+        "sha": "c668d8bae2a867581838e04e1b2d7fbfe2261feb"
+      },
+      {
+        "path": "src/solidlsp/language_servers/deno_language_server.py",
+        "sha": "12bf622e40641507357e5d7fbd499a66cdea1e42"
+      },
+      {
+        "path": "src/solidlsp/language_servers/devsense_php_language_server.py",
+        "sha": "35476e6a5d803882bb98c48996e8bdffdf02f6f0"
+      },
+      {
+        "path": "src/solidlsp/language_servers/eclipse_jdtls.py",
+        "sha": "5e20b41ad5289cd89fe10b5bae6eca4680144d61"
+      },
+      {
+        "path": "src/solidlsp/language_servers/elm_language_server.py",
+        "sha": "46e49fb902a7ded6101ddbaade4831cdfd34ccf1"
+      },
+      {
+        "path": "src/solidlsp/language_servers/emmylua_ls.py",
+        "sha": "73bf9bcac0f56e26e0b87e75c8e4787589ca5271"
+      },
+      {
+        "path": "src/solidlsp/language_servers/erlang_language_server.py",
+        "sha": "d947929c55d1d941017507d6464b8f83f3e6208f"
+      },
+      {
+        "path": "src/solidlsp/language_servers/fatou_language_server.py",
+        "sha": "9661a5a5cddc89910e5a23ba8d7f662f0fac12b4"
+      },
+      {
+        "path": "src/solidlsp/language_servers/fortran_language_server.py",
+        "sha": "26ef9ca39358ac5ca776109fa2ce8ee61228fedd"
+      },
+      {
+        "path": "src/solidlsp/language_servers/fsharp_language_server.py",
+        "sha": "c6f22948839f97056ee8a8423d4c4c8ca7511f55"
+      },
+      {
+        "path": "src/solidlsp/language_servers/gleam_language_server.py",
+        "sha": "8bf3ef4b992d439549f6cc5cef32714e8e5db129"
+      },
+      {
+        "path": "src/solidlsp/language_servers/godot_language_server.py",
+        "sha": "6ade0c88959ad0f30e3e3c2a2751fc7998da8424"
+      },
+      {
+        "path": "src/solidlsp/language_servers/gopls.py",
+        "sha": "bd8da8e6e2666f396f4505e4899b8589758b60d6"
+      },
+      {
+        "path": "src/solidlsp/language_servers/graphql_language_server.py",
+        "sha": "890166aa8f489b6898077c79723025a1d9b45d03"
+      },
+      {
+        "path": "src/solidlsp/language_servers/groovy_language_server.py",
+        "sha": "4b5d95c546d3368aa1b2a382e9f4a97fecf01fcc"
+      },
+      {
+        "path": "src/solidlsp/language_servers/haskell_language_server.py",
+        "sha": "5bce69bc0de4325e432c22a1f545fbcf32375148"
+      },
+      {
+        "path": "src/solidlsp/language_servers/haxe_language_server.py",
+        "sha": "a6eecc3aec3d7bfe38dbb88b7fa010a91da8edf0"
+      },
+      {
+        "path": "src/solidlsp/language_servers/hlsl_language_server.py",
+        "sha": "4b93745c58e30a416ee5909354076285658c4e02"
+      },
+      {
+        "path": "src/solidlsp/language_servers/intelephense.py",
+        "sha": "84d69fc27ca0bc9d3452e5da4927f957c26fd8cf"
+      },
+      {
+        "path": "src/solidlsp/language_servers/jedi_server.py",
+        "sha": "aa7c7a20cbc1283bfbdb639f5043da09ddd18871"
+      },
+      {
+        "path": "src/solidlsp/language_servers/json_language_server.py",
+        "sha": "cb7da08144683717e04c8ce4d432e65a2356acba"
+      },
+      {
+        "path": "src/solidlsp/language_servers/julia_server.py",
+        "sha": "7dc5846758d60ca0ebcb336cd2fed5b405d6b552"
+      },
+      {
+        "path": "src/solidlsp/language_servers/kotlin_language_server.py",
+        "sha": "d8895d9ba11f73d765965f203dd4ca6cfd95ef16"
+      },
+      {
+        "path": "src/solidlsp/language_servers/lean4_language_server.py",
+        "sha": "ef209f0c99f339ed5bb734d4d614638fc09853d9"
+      },
+      {
+        "path": "src/solidlsp/language_servers/lua_ls.py",
+        "sha": "ce66830e5c8fa16d68e5a630ef9e24d92fdf20b0"
+      },
+      {
+        "path": "src/solidlsp/language_servers/luau_lsp.py",
+        "sha": "469c039e337aa0ffab0caa67ba290da021976439"
+      },
+      {
+        "path": "src/solidlsp/language_servers/marksman.py",
+        "sha": "73c28ccf4d2639a6af71ba706c7902a7d1cf9162"
+      },
+      {
+        "path": "src/solidlsp/language_servers/matlab_language_server.py",
+        "sha": "001c6786bb695e158c8e4a8f1f4b22146444ffa6"
+      },
+      {
+        "path": "src/solidlsp/language_servers/msl_language_server.py",
+        "sha": "274342d519bc6e6886c2ce28b501cbb89e05b0ce"
+      },
+      {
+        "path": "src/solidlsp/language_servers/msl_lsp_server.py",
+        "sha": "ec374c931cc68793da5916a381458ebb555e28a9"
+      },
+      {
+        "path": "src/solidlsp/language_servers/nextflow_language_server.py",
+        "sha": "d867288f67974c0dc0864a5bf1001c34d53ffc2d"
+      },
+      {
+        "path": "src/solidlsp/language_servers/nixd_ls.py",
+        "sha": "914a380198e7f6c7f904dd97f697aaffaee232f9"
+      },
+      {
+        "path": "src/solidlsp/language_servers/ocaml_lsp_server.py",
+        "sha": "7d1605bb36ad7dc369750068ddea26318b280c08"
+      },
+      {
+        "path": "src/solidlsp/language_servers/omnisharp.py",
+        "sha": "fd22658101cde2323dea246bf2c2b5f10588d742"
+      },
+      {
+        "path": "src/solidlsp/language_servers/pascal_server.py",
+        "sha": "36cd7d2aa3fcbeabae3d8c7f1a94b108f40b8a22"
+      },
+      {
+        "path": "src/solidlsp/language_servers/perl_language_server.py",
+        "sha": "fe77bb15525f1aae6b1ed5724387ab46b4c3c414"
+      },
+      {
+        "path": "src/solidlsp/language_servers/phpactor.py",
+        "sha": "0aa34984f82f248686e71b3aa8f54b4cdcae9ca2"
+      },
+      {
+        "path": "src/solidlsp/language_servers/phpantom.py",
+        "sha": "210b75a49d95cbe744a016d668d6414ed8e9caec"
+      },
+      {
+        "path": "src/solidlsp/language_servers/powershell_language_server.py",
+        "sha": "53b1bab62cb373887730b04bcb15a93e3a5d5930"
+      },
+      {
+        "path": "src/solidlsp/language_servers/pyrefly_server.py",
+        "sha": "3bd942be5088b069f9c39e219306c8fd92ca23cf"
+      },
+      {
+        "path": "src/solidlsp/language_servers/pyright_server.py",
+        "sha": "f72047ac1e28015bc812c1d5f3126c27316a624d"
+      },
+      {
+        "path": "src/solidlsp/language_servers/qml_language_server.py",
+        "sha": "2e62ca6452688ef799ebf664f4356ed9296c0a24"
+      },
+      {
+        "path": "src/solidlsp/language_servers/r_language_server.py",
+        "sha": "01468b94c71574872e554eac7fa7b0726019a87e"
+      },
+      {
+        "path": "src/solidlsp/language_servers/regal_server.py",
+        "sha": "710ea2339a34bbbdec9a8c4f5e504193fad42a9d"
+      },
+      {
+        "path": "src/solidlsp/language_servers/ruby_lsp.py",
+        "sha": "a4ba53591120f405a94b53f845b330c2f721e389"
+      },
+      {
+        "path": "src/solidlsp/language_servers/rust_analyzer.py",
+        "sha": "af4b84c9d97f85c7725eaf59d194b8407ac6f437"
+      },
+      {
+        "path": "src/solidlsp/language_servers/scala_language_server.py",
+        "sha": "b00f0c390b9b30e69c45896c5aee9432d3ada40c"
+      },
+      {
+        "path": "src/solidlsp/language_servers/solargraph.py",
+        "sha": "a5c3c87f62974ce20f5c26c49ba0fea82d6c93d9"
+      },
+      {
+        "path": "src/solidlsp/language_servers/solidity_homedir_preload.cjs",
+        "sha": "63759502ccc4c380764af79c43ea26abbb851793"
+      },
+      {
+        "path": "src/solidlsp/language_servers/solidity_language_server.py",
+        "sha": "3d7ead4fec13b51d5e9dc42faf1f76762a92d30c"
+      },
+      {
+        "path": "src/solidlsp/language_servers/some_sass_language_server.py",
+        "sha": "d1544543a9343c55dd0b3ff41c76c83468cde13b"
+      },
+      {
+        "path": "src/solidlsp/language_servers/sourcekit_lsp.py",
+        "sha": "c633ecb09e9d8518e451235f251819b6698cf772"
+      },
+      {
+        "path": "src/solidlsp/language_servers/svelte_language_server.py",
+        "sha": "c96d2fac32671286b6a64d1ffd5ae6566ff43b87"
+      },
+      {
+        "path": "src/solidlsp/language_servers/systemverilog_server.py",
+        "sha": "ac87b16c95102bcc0a8ebac85bf268ed5d9d885a"
+      },
+      {
+        "path": "src/solidlsp/language_servers/taplo_server.py",
+        "sha": "cd9afcfef0d4bf9ffa3b898ba3df1074da66eda5"
+      },
+      {
+        "path": "src/solidlsp/language_servers/terraform_ls.py",
+        "sha": "69c6330ba6b1a9927b392f06564b003edd07b8fd"
+      },
+      {
+        "path": "src/solidlsp/language_servers/texlab_language_server.py",
+        "sha": "ef5ae3f0c7817202b207e2420c62d8b83f491af7"
+      },
+      {
+        "path": "src/solidlsp/language_servers/tsgo_language_server.py",
+        "sha": "dcc2181a0ef3b5b081b913783abb72dd2e9ed9cb"
+      },
+      {
+        "path": "src/solidlsp/language_servers/ty_server.py",
+        "sha": "a7aa201f6eafebbb40bf8d89a1d2e7c3956cce4a"
+      },
+      {
+        "path": "src/solidlsp/language_servers/typescript_language_server.py",
+        "sha": "5bdf5b15b5af081df5f7c0a05272f54ce7b6bf0b"
+      },
+      {
+        "path": "src/solidlsp/language_servers/vbnet_language_server.py",
+        "sha": "fce55be7ef2105c205b9b57fe89e0b949816c4e4"
+      },
+      {
+        "path": "src/solidlsp/language_servers/vscode_html_language_server.py",
+        "sha": "1e00f41350d52cf4bcbb6e186a9dafd981ecd098"
+      },
+      {
+        "path": "src/solidlsp/language_servers/vts_language_server.py",
+        "sha": "f9704aca34781d7a60ca81de255b60ea0b3a0ef4"
+      },
+      {
+        "path": "src/solidlsp/language_servers/vue_language_server.py",
+        "sha": "a4964332ffd721c30b1589dc3d716a8d2afb0a62"
+      },
+      {
+        "path": "src/solidlsp/language_servers/wolfram_language_server.py",
+        "sha": "1315fe6a072b9cee6d4b0f7fdfa2fe6239b9f87f"
+      },
+      {
+        "path": "src/solidlsp/language_servers/yaml_language_server.py",
+        "sha": "22f64d015296e9fe1f566c23e6e5c3d501b34bb7"
+      },
+      {
+        "path": "src/solidlsp/language_servers/zls.py",
+        "sha": "0cf9aead12427878c97e8054fcb72c9404703192"
+      },
+      {
+        "path": "src/solidlsp/lsp_protocol_handler/lsp_constants.py",
+        "sha": "a48eeca466b8dbf1069b0a5f6e106f41d402a5dc"
+      },
+      {
+        "path": "src/solidlsp/lsp_protocol_handler/lsp_requests.py",
+        "sha": "04b8e821cfc7ae11a3eb095591190e5a7dd2efe1"
+      },
+      {
+        "path": "src/solidlsp/resources/downloaded_dependency_hashes.json",
+        "sha": "023e9ab5b7d01da542a671a52066f620fae852f1"
+      },
+      {
+        "path": "src/solidlsp/util/cache.py",
+        "sha": "f6a24d5d353b004aa4aec6a116854d9b6459a14e"
+      },
+      {
+        "path": "src/solidlsp/util/metals_db_utils.py",
+        "sha": "bdd92635650133ee053e36a2e9a3fa37b69dd8ea"
+      },
+      {
+        "path": "src/solidlsp/util/pickle_util.py",
+        "sha": "2bbd98bb0afe093aaf6c389760dbc275ab674c7b"
+      },
+      {
+        "path": "src/solidlsp/util/subprocess_util.py",
+        "sha": "eeb6dc1d63794a160e1f165f420dd172508f42eb"
+      },
+      {
+        "path": "src/solidlsp/util/zip.py",
+        "sha": "43b34984948c6db0b4818bba995f2e07b58d66df"
+      },
+      {
+        "path": ".serena/memories/adding_new_language_support_guide.md",
+        "sha": "e04982939e476b43b4a6bd07479d3d86ba1ec573"
+      },
+      {
+        "path": ".serena/memories/creating_pull_requests.md",
+        "sha": "2f3911c134abeed565efcdf419952104ad867aed"
+      },
+      {
+        "path": ".serena/memories/critical_info.md",
+        "sha": "7a0fd9d95d501e7d4b0b88a87e21ef4f28ebdb8c"
+      },
+      {
+        "path": ".serena/memories/memory_maintenance.md",
+        "sha": "ca2df4c5cf89efa242397e3f0790dd683272aca3"
+      },
+      {
+        "path": ".serena/memories/project_structure.md",
+        "sha": "06d853ecddd37ffd25bf2f52ba218c397093cd7c"
+      },
+      {
+        "path": ".serena/memories/repl.md",
+        "sha": "b7a6683e8a2a1a8048652b2d9ca748ecb9483075"
+      },
+      {
+        "path": ".serena/memories/task_completion.md",
+        "sha": "a7addd2ff941128cf9c5e5f53f051582742acba3"
+      },
+      {
+        "path": ".serena/memories/trusted_projects.md",
+        "sha": "52c957a03b2d17a7416476f6bd203903114aad93"
+      },
+      {
+        "path": "src/serena/repl/api/cfg_api.py",
+        "sha": "610537279a2f95e7f8077df202db38725785fd55"
+      },
+      {
+        "path": "src/serena/repl/api/edit_api.py",
+        "sha": "4c2e6a4e5dbe9aa5e6e1f92224c4ef53a945bd5f"
+      },
+      {
+        "path": "src/serena/repl/api/ext_api.py",
+        "sha": "eed18827baa22988a53bc1bf2278bc082b3e5e37"
+      },
+      {
+        "path": "src/serena/repl/api/fs_api.py",
+        "sha": "e3238f8ef431377e4ddaee55dcde918df95b871f"
+      },
+      {
+        "path": "src/serena/repl/api/jb_api.py",
+        "sha": "5cf8fc277c5be61239b73d040aef2cc19321652d"
+      },
+      {
+        "path": "src/serena/repl/api/lsp_api.py",
+        "sha": "4a35f68837bacdc7befd73307dc4d5c0ee4ccc2a"
+      },
+      {
+        "path": "src/serena/repl/api/mem_api.py",
+        "sha": "eed1e133faf04edcfa5881a6291ee674c413be60"
+      },
+      {
+        "path": "src/serena/repl/api/shell_api.py",
+        "sha": "9f4db097f8601a143746bd8acc1bba233f8c65e4"
+      },
+      {
+        "path": "src/serena/resources/dashboard/dashboard.js",
+        "sha": "658297138dce7f9d1ebe6ba2336c2ba1692b2cc4"
+      },
+      {
+        "path": "src/serena/resources/dashboard/jquery.min.js",
+        "sha": "7f37b5d99122b4928505d1e0ac5ca7279edd56ed"
+      },
+      {
+        "path": "src/solidlsp/language_servers/elixir_tools/__init__.py",
+        "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc"
+      },
+      {
+        "path": "src/solidlsp/language_servers/elixir_tools/elixir_tools.py",
+        "sha": "42f4874b8ac85abb90d9ddf21d9b953c1d471fca"
+      },
+      {
+        "path": "src/solidlsp/language_servers/elixir_tools/README.md",
+        "sha": "56f2e03c9d0ed1c52503421e1fa5cbc17f0469f6"
+      },
+      {
+        "path": "src/solidlsp/language_servers/omnisharp/initialize_params.json",
+        "sha": "f9ee86c3bf373fdb86fa6c2495731eb5dacbd0c4"
+      },
+      {
+        "path": "src/solidlsp/language_servers/omnisharp/runtime_dependencies.json",
+        "sha": "7f884b93f0d918b33e9fffa9a81c498685df6f5f"
+      },
+      {
+        "path": "src/solidlsp/language_servers/omnisharp/workspace_did_change_configuration.json",
+        "sha": "148841c3e09033c6ace3dcccb35e956614430f0c"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/agent.yml",
+        "sha": "a3b324f0e862360f49881460177fc3c616bf8b3d"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/antigravity.yml",
+        "sha": "33411ac2f695f0d72a054244d2fa1c09dc69cca1"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/chatgpt.yml",
+        "sha": "494e9c42659cfdb45c38a4acd54fc35015a7cc9c"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/claude-code.yml",
+        "sha": "4a636e42b37aaadb40cdb12d7af7d355fbeef3cb"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/codebuddy.yml",
+        "sha": "9e2ff53e77d4840514ba841441be54183589d106"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/codex.yml",
+        "sha": "2dbd870aaedd13d42cdce0da948c27f016797d28"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/context.template.yml",
+        "sha": "62259f8765acd5f851c2f17d41300f89c6a94d99"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/copilot-cli.yml",
+        "sha": "c7da899efa5fa1e069335cb6d227c8e1a3c2d486"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/desktop-app.yml",
+        "sha": "aad51ac865b2de95bd21684f04efa6ec4fa5b5c5"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/grok.yml",
+        "sha": "ddd2e23e7d57d56beec719f56225454413fd1780"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/ide.yml",
+        "sha": "33411ac2f695f0d72a054244d2fa1c09dc69cca1"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/jb-ai-assistant.yml",
+        "sha": "33411ac2f695f0d72a054244d2fa1c09dc69cca1"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/jb-copilot-plugin.yml",
+        "sha": "9cbae115d15eafe82e4ec7453c21a2b80d89ec0e"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/junie.yml",
+        "sha": "8bfdc67d9c778a57792515f87a5bb15f67b111ed"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/oaicompat-agent.yml",
+        "sha": "cdec1eed15957c033bb69287b735c2c1702b5a5d"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/vscode.yml",
+        "sha": "fd74fd4d1dac67130b7559f4da735bf670ba3cdd"
+      },
+      {
+        "path": "src/serena/resources/config/contexts/zcode.yml",
+        "sha": "f19042cba27b2862cdb4dee12de7315adf10f943"
+      },
+      {
+        "path": "src/serena/resources/config/internal_modes/jetbrains.yml",
+        "sha": "e4eb218e5654c951d44c65d5bbde7c7aae19126a"
+      },
+      {
+        "path": "src/serena/resources/config/modes/benchmark.yml",
+        "sha": "04e7d8d7429094139fb8f8c8c2a03d6b66b32d85"
+      },
+      {
+        "path": "src/serena/resources/config/modes/editing.yml",
+        "sha": "1602ca51d02d1035c38dfa2f2a0debf47675cda3"
+      },
+      {
+        "path": "src/serena/resources/config/modes/interactive.yml",
+        "sha": "74e438b95be2d786d15f30f5caf7112f4a3366ff"
+      },
+      {
+        "path": "src/serena/resources/config/modes/mode.template.yml",
+        "sha": "bf01e71472f381e6beb9e1511c8c3ff0dcb78318"
+      },
+      {
+        "path": "src/serena/resources/config/modes/no-memories.yml",
+        "sha": "0d6c50a730cb734fb140bed35dc40eda460bfcee"
+      },
+      {
+        "path": "src/serena/resources/config/modes/no-onboarding.yml",
+        "sha": "bae5cb36eebc162c18071b0c661a58c3e2b63236"
+      },
+      {
+        "path": "src/serena/resources/config/modes/onboarding.yml",
+        "sha": "dff45403611cd87c2c64b17860e5a51cbf92e5cf"
+      },
+      {
+        "path": "src/serena/resources/config/modes/one-shot.yml",
+        "sha": "ebbbfafc1ea264f83a6237d15c265fd6cb797af9"
+      },
+      {
+        "path": "src/serena/resources/config/modes/planning.yml",
+        "sha": "d786114a34381cc2d39fa40e7db8da8d94fd7950"
+      },
+      {
+        "path": "src/serena/resources/config/modes/query-projects.yml",
+        "sha": "9ceea8faf3b52ad459941b506536ea651c6fca4c"
+      },
+      {
+        "path": "src/serena/resources/config/prompt_templates/info_prompts.yml",
+        "sha": "4c8964298b77e82d3d24d8f3437701ee270afdcf"
+      },
+      {
+        "path": "src/serena/resources/config/prompt_templates/simple_tool_outputs.yml",
+        "sha": "809bdb3088021267137601e1db3249c36a0d6747"
+      },
+      {
+        "path": "src/serena/resources/config/prompt_templates/system_prompt.yml",
+        "sha": "8228c5bdec967d8d744aab5211f34e6f08c05c61"
+      }
+    ],
+    "repo_pushed_at": "2026-10-28T10:45:55Z",
+    "license": "LICENSE-file (type needs review)"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 30,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [
+      "agent-config-write"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "os.system",
+      "severe": false,
+      "file": "scripts/build_news_json.py",
+      "line": 56,
+      "snippet": "os.system(f\"scp news/news.json {user}@hades:/var/www/html/oraios-software/serena_news.json\")",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "os.system",
+      "severe": false,
+      "file": "scripts/bump_version.py",
+      "line": 69,
+      "snippet": "os.system(f\"git tag v{new_version}\")",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "os.system",
+      "severe": false,
+      "file": "repo_dir_sync.py",
+      "line": 57,
+      "snippet": "os.system(f\"git commit --file={commitMsgFilename}\")",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "subprocess-shell",
+      "severe": false,
+      "file": "src/serena/agent.py",
+      "line": 1540,
+      "snippet": "p = subprocess.Popen(",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "subprocess-shell",
+      "severe": false,
+      "file": "src/serena/jetbrains/launch_coordinator.py",
+      "line": 100,
+      "snippet": "p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "src/serena/repl/repl.py",
+      "line": 356,
+      "snippet": "return eval(compile(ast.Expression(body=trailing_expression), self.SOURCE_NAME, \"eval\"), namespace)",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "subprocess-shell",
+      "severe": false,
+      "file": "src/serena/util/shell.py",
+      "line": 30,
+      "snippet": "process = subprocess.Popen(",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "curl-pipe-sh",
+      "severe": false,
+      "file": "src/solidlsp/language_servers/lean4_language_server.py",
+      "line": 38,
+      "snippet": "\"  curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh\\n\"",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "subprocess-shell",
+      "severe": false,
+      "file": "src/solidlsp/util/subprocess_util.py",
+      "line": 234,
+      "snippet": "subprocess.Popen(",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/serena/agent.py",
+      "line": 804,
+      "snippet": "requests.get(\"https://oraios-software.de/serena_usage.php\", params=params, timeout=5)",
+      "host": "oraios-software.de",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/serena/util/dotnet.py",
+      "line": 104,
+      "snippet": "script_url = \"https://dot.net/v1/dotnet-install.ps1\"",
+      "host": "dot.net",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/solidlsp/language_servers/csharp_language_server.py",
+      "line": 38,
+      "snippet": "NUGET_ALLOWED_HOSTS = (\"www.nuget.org\", \"nuget.org\", \"globalcdn.nuget.org\")",
+      "host": "www.nuget.org",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/solidlsp/language_servers/eclipse_jdtls.py",
+      "line": 122,
+      "snippet": "https://download.eclipse.org/jdtls/snapshots/.",
+      "host": "download.eclipse.org",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/solidlsp/language_servers/eclipse_jdtls.py",
+      "line": 37,
+      "snippet": "GRADLE_ALLOWED_HOSTS = (\"services.gradle.org\", \"github.com\", \"release-assets.githubusercontent.com\", \"objects.githubusercontent.com\")",
+      "host": "services.gradle.org",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/solidlsp/language_servers/haskell_language_server.py",
+      "line": 68,
+      "snippet": "\"  - GHCup: https://www.haskell.org/ghcup/\\n\"",
+      "host": "www.haskell.org",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/solidlsp/language_servers/haxe_language_server.py",
+      "line": 143,
+      "snippet": "download_url = f\"https://open-vsx.org/api/nadako/vshaxe/{version}/file/nadako.vshaxe-{version}.vsix\"",
+      "host": "open-vsx.org",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/solidlsp/language_servers/hlsl_language_server.py",
+      "line": 147,
+      "snippet": "\"On macOS, install the Rust toolchain (https://rustup.rs) and Serena will build from source automatically.\\n\"",
+      "host": "rustup.rs",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/solidlsp/language_servers/pyrefly_server.py",
+      "line": 34,
+      "snippet": "PYREFLY_CONFIG_DOC_URL = \"https://pyrefly.org/en/docs/configuration/\"",
+      "host": "pyrefly.org",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/solidlsp/language_servers/ruby_lsp.py",
+      "line": 161,
+      "snippet": "\"Using system Ruby. Consider installing mise: https://mise.jdx.dev\",",
+      "host": "mise.jdx.dev",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "agent-config-write",
+      "severe": true,
+      "file": "scripts/live_test_grok.py",
+      "line": 743,
+      "snippet": "self._record(\"S3\", Status.PASS, \"inspect --json lists serena under mcpServers\")",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 274,
+    "files_excluded": 0,
+    "danger_hits": 9,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "oraios-software.de",
+      "dot.net",
+      "www.nuget.org",
+      "download.eclipse.org",
+      "services.gradle.org",
+      "www.haskell.org",
+      "open-vsx.org",
+      "rustup.rs",
+      "pyrefly.org",
+      "mise.jdx.dev"
+    ],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 5
+  },
+  "network": {
+    "calls": 5,
+    "failed": 0,
+    "ms": 2399
+  },
+  "duration_ms": 2621
+}

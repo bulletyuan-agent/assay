@@ -1,0 +1,1047 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T153006Z",
+  "target": {
+    "source": "github",
+    "id": "upstash/context7",
+    "url": "https://github.com/upstash/context7",
+    "name": "context7"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:30:17.433Z",
+  "method_version": "0.4.0",
+  "tool": {
+    "assay_commit": "0d54b15c908aa12ddde2f2301c162f8ca747bad7",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.4.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "ceaf5f91f48949eaa6e4da5e66f3f59d1b44556d",
+    "files_scanned": 239,
+    "candidates": 239,
+    "excluded_non_shipped": 84,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "af05a5375950b3f7567faaa55f86d262c2e7364e"
+      },
+      {
+        "path": "skills/context7-cli/SKILL.md",
+        "sha": "a4febfbff4823d00309a13aaaf3afd72731082d4"
+      },
+      {
+        "path": "skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "skills/find-docs/SKILL.md",
+        "sha": "b2c6151c58137101832131286f00993135e67c17"
+      },
+      {
+        "path": "packages/cli/src/utils/installer.ts",
+        "sha": "f3bf882449d5a71e6df42649603db6941ab6aec2"
+      },
+      {
+        "path": "package.json",
+        "sha": "91a25a810166c4bf6b56be37487100fe174a600f"
+      },
+      {
+        "path": "packages/opencode/skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "packages/pi/skills/context7-docs/SKILL.md",
+        "sha": "4e5b6008f2f66905eaabd8d05438c9ca4e47281d"
+      },
+      {
+        "path": "context7.json",
+        "sha": "388e58274458172da9a0a921757ed9d6d6bbbafa"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha": "55fc57d30fbebc34db6fe0e4a035cf9e8d80f6c9"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "cd31b118743e988701bb6ae3cfb8ecb6ef6a8e76"
+      },
+      {
+        "path": "packages/admin-mcp/src/server.ts",
+        "sha": "5ac5b95394add78191898529317b78393fb02737"
+      },
+      {
+        "path": "packages/admin-mcp/src/tools.ts",
+        "sha": "ee2592967153291749c3b00e21b1c0ab56c6bf9f"
+      },
+      {
+        "path": "packages/cli/src/index.ts",
+        "sha": "0839ff44326ccdc668bb2df72a54df68f1039a6f"
+      },
+      {
+        "path": "packages/mcp/src/index.ts",
+        "sha": "9e6f42ce13634cc50f2cff8f8d69111e2c4ee4a0"
+      },
+      {
+        "path": "packages/opencode/src/index.ts",
+        "sha": "85e9e21ccf91d3d7b6e92402afcfbe1268177836"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/index.ts",
+        "sha": "5b224ecfca0f01dd9a4b5d179d12e9105d94f211"
+      },
+      {
+        "path": "plugins/agent-plugins/context7/skills/context7-mcp/SKILL.md",
+        "sha": "dec17a7072f81dfb5c7eb202132211f809558376"
+      },
+      {
+        "path": "plugins/antigravity/context7/skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "plugins/codex/context7/skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "plugins/copilot/context7/skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "plugins/cursor/context7/skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha": "9c9bdcc046ba7285a052e5958af9c66c268003b5"
+      },
+      {
+        "path": "prettier.config.mjs",
+        "sha": "206e41eb3c2c81dade906a07806f74b597b55e89"
+      },
+      {
+        "path": "README.md",
+        "sha": "5d763258318ad99a8324faab59c6c6b2efd72350"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "2a16d1b08282fd55607d2b4fdd6faaaf55c2c5c8"
+      },
+      {
+        "path": "tsconfig.bundler.json",
+        "sha": "5a7a2deb4769cfef0204208f0011adaa36e70dcb"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "5647febdea4b4c2b6362403a4406d2a27d2f9dfa"
+      },
+      {
+        "path": "packages/admin-mcp/package.json",
+        "sha": "c9be253fb1476d9efa9100ced56459a3b605c4f0"
+      },
+      {
+        "path": "packages/cli/package.json",
+        "sha": "8d565240f2bcf4b3489056fd1f044c29f3292d7a"
+      },
+      {
+        "path": "packages/mcp/package.json",
+        "sha": "3202363cfcf2715bd6baa71f8a63fafff1dfc431"
+      },
+      {
+        "path": "packages/opencode/package.json",
+        "sha": "fe0d24b5d0aad4ecdf8084ffc41e9eff2beee023"
+      },
+      {
+        "path": "packages/pi/package.json",
+        "sha": "23972f4c7a416493914cc91d3ccfea38c25d136d"
+      },
+      {
+        "path": "packages/sdk/package.json",
+        "sha": "bab9962937174f8f32fc5199797cbc40e65d3499"
+      },
+      {
+        "path": "packages/tools-ai-sdk/package.json",
+        "sha": "94faa0453bc318ea90108a02d25903d63a26bdf8"
+      },
+      {
+        "path": ".changeset/config.json",
+        "sha": "20819847d823694095be1b591680fe7c1c22b6c3"
+      },
+      {
+        "path": ".changeset/oauth-client-registration-telemetry.md",
+        "sha": "ca0eb9d3f4564b6b5036b9ab8ac3c97c4b97e4a0"
+      },
+      {
+        "path": ".changeset/opencode-v2-mcp-servers.md",
+        "sha": "b98a4b535833ecea80bbd4fca01a6bcd7a89e083"
+      },
+      {
+        "path": ".changeset/prerelease-update-check.md",
+        "sha": "5c6df740d57b514c23f1319fc56056169b6f7662"
+      },
+      {
+        "path": ".changeset/README.md",
+        "sha": "e5b6d8d6a67ad0dca8f20117fbfc72e076882d00"
+      },
+      {
+        "path": ".changeset/research-preview-docs-feedback.md",
+        "sha": "cc0486fd551a1dd3cff12197f869e746870400b9"
+      },
+      {
+        "path": ".changeset/search-api-cli.md",
+        "sha": "83336362f58b43d81e6deea9b22008e6c4c68014"
+      },
+      {
+        "path": ".changeset/unset-api-key-placeholder.md",
+        "sha": "9bc07638580bb52b256feb4431f1c988584ec33f"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "16e6f6e7d419a7ab392772820555b91ebd7ddd18"
+      },
+      {
+        "path": ".cursor-plugin/marketplace.json",
+        "sha": "f3facdb7a877280e4ea37ab599fda124e8094b2b"
+      },
+      {
+        "path": "i18n/README.ar.md",
+        "sha": "29e96dcf663ee3b65f0d336539d5a966a25b4d7d"
+      },
+      {
+        "path": "i18n/README.de.md",
+        "sha": "cd09364863ee86061f6d416150ce62fb6dfe1685"
+      },
+      {
+        "path": "i18n/README.es.md",
+        "sha": "3ad6f66d546fc1a51c3598655f66fcde5596ba53"
+      },
+      {
+        "path": "i18n/README.fr.md",
+        "sha": "e6d3b1b8bc5e88aa8801200d64de79d5614a4d44"
+      },
+      {
+        "path": "i18n/README.id-ID.md",
+        "sha": "93a9ab0c3d63a3d815c087e63f416a78fba5d38b"
+      },
+      {
+        "path": "i18n/README.it.md",
+        "sha": "92fad50f418c41d1e897e50d217af4a4e664ff3f"
+      },
+      {
+        "path": "i18n/README.ja.md",
+        "sha": "4a9daadd5e22d53793f07ff9be055230e8c2e3b7"
+      },
+      {
+        "path": "i18n/README.ko.md",
+        "sha": "9c9bdd2aea93efdacb81c869f49a30564e364614"
+      },
+      {
+        "path": "i18n/README.pt-BR.md",
+        "sha": "1bccd44d5548a7486f0dd03abd410eea4688370c"
+      },
+      {
+        "path": "i18n/README.ru.md",
+        "sha": "80d7a42081651c309b5de9eb13c1b6234ba8475f"
+      },
+      {
+        "path": "i18n/README.tr.md",
+        "sha": "bbb127fe81266efad65d315b4c17d281e65920d3"
+      },
+      {
+        "path": "i18n/README.uk.md",
+        "sha": "1d8fef4b82f5b44f3733385d9a006287e0625996"
+      },
+      {
+        "path": "i18n/README.vi.md",
+        "sha": "247bbb7ecfab2faac8efad85a1e6b79552144d8e"
+      },
+      {
+        "path": "i18n/README.zh-CN.md",
+        "sha": "06bd3ec6dd026b27061e5300db939d2fd987fd4a"
+      },
+      {
+        "path": "i18n/README.zh-TW.md",
+        "sha": "fd7d9a00fd82dc555f32f5642e7ae9c73eb3eaf4"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/app.tsx",
+        "sha": "e12614595349a7f705349b38243f561a58374bb3"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/main.tsx",
+        "sha": "f1028e6fe0391e37fc5d299af40426fba70c3a20"
+      },
+      {
+        "path": "packages/sdk/src/commands/index.ts",
+        "sha": "a20791f78f6f895244aded963b889936847ff895"
+      },
+      {
+        "path": "packages/sdk/src/error/index.ts",
+        "sha": "53167489c307301f0f06d1bc958d1f3f0377acef"
+      },
+      {
+        "path": "packages/sdk/src/http/index.ts",
+        "sha": "d59b077d4f43346910d8b5e46cd7e7105bd6aa18"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/agents/index.ts",
+        "sha": "d803381d0e2595e9ffc4c5d6dc389857d691ea15"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/prompts/index.ts",
+        "sha": "1f124131cd28aeebc907d92854c6d54110d5b09b"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/tools/index.ts",
+        "sha": "e9f11493eea75930da4dbb9bd19b63ae07727371"
+      },
+      {
+        "path": "rules/context7-cli.md",
+        "sha": "7d6463701f5b767ca8180ae62890fdca8ac647c9"
+      },
+      {
+        "path": "rules/context7-mcp.md",
+        "sha": "0daa6c9bcd6c3330a09edb2f295ec3c500cd9aa8"
+      },
+      {
+        "path": ".agents/plugins/marketplace.json",
+        "sha": "a017b9b9cca7ed0db339e876ac86ba53075d113d"
+      },
+      {
+        "path": "packages/admin-mcp/eslint.config.js",
+        "sha": "d1ac3e10ec7db9b235bbb9689b73003bbbc05261"
+      },
+      {
+        "path": "packages/admin-mcp/prettier.config.mjs",
+        "sha": "206e41eb3c2c81dade906a07806f74b597b55e89"
+      },
+      {
+        "path": "packages/admin-mcp/README.md",
+        "sha": "178ec135885ccaec16790bc50dac9da4a526fd81"
+      },
+      {
+        "path": "packages/admin-mcp/tsconfig.json",
+        "sha": "173bee78b1e290c00cc8af9b62ee1a4333f28ad2"
+      },
+      {
+        "path": "packages/admin-mcp/vercel.json",
+        "sha": "9506bb2eeca8f3d5b001f579ea50489f356fb7f9"
+      },
+      {
+        "path": "packages/cli/CHANGELOG.md",
+        "sha": "efe68424b7a06fb8750d32b324d14168520cd8ee"
+      },
+      {
+        "path": "packages/cli/eslint.config.js",
+        "sha": "83eefb57619ea9c640c043280a6aac400d951e2f"
+      },
+      {
+        "path": "packages/cli/README.md",
+        "sha": "3cfcfef6a90ee963640738e771153fbb90ab0534"
+      },
+      {
+        "path": "packages/cli/tsconfig.json",
+        "sha": "383811987e8cb36d144bbcaf5c0f14596590b870"
+      },
+      {
+        "path": "packages/cli/tsup.config.ts",
+        "sha": "678c0092cae00e3a3f2a5637aa404bba77a74476"
+      },
+      {
+        "path": "packages/cli/vitest.config.ts",
+        "sha": "0f78dc014593e77e065fefa573c971a91457dcac"
+      },
+      {
+        "path": "packages/mcp/CHANGELOG.md",
+        "sha": "3d1b2499351001f9c38e64189d8b966c8e4a8594"
+      },
+      {
+        "path": "packages/mcp/eslint.config.js",
+        "sha": "ae606cb7116cec3ce5d8c04718cf4fe043b2ca4b"
+      },
+      {
+        "path": "packages/mcp/prettier.config.mjs",
+        "sha": "206e41eb3c2c81dade906a07806f74b597b55e89"
+      },
+      {
+        "path": "packages/mcp/README.md",
+        "sha": "7685d56f2dc7d1fac27261bf1c018805c30d2447"
+      },
+      {
+        "path": "packages/mcp/smithery.yaml",
+        "sha": "20eaeb1e508ad2f175a0f65c7330eba54ebe6b52"
+      },
+      {
+        "path": "packages/mcp/tsconfig.json",
+        "sha": "83d8dcb61657bfeda5a56701136212412fd2e05c"
+      },
+      {
+        "path": "packages/opencode/CHANGELOG.md",
+        "sha": "a6315160a7d9920ec56453303cdb2af7cc1c2bc8"
+      },
+      {
+        "path": "packages/opencode/eslint.config.js",
+        "sha": "d78022701de7a28e923156edd81486fa5bdf9b17"
+      },
+      {
+        "path": "packages/opencode/README.md",
+        "sha": "ebd689bb0a3aa84bae2197f3ef543ced1d392e9d"
+      },
+      {
+        "path": "packages/opencode/tsconfig.json",
+        "sha": "b1841110b48830e7d1acbc1418e60f3a0887a549"
+      },
+      {
+        "path": "packages/opencode/tsup.config.ts",
+        "sha": "4c4df407336673f5b11d4ed5f69c79ff2b661ba8"
+      },
+      {
+        "path": "packages/pi/CHANGELOG.md",
+        "sha": "8155f0d47f3a8fedb985742024ea114d9ee3d1dc"
+      },
+      {
+        "path": "packages/pi/eslint.config.js",
+        "sha": "703cdb28bb9b77270300a6dd4260d799d38ae5f9"
+      },
+      {
+        "path": "packages/pi/README.md",
+        "sha": "1047476feba690826aff649b8a7440d3277ed797"
+      },
+      {
+        "path": "packages/pi/tsconfig.json",
+        "sha": "e42e929aea9901db6396a0afc42fc4b421b18332"
+      },
+      {
+        "path": "packages/pi/vitest.config.ts",
+        "sha": "9f806ca52c82ff421d9fa128cfc5327315e1af8c"
+      },
+      {
+        "path": "packages/sdk/CHANGELOG.md",
+        "sha": "7b5bf38585daadafbbf0929af2411124520676bc"
+      },
+      {
+        "path": "packages/sdk/eslint.config.js",
+        "sha": "aeb85cedb3f8530d73f67eae638d80794f82a95d"
+      },
+      {
+        "path": "packages/sdk/prettier.config.mjs",
+        "sha": "206e41eb3c2c81dade906a07806f74b597b55e89"
+      },
+      {
+        "path": "packages/sdk/README.md",
+        "sha": "de5af1e0eeb606f4ede512e835e0d43c55538732"
+      },
+      {
+        "path": "packages/sdk/src/commands/get-context/index.ts",
+        "sha": "3b1324773885284d6bfeccb6963ec3987c045420"
+      },
+      {
+        "path": "packages/sdk/src/commands/search-library/index.ts",
+        "sha": "9d9e110ec5c670d356b16f14781bddb0850fd15e"
+      },
+      {
+        "path": "packages/sdk/src/commands/search/index.ts",
+        "sha": "86d64928d6b04f8039ec734b5dd6b329b460d3c4"
+      },
+      {
+        "path": "packages/sdk/tsconfig.json",
+        "sha": "6960b87efc752583009d80a8199c2afe152efa8d"
+      },
+      {
+        "path": "packages/sdk/tsup.config.ts",
+        "sha": "1bfede984081bc3a48e07dbcad423a86dd85decf"
+      },
+      {
+        "path": "packages/sdk/vitest.config.ts",
+        "sha": "c09b66949301362e5ba539a45274e467dbac5a38"
+      },
+      {
+        "path": "packages/sdk/vitest.integration.config.ts",
+        "sha": "2765ace496462c62558c2f08a2cc4ebae7f96f37"
+      },
+      {
+        "path": "packages/tools-ai-sdk/CHANGELOG.md",
+        "sha": "59ea7c6abc7412f58407bc3cc3a37850ea8ea407"
+      },
+      {
+        "path": "packages/tools-ai-sdk/eslint.config.js",
+        "sha": "aeb85cedb3f8530d73f67eae638d80794f82a95d"
+      },
+      {
+        "path": "packages/tools-ai-sdk/README.md",
+        "sha": "0c644c4bbc37556ba6116e3b0e77691af21a8acb"
+      },
+      {
+        "path": "packages/tools-ai-sdk/tsconfig.json",
+        "sha": "a829fdc7e845396334da39b5d472123a1bdb7ccd"
+      },
+      {
+        "path": "packages/tools-ai-sdk/tsup.config.ts",
+        "sha": "893b46a37984f868fcee25d2ba5e683e5e1937b0"
+      },
+      {
+        "path": "packages/tools-ai-sdk/vitest.config.ts",
+        "sha": "54d0e794fd9244ab54f842aaf3815a4c91142c60"
+      },
+      {
+        "path": "plugins/context7-power/mcp.json",
+        "sha": "a1015609d678b45292ca2165e1d520fed41a5de7"
+      },
+      {
+        "path": "plugins/context7-power/POWER.md",
+        "sha": "868aeed990ddf2439b5018bf780e09069a89ff95"
+      },
+      {
+        "path": "packages/admin-mcp/api/mcp.ts",
+        "sha": "da45947cd4269392a87df7c5a571d13bb3b7228a"
+      },
+      {
+        "path": "packages/admin-mcp/api/oauth-authorization-server.ts",
+        "sha": "c8b7314179e53e5baefb7ef6d4e7c150ebc86207"
+      },
+      {
+        "path": "packages/admin-mcp/api/oauth-protected-resource.ts",
+        "sha": "43edbb64b6d5445186e0ce63033a1b32734c12fb"
+      },
+      {
+        "path": "packages/admin-mcp/api/ping.ts",
+        "sha": "2dea879e62dccab5a503e2e519896f86acb6b614"
+      },
+      {
+        "path": "packages/admin-mcp/api/server-card.ts",
+        "sha": "a8813988449c2df02fe94512531bef2598ac576c"
+      },
+      {
+        "path": "packages/admin-mcp/scripts/dev.ts",
+        "sha": "ae17e89d54d2224341a518c03f8f02a952569028"
+      },
+      {
+        "path": "packages/admin-mcp/src/batch.ts",
+        "sha": "ef535a07f4f18a8a0b54b4e5cafad4034a59f7cf"
+      },
+      {
+        "path": "packages/admin-mcp/src/console.ts",
+        "sha": "a7791859ac4b4980afa231594fc1361440c9f800"
+      },
+      {
+        "path": "packages/admin-mcp/src/http.ts",
+        "sha": "f4fe03da36401c86120d86248728fa885fa83e90"
+      },
+      {
+        "path": "packages/admin-mcp/ui/tsconfig.json",
+        "sha": "d5d8fbde89a7c5a0a092b7b8f7492007e271f910"
+      },
+      {
+        "path": "packages/admin-mcp/ui/vite.config.ts",
+        "sha": "9767c292425e2d86a73df9ff510f2c576899f6d9"
+      },
+      {
+        "path": "packages/cli/src/constants.ts",
+        "sha": "4aa356e18e59e0253ad13b6465e94df96a26eab3"
+      },
+      {
+        "path": "packages/cli/src/types.ts",
+        "sha": "1064dbf1475408906f4969bb29b6de11d902afcf"
+      },
+      {
+        "path": "packages/mcp/mcpb/manifest.json",
+        "sha": "9fab50db7777dd6260c57aee1addd2a498395b92"
+      },
+      {
+        "path": "packages/mcp/schema/context7.json",
+        "sha": "adcbac4b766e4af80b43adf7aed7e43348077c49"
+      },
+      {
+        "path": "packages/pi/extensions/context7.ts",
+        "sha": "ac16bf226c7c1c4740ae52a05e7e89639d0b7b43"
+      },
+      {
+        "path": "packages/pi/lib/api.ts",
+        "sha": "3dd351fcae94b42fc62fdb69a91ba70598dace34"
+      },
+      {
+        "path": "packages/pi/lib/format.ts",
+        "sha": "4427aa7027539b19d73c985ba8498597a14a96a6"
+      },
+      {
+        "path": "packages/pi/lib/prompts.ts",
+        "sha": "7b561c16ff1ca5395736affc5ff2c87796a9c4a6"
+      },
+      {
+        "path": "packages/pi/lib/result.ts",
+        "sha": "18ee1fa2944c4104047fe38208378a7458d88daa"
+      },
+      {
+        "path": "packages/pi/lib/types.ts",
+        "sha": "ee7541708146c40f4cc4571bbea5615cc0cd9e26"
+      },
+      {
+        "path": "packages/pi/prompts/c7-docs.md",
+        "sha": "c8a26f8760a957d78cb9fa61752bf9662c4c44b3"
+      },
+      {
+        "path": "packages/sdk/src/client.ts",
+        "sha": "c759259df306ff39f70278596239f90ee74a4f1e"
+      },
+      {
+        "path": "plugins/agent-plugins/context7/mcp.json",
+        "sha": "110876a52b547d7b2d472fb0f38b6c57e6fcb544"
+      },
+      {
+        "path": "plugins/agent-plugins/context7/plugin.json",
+        "sha": "9d39617ce97ab8f14ce7fe54faa5c5ec2fa09740"
+      },
+      {
+        "path": "plugins/agent-plugins/context7/README.md",
+        "sha": "4b23f75129742a1b2c65b67a59a0f2129498340d"
+      },
+      {
+        "path": "plugins/antigravity/context7/mcp_config.json",
+        "sha": "9064a5ae3835dfc6a18cfffa212e7643dff74d95"
+      },
+      {
+        "path": "plugins/antigravity/context7/plugin.json",
+        "sha": "b9c0b5f9da7bdf427a08bd2600f74bcade6fe827"
+      },
+      {
+        "path": "plugins/antigravity/context7/README.md",
+        "sha": "7964b5430ecdb22525a216bc20d9c9815c2444dc"
+      },
+      {
+        "path": "plugins/claude/context7/.mcp.json",
+        "sha": "30c7cd96a87de472278d5ed5e3bb1f722c1245d7"
+      },
+      {
+        "path": "plugins/claude/context7/README.md",
+        "sha": "2609293edaaf0fde4aea1143d202ffe429dcd923"
+      },
+      {
+        "path": "plugins/codex/context7/.mcp.json",
+        "sha": "c5280c5f96d86cf3a83b0110c7229d031b8a1ca5"
+      },
+      {
+        "path": "plugins/codex/context7/README.md",
+        "sha": "897c27520b970c4fec6ddb659269956265ffbda2"
+      },
+      {
+        "path": "plugins/copilot/context7/.mcp.json",
+        "sha": "ef3ac5ab41da09acc873752b9e650cfb0eb78c06"
+      },
+      {
+        "path": "plugins/copilot/context7/plugin.json",
+        "sha": "2a78ede63cb4f4ae65421895cde0ffe7318fd57e"
+      },
+      {
+        "path": "plugins/copilot/context7/README.md",
+        "sha": "ad21362eeeb1b2c2f02f76c11e7e1d88c86f51ac"
+      },
+      {
+        "path": "plugins/cursor/context7/mcp.json",
+        "sha": "7dcea2180d827cd4c023198a294026c0d647ce2a"
+      },
+      {
+        "path": "plugins/cursor/context7/README.md",
+        "sha": "8df0143a21c6dc665096b72bb061fdaf4a286ff7"
+      },
+      {
+        "path": "skills/context7-cli/references/docs.md",
+        "sha": "c3d7705fe9485e8a20843f74ea19145c7b1fa021"
+      },
+      {
+        "path": "skills/context7-cli/references/setup.md",
+        "sha": "25d3b487c3a807e402bdc0b34c5a2eedbe6822cc"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/charts.tsx",
+        "sha": "2ef24e35d9fd7927d07210baa2688202e46a63f9"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/components.tsx",
+        "sha": "146700d329389cf3ae51729ba063df5364e7b3c6"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/data.ts",
+        "sha": "32525f2320083f92581c9cd98273d05b68a35d6b"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/format.ts",
+        "sha": "5e9fe6c42900d0d4bdbcd11b89948d4597572289"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/host.ts",
+        "sha": "0e901e8ca4cb5a9e4e66f515a27d84b80d28f639"
+      },
+      {
+        "path": "packages/cli/src/commands/auth.ts",
+        "sha": "e1c2887dc9559cd34e65a740f9b4316c37efaee9"
+      },
+      {
+        "path": "packages/cli/src/commands/docs.ts",
+        "sha": "aac97c0cfefbb9435fc3c2fedd82e837f8a62752"
+      },
+      {
+        "path": "packages/cli/src/commands/remove.ts",
+        "sha": "d41d59e29b75645976ad5f21be6faa2e4eb62148"
+      },
+      {
+        "path": "packages/cli/src/commands/search.ts",
+        "sha": "6e00ff342314df7bba1a067c07d073d9857a35f4"
+      },
+      {
+        "path": "packages/cli/src/commands/setup.ts",
+        "sha": "03a363e81c05f920828012461dadd276b195a3c8"
+      },
+      {
+        "path": "packages/cli/src/commands/upgrade.ts",
+        "sha": "b0b870c99dd2da74aba7be9b2de016271420fc05"
+      },
+      {
+        "path": "packages/cli/src/setup/agents.ts",
+        "sha": "3f9b34817ac7ce6349e2d430dbd5c31ed9eb6584"
+      },
+      {
+        "path": "packages/cli/src/setup/auth.ts",
+        "sha": "592326076f10c0acc77ff701f7b9b2a0516d4ee9"
+      },
+      {
+        "path": "packages/cli/src/setup/deployment.ts",
+        "sha": "9b7bc6889ac4c71cf182f429bf1dfe6beeeadc1d"
+      },
+      {
+        "path": "packages/cli/src/setup/mcp-writer.ts",
+        "sha": "2f4a8158774af0f12108a9e942bb8819a40ccec8"
+      },
+      {
+        "path": "packages/cli/src/setup/opencode-editor.ts",
+        "sha": "be602f5fe8a0b8c967fc4375320762a48e76dd34"
+      },
+      {
+        "path": "packages/cli/src/setup/templates.ts",
+        "sha": "fe7f679dbc01f899da6ad8edb75386fea03e402c"
+      },
+      {
+        "path": "packages/cli/src/setup/toml-editor.ts",
+        "sha": "8c385cdb96218504b6fdc0360cf7b99ef17cefc5"
+      },
+      {
+        "path": "packages/cli/src/utils/api.ts",
+        "sha": "5d330e22f822425e9b89eea97c2270ba98cd51d8"
+      },
+      {
+        "path": "packages/cli/src/utils/auth.ts",
+        "sha": "b5345d4b52336968b2d773ed8158ec35b5214bd8"
+      },
+      {
+        "path": "packages/cli/src/utils/file-lock.ts",
+        "sha": "637d4c03414e2b6bd78604efadcbe83307a42558"
+      },
+      {
+        "path": "packages/cli/src/utils/library-id.ts",
+        "sha": "757d58a2e3882182cb3c2a2e339e11bf1258118a"
+      },
+      {
+        "path": "packages/cli/src/utils/logger.ts",
+        "sha": "6b67eca4d29fbe828decae2f9628ca5bd4237807"
+      },
+      {
+        "path": "packages/cli/src/utils/prompts.ts",
+        "sha": "459652b3f0e1d03c400dc6d948a0ce60800332e5"
+      },
+      {
+        "path": "packages/cli/src/utils/skill-name.ts",
+        "sha": "d5150f03a1067b94dcc35e1a1a65b5942916eaf6"
+      },
+      {
+        "path": "packages/cli/src/utils/storage-paths.ts",
+        "sha": "6ed619322cad9f09e450f2a4bc3f2165ccc04665"
+      },
+      {
+        "path": "packages/cli/src/utils/tracking.ts",
+        "sha": "9314179baf702891673d9f7c1629ab74f1aa01b7"
+      },
+      {
+        "path": "packages/cli/src/utils/update-check.ts",
+        "sha": "b9c5ffdfc5a80ef1103633a8b6715f2379e35cf5"
+      },
+      {
+        "path": "packages/mcp/src/lib/api.ts",
+        "sha": "1d0ae7e4e6ae7a1f83b95a1f9bbe232136b9b8e6"
+      },
+      {
+        "path": "packages/mcp/src/lib/auth-lifecycle-telemetry.ts",
+        "sha": "f71eaba00ec4e6e3e1f429578fd41880acd2c310"
+      },
+      {
+        "path": "packages/mcp/src/lib/constants.ts",
+        "sha": "4662053ef38b8767ea74a2cd2019704e7a086aac"
+      },
+      {
+        "path": "packages/mcp/src/lib/encryption.ts",
+        "sha": "9f0b8b9e4467917189da18074d7ccb46e2f4f772"
+      },
+      {
+        "path": "packages/mcp/src/lib/jwt.ts",
+        "sha": "65ebc4f1d9de9d52d0444a1b9a1a0ac699f2d1fb"
+      },
+      {
+        "path": "packages/mcp/src/lib/log-throttle.ts",
+        "sha": "32fffbf073a9e705c169f54c0d9a5d90b915a24c"
+      },
+      {
+        "path": "packages/mcp/src/lib/mcp-body-error-handler.ts",
+        "sha": "481070fdbaa961275e6cf118883bc3d4e768f03c"
+      },
+      {
+        "path": "packages/mcp/src/lib/mcp-http-auth.ts",
+        "sha": "284438fe7e323eb1486ac3db91f219bfad78da9a"
+      },
+      {
+        "path": "packages/mcp/src/lib/mcp-operation-scope.ts",
+        "sha": "b0bf2ba4f412a51989322a69366f52cc47671cfd"
+      },
+      {
+        "path": "packages/mcp/src/lib/mcp-route.ts",
+        "sha": "6166ef6fe0c6a157da27757d7e00764757111218"
+      },
+      {
+        "path": "packages/mcp/src/lib/mcp-subscription-telemetry.ts",
+        "sha": "055bd34e4ae6beccd55cd3e9e21de3e1cb918e35"
+      },
+      {
+        "path": "packages/mcp/src/lib/mcp-telemetry.ts",
+        "sha": "38eb3d1bfb92ce42b6d222cc571fe96af25c92fa"
+      },
+      {
+        "path": "packages/mcp/src/lib/oauth-audience.ts",
+        "sha": "286713ee31eeda9db1b11ca6e6196b94c959a9ef"
+      },
+      {
+        "path": "packages/mcp/src/lib/oauth-token-validation.ts",
+        "sha": "77f315dc1ba7bfd2b8782ed483c720247b3beda2"
+      },
+      {
+        "path": "packages/mcp/src/lib/process-shutdown.ts",
+        "sha": "f39fd8ab6302f0b01233b0b644ea9c1eb7267503"
+      },
+      {
+        "path": "packages/mcp/src/lib/research-preview-tools.ts",
+        "sha": "6efa8c80c13e0ab747f262872f61bdd940e522a5"
+      },
+      {
+        "path": "packages/mcp/src/lib/telemetry-config.ts",
+        "sha": "9e594d9a03dca2ed857dd1d035cabaf089a0919a"
+      },
+      {
+        "path": "packages/mcp/src/lib/telemetry-contracts.ts",
+        "sha": "59acd55047eb1e40ff506b10601ce309c9975ea7"
+      },
+      {
+        "path": "packages/mcp/src/lib/telemetry-provider.ts",
+        "sha": "03ec5223d39c320abd2965475e1dbc853550d0eb"
+      },
+      {
+        "path": "packages/mcp/src/lib/telemetry-runtime.ts",
+        "sha": "53b0255fd3cab68fa2cddc47fff76c75c5e40013"
+      },
+      {
+        "path": "packages/mcp/src/lib/telemetry.ts",
+        "sha": "04d87a2e6e3c6ccba5f6f710903e4dac245f4400"
+      },
+      {
+        "path": "packages/mcp/src/lib/tool-names.ts",
+        "sha": "7b76f40fe7c5fd95e12997757f1ebce4e8b482db"
+      },
+      {
+        "path": "packages/mcp/src/lib/types.ts",
+        "sha": "1dff47e878a16f0b21701c658d7318081d06dd9a"
+      },
+      {
+        "path": "packages/mcp/src/lib/utils.ts",
+        "sha": "d43a72ca6c907d11e84517a19ad5c3dd46ff195a"
+      },
+      {
+        "path": "packages/mcp/src/lib/vercelMarketplaceJwt.ts",
+        "sha": "5aa0f5ba5dea51dc1bdf492546198bc6ed103d07"
+      },
+      {
+        "path": "packages/pi/lib/tools/query-docs.ts",
+        "sha": "28338f0daea240a5ef8dad1487aec2fc0a50ef73"
+      },
+      {
+        "path": "packages/pi/lib/tools/resolve-library-id.ts",
+        "sha": "637b37ce9c95d59a4cb37b832156323115b060e5"
+      },
+      {
+        "path": "packages/sdk/src/commands/command.ts",
+        "sha": "64232816d680437fd00b13ff284d1b800433ef53"
+      },
+      {
+        "path": "packages/sdk/src/commands/types.ts",
+        "sha": "b9666001c075f3e935eacda2609ba5564d8052e7"
+      },
+      {
+        "path": "packages/sdk/src/http/abort.ts",
+        "sha": "aabe4dd40797fe10ece7b552415926b00405f878"
+      },
+      {
+        "path": "packages/sdk/src/http/response.ts",
+        "sha": "4982bf168dc23919ca7e621cb91bebec93834fce"
+      },
+      {
+        "path": "packages/sdk/src/http/retry.ts",
+        "sha": "b032fc4838afea9ecaad15998809c9881a434de1"
+      },
+      {
+        "path": "packages/sdk/src/http/types.ts",
+        "sha": "d7d45061a81031b2255d863197bd85dbe8730de2"
+      },
+      {
+        "path": "packages/sdk/src/utils/format.ts",
+        "sha": "5c40409b0afde840c74f04828d9820c1072bc07b"
+      },
+      {
+        "path": "packages/sdk/src/utils/test-utils.ts",
+        "sha": "e4f612c7f564b3b8489f7d692abdd41bf1bfd32b"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/agents/context7.ts",
+        "sha": "0f3fb1d04cc4750ccde3009a48fff3d55746cffb"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/prompts/system.ts",
+        "sha": "474664c7e76502f2d4559ff12451199d90d147b4"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/tools/query-docs.ts",
+        "sha": "e00383a2e133dd76348898434a1b1729cf773809"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/tools/resolve-library-id.ts",
+        "sha": "a33c6c1b2878bf6b2e6532950c1a5d5a46d8908f"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/tools/types.ts",
+        "sha": "735c9f63c14138ed54ac2fb1e2dbc6b51e31f677"
+      },
+      {
+        "path": "plugins/claude/context7/.claude-plugin/plugin.json",
+        "sha": "87f04a99c66563abe96426d133524acda0e5f72b"
+      },
+      {
+        "path": "plugins/codex/context7/.codex-plugin/plugin.json",
+        "sha": "496782f133e84cec0ffce28837ec73b08e986952"
+      },
+      {
+        "path": "plugins/copilot/context7/agents/docs-researcher.agent.md",
+        "sha": "b4bf1e29a3c3cfb61e7de8aeff15faf4afd196e1"
+      },
+      {
+        "path": "plugins/copilot/context7/commands/docs.md",
+        "sha": "d03caefabb571c27f95cf658dbe8e55d17b6a890"
+      },
+      {
+        "path": "plugins/cursor/context7/.cursor-plugin/plugin.json",
+        "sha": "8f3c7da9087c61127ae49e24221e068df7867be1"
+      },
+      {
+        "path": "plugins/cursor/context7/agents/docs-researcher.md",
+        "sha": "b4bf1e29a3c3cfb61e7de8aeff15faf4afd196e1"
+      },
+      {
+        "path": "plugins/cursor/context7/rules/use-context7.mdc",
+        "sha": "723a9797d33e8f89fd20c1bfa7f8689a2a693162"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/pages/ask.tsx",
+        "sha": "8496f7f47d10125f315789a87663ad4e57ce489a"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/pages/docs7.tsx",
+        "sha": "00df1e11ed853ef383c59d4ce13c20ab59f8fc9b"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/pages/libraries.tsx",
+        "sha": "456b4cee84ed5c2916db19ed3a589a78bfe5af05"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/pages/usage.tsx",
+        "sha": "720e5f59c602c3a99b30dca141c2370976e5c491"
+      },
+      {
+        "path": "packages/mcp/src/lib/auth/auth-prompt.ts",
+        "sha": "419a07e5f66f60b42cfe620b2ca6ae04a40194c2"
+      },
+      {
+        "path": "packages/sdk/src/commands/get-context/types.ts",
+        "sha": "a55dae7163f56fe7eb03d4d96db3e95c484ef596"
+      },
+      {
+        "path": "packages/sdk/src/commands/search-library/types.ts",
+        "sha": "e15635ada88b2304acceacbd1ca37eca0eb348a4"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T13:15:19Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 93,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "packages/mcp/src/lib/jwt.ts",
+      "line": 28,
+      "snippet": "new URL(\"https://login.microsoftonline.com/common/discovery/v2.0/keys\")",
+      "host": "login.microsoftonline.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "severe": false,
+      "file": "packages/admin-mcp/scripts/dev.ts",
+      "line": 28,
+      "snippet": "host: 127.0.0.1",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 239,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "login.microsoftonline.com"
+    ],
+    "declared_hosts": 4,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 4,
+    "failed": 0,
+    "ms": 1857
+  },
+  "duration_ms": 1951
+}

@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T153006Z",
+  "target": {
+    "source": "github",
+    "id": "qdrant/mcp-server-qdrant",
+    "url": "https://github.com/qdrant/mcp-server-qdrant",
+    "name": "mcp-server-qdrant"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:31:22.803Z",
+  "method_version": "0.4.0",
+  "tool": {
+    "assay_commit": "0d54b15c908aa12ddde2f2301c162f8ca747bad7",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.4.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "c56ae5adf62bb78d852bf7bbcbc5d7b75e2bbe41",
+    "files_scanned": 20,
+    "candidates": 20,
+    "excluded_non_shipped": 8,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/mcp_server_qdrant/main.py",
+        "sha": "f4d5da95ae5de61c21073249544f93fd7ef30c6e"
+      },
+      {
+        "path": "src/mcp_server_qdrant/server.py",
+        "sha": "3f8f303cf80efcb609f6c7f5135c6d66fe43983c"
+      },
+      {
+        "path": "kiro-power/skills/setup/SKILL.md",
+        "sha": "70222ba3b0d4843597ae3cd4bfa3bfce3869d2ca"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "a1c25ec1fca774aca8d3a37974cf533d532b901d"
+      },
+      {
+        "path": "README.md",
+        "sha": "aec0394570ad8bedb8548313868d859dbbc36e01"
+      },
+      {
+        "path": "src/mcp_server_qdrant/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/mcp_server_qdrant/mcp_server.py",
+        "sha": "0617b9d8f15fd5df499e079973b457ca5d30e513"
+      },
+      {
+        "path": "src/mcp_server_qdrant/qdrant.py",
+        "sha": "8d3e5aa892fcdd63338f60d9f16b0d15d7308d28"
+      },
+      {
+        "path": "src/mcp_server_qdrant/settings.py",
+        "sha": "e48c10d18bbcb5688e7edb28bc1b817459a4d6f9"
+      },
+      {
+        "path": "kiro-power/mcp.json",
+        "sha": "fd666e0279aae125e4ef8e70ad3a9af8a63d05ed"
+      },
+      {
+        "path": "kiro-power/plugin.json",
+        "sha": "fd0a65e73e10afd7fc86fe346bd953bfab0d6955"
+      },
+      {
+        "path": "src/mcp_server_qdrant/common/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/mcp_server_qdrant/common/filters.py",
+        "sha": "ccb7fb762bed2b0ba38b9d4f3d8390a08cdab563"
+      },
+      {
+        "path": "src/mcp_server_qdrant/common/func_tools.py",
+        "sha": "37f77cf8f811bcc6819d0087b390097652d63865"
+      },
+      {
+        "path": "src/mcp_server_qdrant/common/wrap_filters.py",
+        "sha": "11ae9e341013d66c1699a4982d090982160b3595"
+      },
+      {
+        "path": "src/mcp_server_qdrant/embeddings/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "src/mcp_server_qdrant/embeddings/base.py",
+        "sha": "5c47a175a4e78d94fcb582fafaa1ae0c71a08cbf"
+      },
+      {
+        "path": "src/mcp_server_qdrant/embeddings/factory.py",
+        "sha": "efac851c076cbb15abfc2e3b76aac3591a16fc37"
+      },
+      {
+        "path": "src/mcp_server_qdrant/embeddings/fastembed.py",
+        "sha": "1655f83576ddc2b07976ba0f3d0e455be85a9a88"
+      },
+      {
+        "path": "src/mcp_server_qdrant/embeddings/types.py",
+        "sha": "5290703db9ed70cba1158850fd56ec9138396e09"
+      }
+    ],
+    "repo_pushed_at": "2026-09-04T00:13:58Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 90,
+    "dims": {
+      "maintenance": 85,
+      "install_docs": 100,
+      "dangerous_patterns": 75,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "kiro-power/skills/setup/SKILL.md",
+      "line": 38,
+      "snippet": "curl -LsSf https://astral.sh/uv/install.sh | sh",
+      "deduction": 25
+    }
+  ],
+  "evidence": {
+    "files_scanned": 20,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 60
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1486
+  },
+  "duration_ms": 1493
+}

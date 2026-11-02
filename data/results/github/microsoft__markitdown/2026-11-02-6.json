@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T153006Z",
+  "target": {
+    "source": "github",
+    "id": "microsoft/markitdown",
+    "url": "https://github.com/microsoft/markitdown",
+    "name": "markitdown"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:30:50.414Z",
+  "method_version": "0.4.0",
+  "tool": {
+    "assay_commit": "0d54b15c908aa12ddde2f2301c162f8ca747bad7",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.4.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "7482c092d9c0074a89803c9fdb63a969e7fe17fc",
+    "files_scanned": 65,
+    "candidates": 65,
+    "excluded_non_shipped": 53,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "2545c77342acb0274cc68c1de9efda70a58a159e"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "f9ba8cf65f3e3104dd061c178066ec8247811f33"
+      },
+      {
+        "path": "README.md",
+        "sha": "13e1ea8b1c60275a4b3afab8ce8cd442531cf736"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "b3c89efc852e22f71eabf5dfbc6ac62493425eb6"
+      },
+      {
+        "path": "SUPPORT.md",
+        "sha": "291d4d43733f4c15a81ff598ec1c99fd6c18f64c"
+      },
+      {
+        "path": "packages/markitdown-mcp/README.md",
+        "sha": "508e7b59873a6724bc047e7faf62e8f0f5469fa3"
+      },
+      {
+        "path": "packages/markitdown-ocr/README.md",
+        "sha": "f5c0162c8db704f492577da02413f32f205071d3"
+      },
+      {
+        "path": "packages/markitdown-sample-plugin/README.md",
+        "sha": "b750313437fe0a8e86909ac8981c3d7b568710a8"
+      },
+      {
+        "path": "packages/markitdown/README.md",
+        "sha": "2ac98708d6febc7e39ffd95f0286eb89a7a3eaa2"
+      },
+      {
+        "path": "packages/markitdown/ThirdPartyNotices.md",
+        "sha": "44edd8f26f6e089b1cb4288a32d43138f044388c"
+      },
+      {
+        "path": "packages/markitdown-mcp/src/markitdown_mcp/__about__.py",
+        "sha": "30cf32f0437e11e059a4e63cbee36657e4de0b74"
+      },
+      {
+        "path": "packages/markitdown-mcp/src/markitdown_mcp/__init__.py",
+        "sha": "8464d59d46df077f8323d790f4208f6e38851b25"
+      },
+      {
+        "path": "packages/markitdown-mcp/src/markitdown_mcp/__main__.py",
+        "sha": "f28c429a783f3a3924f0f78c6c81839f55b67dd4"
+      },
+      {
+        "path": "packages/markitdown-ocr/src/markitdown_ocr/__about__.py",
+        "sha": "4635405fea5a977ef2ef53441cbb78460b8bad19"
+      },
+      {
+        "path": "packages/markitdown-ocr/src/markitdown_ocr/__init__.py",
+        "sha": "f608e96254d1f713f2d730dcf71ed5c542be4600"
+      },
+      {
+        "path": "packages/markitdown-ocr/src/markitdown_ocr/_docx_converter_with_ocr.py",
+        "sha": "6f072489f474a34de13d6411c6bdaacc41133287"
+      },
+      {
+        "path": "packages/markitdown-ocr/src/markitdown_ocr/_ocr_service.py",
+        "sha": "c42ca55a6594fd917416a617b1aed419f56ebf33"
+      },
+      {
+        "path": "packages/markitdown-ocr/src/markitdown_ocr/_pdf_converter_with_ocr.py",
+        "sha": "c1dc0f613600e0576e137ee09f1cd9f8a0c8af91"
+      },
+      {
+        "path": "packages/markitdown-ocr/src/markitdown_ocr/_plugin.py",
+        "sha": "711731990cee731d96388a97ef7d6d91adc17028"
+      },
+      {
+        "path": "packages/markitdown-ocr/src/markitdown_ocr/_pptx_converter_with_ocr.py",
+        "sha": "124b143ef7852d11324ef9eda8484d56314d1824"
+      },
+      {
+        "path": "packages/markitdown-ocr/src/markitdown_ocr/_xlsx_converter_with_ocr.py",
+        "sha": "b272bcf663773b981c9014359507a6b5961e3f3e"
+      },
+      {
+        "path": "packages/markitdown-sample-plugin/src/markitdown_sample_plugin/__about__.py",
+        "sha": "91bf07bc388e55e1162a70d7638598b364b38acf"
+      },
+      {
+        "path": "packages/markitdown-sample-plugin/src/markitdown_sample_plugin/__init__.py",
+        "sha": "8a64f99c7405d60a82ed2c23b89a493845c4111b"
+      },
+      {
+        "path": "packages/markitdown-sample-plugin/src/markitdown_sample_plugin/_plugin.py",
+        "sha": "ced1fcd78eabaeceac126d020516b0fe99b592eb"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/__about__.py",
+        "sha": "1c82fe639696f67a0615abbd5c47c46fac60bae4"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/__init__.py",
+        "sha": "af356dd630f945666b91e2ffc25ac0c121f94e73"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/__main__.py",
+        "sha": "714eaee6a4ac187f2e25e2f8347dd07810075251"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/_base_converter.py",
+        "sha": "1ed8409757d5adbfaa03b2f0caa6049f3460c67d"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/_exceptions.py",
+        "sha": "baa2a08b41c01ec1606012d3d8d746879d855a6e"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/_markitdown.py",
+        "sha": "45cef7fbd491157f2fc97f9c250f54f78cef5137"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/_stream_info.py",
+        "sha": "9c38c81e061743292edd8efd7c320599f0bc0005"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/_uri_utils.py",
+        "sha": "9deb8ecaba1e40a698094eb1f31edb0147956c69"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converter_utils/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converter_utils/_image.py",
+        "sha": "0efef4bee36a469f80f1b3aac26e5925214b1ddf"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converter_utils/_xlsx_images.py",
+        "sha": "3ea4bc3a00f4a91a0e09efa9495687586da57ad4"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/__init__.py",
+        "sha": "77f8b1acd1227dc42d6a80b5073989080342e000"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_audio_converter.py",
+        "sha": "c4393e92ddeb9dd6bb4aa6b6c3044d972fc504f7"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_bing_serp_converter.py",
+        "sha": "fd00a70ab76ff01fcdc2e3bfb47aaf20708408c8"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_csv_converter.py",
+        "sha": "331b0712a351e84779a62ca5742a6c3c5389c8b5"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_cu_converter.py",
+        "sha": "230e3d86bf533241b68dfc3d023e48b3effdc788"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_doc_intel_converter.py",
+        "sha": "32180ad39186291be1349021770c8be804e97ddd"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_docx_converter.py",
+        "sha": "8e5a736b8c82c69e5e24e52da13a45830ef3ea9c"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_epub_converter.py",
+        "sha": "0ad1cd2c219740d51401f028763c129abe1955d2"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_exiftool.py",
+        "sha": "765ebecfeaf36c91dc27170d52f123abd97e06dc"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_html_converter.py",
+        "sha": "029b27f57bd5742ecd3c85462008b3d7491463eb"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_image_converter.py",
+        "sha": "dd8fbac61cd3625fd577a6f52e65c66c701e894a"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_ipynb_converter.py",
+        "sha": "6bc1c1673fca663ef7f6a23fe886ff5134ac1891"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_llm_caption.py",
+        "sha": "004a47aefecaa421f9edc3377c12c20280fa0113"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_markdownify.py",
+        "sha": "5b75075db955ed19fca2457bc8552cfb9faaa297"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_outlook_msg_converter.py",
+        "sha": "e3668651abfa8407b9d084b59ce09a230347d3d1"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_pdf_converter.py",
+        "sha": "ffbcbd990cfc40a577404c453ebe47bf477c4929"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_plain_text_converter.py",
+        "sha": "6a26560a9184e2ef8594d87d316c57ecfa6f6a18"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_pptx_converter.py",
+        "sha": "76cf7751bcde0ba584845bf03d615dc959affb5a"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_rss_converter.py",
+        "sha": "ce768b84730df7c11d2648953378565f3510cb7f"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_transcribe_audio.py",
+        "sha": "6caa2c656bf919563318018af08d503fe7fb0a51"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_wikipedia_converter.py",
+        "sha": "f9bc1aedf28ec8c5fe19afcdb0e7e48a31003087"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_xlsx_converter.py",
+        "sha": "9f794a3b77e34c84b67358c21001ad7a87f3b9c4"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_youtube_converter.py",
+        "sha": "70e8457bc12295202aa82e14065c7ca5eb4d4564"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converters/_zip_converter.py",
+        "sha": "a30a8bdc8d24f4f161b83e92ee6ebea03a956e67"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converter_utils/docx/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converter_utils/docx/_images.py",
+        "sha": "cd2ce1de323b4d7eed045152dd51f93f6c1a7581"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converter_utils/docx/pre_process.py",
+        "sha": "c6dc303414bcf86d242d89df0384bfd81d92c996"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converter_utils/docx/math/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converter_utils/docx/math/latex_dict.py",
+        "sha": "21fdeaac81e9a49eeac437c32121a1eeb7881de2"
+      },
+      {
+        "path": "packages/markitdown/src/markitdown/converter_utils/docx/math/omml.py",
+        "sha": "5a014384a76c6560ffc0369f1e46105be3ad334b"
+      }
+    ],
+    "repo_pushed_at": "2026-10-28T15:33:14Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 65,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 5
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1505
+  },
+  "duration_ms": 1546
+}

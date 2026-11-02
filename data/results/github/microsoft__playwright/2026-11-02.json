@@ -1,0 +1,1789 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T152807Z",
+  "target": {
+    "source": "github",
+    "id": "microsoft/playwright",
+    "url": "https://github.com/microsoft/playwright",
+    "name": "playwright"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:29:32.360Z",
+  "method_version": "0.4.0",
+  "tool": {
+    "assay_commit": "0d54b15c908aa12ddde2f2301c162f8ca747bad7",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.4.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "6117130d63434286287a50c6ea8d32050a818b36",
+    "files_scanned": 400,
+    "candidates": 969,
+    "excluded_non_shipped": 1086,
+    "coverage": 0.41,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "packages/playwright-browser-chromium/install.js",
+        "sha": "70bdc6374f64ed3649d2be644b62629e3156b76f"
+      },
+      {
+        "path": "packages/playwright-browser-firefox/install.js",
+        "sha": "d024766ec9124baa51a3bb876487144f9d1c870a"
+      },
+      {
+        "path": "packages/playwright-browser-webkit/install.js",
+        "sha": "c9ac528acade0d6d977f7598f3d54e3b020d2fa5"
+      },
+      {
+        "path": "packages/playwright-chromium/install.js",
+        "sha": "70bdc6374f64ed3649d2be644b62629e3156b76f"
+      },
+      {
+        "path": "packages/playwright-firefox/install.js",
+        "sha": "d024766ec9124baa51a3bb876487144f9d1c870a"
+      },
+      {
+        "path": "packages/playwright-webkit/install.js",
+        "sha": "c9ac528acade0d6d977f7598f3d54e3b020d2fa5"
+      },
+      {
+        "path": ".claude/skills/api-review/SKILL.md",
+        "sha": "5f992a791f576f6a4a6f4bbdb9884ad48b02c6db"
+      },
+      {
+        "path": ".claude/skills/playwright-cherry-pick/SKILL.md",
+        "sha": "9e87465e8c5767b7e93f7d0f78b72ec24cbf815c"
+      },
+      {
+        "path": ".claude/skills/playwright-dev/SKILL.md",
+        "sha": "74ad346c54a9c73ceaf954592f27c592811659c9"
+      },
+      {
+        "path": ".claude/skills/playwright-devops/SKILL.md",
+        "sha": "67763fc7624cc0a673fdfdd9b0d41536a6942ff1"
+      },
+      {
+        "path": ".claude/skills/playwright-release-notes/SKILL.md",
+        "sha": "e513d886982d9c95422889ce8816cdf6225b6050"
+      },
+      {
+        "path": ".claude/skills/playwright-test-results/SKILL.md",
+        "sha": "d2bb970d80d1fb567c71ab4baa3164cf06e3a80f"
+      },
+      {
+        "path": ".claude/skills/playwright-triage/SKILL.md",
+        "sha": "1ee2223f53c7f6634ad77be3a9f0390532f62ffc"
+      },
+      {
+        "path": "packages/playwright-core/src/cli/installActions.ts",
+        "sha": "1c5dc75038becfce95306bb00efb9f338884e3fe"
+      },
+      {
+        "path": "package.json",
+        "sha": "f43881215af58d016c364af731f2414f8a2c3228"
+      },
+      {
+        "path": "packages/isomorphic/index.ts",
+        "sha": "bf6df6dc4120e2e666a4e06d007b6b572ad19d79"
+      },
+      {
+        "path": "packages/playwright-browser-chromium/index.js",
+        "sha": "c391f5c267b9e508ff52a63131ff2093788cc402"
+      },
+      {
+        "path": "packages/playwright-browser-chromium/index.mjs",
+        "sha": "c391f5c267b9e508ff52a63131ff2093788cc402"
+      },
+      {
+        "path": "packages/playwright-browser-firefox/index.js",
+        "sha": "c391f5c267b9e508ff52a63131ff2093788cc402"
+      },
+      {
+        "path": "packages/playwright-browser-firefox/index.mjs",
+        "sha": "c391f5c267b9e508ff52a63131ff2093788cc402"
+      },
+      {
+        "path": "packages/playwright-browser-webkit/index.js",
+        "sha": "c391f5c267b9e508ff52a63131ff2093788cc402"
+      },
+      {
+        "path": "packages/playwright-browser-webkit/index.mjs",
+        "sha": "c391f5c267b9e508ff52a63131ff2093788cc402"
+      },
+      {
+        "path": "packages/playwright-chromium/cli.js",
+        "sha": "c50f2643facfb92a53d3a7afad3d1ff3d3f57620"
+      },
+      {
+        "path": "packages/playwright-chromium/index.js",
+        "sha": "e263df6ab1f0190497dc015c678874f0e6baf343"
+      },
+      {
+        "path": "packages/playwright-chromium/index.mjs",
+        "sha": "c736e9d13ad09e54ee6f1fe000a9c8d8aa853f40"
+      },
+      {
+        "path": "packages/playwright-core/cli.js",
+        "sha": "7dbfc530629d95699fb0361bc8b2fd5d3d430289"
+      },
+      {
+        "path": "packages/playwright-core/index.js",
+        "sha": "9fc51a4d89475964e8346014f954fa395fd84525"
+      },
+      {
+        "path": "packages/playwright-core/index.mjs",
+        "sha": "3b3c75b0f7fa795fda632358486484b73d2af55f"
+      },
+      {
+        "path": "packages/playwright-core/src/tools/utils/installSkills.ts",
+        "sha": "4bcea607c265f193aa7a3d47191987937d36b104"
+      },
+      {
+        "path": "packages/playwright-firefox/cli.js",
+        "sha": "c50f2643facfb92a53d3a7afad3d1ff3d3f57620"
+      },
+      {
+        "path": "packages/playwright-firefox/index.js",
+        "sha": "e263df6ab1f0190497dc015c678874f0e6baf343"
+      },
+      {
+        "path": "packages/playwright-firefox/index.mjs",
+        "sha": "c736e9d13ad09e54ee6f1fe000a9c8d8aa853f40"
+      },
+      {
+        "path": "packages/playwright-test/cli.js",
+        "sha": "e42facb076f4b05f009186346d05d39c2d9b784d"
+      },
+      {
+        "path": "packages/playwright-test/index.js",
+        "sha": "8536f063904ffa04a91240061ce1cf2c4c855b79"
+      },
+      {
+        "path": "packages/playwright-test/index.mjs",
+        "sha": "8d99c91500c65b4b9d762b900dedf5e6000cf257"
+      },
+      {
+        "path": "packages/playwright-webkit/cli.js",
+        "sha": "c50f2643facfb92a53d3a7afad3d1ff3d3f57620"
+      },
+      {
+        "path": "packages/playwright-webkit/index.js",
+        "sha": "e263df6ab1f0190497dc015c678874f0e6baf343"
+      },
+      {
+        "path": "packages/playwright-webkit/index.mjs",
+        "sha": "c736e9d13ad09e54ee6f1fe000a9c8d8aa853f40"
+      },
+      {
+        "path": "packages/playwright/cli.js",
+        "sha": "5db59b62cdc8c26e1209bacbd0233e13bb949b96"
+      },
+      {
+        "path": "packages/playwright/index.js",
+        "sha": "e263df6ab1f0190497dc015c678874f0e6baf343"
+      },
+      {
+        "path": "packages/playwright/index.mjs",
+        "sha": "c736e9d13ad09e54ee6f1fe000a9c8d8aa853f40"
+      },
+      {
+        "path": "packages/utils/index.ts",
+        "sha": "8c06239ed51496300eb301dde5a414697aec1392"
+      },
+      {
+        "path": "utils/doclint/cli.js",
+        "sha": "f871721e0006a39f9fe3b647878bc1e2fdf60a0a"
+      },
+      {
+        "path": "utils/eslint-plugin-progress/index.js",
+        "sha": "7a256116b7b0d0603c93564753af89f3b23d1fc9"
+      },
+      {
+        "path": "utils/generate_types/index.js",
+        "sha": "a0aad8dede536197f74683f1c8ec104b90b47e66"
+      },
+      {
+        "path": "utils/protocol-types-generator/index.js",
+        "sha": "d3eb3a8ed941f3d4ad125e6f9b34c39a3391518d"
+      },
+      {
+        "path": "utils/test-results-db/cli.ts",
+        "sha": "e96d40e47bfee088e867a243842ca90ada3744f0"
+      },
+      {
+        "path": ".claude/skills/playwright-dev/tools.md",
+        "sha": "07becaa17cc72427139b770c46225486c1f13844"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "effee6e95ab3236df613f85432cbec70e375183e"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "c72a5749c52ac97bca71c672ef5295d303d22b05"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "7e1c6d1b3cc0da177e23732c627903d642e32928"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "sha": "0bd0d7837dbb6d4b017b648e02d0e481f835483d"
+      },
+      {
+        "path": "FILING_ISSUES.md",
+        "sha": "b699cd2e504407a8b48643fd5a9e551223943928"
+      },
+      {
+        "path": "packages/dashboard/src/index.tsx",
+        "sha": "01c05cd2fd83cbb0722d851aee1ecf764e8cb51d"
+      },
+      {
+        "path": "packages/html-reporter/src/index.tsx",
+        "sha": "e113660e21af5c8cda5e146384fcfbce811cf113"
+      },
+      {
+        "path": "packages/playwright-client/src/index.ts",
+        "sha": "97c66cade21d249d76427e7af6be3c86272b71b2"
+      },
+      {
+        "path": "packages/playwright/src/index.ts",
+        "sha": "4ea9c43c3b0037d435e106f3fbc032107efd11e8"
+      },
+      {
+        "path": "packages/recorder/src/index.tsx",
+        "sha": "55935ec336d0ba53f18fed5c9f90d639b56e6a59"
+      },
+      {
+        "path": "packages/trace-viewer/src/index.tsx",
+        "sha": "933e3fed2105b4f1883cf90d1ee5751b59a8d9a5"
+      },
+      {
+        "path": "README.md",
+        "sha": "be771cef2a2521d3e369db88952bc8202b7cf37b"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "6b906d43bc2057e6a832c3236897b2e514d6e1e7"
+      },
+      {
+        "path": "SUPPORT.md",
+        "sha": "78cb929fb1bd4e866620e9431eb6bf8cd7733051"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "6526645a8fbd591f6dbb94d363665e3f98ca5b79"
+      },
+      {
+        "path": "utils/doclint/linting-code-snippets/cli.js",
+        "sha": "434b4c9e088324df138d5478400da6f5d5a41ca3"
+      },
+      {
+        "path": "packages/dashboard/package.json",
+        "sha": "7777cf8c7680524eae5dad6bb5d587ebcb23b695"
+      },
+      {
+        "path": "packages/extension/package.json",
+        "sha": "cc19ef0c142f520b199038aed7a607754c1c3144"
+      },
+      {
+        "path": "packages/html-reporter/package.json",
+        "sha": "0b5ad5fb24b7a04133426b6106643db88445e8c1"
+      },
+      {
+        "path": "packages/playwright-browser-chromium/package.json",
+        "sha": "d76e6c29fe3c0cf1484ecb4a5dbb8bba5e265619"
+      },
+      {
+        "path": "packages/playwright-browser-firefox/package.json",
+        "sha": "09b45ec00083776b3253b2aae9c584cce3625cd0"
+      },
+      {
+        "path": "packages/playwright-browser-webkit/package.json",
+        "sha": "628e0576ad02552b3795cf75289dc2229d75b3b4"
+      },
+      {
+        "path": "packages/playwright-chromium/package.json",
+        "sha": "aed66d8281a8b2e60cc197a8fc8d52aee8374136"
+      },
+      {
+        "path": "packages/playwright-client/package.json",
+        "sha": "3b3c6eb4677dfe65ae91baccc00a143ec66b848e"
+      },
+      {
+        "path": "packages/playwright-core/package.json",
+        "sha": "a2130453547dc69639bc8dc41112aa91d2ed0bd5"
+      },
+      {
+        "path": "packages/playwright-firefox/package.json",
+        "sha": "ecbc531d0911aade3b2f7537592e35b34d175b80"
+      },
+      {
+        "path": "packages/playwright-test/package.json",
+        "sha": "a32c31ca15b5cc0dd769c656d226524fe7435911"
+      },
+      {
+        "path": "packages/playwright-webkit/package.json",
+        "sha": "941661a697a7dcf7271d25e6c0f922a76c7c5a71"
+      },
+      {
+        "path": "packages/playwright/package.json",
+        "sha": "e2ae11459fcfc2864f9d8204ce66ddc0be9d9b17"
+      },
+      {
+        "path": "packages/recorder/package.json",
+        "sha": "745de98ac622c119552d7bd5cbe4f167263444d3"
+      },
+      {
+        "path": "packages/trace-viewer/package.json",
+        "sha": "7478849dd0aa7838a938712011176af3de996402"
+      },
+      {
+        "path": "packages/web/package.json",
+        "sha": "88174fe4bc472e34665ab75e448f7f6013b2078d"
+      },
+      {
+        "path": "utils/test-results-db/package.json",
+        "sha": "3dbc1ca591c0557e35b6004aeba250e6a70b56e3"
+      },
+      {
+        "path": ".azure-pipelines/publish-docker.yml",
+        "sha": "605544d3bc885bf2750fd545c1bc05e4b8212671"
+      },
+      {
+        "path": ".azure-pipelines/publish.yml",
+        "sha": "ccbd5692a7d5b3fa8a368f2abcf43b24e5d38a1a"
+      },
+      {
+        "path": "browser_patches/firefox/juggler/content/main.js",
+        "sha": "99069f9131235e153bb753c5def9d72a17463d4b"
+      },
+      {
+        "path": "browser_patches/roll_from_upstream.sh",
+        "sha": "32a28b97b1fd886a0b7e1212e939c35b4871a077"
+      },
+      {
+        "path": "packages/playwright-core/src/server/index.ts",
+        "sha": "515e14d12437bce18960f750c36949498a0fc22f"
+      },
+      {
+        "path": "packages/playwright-core/src/tools/index.ts",
+        "sha": "1b42c015a4990cc23670e0132e48a2804e4aa436"
+      },
+      {
+        "path": "packages/playwright-core/src/tools/skills/playwright-cli/SKILL.md",
+        "sha": "aa8dea4bba35a00b362fa925b25b8058b9a28fa6"
+      },
+      {
+        "path": "packages/playwright-core/src/tools/skills/playwright-component-testing/SKILL.md",
+        "sha": "60b97bf8604e3484ccf3a56d4dfc73b4b4277b80"
+      },
+      {
+        "path": "packages/playwright-core/src/tools/skills/playwright-trace/SKILL.md",
+        "sha": "95d6d47d1efad81e5936b4e04bfb77131f3c1573"
+      },
+      {
+        "path": "packages/playwright/src/common/index.ts",
+        "sha": "a3d8b2fdef5746226831bcb5f412df870e050ef2"
+      },
+      {
+        "path": "packages/playwright/src/isomorphic/index.ts",
+        "sha": "4fdf3efc6b76a53cca69107cf4c6fecb30cc25c0"
+      },
+      {
+        "path": "packages/playwright/src/plugins/index.ts",
+        "sha": "57963085fa99a1fe4ed8caa2b0588c7927979233"
+      },
+      {
+        "path": "packages/playwright/src/runner/index.ts",
+        "sha": "deca5ea33718e46893afcde3af947a76ea30d4da"
+      },
+      {
+        "path": "packages/trace-viewer/src/sw/main.ts",
+        "sha": "6042fc81f3fd5bd1d559e4a46da61867f2757109"
+      },
+      {
+        "path": "packages/web/playwright/gallery/main.tsx",
+        "sha": "55a8d091cf1dc6e24762ab740f867be20d75f779"
+      },
+      {
+        "path": "utils/avd_install.sh",
+        "sha": "1124de5eb98f04adaadad7c5a5598a7d1dd86f8c"
+      },
+      {
+        "path": "utils/avd_recreate.sh",
+        "sha": "651f423ba297c8e9435f6ac6beacb705f5c41edb"
+      },
+      {
+        "path": "utils/avd_start.sh",
+        "sha": "5d99c95233c637a3446a822366ecd67f1e849c1e"
+      },
+      {
+        "path": "utils/avd_stop.sh",
+        "sha": "eabc557ac5c35da5d20fa56ea44c678b52ee0a71"
+      },
+      {
+        "path": "utils/bisect-chromium.mjs",
+        "sha": "266240fe4de54314d7fac278353b22fca79065f0"
+      },
+      {
+        "path": "utils/build_android_driver.sh",
+        "sha": "ad36339e75983d31dcf2646583fc1f553af7aabc"
+      },
+      {
+        "path": "utils/build_deps_true.js",
+        "sha": "857017e305dcec180b811132b492a29b3ce15036"
+      },
+      {
+        "path": "utils/check_audit.js",
+        "sha": "ed7573b01cf631abd4d54bbc7bdd82c3ec1a9629"
+      },
+      {
+        "path": "utils/check_deps.js",
+        "sha": "1b1ba2daff4874197c1c526a982d26498ef5602b"
+      },
+      {
+        "path": "utils/concurrently.js",
+        "sha": "4fe1c99591287c9b88c0d93e97d42c146562e9b7"
+      },
+      {
+        "path": "utils/copyright.js",
+        "sha": "c391f5c267b9e508ff52a63131ff2093788cc402"
+      },
+      {
+        "path": "utils/doclint/linting-code-snippets/python/main.py",
+        "sha": "6be60a12ca18d41a17e700079fd614b68354ff23"
+      },
+      {
+        "path": "utils/generate_channels.js",
+        "sha": "ded01189edca60612d47adf90c21db3f2211cee3"
+      },
+      {
+        "path": "utils/generate_chromium_default_font_families.js",
+        "sha": "356330328634ee4fe5361eee0c15285dea1c7783"
+      },
+      {
+        "path": "utils/generate_cli_help.js",
+        "sha": "7a1e81640494de00515e33c1f16ad9ad4c19bf0b"
+      },
+      {
+        "path": "utils/generate_clip_paths.js",
+        "sha": "96747e7f62bf1f0d220d79eece012be2c7286004"
+      },
+      {
+        "path": "utils/generate_dotnet_channels.js",
+        "sha": "76b9b916a9fadbf998374949b222d92b4ee97e53"
+      },
+      {
+        "path": "utils/generate_injected.js",
+        "sha": "0f13a11dcbc4ca38996b5e38ba4bf7dd9d1b75d2"
+      },
+      {
+        "path": "utils/kill_watch.sh",
+        "sha": "99d0dc45aebc287f3ee699115c1afacf01178c69"
+      },
+      {
+        "path": "utils/limits.sh",
+        "sha": "71baec19a4b8fad5f111c106ba3b19ae96ffd47a"
+      },
+      {
+        "path": "utils/lint_tests.js",
+        "sha": "bc284187859c3a5e5cb0871a6e1c9ec7daeede49"
+      },
+      {
+        "path": "utils/markdown.js",
+        "sha": "faf62f195118e9219dec42d38868dcadd108331c"
+      },
+      {
+        "path": "utils/pack_package.js",
+        "sha": "8ef6f4cee7b25f0e091a226e805e68afc6ccc554"
+      },
+      {
+        "path": "utils/print_versions.js",
+        "sha": "e4d7db048bee67429751b53d7695f00d0108fe97"
+      },
+      {
+        "path": "utils/protocol_spec.js",
+        "sha": "445314405220ad9f79f377c3f439a65fed492e61"
+      },
+      {
+        "path": "utils/publish_all_packages.sh",
+        "sha": "20d86d885674785efef5c29a686d36313ee6b430"
+      },
+      {
+        "path": "utils/roll_browser.js",
+        "sha": "f04030c4a7f6c0e1f1e224cb4e6d9d423b9e1fef"
+      },
+      {
+        "path": "utils/run_webview_tests.sh",
+        "sha": "b3b45517ff4070a25c5602265d0edfbfb15afe04"
+      },
+      {
+        "path": "utils/validate_deps.js",
+        "sha": "8f84c480a6f2ebdc9139cf61b502f293d7e7d459"
+      },
+      {
+        "path": "utils/video_stress.js",
+        "sha": "1679b320aa326b3214515f3018ca57860ac60d00"
+      },
+      {
+        "path": "utils/workspace.js",
+        "sha": "bc25a191d0b18ff8e42c35c6117126393ec12b79"
+      },
+      {
+        "path": "browser_patches/firefox/UPSTREAM_CONFIG.sh",
+        "sha": "022e4e22a023682564a41702b27103f92048d56c"
+      },
+      {
+        "path": "browser_patches/webkit/pw_run.sh",
+        "sha": "f4f0f4ce940fc78c9f62c56e9edd4c57ed501e1f"
+      },
+      {
+        "path": "browser_patches/webkit/UPSTREAM_CONFIG.sh",
+        "sha": "3cdcf9f05489bf94f598d6908363cd1f542fda86"
+      },
+      {
+        "path": "browser_patches/winldd/archive.sh",
+        "sha": "898dcb825890c917cb3bd4490ed13eec9a965a07"
+      },
+      {
+        "path": "browser_patches/winldd/build.sh",
+        "sha": "764762acb05168e3bf6ef1c3ea41f73130d9fb6f"
+      },
+      {
+        "path": "browser_patches/winldd/clean.sh",
+        "sha": "61a2ba12e38c7d648aed95650af240d7acee9f8e"
+      },
+      {
+        "path": "browser_patches/winldd/README.md",
+        "sha": "69c7ad0e4e71f2ec52777d95969dc1f1e53158c3"
+      },
+      {
+        "path": "packages/dashboard/vite.config.ts",
+        "sha": "d034564bcd8db955dd30e8e1f5b7ae06c2c9a006"
+      },
+      {
+        "path": "packages/extension/manifest.json",
+        "sha": "eef4283bb513eb9eaa854d0f812b51f5acb627ef"
+      },
+      {
+        "path": "packages/extension/README.md",
+        "sha": "15404f3fdc8b24199d32c8cd4395fdaac6b4ccc5"
+      },
+      {
+        "path": "packages/extension/tsconfig.json",
+        "sha": "b72c388b77b8358cf928195bf58598ef57e69f8b"
+      },
+      {
+        "path": "packages/extension/tsconfig.ui.json",
+        "sha": "539e9dbce7cc11f1d9876ceaae8d2297c1e39799"
+      },
+      {
+        "path": "packages/extension/vite.config.mts",
+        "sha": "01bc27c9c3847fc71111da38b20ab68c73fcb5ff"
+      },
+      {
+        "path": "packages/html-reporter/bundle.ts",
+        "sha": "4ca42f6c2985c118b45a0f727c65edb2895252f2"
+      },
+      {
+        "path": "packages/html-reporter/playwright.config.ts",
+        "sha": "149c44f4eaa6740c250ab232658546b7ca5c53f8"
+      },
+      {
+        "path": "packages/html-reporter/vite.config.ts",
+        "sha": "a73587e9d1d9dc704691fe7352a61d537f75938b"
+      },
+      {
+        "path": "packages/isomorphic/abortSignal.ts",
+        "sha": "c2d3e176f544684f5c0c8ed575fcb6bf4e720761"
+      },
+      {
+        "path": "packages/isomorphic/ariaSnapshot.ts",
+        "sha": "86aea7852ed08d7cf7f684bcf1b2143125444e08"
+      },
+      {
+        "path": "packages/isomorphic/ariaSnapshotRenderer.ts",
+        "sha": "1e0f62e392ffbc97d8069fdba568449ce6742c34"
+      },
+      {
+        "path": "packages/isomorphic/assert.ts",
+        "sha": "bd0c38d413c3eea9a5ba45bc3b35ac1efbda1daf"
+      },
+      {
+        "path": "packages/isomorphic/base64.ts",
+        "sha": "74af5669dd0d3de43324508e3cac29bbf8e786fb"
+      },
+      {
+        "path": "packages/isomorphic/codeFrame.ts",
+        "sha": "b3c705b9cc2a715da463dda5e648b293b94aee24"
+      },
+      {
+        "path": "packages/isomorphic/colors.ts",
+        "sha": "7be0955ad3a4941f3b63777860bc1903bf8b7754"
+      },
+      {
+        "path": "packages/isomorphic/cssParser.ts",
+        "sha": "9a791a1da4c9fddfa9cfd782ae9c0d7dadc953c5"
+      },
+      {
+        "path": "packages/isomorphic/cssTokenizer.ts",
+        "sha": "fd69fb98419d48fe69eef15f496ece3ef002f56e"
+      },
+      {
+        "path": "packages/isomorphic/deviceDescriptors.ts",
+        "sha": "c4ad1f73fa747ce3b25cef4fb3323b31f8bfd46f"
+      },
+      {
+        "path": "packages/isomorphic/deviceDescriptorsSource.json",
+        "sha": "fde867c6b25f983524e28ad3ebb477a7a0e88331"
+      },
+      {
+        "path": "packages/isomorphic/disposable.ts",
+        "sha": "cb72f656b918ab4d2fc27fdaedd55a5a399a1487"
+      },
+      {
+        "path": "packages/isomorphic/formatUtils.ts",
+        "sha": "b03a9e3bb180aa207aa4e589916d0c415f8fd506"
+      },
+      {
+        "path": "packages/isomorphic/headers.ts",
+        "sha": "fa9303b5e25edd264b9f2901471c8c81d6d471d0"
+      },
+      {
+        "path": "packages/isomorphic/imageUtils.ts",
+        "sha": "e6bf322f33747f5c90acdb6dc56a1ad20c51eae1"
+      },
+      {
+        "path": "packages/isomorphic/istanbulCoverage.ts",
+        "sha": "fb90fc1d1512582e4577ce3b58432744edb5470b"
+      },
+      {
+        "path": "packages/isomorphic/jsonSchema.ts",
+        "sha": "684404c7abab7e06d433c9db65e870d095502bb8"
+      },
+      {
+        "path": "packages/isomorphic/locatorGenerators.ts",
+        "sha": "7522baf51e5e7e22b6480f8c3fe30d2c81e6c082"
+      },
+      {
+        "path": "packages/isomorphic/locatorParser.ts",
+        "sha": "7a372dead5eec48d75f862c484f9ee986d453cf9"
+      },
+      {
+        "path": "packages/isomorphic/locatorUtils.ts",
+        "sha": "c62015d9a9d3fa34bdb305444f74687c4e4ebebd"
+      },
+      {
+        "path": "packages/isomorphic/lruCache.ts",
+        "sha": "2d5eae8542497b6c9ee3ef430afc05f84dba6d98"
+      },
+      {
+        "path": "packages/isomorphic/manualPromise.ts",
+        "sha": "95d9e02c5b579b5395b12b85c915f7f56a017d13"
+      },
+      {
+        "path": "packages/isomorphic/mimeType.ts",
+        "sha": "9d22727ae416d5d74f6e590da7789cbf1f080140"
+      },
+      {
+        "path": "packages/isomorphic/multimap.ts",
+        "sha": "18777d29e5fdd5dc05b8c4bc7c29ad279077e105"
+      },
+      {
+        "path": "packages/isomorphic/protocolFormatter.ts",
+        "sha": "4bdf0e1a1b120e78781fbed5ddd24b8019b781c9"
+      },
+      {
+        "path": "packages/isomorphic/protocolMetainfo.ts",
+        "sha": "e8b0ae8c32b11e038506f874ee4c891d925ecb0b"
+      },
+      {
+        "path": "packages/isomorphic/rtti.ts",
+        "sha": "b139d3290fd6ee82cfacebbc6bc442849aa3313f"
+      },
+      {
+        "path": "packages/isomorphic/secrets.ts",
+        "sha": "7c201e948dc297b646a5395e1747bb24d5201403"
+      },
+      {
+        "path": "packages/isomorphic/selectorParser.ts",
+        "sha": "1e76c31a8d9c10df35c023e3e9127b06ad146c44"
+      },
+      {
+        "path": "packages/isomorphic/semaphore.ts",
+        "sha": "538e44fd9c632d1d99b26f3abd01311fa20adcc2"
+      },
+      {
+        "path": "packages/isomorphic/stringUtils.ts",
+        "sha": "4bddaffbda09f9ec0c233f4942a156cf6c51957d"
+      },
+      {
+        "path": "packages/isomorphic/time.ts",
+        "sha": "b5b68a59d5ee85e39640339c77a47b5f1b068a12"
+      },
+      {
+        "path": "packages/isomorphic/timeoutRunner.ts",
+        "sha": "7c737a2a490cf4e32e165b7690f1e77eeeac5b0b"
+      },
+      {
+        "path": "packages/isomorphic/types.ts",
+        "sha": "a3370e0b228811743798305923f9dd6be27a6fd4"
+      },
+      {
+        "path": "packages/isomorphic/urlMatch.ts",
+        "sha": "02bbcbe2d842014d3f59c3c77213fcde51b2c625"
+      },
+      {
+        "path": "packages/isomorphic/utilityScriptSerializers.ts",
+        "sha": "7132bc86266a0e1d1173c8ab4c9bf58b6de1383d"
+      },
+      {
+        "path": "packages/isomorphic/yaml.ts",
+        "sha": "7b3dec95a5dc49a401149a399d1ce85bce80f2e9"
+      },
+      {
+        "path": "packages/playwright-browser-chromium/index.d.ts",
+        "sha": "89d098eaca256deb5b75e43ee9fb8685e9f1000a"
+      },
+      {
+        "path": "packages/playwright-browser-chromium/README.md",
+        "sha": "03e8c5de081bd18cb0af0009dbba2f9b216c7e34"
+      },
+      {
+        "path": "packages/playwright-browser-firefox/index.d.ts",
+        "sha": "89d098eaca256deb5b75e43ee9fb8685e9f1000a"
+      },
+      {
+        "path": "packages/playwright-browser-firefox/README.md",
+        "sha": "38bc7cb03f743998bfe7642b2c4755a82a7e20ef"
+      },
+      {
+        "path": "packages/playwright-browser-webkit/index.d.ts",
+        "sha": "89d098eaca256deb5b75e43ee9fb8685e9f1000a"
+      },
+      {
+        "path": "packages/playwright-browser-webkit/README.md",
+        "sha": "c8196534f46fc75d3013376aa4a2e0da515cd695"
+      },
+      {
+        "path": "packages/playwright-chromium/index.d.ts",
+        "sha": "e2add353db0dee60089ae66961eb1378bacaee91"
+      },
+      {
+        "path": "packages/playwright-chromium/README.md",
+        "sha": "af0ffa982f3f257726e252ca598898e83d2ca542"
+      },
+      {
+        "path": "packages/playwright-client/index.d.ts",
+        "sha": "74906f0947068707f52e1e05c2a54835b646da5e"
+      },
+      {
+        "path": "packages/playwright-core/browsers.json",
+        "sha": "a7b87a003871e34a9570d105e526df45c7f9eda7"
+      },
+      {
+        "path": "packages/playwright-core/index.d.ts",
+        "sha": "97c1493608de875b482561606d7d10bd691da26e"
+      },
+      {
+        "path": "packages/playwright-core/README.md",
+        "sha": "422b3739f5bc7cbd70583365bbe277be845727ce"
+      },
+      {
+        "path": "packages/playwright-core/src/server/registry/index.ts",
+        "sha": "bac894a8cd05d6112f2f16893b66899f35a90168"
+      },
+      {
+        "path": "packages/playwright-core/src/tools/backend/tool.ts",
+        "sha": "0b091c4d63c2100dc8e85a40d70e74ab3e080633"
+      },
+      {
+        "path": "packages/playwright-core/src/tools/backend/tools.ts",
+        "sha": "7024c30b387661bde23e5fe3db743bbab3ddd4ec"
+      },
+      {
+        "path": "packages/playwright-core/src/tools/cli-client/cli.ts",
+        "sha": "cda0cc4cfe152ed79e79c9dd85f95132ec956d59"
+      },
+      {
+        "path": "packages/playwright-core/src/tools/mcp/index.ts",
+        "sha": "1f8247765410facd2b3651b99908621a3f9d1c62"
+      },
+      {
+        "path": "packages/playwright-core/ThirdPartyNotices.txt",
+        "sha": "369e2025a75bcae36383b4705efe0c70d35b5e74"
+      },
+      {
+        "path": "packages/playwright-firefox/index.d.ts",
+        "sha": "e2add353db0dee60089ae66961eb1378bacaee91"
+      },
+      {
+        "path": "packages/playwright-firefox/README.md",
+        "sha": "f5862649fb44e286d08568818b32c732fe998bc9"
+      },
+      {
+        "path": "packages/playwright-test/index.d.ts",
+        "sha": "8d99c91500c65b4b9d762b900dedf5e6000cf257"
+      },
+      {
+        "path": "packages/playwright-test/reporter.d.ts",
+        "sha": "806d13fb09e73f0dc1f4e129a2889b9e6bac3a8d"
+      },
+      {
+        "path": "packages/playwright-test/reporter.js",
+        "sha": "485e880a66229eb7290fd274e35b8acf4a4a8ecd"
+      },
+      {
+        "path": "packages/playwright-test/reporter.mjs",
+        "sha": "485e880a66229eb7290fd274e35b8acf4a4a8ecd"
+      },
+      {
+        "path": "packages/playwright-webkit/index.d.ts",
+        "sha": "e2add353db0dee60089ae66961eb1378bacaee91"
+      },
+      {
+        "path": "packages/playwright-webkit/README.md",
+        "sha": "a5914d80168e841755496150d9363da1e542b9b1"
+      },
+      {
+        "path": "packages/playwright/index.d.ts",
+        "sha": "e2add353db0dee60089ae66961eb1378bacaee91"
+      },
+      {
+        "path": "packages/playwright/test.d.ts",
+        "sha": "4369d23a3c933a50df8f34be7123e39aae6920ba"
+      },
+      {
+        "path": "packages/playwright/test.js",
+        "sha": "42af95539c819f4fcec1878c7567d9e7f6ce6c7f"
+      },
+      {
+        "path": "packages/playwright/test.mjs",
+        "sha": "69c5f6459be7056bffcbba5bacc6ef6e8c53d481"
+      },
+      {
+        "path": "packages/playwright/ThirdPartyNotices.txt",
+        "sha": "f9ee0a552ec4258fe553c1a7f8083b62fa954b6c"
+      },
+      {
+        "path": "packages/recorder/vite.config.ts",
+        "sha": "50663c4debfc49cf1f65c00ce95dcfa67ca01a69"
+      },
+      {
+        "path": "packages/trace-viewer/bundle.ts",
+        "sha": "38375f8d7606ab4751d85682a8465d18f5402cce"
+      },
+      {
+        "path": "packages/trace-viewer/vite.config.ts",
+        "sha": "56a9cb03e5abca3a24c5f79505ffaf247b5c8fd7"
+      },
+      {
+        "path": "packages/utils/ascii.ts",
+        "sha": "97bc1944b1b1285d9d0d3a4c171833201c682fe1"
+      },
+      {
+        "path": "packages/utils/chromiumChannels.ts",
+        "sha": "789f472b747e25ee3aaca86a8672b0296cd79bc1"
+      },
+      {
+        "path": "packages/utils/comparators.ts",
+        "sha": "67aac944ceb7c2ee5ea3bf6b4b8e9b2316937035"
+      },
+      {
+        "path": "packages/utils/crypto.ts",
+        "sha": "13060cae92647a8e4179944e373928535a19f13c"
+      },
+      {
+        "path": "packages/utils/debug.ts",
+        "sha": "680113d90499b3d47482a2b149c51c261394c016"
+      },
+      {
+        "path": "packages/utils/debugLogger.ts",
+        "sha": "7d02cc6f5171bd9740f54aa8158d77241787afbf"
+      },
+      {
+        "path": "packages/utils/env.ts",
+        "sha": "c762b6b99eb97d36f4c2214b5474b25c5dd16238"
+      },
+      {
+        "path": "packages/utils/eventsHelper.ts",
+        "sha": "e682c08a0a32144b98ed886d82ff99bbe733e12b"
+      },
+      {
+        "path": "packages/utils/fileUtils.ts",
+        "sha": "5a10350aeb0fdf90d58e273c69ed56416dd78b94"
+      },
+      {
+        "path": "packages/utils/hostPlatform.ts",
+        "sha": "d633ca383aee28493d4fb882064103d7a4a807a5"
+      },
+      {
+        "path": "packages/utils/httpServer.ts",
+        "sha": "609045d0f23923636230634f9ba3829ffe991c65"
+      },
+      {
+        "path": "packages/utils/linuxUtils.ts",
+        "sha": "86d63625886943057c94835d6a9c49cc9b0bce87"
+      },
+      {
+        "path": "packages/utils/network.ts",
+        "sha": "5f9adb34f136e4be1a82eafbe73a34829d8e2961"
+      },
+      {
+        "path": "packages/utils/pipeTransport.ts",
+        "sha": "6e2e2a5bba530d47a0b0a8dfc483b5d8f20c4ae9"
+      },
+      {
+        "path": "packages/utils/processLauncher.ts",
+        "sha": "30f1eb8326c826d142f4210e982b547ad1a7d147"
+      },
+      {
+        "path": "packages/utils/serializedFS.ts",
+        "sha": "ed5f1099afec12c52a2bdd6df633a94cf38c6c03"
+      },
+      {
+        "path": "packages/utils/socksProxy.ts",
+        "sha": "c1002dadb6e13b002ef4afcb78f186a27770f225"
+      },
+      {
+        "path": "packages/utils/stackTrace.ts",
+        "sha": "3d1cf248de87e9c47a0a00d02ded322879a338cd"
+      },
+      {
+        "path": "packages/utils/stringWidth.ts",
+        "sha": "2081876a4b1250745232f526e31070fe86a382f6"
+      },
+      {
+        "path": "packages/utils/wsServer.ts",
+        "sha": "1715dea87c4f810ddb18a1daf9b8856b4fa08621"
+      },
+      {
+        "path": "packages/utils/zipFile.ts",
+        "sha": "213e0fc22aa7eafad72954b0f1d37d6e6531e056"
+      },
+      {
+        "path": "packages/utils/zones.ts",
+        "sha": "b5860167b06969bc018ef8b11b80c5e98f625819"
+      },
+      {
+        "path": "packages/web/playwright.config.ts",
+        "sha": "85dd14a18471523d006b8ae22c64198250f8ae77"
+      },
+      {
+        "path": "utils/build/build.js",
+        "sha": "2a8d24c64f2d8e0778e6b44a0b51dc31da3a8c41"
+      },
+      {
+        "path": "utils/build/bundle_report.js",
+        "sha": "2b01307529f25d79dedd4cdecba15d318173a90b"
+      },
+      {
+        "path": "utils/build/clean.js",
+        "sha": "d4d5051a6b5f94253d29caf36d753e8e9db34dc1"
+      },
+      {
+        "path": "utils/build/deploy-trace-viewer.sh",
+        "sha": "58ef55ce8e86082399b7741c4f7058c42647fa02"
+      },
+      {
+        "path": "utils/build/raw-body.ts",
+        "sha": "34440404d681756f75a762b458b499df4b3f6f04"
+      },
+      {
+        "path": "utils/build/update_canary_version.js",
+        "sha": "7a928609053f365b8ffd43d653e0582325586b82"
+      },
+      {
+        "path": "utils/build/update-playwright-node.mjs",
+        "sha": "f56dd38102a918153e28ac304f04a8af0e38239f"
+      },
+      {
+        "path": "utils/build/utilsBundleMapping.js",
+        "sha": "106b2c5e9dc580825a0db9046ba38b880817953a"
+      },
+      {
+        "path": "utils/build/viteIstanbul.ts",
+        "sha": "0c8f09e378b12ddec01cf28c30271655e5c875e5"
+      },
+      {
+        "path": "utils/docker/build.sh",
+        "sha": "9b6021a22392efba29af1f43e5131f483794fbac"
+      },
+      {
+        "path": "utils/docker/publish_docker.sh",
+        "sha": "007b3ec1f9af42972703d8e5e60ef560e2a05111"
+      },
+      {
+        "path": "utils/docker/seccomp_profile.json",
+        "sha": "fddc05fb520affb145404e6f6f647ca96af8087d"
+      },
+      {
+        "path": "utils/docker/update-chromium-version.mjs",
+        "sha": "d16decdc85df9f07ae57fd2941b140a09f2868e9"
+      },
+      {
+        "path": "utils/doclint/api_parser.js",
+        "sha": "968b6b8aed65615b1e9579bf3cb417311ecac09b"
+      },
+      {
+        "path": "utils/doclint/documentation.js",
+        "sha": "e49ef4f8212b65dd13afa2919263b479bcfdd897"
+      },
+      {
+        "path": "utils/doclint/dotnetXmlDocumentation.js",
+        "sha": "4b500c07815811ca88e22eb96600608fa90f9895"
+      },
+      {
+        "path": "utils/doclint/generateApiJson.js",
+        "sha": "1b8c3d2e5f43f0ed1e128c359328cc4ce48ec044"
+      },
+      {
+        "path": "utils/doclint/generateDotnetApi.js",
+        "sha": "6023ce4f1adfe100d0e69da4e03e21cf056736fe"
+      },
+      {
+        "path": "utils/doclint/linkUtils.js",
+        "sha": "ec9763ff455e6c53ed7b1afc76b3feeb75996d43"
+      },
+      {
+        "path": "utils/generate_types/exported.json",
+        "sha": "e7151b75daec9b28f87caddb0ab229f5801ce760"
+      },
+      {
+        "path": "utils/generate_types/overrides-test.d.ts",
+        "sha": "9792db39f65b256b009af78bf24b6a6a65f102b7"
+      },
+      {
+        "path": "utils/generate_types/overrides-testReporter.d.ts",
+        "sha": "78dd048a9e554b6bdc08806aba4c9efd468071e4"
+      },
+      {
+        "path": "utils/generate_types/overrides.d.ts",
+        "sha": "31e2b6a6163870d79dabfc905f654a2f6263f327"
+      },
+      {
+        "path": "utils/generate_types/parseOverrides.js",
+        "sha": "3de4d484ef11d2e5b560885e621b3d00cda696f5"
+      },
+      {
+        "path": "utils/libwebp-wasm/build.sh",
+        "sha": "ebd1bbf9a0ea9121dbecd8a22c66e758ec5e5714"
+      },
+      {
+        "path": "utils/libwebp-wasm/README.md",
+        "sha": "30fab3b62bf60983b7df4a79179b609389da88be"
+      },
+      {
+        "path": "utils/linux-browser-dependencies/README.md",
+        "sha": "3d769bfaabab375bf00622e37896755c92fb71a2"
+      },
+      {
+        "path": "utils/linux-browser-dependencies/run.sh",
+        "sha": "70971793b1c4656b25f68b3b6744c38fc0a962c5"
+      },
+      {
+        "path": "utils/protocol-types-generator/update-webview-protocol.js",
+        "sha": "5498912ba840c03bb84f7f689e52d9d29e4af451"
+      },
+      {
+        "path": "utils/test-results-db/db.ts",
+        "sha": "6288685195fdfb21edffde0e848ced2a012ad603"
+      },
+      {
+        "path": "utils/test-results-db/download.ts",
+        "sha": "f5abdb72552faad7d92bd8cb3bcb8b28a03b2a84"
+      },
+      {
+        "path": "utils/test-results-db/github.ts",
+        "sha": "5417217a08350499733fb09313e8fbe1a2173961"
+      },
+      {
+        "path": "utils/test-results-db/truncate.ts",
+        "sha": "b15c073d7fa62e7603455781ebeadc846bf824ec"
+      },
+      {
+        "path": "utils/test-results-db/update.ts",
+        "sha": "803cc0945ebde0f8624c9e1c38e02dde48e32c5c"
+      },
+      {
+        "path": ".claude/skills/playwright-dev/api.md",
+        "sha": "dd1a5e663937caf556ba7b0ea55e01fdea7da43a"
+      },
+      {
+        "path": ".claude/skills/playwright-dev/bisect-published-versions.md",
+        "sha": "f41106d92c4b8cb3da124991494a5bb5b7dc3c0e"
+      },
+      {
+        "path": ".claude/skills/playwright-dev/dashboard.md",
+        "sha": "326f338f73ce1b858077d62be28d8cf174265f35"
+      },
+      {
+        "path": ".claude/skills/playwright-dev/library.md",
+        "sha": "2742c30a20added83d6f8829159686b3f9e50085"
+      },
+      {
+        "path": ".claude/skills/playwright-dev/trace_system_guide.md",
+        "sha": "b7675d0f8766b3a053c9b29475b6e90724d680a0"
+      },
+      {
+        "path": ".claude/skills/playwright-dev/vendor.md",
+        "sha": "52d649b50cd73a9dcc518f2725bfc67f8aca8bfb"
+      },
+      {
+        "path": ".claude/skills/playwright-dev/webkit-safari-version.md",
+        "sha": "e14b1a69688cc74db195228ada4d602608cbedd7"
+      },
+      {
+        "path": ".claude/skills/playwright-dev/webview.md",
+        "sha": "680cf0100f031087e5838140b7b0ea72e633eaf9"
+      },
+      {
+        "path": ".claude/skills/playwright-devops/commit-failures.md",
+        "sha": "6fc3e2ffd64fc9c2530f5bdf97227cc1fdd85492"
+      },
+      {
+        "path": ".claude/skills/playwright-devops/fetch-commit-logs.sh",
+        "sha": "fb5bca862ffc4b206706f863b38f4850a1881d3a"
+      },
+      {
+        "path": "browser_patches/firefox/juggler/ChannelEventSink.sys.mjs",
+        "sha": "ab03e9f0a2f725eadd889b12af398ee8897b8d2c"
+      },
+      {
+        "path": "browser_patches/firefox/juggler/Helper.js",
+        "sha": "875dd5ac2e8b33edd64bd590795085d475bc5790"
+      },
+      {
+        "path": "browser_patches/firefox/juggler/NetworkObserver.js",
+        "sha": "d6e6fbfc3ae95fe9dda0ff90c908edc3bd12a1eb"
+      },
+      {
+        "path": "browser_patches/firefox/juggler/SimpleChannel.js",
+        "sha": "cc555451cdd494be38150ae4abcf1a4e312a120a"
+      },
+      {
+        "path": "browser_patches/firefox/juggler/TargetRegistry.js",
+        "sha": "c1c0f50280c56526a699417abc7a0eabd3b10a97"
+      },
+      {
+        "path": "browser_patches/firefox/preferences/00-playwright-prefs.js",
+        "sha": "1895d2d1b74c5469636240a63a23b65564abffcf"
+      },
+      {
+        "path": "packages/dashboard/src/annotateView.tsx",
+        "sha": "4eb339bf16c86b129bb8d1e2f44936a138ed4c24"
+      },
+      {
+        "path": "packages/dashboard/src/annotationImage.ts",
+        "sha": "2881aa2c49cce25f979eb53d1de78ca7a7844dc3"
+      },
+      {
+        "path": "packages/dashboard/src/annotations.tsx",
+        "sha": "6d2a41ca44c57051d8eb336e8543d16a587b549a"
+      },
+      {
+        "path": "packages/dashboard/src/annotationZip.ts",
+        "sha": "bba3fe9e33ce0ed2a1d61f97aac51c92aa95cb55"
+      },
+      {
+        "path": "packages/dashboard/src/dashboard.tsx",
+        "sha": "e9f5473344118ae930a376da36e852afdd0c111a"
+      },
+      {
+        "path": "packages/dashboard/src/dashboardChannel.ts",
+        "sha": "8f003cf049385b13db6f009d78ccccb64eea9a3d"
+      },
+      {
+        "path": "packages/dashboard/src/dashboardClient.ts",
+        "sha": "3a69446e844756413741f19a3cbe9ea56915eefc"
+      },
+      {
+        "path": "packages/dashboard/src/dashboardModel.ts",
+        "sha": "ecb05edf338efc714ec9a17959b75e3ed5c0a854"
+      },
+      {
+        "path": "packages/dashboard/src/debuggerPanel.tsx",
+        "sha": "e8a4659500637c954f7c9abde907e1a1b117b3ef"
+      },
+      {
+        "path": "packages/dashboard/src/icons.tsx",
+        "sha": "276ac12a928e7fccd9b5cbd65d6948d90878ee75"
+      },
+      {
+        "path": "packages/dashboard/src/imageLayout.ts",
+        "sha": "03912d5d6042fdbc6eead8ee67578f96835b0859"
+      },
+      {
+        "path": "packages/dashboard/src/recording.tsx",
+        "sha": "362acc747eed6916617c344e224439ba91dee1e2"
+      },
+      {
+        "path": "packages/dashboard/src/screencast.tsx",
+        "sha": "4b724e2bb21e38652008aa3aab8fc9f560d59513"
+      },
+      {
+        "path": "packages/dashboard/src/sessionSidebar.tsx",
+        "sha": "74ee1bde6f18626f8d6c792c17bb4de5fc6d7fcf"
+      },
+      {
+        "path": "packages/dashboard/src/settingsView.tsx",
+        "sha": "21335b38d91f0f0e11e7f30ff864ac31786b99ee"
+      },
+      {
+        "path": "packages/dashboard/src/transport.ts",
+        "sha": "85471689b36c314ff3475884464d7f9c37e984f3"
+      },
+      {
+        "path": "packages/dashboard/src/vite-env.d.ts",
+        "sha": "11f02fe2a0061d6e6e1f271b21da95423b448b32"
+      },
+      {
+        "path": "packages/extension/src/background.ts",
+        "sha": "46c7c8146229b26937c91856d59a6b6fb6a74c6d"
+      },
+      {
+        "path": "packages/extension/src/connectedTabGroup.ts",
+        "sha": "cd61a956038e8ecd6de1cf62ea0b44bdbfa5c041"
+      },
+      {
+        "path": "packages/extension/src/pendingConnection.ts",
+        "sha": "43fbbb85854ea505976e04e75691cf3d3bdf2d2b"
+      },
+      {
+        "path": "packages/extension/src/relayConnection.ts",
+        "sha": "23da08a9f09859f95f088e87615d21076f4e71b1"
+      },
+      {
+        "path": "packages/html-reporter/src/chip.story.tsx",
+        "sha": "48fd0b0c93e194a5eeebb903745907f380a21683"
+      },
+      {
+        "path": "packages/html-reporter/src/chip.tsx",
+        "sha": "b206188cab1fecab55962b48b91850d0b0b1d8a0"
+      },
+      {
+        "path": "packages/html-reporter/src/copyToClipboard.tsx",
+        "sha": "8171cdd6c32051763fc3ee7fbd56e0107e805f04"
+      },
+      {
+        "path": "packages/html-reporter/src/expandable.tsx",
+        "sha": "ca4f4a5d7a709ac49b91d30695c6673a13419212"
+      },
+      {
+        "path": "packages/html-reporter/src/filter.ts",
+        "sha": "470f6b8b58827e45830af06d1020d9e7299b64ea"
+      },
+      {
+        "path": "packages/html-reporter/src/gantt.tsx",
+        "sha": "0151773157beb160a28d21624dbf0902ff60f400"
+      },
+      {
+        "path": "packages/html-reporter/src/headerView.story.tsx",
+        "sha": "27f58574841f1c72df58367a772bab9eb10ad43e"
+      },
+      {
+        "path": "packages/html-reporter/src/headerView.tsx",
+        "sha": "f36978d5df0fcc8bfe33db0cf4f855c9a4faf54e"
+      },
+      {
+        "path": "packages/html-reporter/src/icons.tsx",
+        "sha": "f30d397e5689fc4842958ab48deeb729c1bacda1"
+      },
+      {
+        "path": "packages/html-reporter/src/images.ts",
+        "sha": "188ef4d748feaa1423ad865a92812e9c154ffb25"
+      },
+      {
+        "path": "packages/html-reporter/src/labels.tsx",
+        "sha": "044e9ea074d9d27509eef1d0cd87f401a5924780"
+      },
+      {
+        "path": "packages/html-reporter/src/links.tsx",
+        "sha": "d2d0a905ff7caa074c00686fb59997e8c2da7d0e"
+      },
+      {
+        "path": "packages/html-reporter/src/loadedReport.ts",
+        "sha": "c1ff2d753088d5834a63b35f65baf8f6a34b5443"
+      },
+      {
+        "path": "packages/html-reporter/src/metadataView.tsx",
+        "sha": "a3dcb16f83cf05e03e3078fc5ecfe0fa303763e5"
+      },
+      {
+        "path": "packages/html-reporter/src/reportView.tsx",
+        "sha": "c2f3d2fd8ba2d3da7e5d2770b6c8b8c576454515"
+      },
+      {
+        "path": "packages/html-reporter/src/sampleReport.ts",
+        "sha": "322d8168c72b5187d35fd3b2ed292d5e3d3982b1"
+      },
+      {
+        "path": "packages/html-reporter/src/speedboard.tsx",
+        "sha": "376c3abfd1b5d86c3bcb13b41b61ada61c117d2d"
+      },
+      {
+        "path": "packages/html-reporter/src/statusIcon.tsx",
+        "sha": "778321276fecc3567fd6a85c25c3743ce89ee076"
+      },
+      {
+        "path": "packages/html-reporter/src/tabbedPane.tsx",
+        "sha": "55d8f51955f08157e79d7da82f5f2582b696d1f1"
+      },
+      {
+        "path": "packages/html-reporter/src/testCaseView.story.tsx",
+        "sha": "cda50d19cd73503af941801c139c5cce8783ef5e"
+      },
+      {
+        "path": "packages/html-reporter/src/testCaseView.tsx",
+        "sha": "4e03ea2534b43ef68a95fdc50db7ab0b34ad5db4"
+      },
+      {
+        "path": "packages/html-reporter/src/testErrorView.tsx",
+        "sha": "6fa7bc50ecb17ffe142d7e0630933cb509025187"
+      },
+      {
+        "path": "packages/html-reporter/src/testFilesView.tsx",
+        "sha": "c2d9a087a8844ec3053378537510f6fc683a6489"
+      },
+      {
+        "path": "packages/html-reporter/src/testFileView.story.tsx",
+        "sha": "4c973c0ac902c5a50a973cc0e27cb60accd05fc7"
+      },
+      {
+        "path": "packages/html-reporter/src/testFileView.tsx",
+        "sha": "688e1b2f8b79989d8c7c47c26043f6f727118bd0"
+      },
+      {
+        "path": "packages/html-reporter/src/testResultView.tsx",
+        "sha": "938f84977b2a930bda49a85fd56609eb30ea0104"
+      },
+      {
+        "path": "packages/html-reporter/src/treeItem.tsx",
+        "sha": "924dfe7053ecd6727f91511ff7720d10465a016b"
+      },
+      {
+        "path": "packages/html-reporter/src/types.d.ts",
+        "sha": "2c89a04690cc9a2d597c5b32ac3d1a4dc48f0fb2"
+      },
+      {
+        "path": "packages/html-reporter/src/utils.ts",
+        "sha": "9ea7a26c1ef12bc069910c7285d0a7c13171142c"
+      },
+      {
+        "path": "packages/html-reporter/src/vite-env.d.ts",
+        "sha": "11f02fe2a0061d6e6e1f271b21da95423b448b32"
+      },
+      {
+        "path": "packages/injected/src/ariaSnapshot.ts",
+        "sha": "61f96fe04077b72594fcd57731d1a049cb6c310c"
+      },
+      {
+        "path": "packages/injected/src/ariaSnapshotDistiller.ts",
+        "sha": "b357720b40c11c7d48bf2857af4294f00bd18cc2"
+      },
+      {
+        "path": "packages/injected/src/bidiInsertText.ts",
+        "sha": "ba6769e840f18dbc65d5ccf33f4eb88d8a71d8bc"
+      },
+      {
+        "path": "packages/injected/src/bindingsController.ts",
+        "sha": "6e998e5c210c852d591e3bd0a0431d326bac7458"
+      },
+      {
+        "path": "packages/injected/src/clock.ts",
+        "sha": "3ece03c15ea224d76b457b67a006d5ea8d546f8f"
+      },
+      {
+        "path": "packages/injected/src/consoleApi.ts",
+        "sha": "cdc073c821fe97c36f2dc09fc953897fc72b8350"
+      },
+      {
+        "path": "packages/injected/src/coverageScript.ts",
+        "sha": "be3116f8ee0815e9796e7e6b6c936cc8e4f852db"
+      },
+      {
+        "path": "packages/injected/src/domUtils.ts",
+        "sha": "4b6d1dbf9a732a920466de90956ba9ddb778c9cd"
+      },
+      {
+        "path": "packages/injected/src/highlight.ts",
+        "sha": "47198f3fa1beee22395567fad5b2f2d5ab8bde5a"
+      },
+      {
+        "path": "packages/injected/src/injectedScript.ts",
+        "sha": "c806480fe24aa22fbca6c062638251814310ab16"
+      },
+      {
+        "path": "packages/injected/src/layoutSelectorUtils.ts",
+        "sha": "c9665e2b1a20580c058ab9098215296aad2dbc10"
+      },
+      {
+        "path": "packages/injected/src/README.md",
+        "sha": "68f722935e2840b47eea3b3477daa5aaf2d0998a"
+      },
+      {
+        "path": "packages/injected/src/roleSelectorEngine.ts",
+        "sha": "fe83ca1dce717ad25999481dffde4b9507d89e26"
+      },
+      {
+        "path": "packages/injected/src/roleUtils.ts",
+        "sha": "f83308e301ce10e4181ebb3845fb6e6a09600a8f"
+      },
+      {
+        "path": "packages/injected/src/selectorEngine.ts",
+        "sha": "5a24ec3e75b7b74c8973db331d3594f091806baa"
+      },
+      {
+        "path": "packages/injected/src/selectorEvaluator.ts",
+        "sha": "14cb489043b3a94202ebfa55df5f03a4e61eed14"
+      },
+      {
+        "path": "packages/injected/src/selectorGenerator.ts",
+        "sha": "56e98447be7f7bcf2cc1624aee6449f75a21b353"
+      },
+      {
+        "path": "packages/injected/src/selectorUtils.ts",
+        "sha": "b1fea88b335779abc7238d87b672b29b089e60b4"
+      },
+      {
+        "path": "packages/injected/src/storageScript.ts",
+        "sha": "1426e6b01a8b14081113ac2f3b746fe602c41c94"
+      },
+      {
+        "path": "packages/injected/src/utilityScript.ts",
+        "sha": "5dc12744a417a0ae2d4762cb0855a72a4ae851dc"
+      },
+      {
+        "path": "packages/injected/src/webAuthn.ts",
+        "sha": "3e5fcdd4cebc560271405e99136dbe83f5aba09a"
+      },
+      {
+        "path": "packages/injected/src/webMCP.ts",
+        "sha": "4de5da9daa0071829b4ee6130513e55880711b3b"
+      },
+      {
+        "path": "packages/injected/src/webSocketMock.ts",
+        "sha": "3d04bc9b424e4ce90a14bf582988d2044d284902"
+      },
+      {
+        "path": "packages/injected/src/xpathSelectorEngine.ts",
+        "sha": "74819bcda408ce8ac2eb4033431b1745e2cbb87e"
+      },
+      {
+        "path": "packages/isomorphic/codegen/actions.d.ts",
+        "sha": "b397f45fc134564a6cf83b3ae939975d0b1b732b"
+      },
+      {
+        "path": "packages/isomorphic/codegen/csharp.ts",
+        "sha": "eeb0eade0460ac9a39c9b7e206ca7ebbcd2e7a0d"
+      },
+      {
+        "path": "packages/isomorphic/codegen/java.ts",
+        "sha": "2c36a649d68b0e348fdb4e478eb5c0f9feb1392a"
+      },
+      {
+        "path": "packages/isomorphic/codegen/javascript.ts",
+        "sha": "36b6accb8fef4fb50ef1764f457bdb9565d06ee4"
+      },
+      {
+        "path": "packages/isomorphic/codegen/jsonl.ts",
+        "sha": "ec817cb3b511021f404bf3a9a28521c9de9f274c"
+      },
+      {
+        "path": "packages/isomorphic/codegen/language.ts",
+        "sha": "f6d717b990fe55150a18f57091cbdec644389530"
+      },
+      {
+        "path": "packages/isomorphic/codegen/languages.ts",
+        "sha": "19c75830956b7ea4c265867c30cdb17a8495c0f7"
+      },
+      {
+        "path": "packages/isomorphic/codegen/python.ts",
+        "sha": "1d00c0711eaa54083188ae7515655d5765d18d4b"
+      },
+      {
+        "path": "packages/isomorphic/codegen/types.ts",
+        "sha": "85bea0e8f236917ef16a0232abf0acc65b3f7f90"
+      },
+      {
+        "path": "packages/isomorphic/trace/entries.ts",
+        "sha": "87ce409850970b576c9134f2b7f0b2a2084a43ae"
+      },
+      {
+        "path": "packages/isomorphic/trace/snapshotRenderer.ts",
+        "sha": "8e5d24a3264fe7e59fe7123fb927e4a2373e2513"
+      },
+      {
+        "path": "packages/isomorphic/trace/snapshotServer.ts",
+        "sha": "11a1e1c92856a16b8b8dd14d6fb9267ad0e8a5fa"
+      },
+      {
+        "path": "packages/isomorphic/trace/snapshotStorage.ts",
+        "sha": "09713af0c246b70efc662049ad81c73a8532f63a"
+      },
+      {
+        "path": "packages/isomorphic/trace/trace.ts",
+        "sha": "6c0a8a005b0fb04a5664bd48db4905a1c8e36164"
+      },
+      {
+        "path": "packages/isomorphic/trace/traceLoader.ts",
+        "sha": "f2665fcba4de210dd899972637a4509dae81781a"
+      },
+      {
+        "path": "packages/isomorphic/trace/traceModel.ts",
+        "sha": "74938e4f1bd66e22f65c781e9a79f0ba2ebfd2dc"
+      },
+      {
+        "path": "packages/isomorphic/trace/traceModernizer.ts",
+        "sha": "2a1bc610d90088d3962f489365f66762282100b0"
+      },
+      {
+        "path": "packages/isomorphic/trace/traceUtils.ts",
+        "sha": "6dd92e5015ed7b1df464d0a904f3d6164e64b8cd"
+      },
+      {
+        "path": "packages/playwright-core/bin/reinstall_chrome_beta_linux.sh",
+        "sha": "13d55dfaacaae405bff7a9824cf75d6b99a10eb7"
+      },
+      {
+        "path": "packages/playwright-core/bin/reinstall_chrome_beta_mac.sh",
+        "sha": "60b4b7fcac7929ae124d3823a7364f470844c68f"
+      },
+      {
+        "path": "packages/playwright-core/bin/reinstall_chrome_stable_linux.sh",
+        "sha": "64bc1393556c3a5f18662665e32f1b6d09b00c95"
+      },
+      {
+        "path": "packages/playwright-core/bin/reinstall_chrome_stable_mac.sh",
+        "sha": "7db7a0f106000bf255ab0224c240485c16fa265c"
+      },
+      {
+        "path": "packages/playwright-core/bin/reinstall_msedge_beta_linux.sh",
+        "sha": "e1f156a08f74ed793b4a1ba086500a93eda44263"
+      },
+      {
+        "path": "packages/playwright-core/bin/reinstall_msedge_beta_mac.sh",
+        "sha": "528a0e71e192b5e617795125af5b7f8002fa6d99"
+      },
+      {
+        "path": "packages/playwright-core/bin/reinstall_msedge_dev_linux.sh",
+        "sha": "6c1a151cc404aa729a7c952188fb2da43ac313d2"
+      },
+      {
+        "path": "packages/playwright-core/bin/reinstall_msedge_dev_mac.sh",
+        "sha": "e35ea4e66fd99ee39d88ee438cc1d20780d5dee1"
+      },
+      {
+        "path": "packages/playwright-core/bin/reinstall_msedge_stable_linux.sh",
+        "sha": "93bd766bc3e8d7f241764ac8a7abeff48d5774e6"
+      },
+      {
+        "path": "packages/playwright-core/bin/reinstall_msedge_stable_mac.sh",
+        "sha": "44e5a56f946d588d303e5ebe802dd9baa03843e3"
+      },
+      {
+        "path": "packages/playwright-core/src/androidServerImpl.ts",
+        "sha": "d5a3d37bfe17a8225c2ebc5926bfa7271a1faa83"
+      },
+      {
+        "path": "packages/playwright-core/src/bootstrap.ts",
+        "sha": "c3ff509cb887b6f498382e045bc7ade2d1636edd"
+      },
+      {
+        "path": "packages/playwright-core/src/browserServerImpl.ts",
+        "sha": "06bf6c1dff2c4eb6ee6d103b7b3fe4303fcf5ab9"
+      },
+      {
+        "path": "packages/playwright-core/src/coreBundle.ts",
+        "sha": "c99ff3a6e13ce38ba7b79e3fbfb3ac1eb29f1e43"
+      },
+      {
+        "path": "packages/playwright-core/src/inprocess.ts",
+        "sha": "2c342566a8ac99264a3c109997dab744dd5ab27d"
+      },
+      {
+        "path": "packages/playwright-core/src/outofprocess.ts",
+        "sha": "f5143706c5c40734f14ab188ffbc7a274ee51de0"
+      },
+      {
+        "path": "packages/playwright-core/src/package.ts",
+        "sha": "180f16392dd36adf2981703c68df4b899747c3e3"
+      },
+      {
+        "path": "packages/playwright-core/src/serverRegistry.ts",
+        "sha": "f5ee5ec1cbbdb637efc261aa2de64d46224d3d6b"
+      },
+      {
+        "path": "packages/playwright-core/src/tools/utils/mcp/server.ts",
+        "sha": "e9d546d864284c76fd7e7782a064f4872d2094c4"
+      },
+      {
+        "path": "packages/playwright-core/src/tools/utils/mcp/tool.ts",
+        "sha": "3afe9d77ca78b84abf276678ca7598a10e73e8f3"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T15:27:11Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 70,
+      "egress": 70,
+      "instruction_hygiene": 60
+    },
+    "red_flags": [
+      "tool-poisoning-marker"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "new-Function",
+      "severe": false,
+      "file": "packages/utils/httpServer.ts",
+      "line": 138,
+      "snippet": "const loadVite = new Function('return import(\"vite\")') as () => Promise<any>;",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "packages/injected/src/clock.ts",
+      "line": 374,
+      "snippet": "(() => { globalThis.eval(timer.func); })();",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "packages/injected/src/injectedScript.ts",
+      "line": 249,
+      "snippet": "this._engines.set(name, this.eval(source));",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "packages/injected/src/utilityScript.ts",
+      "line": 75,
+      "snippet": "let result = this.global.eval(expression);",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "utils/avd_start.sh",
+      "line": 32,
+      "snippet": "curl -s -o \"${WEBVIEW_TMP_FILE}\" \"https://storage.googleapis.com/chromium-browser-snapshots/Android/${CHROMIUM_ANDROID_REVISION}/chrome-android.zip\"",
+      "host": "storage.googleapis.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "utils/bisect-chromium.mjs",
+      "line": 225,
+      "snippet": "console.log(`Commits: https://crrev.com/${revisions[lo]} .. https://crrev.com/${revisions[hi]}`);",
+      "host": "crrev.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "utils/build/update-playwright-node.mjs",
+      "line": 42,
+      "snippet": "https.get('https://nodejs.org/dist/index.json', res => {",
+      "host": "nodejs.org",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "utils/docker/update-chromium-version.mjs",
+      "line": 42,
+      "snippet": "const url = 'https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json';",
+      "host": "googlechromelabs.github.io",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "utils/libwebp-wasm/build.sh",
+      "line": 100,
+      "snippet": "and webp_codec.js is generated by Emscripten (https://emscripten.org). Their",
+      "host": "emscripten.org",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "packages/playwright-core/bin/reinstall_chrome_beta_linux.sh",
+      "line": 38,
+      "snippet": "curl -L -O https://dl.google.com/linux/direct/google-chrome-beta_current_amd64.deb",
+      "host": "dl.google.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "packages/playwright-core/bin/reinstall_msedge_beta_linux.sh",
+      "line": 42,
+      "snippet": "curl -L https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > /tmp/microsoft.gpg",
+      "host": "packages.microsoft.com",
+      "deduction": 0
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "tool-poisoning-marker",
+      "severe": true,
+      "file": "packages/playwright-core/src/cli/installActions.ts",
+      "line": 124,
+      "snippet": "console.log(`  Install location:    ${executable.directory ?? '<system>'}`);",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 4,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "storage.googleapis.com",
+      "crrev.com",
+      "nodejs.org",
+      "googlechromelabs.github.io",
+      "emscripten.org",
+      "dl.google.com",
+      "packages.microsoft.com"
+    ],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 392,
+    "failed": 0,
+    "ms": 131028
+  },
+  "duration_ms": 15594
+}

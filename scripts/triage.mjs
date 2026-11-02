@@ -52,7 +52,6 @@ if (!type) {
 
 const addLabels = ['status:triaged', `triage:${decision}`, `scenario:${scenario}`];
 if (type) addLabels.push(`type:${type}`);
-if (ev?.grade) addLabels.push(`grade:${ev.grade}`);
 
 function renderComment() {
   const typeText = type === 'mcp' ? 'MCP server' : type === 'skill' ? 'Skill' : form[F.type] || 'unspecified';
@@ -71,12 +70,12 @@ function renderComment() {
   }
   if (reasons.length) { lines.push('', '### Reasons · 原因'); for (const r of reasons) lines.push(`- ${r}`); }
   if (ev) {
-    lines.push('', '### Static evaluation · 静态评测 (phase 1)', '',
+    lines.push('', '### Static screening · 静态初筛 (not a trust rating · 不是信任评级)', '',
       '| Dimension | Score | Weight |', '| --- | ---: | ---: |');
     for (const [k, v] of Object.entries(ev.dims)) lines.push(`| ${k} | ${v ?? 'n/a'} | ${WEIGHTS[k]} |`);
-    lines.push('', `**Composite ${ev.composite}** · grade **${ev.grade}** · coverage ${Math.round(ev.coverage * 100)}% · ${ev.static_scan ? 'code scanned' : 'code scan skipped (not GitHub in phase 1)'}`);
+    lines.push('', `**Screening score ${ev.composite}/100** (no grade: grades are reserved for full evaluations) · coverage ${Math.round(ev.coverage * 100)}% · ${ev.static_scan ? 'code scanned' : 'code scan skipped (not GitHub in phase 1)'}`);
     lines.push('', `Evidence: \`${JSON.stringify(ev.evidence)}\``);
-    lines.push('', '> Dynamic tests (task success, uplift over baseline, cross-model stability) have not run yet. They will be published as a separate report with model, version and date.');
+    lines.push('', '> A high screening score does **not** mean the target is safe. Nothing was executed. Dynamic tests (task success, uplift over baseline, cross-model stability) have not run yet. They will be published as a separate report with model, version and date.');
   }
   lines.push('', '<sub>Re-run: Actions → triage-issue → Run workflow with this issue number.</sub>');
   return lines.join('\n') + '\n';

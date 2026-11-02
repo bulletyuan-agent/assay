@@ -50,10 +50,6 @@ export const LABELS = {
   'triage:eligible': ['0E8A16', 'Passed gates and evaluated'],
   'triage:needs-info': ['D93F0B', 'Gates failed, needs more information'],
   'triage:out-of-scope': ['B60205', 'Outside phase 1 scope'],
-  'grade:A': ['0E8A16', 'Composite score 85 and above'],
-  'grade:B': ['A2EEEF', 'Composite score 70 to 84'],
-  'grade:C': ['FBCA04', 'Composite score 50 to 69'],
-  'grade:D': ['D93F0B', 'Composite score below 50'],
 };
 
 export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -161,9 +157,17 @@ export async function fetchMeta(t) {
     const rd = await http(`https://api.github.com/repos/${t.id}/readme`, {
       headers: ghHeaders({ accept: 'application/vnd.github.raw' }), json: false,
     });
+    let license = d.license?.spdx_id && d.license.spdx_id !== 'NOASSERTION' ? d.license.spdx_id : null;
+    // NOASSERTION is returned for multi-license or unrecognised repos. A LICENSE file is enough to pass
+    // the gate; the type is then left for manual review.
+    if (!license) {
+      for (const f of ['LICENSE', 'LICENSE.md', 'LICENSE.txt', 'COPYING']) {
+        if (await githubHasFile(t.id, f)) { license = 'LICENSE-file (type needs review)'; break; }
+      }
+    }
     return {
       ...t, name: d.name, description: d.description || '', updatedAt: d.pushed_at,
-      license: d.license?.spdx_id && d.license.spdx_id !== 'NOASSERTION' ? d.license.spdx_id : null,
+      license,
       archived: !!d.archived, isPrivate: !!d.private, defaultBranch: d.default_branch,
       readme: rd.ok ? rd.data : '',
     };

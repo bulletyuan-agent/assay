@@ -62,7 +62,7 @@ async function search(term) {
 
 async function pickFirst(cands, bucket, seen) {
   for (const c of cands) {
-    const type = guessType(`${c.name} ${c.description}`);
+    const type = guessType(c.name, c.description);
     if (!type || daysSince(c.updatedAt) > WINDOW_DAYS) continue;
     const t = parseTarget(c.url);
     if (!t) continue;

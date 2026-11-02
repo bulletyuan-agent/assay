@@ -90,9 +90,11 @@ export function normalizeType(v = '') {
   return null;
 }
 
-export function guessType(text = '') {
-  if (/\bmcp\b|model context protocol/i.test(text)) return 'mcp';
-  if (/\bskills?\b/i.test(text)) return 'skill';
+// Strict classification. Loose matching on descriptions pulled in test frameworks and tutorials.
+export function guessType(name = '', description = '') {
+  // MCP: the name must carry the keyword. Descriptions that merely mention MCP are too noisy.
+  if (/\bmcp\b|model[- ]context[- ]protocol/i.test(name)) return 'mcp';
+  if (/\bskills?\b/i.test(name) || /\bagent skills?\b|claude skills?\b/i.test(description)) return 'skill';
   return null;
 }
 

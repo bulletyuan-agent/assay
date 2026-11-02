@@ -9,12 +9,12 @@ import { execFileSync } from 'node:child_process';
 import { parseTarget, fetchMeta, guessType, NET } from './lib.mjs';
 import { evaluateStatic, githubFiles, checkGates } from './evaluate.mjs';
 
-export const METHOD_VERSION = '0.2.1';
+export const METHOD_VERSION = '0.3.0';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
 let urls = [];
 const si = args.indexOf('--set');
-if (si >= 0) urls = JSON.parse(readFileSync(join(ROOT, args[si + 1]), 'utf8')).items.filter((i) => i.kind === 'real').map((i) => i.url);
+if (si >= 0) urls = JSON.parse(readFileSync(join(ROOT, args[si + 1]), 'utf8')).items.filter((i) => (i.kind === 'real' || (!i.kind && i.url))).filter((i) => i.url).map((i) => i.url);
 else urls = args.filter((a) => a.startsWith('http'));
 if (!urls.length) { console.error('no targets'); process.exit(2); }
 

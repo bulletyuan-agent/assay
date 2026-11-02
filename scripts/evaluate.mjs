@@ -1,5 +1,6 @@
 // Static evaluation and nomination gates. Implements docs in knowledge base: standards/01-evaluation-standard.md
 import { fileURLToPath } from 'node:url';
+import { extendedScan } from './extended.mjs';
 import { http, ghHeaders, fetchMeta, parseTarget, daysSince, INSTALL_RE, WINDOW_DAYS, F } from './lib.mjs';
 
 export const WEIGHTS = { maintenance: 0.15, install_docs: 0.15, dangerous_patterns: 0.30, egress: 0.25, instruction_hygiene: 0.15 };
@@ -108,7 +109,6 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
       if (loc) { danger++; if (SEVERE.has(i)) severe++; findings.push({ dim: 'dangerous_patterns', rule: DANGER_NAMES[i], severe: SEVERE.has(i), file: f.path, ...loc, deduction: 25 }); }
     });
   }
-  const dangerous_patterns = hasFiles ? clamp(100 - 25 * danger) : null;
 
   // Egress: a host is fine when the README declares it (by host or registrable domain). Only undeclared hosts count.
   const readmeLower = readme.toLowerCase();
@@ -142,7 +142,7 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
       findings.push({ dim: 'egress', rule: 'hardcoded-recipient', severe: true, file: f.path, ...locate(clean, RECIPIENT, f.text), deduction: 30 });
     }
   }
-  const egress = hasFiles ? clamp(100 - 15 * Math.min(hosts.size, 6) - 30 * recipients) : null;
+  const egress = hasFiles ? null : null; // set below after extended findings
 
   let inj = 0;
   for (const f of shipped) {
@@ -151,9 +151,14 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
       if (loc) { inj++; findings.push({ dim: 'instruction_hygiene', rule: 'injection', file: f.path, ...loc, deduction: 30 }); }
     }
   }
-  const instruction_hygiene = hasFiles ? clamp(100 - 30 * inj) : null;
+  // Extended detectors (method 0.3.0). Every dimension is now exactly 100 minus the deductions of its findings.
+  if (hasFiles) findings.push(...extendedScan(shipped, { stripComments, NETWORK_PRIMITIVE, PLACEHOLDER_HOST, readmeLower }));
+  const sumDim = (d) => findings.filter((x) => x.dim === d).reduce((a, x) => a + x.deduction, 0);
+  const instruction_hygiene = hasFiles ? clamp(100 - sumDim('instruction_hygiene')) : null;
 
-  const dims = { maintenance, install_docs, dangerous_patterns, egress, instruction_hygiene };
+  const dangerous_patterns = hasFiles ? clamp(100 - sumDim('dangerous_patterns')) : null;
+  const egressFinal = hasFiles ? clamp(100 - sumDim('egress')) : null;
+  const dims = { maintenance, install_docs, dangerous_patterns, egress: egressFinal, instruction_hygiene };
   let num = 0;
   let den = 0;
   for (const [k, v] of Object.entries(dims)) {
@@ -167,7 +172,8 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   if (severe > 0) red_flags.push('severe-code-pattern');
   if (inj > 0) red_flags.push('prompt-injection');
   if (recipients > 0) red_flags.push('hardcoded-recipient');
-  if (hosts.size >= 4) red_flags.push('undeclared-egress'); // provisional threshold, to be calibrated
+  if (hosts.size >= 4) red_flags.push('undeclared-egress');
+  for (const x of findings) if (x.severe && !red_flags.includes(x.rule)) red_flags.push(x.rule); // provisional threshold, to be calibrated
   if (composite !== null && red_flags.length) composite = Math.min(composite, 49);
   const grade = composite === null ? null : composite >= 85 ? 'A' : composite >= 70 ? 'B' : composite >= 50 ? 'C' : 'D';
   return {

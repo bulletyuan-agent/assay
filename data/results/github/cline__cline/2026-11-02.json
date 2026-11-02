@@ -1,0 +1,1728 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "cline/cline",
+    "url": "https://github.com/cline/cline",
+    "name": "cline"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:54:41.806Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "a6507a62a147db4a35e27f4294589742ccac5060",
+    "files_scanned": 400,
+    "candidates": 2227,
+    "excluded_non_shipped": 1744,
+    "coverage": 0.18,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".claude/settings.json",
+        "sha": "2e612c9c62acfa472910dfc48a3a59eec7a5ca83"
+      },
+      {
+        "path": ".github/copilot-instructions.md",
+        "sha": "0bd72a52b374ff48ff95358a1dd098049cdb4c0b"
+      },
+      {
+        "path": ".husky/pre-commit",
+        "sha": "e9727ed4c79cee61825c7bd3b72c90d12288035b"
+      },
+      {
+        "path": ".vscode/extensions.json",
+        "sha": "54205ad2ab141b2a0f34cd8397d6b55469f5be64"
+      },
+      {
+        "path": ".vscode/launch.json",
+        "sha": "9872a071fac45d82e6cf59cef3d7b574ea6a10f2"
+      },
+      {
+        "path": ".vscode/settings.json",
+        "sha": "69f81f477c084bd8c09465cbc32e61ce7ea5f610"
+      },
+      {
+        "path": ".vscode/tasks.json",
+        "sha": "fa931c43db3d48a7479491a53d9f92bffebf91bc"
+      },
+      {
+        "path": ".claude/commands/hotfix-release.md",
+        "sha": "354a69e143dc22f2e0f96acd3ca939f8565bf6b9"
+      },
+      {
+        "path": ".claude/commands/release.md",
+        "sha": "98c6c3b91291caa0fc01c6fd0a18fa17a073a0f4"
+      },
+      {
+        "path": ".claude/hooks/claude-code-for-web-setup.sh",
+        "sha": "66750f51c6b2039ec6874a10656951f385374326"
+      },
+      {
+        "path": ".claude/skills/cline-sdk",
+        "sha": "d6fa6e5a3af40324a99c52d0e2900ac6007f10e8"
+      },
+      {
+        "path": ".claude/skills/desktop-whats-new",
+        "sha": "aaa10553bf2268b589abba1f0be71547cf11b202"
+      },
+      {
+        "path": ".claude/skills/opentui",
+        "sha": "dc17f58b24063b854bc4338bc2979d407dcc9ddc"
+      },
+      {
+        "path": ".claude/skills/publish-cli",
+        "sha": "7606c2713deb3bc881b774abe10b7ff7087e1ca1"
+      },
+      {
+        "path": ".claude/skills/publish-desktop",
+        "sha": "da01013e29972ec49332e5820804ee540bac53b1"
+      },
+      {
+        "path": ".claude/skills/publish-extension",
+        "sha": "d7eed2a6514fe812380254116e17ab9ca07ce5d0"
+      },
+      {
+        "path": ".claude/skills/tuistory",
+        "sha": "40ece4a67828fa934028e35c043cea4ca55df668"
+      },
+      {
+        "path": ".github/workflows/cli-publish.yml",
+        "sha": "4c7339a9add362b59d8b0ee51d4986768295e6b3"
+      },
+      {
+        "path": ".github/workflows/desktop-publish.yml",
+        "sha": "64eee43b003dd6f93bacb085a7806f5433328829"
+      },
+      {
+        "path": ".github/workflows/desktop-test.yml",
+        "sha": "0b08ced8abca745fe0835c8d7bcce2a21808ae4e"
+      },
+      {
+        "path": ".github/workflows/ext-jb-test-integration.yml",
+        "sha": "3cadd5f89dbf8b1ff52e98659bb1336f06e2e9f7"
+      },
+      {
+        "path": ".github/workflows/ext-vscode-ab-package.yml",
+        "sha": "65584941fc555b08ba0dc29f79d7a0c0b1da6508"
+      },
+      {
+        "path": ".github/workflows/ext-vscode-publish-legacy.yml",
+        "sha": "a60850f86b067bfdebb20f40e602524b34dd62cd"
+      },
+      {
+        "path": ".github/workflows/ext-vscode-publish-nightly.yml",
+        "sha": "84ce9f48cf24974e5b3f445127dda63f14124f80"
+      },
+      {
+        "path": ".github/workflows/ext-vscode-publish-stable.yml",
+        "sha": "11c0f76e8aa932b4daba10123adc8b1ef2bf0979"
+      },
+      {
+        "path": ".github/workflows/ext-vscode-publish.yml",
+        "sha": "2bf166c225eda08f1d80159bcc0d4ceebecbd36a"
+      },
+      {
+        "path": ".github/workflows/ext-vscode-test-e2e.yml",
+        "sha": "a3ad7809f0df2d833ec8c19f34b0c720befb81a0"
+      },
+      {
+        "path": ".github/workflows/ext-vscode-test.yml",
+        "sha": "9381ce92766c886aac42b45548c1e4c1bc3046b6"
+      },
+      {
+        "path": ".github/workflows/repo-delete-agent-promo-comments.yml",
+        "sha": "698e26cb851156603067df6a35565d4f5de00cd9"
+      },
+      {
+        "path": ".github/workflows/repo-label-issues.yml",
+        "sha": "7c7994d45c360cfd6876950aa8c7fac5afddf35a"
+      },
+      {
+        "path": ".github/workflows/repo-stale-issues.yml",
+        "sha": "f0a33a8fc8deaab83b1c22a187c605072680937e"
+      },
+      {
+        "path": ".github/workflows/repo-strip-agent-badges.yml",
+        "sha": "1ce89773986cf0c0be1e28efe11967754c86fc6c"
+      },
+      {
+        "path": ".github/workflows/sdk-publish.yml",
+        "sha": "592e97a7fd8b36e52e8f161d26c4ced0deac2c22"
+      },
+      {
+        "path": ".github/workflows/sdk-test.yml",
+        "sha": "7bb06b38d4499267516ff998bcae161b7dea1335"
+      },
+      {
+        "path": "apps/cli/script/postinstall.mjs",
+        "sha": "d633a31863cede1c7348db891daafbe65321b62b"
+      },
+      {
+        "path": "apps/examples/vscode/.vscode/launch.json",
+        "sha": "88336965bc14942fb6c9c089da80c4960366e8ad"
+      },
+      {
+        "path": "apps/examples/vscode/.vscode/tasks.json",
+        "sha": "2eba1e39928547706db379b118e2fc1353e1c45c"
+      },
+      {
+        "path": ".agents/skills/cline-sdk/SKILL.md",
+        "sha": "7f7b0612df6947ba2fc20a94d81a39113529807e"
+      },
+      {
+        "path": ".agents/skills/create-pull-request/SKILL.md",
+        "sha": "9aa5add826363bc68d11b573624d44b2b2e01e5a"
+      },
+      {
+        "path": ".agents/skills/opentui/SKILL.md",
+        "sha": "ada49f5ed9c7a8651fe6da7f800a65849312c799"
+      },
+      {
+        "path": ".cline/skills/desktop-whats-new/SKILL.md",
+        "sha": "6ae911ab023823615c28d3e79832d9bb7f45567c"
+      },
+      {
+        "path": ".cline/skills/publish-cli/SKILL.md",
+        "sha": "d7450c3c980954dc76738f082c5c659da9cb5318"
+      },
+      {
+        "path": ".cline/skills/publish-desktop/SKILL.md",
+        "sha": "5df8ab5c986157cae0707f9454dc8fa466e25757"
+      },
+      {
+        "path": ".cline/skills/publish-extension/SKILL.md",
+        "sha": "715c2fa7e7ff37a1b72fa71b9c4ae460ca190f78"
+      },
+      {
+        "path": ".cline/skills/tuistory/SKILL.md",
+        "sha": "31eea9ca0c22cb5c67cf3ee7aaf792613e85bb9c"
+      },
+      {
+        "path": "package.json",
+        "sha": "ecd819940d20b8dad5f6bd4873b72f635d0ae5b2"
+      },
+      {
+        "path": "evals/package.json",
+        "sha": "b1a387a56adec9c84cd49a1a39fa744e4879b5df"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "49cfa3b8e76bc27eb653cafc0adb8632b6289f1d"
+      },
+      {
+        "path": "apps/cli/src/index.ts",
+        "sha": "f4a028da1dbbd54aabe8a91deeb24d367d0452d8"
+      },
+      {
+        "path": "apps/cli/src/main.ts",
+        "sha": "5b8fddd8154f5b9f872a5f7bf189f74cb2e9f006"
+      },
+      {
+        "path": "apps/cline-hub/src/server.ts",
+        "sha": "669846a644723beaf6ab439a32c66446d48abe60"
+      },
+      {
+        "path": "apps/vscode/src/core/controller/marketplace/installMarketplaceEntry.ts",
+        "sha": "71bbca0d9b89b1fe747d641330e7a22d9f974749"
+      },
+      {
+        "path": "apps/vscode/src/core/controller/state/installClineCli.ts",
+        "sha": "e8af262032133f3646c2ad7c20d1ceac74b7764c"
+      },
+      {
+        "path": "apps/vscode/testing-platform/index.ts",
+        "sha": "b93b515ef96987a8cb249e8f3147f9fe0d124e22"
+      },
+      {
+        "path": "biome.json",
+        "sha": "d3f6055e801b6b344c369608e342e1fdf1c36380"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "277bd601024ff335f79ff5ab87f4ca3d603290fd"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "3547e4628bbecb535306117ce22a9ae54ec83ae0"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "833e325dc8e949519f7fd4624f38f8351adfedd4"
+      },
+      {
+        "path": "evals/analysis/src/cli.ts",
+        "sha": "07704631624c3ee8100169028a4256ff8ac6661b"
+      },
+      {
+        "path": "README.md",
+        "sha": "1b870599c7e12943b5a71b69c975744d61cbc25a"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "4807686929f85d6e15eb364a303b857c3af0103b"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "9f0017b9c6bd36c28568e2eae572b04f000b5fac"
+      },
+      {
+        "path": "apps/cli/package.json",
+        "sha": "6503b4b5509662b7116d2bfc1a14f0671b3a6035"
+      },
+      {
+        "path": "apps/cline-hub/package.json",
+        "sha": "312efa891b85ca0bae4d66b19a21ba96d0f3c136"
+      },
+      {
+        "path": "apps/vscode-rollout/package.json",
+        "sha": "a3c0d439a9f2091c0f315d2d15127693f636bab5"
+      },
+      {
+        "path": "apps/vscode/package.json",
+        "sha": "0e6b70bf71ed7b61366ae8eaf420c6a097fcacc4"
+      },
+      {
+        "path": "evals/analysis/package.json",
+        "sha": "f77ae336e76e80158fae840757d44fb6f9411768"
+      },
+      {
+        "path": ".clinerules/bun-and-node.md",
+        "sha": "0cb8a132ac88b916a9a86af2f3d9f680b1d11a44"
+      },
+      {
+        "path": ".clinerules/cline-overview.md",
+        "sha": "c84d505bfde6ae7c3feaa4b005a2e08ae1903cbd"
+      },
+      {
+        "path": ".clinerules/debug-harness.md",
+        "sha": "9e2a7c739803e60672aa73ccf60406d50e4657d4"
+      },
+      {
+        "path": ".clinerules/general.md",
+        "sha": "4bb12eab0ed3aafc8dadce178978478dd869c919"
+      },
+      {
+        "path": ".clinerules/network.md",
+        "sha": "e004a46a97b48f7a267b6f6df268d849893a07ae"
+      },
+      {
+        "path": ".clinerules/protobuf-development.md",
+        "sha": "35f1dd222ab9a14b5c8e3533c9aad08160119dbb"
+      },
+      {
+        "path": ".clinerules/sdk-migration.md",
+        "sha": "558b54ce5623742507f1f8eac7b0b1342fc32a09"
+      },
+      {
+        "path": ".clinerules/storage.md",
+        "sha": "6e1bc9485a188af708fd77519cd6b87e81093635"
+      },
+      {
+        "path": ".greptile/config.json",
+        "sha": "1d4e44269e8c96447396a00bb3e928746c545dfd"
+      },
+      {
+        "path": ".greptile/files.json",
+        "sha": "02a4692e44ec3cf86971a0a06bdcbc08e389de51"
+      },
+      {
+        "path": ".greptile/rules.md",
+        "sha": "8d3bd1f6cd24f8ce453de853a7541f806bd0a870"
+      },
+      {
+        "path": ".kanban/config.json",
+        "sha": "c31573d97115180c90de63feaf94a71bd9857b96"
+      },
+      {
+        "path": "apps/biome.json",
+        "sha": "54c3ae1a01167c78dceb32bda5eb6aca5078a838"
+      },
+      {
+        "path": "apps/cli/src/acp/index.ts",
+        "sha": "4aabec2d27808326b87c176adb9e54dc7ffa45ac"
+      },
+      {
+        "path": "apps/cli/src/runtime/tools.ts",
+        "sha": "f5889bffb9184d33eaf55fbbca67e6f9546097d3"
+      },
+      {
+        "path": "apps/cli/src/tui/index.tsx",
+        "sha": "703511ff797ace107c2aecac0580fafc5f98e292"
+      },
+      {
+        "path": "apps/tsconfig.apps.json",
+        "sha": "822098e91b4c25efae1b995dcee13fa8ef91ada2"
+      },
+      {
+        "path": "apps/vscode/src/exports/index.ts",
+        "sha": "70dd078745f43a31da5ae341576a9071206c56a0"
+      },
+      {
+        "path": "apps/vscode/src/sdk/index.ts",
+        "sha": "9d3d0ae7b8e74811acd0673ea262586a4e006155"
+      },
+      {
+        "path": "apps/vscode/src/shared/tools.ts",
+        "sha": "3df5c3884c0484914268d314c12bfacbe1b2bcee"
+      },
+      {
+        "path": "apps/vscode/src/test/e2e/fixtures/workspace/.vscode/settings.json",
+        "sha": "51da76775967d7ef40d774687886e37a279609cf"
+      },
+      {
+        "path": "apps/vscode/webview-ui/.storybook/main.ts",
+        "sha": "e4ed9307849a1a01b2000bd8d7f23c0a2fd261b2"
+      },
+      {
+        "path": "apps/vscode/webview-ui/src/App.tsx",
+        "sha": "ff74bafa84e6ce0af35419da9853392713e1d313"
+      },
+      {
+        "path": "apps/vscode/webview-ui/src/main.tsx",
+        "sha": "5468af79a9b5fc339f966acf1d592413172ba249"
+      },
+      {
+        "path": "evals/analysis/src/parsers/index.ts",
+        "sha": "233e0374e5aa5f03bf70fd2d2c7cf9570d7ca570"
+      },
+      {
+        "path": "evals/analysis/src/reporters/index.ts",
+        "sha": "0e69812dd369cc9dedac13df26205ecd28761824"
+      },
+      {
+        "path": "evals/analysis/src/schemas/index.ts",
+        "sha": "1b62e6b33c25b9c2d18ee3dafd3022713aaa1302"
+      },
+      {
+        "path": "evals/ARCHITECTURE.md",
+        "sha": "53981fa187291c9c935d404c447b8ef70b5483e1"
+      },
+      {
+        "path": "evals/package-lock.json",
+        "sha": "09ad7894ce99b71e07e53be2b4c1b76d75134a7b"
+      },
+      {
+        "path": "evals/README.md",
+        "sha": "4827c616edb1ff5999fef5e1fbe6214d9a641919"
+      },
+      {
+        "path": "evals/tsconfig.json",
+        "sha": "561e9b02fa10e5dddabce3ed038d4221806af88f"
+      },
+      {
+        "path": "sdk/AGENTS.md",
+        "sha": "71ddc640b68ee0697beb658c3a5b331d374ddc5a"
+      },
+      {
+        "path": "sdk/ARCHITECTURE.md",
+        "sha": "4063af81c641f06df6a7197b5b01afb163d922bb"
+      },
+      {
+        "path": "sdk/biome.json",
+        "sha": "358877fbda78152c31333887b29ce9593a5b4e9d"
+      },
+      {
+        "path": "sdk/CHANGELOG.md",
+        "sha": "6551189f21bea2960e4a36f633a155701e0494c4"
+      },
+      {
+        "path": "sdk/CONTRIBUTING.md",
+        "sha": "4a0f3e343615426916103c2437e344bc1baade2c"
+      },
+      {
+        "path": "sdk/DOC.md",
+        "sha": "92048a27835ad246b3c352db6369a517ab531561"
+      },
+      {
+        "path": "sdk/packages/agents/src/index.ts",
+        "sha": "b78788e3477e048b3fafe422c0b717fefb78579e"
+      },
+      {
+        "path": "sdk/packages/core/src/index.ts",
+        "sha": "f081ce3b6a010eeaf8f579baa973a462bca0a46e"
+      },
+      {
+        "path": "sdk/packages/llms/src/index.ts",
+        "sha": "e2c7db8751efd791130752091496cc8750381dee"
+      },
+      {
+        "path": "sdk/packages/sdk/src/index.ts",
+        "sha": "863f12eff334e296f894a661bd1c954c72d045df"
+      },
+      {
+        "path": "sdk/packages/shared/src/index.ts",
+        "sha": "126f10ba34940f66433ba4a4ebcec991d839fed9"
+      },
+      {
+        "path": "sdk/packages/ui/.storybook/main.ts",
+        "sha": "71b590787c3017748ee03108bffab1b8a4c49023"
+      },
+      {
+        "path": "sdk/packages/ui/components/index.ts",
+        "sha": "421f91332cd7b9a95c3bb554bc3327890c919533"
+      },
+      {
+        "path": "sdk/README.md",
+        "sha": "0ab9c6cba193ae8627c5d3c494ec39836096bddf"
+      },
+      {
+        "path": "sdk/tsconfig.json",
+        "sha": "c894ac9d916e98451e33212cd17847a5b814d9cf"
+      },
+      {
+        "path": "apps/vscode/testing-platform/package.json",
+        "sha": "05cf5463dd1b2cfee98e4ce65994eeb1d4372d95"
+      },
+      {
+        "path": "apps/vscode/webview-ui/package.json",
+        "sha": "3a41715eaa6d12ada18c2762af7241c13b5c4206"
+      },
+      {
+        "path": "sdk/packages/agents/package.json",
+        "sha": "69af19834c1f51d4976de73c90ec6a5c8227cfb7"
+      },
+      {
+        "path": "sdk/packages/core/package.json",
+        "sha": "8fa443c9365c964ca603e582073a296f92ca6fb1"
+      },
+      {
+        "path": "sdk/packages/llms/package.json",
+        "sha": "fca3a773c863fe7c99fe348c874780c304f71e48"
+      },
+      {
+        "path": "sdk/packages/sdk/package.json",
+        "sha": "75136a20e16a299c9713a873fb34c10f628b2cbe"
+      },
+      {
+        "path": "sdk/packages/shared/package.json",
+        "sha": "5880cf9671613fc7ee3a2269a41fdda4b852d383"
+      },
+      {
+        "path": "sdk/packages/ui/package.json",
+        "sha": "c11f3087b4474a149342e50201c20101c54c0014"
+      },
+      {
+        "path": ".clinerules/hooks/README.md",
+        "sha": "ac41ab896d5b65516ba446f69a7b07888f79fbe7"
+      },
+      {
+        "path": ".clinerules/workflows/address-pr-comments.md",
+        "sha": "f7db2b6a091acfe0657e3be12e460cca41893259"
+      },
+      {
+        "path": ".clinerules/workflows/find-pr-reviewers.md",
+        "sha": "8809df52f1dae71986552e6ebf0fe3f1c40d41d2"
+      },
+      {
+        "path": ".clinerules/workflows/git-branch-analysis.md",
+        "sha": "dd2d26ce5149f00516741f8fb2b6236a7475e1b1"
+      },
+      {
+        "path": ".clinerules/workflows/hotfix-release.md",
+        "sha": "cf30a33d9f4320b77be7929493578d8801ab2252"
+      },
+      {
+        "path": ".clinerules/workflows/pr-review.md",
+        "sha": "60ecf153e42c4027ef6cb75e44cf2a6b661ef6ad"
+      },
+      {
+        "path": ".clinerules/workflows/release.md",
+        "sha": "c30f3073989e103e428f10277268fce1f7a530e5"
+      },
+      {
+        "path": ".clinerules/workflows/writing-documentation.md",
+        "sha": "61cf6cc0362c2e2c13300f422a4866bb9ee67b05"
+      },
+      {
+        "path": "apps/cli/bun.mts",
+        "sha": "a5fb94d9a63d68f57a5b3fa94368be3c4b3d8460"
+      },
+      {
+        "path": "apps/cli/CHANGELOG.md",
+        "sha": "b590a755a9dabc9c8566176b17afd1c56fac4873"
+      },
+      {
+        "path": "apps/cli/DEVELOPMENT.md",
+        "sha": "24ea3a7c82a479c2b0a040a5c08fa11054f33b46"
+      },
+      {
+        "path": "apps/cli/DISTRIBUTION.md",
+        "sha": "d28e23c009e24a99f9d3880ada74f4dd167ffa06"
+      },
+      {
+        "path": "apps/cli/README.md",
+        "sha": "fc7ecf41c35157613b370b2d4b51d345bc79060c"
+      },
+      {
+        "path": "apps/cli/skills-lock.json",
+        "sha": "23e600fd4f5adc87443c012f5bb5845b8c8a1f71"
+      },
+      {
+        "path": "apps/cli/src/wizards/connect/index.ts",
+        "sha": "bdce32665c942d7c78ef8e2f838745bdedc5dc95"
+      },
+      {
+        "path": "apps/cli/src/wizards/mcp/index.ts",
+        "sha": "3f4e92e4f2659039000e919a8766b98b9eca1ec9"
+      },
+      {
+        "path": "apps/cli/src/wizards/schedule/index.ts",
+        "sha": "f04dfaa20ee08a8b1e7f2e5519fd9460a59705f2"
+      },
+      {
+        "path": "apps/cli/tsconfig.json",
+        "sha": "97cb17de68bffc4bbdcb6c293571d993ec5b9f02"
+      },
+      {
+        "path": "apps/cli/vitest.config.ts",
+        "sha": "9b2bdfb540b53810d1f22642a28a6ba3130ed89b"
+      },
+      {
+        "path": "apps/cli/vitest.e2e.config.ts",
+        "sha": "cd9b16e5ac39ce9ee6a60a59d77a396f5d6ce563"
+      },
+      {
+        "path": "apps/cli/vitest.interactive.e2e.config.ts",
+        "sha": "3b1bb66ca1db10944343bc4e95bd04c252de295c"
+      },
+      {
+        "path": "apps/cli/vitest.setup.ts",
+        "sha": "a020646d60e54595b44619c4da0bc0c624551d69"
+      },
+      {
+        "path": "apps/cli/vitest.tuistory.e2e.config.ts",
+        "sha": "e6c0f46a8e8ea5d198d98bfa4963c3bd06987b5e"
+      },
+      {
+        "path": "apps/cline-hub/README.md",
+        "sha": "34e478fd88deb3eadb26ac3349ea34030e7f1d49"
+      },
+      {
+        "path": "apps/cline-hub/src/webview/src/App.tsx",
+        "sha": "e20fda59cc28d22fc55c636962ff1e96ba1233f9"
+      },
+      {
+        "path": "apps/cline-hub/src/webview/src/main.tsx",
+        "sha": "c81588abda92608ad6945b4599c4f3b2ade6fb86"
+      },
+      {
+        "path": "apps/cline-hub/tsconfig.json",
+        "sha": "db53c5aaae2fc666beb708983a4b044bc638b2b5"
+      },
+      {
+        "path": "apps/cline-hub/vitest.config.ts",
+        "sha": "3b37ba1845d98bc9b54a3ba79d5ebfbc071393f0"
+      },
+      {
+        "path": "apps/vscode-rollout/esbuild.mjs",
+        "sha": "b028345b6288c3395c7a9834a1575dd906ac2c53"
+      },
+      {
+        "path": "apps/vscode-rollout/README.md",
+        "sha": "d1d43bd5d1609379c2a90ccd85afd6e2adefd8e7"
+      },
+      {
+        "path": "apps/vscode-rollout/tsconfig.json",
+        "sha": "c981ea3bd51e4c5bc95d27ed9624fe6143bb9f99"
+      },
+      {
+        "path": "apps/vscode/.vscode-test.mjs",
+        "sha": "b7d2618b8f70682f065ec64fa860d5696e2a3f85"
+      },
+      {
+        "path": "apps/vscode/buf.yaml",
+        "sha": "53722cd0fb4f93e41ff8dd328a34450d9c5abb5a"
+      },
+      {
+        "path": "apps/vscode/esbuild.mjs",
+        "sha": "9df61747df8391720b10c9bf77413520126ef894"
+      },
+      {
+        "path": "apps/vscode/knip.json",
+        "sha": "ca3a5419906ff5581f5ba767e4181cc6f8ec6eeb"
+      },
+      {
+        "path": "apps/vscode/playwright.config.ts",
+        "sha": "4764de5da380a1fee4d1873669801161a14ddcd9"
+      },
+      {
+        "path": "apps/vscode/README.marketplace.md",
+        "sha": "a9fb7566f2329a0e134589c9a644c7e66e11f42c"
+      },
+      {
+        "path": "apps/vscode/README.md",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "apps/vscode/skills-lock.json",
+        "sha": "f46e11fcb8e6af6cb97bc76eb1156b4d1c5dd177"
+      },
+      {
+        "path": "apps/vscode/src/core/api/index.ts",
+        "sha": "cc443c991621dfffc26a172a41ae7fbe95b57d31"
+      },
+      {
+        "path": "apps/vscode/src/core/controller/index.ts",
+        "sha": "11f3843432252169cdf785340e196294272cdad0"
+      },
+      {
+        "path": "apps/vscode/src/core/mentions/index.ts",
+        "sha": "c5b29dc2e97781525747e2e147752472d4d80372"
+      },
+      {
+        "path": "apps/vscode/src/core/webview/index.ts",
+        "sha": "0adbcfbad7423e76c99e14efc425eacbde9f8341"
+      },
+      {
+        "path": "apps/vscode/src/core/workspace/index.ts",
+        "sha": "6e4123b6ede070b4765ec78007003b51621602e7"
+      },
+      {
+        "path": "apps/vscode/src/dev/debug-harness/server.ts",
+        "sha": "ef9d6af86092fd7481383ca4292261d47324ea99"
+      },
+      {
+        "path": "apps/vscode/src/dev/mcp-oauth-test-server/server.ts",
+        "sha": "3cc4ef8161018ea523d34eeda840189b6dcf79fa"
+      },
+      {
+        "path": "apps/vscode/src/integrations/diagnostics/index.ts",
+        "sha": "e099fa8ec2fe0f11728d1857f2502374dd4378a7"
+      },
+      {
+        "path": "apps/vscode/src/services/error/index.ts",
+        "sha": "09490d166bd806d5a13efb1f3a186d3b5dd92d2b"
+      },
+      {
+        "path": "apps/vscode/src/services/feature-flags/index.ts",
+        "sha": "03c35719d60b0ff0466ead0d7300f2e4be02220f"
+      },
+      {
+        "path": "apps/vscode/src/services/telemetry/index.ts",
+        "sha": "847c82e6c98074cbcd2649fc6839cc3aedb6e626"
+      },
+      {
+        "path": "apps/vscode/src/services/temp/index.ts",
+        "sha": "6242cc5357816a765cacf2d463dea19f30260a88"
+      },
+      {
+        "path": "apps/vscode/src/shared/cline/index.ts",
+        "sha": "4e25396e37a247b9bd93401657faa1f2c7312dd1"
+      },
+      {
+        "path": "apps/vscode/src/shared/messages/index.ts",
+        "sha": "b5b91cd88d5137d0b76052fdc16e205867eb2732"
+      },
+      {
+        "path": "apps/vscode/src/shared/storage/index.ts",
+        "sha": "780d3f2829f886c8813f16112101cbdea8a8fe02"
+      },
+      {
+        "path": "apps/vscode/standalone/runtime-files/vscode/index.js",
+        "sha": "8638fc7bb27c70bc2c755d18ff18b0f500abd8c0"
+      },
+      {
+        "path": "apps/vscode/test-setup.js",
+        "sha": "eb201f553f64a85fd06004d0128fa2257acc7352"
+      },
+      {
+        "path": "apps/vscode/tsconfig.json",
+        "sha": "e3a43823b316f271c2e04b7ea823a9fa34463259"
+      },
+      {
+        "path": "apps/vscode/tsconfig.vscode-compat.json",
+        "sha": "8eae3aebbc2ac1a10601641b34950cd2c4f0a63f"
+      },
+      {
+        "path": "apps/vscode/vitest.cloud.config.ts",
+        "sha": "e2ef62b13f06e61ed40ecae6f1ab1e5588082d77"
+      },
+      {
+        "path": "apps/vscode/vitest.config.ts",
+        "sha": "568bfa32c2aad615778b4d6bd3817a8bacdb122f"
+      },
+      {
+        "path": "evals/analysis/package-lock.json",
+        "sha": "b12add0924a6cca678c921fc804da9e54017b99c"
+      },
+      {
+        "path": "evals/analysis/tsconfig.json",
+        "sha": "293143a6af666eddf3b4890a783b787b219591f3"
+      },
+      {
+        "path": "evals/smoke-tests/README.md",
+        "sha": "cb0bdd939a6f2ce9ba25b63a5466d292cdf64d0f"
+      },
+      {
+        "path": "evals/smoke-tests/run-smoke-tests.ts",
+        "sha": "62250eae950faccf7996e08096a3b9a9bab361e0"
+      },
+      {
+        "path": "sdk/packages/core/src/account/index.ts",
+        "sha": "bced7d9018e002330b80a4a5084b2caeb11ff643"
+      },
+      {
+        "path": "sdk/packages/core/src/auth/server.ts",
+        "sha": "c00a8bf5c18321c7351a3e3e807de374196a43ac"
+      },
+      {
+        "path": "sdk/packages/core/src/cloud/index.ts",
+        "sha": "820f149274693f19b324d12995b8e523c5400875"
+      },
+      {
+        "path": "sdk/packages/core/src/cron/index.ts",
+        "sha": "226951ef8eeb9c22e06a39bb0141a7cd2ab538f4"
+      },
+      {
+        "path": "sdk/packages/core/src/extensions/index.ts",
+        "sha": "e987f32b0c64d43ad7969d24670c081fc6d97afe"
+      },
+      {
+        "path": "sdk/packages/core/src/hooks/index.ts",
+        "sha": "af5dc885084a363a1f3b1a4465271766cc3e25c9"
+      },
+      {
+        "path": "sdk/packages/core/src/hub/index.ts",
+        "sha": "40bf8226160ea474144eda53e90f4416e22d59a8"
+      },
+      {
+        "path": "sdk/packages/core/src/runtime/index.ts",
+        "sha": "f5fbb078fd6a37e02fc73e8254c4ddf79a61e428"
+      },
+      {
+        "path": "sdk/packages/core/src/session/index.ts",
+        "sha": "0b3657d5b4789ddaa299f04c807138b85c64b446"
+      },
+      {
+        "path": "sdk/packages/core/src/settings/index.ts",
+        "sha": "faf8f69858b92e52d5949262388c7c7be0ba6277"
+      },
+      {
+        "path": "sdk/packages/core/src/tasks/index.ts",
+        "sha": "a4955567b818737fb547446f7ab324d599cd6d39"
+      },
+      {
+        "path": "sdk/packages/core/src/types/index.ts",
+        "sha": "460b5c44716a65e56ff1aa639b9c99b26f7c5732"
+      },
+      {
+        "path": "sdk/packages/llms/src/providers/handler.ts",
+        "sha": "b22e4de6731cf17316e9720b3631ef613092e6a1"
+      },
+      {
+        "path": "sdk/packages/README.md",
+        "sha": "536eb2a9700ccc2122b9a0db007ad4a5002a65d6"
+      },
+      {
+        "path": "sdk/packages/shared/src/agents/index.ts",
+        "sha": "eea524d655708d7561b53642ce62e241627eece6"
+      },
+      {
+        "path": "sdk/packages/shared/src/automation/index.ts",
+        "sha": "7e2556cfc6b0c8ec28eec7d8bd7f59bb73829c50"
+      },
+      {
+        "path": "sdk/packages/shared/src/cron/index.ts",
+        "sha": "2ee46d00aed98d3cbc05cf71c4acfeadc834accf"
+      },
+      {
+        "path": "sdk/packages/shared/src/db/index.ts",
+        "sha": "58c07e22f79f4d12e405ae83740fe7eba0b8ae55"
+      },
+      {
+        "path": "sdk/packages/shared/src/llms/tools.ts",
+        "sha": "22d4c9644992b5508470f21e36fddf1f436c7952"
+      },
+      {
+        "path": "sdk/packages/shared/src/remote-config/index.ts",
+        "sha": "7bd570b5bab287cc985743e41b4a47e87091a2b2"
+      },
+      {
+        "path": "sdk/packages/shared/src/rpc/index.ts",
+        "sha": "24b553a552d6589fb0044f2f3fcdc5ef2f90d936"
+      },
+      {
+        "path": "sdk/packages/shared/src/session/index.ts",
+        "sha": "9c01b14de27cd9ca936a29d868e9770a0a71cad8"
+      },
+      {
+        "path": "sdk/packages/shared/src/storage/index.ts",
+        "sha": "f4477bbc9ffc738afa9a7295a6bb58ddeffe9fee"
+      },
+      {
+        "path": "sdk/packages/shared/src/team/index.ts",
+        "sha": "cf899952e94e94ed9e34340efe07d689c9b1731d"
+      },
+      {
+        "path": "sdk/packages/shared/src/types/index.ts",
+        "sha": "5354bd83adb6b226aa724a58825f63c404f500a0"
+      },
+      {
+        "path": "sdk/packages/tsconfig.base.json",
+        "sha": "6ce2c8ae0561a3ed3ccf598ac1ac4a11463bb41a"
+      },
+      {
+        "path": "sdk/packages/ui/components/agent-chat/index.tsx",
+        "sha": "2a1f692ac5e07b959c8e552b25e7bb0bda9a347c"
+      },
+      {
+        "path": "sdk/scripts/check-publish.ts",
+        "sha": "86eba47e6e6d02162c58a1e84c28e6649c8685ef"
+      },
+      {
+        "path": "sdk/scripts/ci-node-smoke.ts",
+        "sha": "8148d1de4dec2b37f19f67cf12a2c42d9727f311"
+      },
+      {
+        "path": "sdk/scripts/clean.ts",
+        "sha": "51381174342a48bb2f090685eeac0941c6b5b0ba"
+      },
+      {
+        "path": "sdk/scripts/release.ts",
+        "sha": "a592683c8f951a0e76b76ec896e057ead58bbacc"
+      },
+      {
+        "path": "sdk/scripts/version.ts",
+        "sha": "ef4895ed8a92994693b22cd85da18df17b0d0cb6"
+      },
+      {
+        "path": "apps/cline-hub/src/webview/package.json",
+        "sha": "b4331a67043071e637ab1560c69ad3b6a11f5f0d"
+      },
+      {
+        "path": "apps/vscode/standalone/runtime-files/package.json",
+        "sha": "e7661c3649ffb63eb47c998736802e4d1fe7b142"
+      },
+      {
+        "path": "apps/cli/bin/ca-certs.cjs",
+        "sha": "942ead42f7fa78412555eb4ee4f0038b041bf286"
+      },
+      {
+        "path": "apps/cli/script/build-options.ts",
+        "sha": "6377c8627c572a1d6f9e4f6e3c696d60fd0509cc"
+      },
+      {
+        "path": "apps/cli/script/build.ts",
+        "sha": "9d5f01b589801b1fb96b3fdcc5db97869059ea39"
+      },
+      {
+        "path": "apps/cli/script/compile-binary.ts",
+        "sha": "1a7fc444d960b90eda3d55d20cda1199d5b4458f"
+      },
+      {
+        "path": "apps/cli/script/dashboard-runtime.ts",
+        "sha": "5bb61de0341024b76af60200f2b64333390ca38a"
+      },
+      {
+        "path": "apps/cli/script/guard-direct-publish.ts",
+        "sha": "c12ef51c11f117240648801dba4c631a7db804eb"
+      },
+      {
+        "path": "apps/cli/script/publish-npm.ts",
+        "sha": "62a1b63eda5e2cda7b86cd24570dda999f9a313e"
+      },
+      {
+        "path": "apps/cli/scripts/acp-dev.sh",
+        "sha": "2082033da2a0a230abf3b7b8fc49e2b197843386"
+      },
+      {
+        "path": "apps/cli/src/tui/views/onboarding/index.ts",
+        "sha": "949e000e78c8d85f85d748b29872526672e941d1"
+      },
+      {
+        "path": "apps/cline-hub/src/dev.ts",
+        "sha": "1a608ca91aea35a887a776db6955e68d4fc368ce"
+      },
+      {
+        "path": "apps/cline-hub/src/options.ts",
+        "sha": "e1da93d8ee3eb919f956f6a3911801f390c15f2e"
+      },
+      {
+        "path": "apps/cline-hub/src/validate-options.ts",
+        "sha": "78e66871690ec8e807ba3c5d58b7eca678920d40"
+      },
+      {
+        "path": "apps/cline-hub/src/webview-protocol.ts",
+        "sha": "d5ae0e2dfcbcef60b67022542371c2aee4c4d215"
+      },
+      {
+        "path": "apps/vscode-rollout/scripts/gen-manifest.mjs",
+        "sha": "8c6f4d6061a551898bef241ce33a6a07ae4796f2"
+      },
+      {
+        "path": "apps/vscode-rollout/scripts/nightlify.mjs",
+        "sha": "1b08ec963cc87d45d6222e5d87c063ab9f40332e"
+      },
+      {
+        "path": "apps/vscode-rollout/scripts/set-version.mjs",
+        "sha": "22bba4159f492752f1b01fd8d52add166bc9a904"
+      },
+      {
+        "path": "apps/vscode-rollout/scripts/smoke-loader.mjs",
+        "sha": "4408ac0e086e9724808ae234a3df3c6499e37fc5"
+      },
+      {
+        "path": "apps/vscode-rollout/scripts/stitch.mjs",
+        "sha": "afb49f7cea0af304b46a5b41768062ea7c33ce83"
+      },
+      {
+        "path": "apps/vscode-rollout/src/cohort.ts",
+        "sha": "a95b24dd639d03b7b2f97606a222be2376317233"
+      },
+      {
+        "path": "apps/vscode-rollout/src/extension.ts",
+        "sha": "7ff1a23711d36f48b28a72477600bd2f6abdabfe"
+      },
+      {
+        "path": "apps/vscode-rollout/src/rollout.ts",
+        "sha": "c98c9307d3760ca6e74ac2f55fa7726c9ef41e6e"
+      },
+      {
+        "path": "apps/vscode-rollout/src/scoped-context.ts",
+        "sha": "e2312021a24c2d8dd217389dc123414bf8f9e63c"
+      },
+      {
+        "path": "apps/vscode/scripts/add-endpoints-to-jetbrains.sh",
+        "sha": "53e86be2d4c17a0ee83d37e5e46625e8cfd645bb"
+      },
+      {
+        "path": "apps/vscode/scripts/add-endpoints-to-vsix.sh",
+        "sha": "b6d5e1f8fa7e1f37db1b104aabd7ddb0174e1830"
+      },
+      {
+        "path": "apps/vscode/scripts/api-secrets-parser.mjs",
+        "sha": "31a9ecabfe1e0510850e95338734399c0a30e6aa"
+      },
+      {
+        "path": "apps/vscode/scripts/build-proto.mjs",
+        "sha": "56ad8d131ae91bb54684ddbf30972b25352668ed"
+      },
+      {
+        "path": "apps/vscode/scripts/build-python-proto.mjs",
+        "sha": "946eb664aee0267fedd21a4a5fbd339da2d73eeb"
+      },
+      {
+        "path": "apps/vscode/scripts/build-tests.js",
+        "sha": "65be229481e1e31c8774700ac816ccf7170c6bb9"
+      },
+      {
+        "path": "apps/vscode/scripts/clean-webview-vite-cache.mjs",
+        "sha": "bba1125ee5d0bef13d49e96cbffe950121d94149"
+      },
+      {
+        "path": "apps/vscode/scripts/download-ripgrep.mjs",
+        "sha": "3709e6d4691b55d5340b2c70e8cbf9d655293ee7"
+      },
+      {
+        "path": "apps/vscode/scripts/file-utils.mjs",
+        "sha": "1fb4e3dc3153728b82b69d5cdf463d6714dfa175"
+      },
+      {
+        "path": "apps/vscode/scripts/find-dead-src.mjs",
+        "sha": "fcdc5d0c9f0d6efa26f70a6c50ae2abe7fd8fae0"
+      },
+      {
+        "path": "apps/vscode/scripts/generate-host-bridge-client.mjs",
+        "sha": "166e5bfdd13cc33139c442391fb6078890272a5e"
+      },
+      {
+        "path": "apps/vscode/scripts/generate-protobus-setup.mjs",
+        "sha": "1782527c81c9d8c10fabd9477089596e6e25f4bf"
+      },
+      {
+        "path": "apps/vscode/scripts/generate-state-proto.mjs",
+        "sha": "09c27d023be2b7718c82ab7e6966ea85b301df21"
+      },
+      {
+        "path": "apps/vscode/scripts/generate-stubs.js",
+        "sha": "c6058c013aa839379dc69dcb79fc80e193640837"
+      },
+      {
+        "path": "apps/vscode/scripts/get-vscode-usages.sh",
+        "sha": "26f6fed3b05bc1cc6f9c11d72b4d1b1d130da3dc"
+      },
+      {
+        "path": "apps/vscode/scripts/interactive-playwright.ts",
+        "sha": "495cbe6931b967a61b7d066599e5b45ec535446a"
+      },
+      {
+        "path": "apps/vscode/scripts/marketplace-readme.mjs",
+        "sha": "447e1a3d6614285b4f09b48741469f0e4d3661ef"
+      },
+      {
+        "path": "apps/vscode/scripts/package-standalone.mjs",
+        "sha": "c9dd9c6224e4753412f6a745fedb95b4bd63742d"
+      },
+      {
+        "path": "apps/vscode/scripts/proto-lint.sh",
+        "sha": "b8192c530067fa36df843dce4fb52dc9e9dd7f3e"
+      },
+      {
+        "path": "apps/vscode/scripts/proto-shared-utils.mjs",
+        "sha": "ebfc04e2c7be35cc0e32f9d2d6ced0d25ea93b60"
+      },
+      {
+        "path": "apps/vscode/scripts/proto-utils.mjs",
+        "sha": "63550b8b4221549a19632ecb86a7aac684d31389"
+      },
+      {
+        "path": "apps/vscode/scripts/publish-marketplace.mjs",
+        "sha": "74baef17f7c4f639bc31c95e8b2a477378bc0b71"
+      },
+      {
+        "path": "apps/vscode/scripts/publish-nightly.mjs",
+        "sha": "f7b45cd68b274f74220d082469a94a0cc659cad1"
+      },
+      {
+        "path": "apps/vscode/scripts/report-issue.js",
+        "sha": "93dd5d9e6147d1e4f1dcb034aa9a2ca7d4395a85"
+      },
+      {
+        "path": "apps/vscode/scripts/repro-cloud-session.mjs",
+        "sha": "ebcc9bba3aa3e94268aa14b8a963c0e633499c0a"
+      },
+      {
+        "path": "apps/vscode/scripts/run-bun-tests.ts",
+        "sha": "ecfd0350b863a9fcb4661465c7a2956b091b45ec"
+      },
+      {
+        "path": "apps/vscode/scripts/run-bun-unit-tests.ts",
+        "sha": "e3ffc9f1dc59ac9f4e5b5e2fe5b1c5fb69c34cea"
+      },
+      {
+        "path": "apps/vscode/scripts/run-extension-host.sh",
+        "sha": "6fe9142ec07df36a31b59229b0ca91634c4779eb"
+      },
+      {
+        "path": "apps/vscode/scripts/runclinecore.sh",
+        "sha": "229d28910a7e34c3f07b42bb057582fcf9ae7594"
+      },
+      {
+        "path": "apps/vscode/scripts/test-hostbridge-server.ts",
+        "sha": "2ab040ead2f52379e5d519cde1ac397cf4829752"
+      },
+      {
+        "path": "apps/vscode/scripts/test-standalone-core-api-server.ts",
+        "sha": "0854c3d404f62991efba9efd064bd9760cb07a83"
+      },
+      {
+        "path": "apps/vscode/scripts/testing-platform-orchestrator.ts",
+        "sha": "10a0ac4193e0fcbfc48ad21bd8b4a549b7992f6c"
+      },
+      {
+        "path": "apps/vscode/scripts/testing-platform-workos-fetch-mock.cjs",
+        "sha": "8ed2d8371bd62d12963182dba3b643d5a653fdc4"
+      },
+      {
+        "path": "apps/vscode/src/common.ts",
+        "sha": "ad73f3a2ea4a4da78f2ee07a6fe72dad38b2b16f"
+      },
+      {
+        "path": "apps/vscode/src/config.ts",
+        "sha": "fb9cd5982d8fc9c2fb08ee662cef49abf8e0ad02"
+      },
+      {
+        "path": "apps/vscode/src/extension.ts",
+        "sha": "2bbc09bf8eecb7234cc37552ab6404da97d10e25"
+      },
+      {
+        "path": "apps/vscode/src/registry.ts",
+        "sha": "17165422322a743adf3aecb7ef1a777013763b25"
+      },
+      {
+        "path": "apps/vscode/testing-platform/README.md",
+        "sha": "8a8fe066b3dc4da8bbf582a94dc0f1acb0f761bf"
+      },
+      {
+        "path": "apps/vscode/testing-platform/tsconfig.json",
+        "sha": "5d7e1047f46d761e4f95d9a319901197e53dad7b"
+      },
+      {
+        "path": "apps/vscode/walkthrough/step1.md",
+        "sha": "b1eb6fdb33161287f06c5cf9ead1a3952ec0f30d"
+      },
+      {
+        "path": "apps/vscode/walkthrough/step2.md",
+        "sha": "3183228210c7bc7275569136d0f993e62684197b"
+      },
+      {
+        "path": "apps/vscode/walkthrough/step3.md",
+        "sha": "d606285175606147393edbebda4a0794e284b228"
+      },
+      {
+        "path": "apps/vscode/walkthrough/step4.md",
+        "sha": "7f43f656fd1f73e38fea32f48bc0502e0bbb64cd"
+      },
+      {
+        "path": "apps/vscode/walkthrough/step5.md",
+        "sha": "bf5fdcc7fef9cf1c17dbbbd4a06810c00dca37fc"
+      },
+      {
+        "path": "apps/vscode/webview-ui/components.json",
+        "sha": "cfab00220fb2b85d3bb85b69687104eb3b92bb60"
+      },
+      {
+        "path": "apps/vscode/webview-ui/tailwind.config.mjs",
+        "sha": "23badc51ac8e2ca80c245f1aa6a1418d050d7c0e"
+      },
+      {
+        "path": "apps/vscode/webview-ui/tsconfig.app.json",
+        "sha": "8599929abc7282faa8e40dfb7b58e0844aff11db"
+      },
+      {
+        "path": "apps/vscode/webview-ui/tsconfig.json",
+        "sha": "dbd74d2ff4e2eb7b2c98070189f564b98f4b934c"
+      },
+      {
+        "path": "apps/vscode/webview-ui/tsconfig.node.json",
+        "sha": "1ae3865984daa7546faacdabd424edff67b92a23"
+      },
+      {
+        "path": "apps/vscode/webview-ui/vite.config.ts",
+        "sha": "5c9e168a38848314cef6d06da87ba429204968cc"
+      },
+      {
+        "path": "evals/analysis/patterns/cline-failures.yaml",
+        "sha": "3e94381fce139940b0de6cf2e558f94510a41b0f"
+      },
+      {
+        "path": "evals/analysis/src/classifier.ts",
+        "sha": "d7ed137b2feefb6e7d8e9925fd67f9a37a24ff9b"
+      },
+      {
+        "path": "evals/analysis/src/metrics.ts",
+        "sha": "8f214a5521269d2156e12ff40d9312d179eecfa1"
+      },
+      {
+        "path": "sdk/.cline/rules/worktree_dependency_hygiene.md",
+        "sha": "2a2f6a229eab8e053be9c16636f2bff150aee2fc"
+      },
+      {
+        "path": "sdk/.cline/skills/plugin.md",
+        "sha": "0ac34aafa15808a098fa498cded13c43c289223f"
+      },
+      {
+        "path": "sdk/packages/agents/bun.mts",
+        "sha": "93e1d4793fea76509010946a15728ab91720939e"
+      },
+      {
+        "path": "sdk/packages/agents/README.md",
+        "sha": "375a3566825c00d942980ed3ccaba9c678587f00"
+      },
+      {
+        "path": "sdk/packages/agents/tsconfig.build.json",
+        "sha": "c701abffae15db33d9d1f0650b20db7149f89968"
+      },
+      {
+        "path": "sdk/packages/agents/tsconfig.dev.json",
+        "sha": "57f214752bb18e5861b305cd4d08c5f82e68db81"
+      },
+      {
+        "path": "sdk/packages/agents/tsconfig.json",
+        "sha": "ff64f9c4d66a3baee2e88c22976897c94d2fcca8"
+      },
+      {
+        "path": "sdk/packages/agents/vitest.config.ts",
+        "sha": "086b910b82f1f75b72197d4dd99d7cafc2204f67"
+      },
+      {
+        "path": "sdk/packages/core/build-plugin-runtime.mts",
+        "sha": "e9f04b7c37af529b909b437b28001d20b9352bab"
+      },
+      {
+        "path": "sdk/packages/core/bun.mts",
+        "sha": "96228230dffd5cba3035e0aa0b3badf2dcef3c14"
+      },
+      {
+        "path": "sdk/packages/core/README.md",
+        "sha": "e77cf4cd5d0f2a9d0244f563e9ef1812c4818564"
+      },
+      {
+        "path": "sdk/packages/core/src/cron/events/index.ts",
+        "sha": "586750e98386eb9826631f64d5debe041b0c7812"
+      },
+      {
+        "path": "sdk/packages/core/src/cron/reports/index.ts",
+        "sha": "c11a5f9dedf974e387fda7528aec37001a91f5e9"
+      },
+      {
+        "path": "sdk/packages/core/src/cron/runner/index.ts",
+        "sha": "3aa5fd82681a86a997cf4343b90d38e157b33d6e"
+      },
+      {
+        "path": "sdk/packages/core/src/cron/schedule/index.ts",
+        "sha": "e36fefc23630ca3947872b96d2d27ed16ab3ab53"
+      },
+      {
+        "path": "sdk/packages/core/src/cron/service/index.ts",
+        "sha": "cb5568362b5202eeac70228b7939c32e09751721"
+      },
+      {
+        "path": "sdk/packages/core/src/cron/specs/index.ts",
+        "sha": "389605f4445b217b996770e984e5eaacd1b0eb24"
+      },
+      {
+        "path": "sdk/packages/core/src/cron/store/index.ts",
+        "sha": "da7594c284e177472ac703203f7740c5414ea513"
+      },
+      {
+        "path": "sdk/packages/core/src/extensions/agent-plugin/index.ts",
+        "sha": "cb583290314061c9193a39246c83775fb44605db"
+      },
+      {
+        "path": "sdk/packages/core/src/extensions/config/index.ts",
+        "sha": "be9e888f746ce31ca6e4cebd2d758cea1e620d95"
+      },
+      {
+        "path": "sdk/packages/core/src/extensions/mcp/index.ts",
+        "sha": "052b5e79cfded857c4dbc37c6b7f6b5b73ce2251"
+      },
+      {
+        "path": "sdk/packages/core/src/extensions/mcp/tools.ts",
+        "sha": "5ae487280b5e1177eb65303a2be9e36752c7d2d9"
+      },
+      {
+        "path": "sdk/packages/core/src/extensions/tools/index.ts",
+        "sha": "e2e489a3f569b48233f24f7eb47396eeda55512b"
+      },
+      {
+        "path": "sdk/packages/core/src/hub/client/index.ts",
+        "sha": "baeda45bf350bfedddee6aedb59f2cf0efef59ed"
+      },
+      {
+        "path": "sdk/packages/core/src/hub/daemon/index.ts",
+        "sha": "b7737a57f2774f544d408c80cc0848f838d884e2"
+      },
+      {
+        "path": "sdk/packages/core/src/hub/discovery/index.ts",
+        "sha": "9bbe7cb6ea67fa4739b157bcd8c6beaba75220e7"
+      },
+      {
+        "path": "sdk/packages/core/src/hub/server/index.ts",
+        "sha": "8da3076521a3a9b13dd4f812a57eaf816c77a8e0"
+      },
+      {
+        "path": "sdk/packages/core/src/runtime/capabilities/index.ts",
+        "sha": "3a4dec9cb7da81102437e2e3517c9a8b0c49c0cd"
+      },
+      {
+        "path": "sdk/packages/core/src/services/cloud-handoff/index.ts",
+        "sha": "51e405cfe5a6551a7c45292fe9dcc60d637cf147"
+      },
+      {
+        "path": "sdk/packages/core/src/services/feature-flags/index.ts",
+        "sha": "a3f5852e69fa5e76af3bafb2d310a5365a45c7b6"
+      },
+      {
+        "path": "sdk/packages/core/src/services/session-import/index.ts",
+        "sha": "6fbc8b74fda413ee6a2cda88d36934b914213c7b"
+      },
+      {
+        "path": "sdk/packages/core/src/services/storage/index.ts",
+        "sha": "9e2db88dcfd9e7e2f5ffe1f56878bfec23a0743e"
+      },
+      {
+        "path": "sdk/packages/core/src/services/telemetry/index.ts",
+        "sha": "b5f618963b85f305cb0835fa3cbf234445dda61b"
+      },
+      {
+        "path": "sdk/packages/core/src/services/workspace/index.ts",
+        "sha": "46d51a8f4f4c46c83029780eb2279049f1695d08"
+      },
+      {
+        "path": "sdk/packages/core/src/session/search/index.ts",
+        "sha": "317f9210aee1bd279dfc5617721ed771d9ea1d20"
+      },
+      {
+        "path": "sdk/packages/core/src/session/team/index.ts",
+        "sha": "c996e337e0af89183d8f973c1c1a9ee772e56438"
+      },
+      {
+        "path": "sdk/packages/core/tsconfig.build.json",
+        "sha": "60719eaad568fe8261143f5a2e41127b21d44956"
+      },
+      {
+        "path": "sdk/packages/core/tsconfig.dev.json",
+        "sha": "b5764df9f1653afa3ee65499eb754f3c2c950f81"
+      },
+      {
+        "path": "sdk/packages/core/tsconfig.json",
+        "sha": "b887fba380a91f72b001e001077189bd3db53972"
+      },
+      {
+        "path": "sdk/packages/core/tsconfig.smoke.json",
+        "sha": "917eec5d4ebd939e532679a92ab6110c39542818"
+      },
+      {
+        "path": "sdk/packages/core/vitest.config.ts",
+        "sha": "fdf1310300ce1d28ce4c00bb9dc2e6753f56df5f"
+      },
+      {
+        "path": "sdk/packages/core/vitest.e2e.config.ts",
+        "sha": "c6328f0f2538dc8026308322ab4eaa3a80fec3bd"
+      },
+      {
+        "path": "sdk/packages/llms/AGENTS.md",
+        "sha": "1a370d69173c56ca32dbbd4ce8f0b68ad183e70c"
+      },
+      {
+        "path": "sdk/packages/llms/bun.mts",
+        "sha": "ce665ae729814254c625638654c8e985194fccf3"
+      },
+      {
+        "path": "sdk/packages/llms/README.md",
+        "sha": "d08c71faee1b7b41250062a76e041a46adc39a9a"
+      },
+      {
+        "path": "sdk/packages/llms/tsconfig.build.json",
+        "sha": "ad92b25095895ce1d6bf89716a5b0edffe5187e4"
+      },
+      {
+        "path": "sdk/packages/llms/tsconfig.dev.json",
+        "sha": "05b78064461bda6b214584e62f4929d9e8423df5"
+      },
+      {
+        "path": "sdk/packages/llms/tsconfig.json",
+        "sha": "a819923adf5caf98dfcfec89fca139b95cb6ba87"
+      },
+      {
+        "path": "sdk/packages/llms/vitest.config.ts",
+        "sha": "52d5ad237f211a8166bf143e0c3ec7efa1152185"
+      },
+      {
+        "path": "sdk/packages/sdk/bun.mts",
+        "sha": "ddbdf4b78d8b813c508c1e0b55c2eccf8eef2f01"
+      },
+      {
+        "path": "sdk/packages/sdk/tsconfig.build.json",
+        "sha": "050a6fcb3675284e1bee0bcd8c8ecbe8569dde31"
+      },
+      {
+        "path": "sdk/packages/sdk/tsconfig.json",
+        "sha": "62aad1add3c19a81a231565d3fe65d5f1cc62832"
+      },
+      {
+        "path": "sdk/packages/shared/bun.mts",
+        "sha": "827cea5cd0e951b2b4b6de4a34c3c33b982adb96"
+      },
+      {
+        "path": "sdk/packages/shared/README.md",
+        "sha": "538ba4f4837755b17f3faa8afae1d167b8658637"
+      },
+      {
+        "path": "sdk/packages/shared/src/prompt/system/index.ts",
+        "sha": "894587329e82b8467630e72ec758d1c2a7b9ce52"
+      },
+      {
+        "path": "sdk/packages/shared/tsconfig.build.json",
+        "sha": "092177bfa12b6d5ed4ec1ee148286d83c9acfc66"
+      },
+      {
+        "path": "sdk/packages/shared/tsconfig.json",
+        "sha": "ff64f9c4d66a3baee2e88c22976897c94d2fcca8"
+      },
+      {
+        "path": "sdk/packages/shared/vitest.config.ts",
+        "sha": "c8e2064cb5caa16ef6b78eeb3968d651b089de0c"
+      },
+      {
+        "path": "sdk/packages/ui/ADOPTION.md",
+        "sha": "4afaf3216b5545defc8501097f562f93d34e7dc0"
+      },
+      {
+        "path": "sdk/packages/ui/components/agent-chat/tool-summary/index.ts",
+        "sha": "d41ee42f0463b977d4f97a2995358a47687a2618"
+      },
+      {
+        "path": "sdk/packages/ui/README.md",
+        "sha": "38714d57aae7261ab6034bbd2171a25077dafb31"
+      },
+      {
+        "path": "sdk/packages/ui/tsconfig.build.json",
+        "sha": "96f5ac37fa306ee006a67ec66ecb9c0484d51f9c"
+      },
+      {
+        "path": "sdk/packages/ui/tsconfig.json",
+        "sha": "1741509a4be56c4bed27e1a11c88065137027213"
+      },
+      {
+        "path": "sdk/packages/ui/vitest.config.ts",
+        "sha": "0072258d0d2f242ec022ad499de56bc60fb5e481"
+      },
+      {
+        "path": "apps/vscode/standalone/runtime-files/vscode/package.json",
+        "sha": "7b06c363cca90232c68f951620f9ce402b8aad95"
+      },
+      {
+        "path": "apps/cli/src/acp/acpAgent.ts",
+        "sha": "1469f2c9cc0501518b9006f1a52de765bd2c907a"
+      },
+      {
+        "path": "apps/cli/src/acp/auth.ts",
+        "sha": "cb735a4cd69f6c4b0f49ef40341200e07adddf19"
+      },
+      {
+        "path": "apps/cli/src/acp/auto-approve.ts",
+        "sha": "cc7a36eea3005dbf4c30e1f61c153a1159f602cf"
+      },
+      {
+        "path": "apps/cli/src/acp/config-options.ts",
+        "sha": "f44eba30f7f98d96e1eb49fbb712895eb414d1cf"
+      },
+      {
+        "path": "apps/cli/src/acp/organizations.ts",
+        "sha": "68b3d7d4ff70cff4cb27696a887ec0c49a51a0cc"
+      },
+      {
+        "path": "apps/cli/src/acp/permissions.ts",
+        "sha": "b1e109ab0cb04928196c13c5a8d0cf172756248e"
+      },
+      {
+        "path": "apps/cli/src/acp/session-load.ts",
+        "sha": "400acd36e2de8a7d5a81891035a7e81e85c9d070"
+      },
+      {
+        "path": "apps/cli/src/acp/session-updates.ts",
+        "sha": "43f0b01b295aeee4e5f34e2e017852fd30390a2d"
+      },
+      {
+        "path": "apps/cli/src/acp/tool-utils.ts",
+        "sha": "eb40a790496fc0ca61a6bb7e8296f9b7af1524db"
+      },
+      {
+        "path": "apps/cli/src/commands/auth.ts",
+        "sha": "e4a24c2e840939e04ed1b69715c29a7940d3899a"
+      },
+      {
+        "path": "apps/cli/src/commands/config.ts",
+        "sha": "3aef46298793ddb6d6a15ea20765e7c6e42a8051"
+      },
+      {
+        "path": "apps/cli/src/commands/connect-via-hub.ts",
+        "sha": "43481d8f5b46fce6e0c12cb48e63c05d88ca17e0"
+      },
+      {
+        "path": "apps/cli/src/commands/connect.ts",
+        "sha": "4a881125dcd1843f0c430bb9a9eea825755b976f"
+      },
+      {
+        "path": "apps/cli/src/commands/dashboard-command.ts",
+        "sha": "d0b1eb138f2d731beec351ea3bb7e5086d82195a"
+      },
+      {
+        "path": "apps/cli/src/commands/dashboard.ts",
+        "sha": "ac5418daefafb6a8b77e35ce9ae48a4227830e25"
+      },
+      {
+        "path": "apps/cli/src/commands/doctor.ts",
+        "sha": "c21ffbd05d7d6e1439557c8aefa28a13bbde1b2a"
+      },
+      {
+        "path": "apps/cli/src/commands/help.ts",
+        "sha": "61c4427d838a76befc5b07dac8b735958842ab50"
+      },
+      {
+        "path": "apps/cli/src/commands/history-command.ts",
+        "sha": "4a0ea46c943d78af5f4e7ddd42c59939929c7095"
+      },
+      {
+        "path": "apps/cli/src/commands/history.ts",
+        "sha": "d0d5122a1d4b83280d0e139757db67905731b6cf"
+      },
+      {
+        "path": "apps/cli/src/commands/hook.ts",
+        "sha": "132ffc7647541ca4a963d81c4e41800041d94e74"
+      },
+      {
+        "path": "apps/cli/src/commands/hub.ts",
+        "sha": "c6717b8f97fae9ebecb45a9ae2f1ea162fe3be37"
+      },
+      {
+        "path": "apps/cli/src/commands/kanban.ts",
+        "sha": "f89ce24fdb114a86fcbb550dd7cc58df36198a05"
+      },
+      {
+        "path": "apps/cli/src/commands/mcp.ts",
+        "sha": "4f16d2a7e101267666c6ce0e8f7b72d226c73423"
+      },
+      {
+        "path": "apps/cli/src/commands/plugin.ts",
+        "sha": "1fc74cb0cedaa9058a8c5783e6727d286d8b2ba1"
+      },
+      {
+        "path": "apps/cli/src/commands/program.ts",
+        "sha": "b0940495a6ceac6037d0b08bf396724eb975c7c2"
+      },
+      {
+        "path": "apps/cli/src/commands/schedule.ts",
+        "sha": "643fb7b533ebafae00ab1a178531a24f5c667287"
+      },
+      {
+        "path": "apps/cli/src/commands/skill.ts",
+        "sha": "24a15a616733950d2db7d6f5952e1615181e8739"
+      },
+      {
+        "path": "apps/cli/src/commands/update.ts",
+        "sha": "35aef9da8153fe98ec4a1a63095a9a687331179d"
+      },
+      {
+        "path": "apps/cli/src/connectors/base.ts",
+        "sha": "25d3b53dd4c3b871ba0df7407017518e141f2009"
+      },
+      {
+        "path": "apps/cli/src/connectors/catalog.ts",
+        "sha": "1981feea9c7c731d173e0e4a326fa189b5618210"
+      },
+      {
+        "path": "apps/cli/src/connectors/chat-runtime.ts",
+        "sha": "0af9ee798041661cdc8f7f41da57a27cd46c4f46"
+      },
+      {
+        "path": "apps/cli/src/connectors/common.ts",
+        "sha": "4554a8e0d3053b4b6309bb74124b10303ce98b7d"
+      },
+      {
+        "path": "apps/cli/src/connectors/connector-host.ts",
+        "sha": "5db5695434f7350ab1af699b7201703f732db8eb"
+      },
+      {
+        "path": "apps/cli/src/connectors/hooks.ts",
+        "sha": "9de5252bd21e67f76fadc250e618ea485a9983e3"
+      },
+      {
+        "path": "apps/cli/src/connectors/registry.ts",
+        "sha": "039ee49443309d88bef58bc1afffbeb63c468e0d"
+      },
+      {
+        "path": "apps/cli/src/connectors/runtime-turn.ts",
+        "sha": "e836efd564032c9aa1108162441f8a3db4b18404"
+      },
+      {
+        "path": "apps/cli/src/connectors/schedule-delivery.ts",
+        "sha": "b289c1805a0cce9cd430d943e405d1eee9514e0f"
+      },
+      {
+        "path": "apps/cli/src/connectors/session-runtime.ts",
+        "sha": "46fffbb9233f3b5183e22324085703ef8b039f66"
+      },
+      {
+        "path": "apps/cli/src/connectors/task-updates.ts",
+        "sha": "0cb22dc0f6523ce6baae3513bde10239e833e177"
+      },
+      {
+        "path": "apps/cli/src/connectors/thread-bindings.ts",
+        "sha": "3539fe6cc5dae5308f3047b9958362fc222a5fa0"
+      },
+      {
+        "path": "apps/cli/src/connectors/types.ts",
+        "sha": "8e2d27f0ee800789a2fa687c64dffd516131d040"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T14:27:36Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 70,
+      "egress": 100,
+      "instruction_hygiene": 15
+    },
+    "red_flags": [
+      "injection",
+      "instruction-credential-request"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "instruction_hygiene",
+      "rule": "tool-poisoning-marker",
+      "severe": false,
+      "file": ".clinerules/workflows/git-branch-analysis.md",
+      "line": 7,
+      "snippet": "<important>Do not return any text or conversation other than what is necessary to run these commands</important>",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "injection",
+      "severe": true,
+      "file": "apps/cli/README.md",
+      "line": 250,
+      "snippet": "| `-s, --system <prompt>` | Override the system prompt |",
+      "deduction": 30
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "credential-read",
+      "severe": false,
+      "file": "apps/vscode/scripts/package-standalone.mjs",
+      "line": 174,
+      "snippet": "\".npmrc\",",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "agent-hook-command",
+      "severe": false,
+      "file": ".claude/settings.json",
+      "line": 3,
+      "snippet": "\"SessionStart\": [",
+      "deduction": 15
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": false,
+      "file": ".husky/pre-commit",
+      "line": 1,
+      "snippet": "if ! command -v gitleaks >/dev/null 2>&1; then",
+      "deduction": 5
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "instruction-credential-request",
+      "severe": true,
+      "file": ".cline/skills/publish-cli/SKILL.md",
+      "line": 184,
+      "snippet": "Known local-only test failure: `src/commands/distribution-package.test.ts > rejects direct source package packing by default` will fail on machines that have `i",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 401,
+    "failed": 0,
+    "ms": 141787
+  },
+  "duration_ms": 23530
+}

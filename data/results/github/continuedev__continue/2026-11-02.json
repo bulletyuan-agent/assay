@@ -1,0 +1,1781 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "continuedev/continue",
+    "url": "https://github.com/continuedev/continue",
+    "name": "continue"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:55:01.800Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+    "files_scanned": 400,
+    "candidates": 1693,
+    "excluded_non_shipped": 570,
+    "coverage": 0.24,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".claude/skills/docs-style/SKILL.md",
+        "sha": "d65086856cdf29fe7e1f163f92c9a27d2ca1b90e"
+      },
+      {
+        "path": ".github/workflows/main.yaml",
+        "sha": "068e10a846a408c6c81e691d90b5dcd9b538671f"
+      },
+      {
+        "path": "scripts/install-dependencies.sh",
+        "sha": "8832fc44b61e6d3f4603266eadbc96bfb18e16c2"
+      },
+      {
+        "path": ".husky/pre-commit",
+        "sha": "2312dc587f61186ccf0d627d678d851b9eef7b82"
+      },
+      {
+        "path": ".vscode/extensions.json",
+        "sha": "2b440ff66d5bcfca75a9f2730b1a5e15e139a016"
+      },
+      {
+        "path": ".vscode/launch.json",
+        "sha": "7072874e07f737f0e8f841febe58ff9fe07802d6"
+      },
+      {
+        "path": ".vscode/settings.json",
+        "sha": "0e2cdfd7e2749f18b2c186e1897caabf8da89d98"
+      },
+      {
+        "path": ".vscode/tasks.json",
+        "sha": "a685e6b8a8f2577d787bf7be72c806cb40aeb4e0"
+      },
+      {
+        "path": ".github/workflows/auto-assign-issue.yaml",
+        "sha": "6643520da3a9c4cebeb1ca01f5283e915dd1e9d8"
+      },
+      {
+        "path": ".github/workflows/auto-fix-failed-tests.yml",
+        "sha": "fdfa8b95bd31521ff26a6eef64fc99896da96a25"
+      },
+      {
+        "path": ".github/workflows/auto-release.yml",
+        "sha": "8d0f2180b6ca5b1bcc7a91b08128cb529b3c6231"
+      },
+      {
+        "path": ".github/workflows/cla.yaml",
+        "sha": "0596edd07a307aa7d7ab1ab0820bc1e9cad0b2cd"
+      },
+      {
+        "path": ".github/workflows/cli-pr-checks.yml",
+        "sha": "f60a028821a20c22707b3685eb07cbf549e1012e"
+      },
+      {
+        "path": ".github/workflows/continue-agents.yml",
+        "sha": "fd3fc42976ced6910ad62e17c89d1dd9ec79b25f"
+      },
+      {
+        "path": ".github/workflows/delete-stale-branches.yaml",
+        "sha": "08ed2628c4742f2c5ca250a5b53bdf7e8af5df3c"
+      },
+      {
+        "path": ".github/workflows/docs-gh-pages.yml",
+        "sha": "7a01eaefa7d8dd08f13f29836308c7c3195d677a"
+      },
+      {
+        "path": ".github/workflows/jetbrains-release.yaml",
+        "sha": "d87faac29a458a3ed98edaf978b27289c5edf0ef"
+      },
+      {
+        "path": ".github/workflows/label-merged-prs.yml",
+        "sha": "92a2357e02540137d9df02b3a9c5e0ac8a9db3fc"
+      },
+      {
+        "path": ".github/workflows/main-build.yaml",
+        "sha": "161ee458eeb0b75f6fb05c19cf54a44c19446fa7"
+      },
+      {
+        "path": ".github/workflows/metrics.yaml",
+        "sha": "6b0708af34acd41db0a10ae44e923bdd83265e16"
+      },
+      {
+        "path": ".github/workflows/pr-build-upload-vsix.yaml",
+        "sha": "9a58b37673c1d86b323ecf6830dcebd4f6a7e6c7"
+      },
+      {
+        "path": ".github/workflows/pr-checks.yaml",
+        "sha": "ac8c40685cc2793b5d5dc3ea0740bd8c37d50d60"
+      },
+      {
+        "path": ".github/workflows/preview.yaml",
+        "sha": "dc1eb00798e4b213349967ba7f2036ec422e49cd"
+      },
+      {
+        "path": ".github/workflows/release-config-yaml.yml",
+        "sha": "42e08e3af4ea45343477f4fb95327b5bd83e85c2"
+      },
+      {
+        "path": ".github/workflows/release-fetch.yml",
+        "sha": "f7b8de1b3a9a8e342a93177a48bd443db2ddb110"
+      },
+      {
+        "path": ".github/workflows/release-llm-info.yml",
+        "sha": "eb2199c4301f5571ce0760a13dd3f136b15a7c46"
+      },
+      {
+        "path": ".github/workflows/release-openai-adapters.yml",
+        "sha": "61d529ed4b13836815c03fdc5301ca9796a1688e"
+      },
+      {
+        "path": ".github/workflows/reusable-release.yml",
+        "sha": "5c0efb25c03c90dc1e2cf575b634495765b4b05d"
+      },
+      {
+        "path": ".github/workflows/run-continue-agent.yml",
+        "sha": "d208c09d6841cb5ccce774e6a525a228642e3795"
+      },
+      {
+        "path": ".github/workflows/similar-issues.yml",
+        "sha": "4aa398bf7deb67e313b1d0825593b7a1e3b87242"
+      },
+      {
+        "path": ".github/workflows/snyk-agent.yaml",
+        "sha": "60bc09cab7a05053cc6b316c1c84f41fb22563d6"
+      },
+      {
+        "path": ".github/workflows/stable-release.yml",
+        "sha": "7f18411b4c02e5194d6ffb43737a2c9efe98134a"
+      },
+      {
+        "path": ".github/workflows/stale-issue-helper.yaml",
+        "sha": "e2a048ec26a3dd99b18ac0388df6132a62139468"
+      },
+      {
+        "path": ".github/workflows/submit-github-dependency-graph.yml",
+        "sha": "d1f28e611a6f48a0236321839ec031cc4dcc2792"
+      },
+      {
+        "path": ".github/workflows/tidy-up-codebase.yml",
+        "sha": "bd490022a5587d283e1c35a313d3f0214c37e344"
+      },
+      {
+        "path": ".github/workflows/upload-runloop-blueprint.yml",
+        "sha": "b4738f84e8b08a430a4dd2b16340fca99e9a8faf"
+      },
+      {
+        "path": ".github/workflows/vscode-prerelease.yml",
+        "sha": "2cf24b42109c8267a48dd9e2cebc3ddc65a5a47d"
+      },
+      {
+        "path": ".github/workflows/vscode-version-bump.yml",
+        "sha": "6272d8c3b4720adff2b602cb57182905adbe49a6"
+      },
+      {
+        "path": "core/.vscode/launch.json",
+        "sha": "939af44f834d1adf918f2dbf147d82442364615c"
+      },
+      {
+        "path": "sync/.vscode/settings.json",
+        "sha": "0ee06669b857a35bddfa1f8d787bfff62ff25a82"
+      },
+      {
+        "path": "extensions/cli/.github/workflows/release.yml",
+        "sha": "47368928d4a175ebd90f19ac24c486428d5b095c"
+      },
+      {
+        "path": "extensions/cli/scripts/install.sh",
+        "sha": "c531d69e955cedd7b9369ed2502fca7f85045b11"
+      },
+      {
+        "path": "extensions/vscode/scripts/install-copy-nodemodule.js",
+        "sha": "c5a51f073eb1ed799e5b4adf67840380d6eadb32"
+      },
+      {
+        "path": "packages/continue-sdk/python/api/setup.py",
+        "sha": "8a59f05f44dbd11413c112ab1308525b5260d72c"
+      },
+      {
+        "path": "scripts/util/index.js",
+        "sha": "3845574927528e03f69f929271ae8aa5ea085593"
+      },
+      {
+        "path": "skills/cn-check/SKILL.md",
+        "sha": "98b7ab9c1c7f85c8859e77238206d33820eb5934"
+      },
+      {
+        "path": "package.json",
+        "sha": "e23a05fc2e37d23f44d56ce4e9565aa9d2602387"
+      },
+      {
+        "path": "binary/src/index.ts",
+        "sha": "dce9a25ab2b8fb39d184cf063b0911c806c4eb39"
+      },
+      {
+        "path": "core/context/index.ts",
+        "sha": "cde6b94408de7d34118e1ef5188f83a92130436c"
+      },
+      {
+        "path": "core/llm/index.ts",
+        "sha": "1af44b2561463541fd6b9e0429979bfb110deb7f"
+      },
+      {
+        "path": "core/promptFiles/index.ts",
+        "sha": "58be45fe8359835282454d40d256c35d5c2f2b76"
+      },
+      {
+        "path": "core/protocol/index.ts",
+        "sha": "522b52934a3db0c297af951d9ceb4f11d99f7e73"
+      },
+      {
+        "path": "core/tools/index.ts",
+        "sha": "f03eca03161fb3cb879120e5f63d14ffd68b8958"
+      },
+      {
+        "path": "core/util/index.ts",
+        "sha": "76b319bddf0209add99e012ffcf3d16f956f5a4c"
+      },
+      {
+        "path": "gui/src/App.tsx",
+        "sha": "c237b9327eea6ade300e2952746705285b220c4a"
+      },
+      {
+        "path": "gui/src/main.tsx",
+        "sha": "abe17875ad49e04a89f1fb915a8843456501a31b"
+      },
+      {
+        "path": "packages/continue-sdk/python/api/.github/workflows/python.yml",
+        "sha": "60073bfad57ea83a92cd5df53ba5577b62067961"
+      },
+      {
+        "path": "scripts/analyze-file-hotspots.js",
+        "sha": "484b1e9dc4ca30e9cdc6f0c25ef45e97bc74d1b9"
+      },
+      {
+        "path": "scripts/build-packages.js",
+        "sha": "837d91926f40cd84c731a5827accf85f72eee16f"
+      },
+      {
+        "path": "scripts/create-docker-ssh-container.sh",
+        "sha": "ecdbf21ee739990c71b7290267279e3b8115272e"
+      },
+      {
+        "path": "scripts/uninstall.js",
+        "sha": "15c1edf7334a09156985b819002f897ae8ed234a"
+      },
+      {
+        "path": "binary/package.json",
+        "sha": "167450f42c4608f4cab914907ff4a1f658723520"
+      },
+      {
+        "path": "core/package.json",
+        "sha": "b8441cc339c409620cc5a955fcf034dcc9e3a03e"
+      },
+      {
+        "path": "docs-site/package.json",
+        "sha": "72d0fe2f72db16caed2181d1a73e2a4b4eb25a4a"
+      },
+      {
+        "path": "gui/package.json",
+        "sha": "87bc397af2eef0e959a8d6d971037b1472acf120"
+      },
+      {
+        "path": ".eslintrc.shared.json",
+        "sha": "69d4e10879390032484d19e0944d473d89a9ff94"
+      },
+      {
+        "path": "BUILD_DEPENDENCIES.md",
+        "sha": "3bd4600cbf49cf55e11bf4d8fdd91150e0037108"
+      },
+      {
+        "path": "CLA.md",
+        "sha": "a23e12a1ea0ad4a5685bfa521c0b60ed6699a542"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "32b7812653f04426416a04c3b4c9d21009f5938e"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "dae75a8523ec3e0a06b9f07fbc668d51e900c4af"
+      },
+      {
+        "path": "core/autocomplete/postprocessing/index.ts",
+        "sha": "6ce3742d6a2af0216a2d6a9f6b4708b565f40a85"
+      },
+      {
+        "path": "core/autocomplete/prefiltering/index.ts",
+        "sha": "b322b9e223c653a9cbf8bb7ea6676e07484162ca"
+      },
+      {
+        "path": "core/autocomplete/snippets/index.ts",
+        "sha": "2a9e1a7cedb7ba68164528b6d792ee70cdd01708"
+      },
+      {
+        "path": "core/autocomplete/templating/index.ts",
+        "sha": "3ebf29b71be8ab31a3b3f6be91ef096185396b98"
+      },
+      {
+        "path": "core/config/markdown/index.ts",
+        "sha": "98c94e77f8ce6571b27ffb3aae6a37985efaae07"
+      },
+      {
+        "path": "core/context/providers/index.ts",
+        "sha": "d7875f6ae2fc059f3b07d0d02f034c554f094eeb"
+      },
+      {
+        "path": "core/llm/llms/index.ts",
+        "sha": "4978f0617f20a06c3c7932b257ad40ea880ad091"
+      },
+      {
+        "path": "core/protocol/messenger/index.ts",
+        "sha": "37079365321880e575f1011efd776f8e6fbdeda1"
+      },
+      {
+        "path": "core/tools/definitions/index.ts",
+        "sha": "bfc78ac3d2e6f2ef39fd5439b3775a317bad12d1"
+      },
+      {
+        "path": "core/tools/implementations/index.ts",
+        "sha": "c0ef15be9c9a8f2ede31e9889015def7d34a8a4c"
+      },
+      {
+        "path": "extensions/cli/src/index.ts",
+        "sha": "422674bd6a835b0b1eb98c74d4a40c83af86c3ed"
+      },
+      {
+        "path": "gui/src/components/index.ts",
+        "sha": "6320a2c3e3237037de2320cf9765bf681d5191da"
+      },
+      {
+        "path": "gui/src/util/index.ts",
+        "sha": "81a667f6588907f67458fddbecc6b60a0d4171cd"
+      },
+      {
+        "path": "packages/config-types/src/index.ts",
+        "sha": "c73c4f5142b9c5d97466a0f7ba399237eadfa200"
+      },
+      {
+        "path": "packages/config-yaml/src/cli.ts",
+        "sha": "24ac2f6dfa27f8cf53ed53066c4fad0b4683b239"
+      },
+      {
+        "path": "packages/config-yaml/src/index.ts",
+        "sha": "b14b455a70eb901799d7f13e4c9c54a8e5723bc4"
+      },
+      {
+        "path": "packages/fetch/src/index.ts",
+        "sha": "6cb7f55df8e57b8be6c3a9f4de58821ac18c1c44"
+      },
+      {
+        "path": "packages/llm-info/src/index.ts",
+        "sha": "0ea14a5ab47e7273c14aff41589dac360c3ca691"
+      },
+      {
+        "path": "packages/openai-adapters/src/index.ts",
+        "sha": "52fb2d33a0cc38de86c57201eb59535f9eec083f"
+      },
+      {
+        "path": "packages/terminal-security/src/index.ts",
+        "sha": "981c62a0eb72804b77ee7b732c684970d64c3102"
+      },
+      {
+        "path": "README.md",
+        "sha": "66477d92b4cdb8772a74e28852cef31cd37019e4"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "81efb94b60034379788a67ce110cbfbbd8288897"
+      },
+      {
+        "path": "TESTING.md",
+        "sha": "96fe5e6c284278153d0d5b0deeab2767d7cf94d5"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "0967ef424bce6791893e9a57bb952f80fd536e93"
+      },
+      {
+        "path": "worktree-config.yaml",
+        "sha": "0177915fbe804b1230de3106fba600c5e7955b06"
+      },
+      {
+        "path": "core/vendor/package.json",
+        "sha": "768424ac7060e2e1383a1cd2528006f1d11186b9"
+      },
+      {
+        "path": "extensions/cli/package.json",
+        "sha": "2ee1c82b09a34ba0d78f296f3246256dc9ab7231"
+      },
+      {
+        "path": "extensions/vscode/package.json",
+        "sha": "0030d3ea59c17585401ca1303886fd8424419fd3"
+      },
+      {
+        "path": "manual-testing-sandbox/nested-folder/package.json",
+        "sha": "5bcec0c8fca776a8e6b998ae6690c3d019fad7dd"
+      },
+      {
+        "path": "packages/config-types/package.json",
+        "sha": "cc6ffda42ccb40ef78627396d38ca75ceceac5ae"
+      },
+      {
+        "path": "packages/config-yaml/package.json",
+        "sha": "716251b44b0a40adeb639d0aac603fc39c161234"
+      },
+      {
+        "path": "packages/continue-sdk/package.json",
+        "sha": "a5178dc59d22332e0110b7975e26e29c7a5a369e"
+      },
+      {
+        "path": "packages/fetch/package.json",
+        "sha": "c861d14d41cc50c6803c8831e67bb307ad81bd82"
+      },
+      {
+        "path": "packages/llm-info/package.json",
+        "sha": "d64958c433e5c70e2583295537c32b6040fc7dc3"
+      },
+      {
+        "path": "packages/openai-adapters/package.json",
+        "sha": "bfc5cda47be1efba30c4c46f3a4bf9d104f12357"
+      },
+      {
+        "path": "packages/terminal-security/package.json",
+        "sha": "459560acfc4d69ec533feed93e7b48952f5ad990"
+      },
+      {
+        "path": ".continue/environment.json",
+        "sha": "8157e98b73ec606f117e66763080e8ea547b0059"
+      },
+      {
+        "path": "actions/README.md",
+        "sha": "1625bee4121990eeb859ff211c472fc1935c51c5"
+      },
+      {
+        "path": "binary/build.js",
+        "sha": "a87139611954a1f000031e28ce1250aab59419a8"
+      },
+      {
+        "path": "binary/core-dev-server.js",
+        "sha": "07d38a5f4d3776c10a7cd7c5c6922ad2ddb32cb2"
+      },
+      {
+        "path": "binary/importMetaUrl.js",
+        "sha": "0508c8d33f73244862d9c758d8d2bd674ebdde70"
+      },
+      {
+        "path": "binary/jest.config.js",
+        "sha": "e5d833a48bc6897f54e59bdf9b6b2b0456da7a31"
+      },
+      {
+        "path": "binary/prompt-logs.js",
+        "sha": "db75109467c39172eb4434cea6056e29b1f0b1f5"
+      },
+      {
+        "path": "binary/README.md",
+        "sha": "fcc2a7cc9f0b1988830271332fee443790012753"
+      },
+      {
+        "path": "binary/tsconfig.json",
+        "sha": "9b3259730ac51724595db775f9245415a49b1ae1"
+      },
+      {
+        "path": "core/.eslintrc.json",
+        "sha": "e028c1460cc453dfaf19713d65185860238b8818"
+      },
+      {
+        "path": "core/autocomplete/context/ranking/index.ts",
+        "sha": "1064fd2436631df35748cf6af0b5553513ed7b8b"
+      },
+      {
+        "path": "core/commands/slash/built-in-legacy/index.ts",
+        "sha": "fcefc66dceddfcec862908d04dc92426990eddc8"
+      },
+      {
+        "path": "core/context/providers/JiraIssuesContextProvider/index.ts",
+        "sha": "c8ae7bd18d613b608f8d495ccecad8cc95cd724f"
+      },
+      {
+        "path": "core/core.ts",
+        "sha": "daba8ffaac549fd509c321c3ebae9a6b018b6dfa"
+      },
+      {
+        "path": "core/index.d.ts",
+        "sha": "bec3e0e0ff851a0ed656286c21e324a8d4d814ee"
+      },
+      {
+        "path": "core/jest.config.js",
+        "sha": "2fcbc3c5c0e1d14c5338f2b2ac7b52cb2a2ebc3c"
+      },
+      {
+        "path": "core/rules.md",
+        "sha": "57c897d3f39cb9fe6454721c2510c6296fa77ad5"
+      },
+      {
+        "path": "core/tools/systemMessageTools/toolCodeblocks/index.ts",
+        "sha": "3acddb70f00740354217948a8f86a3503c46ed2d"
+      },
+      {
+        "path": "core/tsconfig.json",
+        "sha": "f1f52fa87fc7b6c2c4128d79a93501977820d8ee"
+      },
+      {
+        "path": "core/tsconfig.npm.json",
+        "sha": "153e1af184d9fdcf36663a04f70bcc71a24f73ad"
+      },
+      {
+        "path": "core/vitest.config.ts",
+        "sha": "8657b43d6ea905006129d7ef701c704bf796e2cb"
+      },
+      {
+        "path": "docs-site/next-env.d.ts",
+        "sha": "9edff1c7cacb3bfac9a1eadcf6f51eaa99565e38"
+      },
+      {
+        "path": "docs-site/next.config.js",
+        "sha": "8f0641ea978db6fff14395739da87f87925033cf"
+      },
+      {
+        "path": "docs-site/postcss.config.js",
+        "sha": "12a703d900da8159c30e75acbd2c4d87ae177f62"
+      },
+      {
+        "path": "docs-site/tailwind.config.ts",
+        "sha": "375aaa087fac1cb50100331a66df6d304107eec7"
+      },
+      {
+        "path": "docs-site/tsconfig.json",
+        "sha": "f6e1f0958eebbc89259737c3b6f4eaf8b519e722"
+      },
+      {
+        "path": "extensions/cli/src/permissions/index.ts",
+        "sha": "07ef029698da4a58f9370029ab28289bd8abdb66"
+      },
+      {
+        "path": "extensions/cli/src/services/index.ts",
+        "sha": "97cce5dda2bdfa3f4c9bc5c0096ce6aee4cebd30"
+      },
+      {
+        "path": "extensions/cli/src/subagent/index.ts",
+        "sha": "29f89fadc83053b053eb4e42fda0dd78c5e4790e"
+      },
+      {
+        "path": "extensions/cli/src/tools/index.tsx",
+        "sha": "ff87aae193fe0db4918a866d4796602b31ae3df1"
+      },
+      {
+        "path": "extensions/cli/src/ui/index.ts",
+        "sha": "45e81e7abb9380f56852c0ea7532a1a3092ce646"
+      },
+      {
+        "path": "extensions/cli/src/util/cli.ts",
+        "sha": "563b9405777d5e2452a6923712d4bbdf7c55d893"
+      },
+      {
+        "path": "extensions/cli/src/utils/index.ts",
+        "sha": "6e25560eb851befea6c7d68cfa52dc416a71741b"
+      },
+      {
+        "path": "extensions/vscode/src/apply/index.ts",
+        "sha": "43b6ac276139619d5067055a2190fbed221b6860"
+      },
+      {
+        "path": "gui/.eslintrc.json",
+        "sha": "afdd06ee908bbabb8e415c6b12ed76b62e8b14d0"
+      },
+      {
+        "path": "gui/postcss.config.cjs",
+        "sha": "12a703d900da8159c30e75acbd2c4d87ae177f62"
+      },
+      {
+        "path": "gui/README.md",
+        "sha": "006b6b11ca1b75a4c515358a656407fb5cdd222d"
+      },
+      {
+        "path": "gui/rules.md",
+        "sha": "7cec74c8260590a66094fd308f7f107298b6e6c5"
+      },
+      {
+        "path": "gui/src/components/AssistantAndOrgListbox/index.tsx",
+        "sha": "f1383973bc7a040b0905328a3d99901a18e238ff"
+      },
+      {
+        "path": "gui/src/components/ConversationStarters/index.ts",
+        "sha": "c7a6af018107ff94918bf1628e59c293be6bcb8a"
+      },
+      {
+        "path": "gui/src/components/dialogs/index.tsx",
+        "sha": "b5897795fd64ba6c6dcb05f37bc8028e8e74c05a"
+      },
+      {
+        "path": "gui/src/components/History/index.tsx",
+        "sha": "c206778e5d9ca115451ba5c9e3cb4df098c564ff"
+      },
+      {
+        "path": "gui/src/components/ModeSelect/index.ts",
+        "sha": "82bc8634adfa609b7983d935ba4a6078e3d13482"
+      },
+      {
+        "path": "gui/src/components/OnboardingCard/index.ts",
+        "sha": "d3db336fe2f579d9957b1aa06b4bf9b8a9674f78"
+      },
+      {
+        "path": "gui/src/components/StepContainer/index.ts",
+        "sha": "41d4fa945a4419cfdf0b1a61f3cf3c41f8887444"
+      },
+      {
+        "path": "gui/src/components/StyledMarkdownPreview/index.tsx",
+        "sha": "2ff217a6147dd5fe949d9906a2ca1f76c4028f28"
+      },
+      {
+        "path": "gui/src/components/ui/index.ts",
+        "sha": "8eea8763a0a36a02416c7d3b5a7812fb79fc254b"
+      },
+      {
+        "path": "gui/src/pages/config/index.tsx",
+        "sha": "07517ecb28b1db8831f776583dda1c72e79ebe21"
+      },
+      {
+        "path": "gui/src/pages/gui/index.tsx",
+        "sha": "d74b32c59c7f45c12c54728a35b93f052f3f9128"
+      },
+      {
+        "path": "gui/src/pages/history/index.tsx",
+        "sha": "86950ff24bb6e64740cc646a2974aef3330dd4dc"
+      },
+      {
+        "path": "gui/src/redux/selectors/index.ts",
+        "sha": "99f6f659fbb84ed2d367225cd81d39772696af3c"
+      },
+      {
+        "path": "gui/src/redux/util/index.ts",
+        "sha": "ad75f9cb56c517fd82325bac26aa99307f8c9333"
+      },
+      {
+        "path": "gui/tailwind.config.cjs",
+        "sha": "eb7fabb0b7b8d96c028121ab92898bad723b6803"
+      },
+      {
+        "path": "gui/tsconfig.json",
+        "sha": "d41a6b9c311c24a5a0a598acca0ae875633b1352"
+      },
+      {
+        "path": "gui/tsconfig.node.json",
+        "sha": "9d31e2aed93c876bc048cf2f863cb2a847c901e8"
+      },
+      {
+        "path": "gui/vite.config.ts",
+        "sha": "f98035c7bbbf06818d881e728d42ffe7cb8101bc"
+      },
+      {
+        "path": "manual-testing-sandbox/AdvancedPage.tsx",
+        "sha": "e75004bb115622a2d3b999e864ec3b9c58f90148"
+      },
+      {
+        "path": "manual-testing-sandbox/claude_desktop_config.json",
+        "sha": "b397e36fd49ab3e87ea36763f4a0c34899e2a290"
+      },
+      {
+        "path": "manual-testing-sandbox/config.yaml",
+        "sha": "83bb21c526348ce9ece2220b44d88f86e091aba2"
+      },
+      {
+        "path": "manual-testing-sandbox/data.json",
+        "sha": "6003f4bc2879b4dd46a3b6708122eb6effdef859"
+      },
+      {
+        "path": "manual-testing-sandbox/readme.md",
+        "sha": "461ce38b774c6e57c2f2b7ed309d3fc34f47e644"
+      },
+      {
+        "path": "manual-testing-sandbox/requirements.txt",
+        "sha": "787755f1d4bc4a193582031800b8b76b5d388348"
+      },
+      {
+        "path": "manual-testing-sandbox/test.js",
+        "sha": "d2920d6af415acb8b3ba008c6932fb37fbb5a603"
+      },
+      {
+        "path": "manual-testing-sandbox/test.py",
+        "sha": "df0f203cc50b94f3f62c8977a06b1cca6eee3c67"
+      },
+      {
+        "path": "manual-testing-sandbox/test.rb",
+        "sha": "8ec83d1ba1ca55c81054401fec4fab5df2b5b841"
+      },
+      {
+        "path": "manual-testing-sandbox/test.sh",
+        "sha": "fb2ec6dc4974a505dd41acacfa162237b726aaad"
+      },
+      {
+        "path": "manual-testing-sandbox/test.ts",
+        "sha": "0f25987c2149b54789643eed3a7eec78941d0bbe"
+      },
+      {
+        "path": "packages/config-yaml/src/interfaces/index.ts",
+        "sha": "92076a9d72b1afa469c47b748898688f8f73eca8"
+      },
+      {
+        "path": "packages/config-yaml/src/markdown/index.ts",
+        "sha": "6414936f598bbeef31c9ea5c46460743105c4619"
+      },
+      {
+        "path": "packages/config-yaml/src/schemas/index.ts",
+        "sha": "d8af2456e56171db36c227b9fbe25cc05437ca16"
+      },
+      {
+        "path": "packages/continue-sdk/typescript/src/index.ts",
+        "sha": "adcacec55a80b9b559333f629352c449c041b53b"
+      },
+      {
+        "path": "packages/shared-release.config.js",
+        "sha": "49373804c4e3c71819bf076cda936682bc18e75c"
+      },
+      {
+        "path": "binary/pkgJson/darwin-arm64/package.json",
+        "sha": "885f2f215479f2352685d0318745f134308d2f69"
+      },
+      {
+        "path": "binary/pkgJson/darwin-x64/package.json",
+        "sha": "eba774c718a2a549720bf69ec4a66d4e96e5dbf3"
+      },
+      {
+        "path": "binary/pkgJson/linux-arm64/package.json",
+        "sha": "a3db5104088c9dd2b6c0eafd32b9e7837f88645d"
+      },
+      {
+        "path": "binary/pkgJson/linux-x64/package.json",
+        "sha": "f23f4ce494ad677849a024ca3657e5a84ce6eb2d"
+      },
+      {
+        "path": "binary/pkgJson/win32-arm64/package.json",
+        "sha": "6134fb8feb97f18e927b2ae1b5350dc3b69dd20a"
+      },
+      {
+        "path": "binary/pkgJson/win32-x64/package.json",
+        "sha": "be714529abd316a0692dd62f5747440114f34a23"
+      },
+      {
+        "path": "packages/continue-sdk/typescript/package.json",
+        "sha": "75b4bfec35fa031752519e8d4bb4ed231ae9fbc5"
+      },
+      {
+        "path": ".continue/agents/breaking-change-detector.md",
+        "sha": "c87b28555e8c4bd0f59751fdfeb1fb47db7c85dc"
+      },
+      {
+        "path": ".continue/agents/dependency-security-review.md",
+        "sha": "4ff0825dc542faad335436128be93f8999945fad"
+      },
+      {
+        "path": ".continue/agents/error-message-quality.md",
+        "sha": "7afc357160213ca3dd39b2c937344d695f657cc4"
+      },
+      {
+        "path": ".continue/agents/input-validation.md",
+        "sha": "9bdfbc5af536db32bfe752f724bb1c437e44ac0b"
+      },
+      {
+        "path": ".continue/agents/test-coverage.md",
+        "sha": "e8fb3ca3fa21c7d96061492c0e5b7a3b3c706b56"
+      },
+      {
+        "path": ".continue/checks/anti-slop.md",
+        "sha": "3d72c4260dff39c6ba496789a61d2c7369a6eb14"
+      },
+      {
+        "path": ".continue/checks/react-best-practices.md",
+        "sha": "24c6dcd1bf0528df0a5f067cdd4c464270833679"
+      },
+      {
+        "path": ".continue/checks/security-audit.md",
+        "sha": "6fddd39fb719793937d56044ed6a9206899b06e9"
+      },
+      {
+        "path": ".continue/checks/setup-scripts.md",
+        "sha": "ac232fe859e299e2be054ed27a7b80643fe25bd3"
+      },
+      {
+        "path": ".continue/checks/stale-comments.md",
+        "sha": "0a06e617f741c8bea9a7c3b0f2987e045a959fc2"
+      },
+      {
+        "path": ".continue/checks/update-agents-md.md",
+        "sha": "fd38abd0964d914d52dc5ad33b6e390972260eb5"
+      },
+      {
+        "path": ".continue/checks/update-continue-docs.md",
+        "sha": "58b8f318978844ff2df2dfc5a09d534fc8233002"
+      },
+      {
+        "path": ".continue/prompts/sub-agent-background.md",
+        "sha": "031d8490d680df704948346484684e2b6964c32f"
+      },
+      {
+        "path": ".continue/prompts/sub-agent-foreground.md",
+        "sha": "aa8c854b4da3653e07e0680306bf440a94331e47"
+      },
+      {
+        "path": ".continue/rules/bigger-picture-description-rules.md",
+        "sha": "b1a759abebe53767a8abc0d960385a7efb8050a6"
+      },
+      {
+        "path": ".continue/rules/colors.md",
+        "sha": "0d031cbd0c0c37deec4d3b9aeca8416eaa5f4dad"
+      },
+      {
+        "path": ".continue/rules/continue-specificity.md",
+        "sha": "4579e24441b40b73b1c2c495ad0ee29e78382ab5"
+      },
+      {
+        "path": ".continue/rules/css-units.md",
+        "sha": "a270a383ddc1f2ea4b771050e3c6c959a8e84be3"
+      },
+      {
+        "path": ".continue/rules/dev-data-guide.md",
+        "sha": "7321b93c0892fbb017c89af24b27bc089732d1c4"
+      },
+      {
+        "path": ".continue/rules/documentation-description-rule.md",
+        "sha": "17f62d2d0c236f223c16d402b4ecedc6c1dae9d2"
+      },
+      {
+        "path": ".continue/rules/documentation-standards.md",
+        "sha": "b93aefd71a9ed49f96277d266d8eff0dc47862cc"
+      },
+      {
+        "path": ".continue/rules/github-pr-documentation-updater.md",
+        "sha": "3560ccdad445fdc13a70b0255641a3cf69802d52"
+      },
+      {
+        "path": ".continue/rules/gui-link-opening.md",
+        "sha": "db791e67a9ad2803fa65a0ab7bc405aa27ea21d8"
+      },
+      {
+        "path": ".continue/rules/intellij-plugin-test-execution.md",
+        "sha": "8b35745a6d08f687463236e2b3f91dd874c85e52"
+      },
+      {
+        "path": ".continue/rules/llm-specificity.md",
+        "sha": "4ff15c9e7745fc4242a67f2e9c91d80a49d783d0"
+      },
+      {
+        "path": ".continue/rules/migrate-styled-components-to-tailwind.md",
+        "sha": "0432f9a8d2affc57cba2dba56284252a703e825a"
+      },
+      {
+        "path": ".continue/rules/mintlify-formatting.md",
+        "sha": "4df9bdb9146a30a20e42032ef0279ded3cf55969"
+      },
+      {
+        "path": ".continue/rules/navigating-responses.md",
+        "sha": "dadbd0f8078dd22d1bf8f00ba69fbf6b8426ee1e"
+      },
+      {
+        "path": ".continue/rules/new-protocol-message.md",
+        "sha": "b01961242d485aeb0680418aaeb12fd394e2b262"
+      },
+      {
+        "path": ".continue/rules/no-any-types.md",
+        "sha": "1ec5f4f3e56f14ab14ae5a496c300828d14129a3"
+      },
+      {
+        "path": ".continue/rules/overeager.md",
+        "sha": "729088aad979f051aa745e100582c0fe56af9ced"
+      },
+      {
+        "path": ".continue/rules/personality.md",
+        "sha": "c68d0e35cc2b568de364596d7dc723b6a68ba446"
+      },
+      {
+        "path": ".continue/rules/programming-principles.md",
+        "sha": "0485f4f68745a0cdf948379a22386c63e00982cb"
+      },
+      {
+        "path": ".continue/rules/pure-function-unit-tests.md",
+        "sha": "68a1ff9838db1067bf12e0242ac917565ace96df"
+      },
+      {
+        "path": ".continue/rules/test-running-guide.md",
+        "sha": "479185878084f5a926f018ac5e3736bf0a7d232d"
+      },
+      {
+        "path": ".continue/rules/typescript-enum-usage.md",
+        "sha": "34728c1d5af86e5cf8688ec01790287c7f55de06"
+      },
+      {
+        "path": ".continue/rules/unit-testing-rules.md",
+        "sha": "bd9fb0109c73b771b9d3b76bc08679e477cb253b"
+      },
+      {
+        "path": ".continue/rules/vs-code-commands-helper-functions.md",
+        "sha": "bf2e0a8da478b5679e31db623900ff97c6ee6af2"
+      },
+      {
+        "path": "actions/general-review/action.yml",
+        "sha": "109378e53c2cff95ef694b9935efbec0dc4b67f3"
+      },
+      {
+        "path": "binary/src/IpcIde.ts",
+        "sha": "5c9ad1afe17b4a965ffc9e1b434254110ba58c1f"
+      },
+      {
+        "path": "binary/src/IpcMessenger.ts",
+        "sha": "b92a8e6a2381472e36277f78c3a6ff670cf11010"
+      },
+      {
+        "path": "binary/src/logging.ts",
+        "sha": "b6dbfba2cea00bfa5799c7c9cbc098c0349d36b8"
+      },
+      {
+        "path": "binary/src/TcpMessenger.ts",
+        "sha": "907e32ed7532d6311e7ccfc23de958aab57f5c3a"
+      },
+      {
+        "path": "binary/utils/bundle-binary.js",
+        "sha": "16bfe01b2453e0cc5af3bbbf467ffa6456bad2dc"
+      },
+      {
+        "path": "binary/utils/ripgrep.js",
+        "sha": "725c4d8fe0c5c0626b736dfb6139fe8867133745"
+      },
+      {
+        "path": "binary/utils/targets.js",
+        "sha": "de2aa8ded27598a06ab4d3058b9eaf99d898f566"
+      },
+      {
+        "path": "core/autocomplete/CompletionProvider.ts",
+        "sha": "17e03c29f6c3a4cdb416d889512c276faa22a67d"
+      },
+      {
+        "path": "core/autocomplete/types.ts",
+        "sha": "23f7625566976c9188ea4ebc93fe92bd440d8a1d"
+      },
+      {
+        "path": "core/codeRenderer/CodeRenderer.ts",
+        "sha": "c09b1ef51f709e50d1282f5d720e6fdc66156cf9"
+      },
+      {
+        "path": "core/commands/util.ts",
+        "sha": "ce234919f0e2fd8d3e02659892e89bf29077ffd9"
+      },
+      {
+        "path": "core/commands/util.vitest.ts",
+        "sha": "656903aa5a040b2912dbac382a3e7aa98a85fe14"
+      },
+      {
+        "path": "core/config/ConfigHandler.ts",
+        "sha": "6bebc42a18dac4ffd81cdcb287aff58958afc3a3"
+      },
+      {
+        "path": "core/config/ConfigHandler.vitest.ts",
+        "sha": "4bb2a7e85540c464b57af2d76aaa56ba0da556d5"
+      },
+      {
+        "path": "core/config/createNewAssistantFile.ts",
+        "sha": "acbc275eca7907161614f3affa53d3fa36c7fee5"
+      },
+      {
+        "path": "core/config/default.ts",
+        "sha": "98e76ec928653aea07220a0980a165b7f18b01b4"
+      },
+      {
+        "path": "core/config/getWorkspaceContinueRuleDotFiles.ts",
+        "sha": "52733e9d75c7407b8a3861ee7a6b837d0d529470"
+      },
+      {
+        "path": "core/config/load.ts",
+        "sha": "b85150752a2a6905203eec9076e439d315111693"
+      },
+      {
+        "path": "core/config/loadContextProviders.ts",
+        "sha": "e51051f0ad0fdf36318ebcbce94007964809e755"
+      },
+      {
+        "path": "core/config/loadContextProviders.vitest.ts",
+        "sha": "f6174372d54281a86bda9eeccfb21ade02b9b2c3"
+      },
+      {
+        "path": "core/config/loadLocalAssistants.ts",
+        "sha": "0f7e8e3ffc5f259cf67689310484f982268cbbba"
+      },
+      {
+        "path": "core/config/loadLocalAssistants.vitest.ts",
+        "sha": "316687db1d176d362e9bd40020ac53768c4490e5"
+      },
+      {
+        "path": "core/config/migrateSharedConfig.ts",
+        "sha": "8b18b41428db68d324dc0d5b10819b31f6e6bf7e"
+      },
+      {
+        "path": "core/config/onboarding.ts",
+        "sha": "c4fff708be0e2537e98e5c138a8702b56f862fc7"
+      },
+      {
+        "path": "core/config/ProfileLifecycleManager.ts",
+        "sha": "0f1ec02ae1b73716e0f3ca5446e8ae96e37f83c5"
+      },
+      {
+        "path": "core/config/selectedModels.ts",
+        "sha": "42b966cf7de5b3db96f913ad6ef5c86e1c9d2bf7"
+      },
+      {
+        "path": "core/config/sharedConfig.ts",
+        "sha": "87306a2aed86d95e453478d3591ce080b703b899"
+      },
+      {
+        "path": "core/config/types.ts",
+        "sha": "2500042e88706adfc09fdfc40cec33248ab7dae5"
+      },
+      {
+        "path": "core/config/util.ts",
+        "sha": "28536a06d37ce0d19067acf2c12d8deaad4efb98"
+      },
+      {
+        "path": "core/config/util.vitest.ts",
+        "sha": "5ea63c879528c0dab721b6fa0a971d43a76b8607"
+      },
+      {
+        "path": "core/config/validation.ts",
+        "sha": "228ee1c5ceb8072b1799fd295efc0b6b53ee3981"
+      },
+      {
+        "path": "core/continueServer/interface.ts",
+        "sha": "c6e7ceda20c190c44174aa618efa9285cb32e1b8"
+      },
+      {
+        "path": "core/data/devdataSqlite.ts",
+        "sha": "bf713ca6c08fee82d3b82cd1a37f1bc31d9ebd72"
+      },
+      {
+        "path": "core/data/log.ts",
+        "sha": "57e00e4bfbe856fd7b41c7464f15abb0ba57ff20"
+      },
+      {
+        "path": "core/data/log.vitest.ts",
+        "sha": "cbdd6610dcd02bd9e4f185f2ac0f33f6e85d40db"
+      },
+      {
+        "path": "core/deploy/constants.ts",
+        "sha": "9cfc053ef5d15cba9185813805bbf8f9d54f8cda"
+      },
+      {
+        "path": "core/diff/myers.ts",
+        "sha": "b39ddccf30bae13aa5b294575b437b33afb9f159"
+      },
+      {
+        "path": "core/diff/myers.vitest.ts",
+        "sha": "6c2168bc0a5fffb0329dc37e15be1067d5a5d316"
+      },
+      {
+        "path": "core/diff/streamDiff.ts",
+        "sha": "6f89116794c253fad0eee0f80f97ddf8b41992e6"
+      },
+      {
+        "path": "core/diff/streamDiff.vitest.ts",
+        "sha": "dbd329db1793dea85181b6d3a03b57dbeb4849e1"
+      },
+      {
+        "path": "core/diff/util.ts",
+        "sha": "571ede7b977c191aceb72fa9444520d4b0e32e72"
+      },
+      {
+        "path": "core/diff/util.vitest.ts",
+        "sha": "b94ab6317b2c9158076590df231a78a5ae30bbc0"
+      },
+      {
+        "path": "core/edit/applyAbortManager.ts",
+        "sha": "e811b5d4b117c998eaef0754df7b41c7977da15a"
+      },
+      {
+        "path": "core/edit/constants.ts",
+        "sha": "0fcc4853e276e24dc616110e67436b2846279227"
+      },
+      {
+        "path": "core/edit/recursiveStream.ts",
+        "sha": "5c9f2fef6a676b3f416a5f6f4ecbd2a694169f20"
+      },
+      {
+        "path": "core/edit/streamDiffLines.ts",
+        "sha": "50f26128d5028d58ce22c7880b5f14e4420d3b6a"
+      },
+      {
+        "path": "core/indexing/CodebaseIndexer.ts",
+        "sha": "c37992f98cd708e462ea3973727b212765d02254"
+      },
+      {
+        "path": "core/indexing/CodeSnippetsIndex.ts",
+        "sha": "d04eca7eeb44c6a1fa647071c611ddab9133cb4c"
+      },
+      {
+        "path": "core/indexing/continueignore.ts",
+        "sha": "a1beffb3816239a4822c153542279970fa07b2f6"
+      },
+      {
+        "path": "core/indexing/FullTextSearchCodebaseIndex.ts",
+        "sha": "8016d04d3eddc84ec48ffa517ba96b2caba9b14e"
+      },
+      {
+        "path": "core/indexing/ignore.ts",
+        "sha": "e431e24eed95fe16829215dee8bc46453d9062d9"
+      },
+      {
+        "path": "core/indexing/ignore.vitest.ts",
+        "sha": "565db5efd1552751593f7bdad769f445b50dd803"
+      },
+      {
+        "path": "core/indexing/LanceDbIndex.test.skip.ts",
+        "sha": "ad28b3456ea7755b8e241f90c62dfb46f6fc7eab"
+      },
+      {
+        "path": "core/indexing/LanceDbIndex.ts",
+        "sha": "e01518629a92ca8a345dcca0049fdfe36ab6e80a"
+      },
+      {
+        "path": "core/indexing/README.md",
+        "sha": "eaf137167154e93735da80aa77f4b7f1a984a8be"
+      },
+      {
+        "path": "core/indexing/refreshIndex.ts",
+        "sha": "42c4f0c8d21d869f42141ef7459e503c92438899"
+      },
+      {
+        "path": "core/indexing/shouldIgnore.ts",
+        "sha": "4898f045be8f6bd97e06caa341523e9b3cb5805b"
+      },
+      {
+        "path": "core/indexing/TestCodebaseIndex.ts",
+        "sha": "25773a0e22b243d86c5bc380492b3cd27facc682"
+      },
+      {
+        "path": "core/indexing/types.ts",
+        "sha": "bc4183aeae7eef9d39401297bf57a817bccf70f2"
+      },
+      {
+        "path": "core/indexing/utils.ts",
+        "sha": "40ef7c39acf89465b09718802e33b8ed134b700d"
+      },
+      {
+        "path": "core/indexing/walkDir.ts",
+        "sha": "94c147942b42a290a23d3275686e19a1e64017a2"
+      },
+      {
+        "path": "core/llm/asyncEncoder.ts",
+        "sha": "fab2e5a3cb5f6bb2b0022f7efacdc51ec93facfb"
+      },
+      {
+        "path": "core/llm/autodetect.ts",
+        "sha": "c8511554b8b98334d413a9193854e22c73efc89e"
+      },
+      {
+        "path": "core/llm/autodetect.vitest.ts",
+        "sha": "95a2f3d824e3b7c69fa7ba854406d6943adbc94e"
+      },
+      {
+        "path": "core/llm/constants.ts",
+        "sha": "2c59579dde3a87f8ebb38d05fe405a3716aa0206"
+      },
+      {
+        "path": "core/llm/countTokens.ts",
+        "sha": "b742d70b0f0493dca855ab3967e6f40a651a645e"
+      },
+      {
+        "path": "core/llm/defaultSystemMessages.ts",
+        "sha": "430a6777d84f94d955325d27048ca511b3e9ce7f"
+      },
+      {
+        "path": "core/llm/fetchModels.ts",
+        "sha": "88fe1946f9522c75211a1a6890ef7c61bfe8a095"
+      },
+      {
+        "path": "core/llm/getAdjustedTokenCount.ts",
+        "sha": "d700a8a762bbf55bbee542499d3328ea4eed3245"
+      },
+      {
+        "path": "core/llm/llamaTokenizer.d.ts",
+        "sha": "afba6c3d241d2a4fa55a36b8361bde957ad290dc"
+      },
+      {
+        "path": "core/llm/llamaTokenizerWorkerPool.mjs",
+        "sha": "a94e4a760f58899f51bc646f7d2186414ab4ef5e"
+      },
+      {
+        "path": "core/llm/llm-pre-fetch.vitest.ts",
+        "sha": "026b47c5caba4a34b288e45e3d1984980ffd8aac"
+      },
+      {
+        "path": "core/llm/logFormatter.ts",
+        "sha": "cae469f777b5cf82484a38e4cfc4b5085d4077dc"
+      },
+      {
+        "path": "core/llm/logger.ts",
+        "sha": "ae4699a45c0551760087533aab6fbac57bfdc198"
+      },
+      {
+        "path": "core/llm/messages.ts",
+        "sha": "1ddc83e56be283855b1e07c4f0cdd87fa48688ac"
+      },
+      {
+        "path": "core/llm/openaiTypeConverters.ts",
+        "sha": "fb4673e11be0d78111c2c4befbb52cf50201704b"
+      },
+      {
+        "path": "core/llm/streamChat.ts",
+        "sha": "bd4aebb22e95829c30141cf8b18ca6a0c7f087f3"
+      },
+      {
+        "path": "core/llm/tiktokenWorkerPool.mjs",
+        "sha": "85c5846f2667d046514a84f8b49b5fb7bf2e1e0c"
+      },
+      {
+        "path": "core/llm/toolSupport.ts",
+        "sha": "3f65473233c6759567d12a426e1167aa7fdb137b"
+      },
+      {
+        "path": "core/nextEdit/constants.ts",
+        "sha": "d8bd4c9df23072841a9291a3344b8dc839dc6f31"
+      },
+      {
+        "path": "core/nextEdit/DocumentHistoryTracker.ts",
+        "sha": "7cca91f56532f6976c59dac10e3aeb496d3ef1d2"
+      },
+      {
+        "path": "core/nextEdit/DocumentHistoryTracker.vitest.ts",
+        "sha": "f6c9b2dd4febfdb73c4709388b59ccf3109a4aa6"
+      },
+      {
+        "path": "core/nextEdit/NextEditEditableRegionCalculator.ts",
+        "sha": "806be487300442e91cb2d02a0ed4482539aa8f17"
+      },
+      {
+        "path": "core/nextEdit/NextEditLoggingService.ts",
+        "sha": "69adb671fcd89a153cb728b0f2743cca8c0b2278"
+      },
+      {
+        "path": "core/nextEdit/NextEditPrefetchQueue.ts",
+        "sha": "d6af3598db35ca24e50d360a924af3e8fd0c3e4f"
+      },
+      {
+        "path": "core/nextEdit/NextEditProvider.ts",
+        "sha": "cceb5e810d54db6a2ac9c587573f62b8c99c12a9"
+      },
+      {
+        "path": "core/nextEdit/NextEditProviderFactory.ts",
+        "sha": "2762f6ad8479c67617c9f962c0c8d77ed4aa7b92"
+      },
+      {
+        "path": "core/nextEdit/README.md",
+        "sha": "2c78f484f35d444f48bbdbf94bf3844040012fc3"
+      },
+      {
+        "path": "core/nextEdit/types.ts",
+        "sha": "2e6c8d40b2dfd3303951adddabef418533af267c"
+      },
+      {
+        "path": "core/nextEdit/utils.ts",
+        "sha": "15f2e6339de75fe1e88c82ce98ca8891865c1da8"
+      },
+      {
+        "path": "core/nextEdit/utils.vitest.ts",
+        "sha": "abbab499bfeca14c39f008c742f4cf9ddf40590f"
+      },
+      {
+        "path": "core/promptFiles/createNewPromptFile.ts",
+        "sha": "d779676311084a1ec12092ef91dea6b238de6c42"
+      },
+      {
+        "path": "core/promptFiles/getPromptFiles.ts",
+        "sha": "da6628d2f10812588f231c92bba74c8c35c59398"
+      },
+      {
+        "path": "core/promptFiles/initPrompt.ts",
+        "sha": "f436d6e43448e635eab71807616c6ef0fa68b4c8"
+      },
+      {
+        "path": "core/promptFiles/parsePromptFile.ts",
+        "sha": "4b6cf6917b81f6ee05647d55bbcee5b714fdcc7c"
+      },
+      {
+        "path": "core/protocol/core.ts",
+        "sha": "da752c27b0b49b2a1b3f7f7e08c6ddc1418250ce"
+      },
+      {
+        "path": "core/protocol/coreWebview.ts",
+        "sha": "8e1befe16a35682f469f5247685ca122f4ad2fb4"
+      },
+      {
+        "path": "core/protocol/ide.ts",
+        "sha": "5aec1ea9a2a40d118825cc44298d3ce240b24b89"
+      },
+      {
+        "path": "core/protocol/ideCore.ts",
+        "sha": "eca0acde561e54b548b6d89426c36daf1f5c2f29"
+      },
+      {
+        "path": "core/protocol/ideWebview.ts",
+        "sha": "11db483a6fd70ed93a2d71530da9c16711b54e50"
+      },
+      {
+        "path": "core/protocol/passThrough.ts",
+        "sha": "ac98b9b0318c8d22b27074ca4605f7bd4e20d101"
+      },
+      {
+        "path": "core/protocol/util.ts",
+        "sha": "ab2225c849954638393f108d79ed7c7633535436"
+      },
+      {
+        "path": "core/protocol/webview.ts",
+        "sha": "215ec40109b3d0d0fe33b8f5505325df22a591c0"
+      },
+      {
+        "path": "core/tools/applyToolOverrides.ts",
+        "sha": "52c7b94cb1fd41c7c298fb297846f9fa82c0c0f2"
+      },
+      {
+        "path": "core/tools/applyToolOverrides.vitest.ts",
+        "sha": "190590980bb8f0554bc6b99889572a8bedeaa5a7"
+      },
+      {
+        "path": "core/tools/builtIn.ts",
+        "sha": "0b1346bbca210f527d624a5df9906ee49145e4ef"
+      },
+      {
+        "path": "core/tools/callTool.ts",
+        "sha": "22e83bb46ab0c51d20120a8273d39434cfac9123"
+      },
+      {
+        "path": "core/tools/constants.ts",
+        "sha": "332a270efff027f4b5097d24f41ca7214eff013f"
+      },
+      {
+        "path": "core/tools/mcpToolName.ts",
+        "sha": "3b31af38125d7bea4a24a83c48909908ff887338"
+      },
+      {
+        "path": "core/tools/mcpToolName.vitest.ts",
+        "sha": "c49f4e852e155d3d8ea84401774ddf76cb903ffb"
+      },
+      {
+        "path": "core/tools/parseArgs.ts",
+        "sha": "64a4f67d09a829daa3cbed5482b2746a0cfe0851"
+      },
+      {
+        "path": "core/tools/parseArgs.vitest.ts",
+        "sha": "e21254b686d5792159de19eed9c5b4e0266f56ad"
+      },
+      {
+        "path": "core/tools/searchWebGating.vitest.ts",
+        "sha": "871aae47d71651fb725e300e8b8b76df0a69e926"
+      },
+      {
+        "path": "core/util/ca.ts",
+        "sha": "83d6f0c706ecdce862824670b166d7ed52fcbf36"
+      },
+      {
+        "path": "core/util/chatDescriber.ts",
+        "sha": "33a2b31baca4694b82a626326a25ca1944a2d25d"
+      },
+      {
+        "path": "core/util/clipboardCache.ts",
+        "sha": "5e0f5ac85eabaf741c237c0bda07aef6ccf3b1b4"
+      },
+      {
+        "path": "core/util/constants.ts",
+        "sha": "9418c48ed426fe7426c417e9572a3e9d6c1e2368"
+      },
+      {
+        "path": "core/util/conversationCompaction.ts",
+        "sha": "45f11d95ac3d805decc4fc31f45f09fcd568c639"
+      },
+      {
+        "path": "core/util/errors.ts",
+        "sha": "b94b5ac003f88aeabba7a839127f198292350d2e"
+      },
+      {
+        "path": "core/util/extractMinimalStackTraceInfo.ts",
+        "sha": "026c79aa2279948614d093165eeffddc0e018d60"
+      },
+      {
+        "path": "core/util/fetchFavicon.ts",
+        "sha": "8b1c8616aee43b825a393851aec6d9959c5c006f"
+      },
+      {
+        "path": "core/util/filesystem.ts",
+        "sha": "6a81393125033959b44b6d0bec468b50f3b0bc3a"
+      },
+      {
+        "path": "core/util/findLast.ts",
+        "sha": "256d6e09d2b3f374e2c8352bbf7784497920d537"
+      },
+      {
+        "path": "core/util/generateRepoMap.ts",
+        "sha": "c372f147b380ff4f99f0cd7606e06d4c53e7616e"
+      },
+      {
+        "path": "core/util/GlobalContext.ts",
+        "sha": "44b9b5f1176ebd7929c5657b5c1a15dffc13df9f"
+      },
+      {
+        "path": "core/util/grepSearch.ts",
+        "sha": "be5b7ee082fa727b6ded9290a481d8b76e7c4807"
+      },
+      {
+        "path": "core/util/grepSearch.vitest.ts",
+        "sha": "df1a71efd8292fac28023e08e05bf993ed59c3ca"
+      },
+      {
+        "path": "core/util/history.ts",
+        "sha": "0f5af729eec3c70478924e4ddf66d9ebfc880f95"
+      },
+      {
+        "path": "core/util/historyUtils.ts",
+        "sha": "fc0939c7bcf9838821446f6ca5781a31f91e4066"
+      },
+      {
+        "path": "core/util/IdeInfoService.ts",
+        "sha": "f30cc690fb7ae6db04190da5fcf8cd3594a86259"
+      },
+      {
+        "path": "core/util/ideUtils.ts",
+        "sha": "352aad6ca1a44c54b313da847b20361404ca9831"
+      },
+      {
+        "path": "core/util/incrementalParseJson.ts",
+        "sha": "21385ad6a9552ca979fe52134a5aab8d9dc14572"
+      },
+      {
+        "path": "core/util/isAbortError.ts",
+        "sha": "583d656aebd4b91b549a5d6408d5179400cc7040"
+      },
+      {
+        "path": "core/util/isAbortError.vitest.ts",
+        "sha": "ccd6441415fd891a6df12b710eef8c33f4900e02"
+      },
+      {
+        "path": "core/util/isContinueTeamMember.ts",
+        "sha": "1a6507154d4c68f17f5ae4816bbaecef7a60c2ae"
+      },
+      {
+        "path": "core/util/lcs.ts",
+        "sha": "17ea63f9accd8fa40ee60358552f930857088f5b"
+      },
+      {
+        "path": "core/util/lemonadeHelper.ts",
+        "sha": "ff8d4dfbca80bb413f0e3ee99fc7623d866abb95"
+      },
+      {
+        "path": "core/util/Logger.ts",
+        "sha": "df349ccc0beb1e3652b06df8538941ebcd410ac2"
+      },
+      {
+        "path": "core/util/LruCache.ts",
+        "sha": "86925a6bc35b4880187725ce5ef97306ace18c08"
+      },
+      {
+        "path": "core/util/merge.ts",
+        "sha": "d20ebcd1599d587011b4350e0cf2363696d0e084"
+      },
+      {
+        "path": "core/util/messageContent.ts",
+        "sha": "5a0bc95bf784ab90c2291050c75dc4e9f0868fa9"
+      },
+      {
+        "path": "core/util/messageConversion.ts",
+        "sha": "0712b4d90d57e4cc17c498f6ceadb91f23970f4a"
+      },
+      {
+        "path": "core/util/ollamaHelper.ts",
+        "sha": "0f5ef620b71fac46e57fbfb46e566146f0a50971"
+      },
+      {
+        "path": "core/util/parameters.ts",
+        "sha": "9bdb5544b2bd5565d2469c2b14525f4ccc2b7844"
+      },
+      {
+        "path": "core/util/pathResolver.ts",
+        "sha": "25fe7581688ca76e85d05b9348cd10803f98378c"
+      },
+      {
+        "path": "core/util/paths.ts",
+        "sha": "323697f774cbc838959a6af9c260614590a2832a"
+      },
+      {
+        "path": "core/util/pathToUri.ts",
+        "sha": "ce83563fdbca5dfcbfdb4b42a4b7f8939d238edc"
+      },
+      {
+        "path": "core/util/processTerminalStates.ts",
+        "sha": "cad243a82b1d961d45942545295b274a008318aa"
+      },
+      {
+        "path": "core/util/ranges.ts",
+        "sha": "a9bf5e97242054d1a1b6046c377147d11f09484a"
+      },
+      {
+        "path": "core/util/regexValidator.ts",
+        "sha": "2c00f2ce964ea043dfb5f7450c3c8e0a3ee9ab20"
+      },
+      {
+        "path": "core/util/regexValidator.vitest.ts",
+        "sha": "1d25f9d01a7f7d6a16f4479b941c57fc85d84c16"
+      },
+      {
+        "path": "core/util/repoUrl.ts",
+        "sha": "4634cc142afe7590d9056a9cf595b41b9b792e92"
+      },
+      {
+        "path": "core/util/repoUrl.vitest.ts",
+        "sha": "da58cc076113626dbf718c1a0c4d12d7a981ec2a"
+      },
+      {
+        "path": "core/util/sanitization.ts",
+        "sha": "da17df8c339d408021c6e3538e0aa84a964b9e0c"
+      },
+      {
+        "path": "core/util/sanitization.vitest.ts",
+        "sha": "f048c72c60172957a63b1211d390cb41da92d5d1"
+      },
+      {
+        "path": "core/util/shellPath.ts",
+        "sha": "961307c28bbb72154de83ecaa6d80635ab98273e"
+      },
+      {
+        "path": "core/util/start_ollama.sh",
+        "sha": "ead153d2ea0ea2dae5270b8608126ed3bcddc4e7"
+      },
+      {
+        "path": "core/util/text.ts",
+        "sha": "6b2b81d33f25175c5ddabc6d3bfc2faa7540e7ab"
+      },
+      {
+        "path": "core/util/text.vitest.ts",
+        "sha": "af5502cd699809678ba535e6de8f21950832c19e"
+      },
+      {
+        "path": "core/util/treeSitter.ts",
+        "sha": "61842ba3e88b1e9b4ff0a3f1ab4b957cda074b22"
+      },
+      {
+        "path": "core/util/tts.ts",
+        "sha": "aace86bf9dc4b71493cad90f4ab4d0021458d14f"
+      },
+      {
+        "path": "core/util/uri.ts",
+        "sha": "d3c1659b5165031e63c13fb5ee0b29405e4e83b4"
+      },
+      {
+        "path": "core/util/url.ts",
+        "sha": "3bdc0fc6907c1467524455384f7f5c444aa5d3ac"
+      },
+      {
+        "path": "core/util/withExponentialBackoff.ts",
+        "sha": "bb280911d2bb85d07693a64e9e93be68b420fa39"
+      },
+      {
+        "path": "core/utils/markdownUtils.ts",
+        "sha": "365f728119d739c5a0ecac7169c5a9fd1e6c58f3"
+      },
+      {
+        "path": "core/utils/markdownUtils.vitest.ts",
+        "sha": "c21c275877b0c6a02e052fb88b3aef7ac3d12e14"
+      },
+      {
+        "path": "core/utils/streamMarkdownUtils.ts",
+        "sha": "88e8eabec39dc4c134c5a74bccc2de1681ea19a2"
+      },
+      {
+        "path": "core/utils/streamMarkdownUtils.vitest.ts",
+        "sha": "097b1fbd57a651aa6340493b00c7085e1931eeaf"
+      },
+      {
+        "path": "core/vendor/package-lock.json",
+        "sha": "f364e335b3b27f25b55e7f8759c44dce0d56049e"
+      },
+      {
+        "path": "core/vendor/README.md",
+        "sha": "dc534eb760f8694c336652e8d586689d8b6a048b"
+      },
+      {
+        "path": "docs-site/app/layout.tsx",
+        "sha": "ced9a7e340772d84f707cf2d5020435747a0a7cf"
+      },
+      {
+        "path": "docs-site/config/docsNav.ts",
+        "sha": "b5eadb722a6fbd77a00a18fe6692227a72439165"
+      },
+      {
+        "path": "docs-site/lib/basePath.ts",
+        "sha": "afea87186b7f4d1cec8db9a82a8cc2b665970863"
+      },
+      {
+        "path": "docs-site/lib/docs.ts",
+        "sha": "48924b8f94fc76fee7f26c3f7bb7c7a21c00d401"
+      },
+      {
+        "path": "docs-site/lib/resolveHref.ts",
+        "sha": "70b377b9fdd4eda35bc82583d6e58a863c10a634"
+      },
+      {
+        "path": "docs-site/lib/utils.ts",
+        "sha": "365058cebd7d2bdb327ca1c081b16e4937e11050"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T12:11:19Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": false,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 40,
+      "dangerous_patterns": 85,
+      "egress": 70,
+      "instruction_hygiene": 70
+    },
+    "red_flags": [
+      "injection"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "extensions/cli/scripts/install.sh",
+      "line": 190,
+      "snippet": "if ! download \"https://fnm.vercel.app/install\" | bash -s -- --install-dir \"$FNM_INSTALL_DIR\" --skip-shell; then",
+      "host": "fnm.vercel.app",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "packages/continue-sdk/python/api/setup.py",
+      "line": 9,
+      "snippet": "Generated by OpenAPI Generator (https://openapi-generator.tech)",
+      "host": "openapi-generator.tech",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "core/llm/index.ts",
+      "line": 125,
+      "snippet": "this.apiBase?.includes(\"api.mistral.ai\") ||",
+      "host": "api.mistral.ai",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "core/llm/index.ts",
+      "line": 432,
+      "snippet": "resp.url.includes(\"codestral.mistral.ai\"))",
+      "host": "codestral.mistral.ai",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "core/llm/fetchModels.ts",
+      "line": 66,
+      "snippet": "const response = await fetch(\"https://ollama.com/library\");",
+      "host": "ollama.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "core/llm/fetchModels.ts",
+      "line": 126,
+      "snippet": "const response = await fetch(\"https://openrouter.ai/api/v1/models\");",
+      "host": "openrouter.ai",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "core/llm/fetchModels.ts",
+      "line": 180,
+      "snippet": "const base = apiBase || \"https://generativelanguage.googleapis.com/v1beta/\";",
+      "host": "generativelanguage.googleapis.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "core/util/ollamaHelper.ts",
+      "line": 60,
+      "snippet": "const url = `https://registry.ollama.ai/v2/library/${modelName}/manifests/${tag}`;",
+      "host": "registry.ollama.ai",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "install-time-network",
+      "severe": false,
+      "file": "packages/continue-sdk/python/api/setup.py",
+      "line": 27,
+      "snippet": "\"urllib3 >= 1.25.3, < 3.0.0\",",
+      "deduction": 0
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "injection",
+      "severe": true,
+      "file": "core/tools/applyToolOverrides.vitest.ts",
+      "line": 105,
+      "snippet": "it(\"should override systemMessageDescription\", () => {",
+      "deduction": 30
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": false,
+      "file": ".husky/pre-commit",
+      "line": 1,
+      "snippet": "npx lint-staged",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "fnm.vercel.app",
+      "openapi-generator.tech",
+      "api.mistral.ai",
+      "codestral.mistral.ai",
+      "ollama.com",
+      "openrouter.ai",
+      "generativelanguage.googleapis.com",
+      "registry.ollama.ai"
+    ],
+    "declared_hosts": 0,
+    "install_detected": false,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 400,
+    "failed": 0,
+    "ms": 134024
+  },
+  "duration_ms": 19993
+}

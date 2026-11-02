@@ -1,0 +1,1822 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "block/goose",
+    "url": "https://github.com/block/goose",
+    "name": "goose"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:55:23.674Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "0909288ed4a2053b10540bfcf6dbee3b0de66126",
+    "files_scanned": 400,
+    "candidates": 986,
+    "excluded_non_shipped": 421,
+    "coverage": 0.41,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".github/copilot-instructions.md",
+        "sha": "5d902fbe554c9f87d6369734aaef5ee7d951a8e8"
+      },
+      {
+        "path": ".github/workflows/build-acp.yml",
+        "sha": "a5e1f381c4f938cd60d82eb2f9eb5b3588628eee"
+      },
+      {
+        "path": ".github/workflows/build-cli-linux.yml",
+        "sha": "a78d2374d37dbc640aa504fcd356c96fc1dd27aa"
+      },
+      {
+        "path": ".github/workflows/build-notify.yml",
+        "sha": "552aa275c5715aa2fcc663d9fa490102cc1d7ea2"
+      },
+      {
+        "path": ".github/workflows/bundle-macos.yml",
+        "sha": "82da6b93ca127659a40eb04e16d327db9efcbfc1"
+      },
+      {
+        "path": ".github/workflows/bundle-windows.yml",
+        "sha": "aa42e8b1939a5d4060fa0f78f2d1430051e0d149"
+      },
+      {
+        "path": ".github/workflows/buzz-automation.yml",
+        "sha": "317790d9fe49886531b1133e459a715fffa76696"
+      },
+      {
+        "path": ".github/workflows/canary.yml",
+        "sha": "820cedd9abdf3abe9a2885498388172cc02acb6b"
+      },
+      {
+        "path": ".github/workflows/cargo-deny.yml",
+        "sha": "f8632a6566d3b3979e7fd3d4d93de2473ad5bdd9"
+      },
+      {
+        "path": ".github/workflows/cargo-machete.yml",
+        "sha": "529580a9eb771bb9fbce50c4bcb894e85f64c72c"
+      },
+      {
+        "path": ".github/workflows/check-release-pr.yaml",
+        "sha": "400bfd85ac886efecba0ca8c52827e0778d83ad0"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "23070bdaa2e91740dc4896c9e4d75a1d4e96483d"
+      },
+      {
+        "path": ".github/workflows/close-release-pr-on-tag.yaml",
+        "sha": "1eec08726b4a705c4a308040546c549ab1f63623"
+      },
+      {
+        "path": ".github/workflows/create-release-branch.yaml",
+        "sha": "f7193c20e144fff8529228d21de19f1cd31fcbea"
+      },
+      {
+        "path": ".github/workflows/create-version-bump-pr.yaml",
+        "sha": "1571a5454159aaed11d1c89e909fd6830f191efc"
+      },
+      {
+        "path": ".github/workflows/dependabot-auto-merge.yml",
+        "sha": "f669303d6feeffb61377e4635453db8f0e6e6ed2"
+      },
+      {
+        "path": ".github/workflows/deploy-docs-and-extensions.yml",
+        "sha": "d79c8779ce5de3845cb81d7ce727c6e340cb4435"
+      },
+      {
+        "path": ".github/workflows/docs-update-gdk-api.yml",
+        "sha": "72b7a2d6e4c0a4403d00871e2aeed9a6355bb672"
+      },
+      {
+        "path": ".github/workflows/gdk-release-pr.yml",
+        "sha": "2d4a40c499ff99dc5170024dad2681791db91395"
+      },
+      {
+        "path": ".github/workflows/gdk-release.yml",
+        "sha": "f40baa0a16a45dc3309261bb36e5a61af99115b1"
+      },
+      {
+        "path": ".github/workflows/goose-release-notes.yml",
+        "sha": "1b0219f3fb93b33e4a641ac64a94728e79ea450d"
+      },
+      {
+        "path": ".github/workflows/maven-sdk.yml",
+        "sha": "80208d97d977ed3f4ba1ddc453ff984e662fad96"
+      },
+      {
+        "path": ".github/workflows/mcp-conformance.yml",
+        "sha": "4109dbe83b08a87d42543c4fd75989f234198298"
+      },
+      {
+        "path": ".github/workflows/minor-release.yaml",
+        "sha": "e4e32d63bb1cd2a071dfc5524fe8102b2b5dcf17"
+      },
+      {
+        "path": ".github/workflows/model-toolcall-conformance.yml",
+        "sha": "8b60199d86f5ad44a374b3c6683d5a9efe10d15e"
+      },
+      {
+        "path": ".github/workflows/patch-release.yaml",
+        "sha": "6b50605188e1fc06c57e8e35d068a7bf306c8ab9"
+      },
+      {
+        "path": ".github/workflows/pr-smoke-test.yml",
+        "sha": "f65f853f96c65dd9cba5aa4bfbf909c731c30030"
+      },
+      {
+        "path": ".github/workflows/pr-website-preview.yml",
+        "sha": "8e7954c1fa3f3d727d301e5b30b0c6ba99301550"
+      },
+      {
+        "path": ".github/workflows/publish-ask-ai-bot.yml",
+        "sha": "d9c9a19ff7dda1eb32c1b75dcfe1444026e59742"
+      },
+      {
+        "path": ".github/workflows/publish-docker.yml",
+        "sha": "6797983710473fcade3fdb2f15d9c50995987bc0"
+      },
+      {
+        "path": ".github/workflows/publish-npm.yml",
+        "sha": "9ff3ad17d9127e704c167bc368f6c3932500fa64"
+      },
+      {
+        "path": ".github/workflows/python-sdk-wheels.yml",
+        "sha": "1332dbb9983673c76206fb64d429932b8557c25f"
+      },
+      {
+        "path": ".github/workflows/quarantine.yml",
+        "sha": "2ea2bd6ad6b084edcaa655f60ffcf97c8b19fda5"
+      },
+      {
+        "path": ".github/workflows/release-branches.yml",
+        "sha": "0555fbb812b2b88f99a4b20094d054189d31222d"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "c19a23b75ed7a7ee6f509329b0d50b8aad1b5000"
+      },
+      {
+        "path": ".github/workflows/scorecard.yml",
+        "sha": "8ba98e07318e2982b4a7c9940313c52c8a660bab"
+      },
+      {
+        "path": ".github/workflows/stale.yml",
+        "sha": "b58706e9c0cf073cac88db9a7ac270510242de91"
+      },
+      {
+        "path": ".github/workflows/take.yml",
+        "sha": "af48672cd5df3b3515cf49f211e5f5a36d68b8a9"
+      },
+      {
+        "path": ".github/workflows/update-health-dashboard.yml",
+        "sha": "61a95a141856f4bffa7ec0137368cfc40dfe3c50"
+      },
+      {
+        "path": ".github/workflows/update-release-pr.yaml",
+        "sha": "e9f8e483668f6c20bd22c672fefb48187683b0a3"
+      },
+      {
+        "path": "crates/goose-sdk/python/setup.py",
+        "sha": "7c774de3177befede45c031b5b7e90b29d78f655"
+      },
+      {
+        "path": "documentation/src/utils/install-links.ts",
+        "sha": "73a235e02987e83fd3a4a1271f2c47bba1647d76"
+      },
+      {
+        "path": "documentation/src/components/Button/installButton.js",
+        "sha": "d3d14c38abc7f02c94f7bffc5241b666a0e466d6"
+      },
+      {
+        "path": "bin/README.hermit.md",
+        "sha": "e889550ba4cbc92a720527042e5f6e7a303bfcbc"
+      },
+      {
+        "path": "oidc-proxy/src/index.js",
+        "sha": "8188a52852b2192c44c7396223956e37db6f273f"
+      },
+      {
+        "path": "scripts/diagnostics-viewer.py",
+        "sha": "8ee4f92f96115cc8b18a415c26edc1a58bb92ebb"
+      },
+      {
+        "path": "scripts/goose-db-helper.sh",
+        "sha": "96d3cf82409257ba1e8fdb8456648653071af1ab"
+      },
+      {
+        "path": "scripts/parse-benchmark-results.sh",
+        "sha": "f1b86a8c58b8098d41ff274f272bc126a77938d3"
+      },
+      {
+        "path": "scripts/pre-release.sh",
+        "sha": "d6d8f1bd6a20a256d88f8065f4b94cd824408fe9"
+      },
+      {
+        "path": "scripts/README.md",
+        "sha": "1c16078ecdf84702d470022ba2211cbb8d7c2ad9"
+      },
+      {
+        "path": "scripts/run-benchmarks.sh",
+        "sha": "7d684648ea7059236ffd7e97bc76d097b4da591c"
+      },
+      {
+        "path": "scripts/set-cargo-version.sh",
+        "sha": "1ab3fb153296840604c9e9cd4194e147d6bab841"
+      },
+      {
+        "path": "scripts/test_compaction.sh",
+        "sha": "d2bb6b528efa77c5503b8ad5afc9724cc5f3f0c3"
+      },
+      {
+        "path": "scripts/test_local_model_smoke.sh",
+        "sha": "ece024c933f987ddcc0d9cc14c6ad25e31c9d4ef"
+      },
+      {
+        "path": "scripts/test_mcp.sh",
+        "sha": "f8e4d81ef4a5a2cc254185be1369ebc8c950ebeb"
+      },
+      {
+        "path": "scripts/test_openrouter_toolcalls.sh",
+        "sha": "c4507b6d80ff22b1cbe958080900cbd64f8ce28e"
+      },
+      {
+        "path": "scripts/test_subagents.sh",
+        "sha": "2fa0b93af4ccafd9365c6a356f7cfec47ab6d5d8"
+      },
+      {
+        "path": "scripts/test_subrecipes.sh",
+        "sha": "a6f79105201674a58f7b0913cd82467bc099e7a5"
+      },
+      {
+        "path": "services/ask-ai-bot/index.ts",
+        "sha": "4068aa6c20703efcc0717ea506378f3a49ab105f"
+      },
+      {
+        "path": "documentation/package.json",
+        "sha": "9c20e4a8572ca991fe1f06fe62fc1ed466e52aac"
+      },
+      {
+        "path": "oidc-proxy/package.json",
+        "sha": "176c94655610e901206b3f4507385f1e40ad0fe8"
+      },
+      {
+        "path": "ui/package.json",
+        "sha": "e53fd84a31f967279d57254a001a23b88b793e60"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "53f778eb54e4b46979da150d81974dbe6ab3959c"
+      },
+      {
+        "path": "BUILDING_DOCKER.md",
+        "sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c"
+      },
+      {
+        "path": "BUILDING_LINUX.md",
+        "sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "a102b29a09840f012721a635a63db457fa5ed4e1"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "065bfdf59e2bd953d03574c247bdba01d6eccedf"
+      },
+      {
+        "path": "CUSTOM_DISTROS.md",
+        "sha": "9e555c0a05e4ef4a34ed9b3946fec89d7d3ce5ef"
+      },
+      {
+        "path": "documentation/blog/2024-11-22-screenshot-driven-development/index.md",
+        "sha": "3ca5f4bc5116bf4a012a0c0f954d962c9a91b6f7"
+      },
+      {
+        "path": "documentation/blog/2024-12-06-previewing-goose-v10-beta/index.md",
+        "sha": "6fcf13230382f32f9df0249a534959325f1dfe7c"
+      },
+      {
+        "path": "documentation/blog/2024-12-10-connecting-ai-agents-to-your-systems-with-mcp/index.md",
+        "sha": "5630079b88410a061fcabe7c273af0a530562701"
+      },
+      {
+        "path": "documentation/blog/2024-12-11-resolving-ci-issues-with-goose-a-practical-walkthrough/index.md",
+        "sha": "346b7cf92ce00261b59e4e09e706ef7e3bc08f64"
+      },
+      {
+        "path": "documentation/blog/2025-01-28-introducing-codename-goose/index.md",
+        "sha": "f9ca6729a19a1aa9bf6633cbe4671f23167c6c9b"
+      },
+      {
+        "path": "documentation/blog/2025-02-17-agentic-ai-mcp/index.md",
+        "sha": "2cdf0daf131c9518f41514ea30c8a1057b3842bc"
+      },
+      {
+        "path": "documentation/blog/2025-02-21-gooseteam-mcp/index.md",
+        "sha": "699cdbeb1e6ae20dc0d14299ce65d8069bef808a"
+      },
+      {
+        "path": "documentation/blog/2025-03-06-goose-tips/index.md",
+        "sha": "1bcaed971cd35b10eaa5bb914c5fcb43d3890cfc"
+      },
+      {
+        "path": "documentation/blog/2025-03-10-goose-calls-vyop/index.md",
+        "sha": "4334bd64728ef2418b4b9800169d6b53dba69e18"
+      },
+      {
+        "path": "documentation/blog/2025-03-12-goose-figma-mcp/index.md",
+        "sha": "815fb7f5ef6e82f7b70854615ea08542749a287f"
+      },
+      {
+        "path": "documentation/blog/2025-03-14-goose-ollama/index.md",
+        "sha": "a72fb21693c7dfee382f5c615f098e8836f168c5"
+      },
+      {
+        "path": "documentation/blog/2025-03-18-goose-langfuse/index.md",
+        "sha": "e80fdd8d7efe38b6b9d0579b39f3922ee45673f2"
+      },
+      {
+        "path": "documentation/blog/2025-03-19-better-ai-prompting/index.md",
+        "sha": "7e35ce7ee0cab0b1443adfd704cc43a88bd568c4"
+      },
+      {
+        "path": "documentation/blog/2025-03-20-asana-calendar-mcp/index.md",
+        "sha": "751984c9bb13548afc6014173b1b20aae9b6b3d6"
+      },
+      {
+        "path": "documentation/blog/2025-03-26-mcp-security/index.md",
+        "sha": "9c8f023e70db34d0fd54fa1c28956bb9843f40cf"
+      },
+      {
+        "path": "documentation/blog/2025-03-28-vibe-coding-with-goose/index.md",
+        "sha": "e0b4a4f3f702cb14e4393068e072017130e5dee8"
+      },
+      {
+        "path": "documentation/blog/2025-03-31-goose-benchmark/index.md",
+        "sha": "c047f5b0c8face7becc7cf02f63dac0bd20c98bd"
+      },
+      {
+        "path": "documentation/blog/2025-03-31-securing-mcp/index.md",
+        "sha": "f8f153e719e15783d29b93086ff6a6e12e687146"
+      },
+      {
+        "path": "documentation/blog/2025-04-01-mcp-nondevs/index.md",
+        "sha": "3c380d0c570eb2470c93129330010c4da57ee899"
+      },
+      {
+        "path": "documentation/blog/2025-04-08-vibe-code-responsibly/index.md",
+        "sha": "07352d6f3549371a893388f6e9d2170eeaa8a868"
+      },
+      {
+        "path": "documentation/blog/2025-04-10-visual-guide-mcp/index.md",
+        "sha": "3627d0fec68652fb0849d87a6d84558ee3f7baf5"
+      },
+      {
+        "path": "documentation/blog/2025-04-11-finetuning-toolshim/index.md",
+        "sha": "2837bc7144e563307aa07ac6d5ae597f11d917f4"
+      },
+      {
+        "path": "documentation/blog/2025-04-14-community-atruelight4/index.md",
+        "sha": "e1c03656672660d70d5864237c97088fc00c6ba5"
+      },
+      {
+        "path": "documentation/blog/2025-04-21-practical-use-cases-of-ai/index.md",
+        "sha": "2ea46cc7231dad62904e8e1808e342aa856057c1"
+      },
+      {
+        "path": "documentation/blog/2025-04-22-community-bestcodes/index.md",
+        "sha": "a39317b07b587deb903af6f306c3519fad2c718f"
+      },
+      {
+        "path": "documentation/blog/2025-04-22-mcp-is-rewriting-the-rules-of-api-integration/index.md",
+        "sha": "a447e863cfdff8b8b73a6aed61e95133079b1bb2"
+      },
+      {
+        "path": "documentation/blog/2025-04-23-things-need-to-know/index.md",
+        "sha": "a790071f7b99b7f781be9837d20611b98460a616"
+      },
+      {
+        "path": "documentation/blog/2025-05-06-recipe-for-success/index.md",
+        "sha": "2fc351693c6f8b234c286b1457a8d44aaed90101"
+      },
+      {
+        "path": "documentation/blog/2025-05-09-developers-ai-playbook-for-team-efficiency/index.md",
+        "sha": "171c3caee0f8e8609e950641895fd7753475de3c"
+      },
+      {
+        "path": "documentation/blog/2025-05-12-local-goose-qwen3/index.md",
+        "sha": "4214f22a7b9fb07cc52ee1487d0c28a5ba3bf269"
+      },
+      {
+        "path": "documentation/blog/2025-05-20-goose-gets-a-drivers-license/index.md",
+        "sha": "9ab07fad1016fb9e1ee63893794c2e03424fc78e"
+      },
+      {
+        "path": "documentation/blog/2025-05-22-llm-agent-readiness/index.md",
+        "sha": "b871534c0edbf7c991f9161a013e4ee03d70e390"
+      },
+      {
+        "path": "documentation/blog/2025-05-22-manage-local-host-conflicts-with-goose/index.md",
+        "sha": "98bc74ffe92d3683379e3f93148e4962ac4aafa6"
+      },
+      {
+        "path": "documentation/blog/2025-06-02-goose-panther-mcp/index.md",
+        "sha": "73d14e823e0f4bdca9cc4265e9c43cfe225e5cf3"
+      },
+      {
+        "path": "documentation/blog/2025-06-05-whats-in-my-goosehints-file/index.md",
+        "sha": "9bf046c00b6d1b6ee8f4a945a2ff4f6f5900413c"
+      },
+      {
+        "path": "documentation/blog/2025-06-16-multi-model-in-goose/index.md",
+        "sha": "633044f2a4875c1eaa1ac4f9cdf742b6dfafbbac"
+      },
+      {
+        "path": "documentation/blog/2025-06-19-isolated-development-environments/index.md",
+        "sha": "7643871ec694ca02a145b1ebeae45d27720e4b34"
+      },
+      {
+        "path": "documentation/blog/2025-06-27-everyday-usecases-ai/index.md",
+        "sha": "ffe70305baa4de45c4029fdd916a2656027dd550"
+      },
+      {
+        "path": "documentation/blog/2025-07-21-orchestrating-subagents/index.md",
+        "sha": "146a469af771396617260131149812e967eb1f9b"
+      },
+      {
+        "path": "documentation/blog/2025-07-28-ai-to-ai/index.md",
+        "sha": "28612b11703978ba9f3584668871ebc30751a370"
+      },
+      {
+        "path": "documentation/blog/2025-07-28-streamlining-detection-development-with-goose-recipes/index.md",
+        "sha": "703cfcb0ed5a9357dd671abf86ea03dea3c5f0f1"
+      },
+      {
+        "path": "documentation/blog/2025-07-29-openrouter-unlocks-workshops/index.md",
+        "sha": "cf8d8bc25e08ab878060f0e4fab1e2fc7d9d51b0"
+      },
+      {
+        "path": "documentation/blog/2025-08-04-mcp-jupyter-server/index.md",
+        "sha": "3c2a0882ab060d0bb84c1c921c5072fe39812204"
+      },
+      {
+        "path": "documentation/blog/2025-08-10-vibe-coding-with-goose-building-apps-with-ai-agents/index.md",
+        "sha": "69739201ed0c09b4d4614c21d23315acf983f1c6"
+      },
+      {
+        "path": "documentation/blog/2025-08-11-llm-tag-team-lead-worker-model/index.md",
+        "sha": "ec57a0de0c687abb91fa390dead32121b581197f"
+      },
+      {
+        "path": "documentation/blog/2025-08-11-mcp-ui-post-browser-world/index.md",
+        "sha": "6eac720a48c0a50939a550331a18a255bb3a4db8"
+      },
+      {
+        "path": "documentation/blog/2025-08-12-mcp-testing/index.md",
+        "sha": "5ac3159b920e3fe8ac37410884911b1e98d6d298"
+      },
+      {
+        "path": "documentation/blog/2025-08-13-pulse-mcp-automates-recipe/index.md",
+        "sha": "000cb46f3b459db568130e1ef7f04f57d48851bd"
+      },
+      {
+        "path": "documentation/blog/2025-08-14-agent-coordination-patterns/index.md",
+        "sha": "928886b85351317c8bd90cde75037569024321cd"
+      },
+      {
+        "path": "documentation/blog/2025-08-14-how-goose-rebuilt-my-website/index.md",
+        "sha": "2690333e455961908016dd4c9a329eba190c7325"
+      },
+      {
+        "path": "documentation/blog/2025-08-18-transforming-ai-assistance-goose-mentor-mode/index.md",
+        "sha": "80fa524f818c179ee31a0c1140120a71845aa748"
+      },
+      {
+        "path": "documentation/blog/2025-08-18-understanding-context-windows/index.md",
+        "sha": "536f47b3e448c0099e447f79ea102d86528dca48"
+      },
+      {
+        "path": "documentation/blog/2025-08-25-goose-became-its-own-watchdog/index.md",
+        "sha": "4438326b1649813977ee15d0fb7bb29fe7f51e5c"
+      },
+      {
+        "path": "documentation/blog/2025-08-25-mcp-ui-future-agentic-interfaces/index.md",
+        "sha": "8c53af96e9059a5b41b4665143174161b2258248"
+      },
+      {
+        "path": "documentation/blog/2025-08-27-autovisualiser-with-mcp-ui/index.md",
+        "sha": "2bec713f6d790e6ef484632d34695ba52ba2ac37"
+      },
+      {
+        "path": "documentation/blog/2025-08-27-get-started-for-free-with-tetrate/index.md",
+        "sha": "44d02beecdd6c71ff3988b18385601f0d3de1845"
+      },
+      {
+        "path": "documentation/blog/2025-08-28-ai-teammate/index.md",
+        "sha": "fe83c3b2ad35b18ca6f0e527e72029cbe9375034"
+      },
+      {
+        "path": "documentation/blog/2025-09-15-subrecipes-in-goose/index.md",
+        "sha": "fbc348492de01614151d094498b3b200a908ba2c"
+      },
+      {
+        "path": "documentation/blog/2025-09-26-hacktoberfest-2025/index.md",
+        "sha": "4b62e3b637a4947e94250c4a64b6199a2b44df96"
+      },
+      {
+        "path": "documentation/blog/2025-09-26-subagents-vs-subrecipes/index.md",
+        "sha": "1501f073e5219ca78b882fb2f198217d10df0ee7"
+      },
+      {
+        "path": "documentation/blog/2025-10-08-recipe-cookbook-generator/index.md",
+        "sha": "cb1d1e7e965dc435249a8cbb2bab492483e4efc3"
+      },
+      {
+        "path": "documentation/blog/2025-10-14-designing-ai-for-humans/index.md",
+        "sha": "82efeb1454ad893355b219f3bbca42034d9c41c3"
+      },
+      {
+        "path": "documentation/blog/2025-10-24-intro-to-agent-client-protocol-acp/index.md",
+        "sha": "5a3ae87a216298a910ffdf14f7ea8708d9bf93f0"
+      },
+      {
+        "path": "documentation/blog/2025-11-17-migrate-app-with-ai-agent/index.md",
+        "sha": "97e1e1629ecff955e9102d72242cbba3b37778bd"
+      },
+      {
+        "path": "documentation/blog/2025-11-21-social-media-agent-automation/index.md",
+        "sha": "5c66e42c9a8eb9d8359d6b8d941e4f77ac6f17de"
+      },
+      {
+        "path": "documentation/blog/2025-11-26-mcp-for-devs/index.md",
+        "sha": "433e5dc08bc4bcb63972b08d4df16eeacf448b46"
+      },
+      {
+        "path": "documentation/blog/2025-11-30-announcing-advent-of-ai/index.md",
+        "sha": "f39a5fa154971abb9724e92e4bb7bbc595d42d25"
+      },
+      {
+        "path": "documentation/blog/2025-12-04-mcp-sampling/index.md",
+        "sha": "80a72872331647dc261b1b1a58d1dc621c6e720c"
+      },
+      {
+        "path": "documentation/blog/2025-12-10-stop-ai-agent-unwanted-changes/index.md",
+        "sha": "f7a6ee19e62bc246b4b1e2811f0b69c4d5e84003"
+      },
+      {
+        "path": "documentation/blog/2025-12-15-code-mode-mcp/index.md",
+        "sha": "376138ffc153f9f15a7dcedfd51d65b47980b2f1"
+      },
+      {
+        "path": "documentation/blog/2025-12-19-does-your-ai-agent-need-a-plan/index.md",
+        "sha": "0b62a141fcfc0b00ed2859c105eb2dbe06067d35"
+      },
+      {
+        "path": "documentation/blog/2025-12-19-goose-mobile-terminal/index.md",
+        "sha": "1d9bcf442356aeb23db230a50bc039c3d283591e"
+      },
+      {
+        "path": "documentation/blog/2025-12-21-code-mode-doesnt-replace-mcp/index.md",
+        "sha": "75248ed450425805b2844d32f01630aa6e29a2c1"
+      },
+      {
+        "path": "documentation/blog/2025-12-22-agent-skills-vs-mcp/index.md",
+        "sha": "6c197e9fdd6a85d52c6f0f0870a19c9c3dbb6bb3"
+      },
+      {
+        "path": "documentation/blog/2025-12-28-goose-maintains-goose/index.md",
+        "sha": "46e400fe9f5fa3cfbaeb95e6d9a707e993bca994"
+      },
+      {
+        "path": "documentation/blog/2026-01-04-how-i-taught-my-agent-my-design-taste/index.md",
+        "sha": "02da8920415c476688bb048924e0de8340b81eab"
+      },
+      {
+        "path": "documentation/blog/2026-01-05-agentic-guardrails-and-controls/index.md",
+        "sha": "5be8906d9f768659c0812db947ac83a04af39156"
+      },
+      {
+        "path": "documentation/blog/2026-01-06-mcp-apps/index.md",
+        "sha": "526a06f8569759f1f68244b228feb1f6236ca671"
+      },
+      {
+        "path": "documentation/blog/2026-01-15-why-tool-descriptions-arent-enough/index.md",
+        "sha": "76fc723675b414d9995bea6d1072ade5be8262e4"
+      },
+      {
+        "path": "documentation/blog/2026-01-20-goose-mobile-apps/index.md",
+        "sha": "3b7c93ff9340db7698a278de1fe0917f19743008"
+      },
+      {
+        "path": "documentation/blog/2026-01-22-mcp-ui-to-mcp-apps/index.md",
+        "sha": "d3069ac8b7f5d55a32afa84a3ad4b1f318ba0d90"
+      },
+      {
+        "path": "documentation/blog/2026-01-30-5-tips-building-mcp-apps/index.md",
+        "sha": "00c0b87eeff0c261a233c9cda68e8a2968fa98a5"
+      },
+      {
+        "path": "documentation/blog/2026-02-06-8-things-you-didnt-know-about-code-mode/index.md",
+        "sha": "ffe243ce9a71dc086326b8e7d0c3d00e69d7ccff"
+      },
+      {
+        "path": "documentation/blog/2026-02-06-rp-why-skill/index.md",
+        "sha": "76cf3eb92779725665a9c3bbc222d911418f6e72"
+      },
+      {
+        "path": "documentation/blog/2026-02-06-rpi-openclaw-alternative/index.md",
+        "sha": "13cc7cbd258f312414d636ae58913669ee4bb137"
+      },
+      {
+        "path": "documentation/blog/2026-02-07-context-engineering/index.md",
+        "sha": "11e0bfe897a5f678b1c4066e1936310f32196c36"
+      },
+      {
+        "path": "documentation/blog/2026-02-19-gastown-explained-goosetown/index.md",
+        "sha": "9c875ca8541807a6b54756ad9ac8d0559196fa4d"
+      },
+      {
+        "path": "documentation/blog/2026-02-23-goose-v1-25-0/index.md",
+        "sha": "d31dfd9cfa82852cac14de953c8e0074ca2fcbb0"
+      },
+      {
+        "path": "documentation/blog/2026-02-24-goose-grant-goose-in-a-pond/index.md",
+        "sha": "5f2620728e1fb7eb6de0eac1e8294edeb5affa49"
+      },
+      {
+        "path": "documentation/blog/2026-02-25-order-lunch-with-goose/index.md",
+        "sha": "c66cf95cf6a6591af4be721b19adddf449ade1b0"
+      },
+      {
+        "path": "documentation/blog/2026-03-17-webmcp-for-beginners/index.md",
+        "sha": "79b596354c48337b19266af8405a91a428eb1317"
+      },
+      {
+        "path": "documentation/blog/2026-03-19-use-goose-with-your-ai-subscription/index.md",
+        "sha": "636cb088780cef7d7ce05a46f122a6a856523668"
+      },
+      {
+        "path": "documentation/blog/2026-03-31-adversary-mode/index.md",
+        "sha": "2bb171be6c43e7173eb1262d1291da360dcff6cc"
+      },
+      {
+        "path": "documentation/blog/2026-04-07-goose-moves-to-aaif/index.md",
+        "sha": "19ae4c3926b0f9ede1ba3cf018798429a57dbf4e"
+      },
+      {
+        "path": "documentation/blog/2026-04-08-goose-acp-and-new-tui/index.md",
+        "sha": "02692910ded915d72238526f109f3ecaddcb0186"
+      },
+      {
+        "path": "documentation/blog/2026-04-08-how-to-break-up-with-your-agent/index.md",
+        "sha": "60eaa3453db93b1190260734444729aee203bf1f"
+      },
+      {
+        "path": "documentation/blog/2026-04-20-mesh-llm/index.md",
+        "sha": "14f2c8bec7abe4b02e58e2121fd8c08dbffc7e03"
+      },
+      {
+        "path": "documentation/blog/2026-04-24-use-goose-with-built-in-local-inference/index.md",
+        "sha": "bef6b68c28091486b639f9b5f8b47fe2969d9e0b"
+      },
+      {
+        "path": "documentation/blog/2026-04-29-computer-controller-peekaboo/index.md",
+        "sha": "2e6d31eb30b14762a096497a212653eec23154c9"
+      },
+      {
+        "path": "documentation/blog/2026-05-04-officeqa-minimax-m25/index.md",
+        "sha": "1ef5f3348924fa0487b5374956cae2f6cf4c90ee"
+      },
+      {
+        "path": "documentation/blog/2026-05-05-goose-as-conductor/index.md",
+        "sha": "786279caf4cbb2818403c1a68daa7963660ae89a"
+      },
+      {
+        "path": "documentation/blog/2026-05-14-goose-hooks/index.md",
+        "sha": "8e75f2e1679db1f05f5eba17037ed608afb781d5"
+      },
+      {
+        "path": "documentation/blog/2026-06-17-self-improving-agents-need-humans/index.md",
+        "sha": "72d0bd4e99642786debbd8b49d9958392992949c"
+      },
+      {
+        "path": "documentation/blog/2026-07-30-issues-are-the-new-prs/index.md",
+        "sha": "34268c52e1278e31ada5f1ade82b715f0f9d3ebe"
+      },
+      {
+        "path": "documentation/blog/2026-09-16-agentic-state-machines/index.md",
+        "sha": "a425c7755e5604a4fc280677f53b2be4f52f31e8"
+      },
+      {
+        "path": "documentation/src/pages/index.tsx",
+        "sha": "4308f0208de43d84b761010547f4b9270b05a119"
+      },
+      {
+        "path": "documentation/src/types/server.ts",
+        "sha": "aadb4559a78350a662f5aca9926551f4906508e1"
+      },
+      {
+        "path": "download_cli.sh",
+        "sha": "eeb888005788bf193687379cc5e48b4c9d505d43"
+      },
+      {
+        "path": "evals/harbor/.agents/skills/compare-tasks/SKILL.md",
+        "sha": "68e24e2668c4e2e10017f7628a0d9da71bc9d038"
+      },
+      {
+        "path": "goose-self-test.yaml",
+        "sha": "7973668b49664f6089504c5d54d60e88e6296f14"
+      },
+      {
+        "path": "GOVERNANCE.md",
+        "sha": "ff574e9f4eccd8aea6baec0a7df1b270964a7966"
+      },
+      {
+        "path": "I18N.md",
+        "sha": "c07792efc85845cd026db4ac49352cf9cef03a6f"
+      },
+      {
+        "path": "MAINTAINERS.md",
+        "sha": "f82b07aea7acd778ebcfd98b3316e6582329bb7d"
+      },
+      {
+        "path": "MERGE_FIXES.md",
+        "sha": "d41ef60c550ece1dbaf2f842145e60e03114747b"
+      },
+      {
+        "path": "README.md",
+        "sha": "44c960f0193de1ccd3a13721cfe2daf5e7707ac5"
+      },
+      {
+        "path": "RELEASE_CHECKLIST.md",
+        "sha": "cb87c076c6e6a0ec7868d77cf2cdffdd933259ad"
+      },
+      {
+        "path": "RELEASE.md",
+        "sha": "a5b54fd6824c3cfdf9a00239a60f7f4b42f63597"
+      },
+      {
+        "path": "RISCV_SETUP.md",
+        "sha": "aba98742d041d2d500d50829070fa9dd26b20953"
+      },
+      {
+        "path": "scripts/bench-postprocess-scripts/generate_leaderboard.py",
+        "sha": "16292c727c45a6fa5650dbdecd264377ad49e15a"
+      },
+      {
+        "path": "scripts/bench-postprocess-scripts/prepare_aggregate_metrics.py",
+        "sha": "054b03b2cd98fe5d9358e4f118390680631065fd"
+      },
+      {
+        "path": "scripts/provider-error-proxy/proxy.py",
+        "sha": "8025930bfb683b62b400d1f030fcbc67cda2fcf7"
+      },
+      {
+        "path": "scripts/provider-error-proxy/README.md",
+        "sha": "ead861fbfb5b61586b93d3b89adde1dc18927401"
+      },
+      {
+        "path": "scripts/test-subrecipes-examples/project_analyzer_parallel.yaml",
+        "sha": "f05d8fc7a4f0a6becec66acd73b1c888af6879f9"
+      },
+      {
+        "path": "scripts/test-subrecipes-examples/project_analyzer.yaml",
+        "sha": "dae395347b0e78c3ea1f5f058167a68c1d2559b5"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "42eca542be2860380447795671f652097adf5771"
+      },
+      {
+        "path": "ui/desktop/announcements/index.json",
+        "sha": "fe51488c7066f6687ef680d6bfaa4f7768ef205c"
+      },
+      {
+        "path": "ui/desktop/src/App.tsx",
+        "sha": "42201a235ea1f3d6dcfbd21573725bcefc9c67ad"
+      },
+      {
+        "path": "ui/desktop/src/main.ts",
+        "sha": "b14e34bb4c1b5eca6da4fda72ca0ecda19229b5c"
+      },
+      {
+        "path": "ui/goose-acp-client/src/index.ts",
+        "sha": "7250d45e8936ac0ed1830ac316b8b7f8a16621c4"
+      },
+      {
+        "path": "ui/goose-acp/src/index.ts",
+        "sha": "dc8c4f17b3a654f1f375c6ff74ef1e19fac06bd9"
+      },
+      {
+        "path": "services/ask-ai-bot/package.json",
+        "sha": "c84b92aa4f8d512ea29a94662007bf429e1748fa"
+      },
+      {
+        "path": "ui/desktop/package.json",
+        "sha": "e2db964bf7f65efa935a2033964033daec67bc65"
+      },
+      {
+        "path": "ui/goose-acp-client/package.json",
+        "sha": "58ed92e6d23c4568c2f726b96c42da4b9e0535aa"
+      },
+      {
+        "path": "ui/goose-acp/package.json",
+        "sha": "9f27aeb3338db38e258205b9847bcc6d9b8ff8df"
+      },
+      {
+        "path": ".blox/workstation.yaml",
+        "sha": "9171428609aaecc191464f2502d45a5f9c08cd0a"
+      },
+      {
+        "path": ".intersect/intersect-config.yaml",
+        "sha": "1dda1442110a11309640a747c5fda10f8a65bd0b"
+      },
+      {
+        "path": "buzz/core-team.json",
+        "sha": "20e3f209f3e5db32258b78cd94d4a8b1ba3aa635"
+      },
+      {
+        "path": "buzz/github_issue_manager.yaml",
+        "sha": "470d18fddf53b28a0dba3c9bdbf2645137041bd9"
+      },
+      {
+        "path": "buzz/github_manager.mjs",
+        "sha": "d8c6b480048f36f2abe17f7d15242ed64cf02d91"
+      },
+      {
+        "path": "buzz/README.md",
+        "sha": "a973ae14bce5bae72a7e4ec74c48606d79cf8e2a"
+      },
+      {
+        "path": "documentation/AGENTS.md",
+        "sha": "086f153bc2d254af995eed8abb3429d92edb4c04"
+      },
+      {
+        "path": "documentation/CLAUDE.md",
+        "sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+      },
+      {
+        "path": "documentation/docusaurus.config.ts",
+        "sha": "cc05a459baf85e84cf2eed638921afc62238622d"
+      },
+      {
+        "path": "documentation/postcss.config.js",
+        "sha": "3b9828bbbce105116cc136886161d70e129d7f44"
+      },
+      {
+        "path": "documentation/README.md",
+        "sha": "d81b96bb3b5252ae018c95799c26a99b7cb6fa2b"
+      },
+      {
+        "path": "documentation/sidebars.ts",
+        "sha": "2a0c8d2ed8684d304fb05761f2f85fa4baa3e99e"
+      },
+      {
+        "path": "documentation/src/components/Card/index.tsx",
+        "sha": "fff960e4c116c9a4fa12f73a8ec5c115207c5176"
+      },
+      {
+        "path": "documentation/src/components/GdkApiReference/index.tsx",
+        "sha": "167ce19803e0c5c16c892da1afedd963df5db56c"
+      },
+      {
+        "path": "documentation/src/components/GdkNavigation/index.tsx",
+        "sha": "69757fbba3810cd801168761aa50c26572185ddb"
+      },
+      {
+        "path": "documentation/src/components/HomepageFeatures/index.tsx",
+        "sha": "c90bd097aff0e27a8c4cacea78a4c08d3caa6205"
+      },
+      {
+        "path": "documentation/src/components/SocialShare/index.tsx",
+        "sha": "8c08c28faf4e3dcdc776426c7b4af83dc26cd790"
+      },
+      {
+        "path": "documentation/src/pages/community/index.tsx",
+        "sha": "e0d25a8d844d472d2ac9b25ad5b3ef804231544a"
+      },
+      {
+        "path": "documentation/src/pages/extensions/index.tsx",
+        "sha": "832f1a9e3391f7d3b484901d14222e6d70fcc41a"
+      },
+      {
+        "path": "documentation/src/pages/recipes/index.tsx",
+        "sha": "77d921936535aacd54ea49d675cc76815278c21f"
+      },
+      {
+        "path": "documentation/src/theme/BlogListPage/index.tsx",
+        "sha": "bac24983f7581c1b5a6ed2d5a7d0fb0b5715dbf2"
+      },
+      {
+        "path": "documentation/src/theme/BlogPostPage/index.tsx",
+        "sha": "77f086c80e9978e8fd203b652f433ef243d07b40"
+      },
+      {
+        "path": "documentation/src/theme/BlogTagsPostsPage/index.tsx",
+        "sha": "35eb4a09656aaa7072a97a9a5120d366ade764a6"
+      },
+      {
+        "path": "documentation/tailwind.config.js",
+        "sha": "e5679a7d38a48270c7425866dab856f80d43e359"
+      },
+      {
+        "path": "documentation/tsconfig.json",
+        "sha": "891bcc57bf07c2952eaae8e3ea2ab8a79e81f4fd"
+      },
+      {
+        "path": "oidc-proxy/anthropic-oidc-proxy.json",
+        "sha": "fec7e793f531fef0b384bfe18fdcfa638a9a2bcb"
+      },
+      {
+        "path": "oidc-proxy/README.md",
+        "sha": "8f442125f02a5ae7d4b59c3748130f199947eeb9"
+      },
+      {
+        "path": "oidc-proxy/vitest.config.js",
+        "sha": "973627c26808157d22b221e50fab5aa6132b9051"
+      },
+      {
+        "path": "scripts/bench-postprocess-scripts/llm-judges/blog_summary_prompt.txt",
+        "sha": "befbb3a22059905249483bf8d214429415caad82"
+      },
+      {
+        "path": "scripts/bench-postprocess-scripts/llm-judges/calculate_final_scores_vibes.py",
+        "sha": "261fbe52832defa69944090e018fe73548bfa1b6"
+      },
+      {
+        "path": "scripts/bench-postprocess-scripts/llm-judges/llm_judge.py",
+        "sha": "2b22dc24489c4786acb757ca2c5f802bc4581bc1"
+      },
+      {
+        "path": "scripts/bench-postprocess-scripts/llm-judges/restaurant_research_prompt.txt",
+        "sha": "8e28c495b9ef4c8da7b06bc974d29c67c2b11a83"
+      },
+      {
+        "path": "scripts/bench-postprocess-scripts/llm-judges/run_vibes_judge.sh",
+        "sha": "cf91b602dab5a94300c9f5246cfdc8b9eadcf6b8"
+      },
+      {
+        "path": "scripts/test-subrecipes-examples/subrecipes/code_patterns.yaml",
+        "sha": "8c961def34f3a112fd472515ba26d8d3b4515088"
+      },
+      {
+        "path": "scripts/test-subrecipes-examples/subrecipes/file_stats.yaml",
+        "sha": "d5633c71ae1604ce92b43ad65309e858825d8761"
+      },
+      {
+        "path": "services/ask-ai-bot/utils/ai/index.ts",
+        "sha": "56b301e100a6eff020c5c42b5e9975d3ffe16ec9"
+      },
+      {
+        "path": "ui/desktop/src/i18n/index.ts",
+        "sha": "1728a4be94c06cf5193efb33d301780fe95a799b"
+      },
+      {
+        "path": "ui/desktop/src/recipe/index.ts",
+        "sha": "24b69ea96b8f3e57d6ff41258177b0112e8de6f8"
+      },
+      {
+        "path": "ui/goose-acp-client/src/generated/index.ts",
+        "sha": "9424b03d3f4378ce234aebd814e979b9e7615c27"
+      },
+      {
+        "path": "ui/pnpm-workspace.yaml",
+        "sha": "e2c9516f8f77b3757b377be38c9c5643d5da0395"
+      },
+      {
+        "path": "ui/goose-binary/goose-binary-darwin-arm64/package.json",
+        "sha": "883746e3d89e463f16ca7f8b6447e8377e8e8b56"
+      },
+      {
+        "path": "ui/goose-binary/goose-binary-darwin-x64/package.json",
+        "sha": "969ad0a6e406e91da0fd5be78cdcb30a4a37f18d"
+      },
+      {
+        "path": "ui/goose-binary/goose-binary-linux-arm64/package.json",
+        "sha": "9d54b477c68eb14c3bba65eeadbc5a8d9be527f6"
+      },
+      {
+        "path": "ui/goose-binary/goose-binary-linux-x64/package.json",
+        "sha": "7dc0e19e6088be0c94319bf45a7cb5f634511df3"
+      },
+      {
+        "path": "ui/goose-binary/goose-binary-win32-x64/package.json",
+        "sha": "eef12441b0f6643ef9dd0df4cbb3ba781412d90c"
+      },
+      {
+        "path": "crates/goose-agent/CHANGELOG.md",
+        "sha": "8854b376a0195c800eff4a9b046038a4e826716d"
+      },
+      {
+        "path": "crates/goose-agent/README.md",
+        "sha": "e34da55ae0f58c38d5ffb9c38ffe7832387013a8"
+      },
+      {
+        "path": "crates/goose-context-management/CHANGELOG.md",
+        "sha": "44c472526609f46fd8a858cc9b00ce83efdb506e"
+      },
+      {
+        "path": "crates/goose-context-management/README.md",
+        "sha": "3d59da1478c9aa2b8bfba4f8fddc744b4e4fc7c9"
+      },
+      {
+        "path": "crates/goose-download-manager/CHANGELOG.md",
+        "sha": "11bddf32c5be89d76a4db754e0bc247d619ce454"
+      },
+      {
+        "path": "crates/goose-local-inference/CHANGELOG.md",
+        "sha": "75dd1fb5c07a5db47d09fa2a2a4b3cc9046b6621"
+      },
+      {
+        "path": "crates/goose-local-inference/README.md",
+        "sha": "8bd1dcd178b20d8d5e4e61e5abc2dc8cd8cc1f27"
+      },
+      {
+        "path": "crates/goose-mcp/README.md",
+        "sha": "6bad1a3b75a4a8516dd1115f59e0987cd52c7dd4"
+      },
+      {
+        "path": "crates/goose-provider-types/CHANGELOG.md",
+        "sha": "f9139ae5c2911a8abe2d8ed7b84eb4ab6dcb48de"
+      },
+      {
+        "path": "crates/goose-provider-types/README.md",
+        "sha": "c661b04c2db678d985de8c90702ca5e3ae4d5abf"
+      },
+      {
+        "path": "crates/goose-providers/CHANGELOG.md",
+        "sha": "af7d1099de1cbecf2f4ba91d1d7a2fdf068c7a0d"
+      },
+      {
+        "path": "crates/goose-providers/README.md",
+        "sha": "798452a9ea8ddc6dc3105ad3a2afe20bd98a406d"
+      },
+      {
+        "path": "crates/goose-roaming/README.md",
+        "sha": "b08d0a2d78b964e4ccd407a49c269467675d1d92"
+      },
+      {
+        "path": "crates/goose-roaming/SECURITY.md",
+        "sha": "e3e255c10137cd10f7c03b1dc86927e1ef60bd3a"
+      },
+      {
+        "path": "crates/goose-sdk-types/CHANGELOG.md",
+        "sha": "ac1b2469f773da445d89f71c438c5ac3c8abbf6b"
+      },
+      {
+        "path": "crates/goose-sdk/CHANGELOG.md",
+        "sha": "3502b94988cb7620715c90de529a4efa9fdbf495"
+      },
+      {
+        "path": "crates/goose-sdk/README.md",
+        "sha": "b06a9b95b38afab14ac1956347fdb9f3904a6bdf"
+      },
+      {
+        "path": "crates/goose/acp-meta.json",
+        "sha": "bed414d720d0f370b747b3036704cf8817d931fa"
+      },
+      {
+        "path": "documentation/blog/authors.yml",
+        "sha": "01ae59acb508271fa90a181c1ae0ea954cf4d27e"
+      },
+      {
+        "path": "documentation/blog/README.md",
+        "sha": "2efbd966fa113f073af1ada515ee5a0b060d701c"
+      },
+      {
+        "path": "documentation/blog/tags.yml",
+        "sha": "75387601fc5e3123359850dc4363513d8142f990"
+      },
+      {
+        "path": "documentation/plugins/custom-webpack.cjs",
+        "sha": "8f4193599b9e55c11922a5e7b8c1bb21af7ddc41"
+      },
+      {
+        "path": "documentation/plugins/markdown-export.cjs",
+        "sha": "1ffeab49a96d260c0f6d25065c781fdabbd8251b"
+      },
+      {
+        "path": "documentation/plugins/tailwind-config.cjs",
+        "sha": "f2b1775bdfd880b7efbaccf5d4a6b3504a47cdcd"
+      },
+      {
+        "path": "documentation/scripts/community_stars_teams.txt",
+        "sha": "3bdd57a7e8c43e73a84768733a2b45b68da39b4a"
+      },
+      {
+        "path": "documentation/scripts/community_stars.py",
+        "sha": "e59e1270f49ad11356aad5bad8cdd7b0affcbc70"
+      },
+      {
+        "path": "documentation/scripts/generate-acp-docs.js",
+        "sha": "058a4ef30d9e15b87e93b64d6fec921879787937"
+      },
+      {
+        "path": "documentation/scripts/generate-docs-map.js",
+        "sha": "609477165029304b74af41ebe47c6085af105288"
+      },
+      {
+        "path": "documentation/scripts/generate-gdk-api-markdown.js",
+        "sha": "eaabb81c106874766aa45421d98b7af4b7430cb1"
+      },
+      {
+        "path": "documentation/scripts/generate-released-acp-docs.sh",
+        "sha": "915d9dc816df1feb2c2342299f8adf526777605d"
+      },
+      {
+        "path": "documentation/scripts/serve-static.js",
+        "sha": "2835205849c784f28aea575f433db709a16a2e98"
+      },
+      {
+        "path": "documentation/scripts/verify-build.sh",
+        "sha": "bd212e759f176df4c20e1bdb6226a210a06f1e73"
+      },
+      {
+        "path": "documentation/src/pages/recipes/types/index.tsx",
+        "sha": "9840f99927682bb545060f282f7fd17057a6dc56"
+      },
+      {
+        "path": "documentation/src/theme/BlogListPage/StructuredData/index.tsx",
+        "sha": "6ae32bf4bee5495ccbe0c244e22c09e5a44a885c"
+      },
+      {
+        "path": "documentation/src/theme/DocItem/Layout/index.tsx",
+        "sha": "488118ee819c2e1aa9b3c79546b937e0d8de40fa"
+      },
+      {
+        "path": "documentation/src/theme/DocItem/Metadata/index.tsx",
+        "sha": "ebafe7d6905a3ed2bae2a65ed75186c6c370ba60"
+      },
+      {
+        "path": "documentation/src/theme/Navbar/Content/index.tsx",
+        "sha": "7619d51e3abeac6e8c5c56e6e5abf979c0c7fb1e"
+      },
+      {
+        "path": "documentation/src/theme/Navbar/Logo/index.tsx",
+        "sha": "5b4c163bb29ef2aff4b6848015707f32995bcf88"
+      },
+      {
+        "path": "documentation/static/llms.txt",
+        "sha": "cb6bf353850e1a42e2a77c89be33c008519606a9"
+      },
+      {
+        "path": "documentation/static/robots.txt",
+        "sha": "bf7dac709760839fcf80020b2f876b00df552244"
+      },
+      {
+        "path": "documentation/static/servers.json",
+        "sha": "87cfc2db78b30e43762cbeb93c93679b21390d15"
+      },
+      {
+        "path": "evals/harbor/agent.py",
+        "sha": "9481901efc49bb568440d0631d3c44bc99e82c9b"
+      },
+      {
+        "path": "evals/harbor/cmd.py",
+        "sha": "b1fd95b8d3fbf1080bb1661512a5683ce00a0a23"
+      },
+      {
+        "path": "evals/harbor/config_template.yaml",
+        "sha": "d786d76fecf015cd0c9db1255dbdcd39660cf268"
+      },
+      {
+        "path": "evals/harbor/README.md",
+        "sha": "3068aac39d4dedfccf3d2881094bba83e400d3ee"
+      },
+      {
+        "path": "evals/harbor/reporter.py",
+        "sha": "8183e238e4613c3319915b70b9882f8c0dc35fb3"
+      },
+      {
+        "path": "evals/harbor/runner.py",
+        "sha": "7603e09432be62ac1e0ed532d098f929867d28b6"
+      },
+      {
+        "path": "services/ask-ai-bot/README.md",
+        "sha": "11a1b21b26a9f5fb844fcb24a35145816fde5c11"
+      },
+      {
+        "path": "services/ask-ai-bot/tsconfig.json",
+        "sha": "238655f2ce24cd6f677057d7eaa8822e75aeb6b8"
+      },
+      {
+        "path": "services/ask-ai-bot/utils/ai/tools/index.ts",
+        "sha": "85f85da006476b763e16d997b65046d8d141068b"
+      },
+      {
+        "path": "ui/.changeset/config.json",
+        "sha": "fce1c26540b1d70165c15e6f810d3482e8ff799b"
+      },
+      {
+        "path": "ui/.changeset/README.md",
+        "sha": "e5b6d8d6a67ad0dca8f20117fbfc72e076882d00"
+      },
+      {
+        "path": "ui/desktop/.prettierrc.json",
+        "sha": "a813c658a70dcc272b80255206469a2b7f740ff1"
+      },
+      {
+        "path": "ui/desktop/components.json",
+        "sha": "3c147bdda305d21878204f5edd76929f5ae31c92"
+      },
+      {
+        "path": "ui/desktop/electron-builder.nsis.yml",
+        "sha": "3cb774c4e3b0265f24899bc7d0c85f41a5f66541"
+      },
+      {
+        "path": "ui/desktop/eslint.config.js",
+        "sha": "f97af1a41e70096f402f510b1e6aeab0f5238c88"
+      },
+      {
+        "path": "ui/desktop/forge.config.ts",
+        "sha": "95fbbe9d36d2bbaf140a33e1c88795596f0c25bb"
+      },
+      {
+        "path": "ui/desktop/forge.env.d.ts",
+        "sha": "9700e0ae19be802234517f850d7db55d21aa95c9"
+      },
+      {
+        "path": "ui/desktop/playwright.config.ts",
+        "sha": "2e1fe4a299d6aae98d0fb8d05f0b84530b612489"
+      },
+      {
+        "path": "ui/desktop/README.md",
+        "sha": "0d31efd8c56c36bc3d596b281449612b617a69f3"
+      },
+      {
+        "path": "ui/desktop/src/acp/adapter/tools.ts",
+        "sha": "c4657289488a462264cb46f1ea4307689a67536b"
+      },
+      {
+        "path": "ui/desktop/src/components/icons/index.tsx",
+        "sha": "ac6987850f3137d8ee549b90b9910702bf80bc74"
+      },
+      {
+        "path": "ui/desktop/tsconfig.json",
+        "sha": "38856fba14968ff7be28501a70dcd4a6e3e6b3fb"
+      },
+      {
+        "path": "ui/desktop/tsconfig.node.json",
+        "sha": "8537680f43ec64293620af11853b54d0debaa0f8"
+      },
+      {
+        "path": "ui/desktop/vite.config.mts",
+        "sha": "44833cda64320ad5d5e1a4153bdac31dc0645d6d"
+      },
+      {
+        "path": "ui/desktop/vite.main.config.mts",
+        "sha": "2d3f89e8610a443eebfd3b9a8c22ebbf0606a359"
+      },
+      {
+        "path": "ui/desktop/vite.preload.config.mts",
+        "sha": "fa6f0d2757d5e009f9171707e99aedcc37c571f8"
+      },
+      {
+        "path": "ui/desktop/vite.renderer.config.mts",
+        "sha": "797962563fe8f140f92d55f2a914b49f8ec71646"
+      },
+      {
+        "path": "ui/desktop/vitest.config.ts",
+        "sha": "f745b9244dcc91ac8284388c96bdec4c404d4f64"
+      },
+      {
+        "path": "ui/desktop/vitest.integration.config.ts",
+        "sha": "949352dbf4f2bad5d028d7b1fff3079c9e7b3b05"
+      },
+      {
+        "path": "ui/goose-acp-client/generate-schema.ts",
+        "sha": "a7b4426e07aa8c1f2058974e6a00271db686163b"
+      },
+      {
+        "path": "ui/goose-acp-client/README.md",
+        "sha": "5cdf54e3f72dbeed7d8689a22b4846c9ff02beba"
+      },
+      {
+        "path": "ui/goose-acp-client/tsconfig.json",
+        "sha": "174717ff1f5333198afc2b2d3f8b4962475f454f"
+      },
+      {
+        "path": "ui/goose-acp/README.md",
+        "sha": "668c51b12022f356e31fb984b2f0a83b9b518dcd"
+      },
+      {
+        "path": "ui/goose-acp/tsconfig.json",
+        "sha": "ee965ec1edad4f5cb543dbcf28934188bd800290"
+      },
+      {
+        "path": "ui/goose-binary/README.md",
+        "sha": "2622c473865287fde1756cb5d1477d96b0da369f"
+      },
+      {
+        "path": "ui/scripts/npm-versions.mjs",
+        "sha": "f30262ef9bda57dfe5401e3bdf55566b4a2e8f32"
+      },
+      {
+        "path": "ui/scripts/prepare-npm-packages.sh",
+        "sha": "c313dd2433533af1130c170b695efaa395b4463e"
+      },
+      {
+        "path": "ui/scripts/publish-npm-packages.sh",
+        "sha": "2ada8e3ee1002429a6263ff1111e7e585826a73b"
+      },
+      {
+        "path": "ui/text/README.md",
+        "sha": "46b3f7571e8219c8a4ba6373ca1006f492ce67a2"
+      },
+      {
+        "path": "workflow_recipes/release_risk_check/recipe.yaml",
+        "sha": "0447699386f3c3582ccb9465761ad092f9b2e63a"
+      },
+      {
+        "path": "workflow_recipes/release_risk_check/release_risk_report.py",
+        "sha": "862c12b7b205f409e785be52ea85f5e298d3c9bf"
+      },
+      {
+        "path": "workflow_recipes/release_risk_check/run.sh",
+        "sha": "767d2edc22349542e1b4306a73acdfdd5b347d99"
+      },
+      {
+        "path": "crates/goose-sdk/maven/README.md",
+        "sha": "ebfdee4fadb36e480aa7f4648f59cc673510d3b7"
+      },
+      {
+        "path": "crates/goose-sdk/python/README.md",
+        "sha": "fe967838e3c07deb3292bbc507d8a2f79d861955"
+      },
+      {
+        "path": "crates/goose-sdk/scripts/gdk-release.py",
+        "sha": "a9083aade0a8fc06aca642581dfefd20e5f33e04"
+      },
+      {
+        "path": "crates/goose-sdk/scripts/maven-resource-prefix.sh",
+        "sha": "ef3ea1a14260f55e0c7431253c17474062b789ae"
+      },
+      {
+        "path": "crates/goose-sdk/scripts/prepare-maven-package.sh",
+        "sha": "cae816a5f3c54014317150e562ef4c1ff543dce7"
+      },
+      {
+        "path": "documentation/automation/gdk-api/generate.py",
+        "sha": "8afb63625b73bc35d7aed9fdbcdeabfdc180cc4e"
+      },
+      {
+        "path": "documentation/src/components/ArchivedExtensionWarning.tsx",
+        "sha": "e85cb88839a72a73ff644138b4e0f1018d7aded4"
+      },
+      {
+        "path": "documentation/src/components/CLIExtensionInstructions.tsx",
+        "sha": "b21cfae155f97781a13ae7678d1ed33368246d83"
+      },
+      {
+        "path": "documentation/src/components/ContentCard.tsx",
+        "sha": "7db86a09521552b9461f73573b097cd5d718b523"
+      },
+      {
+        "path": "documentation/src/components/ContentCardCarousel.tsx",
+        "sha": "0821460ef1814939e16c9b9ca67a4e3dddd85222"
+      },
+      {
+        "path": "documentation/src/components/DesktopAutoUpdateSteps.js",
+        "sha": "f001b965552dc90472d807d0bcdb5b4110ac5e50"
+      },
+      {
+        "path": "documentation/src/components/GooseBuiltinInstaller.tsx",
+        "sha": "3bed475dee216778276d75a83e1562ea69d28212"
+      },
+      {
+        "path": "documentation/src/components/GooseDesktopInstaller.tsx",
+        "sha": "947f1060df7464dde6c562a959fc4b75c371f11d"
+      },
+      {
+        "path": "documentation/src/components/GooseLogo.tsx",
+        "sha": "7e0e40977ab1d760d988aff91ef67673249df4ea"
+      },
+      {
+        "path": "documentation/src/components/gooseWordmark.tsx",
+        "sha": "430ee9dff93fb43dc2213f2bd522c1448fbfc3b6"
+      },
+      {
+        "path": "documentation/src/components/ImageCarousel.js",
+        "sha": "0298915d76469c169f510e220aa40787abe9bf26"
+      },
+      {
+        "path": "documentation/src/components/LinuxDesktopInstallButtons.js",
+        "sha": "6c5db0606536e05bc966b6d2b91f0e5a8bfd40e1"
+      },
+      {
+        "path": "documentation/src/components/MacDesktopInstallButtons.js",
+        "sha": "82347a7b9e97e5744224dc6954e40b697d334945"
+      },
+      {
+        "path": "documentation/src/components/ModelSelectionTip.js",
+        "sha": "c7445235a57054f2e34a0c6b4445e6a4a00bfb27"
+      },
+      {
+        "path": "documentation/src/components/OnboardingProviderSetup.js",
+        "sha": "4c37d5b75d83337c8a22d098c8d229da8853baef"
+      },
+      {
+        "path": "documentation/src/components/PlatformExtensionNote.js",
+        "sha": "74e7ddb172de1e5330f76b2f27380ad1e0a6c3c3"
+      },
+      {
+        "path": "documentation/src/components/RateLimits.js",
+        "sha": "02f84867473f7e31bb96500e218f05567f3dd25c"
+      },
+      {
+        "path": "documentation/src/components/recipe-card.tsx",
+        "sha": "7bb0053e25755bb80e35b33f959c38e14b4bf1d9"
+      },
+      {
+        "path": "documentation/src/components/RecipeFields.js",
+        "sha": "bbc7b7d0dc35f9442e26062069066cb5f596f208"
+      },
+      {
+        "path": "documentation/src/components/server-card.tsx",
+        "sha": "8623d1897689c971139a1207f82896f46e3e5610"
+      },
+      {
+        "path": "documentation/src/components/SupportedEnvironments.js",
+        "sha": "fc4507826139fb69ccacb865567e1737e94699d5"
+      },
+      {
+        "path": "documentation/src/components/VideoCarousel.js",
+        "sha": "e671bd1cdb64c926eeaad15c0e7b5f57b768dd9f"
+      },
+      {
+        "path": "documentation/src/components/WindowsDesktopInstallButtons.js",
+        "sha": "673d421d005196ea1455041a85abc4a2768911a7"
+      },
+      {
+        "path": "documentation/src/components/YouTubeShortEmbed.js",
+        "sha": "4e9fd2cfbaaccdac7de6717ae17f0244c2685b29"
+      },
+      {
+        "path": "documentation/src/data/gdk-api.json",
+        "sha": "ad7de027c772bdb964a8cf5469e7e598c3ba925d"
+      },
+      {
+        "path": "documentation/src/pages/deeplink-generator.tsx",
+        "sha": "7c2b77ff2c82fd70ee5cdec34b0f74f9f0b4bb84"
+      },
+      {
+        "path": "documentation/src/pages/extension.tsx",
+        "sha": "d0891121a202ec8c02774d58960ad21373ef8fa0"
+      },
+      {
+        "path": "documentation/src/pages/grants.md",
+        "sha": "b0ca2d68131419ea59daa840a388a64e4ac60284"
+      },
+      {
+        "path": "documentation/src/theme/BlogPostItem/Header/Info/index.tsx",
+        "sha": "6329c6f9f3d90dbb0517ad50966eb930260fc02c"
+      },
+      {
+        "path": "documentation/src/theme/MDXComponents.js",
+        "sha": "b74a5220dd5c0c1fc554e384bd73a49f865ef9e7"
+      },
+      {
+        "path": "documentation/src/theme/Navbar/MobileSidebar/PrimaryMenu/index.tsx",
+        "sha": "0295eef9567b2ee3eb5861fb1bd853038641d32a"
+      },
+      {
+        "path": "documentation/src/theme/Root.tsx",
+        "sha": "a25841532075836472b43bc44489ccf0c6769a50"
+      },
+      {
+        "path": "documentation/src/types/prompt.ts",
+        "sha": "181a06a261af7ebb95925b8eca28d01ddefb85f5"
+      },
+      {
+        "path": "documentation/src/utils/cn.ts",
+        "sha": "daab5dec6f4b04f71c07a4eb17c04aeb5049a683"
+      },
+      {
+        "path": "documentation/src/utils/github-stars.ts",
+        "sha": "adfd1cb45cbc61f661a3ec5bcd21c4f14c48c178"
+      },
+      {
+        "path": "documentation/src/utils/mcp-servers.ts",
+        "sha": "46c208c333fbcf1561594f405d83a8145baec856"
+      },
+      {
+        "path": "documentation/src/utils/recipes.ts",
+        "sha": "864e00d5cfca3bdb467e81d2558f8bf155680b7c"
+      },
+      {
+        "path": "documentation/static/oauth/client-metadata.json",
+        "sha": "e3d137da2151bcb7dba7e4813c5fb6b57d5ac849"
+      },
+      {
+        "path": "documentation/static/oauth/huggingface-client-metadata.json",
+        "sha": "daa93f49802d41b9f553ecc673c2848def545a71"
+      },
+      {
+        "path": "evals/harbor/recipes/analyze_bench_failure.yaml",
+        "sha": "803ced0f9cc2bf8e87f2e62ae9f1b28044c1b935"
+      },
+      {
+        "path": "evals/harbor/recipes/compare_bench_run.yaml",
+        "sha": "e8f4bb509e83c737ac8a205e8aff4f2d3e72142d"
+      },
+      {
+        "path": "services/ask-ai-bot/clients/ai.ts",
+        "sha": "e5ca3bd45acb6a13b5431dcaa2e9d343d49e0bba"
+      },
+      {
+        "path": "services/ask-ai-bot/clients/discord.ts",
+        "sha": "680aa2706e120a9c8c027aa014223a2f3d7e2953"
+      },
+      {
+        "path": "services/ask-ai-bot/commands/ping.ts",
+        "sha": "6da8f009aed845fedf5afbb74bb437055065c191"
+      },
+      {
+        "path": "services/ask-ai-bot/events/error.ts",
+        "sha": "631a19a1de524b36c4e077ef8f9f223139ac4580"
+      },
+      {
+        "path": "services/ask-ai-bot/events/messageCreate.ts",
+        "sha": "abfa44dca3dcde814c8bea433b51955816133bda"
+      },
+      {
+        "path": "services/ask-ai-bot/events/ready.ts",
+        "sha": "098fc117f632ddba34349511e3833412037978ea"
+      },
+      {
+        "path": "services/ask-ai-bot/utils/logger.ts",
+        "sha": "697876c5a524a1d5e4bff0a9b5fa5b3ccd1276a7"
+      },
+      {
+        "path": "services/ask-ai-bot/utils/redact-secrets.ts",
+        "sha": "95a4116a914bf53f0d1168f7204ad6a0d845ea4a"
+      },
+      {
+        "path": "ui/desktop/announcements/content.ts",
+        "sha": "4b20e4865d1d6a0445b89a8201fa6db41d2e3756"
+      },
+      {
+        "path": "ui/desktop/public/audio-capture-worklet.js",
+        "sha": "f54add8edd0fe1d4f791819d8a6e9b398be38641"
+      },
+      {
+        "path": "ui/desktop/scripts/build-main.js",
+        "sha": "cc8d5c330ee18ffa52a83a83e79b5ae40302a8dc"
+      },
+      {
+        "path": "ui/desktop/scripts/clean-vite-cache.js",
+        "sha": "a0438396e422cde2b2917ccc44ffb888bf47ab7c"
+      },
+      {
+        "path": "ui/desktop/scripts/generate-mac-update-manifest.js",
+        "sha": "850cc5536b7d85639db489da686e4696582e037c"
+      },
+      {
+        "path": "ui/desktop/scripts/generate-windows-update-manifest.js",
+        "sha": "a3aa7d1c8aa9a449423ea10da1fddf3e9736d240"
+      },
+      {
+        "path": "ui/desktop/scripts/i18n-check.js",
+        "sha": "2c45d62edc2d33ea20c855470772deb6563f1667"
+      },
+      {
+        "path": "ui/desktop/scripts/i18n-compile.js",
+        "sha": "a25c34614da3ae45554b9de055c74a2e5bd03922"
+      },
+      {
+        "path": "ui/desktop/scripts/i18n-validate-locale.js",
+        "sha": "157512f0680233103759d0d9a9789aa50626a6da"
+      },
+      {
+        "path": "ui/desktop/scripts/mac-update-requirements.js",
+        "sha": "f9b6cdf64d0fc7114ed7e0d35353faeb1a4bdac3"
+      },
+      {
+        "path": "ui/desktop/scripts/prepare-platform-binaries.js",
+        "sha": "cf5b714da611d6dc75ad6c5a798407a3b9be8275"
+      },
+      {
+        "path": "ui/desktop/scripts/README.md",
+        "sha": "a5b325aa545942e87e3829a1e7086833c6dcbc54"
+      },
+      {
+        "path": "ui/desktop/scripts/sign-windows-installer.js",
+        "sha": "3cde1baa88320fdb89617b72e1c8994dea9ef3da"
+      },
+      {
+        "path": "ui/desktop/scripts/unregister-deeplink-protocols.js",
+        "sha": "79ffbf6774f6590e7816bc7854d8e4f6030af6b4"
+      },
+      {
+        "path": "ui/desktop/scripts/verify-mac-update-resources.js",
+        "sha": "e75f9adc3717099275eaeaa6722b314b0e3b7fd1"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T04:38:01Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 0,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [
+      "severe-code-pattern",
+      "rm-rf",
+      "curl-pipe-sh",
+      "docs-pipe-to-shell",
+      "reverse-shell"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "rm-rf",
+      "severe": true,
+      "file": "scripts/goose-db-helper.sh",
+      "line": 772,
+      "snippet": "echo \"    rm -rf ~/.local/share/goose/migrations/004_*\"",
+      "deduction": 40
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "curl-pipe-sh",
+      "severe": false,
+      "file": "documentation/src/pages/index.tsx",
+      "line": 320,
+      "snippet": "{`curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download_cli.sh | bash`}",
+      "deduction": 25
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "curl-pipe-sh",
+      "severe": true,
+      "file": "download_cli.sh",
+      "line": 364,
+      "snippet": "echo \"Non-interactive shell detected (e.g. 'curl ... | bash').\"",
+      "deduction": 40
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "scripts/pre-release.sh",
+      "line": 81,
+      "snippet": "<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">",
+      "host": "www.apple.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "scripts/test_openrouter_toolcalls.sh",
+      "line": 17,
+      "snippet": "echo \"  OPENROUTER_HOST          Optional OpenRouter host (default: https://openrouter.ai)\"",
+      "host": "openrouter.ai",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "documentation/src/pages/index.tsx",
+      "line": 216,
+      "snippet": "<a href=\"https://agentclientprotocol.com/\" target=\"_blank\" rel=\"noopener\">ACP</a>{\" \"}",
+      "host": "agentclientprotocol.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "scripts/provider-error-proxy/proxy.py",
+      "line": 48,
+      "snippet": "'openai': 'https://api.openai.com',",
+      "host": "api.openai.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "scripts/provider-error-proxy/proxy.py",
+      "line": 50,
+      "snippet": "'google': 'https://generativelanguage.googleapis.com',",
+      "host": "generativelanguage.googleapis.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "scripts/provider-error-proxy/proxy.py",
+      "line": 52,
+      "snippet": "'tetrate': 'https://api.tetrate.io',",
+      "host": "api.tetrate.io",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "scripts/provider-error-proxy/proxy.py",
+      "line": 53,
+      "snippet": "'databricks': 'https://api.databricks.com',",
+      "host": "api.databricks.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "documentation/src/components/RateLimits.js",
+      "line": 8,
+      "snippet": "href=\"https://aistudio.google.com/app/apikey\"",
+      "host": "aistudio.google.com",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "ui/desktop/scripts/sign-windows-installer.js",
+      "line": 40,
+      "snippet": "'-TimestampRfc3161 http://timestamp.acs.microsoft.com',",
+      "host": "timestamp.acs.microsoft.com",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": true,
+      "file": "download_cli.sh",
+      "line": 364,
+      "snippet": "echo \"Non-interactive shell detected (e.g. 'curl ... | bash').\"",
+      "deduction": 40
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "agent-config-write",
+      "severe": false,
+      "file": "ui/desktop/src/main.ts",
+      "line": 3019,
+      "snippet": "const extensionName = gooseApp.mcpServers?.[0] ?? '';",
+      "deduction": 5
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "reverse-shell",
+      "severe": true,
+      "file": "scripts/test_compaction.sh",
+      "line": 297,
+      "snippet": "if timeout 1 bash -c \"echo -n > /dev/tcp/localhost/$PROXY_PORT\" 2>/dev/null; then",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 3,
+    "severe_hits": 2,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "www.apple.com",
+      "openrouter.ai",
+      "agentclientprotocol.com",
+      "api.openai.com",
+      "generativelanguage.googleapis.com",
+      "api.tetrate.io",
+      "api.databricks.com",
+      "aistudio.google.com",
+      "timestamp.acs.microsoft.com"
+    ],
+    "declared_hosts": 3,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 400,
+    "failed": 0,
+    "ms": 143193
+  },
+  "duration_ms": 21873
+}

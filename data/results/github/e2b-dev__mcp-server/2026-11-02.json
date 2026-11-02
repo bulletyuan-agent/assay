@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "e2b-dev/mcp-server",
+    "url": "https://github.com/e2b-dev/mcp-server",
+    "name": "mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:53:57.152Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "dba87432cacaa7a5af1326d72e37e2d770628a0b",
+    "files_scanned": 17,
+    "candidates": 17,
+    "excluded_non_shipped": 3,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/workflows/publish_packages.yml",
+        "sha": "afb59cfe436e56170cff4ab243a564527ba59d5e"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "662f086af30ab8d12eefa46626c03f47569ba1db"
+      },
+      {
+        "path": "package.json",
+        "sha": "f385150bc906d14f13e3141c71c6cf875822b53b"
+      },
+      {
+        "path": "packages/js/src/index.ts",
+        "sha": "17784fcce05505eef3a02ecb26322bad8b5c2f7c"
+      },
+      {
+        "path": "packages/python/e2b_mcp_server/server.py",
+        "sha": "fe06d1efb4c196e1fcf9a98bb799c0e1c416685e"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "sha": "440a3ae81699881c2a33e4106a683aaf882a6b03"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha": "924b55f42e98721620a2206ca848eab030e6d887"
+      },
+      {
+        "path": "README.md",
+        "sha": "5bbcdd4b3a872c9025721d7c7088c9de28333412"
+      },
+      {
+        "path": "smithery.yaml",
+        "sha": "93ee6b6766d776384f001b11b642b025563c1e32"
+      },
+      {
+        "path": "packages/js/package.json",
+        "sha": "e49d8883ca6298243bb99b5efbf22ded32aa22c5"
+      },
+      {
+        "path": "packages/python/package.json",
+        "sha": "c85d64a399727ae3bef5b9d34aa4055b2da2dc7b"
+      },
+      {
+        "path": ".changeset/config.json",
+        "sha": "3569201d1d9a7273e693af0b043863c3572f7f42"
+      },
+      {
+        "path": ".changeset/README.md",
+        "sha": "fa18076f5d09f455664047d24adb3df8051c0797"
+      },
+      {
+        "path": "packages/js/README.md",
+        "sha": "7277b11ad6f8dc8208dcfd364d87a0bb807be022"
+      },
+      {
+        "path": "packages/js/tsconfig.json",
+        "sha": "a14bee07055b3cd300c82b3a53f4192512349392"
+      },
+      {
+        "path": "packages/python/README.md",
+        "sha": "4bcc5a9d464fc3535e7d3500add18f2f12f47832"
+      },
+      {
+        "path": "packages/python/e2b_mcp_server/__init__.py",
+        "sha": "c0630016316ad04088ed87bdc9e8fbac4b41f7cb"
+      }
+    ],
+    "repo_pushed_at": "2026-04-16T15:51:25Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": false,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 85,
+    "dims": {
+      "maintenance": 0,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 17,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 200
+  },
+  "network": {
+    "calls": 19,
+    "failed": 0,
+    "ms": 7547
+  },
+  "duration_ms": 2476
+}

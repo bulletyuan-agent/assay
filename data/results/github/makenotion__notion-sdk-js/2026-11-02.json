@@ -1,0 +1,260 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "makenotion/notion-sdk-js",
+    "url": "https://github.com/makenotion/notion-sdk-js",
+    "name": "notion-sdk-js"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:54:04.783Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "16197ce347560a7fad13fd1df42fd8ddde98c1e3",
+    "files_scanned": 45,
+    "candidates": 45,
+    "excluded_non_shipped": 16,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".github/copilot-instructions.md",
+        "sha": "2da1adef6ec6c6a0e7a97bfbe099b8e614dbe412"
+      },
+      {
+        "path": ".husky/pre-commit",
+        "sha": "2312dc587f61186ccf0d627d678d851b9eef7b82"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha": "4539b72afa913feaa2c51b30c007e103bd7c9786"
+      },
+      {
+        "path": ".github/workflows/increment-version.yml",
+        "sha": "520e47bc63d54ff8280361437fcba5305e2f8379"
+      },
+      {
+        "path": ".github/workflows/publish.yml",
+        "sha": "e2d13d3194c94fc0096a313b32ac9d8660510103"
+      },
+      {
+        "path": ".github/workflows/semgrep.yml",
+        "sha": "74cecfba182c4869706cb7e000bfc277bd044d79"
+      },
+      {
+        "path": "src/index.ts",
+        "sha": "3928f03dad5491415453a7b9cdad1b6734fe73c7"
+      },
+      {
+        "path": "package.json",
+        "sha": "99fd92ebfb3086e65ecbee0221c7f08ee8918d6e"
+      },
+      {
+        "path": "scripts/verifyLoggedIn.sh",
+        "sha": "4689bd135eb167e54d184b6e8ebc34c6e00c58d5"
+      },
+      {
+        "path": "src/api-endpoint-methods.ts",
+        "sha": "f376644191f998dccea293940e4ddee3306554f2"
+      },
+      {
+        "path": "src/api-endpoints.ts",
+        "sha": "766772e6500af8dddf398314f019c1083b2df6d7"
+      },
+      {
+        "path": "src/Client.ts",
+        "sha": "0f11a95f465d891a3d217f3525378e39364013b2"
+      },
+      {
+        "path": "src/constants.ts",
+        "sha": "6058abd34d8ca7a791fcb0a3108675f6f2d52495"
+      },
+      {
+        "path": "src/errors.ts",
+        "sha": "267780f95a63768ad42f470eb6afd6309948fa6f"
+      },
+      {
+        "path": "src/fetch-types.ts",
+        "sha": "ef1e3db351bc43aa31a61be8078b3ab2eb669db5"
+      },
+      {
+        "path": "src/helpers.ts",
+        "sha": "d5538502e82087a799547a0792210f017b1b593b"
+      },
+      {
+        "path": "src/logging.ts",
+        "sha": "77bf1f496e69a122eaa80d365173720ea948b065"
+      },
+      {
+        "path": "src/meeting-notes.ts",
+        "sha": "67c5533110045cb2870aed9b7ab1eee77182a1bf"
+      },
+      {
+        "path": "src/type-utils.ts",
+        "sha": "85568b6a864596513feb4a7331b410e1135bda68"
+      },
+      {
+        "path": "src/utils.ts",
+        "sha": "27bdcb5fb5983fdb3258ce8ca0e5a1e6d6ec3dd6"
+      },
+      {
+        "path": "src/webhooks.ts",
+        "sha": "7ae692220a70dca105abd68f1efddab2f08c1444"
+      },
+      {
+        "path": ".cspell.json",
+        "sha": "17d831ed9dc87e16fc5fd984331f5dfe8fc703c3"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "9e1f9eb7cbfc1bfdf62bb302b683b3a607dca152"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha": "86861e6caaeb9ab6b561d51d80d1a6b2457808f4"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "258e0bc1a232978530745facdd17f8ff4e01fddd"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "sha": "975989cb8601aa587700a92fe039f2e2944fa447"
+      },
+      {
+        "path": "jest.config.js",
+        "sha": "2f007ddff9d973afe9853befe694bca6b3ff43f7"
+      },
+      {
+        "path": "README.md",
+        "sha": "9891bf5ad2cc4fbb1a5d364ea9c323baad8efb13"
+      },
+      {
+        "path": "src/api-endpoints/agent-skills.ts",
+        "sha": "7301a8e72cbbc94828d29a1ddb94a59b126949b2"
+      },
+      {
+        "path": "src/api-endpoints/async-tasks.ts",
+        "sha": "f980802dc6b19821d26db1516c982d0511983cd2"
+      },
+      {
+        "path": "src/api-endpoints/blocks.ts",
+        "sha": "6a6e4df728586b7113f7ca3052b571ac016a73d4"
+      },
+      {
+        "path": "src/api-endpoints/comments.ts",
+        "sha": "7f622765fa80e2827fdf79ee133ba875f82dfa07"
+      },
+      {
+        "path": "src/api-endpoints/common.ts",
+        "sha": "7a68f0b7a78d53d314de28c9eb31fa8976615acc"
+      },
+      {
+        "path": "src/api-endpoints/custom-emojis.ts",
+        "sha": "0d700a209573273f18983c75b9f6a52290be69d1"
+      },
+      {
+        "path": "src/api-endpoints/data-sources.ts",
+        "sha": "098eaf9c921ad8603efb0e2bdc3d7ab6ea740bba"
+      },
+      {
+        "path": "src/api-endpoints/databases.ts",
+        "sha": "aaf404104ed40be0fd719b7ea475a1d5c9ec196a"
+      },
+      {
+        "path": "src/api-endpoints/file-uploads.ts",
+        "sha": "f5b92bd72954c487649b72070dd5527092733a37"
+      },
+      {
+        "path": "src/api-endpoints/meeting-notes.ts",
+        "sha": "72d8405ed612aee0367473c2cccd056d670ceba8"
+      },
+      {
+        "path": "src/api-endpoints/oauth.ts",
+        "sha": "a55b3d58da4d67383a604bf632fc191b0e559039"
+      },
+      {
+        "path": "src/api-endpoints/pages.ts",
+        "sha": "e5d70c4e6a4fac6d6136c1e2689cab58cd57e893"
+      },
+      {
+        "path": "src/api-endpoints/search.ts",
+        "sha": "d9bb030eed740335f795da79b10b23565a610336"
+      },
+      {
+        "path": "src/api-endpoints/users.ts",
+        "sha": "1d04cca7d0598e263b7c4172ed38b0694bd18a74"
+      },
+      {
+        "path": "src/api-endpoints/views.ts",
+        "sha": "0d973f00c5c6409139317da3e1557b8fa79ffb13"
+      },
+      {
+        "path": "src/api-endpoints/webhooks.ts",
+        "sha": "aafc0cca6855e488e551e2e3342b542e69bf3df3"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "612cdbb1281ff3fe3fa5bba76186d1d92e42c503"
+      }
+    ],
+    "repo_pushed_at": "2026-10-30T22:26:29Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 96,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 85,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": false,
+      "file": ".husky/pre-commit",
+      "line": 1,
+      "snippet": "npx lint-staged",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 45,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 3
+  },
+  "network": {
+    "calls": 48,
+    "failed": 0,
+    "ms": 16734
+  },
+  "duration_ms": 3909
+}

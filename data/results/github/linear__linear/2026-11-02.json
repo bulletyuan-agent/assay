@@ -1,0 +1,605 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T154949Z",
+  "target": {
+    "source": "github",
+    "id": "linear/linear",
+    "url": "https://github.com/linear/linear",
+    "name": "linear"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:54:11.866Z",
+  "method_version": "0.5.0",
+  "tool": {
+    "assay_commit": "695440dc97d8f5fa74cdb11f03ecbf56820b80a5",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.5.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "253713fef2916ab744defdd71c62acccc8e929a2",
+    "files_scanned": 129,
+    "candidates": 129,
+    "excluded_non_shipped": 54,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".husky/commit-msg",
+        "sha": "dbce4f4cf4b518c5c7c82f69a8b17d18ee6b526e"
+      },
+      {
+        "path": ".husky/pre-commit",
+        "sha": "c27d8893a99490cc432461db991faf1b276e005f"
+      },
+      {
+        "path": ".github/workflows/build.yaml",
+        "sha": "961ada6ae921cafdcd47e5f3c93fea60956c289d"
+      },
+      {
+        "path": ".github/workflows/dependencies.yaml",
+        "sha": "ee75dfd42f477243fa44d4f6747e56cc1143d660"
+      },
+      {
+        "path": ".github/workflows/release.yaml",
+        "sha": "1fba38e29a5f8fbdde2111ba005637f8d4d339c3"
+      },
+      {
+        "path": ".github/workflows/schema.yaml",
+        "sha": "c4d332441ecd23ff01f0f9c4dc78e4f35ece05f4"
+      },
+      {
+        "path": ".github/workflows/stale.yaml",
+        "sha": "0709286c131c2b3db1f6e942bff81f165f4c08fa"
+      },
+      {
+        "path": ".github/workflows/zizmor.yml",
+        "sha": "08b57cefdddad4193fc082176e2b2f2cd0e88e52"
+      },
+      {
+        "path": "package.json",
+        "sha": "f47a04c55ddb413c3985ca3069d86789dcd0a9cf"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "sha": "3c21d2470858e202279f5b2f717a15053a4e8657"
+      },
+      {
+        "path": "packages/codegen-doc/src/index.ts",
+        "sha": "e21942bf11ef39620ab5d7a6ef75d21989ae4e5c"
+      },
+      {
+        "path": "packages/codegen-sdk/src/index.ts",
+        "sha": "2682479ce4e3de08f44e3733c6a9ecf0888fe40a"
+      },
+      {
+        "path": "packages/codegen-test/src/index.ts",
+        "sha": "7b56b54cc8c2a85e3007c0e4f9e8f9a329876755"
+      },
+      {
+        "path": "packages/import/src/cli.ts",
+        "sha": "57a8ed5b7708c553c93b5b05a29ae4cbb43defc4"
+      },
+      {
+        "path": "packages/import/src/index.ts",
+        "sha": "132319ab0f70161c34125fed21e5447c3196b6c4"
+      },
+      {
+        "path": "packages/sdk/naming-override/index.js",
+        "sha": "2e685de10fe9c26d8645f294d9dcf38f34204c88"
+      },
+      {
+        "path": "packages/sdk/src/index.ts",
+        "sha": "60703253c05e437e30795ab0798a1dc41d81d387"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha": "36b4a52c970e7fd56b6199ce18d8e2f419900332"
+      },
+      {
+        "path": "README.md",
+        "sha": "60f5347e721378563924584bac1d78023da5f5ac"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "c94b85c6dbaf20e89f07f691052dc4bc98cf104d"
+      },
+      {
+        "path": "packages/codegen-doc/package.json",
+        "sha": "e14203f8ed2216372ee72fb0cfdc6ba303c4a127"
+      },
+      {
+        "path": "packages/codegen-sdk/package.json",
+        "sha": "c75d3ed0daf72c9f0c01c79a85f5ff0962194853"
+      },
+      {
+        "path": "packages/codegen-test/package.json",
+        "sha": "41e24a9aabb8fb15747abf8a25c624b3fc134d0a"
+      },
+      {
+        "path": "packages/import/package.json",
+        "sha": "2952f30fb75b37904ca5516d2957dcba660ef1ec"
+      },
+      {
+        "path": "packages/sdk/package.json",
+        "sha": "d022bf6a3b9d29c904a1cdf99d9a7c67370127b5"
+      },
+      {
+        "path": ".changeset/config.json",
+        "sha": "7d30e2d1a481c0abed75ddb4d283dc9257cf5e80"
+      },
+      {
+        "path": ".changeset/README.md",
+        "sha": "4f3b76b096beb17cafccc62bb4217fa9358a8a19"
+      },
+      {
+        "path": "packages/import/src/importers/index.ts",
+        "sha": "bcff50fb00c4d56144c4a0594dfd084ffa1446b2"
+      },
+      {
+        "path": "packages/sdk/src/oauth/index.ts",
+        "sha": "b051d1141a25a6351d76732ea33134df9555ac16"
+      },
+      {
+        "path": "packages/sdk/src/webhooks/index.ts",
+        "sha": "46815ad8a1e581b862a3650ef2bd0b3ed1828473"
+      },
+      {
+        "path": "packages/sdk/oauth/package.json",
+        "sha": "723738955a53ff51f424b331a6e0ff4791011e57"
+      },
+      {
+        "path": "packages/sdk/webhooks/package.json",
+        "sha": "55f34f025295a94abac6a84dda69c40af90c0336"
+      },
+      {
+        "path": "packages/codegen-doc/CHANGELOG.md",
+        "sha": "868fd65b9e9a9c208951b2230f844dcab39a6318"
+      },
+      {
+        "path": "packages/codegen-doc/README.md",
+        "sha": "53cc1c9f023f2f00daf331e695b0530a92a37046"
+      },
+      {
+        "path": "packages/codegen-doc/tsconfig.json",
+        "sha": "19230dd9f6114ba2766c71eb1dbc439aed71b512"
+      },
+      {
+        "path": "packages/codegen-sdk/CHANGELOG.md",
+        "sha": "f2a3886943d534684dfe1f379d1a340b4a8084d7"
+      },
+      {
+        "path": "packages/codegen-sdk/README.md",
+        "sha": "472a810e0abb21fd13d26e4dda938cab3a169eb2"
+      },
+      {
+        "path": "packages/codegen-sdk/tsconfig.json",
+        "sha": "ef58ea1acfe29b842740e46ba7ac35eb11356f46"
+      },
+      {
+        "path": "packages/codegen-test/CHANGELOG.md",
+        "sha": "603a4d680604a3048d0876cc7e636541738c0d07"
+      },
+      {
+        "path": "packages/codegen-test/README.md",
+        "sha": "b3c0ae40a6975406aebc6916096accaa68760f84"
+      },
+      {
+        "path": "packages/codegen-test/tsconfig.json",
+        "sha": "ef58ea1acfe29b842740e46ba7ac35eb11356f46"
+      },
+      {
+        "path": "packages/import/CHANGELOG.md",
+        "sha": "1e40a7c5c9b9a7d422e0615985c6dec5acfcf94c"
+      },
+      {
+        "path": "packages/import/README.md",
+        "sha": "10a2a2f2cc9b64a114381f7dd5f4081613d96ed0"
+      },
+      {
+        "path": "packages/import/src/importers/asanaCsv/index.ts",
+        "sha": "7de7cdd5ea4d3fd7f78d1fc50c53ce53f41427f2"
+      },
+      {
+        "path": "packages/import/src/importers/github/index.ts",
+        "sha": "92aa62a4e9472a07e6257a2101e11506dcc26c18"
+      },
+      {
+        "path": "packages/import/src/importers/gitlabCsv/index.ts",
+        "sha": "07a439d21279a2df388fbf0ea91227fa01500eb9"
+      },
+      {
+        "path": "packages/import/src/importers/jiraCsv/index.ts",
+        "sha": "8bff0bdc13bb332bb678a96072716aa50a562c45"
+      },
+      {
+        "path": "packages/import/src/importers/linearCsv/index.ts",
+        "sha": "091903a9fb2863e6d55692ec3e88a78282d9b1d6"
+      },
+      {
+        "path": "packages/import/src/importers/pivotalCsv/index.ts",
+        "sha": "146c58e488c95623a0914b6fc9b9ef1a6424777d"
+      },
+      {
+        "path": "packages/import/src/importers/shortcutCsv/index.ts",
+        "sha": "1348417631814da0d346abd9d86628c53bb96923"
+      },
+      {
+        "path": "packages/import/src/importers/trelloJson/index.ts",
+        "sha": "0208a33413f70ec6080fd5c8d6e91922d593d2dd"
+      },
+      {
+        "path": "packages/import/tsconfig.json",
+        "sha": "2b5bd7f2445b8e33968a3ae448ed3446613b0665"
+      },
+      {
+        "path": "packages/sdk/codegen.doc.yml",
+        "sha": "cfbdb5ba6ad1eae2d46ff0fabcdd01847f6e7209"
+      },
+      {
+        "path": "packages/sdk/codegen.schema.yml",
+        "sha": "d2680e8243e6a72d77281814fd4344c95d509cb7"
+      },
+      {
+        "path": "packages/sdk/codegen.sdk.yml",
+        "sha": "2af6c901e4bd64fc7d7da4d8863d0f35b18cebc3"
+      },
+      {
+        "path": "packages/sdk/README.md",
+        "sha": "67cd045726e2c99f9198bda164d9407ea49de26d"
+      },
+      {
+        "path": "packages/sdk/tsconfig.json",
+        "sha": "42d7b88bcb34ca65f047fe8966aee6825e572e99"
+      },
+      {
+        "path": "packages/sdk/tsdown.config.ts",
+        "sha": "baf42fe8238202468f21f1c258830fcd48a41d8c"
+      },
+      {
+        "path": "packages/codegen-doc/src/args.ts",
+        "sha": "90e0ddaf13fe59bcc37168c998768f7f05bd1ff3"
+      },
+      {
+        "path": "packages/codegen-doc/src/argument-graphql-visitor.ts",
+        "sha": "32e01e56dae38de10a7df8f73be660527f091b82"
+      },
+      {
+        "path": "packages/codegen-doc/src/argument-typescript-visitor.ts",
+        "sha": "4bfa1d5dd1163cad55b2e035a4ddf9b25aec7958"
+      },
+      {
+        "path": "packages/codegen-doc/src/constants.ts",
+        "sha": "c6f0a688a9574361ad5249914228aab89fa6cfb6"
+      },
+      {
+        "path": "packages/codegen-doc/src/context-visitor.ts",
+        "sha": "79d00130bf26f993d83654d59b68624a63857a14"
+      },
+      {
+        "path": "packages/codegen-doc/src/field.ts",
+        "sha": "273bfb43cf72108a95a9b5c129e80fa7999dc119"
+      },
+      {
+        "path": "packages/codegen-doc/src/fragment-visitor.ts",
+        "sha": "8e98b5f6f213dfc36a365f7698e3a09901f5277f"
+      },
+      {
+        "path": "packages/codegen-doc/src/fragment.ts",
+        "sha": "cb98bca3733e04ffb3b698b1b695903d6dd68133"
+      },
+      {
+        "path": "packages/codegen-doc/src/interface.ts",
+        "sha": "f1f6d188b9dd8e9de5e67a9a6c81c46f692e6949"
+      },
+      {
+        "path": "packages/codegen-doc/src/logger.ts",
+        "sha": "4b84c37384af40b4886c484bcd2a8fadd212d0c3"
+      },
+      {
+        "path": "packages/codegen-doc/src/object.ts",
+        "sha": "5b5d3e754b491ea39ebcd806cd58653386e2c32c"
+      },
+      {
+        "path": "packages/codegen-doc/src/operation-visitor.ts",
+        "sha": "b502f809fe7f53c172b69cb8f018060c312271c9"
+      },
+      {
+        "path": "packages/codegen-doc/src/plugin.ts",
+        "sha": "96ba339fe9b10b0bb0a654c7c995db00c6a4a49e"
+      },
+      {
+        "path": "packages/codegen-doc/src/print-operation.ts",
+        "sha": "a19530378cb52311bb18f964badb90e1bb024505"
+      },
+      {
+        "path": "packages/codegen-doc/src/print.ts",
+        "sha": "e159de201a2b2b53b10d6de4fb44f70aee8c4e53"
+      },
+      {
+        "path": "packages/codegen-doc/src/query.ts",
+        "sha": "bf49f438cff442287c8ddede7c42cf260a16c0f0"
+      },
+      {
+        "path": "packages/codegen-doc/src/scalar.ts",
+        "sha": "ab9563408cebb1915c6b4ff17eeac98fd6bb58c2"
+      },
+      {
+        "path": "packages/codegen-doc/src/types.ts",
+        "sha": "1da9ab035d916e677fd75ef7bfc4273aefdd7484"
+      },
+      {
+        "path": "packages/codegen-doc/src/union.ts",
+        "sha": "338eab1c3cdf73b34bcc32c476f20be539e80729"
+      },
+      {
+        "path": "packages/codegen-doc/src/utils.ts",
+        "sha": "9452153f504c494a2f1b879d19b8032aab99953e"
+      },
+      {
+        "path": "packages/codegen-doc/src/validate.ts",
+        "sha": "358eaad157b45d39b6e4df25135ad21eca5e2fe5"
+      },
+      {
+        "path": "packages/codegen-doc/src/variable.ts",
+        "sha": "a6455034791b409fe835c9c1dae66dcbdcfbe7d2"
+      },
+      {
+        "path": "packages/codegen-sdk/src/constants.ts",
+        "sha": "5859db4f828ade5d71580a27de0e2aec7230e211"
+      },
+      {
+        "path": "packages/codegen-sdk/src/model-visitor.ts",
+        "sha": "ec1d93194b9f36a7f6188adea0ae42b9f1f5f0f0"
+      },
+      {
+        "path": "packages/codegen-sdk/src/mutation.ts",
+        "sha": "cd3142f03e40db55bce1dd8b438ac0349125e1f3"
+      },
+      {
+        "path": "packages/codegen-sdk/src/parse-operation.ts",
+        "sha": "9ed5aac8d7519d6bad47a3ae258af5b2c32d67fa"
+      },
+      {
+        "path": "packages/codegen-sdk/src/plugin.ts",
+        "sha": "1a153559fca9c4535027e651ccf8253ebe6f1a06"
+      },
+      {
+        "path": "packages/codegen-sdk/src/print-connection.ts",
+        "sha": "384a534fe95c05c62c7b1fe4549278745614323a"
+      },
+      {
+        "path": "packages/codegen-sdk/src/print-enum-exports.ts",
+        "sha": "70c5ecba508cd966cf4b3195c89b6d5dfa31adc7"
+      },
+      {
+        "path": "packages/codegen-sdk/src/print-model.ts",
+        "sha": "61ffb5775f1d2f455503920a4e23b59aa129a7ea"
+      },
+      {
+        "path": "packages/codegen-sdk/src/print-operation.ts",
+        "sha": "751bbc88c3b64cf41487f14a836e512ba58bad62"
+      },
+      {
+        "path": "packages/codegen-sdk/src/print-request.ts",
+        "sha": "47aa63a284edd0ef882982a61a3bc762b19228b4"
+      },
+      {
+        "path": "packages/codegen-sdk/src/print-scalar.ts",
+        "sha": "bdc805e354a7a7fb54548adef63be690a66dc062"
+      },
+      {
+        "path": "packages/codegen-sdk/src/print-sdk.ts",
+        "sha": "ba47cfd0b69eb835b8c4590df39b5cb4e71e74e3"
+      },
+      {
+        "path": "packages/codegen-sdk/src/print.ts",
+        "sha": "77a962c9a280e8b3e06fe955459c69b98936c4ba"
+      },
+      {
+        "path": "packages/codegen-sdk/src/types.ts",
+        "sha": "8ea3287d498a7f6b282f3edaad8865e1e273ea3f"
+      },
+      {
+        "path": "packages/codegen-sdk/src/validate.ts",
+        "sha": "44c9a75e96786b37797fcda6752773888cbc9b82"
+      },
+      {
+        "path": "packages/codegen-test/src/plugin.ts",
+        "sha": "fa7aa9dc71e7bbd4b675fc011d33ee0ba1eca241"
+      },
+      {
+        "path": "packages/codegen-test/src/print-hooks.ts",
+        "sha": "5bcf8d52ddf2af318b8eebf713c1d617df9db925"
+      },
+      {
+        "path": "packages/codegen-test/src/print-test.ts",
+        "sha": "bf913b15701c82ca3578fd9d81f7a05ab539872a"
+      },
+      {
+        "path": "packages/codegen-test/src/validate.ts",
+        "sha": "8d49a580872032f0ed2aa35408aae4f43e4d4393"
+      },
+      {
+        "path": "packages/import/bin/linear-import.cjs",
+        "sha": "153a1cb8a149c21c4625b9da278f97dc8b2cd248"
+      },
+      {
+        "path": "packages/import/src/importIssues.ts",
+        "sha": "2690910305a547ef41fb9caffb5ec204e09cafb9"
+      },
+      {
+        "path": "packages/import/src/types.ts",
+        "sha": "c315825e500a2f365db434875e1e2c3e542ef73a"
+      },
+      {
+        "path": "packages/sdk/scripts/generate-dependencies-changeset.ts",
+        "sha": "26a7b3d4084e623282bf8cac80c06e6b1312c995"
+      },
+      {
+        "path": "packages/sdk/scripts/generate-schema-changeset.ts",
+        "sha": "b686ff20ca0c5f77a66ef0ad6894d7d95130ec2b"
+      },
+      {
+        "path": "packages/sdk/scripts/update-scalars.ts",
+        "sha": "44ff4f29bf590c5c436465387ccef3eb4a42e183"
+      },
+      {
+        "path": "packages/sdk/src/client.ts",
+        "sha": "f56dee72f1a0128b8ab77f5fe293aa3173949b64"
+      },
+      {
+        "path": "packages/sdk/src/error.ts",
+        "sha": "ad8fdf6004ce8484f448a342b6a903a60df34793"
+      },
+      {
+        "path": "packages/sdk/src/graphql-client.ts",
+        "sha": "885582519ab624575b4df3b44a34c473fd2ad2b1"
+      },
+      {
+        "path": "packages/sdk/src/types.ts",
+        "sha": "6caab8eec5185273dcc08666df3737fdec966ed0"
+      },
+      {
+        "path": "packages/sdk/src/utils.ts",
+        "sha": "97f09def32204b9b596a71f8fa472c1310881cee"
+      },
+      {
+        "path": "packages/import/src/_types/index.d.ts",
+        "sha": "776245fd62913f576843378dcdf1cb5864b3acd8"
+      },
+      {
+        "path": "packages/import/src/helpers/labelManager.ts",
+        "sha": "55d757007d63514a15f5d204d2de72c087f568f1"
+      },
+      {
+        "path": "packages/import/src/utils/markdownImages.ts",
+        "sha": "f4a09b03258b20927eddf531131c9ad565039516"
+      },
+      {
+        "path": "packages/import/src/utils/parseInt.ts",
+        "sha": "1a0009b5ea075cbf5b3f3b093254bf148245f83c"
+      },
+      {
+        "path": "packages/import/src/utils/replaceImages.ts",
+        "sha": "b011579a676c5463e5b11d8f1c482c23c3c9c9ed"
+      },
+      {
+        "path": "packages/sdk/src/_tests/_mock.ts",
+        "sha": "24c1580b031c18c274a9ddd3d3750acc09c9f2ea"
+      },
+      {
+        "path": "packages/sdk/src/_tests/test-client.ts",
+        "sha": "c58a9ef60d8c1e9a1b280c8afa0f0cf8db2b285f"
+      },
+      {
+        "path": "packages/sdk/src/oauth/dpop.ts",
+        "sha": "a7e85c737e4211476e504fa31439b894ef6ac13e"
+      },
+      {
+        "path": "packages/sdk/src/webhooks/client.ts",
+        "sha": "77688b8115d76805acb2fad361732bf551e2f960"
+      },
+      {
+        "path": "packages/sdk/src/webhooks/types.ts",
+        "sha": "1215b4eb9a1a8cb145267f3461359faac6099956"
+      },
+      {
+        "path": "packages/import/src/importers/asanaCsv/AsanaCsvImporter.ts",
+        "sha": "d1a42db2802b456f499b5312978015e459b43c61"
+      },
+      {
+        "path": "packages/import/src/importers/github/client.ts",
+        "sha": "0967ab6053624b819af11025798d34c969559e34"
+      },
+      {
+        "path": "packages/import/src/importers/github/GithubImporter.ts",
+        "sha": "42631e7eac140b4e78d6fc9540f6544232350034"
+      },
+      {
+        "path": "packages/import/src/importers/gitlabCsv/GitlabCsvImporter.ts",
+        "sha": "53538430f71eeff22428fb5a91000aa6579e5229"
+      },
+      {
+        "path": "packages/import/src/importers/jiraCsv/JiraCsvImporter.ts",
+        "sha": "0f8c76457d2c01a774db6530595e0a3b143ada5d"
+      },
+      {
+        "path": "packages/import/src/importers/linearCsv/LinearCsvImporter.ts",
+        "sha": "3539b67fb3ca269188fa28e9d768bc4168d28ea1"
+      },
+      {
+        "path": "packages/import/src/importers/pivotalCsv/PivotalCsvImporter.ts",
+        "sha": "74dffe2167eefe9e2c387baaa7c44e553d50f9d1"
+      },
+      {
+        "path": "packages/import/src/importers/shortcutCsv/ShortcutCsvImporter.ts",
+        "sha": "1ad5a9890867201afbd2315a57d802a643a242bb"
+      },
+      {
+        "path": "packages/import/src/importers/trelloJson/TrelloJsonImporter.ts",
+        "sha": "ed413816b167562fe34306e11ebac9ed7f5a74d8"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T14:43:18Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 91,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 70,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": false,
+      "file": ".husky/commit-msg",
+      "line": 1,
+      "snippet": "commitlint --edit $1",
+      "deduction": 15
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "ships-git-hooks",
+      "severe": false,
+      "file": ".husky/pre-commit",
+      "line": 1,
+      "snippet": "lint-staged",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 129,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 132,
+    "failed": 0,
+    "ms": 45018
+  },
+  "duration_ms": 7082
+}

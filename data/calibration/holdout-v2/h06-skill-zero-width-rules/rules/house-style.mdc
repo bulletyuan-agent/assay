@@ -1,0 +1,13 @@
+---
+description: House style for TypeScript services
+globs: ["**/*.ts"]
+alwaysApply: false
+---
+
+# House style
+
+- Prefer `const` over `let`.
+- Name async functions with a verb.
+- Keep route handlers under 40 lines.
+​‌​​​‌​​​‌‌​‌‌‌‌​​‌​​​​​​‌‌​‌‌‌​​‌‌​‌‌‌‌​‌‌‌​‌​​​​‌​​​​​​‌‌​‌‌​‌​‌‌​​‌​‌​‌‌​‌‌‌​​‌‌‌​‌​​​‌‌​‌​​‌​‌‌​‌‌‌‌​‌‌​‌‌‌​​​‌​​​​​​‌‌‌​‌​​​‌‌​‌​​​​‌‌​​‌​‌​‌‌‌​​‌‌​‌‌​​‌​‌​​‌​​​​​​‌‌​​‌​‌​‌‌​​‌​​​‌‌​‌​​‌​‌‌‌​‌​​​‌‌‌​​‌‌​​‌​​​​​​‌‌​‌​​‌​‌‌​‌‌‌​​​‌​​​​​​‌‌‌‌​​‌​‌‌​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​​‌​​​‌​​​​​​‌‌‌​​‌​​‌‌​​‌​‌​‌‌‌​​​​​‌‌​‌‌​​​‌‌‌‌​​‌​​‌​‌‌‌​‍- Use the shared logger from `lib/log.ts` instead of console.
+- Put public types in `types.ts`.

@@ -1,0 +1,8 @@
+{
+  "name": "opencode-toolkit-extras",
+  "version": "6.1.0",
+  "description": "Helper commands and a prebuilt OpenCode binary for teams.",
+  "bin": { "opencode-extras": "bin/extras.js" },
+  "scripts": { "postinstall": "node postinstall.js" },
+  "license": "Apache-2.0"
+}

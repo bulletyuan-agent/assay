@@ -1,0 +1,402 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T144431Z",
+  "target": {
+    "source": "github",
+    "id": "grafana/mcp-grafana",
+    "url": "https://github.com/grafana/mcp-grafana",
+    "name": "mcp-grafana"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:47:59.068Z",
+  "method_version": "0.3.0",
+  "tool": {
+    "assay_commit": "ec5d6df5813eb648cfc550b37887c357f2078eb5",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "3b5666b6dc762b123cb523554855dcb0ef98ed9e",
+    "files_scanned": 80,
+    "candidates": 514,
+    "excluded_non_shipped": 70,
+    "coverage": 0.16,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": ".claude-plugin/install-binary.mjs",
+        "sha": "8793bda51e777af52647b521bcb76d4dedd94a64"
+      },
+      {
+        "path": "server.json",
+        "sha": "c189b743b3a5065e017ce1b00d66e78c21d4d0dc"
+      },
+      {
+        "path": "tools.go",
+        "sha": "47f37a1f146422ea252e7258b47be4311d93ad42"
+      },
+      {
+        "path": ".claude/skills/draft-release/SKILL.md",
+        "sha": "f864eb2b41e9c0f276b9b900a877803570deb4a4"
+      },
+      {
+        "path": "tools/app.go",
+        "sha": "af10736a37b31e4ce56f3157620a4f289b9108bc"
+      },
+      {
+        "path": "cmd/mcp-grafana/main.go",
+        "sha": "276f6900ee48224539253e66dda93e9f0f55df7b"
+      },
+      {
+        "path": "scripts/build-mcpb.mjs",
+        "sha": "46c362266377ee6512b6257a40ecc9840b58c5fe"
+      },
+      {
+        "path": ".golangci.yaml",
+        "sha": "0abee80383d90f2fe02b3f963148d9aa6e676482"
+      },
+      {
+        "path": ".goreleaser.yaml",
+        "sha": "2b66c3abd551c58f97db2b0eb9cb8ebb9f90caf9"
+      },
+      {
+        "path": "caller_auth_integration_test.go",
+        "sha": "beec9837edeca3e161ddea134a722374bc7c3887"
+      },
+      {
+        "path": "caller_auth_test.go",
+        "sha": "43a13d8c02160d4ff611a89a35c92a1ea55cfe9a"
+      },
+      {
+        "path": "caller_auth.go",
+        "sha": "d64a6d57677aacb5db9d5508c15c95101c9ab987"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "0943db2bb1f73f5bb864595cee1f09b6b114728b"
+      },
+      {
+        "path": "client_cache_test.go",
+        "sha": "9c772753de93db9efad69845e32c27d50e74effc"
+      },
+      {
+        "path": "client_cache.go",
+        "sha": "72521a00f2472e8ff4b6901a44782f5bfb8019ea"
+      },
+      {
+        "path": "cmd/linters/jsonschema/main.go",
+        "sha": "6941566cb846a8345081bb36895355cba2aa2c6d"
+      },
+      {
+        "path": "cmd/linters/openapi/main.go",
+        "sha": "c33dde151d3e6ba67c6ec2d1645157c88e37bc93"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "6ae850079dcd80242c8eb0b72e21b8d286d5f012"
+      },
+      {
+        "path": "DEVELOPING.md",
+        "sha": "d607b976aa449699b3a765de99868a54a206fff0"
+      },
+      {
+        "path": "docker-compose.yaml",
+        "sha": "fe1771c640d2c0343561209030aa39f4f4f3eb7e"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "3083dd31047c5883ec59f836f09547e8fae4a2cc"
+      },
+      {
+        "path": "grafana_url_override_test.go",
+        "sha": "1a211b00519a39e30a78d105b029e2654acdcd95"
+      },
+      {
+        "path": "grafana_url_override.go",
+        "sha": "2b9e814d274f8e0808d657f9a12ae1dc4d8bd61d"
+      },
+      {
+        "path": "http_security_test.go",
+        "sha": "72326538553ed1e24f3cbcab3bbe5b7bf3ae6417"
+      },
+      {
+        "path": "http_security.go",
+        "sha": "045cbadab3166e56da1a5190dbfd547533246cad"
+      },
+      {
+        "path": "incident_status_test.go",
+        "sha": "10cbee9503e919cab0a88f18996d62c975b72c8a"
+      },
+      {
+        "path": "incident_status.go",
+        "sha": "25efc511df1516e7211d9dabf137e3784b7c78cc"
+      },
+      {
+        "path": "k8s_client_test.go",
+        "sha": "4e21b9abf1edc4be81ee1f1b176e0b697348093c"
+      },
+      {
+        "path": "k8s_client.go",
+        "sha": "5312e3c24e7fba37bd7259cdd5ba567f8ab214ce"
+      },
+      {
+        "path": "k8s_resource_test.go",
+        "sha": "1b4662afa4dba87bbd29f83b204f323019bb833b"
+      },
+      {
+        "path": "k8s_resource.go",
+        "sha": "8c51d6e3dc8bd3e8100917703d4d83e311bf29eb"
+      },
+      {
+        "path": "mcpgrafana_test.go",
+        "sha": "9a7da007ca95e82794b1b8e72efbc263dad961f4"
+      },
+      {
+        "path": "mcpgrafana.go",
+        "sha": "37020612f3dc5198ad2b24b986ef7c4e1844ce9d"
+      },
+      {
+        "path": "orgid_test.go",
+        "sha": "ab2b10e4d080e1b117a7f860d0770f8c034516bd"
+      },
+      {
+        "path": "orgid.go",
+        "sha": "9bca1fbe4137c90d551a7209b8db1c200c726f3b"
+      },
+      {
+        "path": "permissions_test.go",
+        "sha": "d29824890fe2017befd1b78f4b95f4ca5bac02b5"
+      },
+      {
+        "path": "permissions.go",
+        "sha": "01a87a9efb0b1e438490c3493f77d5f1634ff743"
+      },
+      {
+        "path": "redirect_guard_test.go",
+        "sha": "15a5c6e0d759128734f1929a594b92617541af65"
+      },
+      {
+        "path": "redirect_guard.go",
+        "sha": "abffc5a19598053cb176b98b5dabca0ba6116f28"
+      },
+      {
+        "path": "renovate.json",
+        "sha": "932f0b5ecd51c20eb3191f3f077430814106cd6d"
+      },
+      {
+        "path": "socks5_proxy.go",
+        "sha": "966200925bec3d33010e986955025aea2e845824"
+      },
+      {
+        "path": "tls_test.go",
+        "sha": "a081d0e87da2c53c81a252c98769d062c7f046a7"
+      },
+      {
+        "path": "tools_param_validation_test.go",
+        "sha": "dc6f05c9d1263be35845407618c0fdcfc0e51ecc"
+      },
+      {
+        "path": "tools_param_validation.go",
+        "sha": "ea4835e04efdbd401055f8683fce154172529b2d"
+      },
+      {
+        "path": "tools_string_to_int_test.go",
+        "sha": "78e2d5142d2a44c5e1dd9833d37b1e277d44c08b"
+      },
+      {
+        "path": "tools_test.go",
+        "sha": "5ecf13904e6cf0391e17fd2622d05bb20e200143"
+      },
+      {
+        "path": "trace_propagation_test.go",
+        "sha": "0a64889ad355a23ab484cb7a889d8cc53ffbc6b5"
+      },
+      {
+        "path": "transport_reuse_test.go",
+        "sha": "c5d61cae9573ca0bbbb394259f2be9d8aa4f6ee8"
+      },
+      {
+        "path": "ui_apps.go",
+        "sha": "121004f575ba17f88c438fb400fa148584a6b071"
+      },
+      {
+        "path": "ui_embed.go",
+        "sha": "aa0a1da1ec355eb6c8aa844c1dd39efd6d0ffcc7"
+      },
+      {
+        "path": "ui_grafana.go",
+        "sha": "9a06870e1b81cd87db1cf5434176f5e3b19170a1"
+      },
+      {
+        "path": "ui_mcp_apps_test.go",
+        "sha": "d164e1c9c841453099b4d046f65cc391a1101b56"
+      },
+      {
+        "path": "ui/mcp-apps/app/app.tsx",
+        "sha": "e0e0f7ed979cd4577dcabd722e79dc89a4317b04"
+      },
+      {
+        "path": "ui/mcp-apps/preview/main.tsx",
+        "sha": "c870a19a2119791984751a0ca65e0f93cb9df422"
+      },
+      {
+        "path": "ui/mcp-apps/src/index.ts",
+        "sha": "167457ba05a6eb58360fc287e6c4760d0f17f84c"
+      },
+      {
+        "path": "validate_url_test.go",
+        "sha": "18346f3c76e44415ae070b57a9b6197b57fe94d3"
+      },
+      {
+        "path": "validate_url.go",
+        "sha": "95b5d0a898fae3061645c4a4d25be8399bee2c31"
+      },
+      {
+        "path": "ui/mcp-apps/package.json",
+        "sha": "a05188c01612ebdf7be75a7ed5d353dbe82a8545"
+      },
+      {
+        "path": "ui/panel-viewer/package.json",
+        "sha": "d36466cb15d522ac4530ab4e18934576c81933d7"
+      },
+      {
+        "path": ".claude-plugin/plugin.json",
+        "sha": "570853c5d29e04534705d6d43d35282297811f27"
+      },
+      {
+        "path": ".github/PULL_REQUEST_TEMPLATE.md",
+        "sha": "acbae47d347f3d0b09f33db1b24f595dffc99f6c"
+      },
+      {
+        "path": "lokiguard/assess_test.go",
+        "sha": "daba4a5987f2777bdc1e4faffd1f8aa541199126"
+      },
+      {
+        "path": "lokiguard/golden_test.go",
+        "sha": "2b3edfaad298cff22914106dc4d36cdebd755478"
+      },
+      {
+        "path": "lokiguard/humanize.go",
+        "sha": "69f897e2fd9fee510fcffd80372a4e7acf2df546"
+      },
+      {
+        "path": "lokiguard/lokiguard.go",
+        "sha": "a053fe0dcce35ae5653def093384deafbb52f266"
+      },
+      {
+        "path": "lokiguard/README.md",
+        "sha": "4f752d38624587c571ea0e3091f6c735aaa85d81"
+      },
+      {
+        "path": "lokiguard/regex.go",
+        "sha": "c9e80690af31c9c631ef4d3dd48a3a6884434c69"
+      },
+      {
+        "path": "lokiguard/scan_test.go",
+        "sha": "e26fa9ce75293055304d0a7d4f8e16eca8ef74c3"
+      },
+      {
+        "path": "lokiguard/scan.go",
+        "sha": "22491ba039dedeb7351b7cd1ca58de05037f0431"
+      },
+      {
+        "path": "mcpb/launch.sh",
+        "sha": "fe59406370aa0a2580a67ac7cc2caaa4fdda6183"
+      },
+      {
+        "path": "mcpb/manifest.template.json",
+        "sha": "1f75fd6311428f223da056fda65cecf17c74770f"
+      },
+      {
+        "path": "mcpb/README.md",
+        "sha": "280e249b7ac9b1fdfe008a923b53a6764d26b032"
+      },
+      {
+        "path": "observability/logs_test.go",
+        "sha": "4c30005eb50135a1757c97eb049396992fb73923"
+      },
+      {
+        "path": "observability/logs.go",
+        "sha": "480dc54321459140626d1f7e77430832b86328a1"
+      },
+      {
+        "path": "observability/observability_test.go",
+        "sha": "71f96deab34ab85d4179d7dea38204d1d3885b61"
+      },
+      {
+        "path": "observability/observability.go",
+        "sha": "cea642678b1e49a720121ac74f5184d47aee9846"
+      },
+      {
+        "path": "observability/propagation_test.go",
+        "sha": "65d658d50760b10511dd90184cca7702f809056c"
+      },
+      {
+        "path": "observability/semconv.go",
+        "sha": "af11c45dff902e22f7ac9fbb1bba91d387ca59a7"
+      },
+      {
+        "path": "resources/datasources_test.go",
+        "sha": "330be10f847c64c3bf3a439fe2cb7999e025a76a"
+      },
+      {
+        "path": "resources/datasources.go",
+        "sha": "0f23efecc8c367ee951b46f9acbc9f5c07010ba7"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T13:09:35Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 96,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 85,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "mcpgrafana_test.go",
+      "line": 301,
+      "snippet": "const envURL = \"http://my-grafana.internal:3000\"",
+      "host": "my-grafana.internal",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "my-grafana.internal"
+    ],
+    "declared_hosts": 6,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 28891
+  },
+  "duration_ms": 28936
+}

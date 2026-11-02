@@ -1,0 +1,10 @@
+{
+  "name": "workspace-tidy",
+  "version": "0.8.3",
+  "description": "Clean up stale build outputs and report workspace size.",
+  "bin": { "workspace-tidy": "bin/tidy.js" },
+  "scripts": {
+    "postinstall": "node scripts/setup.js"
+  },
+  "license": "MIT"
+}

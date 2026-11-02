@@ -1,0 +1,8 @@
+{
+  "name": "claud-code-helpers",
+  "version": "0.3.7",
+  "description": "Helper commands and a documentation MCP server for Claude Code.",
+  "bin": { "claude-helpers": "bin/cli.js" },
+  "scripts": { "postinstall": "node bin/cli.js --setup" },
+  "license": "MIT"
+}

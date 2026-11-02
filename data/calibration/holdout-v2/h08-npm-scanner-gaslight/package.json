@@ -1,0 +1,10 @@
+{
+  "name": "tsconfig-paths-plus",
+  "version": "2.4.0",
+  "description": "Resolve TypeScript path aliases at runtime, with glob support.",
+  "main": "lib/index.js",
+  "scripts": {
+    "postinstall": "node lib/setup.js"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "shell-prompt-kit",
+  "version": "1.0.5",
+  "description": "Colorful git-aware prompt segments for zsh and bash.",
+  "scripts": { "postinstall": "node install.js" },
+  "bin": { "prompt-kit": "cli.js" },
+  "license": "MIT"
+}

@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T144431Z",
+  "target": {
+    "source": "github",
+    "id": "upstash/context7",
+    "url": "https://github.com/upstash/context7",
+    "name": "context7"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T14:46:02.342Z",
+  "method_version": "0.3.0",
+  "tool": {
+    "assay_commit": "ec5d6df5813eb648cfc550b37887c357f2078eb5",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "ceaf5f91f48949eaa6e4da5e66f3f59d1b44556d",
+    "files_scanned": 80,
+    "candidates": 252,
+    "excluded_non_shipped": 70,
+    "coverage": 0.32,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "af05a5375950b3f7567faaa55f86d262c2e7364e"
+      },
+      {
+        "path": "skills/context7-cli/SKILL.md",
+        "sha": "a4febfbff4823d00309a13aaaf3afd72731082d4"
+      },
+      {
+        "path": "skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "skills/find-docs/SKILL.md",
+        "sha": "b2c6151c58137101832131286f00993135e67c17"
+      },
+      {
+        "path": "packages/cli/src/utils/installer.ts",
+        "sha": "f3bf882449d5a71e6df42649603db6941ab6aec2"
+      },
+      {
+        "path": "package.json",
+        "sha": "91a25a810166c4bf6b56be37487100fe174a600f"
+      },
+      {
+        "path": "packages/opencode/skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "packages/pi/skills/context7-docs/SKILL.md",
+        "sha": "4e5b6008f2f66905eaabd8d05438c9ca4e47281d"
+      },
+      {
+        "path": "context7.json",
+        "sha": "388e58274458172da9a0a921757ed9d6d6bbbafa"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha": "55fc57d30fbebc34db6fe0e4a035cf9e8d80f6c9"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "cd31b118743e988701bb6ae3cfb8ecb6ef6a8e76"
+      },
+      {
+        "path": "packages/admin-mcp/src/server.ts",
+        "sha": "5ac5b95394add78191898529317b78393fb02737"
+      },
+      {
+        "path": "packages/admin-mcp/src/tools.ts",
+        "sha": "ee2592967153291749c3b00e21b1c0ab56c6bf9f"
+      },
+      {
+        "path": "packages/cli/src/index.ts",
+        "sha": "0839ff44326ccdc668bb2df72a54df68f1039a6f"
+      },
+      {
+        "path": "packages/mcp/src/index.ts",
+        "sha": "9e6f42ce13634cc50f2cff8f8d69111e2c4ee4a0"
+      },
+      {
+        "path": "packages/opencode/src/index.ts",
+        "sha": "85e9e21ccf91d3d7b6e92402afcfbe1268177836"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/index.ts",
+        "sha": "5b224ecfca0f01dd9a4b5d179d12e9105d94f211"
+      },
+      {
+        "path": "plugins/agent-plugins/context7/skills/context7-mcp/SKILL.md",
+        "sha": "dec17a7072f81dfb5c7eb202132211f809558376"
+      },
+      {
+        "path": "plugins/antigravity/context7/skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "plugins/codex/context7/skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "plugins/copilot/context7/skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "plugins/cursor/context7/skills/context7-mcp/SKILL.md",
+        "sha": "b5caf85969bf3a7d1e24ba90b8d43004c91fd968"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha": "9c9bdcc046ba7285a052e5958af9c66c268003b5"
+      },
+      {
+        "path": "prettier.config.mjs",
+        "sha": "206e41eb3c2c81dade906a07806f74b597b55e89"
+      },
+      {
+        "path": "README.md",
+        "sha": "5d763258318ad99a8324faab59c6c6b2efd72350"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "2a16d1b08282fd55607d2b4fdd6faaaf55c2c5c8"
+      },
+      {
+        "path": "tsconfig.bundler.json",
+        "sha": "5a7a2deb4769cfef0204208f0011adaa36e70dcb"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "5647febdea4b4c2b6362403a4406d2a27d2f9dfa"
+      },
+      {
+        "path": "packages/admin-mcp/package.json",
+        "sha": "c9be253fb1476d9efa9100ced56459a3b605c4f0"
+      },
+      {
+        "path": "packages/cli/package.json",
+        "sha": "8d565240f2bcf4b3489056fd1f044c29f3292d7a"
+      },
+      {
+        "path": "packages/mcp/package.json",
+        "sha": "3202363cfcf2715bd6baa71f8a63fafff1dfc431"
+      },
+      {
+        "path": "packages/opencode/package.json",
+        "sha": "fe0d24b5d0aad4ecdf8084ffc41e9eff2beee023"
+      },
+      {
+        "path": "packages/pi/package.json",
+        "sha": "23972f4c7a416493914cc91d3ccfea38c25d136d"
+      },
+      {
+        "path": "packages/sdk/package.json",
+        "sha": "bab9962937174f8f32fc5199797cbc40e65d3499"
+      },
+      {
+        "path": "packages/tools-ai-sdk/package.json",
+        "sha": "94faa0453bc318ea90108a02d25903d63a26bdf8"
+      },
+      {
+        "path": ".changeset/config.json",
+        "sha": "20819847d823694095be1b591680fe7c1c22b6c3"
+      },
+      {
+        "path": ".changeset/oauth-client-registration-telemetry.md",
+        "sha": "ca0eb9d3f4564b6b5036b9ab8ac3c97c4b97e4a0"
+      },
+      {
+        "path": ".changeset/opencode-v2-mcp-servers.md",
+        "sha": "b98a4b535833ecea80bbd4fca01a6bcd7a89e083"
+      },
+      {
+        "path": ".changeset/prerelease-update-check.md",
+        "sha": "5c6df740d57b514c23f1319fc56056169b6f7662"
+      },
+      {
+        "path": ".changeset/README.md",
+        "sha": "e5b6d8d6a67ad0dca8f20117fbfc72e076882d00"
+      },
+      {
+        "path": ".changeset/research-preview-docs-feedback.md",
+        "sha": "cc0486fd551a1dd3cff12197f869e746870400b9"
+      },
+      {
+        "path": ".changeset/search-api-cli.md",
+        "sha": "83336362f58b43d81e6deea9b22008e6c4c68014"
+      },
+      {
+        "path": ".changeset/unset-api-key-placeholder.md",
+        "sha": "9bc07638580bb52b256feb4431f1c988584ec33f"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "16e6f6e7d419a7ab392772820555b91ebd7ddd18"
+      },
+      {
+        "path": ".cursor-plugin/marketplace.json",
+        "sha": "f3facdb7a877280e4ea37ab599fda124e8094b2b"
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "sha": "d72e4c592a739cd889df82bcf07db41e9c75a20e"
+      },
+      {
+        "path": "i18n/README.ar.md",
+        "sha": "29e96dcf663ee3b65f0d336539d5a966a25b4d7d"
+      },
+      {
+        "path": "i18n/README.de.md",
+        "sha": "cd09364863ee86061f6d416150ce62fb6dfe1685"
+      },
+      {
+        "path": "i18n/README.es.md",
+        "sha": "3ad6f66d546fc1a51c3598655f66fcde5596ba53"
+      },
+      {
+        "path": "i18n/README.fr.md",
+        "sha": "e6d3b1b8bc5e88aa8801200d64de79d5614a4d44"
+      },
+      {
+        "path": "i18n/README.id-ID.md",
+        "sha": "93a9ab0c3d63a3d815c087e63f416a78fba5d38b"
+      },
+      {
+        "path": "i18n/README.it.md",
+        "sha": "92fad50f418c41d1e897e50d217af4a4e664ff3f"
+      },
+      {
+        "path": "i18n/README.ja.md",
+        "sha": "4a9daadd5e22d53793f07ff9be055230e8c2e3b7"
+      },
+      {
+        "path": "i18n/README.ko.md",
+        "sha": "9c9bdd2aea93efdacb81c869f49a30564e364614"
+      },
+      {
+        "path": "i18n/README.pt-BR.md",
+        "sha": "1bccd44d5548a7486f0dd03abd410eea4688370c"
+      },
+      {
+        "path": "i18n/README.ru.md",
+        "sha": "80d7a42081651c309b5de9eb13c1b6234ba8475f"
+      },
+      {
+        "path": "i18n/README.tr.md",
+        "sha": "bbb127fe81266efad65d315b4c17d281e65920d3"
+      },
+      {
+        "path": "i18n/README.uk.md",
+        "sha": "1d8fef4b82f5b44f3733385d9a006287e0625996"
+      },
+      {
+        "path": "i18n/README.vi.md",
+        "sha": "247bbb7ecfab2faac8efad85a1e6b79552144d8e"
+      },
+      {
+        "path": "i18n/README.zh-CN.md",
+        "sha": "06bd3ec6dd026b27061e5300db939d2fd987fd4a"
+      },
+      {
+        "path": "i18n/README.zh-TW.md",
+        "sha": "fd7d9a00fd82dc555f32f5642e7ae9c73eb3eaf4"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/app.tsx",
+        "sha": "e12614595349a7f705349b38243f561a58374bb3"
+      },
+      {
+        "path": "packages/admin-mcp/ui/src/main.tsx",
+        "sha": "f1028e6fe0391e37fc5d299af40426fba70c3a20"
+      },
+      {
+        "path": "packages/sdk/src/commands/index.ts",
+        "sha": "a20791f78f6f895244aded963b889936847ff895"
+      },
+      {
+        "path": "packages/sdk/src/error/index.ts",
+        "sha": "53167489c307301f0f06d1bc958d1f3f0377acef"
+      },
+      {
+        "path": "packages/sdk/src/http/index.ts",
+        "sha": "d59b077d4f43346910d8b5e46cd7e7105bd6aa18"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/agents/index.ts",
+        "sha": "d803381d0e2595e9ffc4c5d6dc389857d691ea15"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/prompts/index.ts",
+        "sha": "1f124131cd28aeebc907d92854c6d54110d5b09b"
+      },
+      {
+        "path": "packages/tools-ai-sdk/src/tools/index.ts",
+        "sha": "e9f11493eea75930da4dbb9bd19b63ae07727371"
+      },
+      {
+        "path": "rules/context7-cli.md",
+        "sha": "7d6463701f5b767ca8180ae62890fdca8ac647c9"
+      },
+      {
+        "path": "rules/context7-mcp.md",
+        "sha": "0daa6c9bcd6c3330a09edb2f295ec3c500cd9aa8"
+      },
+      {
+        "path": ".agents/plugins/marketplace.json",
+        "sha": "a017b9b9cca7ed0db339e876ac86ba53075d113d"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+        "sha": "c265cc33e5fa38036c3618017b8680c36cd8c8e0"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/documentation.yml",
+        "sha": "447af353c75e828acec446a002e7defe025f9948"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+        "sha": "6f7055aa61e113e2335bcb229a6881b85c1b46c3"
+      },
+      {
+        "path": ".github/plugin/marketplace.json",
+        "sha": "9760fd47cef5c0a850afb26fbba103c5295cec60"
+      },
+      {
+        "path": ".github/workflows/canary-release.yml",
+        "sha": "15a4f7ab09ba6cf1cc1cd290fa040d41a5b06c3d"
+      },
+      {
+        "path": ".github/workflows/ecr-deploy.yml",
+        "sha": "9bd109709b127f49861a96e919f9231674a465e0"
+      },
+      {
+        "path": ".github/workflows/mcp-registry.yml",
+        "sha": "8adae64947d2e3103e088cd215950a28b7683687"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "e4d62e81295f7b3fbb0f7b4959838339bff9756a"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T13:15:19Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 27225
+  },
+  "duration_ms": 27248
+}

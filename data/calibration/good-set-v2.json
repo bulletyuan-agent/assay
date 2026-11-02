@@ -1,0 +1,235 @@
+{
+  "set": "good-set-v2",
+  "pre_registered_before_scoring": true,
+  "policy": "Fresh false-positive test. Selected by reputation, not scored until the final G2 run. Not used to design any rule. Flagged items count as false positives and are not removed.",
+  "items": [
+    {
+      "id": "g2-playwright",
+      "label": "good",
+      "url": "https://github.com/microsoft/playwright",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-fastmcp",
+      "label": "good",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-awesome-mcp-servers",
+      "label": "good",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-inspector",
+      "label": "good",
+      "url": "https://github.com/modelcontextprotocol/inspector",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-servers-archived",
+      "label": "good",
+      "url": "https://github.com/modelcontextprotocol/servers-archived",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-mcp-searxng",
+      "label": "good",
+      "url": "https://github.com/SecretiveShell/MCP-searxng",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-desktopcommandermcp",
+      "label": "good",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-git-mcp-server",
+      "label": "good",
+      "url": "https://github.com/cyanheads/git-mcp-server",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-git-mcp",
+      "label": "good",
+      "url": "https://github.com/idosal/git-mcp",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-ref-tools-mcp",
+      "label": "good",
+      "url": "https://github.com/ref-tools/ref-tools-mcp",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-repomix",
+      "label": "good",
+      "url": "https://github.com/yamadashy/repomix",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-mcp-go",
+      "label": "good",
+      "url": "https://github.com/mark3labs/mcp-go",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-mcp-golang",
+      "label": "good",
+      "url": "https://github.com/metoro-io/mcp-golang",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-rust-mcp-sdk",
+      "label": "good",
+      "url": "https://github.com/rust-mcp-stack/rust-mcp-sdk",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-fastapi_mcp",
+      "label": "good",
+      "url": "https://github.com/tadata-org/fastapi_mcp",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-markdownify-mcp",
+      "label": "good",
+      "url": "https://github.com/zcaceres/markdownify-mcp",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-kagimcp",
+      "label": "good",
+      "url": "https://github.com/kagisearch/kagimcp",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-graphiti",
+      "label": "good",
+      "url": "https://github.com/getzep/graphiti",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-cognee",
+      "label": "good",
+      "url": "https://github.com/topoteretes/cognee",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-blender-mcp",
+      "label": "good",
+      "url": "https://github.com/ahujasid/blender-mcp",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-pydantic-ai",
+      "label": "good",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-mcp-use",
+      "label": "good",
+      "url": "https://github.com/mcp-use/mcp-use",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-whatsapp-mcp",
+      "label": "good",
+      "url": "https://github.com/lharries/whatsapp-mcp",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-openai-agents-python",
+      "label": "good",
+      "url": "https://github.com/openai/openai-agents-python",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-claude-code",
+      "label": "good",
+      "url": "https://github.com/anthropics/claude-code",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-anthropic-sdk-python",
+      "label": "good",
+      "url": "https://github.com/anthropics/anthropic-sdk-python",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-claude-cookbooks",
+      "label": "good",
+      "url": "https://github.com/anthropics/claude-cookbooks",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-registry",
+      "label": "good",
+      "url": "https://github.com/modelcontextprotocol/registry",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-spec-kit",
+      "label": "good",
+      "url": "https://github.com/github/spec-kit",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-daytona",
+      "label": "good",
+      "url": "https://github.com/daytonaio/daytona",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-mcp-server",
+      "label": "good",
+      "url": "https://github.com/e2b-dev/mcp-server",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-mcp-server-browserbase",
+      "label": "good",
+      "url": "https://github.com/browserbase/mcp-server-browserbase",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-notion-sdk-js",
+      "label": "good",
+      "url": "https://github.com/makenotion/notion-sdk-js",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-linear",
+      "label": "good",
+      "url": "https://github.com/linear/linear",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-claude-engineer",
+      "label": "good",
+      "url": "https://github.com/Doriandarko/claude-engineer",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-cline",
+      "label": "good",
+      "url": "https://github.com/cline/cline",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-continue",
+      "label": "good",
+      "url": "https://github.com/continuedev/continue",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    },
+    {
+      "id": "g2-goose",
+      "label": "good",
+      "url": "https://github.com/block/goose",
+      "basis": "widely used, maintained by an established organisation; reputation, not an audit"
+    }
+  ]
+}

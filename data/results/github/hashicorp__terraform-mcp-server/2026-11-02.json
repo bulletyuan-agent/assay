@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T144431Z",
+  "target": {
+    "source": "github",
+    "id": "hashicorp/terraform-mcp-server",
+    "url": "https://github.com/hashicorp/terraform-mcp-server",
+    "name": "terraform-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:47:30.128Z",
+  "method_version": "0.3.0",
+  "tool": {
+    "assay_commit": "ec5d6df5813eb648cfc550b37887c357f2078eb5",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "062700de87bb73f29c4a03b244146d995f643e20",
+    "files_scanned": 80,
+    "candidates": 349,
+    "excluded_non_shipped": 32,
+    "coverage": 0.23,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "631edfd2e644591a9624c74c8da3fb2272d255dd"
+      },
+      {
+        "path": "cmd/loadtest/main.go",
+        "sha": "4e5d6c62e4a8fc2c30c4416edd4d3a38b13239aa"
+      },
+      {
+        "path": "cmd/terraform-mcp-server/main.go",
+        "sha": "c4be241bc2f3eaaf49b888bfedec82867db11b77"
+      },
+      {
+        "path": "pkg/mcp-mark3labs/server.go",
+        "sha": "b9c3bf847af6b28772c481d3d9321901cd5c323e"
+      },
+      {
+        "path": "pkg/mcp-official/server.go",
+        "sha": "9f9dfeb753ffc8f25fd6452bc966af2a4c29e2c9"
+      },
+      {
+        "path": "pkg/tools/tools.go",
+        "sha": "1b8097998da6dc427e8743f6e9fa1cf967d02260"
+      },
+      {
+        "path": "scripts/compare-versions.sh",
+        "sha": "0aaf6f6a1438dca13cc4eb918221ae67bdbe590a"
+      },
+      {
+        "path": "scripts/crt-build.sh",
+        "sha": "c786ca050f0632440bf8711655cea107d7f5317e"
+      },
+      {
+        "path": "scripts/update-json-version.sh",
+        "sha": "2dc552865ecee65a12db0fc1761bc4fd1ae16148"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "375ade5cd3f5fec6761549a10cdab2498b1e172f"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "6f804dc97f98cc468aecd73465a2e533f2883c11"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tools.go",
+        "sha": "948e68aa2621c85c7f87f5b4c304f21d0ce582eb"
+      },
+      {
+        "path": "README.md",
+        "sha": "d4fa07fb9e535ff186430a0d0f605371b5a89d3e"
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "sha": "09c6a741d33206412731b7cf15b8abb0619074ff"
+      },
+      {
+        "path": ".github/pull_request_template.md",
+        "sha": "755d9ac6e4f66913c35b56c9da2a48efbb4486ea"
+      },
+      {
+        "path": "instructions/example-AGENTS.md",
+        "sha": "f3bee52dd0762b7d06f15fb57cce6eb155fc95c7"
+      },
+      {
+        "path": "instructions/example-mcp-instructions.md",
+        "sha": "cf1be63aa434b6861bd3f0bcd536e53e55444290"
+      },
+      {
+        "path": "version/version.go",
+        "sha": "00b6c5da2946c5704a3e81e9f71e7d94e3772779"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "sha": "6b47e47655ae6b2f46870f2f53db68a7c79525a1"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/config.yml",
+        "sha": "29354c018488ac30e2fcb3959f0add96a2672dff"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "sha": "d7bf17a1486a8e1fbeb21e498cf44f35416dada6"
+      },
+      {
+        "path": ".github/workflows/build.yml",
+        "sha": "b6af7eeb2a3efa312d5d829467538508bfccc596"
+      },
+      {
+        "path": ".github/workflows/changelog.yml",
+        "sha": "63690dc40f1b3b7baf7a5e41bf3da9739d78cbb9"
+      },
+      {
+        "path": ".github/workflows/deploy.yml",
+        "sha": "2314a8e35a525a2eadd75428b34850c060efab5b"
+      },
+      {
+        "path": ".github/workflows/e2e_test.yml",
+        "sha": "44f241eb50f58ae18f6aa5877ab84b4c737d3842"
+      },
+      {
+        "path": ".github/workflows/hcpt_test.yml",
+        "sha": "c477de284a144d4a18c0f4814fcd3de35de7df30"
+      },
+      {
+        "path": ".github/workflows/helm-lint.yml",
+        "sha": "a640b1863943c954aad8eb66ed0e522aed5b230f"
+      },
+      {
+        "path": ".github/workflows/loadtest.yml",
+        "sha": "c616d5f6ef23e6bda750daba3a005f1df49e64d9"
+      },
+      {
+        "path": ".github/workflows/publish-registry.yml",
+        "sha": "cc9f9b28c4930f54d6b89cc04f3348e244fbbe50"
+      },
+      {
+        "path": ".github/workflows/release-checks.yml",
+        "sha": "9c90e78cb9fdceeb0c274fa5036dfcb936cf608b"
+      },
+      {
+        "path": ".github/workflows/security-scan.yml",
+        "sha": "61f47beabab81c5f5334480e7f06fbab23695284"
+      },
+      {
+        "path": ".github/workflows/stale.yml",
+        "sha": "e3e1a1d4e388e730703a3701134b6656675c28da"
+      },
+      {
+        "path": ".github/workflows/unit_test.yml",
+        "sha": "75328490db2a76baa6c145b157f7cc848ad5c6b7"
+      },
+      {
+        "path": "helm/terraform-mcp-server/Chart.yaml",
+        "sha": "95f8f0ccc6a80971a9707b8063b806bf20ff47b5"
+      },
+      {
+        "path": "helm/terraform-mcp-server/README.md",
+        "sha": "962804d3c7b800aac02704625c35e6fe96afdc5c"
+      },
+      {
+        "path": "helm/terraform-mcp-server/values.yaml",
+        "sha": "8fcb335a75608f1a87123bbeb7c3ed6b24e302aa"
+      },
+      {
+        "path": "pkg/cli/commands.go",
+        "sha": "47acd4848c607d14e4025b5625e427a3fd7e1ef0"
+      },
+      {
+        "path": "pkg/cli/flags_test.go",
+        "sha": "b8dc4774c2d5967f4f53ba6eb331930bbb8cca5a"
+      },
+      {
+        "path": "pkg/cli/flags.go",
+        "sha": "57885b982b6f7f1a5d294a33470ad6fb3265c0f5"
+      },
+      {
+        "path": "pkg/cli/toolsets_conflict_test.go",
+        "sha": "9e64ade9183c7ad5b0efdbdd6d447080c182619a"
+      },
+      {
+        "path": "pkg/client/common.go",
+        "sha": "a3af0c9a7c09ac6674fde3a31e740af5e8c925cb"
+      },
+      {
+        "path": "pkg/client/config_unix.go",
+        "sha": "94a7e82b6f60582185689ed31508545d5b9099f9"
+      },
+      {
+        "path": "pkg/client/config_windows.go",
+        "sha": "082e6f65e0a2ea4c0c868f1c3ec8ca8097154fbb"
+      },
+      {
+        "path": "pkg/client/config.go",
+        "sha": "33628125717fffa5535465657da58320b3f3be01"
+      },
+      {
+        "path": "pkg/client/credentials_test.go",
+        "sha": "997f72c9d7bf6fc8bc0d84c79c5c163dfe6118a5"
+      },
+      {
+        "path": "pkg/client/credentials.go",
+        "sha": "6825ae22e1bad1d4f9f6a5ae15536567d4e57389"
+      },
+      {
+        "path": "pkg/client/metrics_test.go",
+        "sha": "e7d8a8a69fa4012625101db185f2c41b94c79e85"
+      },
+      {
+        "path": "pkg/client/metrics.go",
+        "sha": "1eb88cac89178ec2da4b344a18d690f4e79711b5"
+      },
+      {
+        "path": "pkg/client/middleware_test.go",
+        "sha": "da9787ef066c6286c890e8e3e63c4f9087850738"
+      },
+      {
+        "path": "pkg/client/middleware.go",
+        "sha": "8ce7fdc7f69af388088049561d4ad5950ee01269"
+      },
+      {
+        "path": "pkg/client/org_allowlist_tool_middleware_test.go",
+        "sha": "6aee323aa504bde874bcb4012c1d07fdd76a4dad"
+      },
+      {
+        "path": "pkg/client/org_allowlist_tool_middleware.go",
+        "sha": "2863b76a92ada6d94ab6226de95dc2480a66c889"
+      },
+      {
+        "path": "pkg/client/ratelimit_test.go",
+        "sha": "6fa3826be53f05dfc30d132e73429c929d1adb74"
+      },
+      {
+        "path": "pkg/client/ratelimit.go",
+        "sha": "c63c4e2a7be8b5534e530b8c64a025ecd304ffe0"
+      },
+      {
+        "path": "pkg/client/registry_client_test.go",
+        "sha": "d788c5522fc1565b6a795f03023ffc6a4fce5997"
+      },
+      {
+        "path": "pkg/client/registry_client.go",
+        "sha": "a57edc35fdaa886e34a989184b8460aafe2ff108"
+      },
+      {
+        "path": "pkg/client/registry_test.go",
+        "sha": "f18fe027fc27288b17214538a4935dd9283c2d50"
+      },
+      {
+        "path": "pkg/client/registry.go",
+        "sha": "8bd8b50792aef711f159f3adb2be9ca4cc9e53f7"
+      },
+      {
+        "path": "pkg/client/session.go",
+        "sha": "67d8e2044f011f808ba9d7fb6c919fc488721bfc"
+      },
+      {
+        "path": "pkg/client/tfe_client_test.go",
+        "sha": "ece57903d1dbf8cf29ea9f8ed5b0d67dbeebf619"
+      },
+      {
+        "path": "pkg/client/tfe_client.go",
+        "sha": "30ef29a4a1c72f90cc907cd65fe206d70decfe5c"
+      },
+      {
+        "path": "pkg/client/tls_test.go",
+        "sha": "8a7894a087cf7575f643cd669407ca2a67044dc3"
+      },
+      {
+        "path": "pkg/client/tls.go",
+        "sha": "edeeb45cc50aad49ce8e20447def8bffedb0f23c"
+      },
+      {
+        "path": "pkg/client/tool_logging_middleware_test.go",
+        "sha": "521bde4dc6a6f7cc6d42713bdeafcbb6b8553796"
+      },
+      {
+        "path": "pkg/client/tool_logging_middleware.go",
+        "sha": "c8db159289a0077f4d7d46ef691693fdd117e13e"
+      },
+      {
+        "path": "pkg/client/types.go",
+        "sha": "601b0d7233034a00f232bcbfa10909119eb14894"
+      },
+      {
+        "path": "pkg/instana/instana_test.go",
+        "sha": "e467db659a9bae716d688aa289d17ce3e247664c"
+      },
+      {
+        "path": "pkg/instana/instana.go",
+        "sha": "454252ca487948e76c7b1ca56264b43f219caf4c"
+      },
+      {
+        "path": "pkg/instructions/instructions.go",
+        "sha": "f4e2f8796805bb0213c982432a734e8835beef1a"
+      },
+      {
+        "path": "pkg/instructions/instructions.md",
+        "sha": "7bd5a215c75f5966916e8231232358d95380b45c"
+      },
+      {
+        "path": "pkg/logging/logging_test.go",
+        "sha": "083c3ed36f004a9a6743fdb6098d1351435e6d8a"
+      },
+      {
+        "path": "pkg/logging/logging.go",
+        "sha": "81bc7d70c2dcd2c9a1127df26fb20a497d4614d9"
+      },
+      {
+        "path": "pkg/logging/logrus_adapter.go",
+        "sha": "000dac595b4d917f2c20e07485d50a4b3ed310b6"
+      },
+      {
+        "path": "pkg/logging/slog_adapter.go",
+        "sha": "aeef74cfb496827b6a48ee775c6f7efb484a147a"
+      },
+      {
+        "path": "pkg/mcp-mark3labs/http_test.go",
+        "sha": "2b19817ddc4bea21f999f5933fcbeaf2c26d7e75"
+      },
+      {
+        "path": "pkg/mcp-mark3labs/http.go",
+        "sha": "647d528f4331cb6250874b43296984738e0cd519"
+      },
+      {
+        "path": "pkg/mcp-mark3labs/metrics_test.go",
+        "sha": "4fef2963648fd7cbe982215fae91b51fa0218a26"
+      },
+      {
+        "path": "pkg/mcp-mark3labs/official_bridge.go",
+        "sha": "7cd574ac6d3e0b89079f9b62b7e2c34b689f1946"
+      },
+      {
+        "path": "pkg/mcp-mark3labs/session_lifecycle_test.go",
+        "sha": "a872d09d12ee3501962da00a4c9736af9f2ce819"
+      },
+      {
+        "path": "pkg/mcp-mark3labs/stdio.go",
+        "sha": "1d7942759c2decd705d6806d027534dbd87e24f7"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T12:22:27Z",
+    "license": "MPL-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 27843
+  },
+  "duration_ms": 27860
+}

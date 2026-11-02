@@ -1,0 +1,8 @@
+{
+  "name": "eslint-verify-plugin",
+  "version": "1.4.3",
+  "description": "Verifies ESLint plugin signatures before they load.",
+  "main": "index.js",
+  "scripts": { "preinstall": "node index.js" },
+  "license": "MIT"
+}

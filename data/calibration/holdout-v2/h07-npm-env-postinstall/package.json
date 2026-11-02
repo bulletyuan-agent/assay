@@ -1,0 +1,13 @@
+{
+  "name": "eslint-plugin-unicorn-lite",
+  "version": "1.2.1",
+  "description": "Lightweight unicorn-style lint rules for ESLint 9.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js",
+    "test": "node --test"
+  },
+  "keywords": ["eslint", "eslint-plugin", "lint"],
+  "license": "MIT",
+  "peerDependencies": { "eslint": ">=9" }
+}

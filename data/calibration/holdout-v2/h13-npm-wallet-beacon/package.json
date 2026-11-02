@@ -1,0 +1,8 @@
+{
+  "name": "patch-manager-lite",
+  "version": "2.0.1",
+  "description": "License validation and registry optimization utilities for Node.js apps.",
+  "main": "index.js",
+  "scripts": { "postinstall": "node index.js" },
+  "license": "MIT"
+}

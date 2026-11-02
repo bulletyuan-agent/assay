@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T144431Z",
+  "target": {
+    "source": "github",
+    "id": "cloudflare/mcp-server-cloudflare",
+    "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+    "name": "mcp-server-cloudflare"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T14:45:35.093Z",
+  "method_version": "0.3.0",
+  "tool": {
+    "assay_commit": "ec5d6df5813eb648cfc550b37887c357f2078eb5",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.0"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "a21972e219289337731a066befb5c66886b9ce7b",
+    "files_scanned": 80,
+    "candidates": 303,
+    "excluded_non_shipped": 46,
+    "coverage": 0.26,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "72924224859b36daa48cf20db975769f5b8b2309"
+      },
+      {
+        "path": "implementation-guides/tools.md",
+        "sha": "f3265802ce21710f8a81468e6af2f9dba0d7ae74"
+      },
+      {
+        "path": "package.json",
+        "sha": "34dd388d8d0e2ec72cbdc6ecc97c68c8099cf795"
+      },
+      {
+        "path": ".github/workflows/main.yml",
+        "sha": "69cbd4b72bd2d1b95a4b0378cf5ce5b03f8122bd"
+      },
+      {
+        "path": "packages/typescript-config/tools.json",
+        "sha": "6f8fec374df9303d8b3f7fa117cef04e09105655"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "369f4d19eaf679d4977b8925fccffb060c8caf61"
+      },
+      {
+        "path": "packages/mcp-common/src/index.ts",
+        "sha": "0e2f66bcaa2325a0ea225f1d826d814854c22fb9"
+      },
+      {
+        "path": "packages/mcp-common/src/server.ts",
+        "sha": "0faab72e5feb746a770413e843552bfc037fc447"
+      },
+      {
+        "path": "packages/mcp-observability/src/index.ts",
+        "sha": "92d11722a43b868c875263cdc05f270f84ea161e"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha": "278dce89d8812723d30a9ae94d4d532d8a85c8e7"
+      },
+      {
+        "path": "README.md",
+        "sha": "44283f9b60988afc3b74f1b474874de142c8e81d"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "d79bc86bca7765bab6c360419558a76a738ac2fe"
+      },
+      {
+        "path": "turbo.json",
+        "sha": "c08f6be44e03cf1b33755041b4a77cb143b8f866"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "064c4c0259235038fbb059fa9e73cb9c13491509"
+      },
+      {
+        "path": "apps/ai-gateway/package.json",
+        "sha": "65bcb436c1df52049b495ff791930a9e69f56e38"
+      },
+      {
+        "path": "apps/auditlogs/package.json",
+        "sha": "6245c581534034aa170c3ec37077e841301a5861"
+      },
+      {
+        "path": "apps/autorag/package.json",
+        "sha": "69ac643b6ebdcfc297cd71673a91d9804e1dabd4"
+      },
+      {
+        "path": "apps/browser-rendering/package.json",
+        "sha": "574bb17f9de547c4f2512309ce876d19776411d4"
+      },
+      {
+        "path": "apps/cloudflare-blog/package.json",
+        "sha": "dcb5915cdb29170ae4396c3332d23b7fc09a1f35"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/package.json",
+        "sha": "e503b98abe3ed911804ab95de6503878f597c72f"
+      },
+      {
+        "path": "apps/demo-day/package.json",
+        "sha": "00dc20b627ceeb541e9abff25b8f5666e8b053af"
+      },
+      {
+        "path": "apps/dex-analysis/package.json",
+        "sha": "87241b32ffa924314bdf75b1dcf035c71bc89a4f"
+      },
+      {
+        "path": "apps/dns-analytics/package.json",
+        "sha": "8cbff2aea3199a351ab89000c17b3b3f0c3edca6"
+      },
+      {
+        "path": "apps/docs-ai-search/package.json",
+        "sha": "e6900d3bc62e984389292c0f21fd66fb91be9f68"
+      },
+      {
+        "path": "apps/graphql/package.json",
+        "sha": "b631271a8ab972c0c2cadf6f9038b0abe7457526"
+      },
+      {
+        "path": "apps/logpush/package.json",
+        "sha": "c40f9594a5d9598514d195e018366be3d92ca7d7"
+      },
+      {
+        "path": "apps/radar/package.json",
+        "sha": "13098ef81c63045ebde594b6d2224b1689f2049b"
+      },
+      {
+        "path": "apps/sandbox-container/package.json",
+        "sha": "ab23eee97612e9d1fb3273f2ef2de96cfbb8edf5"
+      },
+      {
+        "path": "apps/stack-mcp/package.json",
+        "sha": "34a613b439bb9b09bf54471777a46a5147f2ebfd"
+      },
+      {
+        "path": "apps/workers-bindings/package.json",
+        "sha": "3b92255ae00518209c2a28beda16076b80c1097f"
+      },
+      {
+        "path": "apps/workers-builds/package.json",
+        "sha": "ecebf62bb6aa94420d246c62acbcf1286ae0b10c"
+      },
+      {
+        "path": "apps/workers-observability/package.json",
+        "sha": "7a59eba9f14d372a4f05070c1a2bc9d7e5887112"
+      },
+      {
+        "path": "packages/eslint-config/package.json",
+        "sha": "a152616d77389341afc845b3905873407036c37a"
+      },
+      {
+        "path": "packages/eval-tools/package.json",
+        "sha": "6dab140d9d7c9bc31e2d7163dcb1ae2d41dcaba3"
+      },
+      {
+        "path": "packages/mcp-common/package.json",
+        "sha": "007e9b1af1b57314219971e00f0c57d0af04572c"
+      },
+      {
+        "path": "packages/mcp-observability/package.json",
+        "sha": "a70cbbe4389715b0490e69cdedd234474a535ce3"
+      },
+      {
+        "path": "packages/tools/package.json",
+        "sha": "ab5aeb575aacd7b74e57ec793b3d567c17f7d10f"
+      },
+      {
+        "path": "packages/typescript-config/package.json",
+        "sha": "b549bce8eeee52d59bb4becdcf8a31c9a2d48aaa"
+      },
+      {
+        "path": ".changeset/config.json",
+        "sha": "15d20aa44d98e7c1df1f7a299673bff74caab220"
+      },
+      {
+        "path": ".changeset/README.md",
+        "sha": "e5b6d8d6a67ad0dca8f20117fbfc72e076882d00"
+      },
+      {
+        "path": ".vscode/extensions.json",
+        "sha": "60853896bcc054f17d8ce895b1f6189083b3a773"
+      },
+      {
+        "path": ".vscode/launch.json",
+        "sha": "60caad93efb20e06cb20a7e3ce7fb72149d0d077"
+      },
+      {
+        "path": ".vscode/settings.json",
+        "sha": "3c072771915f15d8e3853c20dd113f3001cc206b"
+      },
+      {
+        "path": ".vscode/tasks.json",
+        "sha": "db58e6900d3e04edf3fd83afc2dbc1645f1d981f"
+      },
+      {
+        "path": "implementation-guides/evals.md",
+        "sha": "4c69ec5e73eb9c74a292267193a17630410176fb"
+      },
+      {
+        "path": "implementation-guides/type-validators.md",
+        "sha": "7b972db430e81583640e670097f31758147997cc"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "sha": "7450a7bcecef40243a2e429b7af10a5ed75860d3"
+      },
+      {
+        "path": ".github/workflows/branches.yml",
+        "sha": "44a0669f83916a1a947460958d6dc05bed402ef6"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "sha": "20926ece12f5650551689643950f92917dcd0f64"
+      },
+      {
+        "path": ".github/workflows/semgrep.yml",
+        "sha": "09dfe25e4adfc90e30f53ed170bc99c0f6c5864a"
+      },
+      {
+        "path": "apps/ai-gateway/CHANGELOG.md",
+        "sha": "e58b93f578740775c73f940e7220d2b6ae18304b"
+      },
+      {
+        "path": "apps/ai-gateway/CONTRIBUTING.md",
+        "sha": "797f595a8bde8b8f93dc40b71dc0eb491fe05ffe"
+      },
+      {
+        "path": "apps/ai-gateway/README.md",
+        "sha": "37c90f5ca25a48d8882f989735ec879648105599"
+      },
+      {
+        "path": "apps/ai-gateway/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/ai-gateway/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/ai-gateway/vitest.config.ts",
+        "sha": "f2f7039608d1141fda8c883ad2243285dd00aa4e"
+      },
+      {
+        "path": "apps/auditlogs/CHANGELOG.md",
+        "sha": "dfa1d77130b8bfaf96ce8f50afd1ab54090e2986"
+      },
+      {
+        "path": "apps/auditlogs/CONTRIBUTING.md",
+        "sha": "87053194420183469634190f84f9313b233009c5"
+      },
+      {
+        "path": "apps/auditlogs/README.md",
+        "sha": "bc3a9555a039cf4930a74a64baa627e24e994270"
+      },
+      {
+        "path": "apps/auditlogs/tsconfig.json",
+        "sha": "0b416ae26f05030e26d7d928dfe80f2b4e4e8215"
+      },
+      {
+        "path": "apps/auditlogs/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/auditlogs/vitest.config.ts",
+        "sha": "a7559d10986c4e3fba79d26eb4c375a2e569584a"
+      },
+      {
+        "path": "apps/autorag/CHANGELOG.md",
+        "sha": "d580ced494fc94391d4c8da58bdde79ee18b84a8"
+      },
+      {
+        "path": "apps/autorag/CONTRIBUTING.md",
+        "sha": "a9ecefd14b7d3a542bf76a637430552bcbeb4f4d"
+      },
+      {
+        "path": "apps/autorag/README.md",
+        "sha": "12d765b780cfddf312ffbb58265e9c1ee7c60c48"
+      },
+      {
+        "path": "apps/autorag/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/autorag/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/autorag/vitest.config.ts",
+        "sha": "d166414e58fb0aacd1b3d73d70ea4b1a08f19273"
+      },
+      {
+        "path": "apps/browser-rendering/CHANGELOG.md",
+        "sha": "e088a8f99190dcb3960a9efc19865365b3bb0ff0"
+      },
+      {
+        "path": "apps/browser-rendering/CONTRIBUTING.md",
+        "sha": "797f595a8bde8b8f93dc40b71dc0eb491fe05ffe"
+      },
+      {
+        "path": "apps/browser-rendering/README.md",
+        "sha": "cfc791f8c1576de68844b12510fb61f9795c5ec6"
+      },
+      {
+        "path": "apps/browser-rendering/tsconfig.json",
+        "sha": "9dcfd4e82391ce694825628ef8b33ce1e47297d8"
+      },
+      {
+        "path": "apps/browser-rendering/types.d.ts",
+        "sha": "e090f9a79f3f5359db2c6572a2b1782357dafd10"
+      },
+      {
+        "path": "apps/browser-rendering/vitest.config.ts",
+        "sha": "7129f4c50c266dab56d9796be9da5916b54d78fb"
+      },
+      {
+        "path": "apps/cloudflare-blog/CHANGELOG.md",
+        "sha": "17c848d4f2f748c38fccb588f94fd3bbe60d8fcc"
+      },
+      {
+        "path": "apps/cloudflare-blog/README.md",
+        "sha": "5922021ff022e8bfdcc90951d2b7cedaa1abe9e4"
+      },
+      {
+        "path": "apps/cloudflare-blog/tsconfig.json",
+        "sha": "386756e0f94e17f6d6d23aa80bfbf68a90417a8a"
+      },
+      {
+        "path": "apps/cloudflare-blog/vitest.config.ts",
+        "sha": "3a638d7e3fbffb6db06bdd42a0dc04538c654423"
+      },
+      {
+        "path": "apps/cloudflare-blog/worker-configuration.d.ts",
+        "sha": "aa2768c41ddf2798c86cb783998dc3a7d012dc6d"
+      },
+      {
+        "path": "apps/cloudflare-one-casb/CHANGELOG.md",
+        "sha": "7f599012a279835a917db003c40d6965d9edfbfa"
+      }
+    ],
+    "repo_pushed_at": "2026-10-22T15:21:16Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": false,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 91,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 40,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 80,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": false,
+    "age_days": 11
+  },
+  "network": {
+    "calls": 83,
+    "failed": 0,
+    "ms": 28175
+  },
+  "duration_ms": 28184
+}

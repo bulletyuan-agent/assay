@@ -1,0 +1,1792 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T150901Z",
+  "target": {
+    "source": "github",
+    "id": "openai/skills",
+    "url": "https://github.com/openai/skills",
+    "name": "skills"
+  },
+  "type": "skill",
+  "evaluated_at": "2026-11-02T15:12:59.842Z",
+  "method_version": "0.3.2",
+  "tool": {
+    "assay_commit": "d15962fd8f7d78fe81fced552f2067080c7c254c",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.2"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "49f948faa9258a0c61caceaf225e179651397431",
+    "files_scanned": 400,
+    "candidates": 688,
+    "excluded_non_shipped": 14,
+    "coverage": 0.58,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "skills/.curated/aspnet-core/SKILL.md",
+        "sha": "c71ed6e705c44038fbcd2e37a3e12c3a81683fdf"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/SKILL.md",
+        "sha": "6280a08c57db44ab622dcccbd853e01005edfcbd"
+      },
+      {
+        "path": "skills/.curated/cli-creator/SKILL.md",
+        "sha": "60e5a9a03f89cf66a60aa798bfc6f3c3fa5ed8c4"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/SKILL.md",
+        "sha": "e2d73abb7e5a550af3d9e40797a28259bddba97d"
+      },
+      {
+        "path": "skills/.curated/define-goal/SKILL.md",
+        "sha": "87f111bd700e0d993465f7ac741847b5daee57d6"
+      },
+      {
+        "path": "skills/.curated/figma-code-connect-components/SKILL.md",
+        "sha": "d417e16baf15bad3f1dd147d562c8b2578e4b4bd"
+      },
+      {
+        "path": "skills/.curated/figma-create-design-system-rules/SKILL.md",
+        "sha": "42cc4ce838276cb68a14bbb29c5a6f1e19b6e50d"
+      },
+      {
+        "path": "skills/.curated/figma-create-new-file/SKILL.md",
+        "sha": "8f74967b9bb4c26b3b8e2a8d102f004d6962ae0d"
+      },
+      {
+        "path": "skills/.curated/figma-generate-design/SKILL.md",
+        "sha": "f71d7e71600e84e95639ca2b3e2b8578ac50c3ea"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/SKILL.md",
+        "sha": "0c162901c29dba36094c324cd9ffabd2a6b33498"
+      },
+      {
+        "path": "skills/.curated/figma-implement-design/SKILL.md",
+        "sha": "9aacde6657a913db819d7938f3fd1888ff643c6a"
+      },
+      {
+        "path": "skills/.curated/figma-use/SKILL.md",
+        "sha": "4b0e23f53d8160e1623177f518535d1588a53c69"
+      },
+      {
+        "path": "skills/.curated/figma/SKILL.md",
+        "sha": "b4f18d2969fe827778b13b5a0fb08a158ec091b1"
+      },
+      {
+        "path": "skills/.curated/gh-address-comments/SKILL.md",
+        "sha": "0ee19e080dc9f0b082157080d1e65511ddc49e7e"
+      },
+      {
+        "path": "skills/.curated/gh-fix-ci/SKILL.md",
+        "sha": "76bdeb6a7bff93cbe924c0652f1fd7a3c3ffc46c"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/SKILL.md",
+        "sha": "5f6e79a444d2a1ccb38cec02fa6830c7bb2521ba"
+      },
+      {
+        "path": "skills/.curated/jupyter-notebook/SKILL.md",
+        "sha": "e1d1748cac9e9313c8229763751714628d1f6853"
+      },
+      {
+        "path": "skills/.curated/linear/SKILL.md",
+        "sha": "6982ccbe4835ed207f6c7c0b2f011d903dbe2960"
+      },
+      {
+        "path": "skills/.curated/migrate-to-codex/SKILL.md",
+        "sha": "b1c001b70e8cf326b8196e153b87811a43b23d48"
+      },
+      {
+        "path": "skills/.curated/netlify-deploy/SKILL.md",
+        "sha": "52075090a6644b104fc34837c9923b403d949369"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/SKILL.md",
+        "sha": "5d347f66e6b494328a81f3ecb4fd7865f95b0067"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/SKILL.md",
+        "sha": "efc716839ee614cf57efb3858fcfb538e0c4a8d9"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/SKILL.md",
+        "sha": "4bd40dbe0eb8d9d8920e3a4d705b38b4887623c7"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/SKILL.md",
+        "sha": "d6a0a0e0fb358f56e1d4893c54a25c6c2e04fc65"
+      },
+      {
+        "path": "skills/.curated/openai-docs/SKILL.md",
+        "sha": "ec6a2b06e4bca7b08e27c7be3ae512bc97008e8c"
+      },
+      {
+        "path": "skills/.curated/pdf/SKILL.md",
+        "sha": "fd5d56058f10202e4f50a30bc2906f39696024a1"
+      },
+      {
+        "path": "skills/.curated/playwright-interactive/SKILL.md",
+        "sha": "7d85f8284014c8c2690918a596a4b5bef7cb86e1"
+      },
+      {
+        "path": "skills/.curated/playwright/SKILL.md",
+        "sha": "77c01afb31aa602d0b002ae2438c2b67f0335fcb"
+      },
+      {
+        "path": "skills/.curated/render-deploy/SKILL.md",
+        "sha": "a0f78c13b07df3def82c16bccf4a1c17c4d8e30d"
+      },
+      {
+        "path": "skills/.curated/screenshot/SKILL.md",
+        "sha": "1d967bfb1d7d38874147b5810f2a19677bc3161b"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/SKILL.md",
+        "sha": "45ccbd8d671c4c4cc3e7e0645a16a3f80ec50de7"
+      },
+      {
+        "path": "skills/.curated/security-ownership-map/SKILL.md",
+        "sha": "0164d0d8809825dc5bccc99e87cafb8345a6be72"
+      },
+      {
+        "path": "skills/.curated/security-threat-model/SKILL.md",
+        "sha": "abd3c1c95d49c4e0e0664f198f4bf168c6291aec"
+      },
+      {
+        "path": "skills/.curated/sentry/SKILL.md",
+        "sha": "c94f7efa9d513f381d5fcd07912d56581ec3dc2a"
+      },
+      {
+        "path": "skills/.curated/speech/SKILL.md",
+        "sha": "54727b1f84831739e7262b4db8271ada026d20c7"
+      },
+      {
+        "path": "skills/.curated/transcribe/SKILL.md",
+        "sha": "757576f9bbd1782f14fcc28ca85159139a2b8fa5"
+      },
+      {
+        "path": "skills/.curated/vercel-deploy/SKILL.md",
+        "sha": "a7e6faf3b999d31e8224e232d39fbf58952b7a5b"
+      },
+      {
+        "path": "skills/.curated/winui-app/SKILL.md",
+        "sha": "28e67e8677f0ab74ac921ec85dd80888f7d53fa7"
+      },
+      {
+        "path": "skills/.curated/yeet/SKILL.md",
+        "sha": "acce5634f720e0a26c65c5e6048e0b43f6a3abd8"
+      },
+      {
+        "path": "skills/.system/imagegen/SKILL.md",
+        "sha": "88195882efdedbfab56e0eb2570dd4fd6d9e8610"
+      },
+      {
+        "path": "skills/.system/openai-docs/SKILL.md",
+        "sha": "df395fb442746703eefcc1d0cb9183efa39d9e66"
+      },
+      {
+        "path": "skills/.system/plugin-creator/SKILL.md",
+        "sha": "5108f549a7d6f93eb4b80dc9990bbd966157330a"
+      },
+      {
+        "path": "skills/.system/skill-creator/SKILL.md",
+        "sha": "72bc0b97e7a6476254a9d5c424c9971748402ec3"
+      },
+      {
+        "path": "skills/.system/skill-installer/scripts/install-skill-from-github.py",
+        "sha": "1c8ce89d0a4c54f1eb8ec00625e8fc0fa59301ae"
+      },
+      {
+        "path": "skills/.system/skill-installer/SKILL.md",
+        "sha": "8ca23bf833379d2272a0a67e0026c2709b8823f1"
+      },
+      {
+        "path": "contributing.md",
+        "sha": "cc833a5ccfb0d32b135a374dcf432d198e4d9a8f"
+      },
+      {
+        "path": "README.md",
+        "sha": "c205d307226b98189c28cbcce6ff792cbb7b2d05"
+      },
+      {
+        "path": "skills/.curated/migrate-to-codex/scripts/cli.py",
+        "sha": "9f01ea17753be62ddaa6fd50d1bf73fb6d6fa38e"
+      },
+      {
+        "path": "skills/.curated/playwright/references/cli.md",
+        "sha": "ec0b4e1aca28021a493ba84ce67489bd8ef9e876"
+      },
+      {
+        "path": "skills/.curated/speech/references/cli.md",
+        "sha": "d821eb94ca15b685d1c531b46c4d345563c6a99a"
+      },
+      {
+        "path": "skills/.system/imagegen/references/cli.md",
+        "sha": "cd8ec881b083a5a4d8ca19cc71040459f0df2586"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/LICENSE.txt",
+        "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/LICENSE.txt",
+        "sha": "145d9443e3e7da910ac0b1e7c8afda86cfefde3a"
+      },
+      {
+        "path": "skills/.curated/cli-creator/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/define-goal/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/figma-code-connect-components/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-create-design-system-rules/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-create-new-file/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-create-new-file/maintainers.yml",
+        "sha": "262e692e5225225306002b27136a66135a59ffa3"
+      },
+      {
+        "path": "skills/.curated/figma-generate-design/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-generate-design/maintainers.yml",
+        "sha": "262e692e5225225306002b27136a66135a59ffa3"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/maintainers.yml",
+        "sha": "a572caf65f0687561e83cb72cb8e4ea172dbe3f3"
+      },
+      {
+        "path": "skills/.curated/figma-implement-design/LICENSE.txt",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-use/LICENSE.TXT",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/figma-use/maintainers.yml",
+        "sha": "262e692e5225225306002b27136a66135a59ffa3"
+      },
+      {
+        "path": "skills/.curated/figma/LICENSE.txt",
+        "sha": "61ff4a8ed958746367201cbedaf4a0d5dc407e42"
+      },
+      {
+        "path": "skills/.curated/gh-address-comments/LICENSE.txt",
+        "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+      },
+      {
+        "path": "skills/.curated/gh-fix-ci/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/jupyter-notebook/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/linear/LICENSE.txt",
+        "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+      },
+      {
+        "path": "skills/.curated/migrate-to-codex/LICENSE.txt",
+        "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+      },
+      {
+        "path": "skills/.curated/netlify-deploy/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/LICENSE.txt",
+        "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/LICENSE.txt",
+        "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/LICENSE.txt",
+        "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/LICENSE.txt",
+        "sha": "08717083b66cc66a7d45267fd9a6998e79bddf04"
+      },
+      {
+        "path": "skills/.curated/openai-docs/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/pdf/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/playwright-interactive/LICENSE.txt",
+        "sha": "cefe596afef12e19a8e5e923f1a04c7da3188760"
+      },
+      {
+        "path": "skills/.curated/playwright-interactive/NOTICE.txt",
+        "sha": "aa622cea6ab0bbab8f7eb538598a48bf0f8e4cf1"
+      },
+      {
+        "path": "skills/.curated/playwright/LICENSE.txt",
+        "sha": "cefe596afef12e19a8e5e923f1a04c7da3188760"
+      },
+      {
+        "path": "skills/.curated/playwright/NOTICE.txt",
+        "sha": "f3a1933ff01c4402bc4210aa30ae4a52aa23c05f"
+      },
+      {
+        "path": "skills/.curated/render-deploy/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/screenshot/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/security-ownership-map/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/security-threat-model/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/sentry/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/speech/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/transcribe/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.curated/vercel-deploy/LICENSE.txt",
+        "sha": "94df5bf89dbb6210a707fb4edbf3aade96bc4318"
+      },
+      {
+        "path": "skills/.curated/winui-app/config.yaml",
+        "sha": "715973c5ee3a74312730e8eaddc7d4e42cd5bbdf"
+      },
+      {
+        "path": "skills/.curated/winui-app/LICENSE.txt",
+        "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+      },
+      {
+        "path": "skills/.curated/yeet/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.system/imagegen/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.system/openai-docs/LICENSE.txt",
+        "sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+      },
+      {
+        "path": "skills/.system/plugin-creator/LICENSE.txt",
+        "sha": "b20752a137cd5e8d89b63bcdadbc2ff5fcbf246a"
+      },
+      {
+        "path": "skills/.system/skill-creator/LICENSE.txt",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      {
+        "path": "skills/.system/skill-installer/LICENSE.txt",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/agents/openai.yaml",
+        "sha": "03d861eadefd055ec1d4a212bd5fcddef2894789"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/_sections.md",
+        "sha": "8cbf1e38740233ea7d600c3dd0dd913e70c96be6"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/apis-minimal-and-controllers.md",
+        "sha": "bc599eaec23dbd260db5710d1ac0f730325d469c"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/data-state-and-services.md",
+        "sha": "d2826e0d19afddc2ad7ecd262c795de64f654da4"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/program-and-pipeline.md",
+        "sha": "0b37686bfc924774ad4f16a93dd95892d26fd966"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/realtime-grpc-and-background-work.md",
+        "sha": "3976dabd79686b32d80557d44f93466a8e1ebeff"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/security-and-identity.md",
+        "sha": "f7f7da110cba555bd1492649b805c2ce584808c9"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/source-map.md",
+        "sha": "390d63b830071f00cf954aa76058ed0d3c681e3e"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/stack-selection.md",
+        "sha": "46473df19c7b41c06332236d6592438063616a31"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/testing-performance-and-operations.md",
+        "sha": "6e27c0eb88a998d165882002bda2852235f33e2f"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/ui-blazor.md",
+        "sha": "d7b58610e873a2c4959eb3f814361d3999151a8b"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/ui-mvc.md",
+        "sha": "2d52a01edd307d0d4b3a879304da4139b0dc22a9"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/ui-razor-pages.md",
+        "sha": "f111acb6d98d6ecf406a6e421532030d3815cf19"
+      },
+      {
+        "path": "skills/.curated/aspnet-core/references/versioning-and-upgrades.md",
+        "sha": "3b93275d757ca7833baa6667a150a8f215ed4d9d"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/agents/openai.yaml",
+        "sha": "a4ab23951d07b3a3f5b50b8d3c0508e88e2046a2"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/references/app-archetypes.md",
+        "sha": "3e3aed6c87ea331619ac6cf447634cfacf512dfe"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/references/apps-sdk-docs-workflow.md",
+        "sha": "8f93729a98d6ad8b227550d51ec634698e7d7e94"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/references/interactive-state-sync-patterns.md",
+        "sha": "025c3f59d460692954fb78c3bb9232a733fb24db"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/references/repo-contract-and-validation.md",
+        "sha": "84c02291269f3480f1100690c79a31ebe5173b79"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/references/search-fetch-standard.md",
+        "sha": "8f25a7eaffd4364d412bfc100d2c385f28113cfd"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/references/upstream-example-workflow.md",
+        "sha": "7314de48a807ed3278db99efe725aba15b9aec61"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/references/window-openai-patterns.md",
+        "sha": "eaad119f6c37de14fb95fbe8e47e677e4a1cfb6f"
+      },
+      {
+        "path": "skills/.curated/chatgpt-apps/scripts/scaffold_node_ext_apps.mjs",
+        "sha": "09ee06c477ad3f4bcb2cba09b09aff80cc463eb2"
+      },
+      {
+        "path": "skills/.curated/cli-creator/agents/openai.yaml",
+        "sha": "74da6bf568e409b6dff8d47d85de2b6f1341c61c"
+      },
+      {
+        "path": "skills/.curated/cli-creator/references/agent-cli-patterns.md",
+        "sha": "d0a43d08c7d60ce307a3b7a5a6a1247b7be43d27"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/agents/openai.yaml",
+        "sha": "e1162ab0c58b7cf250795df35ee845102092107c"
+      },
+      {
+        "path": "skills/.curated/define-goal/agents/openai.yaml",
+        "sha": "28c7e7a644d7ae3f5616c7ddd408c573139999f0"
+      },
+      {
+        "path": "skills/.curated/figma-code-connect-components/agents/openai.yaml",
+        "sha": "ddb6f18ba77f6559b09ff7a70b7a0193ddae3c32"
+      },
+      {
+        "path": "skills/.curated/figma-code-connect-components/references/mapping-checklist.md",
+        "sha": "8f4f0264cc3736f1ab75a2dbded93589e6ffaf88"
+      },
+      {
+        "path": "skills/.curated/figma-code-connect-components/scripts/normalize_node_id.py",
+        "sha": "31b8ef809d87fe210610e7019ab40528fa21d82e"
+      },
+      {
+        "path": "skills/.curated/figma-create-design-system-rules/agents/openai.yaml",
+        "sha": "1c0c91038e153f653567c553fd909efd93904164"
+      },
+      {
+        "path": "skills/.curated/figma-create-design-system-rules/references/rule-template.md",
+        "sha": "793236f4baa4982192887c86887772d8ed063b69"
+      },
+      {
+        "path": "skills/.curated/figma-create-design-system-rules/scripts/check_agents_md.sh",
+        "sha": "111c81e8acd262c1f837f30a0ba6eaaa3c2ad971"
+      },
+      {
+        "path": "skills/.curated/figma-create-new-file/agents/openai.yaml",
+        "sha": "78b73df161fa25772d9d29f7e011e42b3a179403"
+      },
+      {
+        "path": "skills/.curated/figma-generate-design/agents/openai.yaml",
+        "sha": "c1810f1a3bcd214b18a5e0bdea00e3918d6dba0d"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/agents/openai.yaml",
+        "sha": "7f2ebd38fdfb7f1fd2284c70be7af8c7b26723a5"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/references/code-connect-setup.md",
+        "sha": "3ac4964760d6c6f829023727a79849ce7d0341ad"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/references/component-creation.md",
+        "sha": "bde175470807bdef4ea5c1a92a48dedde3b168c9"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/references/discovery-phase.md",
+        "sha": "29da047328fdc54f6bb36693ca408bf83672bc60"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/references/documentation-creation.md",
+        "sha": "fb798ef634c3329f11ea672f691c17ec442e5e07"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/references/error-recovery.md",
+        "sha": "8c5aab70d84add62c166ffd4982a3f713febccda"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/references/naming-conventions.md",
+        "sha": "3405e37c07f8b5b85d6fadf0e39c2673de81bdd7"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/references/token-creation.md",
+        "sha": "b6440343de7011262931ee02b5b2e961fa41b25d"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/scripts/bindVariablesToComponent.js",
+        "sha": "8542f0ed41cb6d038907f22a94c6d4b6470a7517"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/scripts/cleanupOrphans.js",
+        "sha": "b839187d5a1ff69169e0b161bcdb1a49053f08a6"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/scripts/createComponentWithVariants.js",
+        "sha": "8e55a5372cfaca6b88319f01b4d45de7b547907e"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/scripts/createDocumentationPage.js",
+        "sha": "c7eff7f1f0697ecc2346d1d39f7f370f7e3c6f45"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/scripts/createSemanticTokens.js",
+        "sha": "c221b798ae51e76cd7236defe1cef5f5308922a8"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/scripts/createVariableCollection.js",
+        "sha": "f853a28414ca64aae0bb06b84ac28f560f1b984c"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/scripts/inspectFileStructure.js",
+        "sha": "36dd319e1d93517fb8e5142a4645b3b27c1f7d03"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/scripts/rehydrateState.js",
+        "sha": "85ad052cd2b9a063faeaf3b48808eb3f8dddca82"
+      },
+      {
+        "path": "skills/.curated/figma-generate-library/scripts/validateCreation.js",
+        "sha": "e607d0430560189f469bae3b0a3e528de4cfa0f6"
+      },
+      {
+        "path": "skills/.curated/figma-implement-design/agents/openai.yaml",
+        "sha": "b6991b4acc7fad969b142d333565ec4f4a66a5a0"
+      },
+      {
+        "path": "skills/.curated/figma-use/agents/openai.yaml",
+        "sha": "e521de4f6f29c5cd3a107bffecfad73246dba5cf"
+      },
+      {
+        "path": "skills/.curated/figma-use/references/api-reference.md",
+        "sha": "fe264e32c883a62b67e7e25b60fb8e8d3d7c5870"
+      },
+      {
+        "path": "skills/.curated/figma-use/references/common-patterns.md",
+        "sha": "30a23ac2a9ca90327c4a76ffa1d9ef7e3ebb2853"
+      },
+      {
+        "path": "skills/.curated/figma-use/references/component-patterns.md",
+        "sha": "2b81226dada3b63261a0db2d35af1febec96dac0"
+      },
+      {
+        "path": "skills/.curated/figma-use/references/effect-style-patterns.md",
+        "sha": "52bec418b658e51a997e28696e36b23632b21289"
+      },
+      {
+        "path": "skills/.curated/figma-use/references/gotchas.md",
+        "sha": "5d3712cc283d637ba5c185487252ff992eff4731"
+      },
+      {
+        "path": "skills/.curated/figma-use/references/maintainers.yml",
+        "sha": "c2af292148dc72cc37a57fe8a261acef4a3abbda"
+      },
+      {
+        "path": "skills/.curated/figma-use/references/plugin-api-patterns.md",
+        "sha": "69060dcf5faa41b177d74d026544df27463f8994"
+      },
+      {
+        "path": "skills/.curated/figma-use/references/plugin-api-standalone.index.md",
+        "sha": "54064799d33aee960149ab84fba82a8a325c4107"
+      },
+      {
+        "path": "skills/.curated/figma-use/references/text-style-patterns.md",
+        "sha": "49469c9bb8188849728a59d4dd5dbf421410c2b6"
+      },
+      {
+        "path": "skills/.curated/figma-use/references/validation-and-recovery.md",
+        "sha": "5518760a7cc17f3af823ec309adda26eb8250a64"
+      },
+      {
+        "path": "skills/.curated/figma-use/references/variable-patterns.md",
+        "sha": "b11306250e5c2d8aa37dad18d2d97bc0035fda94"
+      },
+      {
+        "path": "skills/.curated/figma/agents/openai.yaml",
+        "sha": "19ddd695fb0b338d99581d188b5c60531284fa24"
+      },
+      {
+        "path": "skills/.curated/figma/references/figma-mcp-config.md",
+        "sha": "0aebca927769cd3f9c2df736d08c74140d7521f2"
+      },
+      {
+        "path": "skills/.curated/figma/references/figma-tools-and-prompts.md",
+        "sha": "3a5a1d1dc0b136e4dcb26eaf40d620540c228788"
+      },
+      {
+        "path": "skills/.curated/gh-address-comments/agents/openai.yaml",
+        "sha": "92271e98a43edea8e5eac512cde9c0b4c954e867"
+      },
+      {
+        "path": "skills/.curated/gh-address-comments/scripts/fetch_comments.py",
+        "sha": "09b9c01c50d9202bd6455ce36887e08be92ac1ae"
+      },
+      {
+        "path": "skills/.curated/gh-fix-ci/agents/openai.yaml",
+        "sha": "262bd70c8214ffc8fcc698465a8122d69066fe4f"
+      },
+      {
+        "path": "skills/.curated/gh-fix-ci/scripts/inspect_pr_checks.py",
+        "sha": "06cd03c5fc61c784d082e1c25a533c94e0912b3f"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/agents/openai.yaml",
+        "sha": "dd774e5e5cc7969267332232e0a9b6d73a8b4eb5"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/references/animation-rows.md",
+        "sha": "79b63b20d71205fae13f89b60dc2f6d71b00a172"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/references/codex-pet-contract.md",
+        "sha": "6dc57cc14bbcb9a5c8455e0a3161e0eb76fded3d"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/references/qa-rubric.md",
+        "sha": "f7246f1bf814eab7a9d1aae236ddaa7b4f08ce7d"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/scripts/compose_atlas.py",
+        "sha": "0dd8aa4ec73716a8cb7c42b0bdaa7367ba827f8b"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/scripts/derive_running_left_from_running_right.py",
+        "sha": "f394fccfa5395995302d0e0a8e374914ef01278d"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/scripts/extract_strip_frames.py",
+        "sha": "410479e297d1e6f2fa62151469b782e20278e4eb"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/scripts/inspect_frames.py",
+        "sha": "4e141cda8aeaa4c1fb4cab264afdb6ce80fc1be7"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/scripts/make_contact_sheet.py",
+        "sha": "6269460481b6d85985db4a3e3540182499f3dbb0"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/scripts/prepare_pet_run.py",
+        "sha": "33095ff8e95cc2ee8cc1276a09f0d1ec8a276d4a"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/scripts/render_animation_previews.py",
+        "sha": "578f7827618dc5c237eaa1a0cfd8b912217d98d5"
+      },
+      {
+        "path": "skills/.curated/hatch-pet/scripts/validate_atlas.py",
+        "sha": "e3492c17ccd23b432b05387812d409ded1779634"
+      },
+      {
+        "path": "skills/.curated/jupyter-notebook/agents/openai.yaml",
+        "sha": "8832dea0a6e64f173f09e77f690dada6a5f73074"
+      },
+      {
+        "path": "skills/.curated/jupyter-notebook/references/experiment-patterns.md",
+        "sha": "2d5093b256f328dabb89de16822286c5f2f4dda4"
+      },
+      {
+        "path": "skills/.curated/jupyter-notebook/references/notebook-structure.md",
+        "sha": "681d36f53d55cb089b1d815bacaac9b363f76fa4"
+      },
+      {
+        "path": "skills/.curated/jupyter-notebook/references/quality-checklist.md",
+        "sha": "5482f282845271ac1614a33135000e18f54d95aa"
+      },
+      {
+        "path": "skills/.curated/jupyter-notebook/references/tutorial-patterns.md",
+        "sha": "2a360b089b904299f463f88b5cdae0ea9bdb1123"
+      },
+      {
+        "path": "skills/.curated/jupyter-notebook/scripts/new_notebook.py",
+        "sha": "0aba209a63c9744e7eeca5a59a12135b387e5229"
+      },
+      {
+        "path": "skills/.curated/linear/agents/openai.yaml",
+        "sha": "20514a34a9ba76ee27b311ecd158691e27f92b4f"
+      },
+      {
+        "path": "skills/.curated/migrate-to-codex/agents/openai.yaml",
+        "sha": "32110f9ca1975b8222e05e96c943dbbc5d1a261b"
+      },
+      {
+        "path": "skills/.curated/migrate-to-codex/references/differences.md",
+        "sha": "68a12b54c0842db9e85681af836847e015951cdd"
+      },
+      {
+        "path": "skills/.curated/migrate-to-codex/scripts/migrate-to-codex.py",
+        "sha": "7a2def4c3acbade3e928c308a270c5da9b9504dd"
+      },
+      {
+        "path": "skills/.curated/netlify-deploy/agents/openai.yaml",
+        "sha": "43ed2397e62918330de60268ee1f5021afa128bf"
+      },
+      {
+        "path": "skills/.curated/netlify-deploy/references/cli-commands.md",
+        "sha": "4fe92a2d2cbe82b7f4def87f4b1aa4a8e75bb0f8"
+      },
+      {
+        "path": "skills/.curated/netlify-deploy/references/deployment-patterns.md",
+        "sha": "e89d8b77c949b57958f3a5b8e6080706027561d5"
+      },
+      {
+        "path": "skills/.curated/netlify-deploy/references/netlify-toml.md",
+        "sha": "5188c83a4283504e6f3d61d69419fedabbfd89c3"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/agents/openai.yaml",
+        "sha": "4bc9f28bdd99076c237037a45206b34c65e1cf52"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/evaluations/conversation-to-wiki.json",
+        "sha": "a7e0c7f2064c8b32433adda6b71dc68972ef6301"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/evaluations/decision-record.json",
+        "sha": "b5ec25b5f1164d95f7b5556bf62c92504c999273"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/evaluations/README.md",
+        "sha": "e140f3197c89766b4d7faa2b3b2b765fbb091f8c"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/reference/database-best-practices.md",
+        "sha": "435eb7ba1027aa2cd5b9a1c03153e2f716f07a56"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/reference/decision-log-database.md",
+        "sha": "2a7e6e424b7bae98b077eb32e98c72697eb6d77e"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/reference/documentation-database.md",
+        "sha": "ebb28337ef131a4fa193462218ae8aaa48d2a4cc"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/reference/faq-database.md",
+        "sha": "32457dd19be0b57fc64e796663b019d3a59d2efb"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/reference/how-to-guide-database.md",
+        "sha": "57593b181ad09899e5a21c0dbe23565ee8f7ca6e"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/reference/learning-database.md",
+        "sha": "02f5f35920c799a24bfafc44694912e798fa4da2"
+      },
+      {
+        "path": "skills/.curated/notion-knowledge-capture/reference/team-wiki-database.md",
+        "sha": "e7b741ff7b09dc7476bd55a5f241d8b5f4fbccfa"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/agents/openai.yaml",
+        "sha": "f4dd6a8559c9f67f0cf1386b26cc6c6cf6e5510a"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/evaluations/decision-meeting-prep.json",
+        "sha": "3eca6b57ab8349cfc879605f46dfac1a43cd363d"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/evaluations/README.md",
+        "sha": "eb77e17baf150be99ea83268a9aea8ce79ef7a34"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/evaluations/status-meeting-prep.json",
+        "sha": "14987878dfa968d9951fce20ab34f352704a169f"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/reference/brainstorming-template.md",
+        "sha": "0e31334839833dbfbaebd3f828f7b248b4da0204"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/reference/decision-meeting-template.md",
+        "sha": "5c0fa56a9cd84b21449135556121946777943960"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/reference/one-on-one-template.md",
+        "sha": "9885beb36f6ca82b8a47d1075006330c12f16160"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/reference/retrospective-template.md",
+        "sha": "d3e3673c31f0a9e2a686683c1050506f5446ebbc"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/reference/sprint-planning-template.md",
+        "sha": "36adb3b7d0a09356909bb7a4c4806f60bb4c704c"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/reference/status-update-template.md",
+        "sha": "f5d878944f5d37064fba1d24edab9c28b642aba4"
+      },
+      {
+        "path": "skills/.curated/notion-meeting-intelligence/reference/template-selection-guide.md",
+        "sha": "d528977620b826778fffbd035dc1ee6d0d1862af"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/agents/openai.yaml",
+        "sha": "8ec6a73d463191299f7a702fab7e7509fa7037cb"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/evaluations/basic-research.json",
+        "sha": "33a903fc8026de4430a74093ceebae09927e5792"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/evaluations/README.md",
+        "sha": "08ddcddd6b3c06d63ec8fb90cb96a8ece7e9ccd5"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/evaluations/research-to-database.json",
+        "sha": "12b74bebaad018dfdf6d9a6382e68ddc9d4e4a48"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/reference/advanced-search.md",
+        "sha": "a555b1a7d0c7feaa307337a1efaeab23dcce60d9"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/reference/citations.md",
+        "sha": "d3b2cff426454c18fde032d88f2b824d8c7af6b6"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/reference/comparison-format.md",
+        "sha": "cfb31b7f68ed37293b2db3a2292e935dd199568c"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/reference/comparison-template.md",
+        "sha": "ce3c138cc12c4edaf735a3a06206add5b31bd4e0"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/reference/comprehensive-report-format.md",
+        "sha": "1422b2bf799ac8c1413bdfad5e6b33b2de2fd185"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/reference/comprehensive-report-template.md",
+        "sha": "a49620f6d55e5021e9bb1670ca20f2b14b6dd53f"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/reference/format-selection-guide.md",
+        "sha": "87facda19cb74b02ed82c3673c5f8633ad26912a"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/reference/quick-brief-format.md",
+        "sha": "41ef5f2d746d6a53809f19e7c35bf282d1740ffa"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/reference/quick-brief-template.md",
+        "sha": "2b3f7239721a367e58b19fb4f745639a681cfeab"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/reference/research-summary-format.md",
+        "sha": "ce266572e056893b235c2f178bb85210c752a3a6"
+      },
+      {
+        "path": "skills/.curated/notion-research-documentation/reference/research-summary-template.md",
+        "sha": "9ebd156379614b1aa106c8aec1a941f0bc2b8ee9"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/agents/openai.yaml",
+        "sha": "73a5795271c1536408400ed6a308c5071642b497"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/evaluations/basic-spec-implementation.json",
+        "sha": "904075144bc4a3027a0e08152c4a03962014e702"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/evaluations/README.md",
+        "sha": "fe5399f8c1a56f10517e86a3c414f63f5817725e"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/evaluations/spec-to-tasks.json",
+        "sha": "4da86fb5691d00080f45c0b407285fc729c37dbf"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/reference/milestone-summary-template.md",
+        "sha": "807cbe21d7433c4e9bd90e9901887eae1854841b"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/reference/progress-tracking.md",
+        "sha": "14b0061e3ab45fd9eceb7cb9d0ac4d101aa3a426"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/reference/progress-update-template.md",
+        "sha": "70a2f0bda2883b2c0e4b9e2adeff6ec6b004f373"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/reference/quick-implementation-plan.md",
+        "sha": "be42908aa311e065fb3a6b108562b805503eb0c9"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/reference/spec-parsing.md",
+        "sha": "e60a3cf0b2633454ac3bc4e6b02e7a1e08dd3ebc"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/reference/standard-implementation-plan.md",
+        "sha": "556a1d0bf9bda5eee6f6d2191d9501dbcd153b1e"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/reference/task-creation-template.md",
+        "sha": "be0b869545f6e3d1da11db8b9be3b17d491614aa"
+      },
+      {
+        "path": "skills/.curated/notion-spec-to-implementation/reference/task-creation.md",
+        "sha": "dd74bd6ad038e4296222f68103677f668b68bda2"
+      },
+      {
+        "path": "skills/.curated/openai-docs/agents/openai.yaml",
+        "sha": "8bbf03c2065aa2e45b288d572506dceb7f16539a"
+      },
+      {
+        "path": "skills/.curated/openai-docs/references/latest-model.md",
+        "sha": "a1ffbfbdc988a24e7927f8a8dce5c5a9aafac1be"
+      },
+      {
+        "path": "skills/.curated/openai-docs/references/prompting-guide.md",
+        "sha": "0d9273cec273da2c6ae0fd162069907e5eec2352"
+      },
+      {
+        "path": "skills/.curated/openai-docs/references/upgrade-guide.md",
+        "sha": "b29f137bc67e620d91308e318ae6b36e05618039"
+      },
+      {
+        "path": "skills/.curated/openai-docs/scripts/fetch-codex-manual.mjs",
+        "sha": "b2605520dc54aa3b71769e90887b9fdf06c97da4"
+      },
+      {
+        "path": "skills/.curated/openai-docs/scripts/resolve-latest-model-info.js",
+        "sha": "1bd16ac9bcf9e2abb16e317395ac64538f0cde05"
+      },
+      {
+        "path": "skills/.curated/pdf/agents/openai.yaml",
+        "sha": "fe2876a68ad5cdbf6d045396e18fba9b8919e1bf"
+      },
+      {
+        "path": "skills/.curated/playwright-interactive/agents/openai.yaml",
+        "sha": "56c0b51223cc20cdc4f3cbf01315a91e4738e9e0"
+      },
+      {
+        "path": "skills/.curated/playwright/agents/openai.yaml",
+        "sha": "e74575e62f7c0e4b2b825de3cae2062a483fadd4"
+      },
+      {
+        "path": "skills/.curated/playwright/references/workflows.md",
+        "sha": "ffd45c0d8249fe1a3766f9745b75154112d04d87"
+      },
+      {
+        "path": "skills/.curated/playwright/scripts/playwright_cli.sh",
+        "sha": "51fabc65500efd877d2c3de36b19b48b733ebb15"
+      },
+      {
+        "path": "skills/.curated/render-deploy/agents/openai.yaml",
+        "sha": "8d287b70154ed6b2d32d2e5a3e3fedc7180ad24e"
+      },
+      {
+        "path": "skills/.curated/render-deploy/assets/docker.yaml",
+        "sha": "c3f9d3a66ade17a84fcf9e70c5f1acdf222e9260"
+      },
+      {
+        "path": "skills/.curated/render-deploy/assets/go-api.yaml",
+        "sha": "dd24eb744c1646032a80613af025cc83b2af6f5d"
+      },
+      {
+        "path": "skills/.curated/render-deploy/assets/nextjs-postgres.yaml",
+        "sha": "ef70b758a433879ab4c13bd78989200a64dfb62a"
+      },
+      {
+        "path": "skills/.curated/render-deploy/assets/node-express.yaml",
+        "sha": "04facaf2b4d872ca229063455cde7961ad58a855"
+      },
+      {
+        "path": "skills/.curated/render-deploy/assets/python-django.yaml",
+        "sha": "2be69d28199776447b248d06d6f5b415b664e10d"
+      },
+      {
+        "path": "skills/.curated/render-deploy/assets/static-site.yaml",
+        "sha": "0f5ff612627b16b5233248e8faabbcbec02e8f62"
+      },
+      {
+        "path": "skills/.curated/render-deploy/references/blueprint-spec.md",
+        "sha": "01c29b24f676b7ff1e5afb696962e53c0bb35494"
+      },
+      {
+        "path": "skills/.curated/render-deploy/references/codebase-analysis.md",
+        "sha": "a258295baffefba29565c5ba5f128813274a1a7d"
+      },
+      {
+        "path": "skills/.curated/render-deploy/references/configuration-guide.md",
+        "sha": "ebd1558a2a641331e420bbd588093898d1b6841e"
+      },
+      {
+        "path": "skills/.curated/render-deploy/references/deployment-details.md",
+        "sha": "e17bbeade6b6d6db373b9544143297a48b22a578"
+      },
+      {
+        "path": "skills/.curated/render-deploy/references/direct-creation.md",
+        "sha": "6187245b19f0dc3c34ef71ccf30af0e84aa06afa"
+      },
+      {
+        "path": "skills/.curated/render-deploy/references/error-patterns.md",
+        "sha": "228f2348a938f9bf24b1f6540652538ffcdab3b9"
+      },
+      {
+        "path": "skills/.curated/render-deploy/references/post-deploy-checks.md",
+        "sha": "a14e8e4180f46378401b163971ef644e23778402"
+      },
+      {
+        "path": "skills/.curated/render-deploy/references/runtimes.md",
+        "sha": "9e1175794b3d69b032f406052a27906ddd3c9bff"
+      },
+      {
+        "path": "skills/.curated/render-deploy/references/service-types.md",
+        "sha": "5eff82b71273373623d736cb2df0c6df70463411"
+      },
+      {
+        "path": "skills/.curated/render-deploy/references/troubleshooting-basics.md",
+        "sha": "54fa0749e0c68aa4853c14824ce4b921b659d478"
+      },
+      {
+        "path": "skills/.curated/screenshot/agents/openai.yaml",
+        "sha": "9426051a5ae27ff9e69ff37df606cb7c9744a2d8"
+      },
+      {
+        "path": "skills/.curated/screenshot/scripts/ensure_macos_permissions.sh",
+        "sha": "a4229852e5806d0b8998a78ffb835c94b4564182"
+      },
+      {
+        "path": "skills/.curated/screenshot/scripts/take_screenshot.py",
+        "sha": "4cbb33b01747baa3671b1088a2cccb9067994762"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/agents/openai.yaml",
+        "sha": "1721736a914e6ce41da2e0e005f6a8e782f2e642"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/references/golang-general-backend-security.md",
+        "sha": "85e9c6a1669e0d04af56c9a0bce113dd35e0248d"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/references/javascript-express-web-server-security.md",
+        "sha": "98d79067ffb784ce426394193e744ddc7f3c93be"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/references/javascript-general-web-frontend-security.md",
+        "sha": "d8b696f363ea54661791c048ba19a57933d20825"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/references/javascript-jquery-web-frontend-security.md",
+        "sha": "3fd00db430ed55fafe50112b8d8b751fe82deec1"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/references/javascript-typescript-nextjs-web-server-security.md",
+        "sha": "44cc8213b11feda2eac8283dfd6a11fe93a68965"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/references/javascript-typescript-react-web-frontend-security.md",
+        "sha": "33fb693282a40754a081a499cda3d471aa23da28"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/references/javascript-typescript-vue-web-frontend-security.md",
+        "sha": "be326548bf953b6d1918727d228449ab4cb5110d"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/references/python-django-web-server-security.md",
+        "sha": "0b9a89a73e0ff3a88ccb7837b56ad1a5f15259e0"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/references/python-fastapi-web-server-security.md",
+        "sha": "d394a55bb86b3b2e5c2b73e65cb115a2a0ce1c05"
+      },
+      {
+        "path": "skills/.curated/security-best-practices/references/python-flask-web-server-security.md",
+        "sha": "adbc599aad8688a3446f5b595a1f4f0c1eac942f"
+      },
+      {
+        "path": "skills/.curated/security-ownership-map/agents/openai.yaml",
+        "sha": "f64c4ffe0a1fa670189e19184eaa04a6e408acda"
+      },
+      {
+        "path": "skills/.curated/security-ownership-map/references/neo4j-import.md",
+        "sha": "eed1164f39067d3e1031d046d8d7f09e8949c28c"
+      },
+      {
+        "path": "skills/.curated/security-ownership-map/scripts/build_ownership_map.py",
+        "sha": "b5ef3fd662419286bad72c08d753a24e55bfd3d5"
+      },
+      {
+        "path": "skills/.curated/security-ownership-map/scripts/community_maintainers.py",
+        "sha": "09c801e365cc5741ddd12ac5555e6097d834e5e8"
+      },
+      {
+        "path": "skills/.curated/security-ownership-map/scripts/query_ownership.py",
+        "sha": "a6e3ea66b8ed23a46a2b798018767330c31f0868"
+      },
+      {
+        "path": "skills/.curated/security-ownership-map/scripts/run_ownership_map.py",
+        "sha": "d84e5381eded45a8652520c2e94d1f6d7c4b9fd4"
+      },
+      {
+        "path": "skills/.curated/security-threat-model/agents/openai.yaml",
+        "sha": "d8b04e20a62688188f19bd396ae6b923841ddf8e"
+      },
+      {
+        "path": "skills/.curated/security-threat-model/references/prompt-template.md",
+        "sha": "b6affb0d2f873ffe398f7a8df00095dc0ff01f59"
+      },
+      {
+        "path": "skills/.curated/security-threat-model/references/security-controls-and-assets.md",
+        "sha": "63d1455aeacfc97eaca4e371040dbadfbd791635"
+      },
+      {
+        "path": "skills/.curated/sentry/agents/openai.yaml",
+        "sha": "834c31819743a5c3c7f35517d4af5aba58a4e1ab"
+      },
+      {
+        "path": "skills/.curated/speech/agents/openai.yaml",
+        "sha": "ada812e36f53fe1c12a48ca7f4c6b20b9e5b9318"
+      },
+      {
+        "path": "skills/.curated/speech/references/accessibility.md",
+        "sha": "5f7641615fba9fcdc0fbdc21bc1bb032874fbe87"
+      },
+      {
+        "path": "skills/.curated/speech/references/audio-api.md",
+        "sha": "4c859c126196dcb2a4555c073b20a41b077edf2d"
+      },
+      {
+        "path": "skills/.curated/speech/references/codex-network.md",
+        "sha": "c57c13be2a60a788a7903076b49ca1911bd11ba7"
+      },
+      {
+        "path": "skills/.curated/speech/references/ivr.md",
+        "sha": "5748dc56d0de53a2481e3b311d0f8d80cf6902c6"
+      },
+      {
+        "path": "skills/.curated/speech/references/narration.md",
+        "sha": "fb9c3a200b38af982a57e7bc6e50b034e27c75f1"
+      },
+      {
+        "path": "skills/.curated/speech/references/prompting.md",
+        "sha": "66429adb9d735b02bcd8b809346ebb2bbac664ff"
+      },
+      {
+        "path": "skills/.curated/speech/references/sample-prompts.md",
+        "sha": "e3c25f73b0da4b0b8aae52a69fe7e3698225c8db"
+      },
+      {
+        "path": "skills/.curated/speech/references/voice-directions.md",
+        "sha": "442247d1745f3793db0fe217a032b198d0f3a5e3"
+      },
+      {
+        "path": "skills/.curated/speech/references/voiceover.md",
+        "sha": "62b4d1e369fbe8fca0c9331d6293d4eed5c218d4"
+      },
+      {
+        "path": "skills/.curated/speech/scripts/text_to_speech.py",
+        "sha": "e746c94e5c37c47d968cd1b4bef2f32107be95ba"
+      },
+      {
+        "path": "skills/.curated/transcribe/agents/openai.yaml",
+        "sha": "2f5909c7fff9a325a6c6501c694f2c5305f0c720"
+      },
+      {
+        "path": "skills/.curated/transcribe/references/api.md",
+        "sha": "5f3edae8d4be6379b0111cc351b22278edb89526"
+      },
+      {
+        "path": "skills/.curated/transcribe/scripts/transcribe_diarize.py",
+        "sha": "0fea33aaa1f4969ec7bf77a90d220236a47d81c6"
+      },
+      {
+        "path": "skills/.curated/vercel-deploy/agents/openai.yaml",
+        "sha": "f11e4eeb297dac79d03c35b227830b611f6e6ad2"
+      },
+      {
+        "path": "skills/.curated/vercel-deploy/scripts/deploy.sh",
+        "sha": "4494ee11b60454f07fde1ed84b94935030530772"
+      },
+      {
+        "path": "skills/.curated/winui-app/agents/openai.yaml",
+        "sha": "1a8e4b8bc3716698ce1af64de239f1ad48f214c3"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/_sections.md",
+        "sha": "56cb817f2a8b2c69c2043efbeca8a74eaf2b70f4"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/accessibility-input-and-localization.md",
+        "sha": "ba61077f8dec27263407def1502a3602e9f49313"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/build-run-and-launch-verification.md",
+        "sha": "aeac4d902aafea004356ef119bb2245ba60d9bcd"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/community-toolkit-controls-and-helpers.md",
+        "sha": "823b1fcda547b2a604de220c4b5a11f090c63d35"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/controls-layout-and-adaptive-ui.md",
+        "sha": "6076e131969acc86fa7ff037b6a8094fd8c6e9ec"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/foundation-environment-audit-and-remediation.md",
+        "sha": "7c28e2539a3d87b634d1ff909a4b13123f7434e6"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/foundation-setup-and-project-selection.md",
+        "sha": "73a6d696e42a648021bddd8e5dff5c1c7b63b606"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/foundation-template-first-recovery.md",
+        "sha": "ff9eb6df0a97a3c24dfe81208e2ce62e8eda4a42"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/foundation-winui-app-structure.md",
+        "sha": "90192383b1e458b9e92300749eb8962f6f45f7fd"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/motion-animations-and-polish.md",
+        "sha": "fe9588b2fc843020af1d9a69b30a23c9791a42aa"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/performance-diagnostics-and-responsiveness.md",
+        "sha": "e86eb0753cc2c09d0abf83fb17808dd3b31b3f4d"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/sample-source-map.md",
+        "sha": "1898e00b4525f7c267f6826d0fb945d0051b9f2c"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/shell-navigation-and-windowing.md",
+        "sha": "41c03302b1cd5aa7c3506b86ab31e1f29865ed68"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/styling-theming-materials-and-icons.md",
+        "sha": "eb212055d5c717a4b17384c5b1f59a2b139bd462"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/testing-debugging-and-review-checklists.md",
+        "sha": "6e5dca39a1743baa98c5b3fc2ce52c9c06aafc51"
+      },
+      {
+        "path": "skills/.curated/winui-app/references/windows-app-sdk-lifecycle-notifications-and-deployment.md",
+        "sha": "5861b7b208e48ec42f11b81aff8dc20615067781"
+      },
+      {
+        "path": "skills/.curated/yeet/agents/openai.yaml",
+        "sha": "e84be49ddcbf8ed84ba2e2b5db362d621443e36a"
+      },
+      {
+        "path": "skills/.system/imagegen/agents/openai.yaml",
+        "sha": "c9cfddb1442362211644ecf0386373713f962a97"
+      },
+      {
+        "path": "skills/.system/imagegen/references/codex-network.md",
+        "sha": "249d62826253e4ccc2fedda8c2f59235d48faace"
+      },
+      {
+        "path": "skills/.system/imagegen/references/image-api.md",
+        "sha": "a2750c15c6382b6ec3d7fecb29c493e4dd159a9a"
+      },
+      {
+        "path": "skills/.system/imagegen/references/prompting.md",
+        "sha": "8b6c684eef668f6cd7c2c0e4433123735eb345cf"
+      },
+      {
+        "path": "skills/.system/imagegen/references/sample-prompts.md",
+        "sha": "e4b2b01da0c0f53014b9821595e54414773a3a23"
+      },
+      {
+        "path": "skills/.system/imagegen/scripts/image_gen.py",
+        "sha": "57cab20e05ced1bb744a2272b40dab096f60cbc0"
+      },
+      {
+        "path": "skills/.system/openai-docs/agents/openai.yaml",
+        "sha": "8bbf03c2065aa2e45b288d572506dceb7f16539a"
+      },
+      {
+        "path": "skills/.system/openai-docs/references/latest-model.md",
+        "sha": "04aa84bad9199428e7acba391c4e96264fe707f7"
+      },
+      {
+        "path": "skills/.system/openai-docs/references/prompting-guide.md",
+        "sha": "0d9273cec273da2c6ae0fd162069907e5eec2352"
+      },
+      {
+        "path": "skills/.system/openai-docs/references/upgrade-guide.md",
+        "sha": "b29f137bc67e620d91308e318ae6b36e05618039"
+      },
+      {
+        "path": "skills/.system/openai-docs/scripts/fetch-codex-manual.mjs",
+        "sha": "b2605520dc54aa3b71769e90887b9fdf06c97da4"
+      },
+      {
+        "path": "skills/.system/openai-docs/scripts/resolve-latest-model-info.js",
+        "sha": "1bd16ac9bcf9e2abb16e317395ac64538f0cde05"
+      },
+      {
+        "path": "skills/.system/plugin-creator/agents/openai.yaml",
+        "sha": "979b49859f745739ef85d2850b282ad17b88d8a9"
+      },
+      {
+        "path": "skills/.system/plugin-creator/references/plugin-json-spec.md",
+        "sha": "6831aae9dbbbb2332df3c1551d8442cbd68aa671"
+      },
+      {
+        "path": "skills/.system/plugin-creator/scripts/create_basic_plugin.py",
+        "sha": "87c2e17d4cdc0cb6f72099c82d931b42c1ab7975"
+      },
+      {
+        "path": "skills/.system/skill-creator/agents/openai.yaml",
+        "sha": "f5ce09ed118b72908b7308fcfc1619f59e89f6ea"
+      },
+      {
+        "path": "skills/.system/skill-creator/references/openai_yaml.md",
+        "sha": "da5629f8de500ec6f81291d239a2d9c68d1d9044"
+      },
+      {
+        "path": "skills/.system/skill-creator/scripts/generate_openai_yaml.py",
+        "sha": "1a9d784f8704999daf55a2b9036094949d9af3f8"
+      },
+      {
+        "path": "skills/.system/skill-creator/scripts/init_skill.py",
+        "sha": "f90703eca8159a21a9684ed1df974c702d92f814"
+      },
+      {
+        "path": "skills/.system/skill-creator/scripts/quick_validate.py",
+        "sha": "0547b4041a5f58fa19892079a114a1df98286406"
+      },
+      {
+        "path": "skills/.system/skill-installer/agents/openai.yaml",
+        "sha": "88d40cd9468441cfc83ffed52f9d71867392b850"
+      },
+      {
+        "path": "skills/.system/skill-installer/scripts/github_utils.py",
+        "sha": "711f597e4cf0c08b897083c1c337e13524a76260"
+      },
+      {
+        "path": "skills/.system/skill-installer/scripts/list-skills.py",
+        "sha": "0977c296ab7723d5fdf9ad9ba05329478ba1fe94"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/agents-sdk/api.md",
+        "sha": "9e16aa621641d12aa92beb0cdd7b3c2678ee0c7d"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/agents-sdk/configuration.md",
+        "sha": "a99cb033113139675d775f6f7fef3712da570f24"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/agents-sdk/gotchas.md",
+        "sha": "396bd1c7aab034de3657f8b9ef2d45cdb6f10190"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/agents-sdk/patterns.md",
+        "sha": "2e72d4bb4947163b84df9f2a45086f9b23c9ff65"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/agents-sdk/README.md",
+        "sha": "c30d098840f490bed1416c1ad1d1afa0a2905c88"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/ai-gateway/configuration.md",
+        "sha": "78b5615a3632c1b0577867508d6295dbe5e3a5a5"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/ai-gateway/dynamic-routing.md",
+        "sha": "540be5c27944405a188e7479e8d036f9a92e0cfd"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/ai-gateway/features.md",
+        "sha": "4a0d384f2d733d8c1a60c6cf4b1b331f70301dcb"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/ai-gateway/README.md",
+        "sha": "75a12ab215f67c14f9802b24d3db2c44ff1d6cbd"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/ai-gateway/sdk-integration.md",
+        "sha": "7ca4930ef019d2489544cc4a693a071128666810"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/ai-gateway/troubleshooting.md",
+        "sha": "4d6635760fce534cf04d72ef032ca59fb9131bdd"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/ai-search/api.md",
+        "sha": "b6220c464a687aaa35a923f4c0781e4fa6b50f6f"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/ai-search/configuration.md",
+        "sha": "d1f34adb5410af9e4b766e9cd5ae75628af4e6bc"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/ai-search/gotchas.md",
+        "sha": "04c987f6a6813bccec5625ff8e126e84dd145383"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/ai-search/patterns.md",
+        "sha": "4a70f089beb85cc9088176d48c311337d7407257"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/ai-search/README.md",
+        "sha": "52d766d7be1a0d3a45eab7d28c5b778fd93b4684"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/analytics-engine/api.md",
+        "sha": "20e7084151fcef6ea33a1613e7dce17a7f20301f"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/analytics-engine/configuration.md",
+        "sha": "a71af96ff553398bfb270c85c1c1060c1edeb9df"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/analytics-engine/gotchas.md",
+        "sha": "ed1767f2f049842192b15284a2d973636241fede"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/analytics-engine/patterns.md",
+        "sha": "dc3fc5d4614eca930bd68826550546276e558d9e"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/analytics-engine/README.md",
+        "sha": "524123b4cbdca4005c8c05cce308d431a102c3a9"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/api-shield/api.md",
+        "sha": "c833501ff6838eb7c602729bfc1f9a5cd2425049"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/api-shield/configuration.md",
+        "sha": "f95744c5e30ba80255ef66d1eee6ca97bc94c513"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/api-shield/gotchas.md",
+        "sha": "255517f064f76ae816fedfd4b331f8e6cff9420e"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/api-shield/patterns.md",
+        "sha": "5721dba456183c1520e034c4332b8028dc409110"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/api-shield/README.md",
+        "sha": "86613c86fe683ffe0b1fe9f6856614200458659f"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/api/api.md",
+        "sha": "33710149c916b6c3bada3a7e3debc229554fc68a"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/api/configuration.md",
+        "sha": "4d4a299c84aa67463f7e07a2011ac85fe872e740"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/api/gotchas.md",
+        "sha": "e6666dc5906b969f945ecc825357eba3e4eb2422"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/api/patterns.md",
+        "sha": "3c7c693b1ae5097b96a7968a813652c52194c8be"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/api/README.md",
+        "sha": "5e02109c69c7176494318c1a72277364ca5d18e7"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/argo-smart-routing/api.md",
+        "sha": "5cd8f5e3795acaae4090ee9b4c488f6b2eb6043f"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/argo-smart-routing/configuration.md",
+        "sha": "ba94d382e238fa01975d1ff834b6d49cde7e9957"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/argo-smart-routing/gotchas.md",
+        "sha": "8d011d3cdf584bcbbe7f4d553eaad29503233521"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/argo-smart-routing/patterns.md",
+        "sha": "1173b2d6041912c83cadc7ba44919eb7da8e4795"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/argo-smart-routing/README.md",
+        "sha": "ef5539d0652a4c777274324272209f2049331ce7"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/bindings/api.md",
+        "sha": "a8ab13b41152cfdd1ab25937738a51d33252960a"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/bindings/configuration.md",
+        "sha": "957350017c78b920e39fb70ca5eefa033a7659a1"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/bindings/gotchas.md",
+        "sha": "90aca1a7c6bb0c4aca5d94abec4d457cdc2d6f8e"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/bindings/patterns.md",
+        "sha": "759305d967d3c5645729fe941e03da2cd9a550e1"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/bindings/README.md",
+        "sha": "fc3e8ebfe3d899ab6e4136e168b515fac03112b5"
+      },
+      {
+        "path": "skills/.curated/cloudflare-deploy/references/bot-management/api.md",
+        "sha": "eda958adeb96a286336ccca567f2e298259f31ca"
+      }
+    ],
+    "repo_pushed_at": "2026-10-28T17:31:41Z",
+    "license": null
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": false,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 50,
+      "egress": 85,
+      "instruction_hygiene": 0
+    },
+    "red_flags": [
+      "concealment-instruction"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "skills/.curated/vercel-deploy/scripts/deploy.sh",
+      "line": 9,
+      "snippet": "DEPLOY_ENDPOINT=\"https://codex-deploy-skills.vercel.sh/api/deploy\"",
+      "host": "codex-deploy-skills.vercel.sh",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/.curated/figma-generate-design/SKILL.md",
+      "line": 168,
+      "snippet": "**Do NOT build sections as top-level page children and reparent them later** — moving nodes across `use_figma` calls with `appendChild()` silently fails and pro",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/.curated/hatch-pet/SKILL.md",
+      "line": 140,
+      "snippet": "- `idle`: keep this calm and low-distraction. Use only subtle breathing, a tiny blink, a slight head or body bob, a very small material sway, or another quiet p",
+      "deduction": 15
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "skills/.curated/render-deploy/SKILL.md",
+      "line": 111,
+      "snippet": "- Linux/macOS: `curl -fsSL https://raw.githubusercontent.com/render-oss/cli/main/bin/install.sh | sh`",
+      "deduction": 25
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "docs-pipe-to-shell",
+      "severe": false,
+      "file": "skills/.curated/sentry/SKILL.md",
+      "line": 18,
+      "snippet": "1. Install the Sentry CLI: `curl https://cli.sentry.dev/install -fsS | bash`",
+      "deduction": 25
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/.curated/chatgpt-apps/references/upstream-example-workflow.md",
+      "line": 72,
+      "snippet": "- If you rely on upstream code, note the source repo and branch/tag/commit when practical; avoid silently depending on a floating example shape for long-lived w",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "skills/.curated/figma-generate-library/references/discovery-phase.md",
+      "line": 489,
+      "snippet": "When the same token/component exists in both code and Figma but with different values, names, or structures, **always ask the user**. Never silently pick one.",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/.curated/figma-use/references/api-reference.md",
+      "line": 296,
+      "snippet": "| `figma.showUI()` | No-op (silently ignored) |",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/.curated/figma-use/references/gotchas.md",
+      "line": 265,
+      "snippet": "// WRONG — throws or silently does nothing",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "skills/.curated/hatch-pet/references/qa-rubric.md",
+      "line": 38,
+      "snippet": "- Preview GIFs do not show unintended size popping, extraction-induced baseline jumps, or wrong directional facing.",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "skills/.curated/hatch-pet/scripts/prepare_pet_run.py",
+      "line": 51,
+      "snippet": "\"Do not show waving, walking, running, jumping, talking, working, reviewing, emotional reactions, large gestures, item interactions, or new props.\",",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/.curated/security-best-practices/references/python-fastapi-web-server-security.md",
+      "line": 429,
+      "snippet": "* Models that silently accept unknown fields for write endpoints.",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/.curated/cloudflare-deploy/references/analytics-engine/gotchas.md",
+      "line": 33,
+      "snippet": "Writes can fail silently. Check tail logs.",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "codex-deploy-skills.vercel.sh"
+    ],
+    "declared_hosts": 1,
+    "install_detected": true,
+    "age_days": 5
+  },
+  "network": {
+    "calls": 309,
+    "failed": 4,
+    "ms": 100998
+  },
+  "duration_ms": 14881
+}

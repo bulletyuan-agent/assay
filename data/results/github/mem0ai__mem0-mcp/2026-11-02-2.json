@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T150901Z",
+  "target": {
+    "source": "github",
+    "id": "mem0ai/mem0-mcp",
+    "url": "https://github.com/mem0ai/mem0-mcp",
+    "name": "mem0-mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:14:41.036Z",
+  "method_version": "0.3.2",
+  "tool": {
+    "assay_commit": "d15962fd8f7d78fe81fced552f2067080c7c254c",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.2"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "624024deacbbe1948572a968abdb9d9e93ded548",
+    "files_scanned": 8,
+    "candidates": 8,
+    "excluded_non_shipped": 5,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/mem0_mcp_server/server.py",
+        "sha": "0eccd23f62e2a88b6b3895f18166765c169a6dfd"
+      },
+      {
+        "path": "README.md",
+        "sha": "8e34edc48d929fd161cebce0a757f228d33e9313"
+      },
+      {
+        "path": "smithery.yaml",
+        "sha": "e7047679be652d6e4c74f61d187534b5a4bd65c2"
+      },
+      {
+        "path": "src/mem0_mcp_server/__init__.py",
+        "sha": "278d60be479940efcf3f05eafe6614864839c08c"
+      },
+      {
+        "path": "src/mem0_mcp_server/config.json",
+        "sha": "454a30ab290f9a299f1dad3d524a3e4bc4201b4b"
+      },
+      {
+        "path": "src/mem0_mcp_server/http_entry.py",
+        "sha": "ee30bc0f3f37c32bc8133a96e28aae01744da730"
+      },
+      {
+        "path": "src/mem0_mcp_server/mcp.json",
+        "sha": "23779d3bc0d6bc4a72525b53b09ae859677c8884"
+      },
+      {
+        "path": "src/mem0_mcp_server/schemas.py",
+        "sha": "55a84adffa6595a991da06feaeec7cd089794cef"
+      }
+    ],
+    "repo_pushed_at": "2026-03-24T23:36:56Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": false,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 85,
+    "dims": {
+      "maintenance": 0,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 8,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 223
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 2046
+  },
+  "duration_ms": 2054
+}

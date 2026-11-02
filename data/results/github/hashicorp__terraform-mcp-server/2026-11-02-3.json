@@ -1,0 +1,862 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T150901Z",
+  "target": {
+    "source": "github",
+    "id": "hashicorp/terraform-mcp-server",
+    "url": "https://github.com/hashicorp/terraform-mcp-server",
+    "name": "terraform-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:10:20.563Z",
+  "method_version": "0.3.2",
+  "tool": {
+    "assay_commit": "d15962fd8f7d78fe81fced552f2067080c7c254c",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.2"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "062700de87bb73f29c4a03b244146d995f643e20",
+    "files_scanned": 198,
+    "candidates": 198,
+    "excluded_non_shipped": 183,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "631edfd2e644591a9624c74c8da3fb2272d255dd"
+      },
+      {
+        "path": "cmd/loadtest/main.go",
+        "sha": "4e5d6c62e4a8fc2c30c4416edd4d3a38b13239aa"
+      },
+      {
+        "path": "cmd/terraform-mcp-server/main.go",
+        "sha": "c4be241bc2f3eaaf49b888bfedec82867db11b77"
+      },
+      {
+        "path": "pkg/mcp-mark3labs/server.go",
+        "sha": "b9c3bf847af6b28772c481d3d9321901cd5c323e"
+      },
+      {
+        "path": "pkg/mcp-official/server.go",
+        "sha": "9f9dfeb753ffc8f25fd6452bc966af2a4c29e2c9"
+      },
+      {
+        "path": "pkg/tools/tools.go",
+        "sha": "1b8097998da6dc427e8743f6e9fa1cf967d02260"
+      },
+      {
+        "path": "scripts/compare-versions.sh",
+        "sha": "0aaf6f6a1438dca13cc4eb918221ae67bdbe590a"
+      },
+      {
+        "path": "scripts/crt-build.sh",
+        "sha": "c786ca050f0632440bf8711655cea107d7f5317e"
+      },
+      {
+        "path": "scripts/update-json-version.sh",
+        "sha": "2dc552865ecee65a12db0fc1761bc4fd1ae16148"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "375ade5cd3f5fec6761549a10cdab2498b1e172f"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "6f804dc97f98cc468aecd73465a2e533f2883c11"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tools.go",
+        "sha": "948e68aa2621c85c7f87f5b4c304f21d0ce582eb"
+      },
+      {
+        "path": "README.md",
+        "sha": "d4fa07fb9e535ff186430a0d0f605371b5a89d3e"
+      },
+      {
+        "path": "instructions/example-AGENTS.md",
+        "sha": "f3bee52dd0762b7d06f15fb57cce6eb155fc95c7"
+      },
+      {
+        "path": "instructions/example-mcp-instructions.md",
+        "sha": "cf1be63aa434b6861bd3f0bcd536e53e55444290"
+      },
+      {
+        "path": "version/version.go",
+        "sha": "00b6c5da2946c5704a3e81e9f71e7d94e3772779"
+      },
+      {
+        "path": "helm/terraform-mcp-server/Chart.yaml",
+        "sha": "95f8f0ccc6a80971a9707b8063b806bf20ff47b5"
+      },
+      {
+        "path": "helm/terraform-mcp-server/README.md",
+        "sha": "962804d3c7b800aac02704625c35e6fe96afdc5c"
+      },
+      {
+        "path": "helm/terraform-mcp-server/values.yaml",
+        "sha": "8fcb335a75608f1a87123bbeb7c3ed6b24e302aa"
+      },
+      {
+        "path": "pkg/cli/commands.go",
+        "sha": "47acd4848c607d14e4025b5625e427a3fd7e1ef0"
+      },
+      {
+        "path": "pkg/cli/flags.go",
+        "sha": "57885b982b6f7f1a5d294a33470ad6fb3265c0f5"
+      },
+      {
+        "path": "pkg/client/common.go",
+        "sha": "a3af0c9a7c09ac6674fde3a31e740af5e8c925cb"
+      },
+      {
+        "path": "pkg/client/config_unix.go",
+        "sha": "94a7e82b6f60582185689ed31508545d5b9099f9"
+      },
+      {
+        "path": "pkg/client/config_windows.go",
+        "sha": "082e6f65e0a2ea4c0c868f1c3ec8ca8097154fbb"
+      },
+      {
+        "path": "pkg/client/config.go",
+        "sha": "33628125717fffa5535465657da58320b3f3be01"
+      },
+      {
+        "path": "pkg/client/credentials.go",
+        "sha": "6825ae22e1bad1d4f9f6a5ae15536567d4e57389"
+      },
+      {
+        "path": "pkg/client/metrics.go",
+        "sha": "1eb88cac89178ec2da4b344a18d690f4e79711b5"
+      },
+      {
+        "path": "pkg/client/middleware.go",
+        "sha": "8ce7fdc7f69af388088049561d4ad5950ee01269"
+      },
+      {
+        "path": "pkg/client/org_allowlist_tool_middleware.go",
+        "sha": "2863b76a92ada6d94ab6226de95dc2480a66c889"
+      },
+      {
+        "path": "pkg/client/ratelimit.go",
+        "sha": "c63c4e2a7be8b5534e530b8c64a025ecd304ffe0"
+      },
+      {
+        "path": "pkg/client/registry_client.go",
+        "sha": "a57edc35fdaa886e34a989184b8460aafe2ff108"
+      },
+      {
+        "path": "pkg/client/registry.go",
+        "sha": "8bd8b50792aef711f159f3adb2be9ca4cc9e53f7"
+      },
+      {
+        "path": "pkg/client/session.go",
+        "sha": "67d8e2044f011f808ba9d7fb6c919fc488721bfc"
+      },
+      {
+        "path": "pkg/client/tfe_client.go",
+        "sha": "30ef29a4a1c72f90cc907cd65fe206d70decfe5c"
+      },
+      {
+        "path": "pkg/client/tls.go",
+        "sha": "edeeb45cc50aad49ce8e20447def8bffedb0f23c"
+      },
+      {
+        "path": "pkg/client/tool_logging_middleware.go",
+        "sha": "c8db159289a0077f4d7d46ef691693fdd117e13e"
+      },
+      {
+        "path": "pkg/client/types.go",
+        "sha": "601b0d7233034a00f232bcbfa10909119eb14894"
+      },
+      {
+        "path": "pkg/instana/instana.go",
+        "sha": "454252ca487948e76c7b1ca56264b43f219caf4c"
+      },
+      {
+        "path": "pkg/instructions/instructions.go",
+        "sha": "f4e2f8796805bb0213c982432a734e8835beef1a"
+      },
+      {
+        "path": "pkg/instructions/instructions.md",
+        "sha": "7bd5a215c75f5966916e8231232358d95380b45c"
+      },
+      {
+        "path": "pkg/logging/logging.go",
+        "sha": "81bc7d70c2dcd2c9a1127df26fb20a497d4614d9"
+      },
+      {
+        "path": "pkg/logging/logrus_adapter.go",
+        "sha": "000dac595b4d917f2c20e07485d50a4b3ed310b6"
+      },
+      {
+        "path": "pkg/logging/slog_adapter.go",
+        "sha": "aeef74cfb496827b6a48ee775c6f7efb484a147a"
+      },
+      {
+        "path": "pkg/mcp-mark3labs/http.go",
+        "sha": "647d528f4331cb6250874b43296984738e0cd519"
+      },
+      {
+        "path": "pkg/mcp-mark3labs/official_bridge.go",
+        "sha": "7cd574ac6d3e0b89079f9b62b7e2c34b689f1946"
+      },
+      {
+        "path": "pkg/mcp-mark3labs/stdio.go",
+        "sha": "1d7942759c2decd705d6806d027534dbd87e24f7"
+      },
+      {
+        "path": "pkg/mcp-official/session_lifecycle.go",
+        "sha": "0bda258d0cf257ec1c8cf7e7f08ce831ad1c96b2"
+      },
+      {
+        "path": "pkg/mcp-official/stdio.go",
+        "sha": "6f6fa2d0c8616fda8cfc4079db1d4f08e4e6639b"
+      },
+      {
+        "path": "pkg/otelmetrics/otelmetrics.go",
+        "sha": "205108abb9660e290742fb703b3db031aef55e9f"
+      },
+      {
+        "path": "pkg/resources/resource_templates.go",
+        "sha": "625caabf557f7f837373ec1cc0a4e429d07eb413"
+      },
+      {
+        "path": "pkg/resources/resources.go",
+        "sha": "9069b6df8f1c26042ef2e67ca78259e3f8e37c9c"
+      },
+      {
+        "path": "pkg/tools/dynamic_tool.go",
+        "sha": "5d121cf435617d554cadeadec93c1a292a9aad20"
+      },
+      {
+        "path": "pkg/tools/factories.go",
+        "sha": "f278ab1b912298a9af264f510abf5d77662579fc"
+      },
+      {
+        "path": "pkg/toolsets/filter.go",
+        "sha": "402343c49c070141d4ce941db4bdb264aff879e7"
+      },
+      {
+        "path": "pkg/toolsets/mapping.go",
+        "sha": "4a3a418c0e95833572d6edf361b66cc8ad113844"
+      },
+      {
+        "path": "pkg/toolsets/registry.go",
+        "sha": "ed267ebc93d841df8de9433d9387fd998c6c8938"
+      },
+      {
+        "path": "pkg/toolsets/toolsets.go",
+        "sha": "3a218a6006015c9605e6516a9a612268d946ef94"
+      },
+      {
+        "path": "pkg/utils/pagination.go",
+        "sha": "763509fc6e218152953d95bca606865e52372a92"
+      },
+      {
+        "path": "pkg/utils/utils.go",
+        "sha": "aaae48905305680178a4f032e5893e4a1efcedab"
+      },
+      {
+        "path": "helm/terraform-mcp-server/templates/deployment.yaml",
+        "sha": "44f68a9ffe60e7982f2fc2d7ec10bd4d63b1376c"
+      },
+      {
+        "path": "helm/terraform-mcp-server/templates/hpa.yaml",
+        "sha": "b97587ad18be1c5cffd4b9e52028fb0b829ab0fd"
+      },
+      {
+        "path": "helm/terraform-mcp-server/templates/ingress.yaml",
+        "sha": "32c3f196e102ed45db675aa8e27c26916688fe04"
+      },
+      {
+        "path": "helm/terraform-mcp-server/templates/NOTES.txt",
+        "sha": "4f10af148ad3d4e4e87436c136c29af21f313298"
+      },
+      {
+        "path": "helm/terraform-mcp-server/templates/service.yaml",
+        "sha": "9436a2a6dfe4a0e393e6b3aba632b42945deeb1f"
+      },
+      {
+        "path": "helm/terraform-mcp-server/templates/serviceaccount.yaml",
+        "sha": "f26d3ee785448af0aa4632d0bf1947549a9c1699"
+      },
+      {
+        "path": "pkg/mcp-official/client/http_client.go",
+        "sha": "07f1b9ad26b127d47f00048e7b75e0c57ba354b2"
+      },
+      {
+        "path": "pkg/mcp-official/client/session.go",
+        "sha": "f2b3f293b51909cdf253e6f492e3dc8277780b1c"
+      },
+      {
+        "path": "pkg/mcp-official/client/tfe_client.go",
+        "sha": "a58c898e571d9209c884bd2c49ea4788887d35b8"
+      },
+      {
+        "path": "pkg/mcp-official/resources/resource_templates.go",
+        "sha": "3cec5bcb256bbe27d785473881a11e340ab677bc"
+      },
+      {
+        "path": "pkg/mcp-official/resources/resources.go",
+        "sha": "3a18ad47c76e1caeba4bd2c4a52cf4c48e024c57"
+      },
+      {
+        "path": "pkg/tools/registry/errors.go",
+        "sha": "7ff43e6bf45e2f30470d705c6617155788c836a4"
+      },
+      {
+        "path": "pkg/tools/registry/get_latest_module_version.go",
+        "sha": "1efdb2b4743b21a2caea2d92ed0094e3192009fe"
+      },
+      {
+        "path": "pkg/tools/registry/get_latest_provider_version.go",
+        "sha": "f34450a40167d8fbc5701df6748f22acdd8c5dec"
+      },
+      {
+        "path": "pkg/tools/registry/get_module_details.go",
+        "sha": "aee933c97dc900a4bf697eef3e74bb1be328251e"
+      },
+      {
+        "path": "pkg/tools/registry/get_policy_details.go",
+        "sha": "45b3491a28ddb8bb8083051a6b875b4cefb9441e"
+      },
+      {
+        "path": "pkg/tools/registry/get_provider_capabilities.go",
+        "sha": "d6df6c3b6d44d7200437551d159c36d64ba99b78"
+      },
+      {
+        "path": "pkg/tools/registry/get_provider_details.go",
+        "sha": "d67539996491b802636bc02cddf9506e8b485da6"
+      },
+      {
+        "path": "pkg/tools/registry/search_modules.go",
+        "sha": "2f18aa5767d92c485de9bd58cff8f86f6bad0135"
+      },
+      {
+        "path": "pkg/tools/registry/search_policies.go",
+        "sha": "48dcb26488118fe4c54c818276e6a5ecff5fbe31"
+      },
+      {
+        "path": "pkg/tools/registry/search_provider_docs.go",
+        "sha": "5b14526bb5e8b92f5966a8f6817354e9f7949dd6"
+      },
+      {
+        "path": "pkg/tools/tfe/action_run.go",
+        "sha": "abcdbfa6c02da61a9fa0cbda3329351db1540c79"
+      },
+      {
+        "path": "pkg/tools/tfe/add_team_member.go",
+        "sha": "5aee1b54f007045f84ffd32364bf84135913169f"
+      },
+      {
+        "path": "pkg/tools/tfe/create_no_code_workspace.go",
+        "sha": "6009dc20a76f7ea32c20da9f6e8a20d6af95884b"
+      },
+      {
+        "path": "pkg/tools/tfe/create_project.go",
+        "sha": "a08aa63d498c5a8630fef67128eabfaf075c3907"
+      },
+      {
+        "path": "pkg/tools/tfe/create_run.go",
+        "sha": "7a5bda1e0c7bdec71c480798d729fddc2202390f"
+      },
+      {
+        "path": "pkg/tools/tfe/create_team.go",
+        "sha": "953930eee19c41070924a8d154d059421f3d9d27"
+      },
+      {
+        "path": "pkg/tools/tfe/create_workspace.go",
+        "sha": "2950264e18bf328bd98ae4508ebca42034a179e9"
+      },
+      {
+        "path": "pkg/tools/tfe/delete_project.go",
+        "sha": "815663cbab31e3d8696ba6704c5daca75433c977"
+      },
+      {
+        "path": "pkg/tools/tfe/delete_team.go",
+        "sha": "fe6f57e3e075f429b0441684b9e15684297abbe0"
+      },
+      {
+        "path": "pkg/tools/tfe/delete_workspace_safely.go",
+        "sha": "7e09c1cd05c766670e6e84a7b4b696dec972d82d"
+      },
+      {
+        "path": "pkg/tools/tfe/descriptions.go",
+        "sha": "b4d8a35e663ad4f465481673ae0ec6d65137d980"
+      },
+      {
+        "path": "pkg/tools/tfe/errors.go",
+        "sha": "7ff43e6bf45e2f30470d705c6617155788c836a4"
+      },
+      {
+        "path": "pkg/tools/tfe/force_unlock_workspace.go",
+        "sha": "c4832ae8af4d27355cc90eacb9cc27e0128781ba"
+      },
+      {
+        "path": "pkg/tools/tfe/get_apply_details.go",
+        "sha": "bf6edc7530f409eae5e44875d5bd4bbc2dbf0d1f"
+      },
+      {
+        "path": "pkg/tools/tfe/get_apply_logs.go",
+        "sha": "b94cab147f608aedf0679914909709d43e1202e5"
+      },
+      {
+        "path": "pkg/tools/tfe/get_plan_details.go",
+        "sha": "ae86571823766e7f6b9903240cf4d474af84d302"
+      },
+      {
+        "path": "pkg/tools/tfe/get_plan_json_output.go",
+        "sha": "d38808012f7697f2f058f08171caafb36ba40e75"
+      },
+      {
+        "path": "pkg/tools/tfe/get_plan_logs.go",
+        "sha": "481e80129a18791f3e9df0a9d0b6715f52df64cb"
+      },
+      {
+        "path": "pkg/tools/tfe/get_private_module_details.go",
+        "sha": "7b10e3330cfc014f81f4c9574b3c1e547f027aa2"
+      },
+      {
+        "path": "pkg/tools/tfe/get_private_provider_details.go",
+        "sha": "face1068d43c332da0e3978e1f529ab1c0f1a8ad"
+      },
+      {
+        "path": "pkg/tools/tfe/get_project.go",
+        "sha": "71f0f2cf021beddba922ef4ce0d2cca06e6fcd01"
+      },
+      {
+        "path": "pkg/tools/tfe/get_run_comments.go",
+        "sha": "a0469c7e4c6f238fb0a2052b472424ef4d7b7150"
+      },
+      {
+        "path": "pkg/tools/tfe/get_run_details.go",
+        "sha": "2887ffe5cbe11c7e0cc9057f361ffb9c478fcfbe"
+      },
+      {
+        "path": "pkg/tools/tfe/get_sentinel_mock.go",
+        "sha": "9d97667f69212e3b72b0302e41edf2347e9f271c"
+      },
+      {
+        "path": "pkg/tools/tfe/get_stack_details.go",
+        "sha": "4523cf93ed7ef1c4c66f89cefc9efd797d1026f1"
+      },
+      {
+        "path": "pkg/tools/tfe/get_state_version.go",
+        "sha": "11353bd7fbf3145bdebc33b7cb8761298d2670f5"
+      },
+      {
+        "path": "pkg/tools/tfe/get_team.go",
+        "sha": "3917f39560c7836e101d2f082cb5f1ca134ef267"
+      },
+      {
+        "path": "pkg/tools/tfe/get_token_permissions.go",
+        "sha": "7aae916be4feaf610a875f7eeed8f957b40fddc5"
+      },
+      {
+        "path": "pkg/tools/tfe/get_workspace_details.go",
+        "sha": "18b3fc6bd968c125b25513b0de3c5fd043aac2cf"
+      },
+      {
+        "path": "pkg/tools/tfe/grant_team_access.go",
+        "sha": "1d56fda7c92e35e555a1df2c8fd90384781e340c"
+      },
+      {
+        "path": "pkg/tools/tfe/list_runs.go",
+        "sha": "6e069b504376b658dd429de571c4b56da5a5bc45"
+      },
+      {
+        "path": "pkg/tools/tfe/list_stacks.go",
+        "sha": "03d46e0001c2699edcb1ddd0ae20266b3d4e16f3"
+      },
+      {
+        "path": "pkg/tools/tfe/list_state_versions.go",
+        "sha": "2c801b22a1575dbd11b382f4a14baf4980e3431c"
+      },
+      {
+        "path": "pkg/tools/tfe/list_teams.go",
+        "sha": "58877ae9e0ef5be894b445f19b120748c79dc170"
+      },
+      {
+        "path": "pkg/tools/tfe/list_terraform_orgs.go",
+        "sha": "6fc4c7792fcc3dae79bb16689bc684e7376728ba"
+      },
+      {
+        "path": "pkg/tools/tfe/list_terraform_projects.go",
+        "sha": "3a23b09a4f2d2e7a246e44b718e285f7404a8fdc"
+      },
+      {
+        "path": "pkg/tools/tfe/list_workspaces.go",
+        "sha": "a3d61350df1a71444c060bae17f1706987ca628e"
+      },
+      {
+        "path": "pkg/tools/tfe/policy_sets.go",
+        "sha": "502fde7641ed645e6280cb0a219e0c1f4d63d31d"
+      },
+      {
+        "path": "pkg/tools/tfe/search_private_modules.go",
+        "sha": "2430e188f1bbe805e2f102a16243c7cf691f33c6"
+      },
+      {
+        "path": "pkg/tools/tfe/search_private_providers.go",
+        "sha": "169f686a51da6cb52aab9cb3af735b8c3c1700b4"
+      },
+      {
+        "path": "pkg/tools/tfe/strings.go",
+        "sha": "b768523c84bb9f26a2dbae1e9831d7d5a627fd0d"
+      },
+      {
+        "path": "pkg/tools/tfe/update_workspace.go",
+        "sha": "00dddf6c33b49e146649caae3c5055ba7c2889c9"
+      },
+      {
+        "path": "pkg/tools/tfe/variable_sets.go",
+        "sha": "385220d2556750699c3b87970e00b1d9b87295b8"
+      },
+      {
+        "path": "pkg/tools/tfe/whoami.go",
+        "sha": "952ffe19f5933f1c631262e087775cf338912207"
+      },
+      {
+        "path": "pkg/tools/tfe/workspace_tags.go",
+        "sha": "25a58ee2341194316eafe1f012ddf2ba6095b011"
+      },
+      {
+        "path": "pkg/tools/tfe/workspace_variables.go",
+        "sha": "01723d82336cf24dde0ef5dea76c1d56777d3565"
+      },
+      {
+        "path": "pkg/mcp-official/tools/middleware/metrics.go",
+        "sha": "1a72fe0eab48b10a731f24df6be7dfc32bba13fc"
+      },
+      {
+        "path": "pkg/mcp-official/tools/middleware/org_allowlist.go",
+        "sha": "c1295477ab9f27d3327e1bcdfc23de4a428dea03"
+      },
+      {
+        "path": "pkg/mcp-official/tools/middleware/rate_limit.go",
+        "sha": "fa60c198e130bbc8f04ba232b3534d6200c4a951"
+      },
+      {
+        "path": "pkg/mcp-official/tools/middleware/tool_logging.go",
+        "sha": "6f548b14074eda77b80d7e41ea39281558ae05fe"
+      },
+      {
+        "path": "pkg/mcp-official/tools/registry/get_latest_module_version.go",
+        "sha": "c0f1871e11f733146c7e72bc33ac937c3c13b04f"
+      },
+      {
+        "path": "pkg/mcp-official/tools/registry/get_latest_provider_version.go",
+        "sha": "0e239410bed405b791d82ba28be316a54e715eae"
+      },
+      {
+        "path": "pkg/mcp-official/tools/registry/get_module_details.go",
+        "sha": "c42b61fab7199439d69518a138f60a9589351bba"
+      },
+      {
+        "path": "pkg/mcp-official/tools/registry/get_policy_details.go",
+        "sha": "9361b6d1b0b097e637286490fc3e2dba94250557"
+      },
+      {
+        "path": "pkg/mcp-official/tools/registry/get_provider_capabilities.go",
+        "sha": "8a0ddb87074647fe17ced684c2487e0695f8783a"
+      },
+      {
+        "path": "pkg/mcp-official/tools/registry/get_provider_details.go",
+        "sha": "66a6264880cb5cfc7063099378d3908ac20b629d"
+      },
+      {
+        "path": "pkg/mcp-official/tools/registry/results.go",
+        "sha": "170a9638d8c90e56e4de7b230b632bd65cdd9e19"
+      },
+      {
+        "path": "pkg/mcp-official/tools/registry/search_modules.go",
+        "sha": "deaed6e4137c4ea18004d36a4bf034b0aa5de47c"
+      },
+      {
+        "path": "pkg/mcp-official/tools/registry/search_policies.go",
+        "sha": "b10a9eabf3d12d75c4382f1250c7c41c0cbcb64d"
+      },
+      {
+        "path": "pkg/mcp-official/tools/registry/search_provider_docs.go",
+        "sha": "d9e7bb274df338d585d2d93a68ee94cc41f6b674"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/applies_get_details_tool.go",
+        "sha": "cdc0c1ff680ae369d27d4fd01a20cbd046123877"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/applies_get_logs_tool.go",
+        "sha": "3117383245b0faee3836ee1093945acd6a983f17"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/organizations_list_tool.go",
+        "sha": "9e096230ea3d9fc3cd5c9234927249b473a83e30"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/pagination.go",
+        "sha": "5e381127ee72ea4dec023dcfbbf0599858928097"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/plans_get_details_tool.go",
+        "sha": "eb4f9f0d6ad89f98934c31924ff4695a33ca6e56"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/plans_get_json_output_tool.go",
+        "sha": "d8360def13ffe19b83974ac4f07dcbe745bb4789"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/plans_get_logs_tool.go",
+        "sha": "72b1deebc588b74e1b33a5938d4bcdd46273ca47"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/plans_get_sentinel_mock_tool.go",
+        "sha": "4dcc91bf2d18ba7e08f4e80643a7348137343ff2"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/policies_attach_tool.go",
+        "sha": "3f77af4379dd89277c2712b6cf5a36bddd8b3ac7"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/policies_list_tool.go",
+        "sha": "c501e79b4bf3486dd5442448824bcb0420bd2be7"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/private_get_module_details_tool.go",
+        "sha": "1b317babc21fed1b4b7bdaac1eb95f968b80b3d1"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/private_get_provider_details_tool.go",
+        "sha": "a73311b2589923f2e6587301194492f29b61d642"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/private_search_modules_tool.go",
+        "sha": "344ae01bc65595fae37c6545ef7b1424c3bf4e87"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/private_search_providers_tool.go",
+        "sha": "8dd40bb03170b7a84b69ee852e5f7964c16fb6a9"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/projects_create_tool.go",
+        "sha": "bdd4d057002969d4574d5d4e13b6d00009dc56a4"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/projects_delete_tool.go",
+        "sha": "e50c294689b1f6f816e5f6a9fc8ea306b5c27a17"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/projects_get_tool.go",
+        "sha": "485d7afb4be19fba582de093f0d5ebc14c654076"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/projects_list_tool.go",
+        "sha": "b8ba53b2aeb0caada007e290608ceaa65029a2fe"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/results.go",
+        "sha": "1b942c305ddcb92b520b3eb5cfcd875a70f615f4"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/runs_action_tool.go",
+        "sha": "f77b190244cefa4126e394e6e408388805783d0b"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/runs_create_tool.go",
+        "sha": "ec52b4cdbe68f115462c0125b5dac283f2245444"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/runs_get_comments_tool.go",
+        "sha": "18816d2d1bd7b42a53c03f5e639978678ed9adc2"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/runs_get_details_tool.go",
+        "sha": "1dfab8dbbb45846cec105de3bf108067e34da7c5"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/runs_list_tool.go",
+        "sha": "a7dbb5444ee2971ecd63294e55256b2ceb037865"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/stacks_get_tool.go",
+        "sha": "e6a7151792f34d656c0dde7e7ad7150656e9c74b"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/stacks_list_tool.go",
+        "sha": "4443313d2e1e439a31a80239128eda96549ef40b"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/state_version_get_tool.go",
+        "sha": "c1972bf19998ac5e2f65ca5f411a8075b1e92140"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/state_version_list_tool.go",
+        "sha": "42d04b623ccacd79faf4c8de0981540c5c56f735"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/tags_create_tool.go",
+        "sha": "2db4eb3d2cbbcf4a19d6b366626f89fbac1bbae0"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/tags_read_tool.go",
+        "sha": "2610d83c8a5a08f2ab13b34c8a21759bb3c9ec71"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/tags.go",
+        "sha": "bba92bf8f9cca00184239c526ebffa86a2a002e4"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/teams_add_member_tool.go",
+        "sha": "a0cfc1bcb049b64ee7b546ae0685006b1a90f357"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/teams_create_tool.go",
+        "sha": "6bf6ebfd76937d4c7267f959f5d283940cf6b8d8"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/teams_delete_tool.go",
+        "sha": "dd06a6782782ea60adf151e41756c4a20355d3b3"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/teams_get_tool.go",
+        "sha": "50dcf5dd6441057e2fd0b9344eb65593c8b0dec0"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/teams_grant_access_tool.go",
+        "sha": "f501f48656c7fac8eb889929154ad788993f3a49"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/teams_list_tool.go",
+        "sha": "337540fd424c8e75ddcecfc9bb1ad4c5c7ce6bcd"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/user_get_token_permissions_tool.go",
+        "sha": "920ad5fc28150faa86374ccf64b565e360b446c3"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/user_whoami_tool.go",
+        "sha": "92e7d033ff112ecbd142ed55730cea802df6ef77"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/variable_set_variables_create_tool.go",
+        "sha": "ce9d46a5dfaa08074f715ecf98d73236f85c320c"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/variable_set_variables_delete_tool.go",
+        "sha": "b7fefa1defadb1632e79b090f2c74790b24e0916"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/variable_sets_attach_tool.go",
+        "sha": "15a6c74b62fa3bce6d37e7d09865c73dac9f40bb"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/variable_sets_create_tool.go",
+        "sha": "4630b9c45551c803a57ac03a9f654e704ba0499d"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/variable_sets_detach_tool.go",
+        "sha": "b6adf961836a39bc3f1cc6ca5b942991e2272453"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/variable_sets_list_tool.go",
+        "sha": "215e65b200cdc4afccba4ded2c94df86a136c5bb"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/workspace_variables_create_tool.go",
+        "sha": "2d866586c7c508c46748e99ec10da12bc8ccf6ef"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/workspace_variables_list_tool.go",
+        "sha": "b80efb399c79f5dc858412ca15a6f1c1e629788b"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/workspace_variables_update_tool.go",
+        "sha": "fd0e5eeadbb45f2989f61515f2d0ebe56a8f5a15"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/workspaces_create_no_code_tool.go",
+        "sha": "90a6ec849ecb3964408f2ccb157635a1b44564e0"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/workspaces_create_tool.go",
+        "sha": "0c0ca8ea2d8e0d1d4c03270ead4614424116fae6"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/workspaces_delete_tool_safely.go",
+        "sha": "7976fda078c3914351cbc9a745fc498f4cc605fa"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/workspaces_details.go",
+        "sha": "ad585b386f8f04b282c4f4d6a85b6741bcc17f62"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/workspaces_force_unlock_tool.go",
+        "sha": "8846f909ad705560a164d9cc034dcf43225c2742"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/workspaces_get_tool.go",
+        "sha": "3da147364b9fde1735c2d4d0add8efc8e5472387"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/workspaces_list_tool.go",
+        "sha": "ee84f9a4d3e1f8f69953b1f34b563fb41db19a01"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/workspaces_update_tool.go",
+        "sha": "d64a0741aaf45048f9cc08401b607046b378a6c6"
+      },
+      {
+        "path": "pkg/tools/tfe/static/default-cli-run.md",
+        "sha": "eec852881c1dd9eafe88f10d9566f6285b94038a"
+      },
+      {
+        "path": "pkg/mcp-official/tools/tfe/static/default-cli-run.md",
+        "sha": "3bf1071a8f4c51524cb1cd4bd88939653d5906cb"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T12:22:27Z",
+    "license": "MPL-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 198,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 120,
+    "failed": 0,
+    "ms": 49189
+  },
+  "duration_ms": 12939
+}

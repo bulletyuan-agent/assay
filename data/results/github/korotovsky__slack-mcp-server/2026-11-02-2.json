@@ -1,0 +1,248 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T150901Z",
+  "target": {
+    "source": "github",
+    "id": "korotovsky/slack-mcp-server",
+    "url": "https://github.com/korotovsky/slack-mcp-server",
+    "name": "slack-mcp-server"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:12:28.865Z",
+  "method_version": "0.3.2",
+  "tool": {
+    "assay_commit": "d15962fd8f7d78fe81fced552f2067080c7c254c",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.2"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "b88c0de3f706f4f07337c9eda7133c736d1c9524",
+    "files_scanned": 42,
+    "candidates": 42,
+    "excluded_non_shipped": 26,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "cmd/slack-mcp-server/main.go",
+        "sha": "5c04556147fe962b7a901f39b9ea223ea19ebf7d"
+      },
+      {
+        "path": "pkg/server/server.go",
+        "sha": "d11ab8464303eb39c558086296b13e10c4af10d7"
+      },
+      {
+        "path": "docker-compose.dev.yml",
+        "sha": "882978658cfc147fb085a2b747cf71fd279a2c92"
+      },
+      {
+        "path": "docker-compose.toolkit.yml",
+        "sha": "4c786863c67d1e7d8ad9cdf0888023e5df1d0d01"
+      },
+      {
+        "path": "docker-compose.yml",
+        "sha": "c10ad7d598e8f2982e73e5cd91a0a3431a948ec5"
+      },
+      {
+        "path": "manifest-dxt.json",
+        "sha": "8830b1a80c67e8155bc102cbe39371682ecb8e34"
+      },
+      {
+        "path": "npm/slack-mcp-server/bin/index.js",
+        "sha": "94793ab5d1fdc9f4e5c868f865821523bde6a903"
+      },
+      {
+        "path": "README.md",
+        "sha": "3a93a2c497cd92b1b4e815a1d04cab0be07e11a8"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "80dc72666389c8887c93f8986a75af7d045e22d8"
+      },
+      {
+        "path": "npm/slack-mcp-server-darwin-amd64/package.json",
+        "sha": "972667040baefffc683e130a9f7a8a301bf859b0"
+      },
+      {
+        "path": "npm/slack-mcp-server-darwin-arm64/package.json",
+        "sha": "5b34aa1cb14290b95482b45f4a728d3a94f9cd11"
+      },
+      {
+        "path": "npm/slack-mcp-server-linux-amd64/package.json",
+        "sha": "1b8f3c440298e7766ea71b70616138cdd184e2a1"
+      },
+      {
+        "path": "npm/slack-mcp-server-linux-arm64/package.json",
+        "sha": "e38ebc408d66608658419b2673ae0603ceee281f"
+      },
+      {
+        "path": "npm/slack-mcp-server-windows-amd64/package.json",
+        "sha": "9866c478f83ceaf5f74b7bc216cfe8913f528576"
+      },
+      {
+        "path": "npm/slack-mcp-server-windows-arm64/package.json",
+        "sha": "8baf844c31af2cc2e081ba9af9fc0124063b228f"
+      },
+      {
+        "path": "npm/slack-mcp-server/package.json",
+        "sha": "184b2da62ef26b26cac8e55e73bac8be554cadd7"
+      },
+      {
+        "path": "pkg/handler/channels.go",
+        "sha": "1477bcf64e74c01f55e63acb91cf3e410ddeb0b1"
+      },
+      {
+        "path": "pkg/handler/conversations.go",
+        "sha": "34ed0f93ba2e1517a2340b89e4855ab1c7dfc9ef"
+      },
+      {
+        "path": "pkg/handler/saved.go",
+        "sha": "0c0b629235da15d5c063357f76844ca9519c7339"
+      },
+      {
+        "path": "pkg/handler/usergroups.go",
+        "sha": "2f9bbece85b762f0a6db8ff1775d17af91820bec"
+      },
+      {
+        "path": "pkg/limiter/limits.go",
+        "sha": "4e626baefc0164f0bbae7d50a1045bb366c35022"
+      },
+      {
+        "path": "pkg/limiter/retry.go",
+        "sha": "4ed27f27675270bb26efa142f3017753b6b7b040"
+      },
+      {
+        "path": "pkg/provider/api.go",
+        "sha": "e40a2b3f58c2f59aa44789002e00c184e906fa2f"
+      },
+      {
+        "path": "pkg/provider/README.md",
+        "sha": "4185591499162b99a2a7fb5c52c65821ab2c735e"
+      },
+      {
+        "path": "pkg/text/text_processor.go",
+        "sha": "97362e61f47ac66d60a6a495c2c3370d3177b699"
+      },
+      {
+        "path": "pkg/transport/transport.go",
+        "sha": "1fb30830d77f4672f875ace799d6867f6c545752"
+      },
+      {
+        "path": "pkg/version/version.go",
+        "sha": "6a2e55790075ce79b0a887885ce931cd5251697a"
+      },
+      {
+        "path": "pkg/provider/edge/client_boot.go",
+        "sha": "f67f93f84a68f8c4e6c79b9ba41981a765473a8f"
+      },
+      {
+        "path": "pkg/provider/edge/client.go",
+        "sha": "1d01e6db34702bc0432ad721a45dd4837151e5e6"
+      },
+      {
+        "path": "pkg/provider/edge/conversations.go",
+        "sha": "27ae9aabaa1fcb5b9a258559dbf8ed65727379b5"
+      },
+      {
+        "path": "pkg/provider/edge/dms.go",
+        "sha": "5571f8ca14bfb8a6198b113ce5bc2f97609fe506"
+      },
+      {
+        "path": "pkg/provider/edge/edge.go",
+        "sha": "ff938dcd2aefd5af3c24d4ce2465dc095c862660"
+      },
+      {
+        "path": "pkg/provider/edge/prefs.go",
+        "sha": "c728b389bd291cc0a9f70426d225e344a505c258"
+      },
+      {
+        "path": "pkg/provider/edge/saved.go",
+        "sha": "26cce35e4ba9f8e43da54cdacde510c66f4bf050"
+      },
+      {
+        "path": "pkg/provider/edge/search.go",
+        "sha": "bc18380c1654c4ff0699768cd99f6e43327b8db1"
+      },
+      {
+        "path": "pkg/provider/edge/slacker.go",
+        "sha": "d467622db599102b9a9cedfcc2b3d3af0842c912"
+      },
+      {
+        "path": "pkg/provider/edge/userlist.go",
+        "sha": "ea79e159b0d3b61fde2c1c6d58f8e29246996e9e"
+      },
+      {
+        "path": "pkg/provider/edge/users.go",
+        "sha": "a7b6387e63f44f865c693b31cc213e7f3629bafe"
+      },
+      {
+        "path": "pkg/server/auth/sse_auth.go",
+        "sha": "62d133aaecc0ea50599df87867f726e78d387665"
+      },
+      {
+        "path": "pkg/provider/edge/fasttime/fasttime_386.go",
+        "sha": "bc8da019da20f05c99cbf8a5691c265634130665"
+      },
+      {
+        "path": "pkg/provider/edge/fasttime/fasttime_x64.go",
+        "sha": "16cbda0233254b3bd17812ef99ca78cf5fc64ca8"
+      },
+      {
+        "path": "pkg/provider/edge/fasttime/fasttime.go",
+        "sha": "49267ff0b3cbf66904a59a9da9860bdb1bb00812"
+      }
+    ],
+    "repo_pushed_at": "2026-07-16T17:14:22Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 92,
+    "dims": {
+      "maintenance": 60,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 85
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "pkg/handler/conversations.go",
+      "line": 1107,
+      "snippet": "// triggering cascading 429s that silently skip channels.",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 42,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 109
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 3388
+  },
+  "duration_ms": 3420
+}

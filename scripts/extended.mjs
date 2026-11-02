@@ -28,8 +28,8 @@ const STAGING_HOST = /(^|\.)(glot\.io|bit\.ly|tinyurl\.com|t\.co|is\.gd|rb\.gy|c
 const IP_HOST = /^\d{1,3}(\.\d{1,3}){3}$/;
 const PERSIST = /(\bcrontab\s+-|\/etc\/cron|launchctl\s+(load|bootstrap)|LaunchAgents|systemctl\s+(--user\s+)?enable|>>\s*~?\/?\.?(bashrc|zshrc|profile|bash_profile|zprofile)\b|\bschtasks\b|reg\s+add[^\n]*\\Run\b)/i;
 const CRED = /(\.ssh\/(id_[a-z0-9]+|authorized_keys)|\.aws\/credentials|\.npmrc|\.netrc|\.docker\/config\.json|\.kube\/config|Login Data|Local Storage\/leveldb|\.config\/gcloud|\.gnupg|wallet\.dat|\.clawdbot\/\.env|\.pypirc|\.git-credentials)/i;
-const ENV_DUMP_PY = /(dict\(\s*os\.environ\s*\)|json\.dumps\(\s*(dict\()?\s*os\.environ|os\.environ\.items\(\))/;
-const CONCEAL = /\b(do not|don't|never)\s+(mention|tell|reveal|inform|disclose|show|notify)\b|\bwithout\s+(telling|informing|notifying|mentioning)\b|\b(silently|secretly|covertly)\b|不要(告诉|告知|提及)|不得(告诉|告知)/i;
+const ENV_DUMP_PY = /(json\.dumps\(\s*(dict\()?\s*os\.environ|\b(data|json|body|params|payload)\s*=\s*(dict\()?\s*os\.environ\b)/;
+const CONCEAL = /\b(do not|don't|never)\s+(tell|inform|notify|reveal to|disclose to|mention (this|it|that|these)( to)?)\b[^.\n]{0,30}\b(the )?(user|human|operator)\b|\b(do not|don't|never)\s+(mention|reveal|disclose)\s+(this|it|that|these|the)\s+(\w+\s+)?(step|action|instruction|request|call|task)s?\b|\bwithout\s+(telling|informing|notifying)\s+(the\s+)?(user|human)\b|不要(告诉|告知|提及)用户|不得(告诉|告知)用户/i;
 const SEND_TO_URL = /\b(send|upload|post|forward|transmit|submit|email|exfiltrat\w*|copy)\b[^.\n]{0,140}\b(to|at|via)\b[^.\n]{0,60}https?:\/\/[^\s)'"`>]+/i;
 const POISON_MARK = /<\s*(IMPORTANT|system|instructions?)\s*>|\[SYSTEM\]/;
 const POISON_MARK_I = /<\s*IMPORTANT\s*>/i;
@@ -138,8 +138,8 @@ export function extendedScan(shipped, ctx) {
       const concealLoc = find(f.text, CONCEAL);
       if (concealLoc && (isSkill || isDoc || isCode)) {
         const win = f.text.slice(Math.max(0, f.text.split('\n').slice(0, concealLoc.line - 1).join('\n').length - 300), f.text.split('\n').slice(0, concealLoc.line).join('\n').length + 300);
-        const action = /\b(send|upload|post|forward|transmit|exfiltrat\w*|read|cat|credentials?|ssh|token|password|secret|\.env|curl|wget)\b/i.test(win);
-        add('instruction_hygiene', 'concealment-instruction', action, f, concealLoc, action ? 40 : 15);
+        const action = /\b(send|upload|post|forward|transmit|exfiltrat\w*)\b[^.\n]{0,80}(https?:\/\/|file|key|credential|token|password|secret|\.env|\.ssh|cookie|history)|\b(read|cat|copy)\b[^.\n]{0,40}(~\/|\.ssh|\.env|credential|id_rsa|\.aws)/i.test(win);
+        if (action) add('instruction_hygiene', 'concealment-instruction', true, f, concealLoc, 40);
       }
       for (const re of INJECT_EXTRA) {
         const loc = find(f.text, re);

@@ -9,7 +9,7 @@ import { http, ghHeaders, fetchMeta, parseTarget, daysSince, INSTALL_RE, WINDOW_
 export const WEIGHTS = { maintenance: 0.15, install_docs: 0.15, dangerous_patterns: 0.30, egress: 0.25, instruction_hygiene: 0.15 };
 
 const DANGER = [
-  /rm\s+-rf\s+[/~]/,
+  /rm\s+-\S*r\S*\s+(--no-preserve-root\s+)?(~|\$HOME|\/(\s|$|\*)|\/(home|Users|etc|usr|bin|root)\b)/,
   /curl[^\n|]*\|\s*(ba)?sh/,
   /wget[^\n|]*\|\s*(ba)?sh/,
   /\beval\s*\(/,
@@ -32,7 +32,7 @@ function locate(text, re, original = text) {
   return { line, snippet: (original.split('\n')[line - 1] || '').trim().slice(0, 160) };
 }
 // Tests, examples and docs routinely contain eval, rm -rf and foreign URLs. They are not shipped behaviour.
-export const NON_SHIPPED = /(^|\/)(tests?|__tests__|__mocks__|mocks?|spec|examples?|fixtures?|docs?|samples?|benchmarks?|e2e|\.github|\.devcontainer|\.husky|\.vscode)\/|(^|\/)[^/]*mocks?\/|\.(test|spec|stories)\.[a-z]+$|_test\.(go|py|rs|js|ts)$|(^|\/)test_[^/]*\.py$/i;
+export const NON_SHIPPED = /(^|\/)(tests?|__tests__|__mocks__|mocks?|spec|examples?|demos?|fixtures?|docs?|samples?|benchmarks?|e2e|\.github|\.devcontainer|\.husky|\.vscode)\/|(^|\/)[^/]*mocks?\/|\.(test|spec|stories)\.[a-z]+$|_test\.(go|py|rs|js|ts)$|(^|\/)test_[^/]*\.py$/i;
 const INJECTION = [
   /ignore (all |any |the )?(previous|prior|above) instructions/i,
   /忽略(之前|以上|所有|前面)的?指令/,
@@ -59,6 +59,7 @@ const ALLOW_HOSTS = ['apache.org', 'opensource.org', 'creativecommons.org', 'gnu
 const CACHE = join(dirname(_fu(import.meta.url)), '..', '.cache', 'blobs'); // content-addressed by git blob sha
 const BUDGET = 400;
 const CONCURRENCY = 10;
+const STAGING_HOST_RE = /(^|\.)(glot\.io|bit\.ly|tinyurl\.com|t\.co|is\.gd|rb\.gy|cutt\.ly|ngrok(-free)?\.(io|app|dev)|trycloudflare\.com|workers\.dev|pages\.dev|herokuapp\.com|repl\.co|replit\.dev|web\.app|firebaseapp\.com|glitch\.me|duckdns\.org|pastebin\.com|paste\.ee|transfer\.sh|file\.io|0x0\.st|ix\.io)$/i;
 const clamp = (v) => Math.max(0, Math.min(100, Math.round(v)));
 
 export async function githubFiles(t, branch = 'HEAD') {
@@ -124,7 +125,17 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
     const clean = stripComments(f.text, f.path);
     DANGER.forEach((re, i) => {
       const loc = locate(clean, re, f.text);
-      if (loc) { danger++; if (SEVERE.has(i)) severe++; findings.push({ dim: 'dangerous_patterns', rule: DANGER_NAMES[i], severe: SEVERE.has(i), file: f.path, ...loc, deduction: SEVERE.has(i) ? 40 : 10 }); }
+      if (loc) {
+        let sev = SEVERE.has(i);
+        // A plain `curl <named https host> | sh` is a common install snippet: weak unless an attacker signal is present.
+        if (i === 1 || i === 2) {
+          const url = (/https?:\/\/[^\s|)'"`]+/.exec(loc.snippet) || [''])[0];
+          const h = (/https?:\/\/([a-z0-9.-]+)/i.exec(url) || [])[1] || '';
+          sev = !url || /^http:\/\//i.test(url) || /^\d{1,3}(\.\d{1,3}){3}$/.test(h) || STAGING_HOST_RE.test(h) || /base64|-enc\b/i.test(loc.snippet);
+        }
+        danger++; if (sev) severe++;
+        findings.push({ dim: 'dangerous_patterns', rule: DANGER_NAMES[i], severe: sev, file: f.path, ...loc, deduction: sev ? 40 : (i === 1 || i === 2 ? 25 : 10) });
+      }
     });
   }
 
@@ -172,9 +183,11 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   }
   // Extended detectors (method 0.3.0). Every dimension is now exactly 100 minus the deductions of its findings.
   if (hasFiles) findings.push(...extendedScan(shipped, { stripComments, NETWORK_PRIMITIVE, PLACEHOLDER_HOST, readmeLower }));
-  // Weak (non-severe) dangerous-pattern hits are capped in total so they cannot sink a clean project.
-  let weak = 0;
-  for (const x of findings) if (x.dim === 'dangerous_patterns' && !x.severe && DANGER_NAMES.includes(x.rule)) { if (weak + x.deduction > 30) x.deduction = Math.max(0, 30 - weak); weak += x.deduction; }
+  // Weak (non-severe) findings are capped at 30 points per dimension in total, so they can never sink a project on their own.
+  for (const dim of ['dangerous_patterns', 'egress', 'instruction_hygiene']) {
+    let weak = 0;
+    for (const x of findings) if (x.dim === dim && !x.severe) { const keep = Math.max(0, Math.min(x.deduction, 30 - weak)); x.deduction = keep; weak += keep; }
+  }
   const sumDim = (d) => findings.filter((x) => x.dim === d).reduce((a, x) => a + x.deduction, 0);
   const instruction_hygiene = hasFiles ? clamp(100 - sumDim('instruction_hygiene')) : null;
 
@@ -194,7 +207,7 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   if (severe > 0) red_flags.push('severe-code-pattern');
   if (inj > 0) red_flags.push('prompt-injection');
   if (recipients > 0) red_flags.push('hardcoded-recipient');
-  if (hosts.size >= 4) red_flags.push('undeclared-egress');
+  if (hosts.size >= 8) red_flags.push('undeclared-egress');
   for (const x of findings) if (x.severe && !red_flags.includes(x.rule)) red_flags.push(x.rule); // provisional threshold, to be calibrated
   if (composite !== null && red_flags.length) composite = Math.min(composite, 49);
   const grade = composite === null ? null : composite >= 85 ? 'A' : composite >= 70 ? 'B' : composite >= 50 ? 'C' : 'D';

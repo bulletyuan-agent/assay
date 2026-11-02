@@ -1,0 +1,622 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T150901Z",
+  "target": {
+    "source": "github",
+    "id": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "name": "superpowers"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:12:44.960Z",
+  "method_version": "0.3.2",
+  "tool": {
+    "assay_commit": "d15962fd8f7d78fe81fced552f2067080c7c254c",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.2"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "files_scanned": 108,
+    "candidates": 108,
+    "excluded_non_shipped": 107,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": ".opencode/INSTALL.md",
+        "sha": "c60682fcf517323f99ba082a23bc5f1e03b730c5"
+      },
+      {
+        "path": "index.js",
+        "sha": "0723f70ca2ef4f1f5ab1c47e035acb42e5a45bae"
+      },
+      {
+        "path": "skills/brainstorming/SKILL.md",
+        "sha": "7f5eef02f894c4f24cea313660c0465ce9c084ed"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/SKILL.md",
+        "sha": "dda2692d528574c410b118a6de545d6afc7eb047"
+      },
+      {
+        "path": "skills/dispatching-parallel-agents/SKILL.md",
+        "sha": "3fa091b348bbe0a18eaa0e17e9092c97f7005cbe"
+      },
+      {
+        "path": "skills/executing-plans/SKILL.md",
+        "sha": "ac77129d7c695734105004b6da10169de8d13df3"
+      },
+      {
+        "path": "skills/finishing-a-development-branch/SKILL.md",
+        "sha": "fa8aecaf8813f1b19d19996f7957d1b0121f2d9c"
+      },
+      {
+        "path": "skills/receiving-code-review/SKILL.md",
+        "sha": "950da7b74bf6dbed6b8726d12ddadd65a9f5fda7"
+      },
+      {
+        "path": "skills/requesting-code-review/SKILL.md",
+        "sha": "68d338a58ecdd8b77bfbb519b781ef223dbbb842"
+      },
+      {
+        "path": "skills/subagent-driven-development/SKILL.md",
+        "sha": "ea170ed101d61a52fdee0ade8368ec0723980a5c"
+      },
+      {
+        "path": "skills/systematic-debugging/SKILL.md",
+        "sha": "62fc752aaef59a8bbed5d305f4cadc60f8ae07ed"
+      },
+      {
+        "path": "skills/test-driven-development/SKILL.md",
+        "sha": "46838cc9e893c06259e3bdad0fc2425b36242f15"
+      },
+      {
+        "path": "skills/using-git-worktrees/SKILL.md",
+        "sha": "1381dacb3516b94382dd6ec736ede21ee8ede2b3"
+      },
+      {
+        "path": "skills/using-superpowers/SKILL.md",
+        "sha": "069d578445805a28b8dacbf70cdf045e1673def0"
+      },
+      {
+        "path": "skills/verification-before-completion/SKILL.md",
+        "sha": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc"
+      },
+      {
+        "path": "skills/writing-plans/SKILL.md",
+        "sha": "4cf0275d88d67aa4ef09f4bbca9970ed6ff74a00"
+      },
+      {
+        "path": "skills/writing-skills/SKILL.md",
+        "sha": "09d76b79dd4080fe4dcc9bfb3c54d05dbff8a563"
+      },
+      {
+        "path": "package.json",
+        "sha": "acc6562f5a83ab15b491c9432734060c5a6c6a82"
+      },
+      {
+        "path": "scripts/bump-version.sh",
+        "sha": "2f3acee84bfdcd786d7eec8ebb6ff263d78431fb"
+      },
+      {
+        "path": "scripts/lint-shell.sh",
+        "sha": "190db0140d9e250af4cd8edabb42995c0201803c"
+      },
+      {
+        "path": "scripts/package-codex-plugin.sh",
+        "sha": "5308e28d9c3460b130abd7e3185374294b33d00f"
+      },
+      {
+        "path": "scripts/render-antigravity-logo.sh",
+        "sha": "82a5bd85fef2b786933058872dc430c7a538bf06"
+      },
+      {
+        "path": "scripts/sync-to-codex-plugin.sh",
+        "sha": "fc80ab29300485f669fa735edfcc7ad788998135"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "08fd36d126acd2d5b9ad2dc29c0f83cbb7ebe428"
+      },
+      {
+        "path": ".version-bump.json",
+        "sha": "c80749fe66f6c27856636d4a5ae4b48175818a85"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha": "2828661a9909d8b3a9e0ba82380294bf10b9f0da"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "b8af8cdf9c4fbe649b7723bbea59cfa0e271d1ce"
+      },
+      {
+        "path": "gemini-extension.json",
+        "sha": "18e983ba7a018756f72acb4fc6453d6599a994a7"
+      },
+      {
+        "path": "GEMINI.md",
+        "sha": "0dd2f585ecb2ee37c558c8233d72489bb2135856"
+      },
+      {
+        "path": "README.md",
+        "sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b"
+      },
+      {
+        "path": "RELEASE-NOTES.md",
+        "sha": "f63b82068d0f28e5ea6424977ca9f11ea9d96db9"
+      },
+      {
+        "path": ".antigravity-plugin/plugin.json",
+        "sha": "840fd04bf489588da90bee211ea126293c88f0b8"
+      },
+      {
+        "path": ".claude-plugin/marketplace.json",
+        "sha": "86e715cb5879012f59d1ba9f5994ef28eb4c4191"
+      },
+      {
+        "path": ".claude-plugin/plugin.json",
+        "sha": "64b99c9083b55943ec2343ed81d48b830c4fc28b"
+      },
+      {
+        "path": ".codex-plugin/plugin.json",
+        "sha": "faeb41fe6bf29d3bae38e469504ae0a3bab35756"
+      },
+      {
+        "path": ".cursor-plugin/plugin.json",
+        "sha": "6ec43b443a839ed505e4f4d3c6662fbe293fac82"
+      },
+      {
+        "path": ".devin-plugin/plugin.json",
+        "sha": "cadbebdc08c069d4409b8f90b312202f125637f2"
+      },
+      {
+        "path": ".hermes-plugin/__init__.py",
+        "sha": "7d4e1f5bc81fe7c9b9f35e2332cd4e26161e6586"
+      },
+      {
+        "path": ".hermes-plugin/plugin.yaml",
+        "sha": "cb8ae9a17e6771133ff6b70c4694466916a3f8f9"
+      },
+      {
+        "path": ".kimi-plugin/plugin.json",
+        "sha": "379a3bd2943e037aea596b6253f2883696861ff8"
+      },
+      {
+        "path": ".muse-plugin/marketplace.json",
+        "sha": "3531bc3302437d497bf462d04b5cc0493bf415c6"
+      },
+      {
+        "path": ".muse-plugin/plugin.json",
+        "sha": "c77b11635df1856f5b3179cc8cde9e565a1e84f6"
+      },
+      {
+        "path": "hooks/hooks-cursor.json",
+        "sha": "84e6d33874ab5926035e35bc13dccf21244bb079"
+      },
+      {
+        "path": "hooks/hooks.json",
+        "sha": "67975137aafc8a097bdd1c2b51fea3989b8ad6c0"
+      },
+      {
+        "path": ".agents/plugins/marketplace.json",
+        "sha": "4e3b4350d5585e4240bb48ac3378f828985f2c8c"
+      },
+      {
+        "path": ".opencode/plugins/superpowers.js",
+        "sha": "9eff8111b14c37ca3feacc8274cb6b4f824df6ab"
+      },
+      {
+        "path": ".pi/extensions/superpowers.ts",
+        "sha": "a978e80ee0bbffe649ace8826bf6e8b69beea421"
+      },
+      {
+        "path": "skills/brainstorming/builder-check-prompt.md",
+        "sha": "136e9c1d516ee1852abc5e556e76ce1b085d3827"
+      },
+      {
+        "path": "skills/brainstorming/visual-companion.md",
+        "sha": "8dca065bd9adb9d4fa82a66acbb4176ea23259c6"
+      },
+      {
+        "path": "skills/requesting-code-review/code-reviewer.md",
+        "sha": "6d358b5d7d450c83cacbe450b7dbd4e673b694ad"
+      },
+      {
+        "path": "skills/subagent-driven-development/implementer-prompt.md",
+        "sha": "5c8ecd61fba036263bf88d0af24d47125780efa0"
+      },
+      {
+        "path": "skills/subagent-driven-development/re-review-prompt.md",
+        "sha": "d49c1825f01e79641ba37e5e942d1d2bbaad1a3c"
+      },
+      {
+        "path": "skills/subagent-driven-development/task-reviewer-prompt.md",
+        "sha": "5c619bc510440b7bf156e78c4dfc60f198963cf0"
+      },
+      {
+        "path": "skills/systematic-debugging/condition-based-waiting-example.ts",
+        "sha": "703a06b653160d060bbf46ab5c6e0cd7446bd592"
+      },
+      {
+        "path": "skills/systematic-debugging/condition-based-waiting.md",
+        "sha": "70994f777c586f7d4c43033aac34c7cf0da6688b"
+      },
+      {
+        "path": "skills/systematic-debugging/CREATION-LOG.md",
+        "sha": "9aa03092809feaf93c9bfa985252f6f1c9624692"
+      },
+      {
+        "path": "skills/systematic-debugging/defense-in-depth.md",
+        "sha": "e2483354dc2b62478a2624e34ca18bc0efe887b2"
+      },
+      {
+        "path": "skills/systematic-debugging/find-polluter.sh",
+        "sha": "985f5d08ccf8a3f2d40739cfcaf4413bb24bf1cb"
+      },
+      {
+        "path": "skills/systematic-debugging/root-cause-tracing.md",
+        "sha": "0e72e8f9566b7ef85e814633d1feacad9d0c5868"
+      },
+      {
+        "path": "skills/systematic-debugging/test-academic.md",
+        "sha": "23a6ed7a2044e0c44d74c3101406140f4851aa41"
+      },
+      {
+        "path": "skills/systematic-debugging/test-pressure-1.md",
+        "sha": "8d13b467e4a98abfffd12161cbc3c418021d6023"
+      },
+      {
+        "path": "skills/systematic-debugging/test-pressure-2.md",
+        "sha": "2d2315ec8a24ca872bc80d2f4056468ba051462a"
+      },
+      {
+        "path": "skills/systematic-debugging/test-pressure-3.md",
+        "sha": "89734b86fdc756488df315d53e5c3ac2d3752cd8"
+      },
+      {
+        "path": "skills/test-driven-development/writing-good-tests.md",
+        "sha": "d3c4482fd30b4f9084bb61545fe73939a7502c28"
+      },
+      {
+        "path": "skills/writing-skills/render-graphs.js",
+        "sha": "59e74b54e8538ff0a358d05c770479b3eb8484aa"
+      },
+      {
+        "path": "skills/brainstorming/scripts/helper.js",
+        "sha": "e11d26489ce248f37af3e4dd01ddec6a4e88287f"
+      },
+      {
+        "path": "skills/brainstorming/scripts/start-server.sh",
+        "sha": "016a8e4870142ce2adbe81a021d8b6b9073e7618"
+      },
+      {
+        "path": "skills/brainstorming/scripts/stop-server.sh",
+        "sha": "7cacfe9440043f7a46eac555cd835fad0769c425"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/prompts/analyst-common.md",
+        "sha": "d7c4033065f1390b4bb681a5d81968cd2190867d"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/prompts/cost-and-time.md",
+        "sha": "fb9cc0a196e504d7dac46f4a6b5bfe059d34f7db"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/prompts/plan-adherence.md",
+        "sha": "aaaeac740e9fd65f587025d5e29df1f9a7681e34"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/prompts/quality-evidence.md",
+        "sha": "26ca5643dc940d67caaa6dcb1791b0473d3c999e"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/prompts/repeated-work.md",
+        "sha": "da2645a4164c8ac4e6ff894de37a3da3e7da061a"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/prompts/request-conflicts.md",
+        "sha": "4532236e754ae22e1f9f41a1ed6e6c462f04ac38"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/prompts/scrub-audit.md",
+        "sha": "12e8e6d39a5a62a3b6f8f0cfbc970ed8a0054a38"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/prompts/scrub.md",
+        "sha": "d4f8dd6429678ea960d9b10f9647d77644dbc121"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/prompts/similar-session.md",
+        "sha": "d012001d25ead6f885b229edf3cbd2f0f8ca8de9"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/prompts/skill-timeline.md",
+        "sha": "ecbe21d113d7d34bf3c9d18720f19d88d31cd070"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/prompts/stumbles.md",
+        "sha": "22b3705fc29dbe88c6a9a9639ce348b83b14712e"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/references/context-safety.md",
+        "sha": "be09ed84fb5c30b770f3700b723c64adbe4f09ae"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/references/github-issues.md",
+        "sha": "de787f7b7c10566e0cbb0dc9fb060a0f4714b32a"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/references/redaction-policy.md",
+        "sha": "c80b6232abef32fa1868b70585203b6e623380d6"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/references/session-discovery.md",
+        "sha": "d069ff8b975e31997dd3196b53d95d261c6b24af"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/templates/bundle-README.md",
+        "sha": "c469b157b511c073abc787b102e5383637cb0cf2"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/templates/case.md",
+        "sha": "c1a182beefa64a5f92ff33074aa8b7246d33c205"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/templates/issue.md",
+        "sha": "dec8cfc25bcdf9d78c012f1459c3d332f79ba4f1"
+      },
+      {
+        "path": "skills/diagnosing-superpowers/templates/report.md",
+        "sha": "1ab721204f1d92b27385828b06713dc0605ace7a"
+      },
+      {
+        "path": "skills/subagent-driven-development/references/batching.md",
+        "sha": "6224e4ba255ed8359d608aaa4b8af785b6fdee70"
+      },
+      {
+        "path": "skills/subagent-driven-development/references/cannot-verify.md",
+        "sha": "e952f2d40c2646840f33f7856707f08828cbd46a"
+      },
+      {
+        "path": "skills/subagent-driven-development/references/final-review.md",
+        "sha": "851a5c5520cbb377b823229cbfdf441dcd79ac27"
+      },
+      {
+        "path": "skills/subagent-driven-development/references/fix-loop.md",
+        "sha": "0b476e92a068af56113ff0a5c9c7ebef1afe7d2c"
+      },
+      {
+        "path": "skills/subagent-driven-development/references/handling-reports.md",
+        "sha": "cf91cdcddde1e051bf2fc51329197af4063b9dbc"
+      },
+      {
+        "path": "skills/subagent-driven-development/references/preflight.md",
+        "sha": "170164883949e00aace6297b600b2c5a72bc6d5a"
+      },
+      {
+        "path": "skills/subagent-driven-development/references/resuming.md",
+        "sha": "409b826eb8c875c51dd3799add37fcaab43b69b3"
+      },
+      {
+        "path": "skills/using-superpowers/references/antigravity-tools.md",
+        "sha": "2e1eac90534af6e1f27df4e18410be8a7b442448"
+      },
+      {
+        "path": "skills/using-superpowers/references/claude-code-tools.md",
+        "sha": "550b8e456db58b549bfc2bfc6388dcf01b020a14"
+      },
+      {
+        "path": "skills/using-superpowers/references/codex-tools.md",
+        "sha": "e4488fb224bb0fa0a33e9ac7dc961174e9f0c150"
+      },
+      {
+        "path": "skills/using-superpowers/references/gemini-tools.md",
+        "sha": "b01b65238a50981aeed22ae52ee20f8b55d16b42"
+      },
+      {
+        "path": "skills/using-superpowers/references/hermes-tools.md",
+        "sha": "0f1fa57bc1b495462e75c6ce11e798245a34987e"
+      },
+      {
+        "path": "skills/using-superpowers/references/muse-tools.md",
+        "sha": "a87d6d83878518ba4f748be8dcd1ac9aad4b99e5"
+      },
+      {
+        "path": "skills/using-superpowers/references/pi-tools.md",
+        "sha": "0c1f21713a45255ece4144fd2fee353e4ed4f90e"
+      },
+      {
+        "path": "skills/writing-skills/references/anthropic-best-practices.md",
+        "sha": "15ea9eae223d9081b602618849791c07a7758f3d"
+      },
+      {
+        "path": "skills/writing-skills/references/bulletproofing.md",
+        "sha": "38e26fb39d6e7f21ad82f82d98800c1317ff741e"
+      },
+      {
+        "path": "skills/writing-skills/references/CLAUDE_MD_TESTING.md",
+        "sha": "47881fc85bd6c01b32b84d52ed9a0c73c8d6a089"
+      },
+      {
+        "path": "skills/writing-skills/references/discovery.md",
+        "sha": "fc3009d178f1de3f85de3b5625fa131c7f0bf616"
+      },
+      {
+        "path": "skills/writing-skills/references/flowcharts.md",
+        "sha": "63f9bfae675585652e7c0052392c170e2f00c0a1"
+      },
+      {
+        "path": "skills/writing-skills/references/persuasion-principles.md",
+        "sha": "9756416a59600b70ecca4044e0919ee7d4a37b21"
+      },
+      {
+        "path": "skills/writing-skills/references/testing-skills-with-subagents.md",
+        "sha": "e5bf682cb4099b220d3a2fa65d170f3b9e62af21"
+      }
+    ],
+    "repo_pushed_at": "2026-10-29T23:35:34Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 0
+    },
+    "red_flags": [
+      "concealment-instruction"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/brainstorming/SKILL.md",
+      "line": 15,
+      "snippet": "hundred decisions they never mention the way they would have made them.",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "skills/subagent-driven-development/SKILL.md",
+      "line": 161,
+      "snippet": "most expensive — which silently defeats this section.",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "RELEASE-NOTES.md",
+      "line": 69,
+      "snippet": "- **`task-done` now records tasks whose test command passes silently.** When a passing command printed nothing, `task-done` exited 1 without writing the ledger ",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": ".hermes-plugin/__init__.py",
+      "line": 17,
+      "snippet": "Raises loudly when neither matches — a bootstrap that silently skips is how",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "skills/requesting-code-review/code-reviewer.md",
+      "line": 48,
+      "snippet": "silently. An empty list means you set nothing aside.",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "skills/subagent-driven-development/implementer-prompt.md",
+      "line": 9,
+      "snippet": "model silently inherits the session's most expensive one]",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "skills/subagent-driven-development/re-review-prompt.md",
+      "line": 14,
+      "snippet": "model silently inherits the session's most expensive one]",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/subagent-driven-development/task-reviewer-prompt.md",
+      "line": 14,
+      "snippet": "model silently inherits the session's most expensive one]",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/test-driven-development/writing-good-tests.md",
+      "line": 121,
+      "snippet": "Partial mocks fail silently when downstream code reads an omitted field:",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/diagnosing-superpowers/prompts/plan-adherence.md",
+      "line": 23,
+      "snippet": "- steps silently changed (execution differs from the plan step in a",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/diagnosing-superpowers/references/github-issues.md",
+      "line": 34,
+      "snippet": "GitHub drops labels silently when the reporter lacks push access, so the",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "skills/subagent-driven-development/references/fix-loop.md",
+      "line": 72,
+      "snippet": "silently lets every dependent task build on it. Stop only when the defect",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "skills/using-superpowers/references/codex-tools.md",
+      "line": 68,
+      "snippet": "silently resets to that model's default, not to yours.",
+      "deduction": 15
+    }
+  ],
+  "evidence": {
+    "files_scanned": 108,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 4
+  },
+  "network": {
+    "calls": 31,
+    "failed": 0,
+    "ms": 11478
+  },
+  "duration_ms": 3991
+}

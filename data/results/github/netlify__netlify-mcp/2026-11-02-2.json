@@ -1,0 +1,560 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T150901Z",
+  "target": {
+    "source": "github",
+    "id": "netlify/netlify-mcp",
+    "url": "https://github.com/netlify/netlify-mcp",
+    "name": "netlify-mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:14:54.827Z",
+  "method_version": "0.3.2",
+  "tool": {
+    "assay_commit": "d15962fd8f7d78fe81fced552f2067080c7c254c",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.3.2"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "19ed461f99946999fb68720a2251afb312cd6451",
+    "files_scanned": 92,
+    "candidates": 92,
+    "excluded_non_shipped": 46,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "src/tools/index.ts",
+        "sha": "aca8262ef0a188a59875926baa98135ce8626900"
+      },
+      {
+        "path": "src/tools/deploy-tools/index.ts",
+        "sha": "076bcf968b4d428dc1914104b1e7b6045802e1be"
+      },
+      {
+        "path": "src/tools/extension-tools/index.ts",
+        "sha": "9bf354caf3f72a58a5c8470fdbe4eb1419f5ee13"
+      },
+      {
+        "path": "src/tools/observability-tools/index.ts",
+        "sha": "c2b48088be16880bc104261fc5a85f93537b3bee"
+      },
+      {
+        "path": "src/tools/project-tools/index.ts",
+        "sha": "1b9a9fbc75b8a78de258d3306ace5ce49c42d152"
+      },
+      {
+        "path": "src/tools/team-tools/index.ts",
+        "sha": "1c6be46e8a999d0a7de4bad9c8d2e49ddb11c336"
+      },
+      {
+        "path": "src/tools/user-tools/index.ts",
+        "sha": "59b119eb31f0fc972280d0b724482e4f8aebb5e5"
+      },
+      {
+        "path": "package.json",
+        "sha": "872e8297b946e1de31bd1ee693431211e944445c"
+      },
+      {
+        "path": "scripts/register-ts-js-loader.mjs",
+        "sha": "8a6e1f9fd7695af59a3f59157fa3ea59ea62b61e"
+      },
+      {
+        "path": "scripts/ts-js-resolve-hooks.mjs",
+        "sha": "a02cf16b3a544c32194203fd5aefb2c0749e8ca6"
+      },
+      {
+        "path": "scripts/verify-coding-context.mjs",
+        "sha": "5df415f65490b7b89010aa4fce4d331319cfb5d1"
+      },
+      {
+        "path": ".release-please-manifest.json",
+        "sha": "2c543c4d65e84d35e8b0475158cc894c47a7bafd"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "90c897159ed78bb053af00a3725839661f27f192"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "ec1f15b49bb0e6561cbd4d04a3f415d245793cb3"
+      },
+      {
+        "path": "netlify-mcp.ts",
+        "sha": "c833281b7c3e63a3a87e240053373b77a82a362b"
+      },
+      {
+        "path": "README.md",
+        "sha": "78a9864b498b2debdca512562784d0af82599018"
+      },
+      {
+        "path": "release-please-config.json",
+        "sha": "b01ba24d5d29c45c88c1f0d6041712285f96d054"
+      },
+      {
+        "path": "SPIKE_FINDINGS.md",
+        "sha": "c898f57a9476aa3c8aeb04f7a9fcda5c205d44a2"
+      },
+      {
+        "path": "src/context/coding-context.ts",
+        "sha": "cb2469d8c24469c7b11ba215bbc2c9960a2a1f3d"
+      },
+      {
+        "path": "src/context/ctx.ts",
+        "sha": "3c181c47ee7e4c74aa10b2b07cfa86b9bb696533"
+      },
+      {
+        "path": "src/context/register-coding-context-tool.ts",
+        "sha": "a158d05773dca72f7cad2cf0c266f5963a53baa0"
+      },
+      {
+        "path": "src/tools/tool-utils.ts",
+        "sha": "1221f6169f25fb1639dfe1bf6511dc6cfd8dcf23"
+      },
+      {
+        "path": "src/tools/types.ts",
+        "sha": "bf3c8d3edb22cee1115cfa494220d53915d13e79"
+      },
+      {
+        "path": "src/utils/api-networking.ts",
+        "sha": "8f78589f0f54b416bf5f585fbed63652a9d1bbbb"
+      },
+      {
+        "path": "src/utils/api-types.ts",
+        "sha": "13c34da051b502a4d747ad9796f183602626d332"
+      },
+      {
+        "path": "src/utils/client-detection.ts",
+        "sha": "275e8fc93165b49ed0e84471e16f2488d906d278"
+      },
+      {
+        "path": "src/utils/cmd.ts",
+        "sha": "f5dc7fa95dcd406d30783625ef62336d6ba4f6e0"
+      },
+      {
+        "path": "src/utils/compatibility.ts",
+        "sha": "912fbc822c09f14643c667fe54e232249810d52f"
+      },
+      {
+        "path": "src/utils/logging.ts",
+        "sha": "1b192884432133001f291f6788dc1892a0005d07"
+      },
+      {
+        "path": "src/utils/login-attribution.ts",
+        "sha": "b6c29b8861c95e3870122c9ebe8bb96003ddd174"
+      },
+      {
+        "path": "src/utils/version.ts",
+        "sha": "950a0dac07da2623330f1dfc3b90c90db2bc052a"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha": "a3fc6a3f2c29a97152b734d3e59e3f8eb07feb06"
+      },
+      {
+        "path": "src/tools/deploy-tools/deploy-site.ts",
+        "sha": "930e2db173b008f550d23e4ba13e1fef47b13cdc"
+      },
+      {
+        "path": "src/tools/deploy-tools/deploy-watch.ts",
+        "sha": "18e83fb2df624fca6acc57eb4e084886ba406860"
+      },
+      {
+        "path": "src/tools/deploy-tools/get-deploy-for-site.ts",
+        "sha": "68970168b2a765db509dc2a073e4ac9e6dd7d111"
+      },
+      {
+        "path": "src/tools/deploy-tools/get-deploy.ts",
+        "sha": "f331cfd67a709d010d113dbbdfdb9bed89b61f8d"
+      },
+      {
+        "path": "src/tools/design-import/import-claude-design.ts",
+        "sha": "80df0be98e4a3f42739d7549bbadb295813c8946"
+      },
+      {
+        "path": "src/tools/design-import/job-utils.ts",
+        "sha": "3b26a5d48b14e352bfdf94ef32e039ad785f628f"
+      },
+      {
+        "path": "src/tools/design-import/url-guard.ts",
+        "sha": "beda948822e4315b05e86c9aa2b558753705cdbf"
+      },
+      {
+        "path": "src/tools/extension-tools/change-extension-installation.ts",
+        "sha": "307bcc9c6bd3c9baf67897570b2570734d3d5b6b"
+      },
+      {
+        "path": "src/tools/extension-tools/extension-utils.ts",
+        "sha": "b2aa79145fb977adfc3500555f1670b34b0332ca"
+      },
+      {
+        "path": "src/tools/extension-tools/get-extensions.ts",
+        "sha": "5cc36ce452130bc7f89b9d2f5ebeaf17db0bdf8c"
+      },
+      {
+        "path": "src/tools/extension-tools/get-full-extension-details.ts",
+        "sha": "1ad328b258c8ad2b6059364b08349a586a4ba47c"
+      },
+      {
+        "path": "src/tools/extension-tools/initialize-database.ts",
+        "sha": "ee65e5943ac157c29d1930f5ac03165994493652"
+      },
+      {
+        "path": "src/tools/observability-tools/api-client.ts",
+        "sha": "a3bb3cf864ba245522c973bf412695b5175003ff"
+      },
+      {
+        "path": "src/tools/project-tools/create-new-project.ts",
+        "sha": "84807c6de66b55aa162fb0d9a42c37c19568afce"
+      },
+      {
+        "path": "src/tools/project-tools/get-forms-for-project.ts",
+        "sha": "1da4c2d26d419448bbf44da441db16a0f54732a8"
+      },
+      {
+        "path": "src/tools/project-tools/get-project.ts",
+        "sha": "774398f05c3fd53e19b5afdf4114d5d6540cff8f"
+      },
+      {
+        "path": "src/tools/project-tools/get-projects.ts",
+        "sha": "9f6ef7c1748535a7695dd351a10d7ad7991578bf"
+      },
+      {
+        "path": "src/tools/project-tools/manage-form-submissions.ts",
+        "sha": "16a962ed52db300ab9cf65e01a4a1de91961d426"
+      },
+      {
+        "path": "src/tools/project-tools/manage-project-env-vars.ts",
+        "sha": "fe50c1ca3f18a9c75609c3fca130a61a3122708c"
+      },
+      {
+        "path": "src/tools/project-tools/project-utils.ts",
+        "sha": "28f782a238dfc24411fcfa39f6268dfbdbba9759"
+      },
+      {
+        "path": "src/tools/project-tools/update-project-forms.ts",
+        "sha": "f2e031c636d1e7f8d7fbb53306b0a280ecc837e9"
+      },
+      {
+        "path": "src/tools/project-tools/update-project-name.ts",
+        "sha": "976d0ac98ef7fa9d14bb76cef4a5f03453034989"
+      },
+      {
+        "path": "src/tools/project-tools/update-visitor-access-controls.ts",
+        "sha": "ee04f419dc2c3e68c940a04e52791b0d9baec6e8"
+      },
+      {
+        "path": "src/tools/team-tools/get-team-env-vars.ts",
+        "sha": "54aa506e5ff7849b3282aef102aab96306bc87d2"
+      },
+      {
+        "path": "src/tools/team-tools/get-team.ts",
+        "sha": "0a35a31635e71b2076f28005f3691e349f0b46ca"
+      },
+      {
+        "path": "src/tools/team-tools/get-teams.ts",
+        "sha": "b317c4082ad67ef96fb11bf254bd1e8d8bff5e48"
+      },
+      {
+        "path": "src/tools/team-tools/team-utils.ts",
+        "sha": "94075b019ac1c186778c520a049ad799e0436601"
+      },
+      {
+        "path": "src/tools/user-tools/get-user.ts",
+        "sha": "c5501752fdcef49194170de2bef99ffa2c8642b3"
+      },
+      {
+        "path": "netlify/edge-functions/proxy.ts",
+        "sha": "c8545cafb683412cece19734aac88a4ec746513a"
+      },
+      {
+        "path": "netlify/edge-functions/request-logger.ts",
+        "sha": "f28c618993878fb7fa9a54b609d9b3b87db0d0bb"
+      },
+      {
+        "path": "netlify/functions/events-relay.ts",
+        "sha": "76081de23201ff51ae299a190859c1170f8eab77"
+      },
+      {
+        "path": "netlify/functions/mcp.ts",
+        "sha": "a04759659caa7ac7f6995e73cc86e19062b1b990"
+      },
+      {
+        "path": "netlify/functions/oauth-server.ts",
+        "sha": "332bab2e63f20d38713d6a1404f6353f7a86e69e"
+      },
+      {
+        "path": "netlify/functions/server-card.ts",
+        "sha": "12195a8dbdc5b38d7b4f8c551b060f05297e3ccd"
+      },
+      {
+        "path": "netlify/functions/mcp-server/agent-attribution.ts",
+        "sha": "110677a71dc431b79c965bcfa83c076ce6360c76"
+      },
+      {
+        "path": "netlify/functions/mcp-server/auth-flow.ts",
+        "sha": "1e660f49d6fa6e5de582642f46accb3148df8850"
+      },
+      {
+        "path": "netlify/functions/mcp-server/client-registry.ts",
+        "sha": "06f2b750a5396e38eff285956aea7803f7b3f71b"
+      },
+      {
+        "path": "netlify/functions/mcp-server/confirm-netlify-401.ts",
+        "sha": "1e338794ad1065294e49b248d2c1404e93d6cdaa"
+      },
+      {
+        "path": "netlify/functions/mcp-server/identity.ts",
+        "sha": "86ae72f966c7f348a9fbf724411c4072a7f340b3"
+      },
+      {
+        "path": "netlify/functions/mcp-server/init-state.ts",
+        "sha": "9fe49ea6d79e9305e2fdf653422fcf2038383a76"
+      },
+      {
+        "path": "netlify/functions/mcp-server/logger.ts",
+        "sha": "8feba8d032467261aa5b6bf5235b1194493b8018"
+      },
+      {
+        "path": "netlify/functions/mcp-server/logging.ts",
+        "sha": "cf945cf3facbeb4b4af865dd8a93459f03455a52"
+      },
+      {
+        "path": "netlify/functions/mcp-server/metadata.ts",
+        "sha": "4c5cae47c345317d4da2aef6092ce870ef52d94c"
+      },
+      {
+        "path": "netlify/functions/mcp-server/oauth-clients.ts",
+        "sha": "e424162cf66a4fac0702dc9853be7c1cd635af35"
+      },
+      {
+        "path": "netlify/functions/mcp-server/oauth-config.ts",
+        "sha": "2776151635cb36993411371e510596513d4516f3"
+      },
+      {
+        "path": "netlify/functions/mcp-server/process-guards.ts",
+        "sha": "d79dd3f44b540c046d5edfaf822097eaf32c06d2"
+      },
+      {
+        "path": "netlify/functions/mcp-server/request-signals.ts",
+        "sha": "dfb83746cd2c9e2177143962ff2c0b27209d49b9"
+      },
+      {
+        "path": "netlify/functions/mcp-server/server-card.ts",
+        "sha": "1e79ae94893dfb1ea68306d9e94c818a722b0302"
+      },
+      {
+        "path": "netlify/functions/mcp-server/system-log-forwarder.ts",
+        "sha": "f3bb0aa9f6ab0248bebf734e0944eb26c1d0f1d0"
+      },
+      {
+        "path": "netlify/functions/mcp-server/token-types.ts",
+        "sha": "346b69774bbcba5413887c5e9c77df4e3e48ce91"
+      },
+      {
+        "path": "netlify/functions/mcp-server/utils.ts",
+        "sha": "55388f4d07e1a8e48e22f4571bdd0074eac40f4a"
+      },
+      {
+        "path": "netlify/functions/mcp-server/events/base-url.ts",
+        "sha": "0acca7bbc06cd894664350d4d3fa8c991aea3d01"
+      },
+      {
+        "path": "netlify/functions/mcp-server/events/callback-guard.ts",
+        "sha": "471092e44da7daebb1de72335c0ae391e80c8d62"
+      },
+      {
+        "path": "netlify/functions/mcp-server/events/deliver.ts",
+        "sha": "5ead699af4636f470cea233b20d6c104d799f7b5"
+      },
+      {
+        "path": "netlify/functions/mcp-server/events/hooks-api.ts",
+        "sha": "f8e99b719169e4e81a247bc309a458e78b654e9f"
+      },
+      {
+        "path": "netlify/functions/mcp-server/events/methods.ts",
+        "sha": "2ee880249f25f31a71f6ca4479f6b318a96617ed"
+      },
+      {
+        "path": "netlify/functions/mcp-server/events/project-payload.ts",
+        "sha": "a9b7c59cc780af2c21d5261201d49fe3764ceabc"
+      },
+      {
+        "path": "netlify/functions/mcp-server/events/registry.ts",
+        "sha": "62e26617765f075a3e351d4907d3f4877dc2a468"
+      },
+      {
+        "path": "netlify/functions/mcp-server/events/signing.ts",
+        "sha": "c63f62766f9175a486de7e44f39317f1294d915a"
+      },
+      {
+        "path": "netlify/functions/mcp-server/events/subscription.ts",
+        "sha": "14021b8f13d683a55f38301cdaee6784999895c6"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T15:12:51Z",
+    "license": null
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": false,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": false
+  },
+  "result": {
+    "screening_score": 49,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 85,
+      "instruction_hygiene": 0
+    },
+    "red_flags": [
+      "concealment-instruction"
+    ],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/tools/extension-tools/extension-utils.ts",
+      "line": 7,
+      "snippet": "const sdkBaseUrl = 'https://api.netlifysdk.com';",
+      "host": "api.netlifysdk.com",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "CONTRIBUTING.md",
+      "line": 72,
+      "snippet": "Before the split, rotating `JWE_SECRET` would have silently killed every",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "src/utils/api-networking.ts",
+      "line": 19,
+      "snippet": "// Statuses the caller is about to silently retry (e.g. a 422 name conflict)",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "src/tools/design-import/import-claude-design.ts",
+      "line": 273,
+      "snippet": "// name), silently breaking idempotency for that project.",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "src/tools/project-tools/create-new-project.ts",
+      "line": 42,
+      "snippet": "// silently retried, so it shouldn't log as a failure; a 422 on the",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "src/tools/project-tools/manage-project-env-vars.ts",
+      "line": 26,
+      "snippet": "\"Read, create, update, or delete environment variables on a Netlify site. Set getAllEnvVars to list them, upsertEnvVar to create or overwrite one, or deleteEnvV",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "src/tools/project-tools/update-visitor-access-controls.ts",
+      "line": 28,
+      "snippet": "// publicly reachable, and the call also silently clears whichever control",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "netlify/functions/mcp-server/request-signals.ts",
+      "line": 8,
+      "snippet": "// fragile, and silently broken if the SDK ever stops echoing messages — the",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "netlify/functions/mcp-server/utils.ts",
+      "line": 27,
+      "snippet": "// subscription's relay token unreadable, silently killing customer",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "netlify/functions/mcp-server/events/deliver.ts",
+      "line": 15,
+      "snippet": "// and silently stops firing. Crucially error_rate only accumulates across",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "netlify/functions/mcp-server/events/hooks-api.ts",
+      "line": 136,
+      "snippet": "// silently create a notification hook on a site the caller never named.",
+      "deduction": 40
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": false,
+      "file": "netlify/functions/mcp-server/events/methods.ts",
+      "line": 107,
+      "snippet": "// definition\". Silently ignoring an unrecognised key is the same failure as",
+      "deduction": 15
+    },
+    {
+      "dim": "instruction_hygiene",
+      "rule": "concealment-instruction",
+      "severe": true,
+      "file": "netlify/functions/mcp-server/events/subscription.ts",
+      "line": 16,
+      "snippet": "// credentials, and rotating the auth key doesn't silently kill every live",
+      "deduction": 40
+    }
+  ],
+  "evidence": {
+    "files_scanned": 92,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "api.netlifysdk.com"
+    ],
+    "declared_hosts": 2,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 19,
+    "failed": 4,
+    "ms": 9325
+  },
+  "duration_ms": 4625
+}

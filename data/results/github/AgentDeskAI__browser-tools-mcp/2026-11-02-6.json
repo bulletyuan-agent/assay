@@ -1,0 +1,340 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T153237Z",
+  "target": {
+    "source": "github",
+    "id": "AgentDeskAI/browser-tools-mcp",
+    "url": "https://github.com/AgentDeskAI/browser-tools-mcp",
+    "name": "browser-tools-mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:33:48.992Z",
+  "method_version": "0.4.1",
+  "tool": {
+    "assay_commit": "8b9e34983f0308969cbf677aeb06835fe0b43176",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.4.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "2b30d11677e73e09bfab72c479be83f2836da425",
+    "files_scanned": 65,
+    "candidates": 65,
+    "excluded_non_shipped": 60,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "server.json",
+        "sha": "2d1c182c7f63a0adf9d1d807dab368b4169f0693"
+      },
+      {
+        "path": "browser-tools-server/index.js",
+        "sha": "b538a5dfa63995f1b3c72d4946633261c3b127f0"
+      },
+      {
+        "path": "package.json",
+        "sha": "949aa7344318a10c8c1897472b10bafadeb9c9e5"
+      },
+      {
+        "path": "browser-tools-mcp/src/cli.ts",
+        "sha": "f734b435a8d754e9c7f84cba9edc23bb5c254a3a"
+      },
+      {
+        "path": "browser-tools-mcp/src/index.ts",
+        "sha": "6f9ed73515724a2d727ed83c347460b4df83459b"
+      },
+      {
+        "path": "browser-tools-mcp/package.json",
+        "sha": "cc7464b6234691f37ffffc01c5f403b400344dae"
+      },
+      {
+        "path": "browser-tools-server/package.json",
+        "sha": "251389ca41f439e66238f18b3539c1a6bead7ca5"
+      },
+      {
+        "path": "browser-tools-mcp/src/mcp/server.ts",
+        "sha": "16a9c4dd861ed842daaa92dfcaf75f53c4249645"
+      },
+      {
+        "path": "browser-tools-mcp/src/tabs/tools.ts",
+        "sha": "6b204f6d2da7c12dede30aa3ad8a3204320e76ae"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "7b9be9e116dd644d16647ffe9da9b6fda0a4eb4a"
+      },
+      {
+        "path": "MIGRATION.md",
+        "sha": "d9031434ca6979b53af6279faa7a1be32ef04150"
+      },
+      {
+        "path": "package-lock.json",
+        "sha": "79b20cb243127496c364b06bf64a10e85907841c"
+      },
+      {
+        "path": "README.md",
+        "sha": "6160e276f4632c87c50dcd7d928532f5076a3dcf"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "6c8ea2b02395c6f3cf35ee06608a065439d1eb68"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha": "21c6d8ed5e16cc439842b6abf3f62f6dbfd9da51"
+      },
+      {
+        "path": "browser-tools-mcp/README.md",
+        "sha": "1719b2416a29ce65f77d275fb3b77019bf3e9b9a"
+      },
+      {
+        "path": "browser-tools-mcp/tsconfig.json",
+        "sha": "cf6243440c9b3f0ad7e1031faec27d2bf7f788fe"
+      },
+      {
+        "path": "browser-tools-server/README.md",
+        "sha": "7b0e0e31b26c7c63e5ecf6037a23ab1c8afd736b"
+      },
+      {
+        "path": "chrome-extension/devtools.js",
+        "sha": "f1332240493986596b21ef5fe4e404e1684797bf"
+      },
+      {
+        "path": "chrome-extension/gates.js",
+        "sha": "0ffd379d5f3f7d070faf155e93c38abd6491ed34"
+      },
+      {
+        "path": "chrome-extension/manifest.json",
+        "sha": "4026242b683545856c6010429e430cc19f59fa9d"
+      },
+      {
+        "path": "chrome-extension/panel.js",
+        "sha": "a3f10852970be9cccc120d46e4f5b5bf3abedab1"
+      },
+      {
+        "path": "chrome-extension/popup.js",
+        "sha": "86b8e7eed2d880cdfc7119b7d66fc8b31b66bea7"
+      },
+      {
+        "path": "chrome-extension/shared.js",
+        "sha": "a4d4ac8d837df48409b5284de611bf9a2bfa1f1d"
+      },
+      {
+        "path": "chrome-extension/tab-actions.js",
+        "sha": "13d9ee4cf2010b0fac21b7b4d57d2c0784f7eabf"
+      },
+      {
+        "path": "chrome-extension/tab-page.js",
+        "sha": "c81e5cb6e5ba921b2d0bfd1e2ab377638a6f450d"
+      },
+      {
+        "path": "chrome-extension/tab-safety.js",
+        "sha": "5713482456b600194e475507549f3de3853b5198"
+      },
+      {
+        "path": "chrome-extension/worker.js",
+        "sha": "854c1aa177ad7301b2ff8b11a6dce04115b45a2d"
+      },
+      {
+        "path": "browser-tools-mcp/src/connector-bin.ts",
+        "sha": "10955bba6f82c3230722895300353ce20a4c81ad"
+      },
+      {
+        "path": "browser-tools-mcp/src/doctor.ts",
+        "sha": "79fbaf3cd473d817c187d44c0ba8555631510d02"
+      },
+      {
+        "path": "browser-tools-mcp/src/restricted-page.ts",
+        "sha": "587d4212ea1e8a1602e13fa232e13b14e2f0a227"
+      },
+      {
+        "path": "browser-tools-mcp/src/runtime.ts",
+        "sha": "3dc5d68f310b682c07972f152efa63eda98d4f82"
+      },
+      {
+        "path": "browser-tools-mcp/src/tools-cli-bin.ts",
+        "sha": "dba962a6265de9e1e25cc6919d4a3c195e1f7f17"
+      },
+      {
+        "path": "browser-tools-mcp/src/tools-cli.ts",
+        "sha": "03c5d34761c398ec1ce06444707c888435505124"
+      },
+      {
+        "path": "spikes/age-618-chrome-tabs/manifest.json",
+        "sha": "ee7cf8e5fe1944eaf43e036e7fbf04b63b1973b4"
+      },
+      {
+        "path": "spikes/age-618-chrome-tabs/popup.js",
+        "sha": "e0636715761a91619a9a9a08c9be51ee8589d95c"
+      },
+      {
+        "path": "spikes/age-618-chrome-tabs/README.md",
+        "sha": "682242ebad51ed8e5eaf199467ca338b3642b14e"
+      },
+      {
+        "path": "spikes/age-618-chrome-tabs/snapshot.js",
+        "sha": "f26e32eb7c1cab31a029c40fb4039ccf2685c5af"
+      },
+      {
+        "path": "spikes/age-618-chrome-tabs/sw.js",
+        "sha": "30669d8c204defe8f4acac925f66dffd0e006ff4"
+      },
+      {
+        "path": "browser-tools-mcp/src/connector/api-policy.ts",
+        "sha": "2f44182ec4a3428df161c3f4e06218e1442a2fb9"
+      },
+      {
+        "path": "browser-tools-mcp/src/connector/connector.ts",
+        "sha": "17e07c1a17c9123635c2bf0dc8330ca631ba473b"
+      },
+      {
+        "path": "browser-tools-mcp/src/connector/security.ts",
+        "sha": "787a3996e02f6f18514b62bdc9acecfe6ded9d61"
+      },
+      {
+        "path": "browser-tools-mcp/src/connector/settings.ts",
+        "sha": "98c620ed608d4887b4497f23dfde68ed10017f2e"
+      },
+      {
+        "path": "browser-tools-mcp/src/connector/store.ts",
+        "sha": "53cdaa84f5336a3975ab8f84f285f4529eb2b1f8"
+      },
+      {
+        "path": "browser-tools-mcp/src/gates/capability.ts",
+        "sha": "45288c0618b3f4c54cd8b6ab1bd35691ae29fa2e"
+      },
+      {
+        "path": "browser-tools-mcp/src/lighthouse/destination.ts",
+        "sha": "f6872edc3fbd2def9fa8bf358315683f4ed5366c"
+      },
+      {
+        "path": "browser-tools-mcp/src/lighthouse/egress-proxy.ts",
+        "sha": "673bb7b8fdf4db3352aabba12b868af567d563f2"
+      },
+      {
+        "path": "browser-tools-mcp/src/lighthouse/extract.ts",
+        "sha": "7881e68cd7b8d3677ae50b3db4bc0dfb297e0b57"
+      },
+      {
+        "path": "browser-tools-mcp/src/lighthouse/find-browser.ts",
+        "sha": "68d46f0f011aee509544d50948f18685b58e0d67"
+      },
+      {
+        "path": "browser-tools-mcp/src/lighthouse/runner.ts",
+        "sha": "8f6c64e3dbc376b2e40944caa9b3b1eb1acc7265"
+      },
+      {
+        "path": "browser-tools-mcp/src/lighthouse/types.ts",
+        "sha": "ccfa12a58d00683919a61108c6352b3fb9f6e279"
+      },
+      {
+        "path": "browser-tools-mcp/src/mcp/client.ts",
+        "sha": "fdf68b1207b365a4842f901f8636a207992fc5b9"
+      },
+      {
+        "path": "browser-tools-mcp/src/mcp/prompts.ts",
+        "sha": "cd86a8a424c972af45063541ba1de144f2f2edbd"
+      },
+      {
+        "path": "browser-tools-mcp/src/mcp/resource-cli.ts",
+        "sha": "b43f97bf25b02f7b9c8037abb5b59ec8d4769b1e"
+      },
+      {
+        "path": "browser-tools-mcp/src/mcp/resources.ts",
+        "sha": "0bd876d8c0c7a2dc88e40a84c4633c5a1b28cde2"
+      },
+      {
+        "path": "browser-tools-mcp/src/mcp/tool-invoke.ts",
+        "sha": "e9eb3441b353b6d724a67bb3bba1df4753553a24"
+      },
+      {
+        "path": "browser-tools-mcp/src/tabs/contract.ts",
+        "sha": "7b1353bee8c951ec09d2fd74485305ec5720f805"
+      },
+      {
+        "path": "browser-tools-mcp/src/tabs/listing.ts",
+        "sha": "773a9cd9acce7c17176a12967e0e37ebe09f5aca"
+      },
+      {
+        "path": "browser-tools-mcp/src/util/har.ts",
+        "sha": "1621767022cd523d50d4f574b2c5e03eeb4adbde"
+      },
+      {
+        "path": "browser-tools-mcp/src/util/image.ts",
+        "sha": "0a2e4385a9235054a3311b9d9b355bcb33ee9ec8"
+      },
+      {
+        "path": "browser-tools-mcp/src/util/logger.ts",
+        "sha": "bf6c91f9bf4c0dbc90254cc9b598b407dfab08fa"
+      },
+      {
+        "path": "browser-tools-mcp/src/util/paths.ts",
+        "sha": "88cbdb8e21b2d4c7fac32b949b0e9e88eff92d08"
+      },
+      {
+        "path": "browser-tools-mcp/src/util/redact.ts",
+        "sha": "e20463588108add96e8a84957551bf01ce5182c3"
+      },
+      {
+        "path": "browser-tools-mcp/src/util/session.ts",
+        "sha": "57b888e9608c660ed18ef2d08cd9a998711aa80f"
+      },
+      {
+        "path": "browser-tools-mcp/src/util/truncate.ts",
+        "sha": "e200ac1002a5db268e85d5c05da712acaf896b81"
+      }
+    ],
+    "repo_pushed_at": "2026-10-28T19:06:19Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 97,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 90,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "chrome-extension/devtools.js",
+      "line": 380,
+      "snippet": "api.devtools.inspectedWindow.eval(INJECT_BOOTSTRAP);",
+      "deduction": 10
+    }
+  ],
+  "evidence": {
+    "files_scanned": 65,
+    "files_excluded": 0,
+    "danger_hits": 1,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 5
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1456
+  },
+  "duration_ms": 1518
+}

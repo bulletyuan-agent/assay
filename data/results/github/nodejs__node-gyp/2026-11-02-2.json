@@ -1,0 +1,476 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T153400Z",
+  "target": {
+    "source": "github",
+    "id": "nodejs/node-gyp",
+    "url": "https://github.com/nodejs/node-gyp",
+    "name": "node-gyp"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:34:14.938Z",
+  "method_version": "0.4.1",
+  "tool": {
+    "assay_commit": "8b9e34983f0308969cbf677aeb06835fe0b43176",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.4.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "e020cdf1d993a35e3a74361f4e4f70598eafadbb",
+    "files_scanned": 90,
+    "candidates": 90,
+    "excluded_non_shipped": 76,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "lib/install.js",
+        "sha": "3580cdd003b210dd1a93baa759c7cddb05e8c79d"
+      },
+      {
+        "path": "package.json",
+        "sha": "a8253ce3ccfd5abd9db6f9da008516cefc386358"
+      },
+      {
+        "path": "bin/node-gyp.js",
+        "sha": "5393a5c8e1e71df9a2c9588c65b4eb40bf658b98"
+      },
+      {
+        "path": "lib/build.js",
+        "sha": "e6ec08def84556df47d67ae036796397a20b7dc8"
+      },
+      {
+        "path": "lib/clean.js",
+        "sha": "479c374f10fa2e519aef630607886978b7bc62e8"
+      },
+      {
+        "path": "lib/configure.js",
+        "sha": "ee672cfbf26c24dabe42f447ae34d1855e96c64d"
+      },
+      {
+        "path": "lib/create-config-gypi.js",
+        "sha": "d471da516909208c3fa201634a07bde0e9d9555f"
+      },
+      {
+        "path": "lib/download.js",
+        "sha": "dfaca798cf827bd172f5d6cb65990f5b0712d35f"
+      },
+      {
+        "path": "lib/find-node-directory.js",
+        "sha": "8838b81d33899790570b78d3c6633fe1a5040afa"
+      },
+      {
+        "path": "lib/find-python.js",
+        "sha": "273b5957b4992f4625a799a98454b9a65e144b7a"
+      },
+      {
+        "path": "lib/find-visualstudio.js",
+        "sha": "efb8b02a59155f65b637c69c0f6e3016399d1a90"
+      },
+      {
+        "path": "lib/list.js",
+        "sha": "36889ad4f71e27b3f97700af20bebb6680cd4926"
+      },
+      {
+        "path": "lib/log.js",
+        "sha": "36fa2487f5ce1fbcf46c3a4f883ddceb8914b5c8"
+      },
+      {
+        "path": "lib/node-gyp.js",
+        "sha": "18c786823ca6173b99e67e256310f86febe13d1c"
+      },
+      {
+        "path": "lib/process-release.js",
+        "sha": "75f3fc136a35bd557c86787e267a9e488f6c96cb"
+      },
+      {
+        "path": "lib/rebuild.js",
+        "sha": "afd08d9713be95beef74d6bafcee63f70b1f56d3"
+      },
+      {
+        "path": "lib/remove.js",
+        "sha": "55736f71d97c5b87115edb97eaa7dda3ee9a53fb"
+      },
+      {
+        "path": "lib/util.js",
+        "sha": "3f6aeeb7dcb436bd23319ade183e3f53eac3f364"
+      },
+      {
+        "path": ".release-please-manifest.json",
+        "sha": "566c6a7d12b124644e7d516fc405fe9769690b80"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha": "65a886bfc2217f308e1b44dd151bd7cd49e5ff23"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "4c211405596cb42eac87cbf2c90c2764766fbb18"
+      },
+      {
+        "path": "commitlint.config.mjs",
+        "sha": "2291173ef3bdf2e301a820ba69218ac488ed6568"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "618fb6ae9e03a83dbe33e6044f9c24ee9a12c6ca"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha": "18c8964e1f6a2e0ae2cfa86917bc371e8592cee0"
+      },
+      {
+        "path": "macOS_Catalina_acid_test.sh",
+        "sha": "e1e98941a8e4c870507f8623a12c188ed0234d49"
+      },
+      {
+        "path": "README.md",
+        "sha": "6a5a98e17cd19987d8a2bc041dc4dfcf9fd12a91"
+      },
+      {
+        "path": "release-please-config.json",
+        "sha": "94b8f8110e881a2d2866f07d4b8088d13e5e7ff7"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha": "1e168d76e3b1b0b9b0c746e1cc4bf9b317b68525"
+      },
+      {
+        "path": "update-gyp.py",
+        "sha": "a822c0485f15b386a9d41fd3a245a829bd573a1c"
+      },
+      {
+        "path": "zizmor.yml",
+        "sha": "35618cc62f0d679c1bb3297214d8753ef84439e8"
+      },
+      {
+        "path": "gyp/.release-please-manifest.json",
+        "sha": "b78500f8e2cf3c8d742ffdf50a67db207ea70005"
+      },
+      {
+        "path": "gyp/CHANGELOG.md",
+        "sha": "e590b6fdb8c8f3355a1a85e506cae0428d8d4825"
+      },
+      {
+        "path": "gyp/CODE_OF_CONDUCT.md",
+        "sha": "d724027fd9aadb9987b8213c66e78de32c31e042"
+      },
+      {
+        "path": "gyp/commitlint.config.js",
+        "sha": "c7a07938b92f772c39a789aa32ec72b0e8de1c95"
+      },
+      {
+        "path": "gyp/CONTRIBUTING.md",
+        "sha": "5237b216fb52944ed88159f3bb51143ec303f54a"
+      },
+      {
+        "path": "gyp/gyp_main.py",
+        "sha": "bf169874851463f32d3ba6d64a847ac5755c0269"
+      },
+      {
+        "path": "gyp/README.md",
+        "sha": "9f8b1e6119f44a77b85dc72054a47b69bbf293cf"
+      },
+      {
+        "path": "gyp/release-please-config.json",
+        "sha": "b6cad32a2dd0e0a317a07df0e4ad7296ce3d14f3"
+      },
+      {
+        "path": "gyp/tools/graphviz.py",
+        "sha": "65f78011b583c000964127776083cbf1e5993b74"
+      },
+      {
+        "path": "gyp/tools/pretty_gyp.py",
+        "sha": "562a73ee672aba6e6aa6a1fe479b0562666bbdd1"
+      },
+      {
+        "path": "gyp/tools/pretty_sln.py",
+        "sha": "70c91aefad46ede55d4196c8ca4a055bca75e046"
+      },
+      {
+        "path": "gyp/tools/pretty_vcproj.py",
+        "sha": "82d47a0bdd4b357b7f724dd77adee9e70790b91a"
+      },
+      {
+        "path": "gyp/pylib/gyp/__init__.py",
+        "sha": "c0a2637e94770fd2a02f1235e90311a598a50225"
+      },
+      {
+        "path": "gyp/pylib/gyp/common.py",
+        "sha": "223ce47b0032f359c4c1dabe4e4bedbe516ea7ac"
+      },
+      {
+        "path": "gyp/pylib/gyp/easy_xml.py",
+        "sha": "a5d95153eca725ff24f4ea7cc7cbeca130a766c8"
+      },
+      {
+        "path": "gyp/pylib/gyp/flock_tool.py",
+        "sha": "0754aff26fe7c0cf54f0e3df85d48bf970272315"
+      },
+      {
+        "path": "gyp/pylib/gyp/input.py",
+        "sha": "f3a5e168f2075d8c24422e0e81579d077f9070c6"
+      },
+      {
+        "path": "gyp/pylib/gyp/mac_tool.py",
+        "sha": "4c38f0586c4c2819e593d697d13f25fb1af63a4d"
+      },
+      {
+        "path": "gyp/pylib/gyp/msvs_emulation.py",
+        "sha": "84e0b4f327a5b82a3b0213ffb816e6449232a188"
+      },
+      {
+        "path": "gyp/pylib/gyp/MSVSNew.py",
+        "sha": "9149f404a5ade17e40853388ddc9d6d6ff84eedc"
+      },
+      {
+        "path": "gyp/pylib/gyp/MSVSProject.py",
+        "sha": "17bb2bbdb8a555ab205627a1213b3eac01972b65"
+      },
+      {
+        "path": "gyp/pylib/gyp/MSVSSettings.py",
+        "sha": "155fc3a1cbc693f650a8be250a490fe4ce0ccb65"
+      },
+      {
+        "path": "gyp/pylib/gyp/MSVSToolFile.py",
+        "sha": "61ca37c12d09d51f324417f314dd6efb75b72a8a"
+      },
+      {
+        "path": "gyp/pylib/gyp/MSVSUserFile.py",
+        "sha": "b93613bd1d2e4e6155b26d7ba82c2fc28109f136"
+      },
+      {
+        "path": "gyp/pylib/gyp/MSVSUtil.py",
+        "sha": "5a1b4ae3198d6c3fd5f26e63e217ac875c83a412"
+      },
+      {
+        "path": "gyp/pylib/gyp/MSVSVersion.py",
+        "sha": "02e6e7ed9209cf0de6fd8bc900fdfada94cefea9"
+      },
+      {
+        "path": "gyp/pylib/gyp/ninja_syntax.py",
+        "sha": "0e3e86c7430d0bfeff31a1272773b6acc5c2e5cd"
+      },
+      {
+        "path": "gyp/pylib/gyp/simple_copy.py",
+        "sha": "2b9100f3e1ba802a08728a0b339b943c665323b6"
+      },
+      {
+        "path": "gyp/pylib/gyp/win_tool.py",
+        "sha": "43665577bdddaff90a009cafc9d2ca6e3bd9a10b"
+      },
+      {
+        "path": "gyp/pylib/gyp/xcode_emulation.py",
+        "sha": "d13eaa9af240b755fd0e049398682456e947a985"
+      },
+      {
+        "path": "gyp/pylib/gyp/xcode_ninja.py",
+        "sha": "a133fdbe8b4f587d2c2e3f48fae38ab79cb2dcb0"
+      },
+      {
+        "path": "gyp/pylib/gyp/xcodeproj_file.py",
+        "sha": "2004518dcbce914e2929b0aaa006b5373fac8a53"
+      },
+      {
+        "path": "gyp/pylib/gyp/xml_fix.py",
+        "sha": "d7e3b5a95604f7b6929f89689a27fb74e902245d"
+      },
+      {
+        "path": "gyp/pylib/packaging/__init__.py",
+        "sha": "5fd91838316fbe50970b78eb923c98e0f02992a9"
+      },
+      {
+        "path": "gyp/pylib/packaging/_elffile.py",
+        "sha": "cb33e10556ba1b78218e3979cabfa17ebce9d72c"
+      },
+      {
+        "path": "gyp/pylib/packaging/_manylinux.py",
+        "sha": "3705d50db9193e445056ebc6270faab2319a04db"
+      },
+      {
+        "path": "gyp/pylib/packaging/_musllinux.py",
+        "sha": "86419df9d7087f3f8b6d0096f32a52c24b05e7c1"
+      },
+      {
+        "path": "gyp/pylib/packaging/_parser.py",
+        "sha": "4576981c2dd7552d8b37dedf92d0f7466857ac41"
+      },
+      {
+        "path": "gyp/pylib/packaging/_structures.py",
+        "sha": "90a6465f9682c886363eea5327dac64bf623a6ff"
+      },
+      {
+        "path": "gyp/pylib/packaging/_tokenizer.py",
+        "sha": "dd0d648d49a7c1a62d25ce5c9107aa448a8a22d1"
+      },
+      {
+        "path": "gyp/pylib/packaging/markers.py",
+        "sha": "7e4d150208eec4c8e721dad10a62985cecf9a2ed"
+      },
+      {
+        "path": "gyp/pylib/packaging/metadata.py",
+        "sha": "38fa645b4c950bacc6a3f8e3f4cb2c8570da57ed"
+      },
+      {
+        "path": "gyp/pylib/packaging/requirements.py",
+        "sha": "0c00eba331b736fbd266ecfc5d2761f3efa700e0"
+      },
+      {
+        "path": "gyp/pylib/packaging/specifiers.py",
+        "sha": "94448327ae2d445db4f1263f8c3ab44eadd3ce30"
+      },
+      {
+        "path": "gyp/pylib/packaging/tags.py",
+        "sha": "f1da2b96d39c1c0327a0f6abd8b91763bd325e35"
+      },
+      {
+        "path": "gyp/pylib/packaging/utils.py",
+        "sha": "c2c2f75aa806282d322c76c2117c0f0fdfb09d25"
+      },
+      {
+        "path": "gyp/pylib/packaging/version.py",
+        "sha": "5faab9bd0dcf28847960162b2b4f13a8a556ef20"
+      },
+      {
+        "path": "gyp/tools/emacs/run-unit-tests.sh",
+        "sha": "6e62b9b28cbce21ffa0276d96d51ac50daa5bdae"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/analyzer.py",
+        "sha": "420c4e49ebc19aaaf718704cb973fd19913f2472"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/android.py",
+        "sha": "5d5cae2afbf668b64aed7cae1d109c9de8452fb9"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/cmake.py",
+        "sha": "1028272a41c255ee826d008e882eddd629cccafc"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/compile_commands_json.py",
+        "sha": "1361aeca48d0cddbf71672fe802aac235c986a55"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/dump_dependency_json.py",
+        "sha": "c919674024e6901f00b823d10d66f259ede3fff9"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/eclipse.py",
+        "sha": "685cd08c964b917530d89bd3123832f850c0e339"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/gypd.py",
+        "sha": "89af24a201b101d7386ebe30a115bd59ce9ccc89"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/gypsh.py",
+        "sha": "72d22ff32b92d728ad421ec10fd6c24db598f9c1"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/make.py",
+        "sha": "16b6f4e80b119a0eca37db086c2245980a7c357a"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/ninja.py",
+        "sha": "3ceaf470cec2036e0f3180376bf4b8b003108508"
+      },
+      {
+        "path": "gyp/pylib/gyp/generator/xcode.py",
+        "sha": "db4b45d1a04d25ea37fb143bdda791091871f3a6"
+      }
+    ],
+    "repo_pushed_at": "2026-10-28T14:03:20Z",
+    "license": "MIT"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 91,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 70,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "dangerous_patterns",
+      "rule": "subprocess-shell",
+      "severe": false,
+      "file": "gyp/pylib/gyp/common.py",
+      "line": 448,
+      "snippet": "stdout = subprocess.run(",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "gyp/pylib/gyp/input.py",
+      "line": 176,
+      "snippet": "Note that this is slower than eval() is.",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "subprocess-shell",
+      "severe": false,
+      "file": "gyp/pylib/gyp/msvs_emulation.py",
+      "line": 1194,
+      "snippet": "popen = subprocess.Popen(",
+      "deduction": 10
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "subprocess-shell",
+      "severe": false,
+      "file": "gyp/pylib/gyp/win_tool.py",
+      "line": 250,
+      "snippet": "popen = subprocess.Popen(",
+      "deduction": 0
+    },
+    {
+      "dim": "dangerous_patterns",
+      "rule": "eval",
+      "severe": false,
+      "file": "gyp/pylib/gyp/generator/gypd.py",
+      "line": 26,
+      "snippet": "run \"pprint.pprint(eval(open('source.gyp').read()))\", which will still strip",
+      "deduction": 0
+    }
+  ],
+  "evidence": {
+    "files_scanned": 90,
+    "files_excluded": 0,
+    "danger_hits": 5,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 5
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1444
+  },
+  "duration_ms": 1557
+}

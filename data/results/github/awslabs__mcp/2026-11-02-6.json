@@ -1,0 +1,1712 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T153237Z",
+  "target": {
+    "source": "github",
+    "id": "awslabs/mcp",
+    "url": "https://github.com/awslabs/mcp",
+    "name": "mcp"
+  },
+  "type": "mcp",
+  "evaluated_at": "2026-11-02T15:33:33.063Z",
+  "method_version": "0.4.1",
+  "tool": {
+    "assay_commit": "8b9e34983f0308969cbf677aeb06835fe0b43176",
+    "dirty": false,
+    "node": "v22.21.1",
+    "method_version": "0.4.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "dc8221efe04220a5b6a765dabda6f0db743eb6bd",
+    "files_scanned": 400,
+    "candidates": 1684,
+    "excluded_non_shipped": 1683,
+    "coverage": 0.24,
+    "truncated": true,
+    "scanned_paths": [
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/amazon-aurora-dsql-skill/SKILL.md",
+        "sha": "12cbcd477f30a7103faa65ed5adf972f110a0cb6"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/aurora-dsql-skill/SKILL.md",
+        "sha": "5c855149f408395047422e443677ad483bdeda17"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/aws-dsql-skill/SKILL.md",
+        "sha": "4762629bea7d2f56b13a52ca8fb37d0e24853727"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/distributed-postgres-skill/SKILL.md",
+        "sha": "3a7a0ee4d797f695e3f7d41687d2331ce1f9bd16"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/distributed-sql-skill/SKILL.md",
+        "sha": "c7b283a57cd27f6d9ef285e02c86210cd90fde11"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/dsql-skill/SKILL.md",
+        "sha": "26dfbe46bf5d9db8910a22561d45377e8dc2ee9c"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/skills/agentcore-investigation/SKILL.md",
+        "sha": "a5f2f5402f6ef2651fdd487a225783983ae9be61"
+      },
+      {
+        "path": "src/ecs-mcp-server/server.json",
+        "sha": "a433c3a7bbd420827d3109f9d8ba5c02cc4bdd87"
+      },
+      {
+        "path": "docusaurus/i18n/ja/docusaurus-plugin-content-docs/current/installation.md",
+        "sha": "ee3644f02a6b18ec10a185181a94c53d4c295e41"
+      },
+      {
+        "path": "scripts/migrate-mcp-v2.py",
+        "sha": "4368aed7e3b0d7042443b6a1d26fd0afafa0d415"
+      },
+      {
+        "path": "scripts/README.md",
+        "sha": "aa325a3e6a1a86c4eb570896e3ce2dc1a862bcc9"
+      },
+      {
+        "path": "scripts/verify_awslabs_init.py",
+        "sha": "f3be7f63a28b8deed378789edaad447c6289b97d"
+      },
+      {
+        "path": "scripts/verify_package_name.py",
+        "sha": "79c1c29bc75395d0c5b24f1ac35a0ee689053b2b"
+      },
+      {
+        "path": "scripts/verify_tool_names.py",
+        "sha": "e5a17fb8b7b24843ad14edb8961f7b9662183395"
+      },
+      {
+        "path": "scripts/verify-mcp-v2-locks.py",
+        "sha": "a9193ab6b16108c100e34f7ca2e1c1eb41a172f3"
+      },
+      {
+        "path": "src/amazon-bedrock-agentcore-mcp-server/awslabs/amazon_bedrock_agentcore_mcp_server/server.py",
+        "sha": "e2bcba70cb0cfeff6e9159ab6e84052ffc42de0b"
+      },
+      {
+        "path": "src/amazon-kendra-index-mcp-server/awslabs/amazon_kendra_index_mcp_server/server.py",
+        "sha": "5ce9229bedcab1df48335e9f31a04507210ff2d9"
+      },
+      {
+        "path": "src/amazon-keyspaces-mcp-server/awslabs/amazon_keyspaces_mcp_server/server.py",
+        "sha": "dd1d57e684334eef8479844a4fb4776582af3b05"
+      },
+      {
+        "path": "src/amazon-mq-mcp-server/awslabs/amazon_mq_mcp_server/server.py",
+        "sha": "ffc9087bde7e2bcb2397fd1b70574d07d4568239"
+      },
+      {
+        "path": "src/amazon-neptune-mcp-server/awslabs/amazon_neptune_mcp_server/server.py",
+        "sha": "83744fcb96f3a243c4daa6abed495732b236f0f2"
+      },
+      {
+        "path": "src/amazon-qbusiness-anonymous-mcp-server/awslabs/amazon_qbusiness_anonymous_mcp_server/server.py",
+        "sha": "9e0b421168da77444e283d4c0c681a22be14d1e1"
+      },
+      {
+        "path": "src/amazon-qindex-mcp-server/awslabs/amazon_qindex_mcp_server/server.py",
+        "sha": "1257bce2926e6ac062e8fac39cedaa1e94d41478"
+      },
+      {
+        "path": "src/amazon-sns-sqs-mcp-server/awslabs/amazon_sns_sqs_mcp_server/server.py",
+        "sha": "2af2c04721385bc791ad9ed0ad328d88a6c6490e"
+      },
+      {
+        "path": "src/amazon-translate-mcp-server/awslabs/amazon_translate_mcp_server/server.py",
+        "sha": "c1e8c77dd93242e1aec713945c82f5f1237a1c31"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/awslabs/aurora_dsql_mcp_server/server.py",
+        "sha": "07488b1ca480d5a68a79d68de250d6c23085c8db"
+      },
+      {
+        "path": "src/aws-api-mcp-server/awslabs/aws_api_mcp_server/server.py",
+        "sha": "3deaba3f86506a700ea3b7ef0c5c5f8b51a967ac"
+      },
+      {
+        "path": "src/aws-appsync-mcp-server/awslabs/aws_appsync_mcp_server/server.py",
+        "sha": "e846be4be57c7cb80daace0d525b5dfae949ed01"
+      },
+      {
+        "path": "src/aws-bedrock-custom-model-import-mcp-server/awslabs/aws_bedrock_custom_model_import_mcp_server/server.py",
+        "sha": "f58fd4a3f198c8180fe323d03990c40b9836057f"
+      },
+      {
+        "path": "src/aws-dataprocessing-mcp-server/awslabs/aws_dataprocessing_mcp_server/server.py",
+        "sha": "08c66c331ccf79a7f0944559cf3e03d81eee6259"
+      },
+      {
+        "path": "src/aws-documentation-mcp-server/awslabs/aws_documentation_mcp_server/server.py",
+        "sha": "582ecd1595318a20d92aaf07e653ba9b7841ede9"
+      },
+      {
+        "path": "src/aws-for-sap-management-mcp-server/awslabs/aws_for_sap_management_mcp_server/server.py",
+        "sha": "0606af3257049b782a760fbd383eb3bb37fdaebb"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/awslabs/aws_healthomics_mcp_server/server.py",
+        "sha": "970b44f3be813f680cc65a426a35a442018356c6"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/integration/deploy/cli.py",
+        "sha": "87d722334af21d12ae9af2305a77bbf28625bea8"
+      },
+      {
+        "path": "src/aws-iac-mcp-server/awslabs/aws_iac_mcp_server/server.py",
+        "sha": "454cda27fb07997f905f1b4c7089ccc554108fee"
+      },
+      {
+        "path": "src/aws-iot-sitewise-mcp-server/awslabs/aws_iot_sitewise_mcp_server/server.py",
+        "sha": "ee8a27437d2f3c0610bec33ee5d1badd169e96fb"
+      },
+      {
+        "path": "src/aws-location-mcp-server/awslabs/aws_location_server/server.py",
+        "sha": "cf8ac77e4ce368abab4f78ac6a0c95af9687d2f0"
+      },
+      {
+        "path": "src/aws-network-mcp-server/awslabs/aws_network_mcp_server/server.py",
+        "sha": "bfa4bcf3aa2e33c7318b231122385309344e61c3"
+      },
+      {
+        "path": "src/aws-pricing-mcp-server/awslabs/aws_pricing_mcp_server/server.py",
+        "sha": "d30048293a1ca9914fba09659f6ce1411cbc4cce"
+      },
+      {
+        "path": "src/aws-serverless-mcp-server/awslabs/aws_serverless_mcp_server/server.py",
+        "sha": "f3c998c3a8890f43fec751081c8466ae3f55f25f"
+      },
+      {
+        "path": "src/aws-support-mcp-server/awslabs/aws_support_mcp_server/server.py",
+        "sha": "bcdb5cacddd2f6787960dd9730d4328f7e991495"
+      },
+      {
+        "path": "src/aws-transform-mcp-server/awslabs/aws_transform_mcp_server/server.py",
+        "sha": "045252770f992470b8c2a7bdeafc3cf64eb35531"
+      },
+      {
+        "path": "src/bedrock-kb-retrieval-mcp-server/awslabs/bedrock_kb_retrieval_mcp_server/server.py",
+        "sha": "7f495d59e09a4f3866112455f022f065864f54a5"
+      },
+      {
+        "path": "src/billing-cost-management-mcp-server/awslabs/billing_cost_management_mcp_server/server.py",
+        "sha": "98a6d3ec51571eb6a2dbb5c200a7e24c33c88281"
+      },
+      {
+        "path": "src/ccapi-mcp-server/awslabs/ccapi_mcp_server/server.py",
+        "sha": "41a0cad0cb66f16b05ce312ec00ed0d99b893bb5"
+      },
+      {
+        "path": "src/cloudtrail-mcp-server/awslabs/cloudtrail_mcp_server/server.py",
+        "sha": "484637d893e4a7f1d4b7cdcddf68268a2ce8d649"
+      },
+      {
+        "path": "src/cloudtrail-mcp-server/awslabs/cloudtrail_mcp_server/tools.py",
+        "sha": "a830f3174df31fb6da51322c9b54f5b5e3cf7df6"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/awslabs/cloudwatch_applicationsignals_mcp_server/server.py",
+        "sha": "aaf4e6930a78b77eb8f304353a74c9bd433f34d3"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/awslabs/cloudwatch_mcp_server/server.py",
+        "sha": "d0e18f9228a0c864846c7898bc382d0f381f2bee"
+      },
+      {
+        "path": "src/db2-mcp-server/awslabs/db2_mcp_server/server.py",
+        "sha": "ccf45dd95909de3432172aacf05a3ffb929a83b5"
+      },
+      {
+        "path": "src/document-loader-mcp-server/awslabs/document_loader_mcp_server/server.py",
+        "sha": "de3e1e2d75de75006b89f43ca8c26ed74c28d564"
+      },
+      {
+        "path": "src/documentdb-mcp-server/awslabs/documentdb_mcp_server/server.py",
+        "sha": "23122c8e54d86f311eb1ed589330271fab33cbbc"
+      },
+      {
+        "path": "src/dynamodb-mcp-server/awslabs/dynamodb_mcp_server/server.py",
+        "sha": "0d8ae5a67db4c35d23f77ea1ff4c14a9a2453df2"
+      },
+      {
+        "path": "src/ecs-mcp-server/awslabs/ecs_mcp_server/main.py",
+        "sha": "a6103f0e3689055bdf46be63ea850be9e580584b"
+      },
+      {
+        "path": "src/eks-mcp-server/awslabs/eks_mcp_server/server.py",
+        "sha": "3407ffa4ccee187e19c0c35c0bbe0d91309a172d"
+      },
+      {
+        "path": "src/elasticache-mcp-server/awslabs/elasticache_mcp_server/main.py",
+        "sha": "60cd2737414fe18fc19f1ff37aa547181dafade0"
+      },
+      {
+        "path": "src/finch-mcp-server/awslabs/finch_mcp_server/server.py",
+        "sha": "20c99ac960dc0b66370b12c9bdb03e3e28b67d4d"
+      },
+      {
+        "path": "src/healthimaging-mcp-server/awslabs/healthimaging_mcp_server/main.py",
+        "sha": "617a0e64f34045101de596bf39c4020bfc330ca1"
+      },
+      {
+        "path": "src/healthimaging-mcp-server/awslabs/healthimaging_mcp_server/server.py",
+        "sha": "df672ad6880bb408b3d0d595e84317634d76d07c"
+      },
+      {
+        "path": "src/healthlake-mcp-server/awslabs/healthlake_mcp_server/main.py",
+        "sha": "01c283af8a67372031bb63c59372dcd2f671a59f"
+      },
+      {
+        "path": "src/healthlake-mcp-server/awslabs/healthlake_mcp_server/server.py",
+        "sha": "b323d9aef5b88abe34cc9de38dabea2b429215c9"
+      },
+      {
+        "path": "src/iam-mcp-server/awslabs/iam_mcp_server/server.py",
+        "sha": "153ebad406eedea5f643a85add5eece399d4d032"
+      },
+      {
+        "path": "src/lambda-tool-mcp-server/awslabs/lambda_tool_mcp_server/server.py",
+        "sha": "392457e97e19392c48add7706c3d35a22dd3e731"
+      },
+      {
+        "path": "src/memcached-mcp-server/awslabs/memcached_mcp_server/main.py",
+        "sha": "9dc21898f9e5844e5a04e8c8987ee8857d739f36"
+      },
+      {
+        "path": "src/mssql-mcp-server/awslabs/mssql_mcp_server/server.py",
+        "sha": "49972e43260dc6c0e39ddf9b5aad79c479db86cd"
+      },
+      {
+        "path": "src/mysql-mcp-server/awslabs/mysql_mcp_server/server.py",
+        "sha": "95cc37f42cdab82d1c44bcc0962f53e3ddeca8ec"
+      },
+      {
+        "path": "src/openapi-mcp-server/awslabs/openapi_mcp_server/server.py",
+        "sha": "8a3023fb1f9fcd3dd838e3a5d493fbd20bf0a046"
+      },
+      {
+        "path": "src/oracle-mcp-server/awslabs/oracle_mcp_server/server.py",
+        "sha": "e5baf60155ab6c69d27b374ca3a241afb754c97b"
+      },
+      {
+        "path": "src/postgres-mcp-server/awslabs/postgres_mcp_server/server.py",
+        "sha": "b63b2e6c835ac1f9a4b62e49f23108d55ec171de"
+      },
+      {
+        "path": "src/prometheus-mcp-server/awslabs/prometheus_mcp_server/server.py",
+        "sha": "6f7c7ea17cd18dee66435673f80e28cbd74a75c8"
+      },
+      {
+        "path": "src/redshift-mcp-server/awslabs/redshift_mcp_server/server.py",
+        "sha": "5133a09e02e49f59ab7d296c3cee421ba1b4ffe9"
+      },
+      {
+        "path": "src/roda-mcp-server/awslabs/roda_mcp_server/server.py",
+        "sha": "0c843019085d27c110ad2afe6557c1c8f6c778aa"
+      },
+      {
+        "path": "src/s3-tables-mcp-server/awslabs/s3_tables_mcp_server/server.py",
+        "sha": "533f0bcbce4d2f6342cc7efa07a7d31abd292ebd"
+      },
+      {
+        "path": "src/sagemaker-ai-mcp-server/awslabs/sagemaker_ai_mcp_server/server.py",
+        "sha": "1effcde5436e0c841dfe4be78dd645b494468b0d"
+      },
+      {
+        "path": "src/security-agent-mcp-server/awslabs/security_agent_mcp_server/server.py",
+        "sha": "dcd7bb1c0534cfa8638208dafee30b97e0a8e5da"
+      },
+      {
+        "path": "src/stepfunctions-tool-mcp-server/awslabs/stepfunctions_tool_mcp_server/server.py",
+        "sha": "617214ce669729c17fa107b6904773e4347e764e"
+      },
+      {
+        "path": "src/timestream-for-influxdb-mcp-server/awslabs/timestream_for_influxdb_mcp_server/server.py",
+        "sha": "1c6936af37ef35a5875c13f94af9a2fddeb5ddeb"
+      },
+      {
+        "path": "src/valkey-mcp-server/awslabs/valkey_mcp_server/main.py",
+        "sha": "0ca7f32024cefd36759c7a4efb3f1c4d6ab82376"
+      },
+      {
+        "path": "src/well-architected-security-mcp-server/awslabs/well_architected_security_mcp_server/server.py",
+        "sha": "d351e62bae81b2654e7a27afaea227cd034fd6e3"
+      },
+      {
+        "path": "docusaurus/package.json",
+        "sha": "2871470a259cd4079ab8291e1284b5824d35ad40"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha": "9dd0ae5527d96c99216f0c21057d64b9f3763b01"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha": "5b627cfa60b5313da2c7df81aab2340225c2329f"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha": "3a7d609a01f58599da1194699a29a5f0bd241990"
+      },
+      {
+        "path": "DESIGN_GUIDELINES.md",
+        "sha": "69de9fffe223bc74a6b63c7b74f0fb6baaf9f1ee"
+      },
+      {
+        "path": "DEVELOPER_GUIDE.md",
+        "sha": "ba5c095f18909acc7837faaec6cb419be1523307"
+      },
+      {
+        "path": "src/amazon-bedrock-agentcore-mcp-server/CHANGELOG.md",
+        "sha": "3e606685c2244c1da5086d95bb017f3fa27c1d19"
+      },
+      {
+        "path": "src/amazon-bedrock-agentcore-mcp-server/docker-healthcheck.sh",
+        "sha": "f9421a07a36c9dafc3b646adad48786e07f6216d"
+      },
+      {
+        "path": "src/amazon-bedrock-agentcore-mcp-server/README.md",
+        "sha": "6fc2c6d65575399bfd63495c13733ff3ae22b809"
+      },
+      {
+        "path": "src/amazon-bedrock-agentcore-mcp-server/SECURITY.md",
+        "sha": "7972ed9cd4a61a0437264e313e05b48978eaa14c"
+      },
+      {
+        "path": "src/amazon-bedrock-agentcore-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/amazon-kendra-index-mcp-server/CHANGELOG.md",
+        "sha": "872299ec3ccfc63c7585dbdbf7ca020a25bac6ed"
+      },
+      {
+        "path": "src/amazon-kendra-index-mcp-server/docker-healthcheck.sh",
+        "sha": "499ab9209fcfe22ba66a92ea1fde10fe447189d6"
+      },
+      {
+        "path": "src/amazon-kendra-index-mcp-server/README.md",
+        "sha": "5fcc0fda8cf0fb1542f9b510c22fccfdd22e66c3"
+      },
+      {
+        "path": "src/amazon-kendra-index-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/amazon-keyspaces-mcp-server/CHANGELOG.md",
+        "sha": "566357118b4d1dccd6956a34ff282ba9e49ccf9a"
+      },
+      {
+        "path": "src/amazon-keyspaces-mcp-server/README.md",
+        "sha": "8cb7971843ddb1b7fc1c58a1490698456f2eda8d"
+      },
+      {
+        "path": "src/amazon-keyspaces-mcp-server/run_tests.sh",
+        "sha": "55e2fc53dfff139a89953deac7667e455c1cdf70"
+      },
+      {
+        "path": "src/amazon-mq-mcp-server/CHANGELOG.md",
+        "sha": "1c5bf3b6224d28bc6006b82101975d69feca2626"
+      },
+      {
+        "path": "src/amazon-mq-mcp-server/docker-healthcheck.sh",
+        "sha": "83b1c5406302989f5fc0beb8982871c913239357"
+      },
+      {
+        "path": "src/amazon-mq-mcp-server/README.md",
+        "sha": "7ca8b57f345336749d2cc612d20105b9d98a3858"
+      },
+      {
+        "path": "src/amazon-mq-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/amazon-neptune-mcp-server/CHANGELOG.md",
+        "sha": "872299ec3ccfc63c7585dbdbf7ca020a25bac6ed"
+      },
+      {
+        "path": "src/amazon-neptune-mcp-server/docker-healthcheck.sh",
+        "sha": "7db77de8683105f8742244a19d46916f1082498a"
+      },
+      {
+        "path": "src/amazon-neptune-mcp-server/README.md",
+        "sha": "1822524f39efd1f7ff75990737854ba88ae25d54"
+      },
+      {
+        "path": "src/amazon-neptune-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/amazon-qbusiness-anonymous-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/amazon-qbusiness-anonymous-mcp-server/docker-healthcheck.sh",
+        "sha": "41187827011ac162c63319b00395af4ad810f856"
+      },
+      {
+        "path": "src/amazon-qbusiness-anonymous-mcp-server/README.md",
+        "sha": "98f3b39a1ac110c869f8e8ea11eae762aa9de9ca"
+      },
+      {
+        "path": "src/amazon-qbusiness-anonymous-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/amazon-qindex-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/amazon-qindex-mcp-server/README.md",
+        "sha": "631ad0d5b704b0bf11c14cbcdb9afb04cd17922c"
+      },
+      {
+        "path": "src/amazon-sns-sqs-mcp-server/CHANGELOG.md",
+        "sha": "5eb77eb02457e532902e2a0524497ffa85f67604"
+      },
+      {
+        "path": "src/amazon-sns-sqs-mcp-server/docker-healthcheck.sh",
+        "sha": "2f904ffc3e5930e395c223bd598c642b43ffc466"
+      },
+      {
+        "path": "src/amazon-sns-sqs-mcp-server/print_tools.py",
+        "sha": "bdb4424388de440559d8e6a07ffd7fafa00f24ff"
+      },
+      {
+        "path": "src/amazon-sns-sqs-mcp-server/README.md",
+        "sha": "9831548404be9b5b6ef89d4a38fa9cd0d9326c97"
+      },
+      {
+        "path": "src/amazon-sns-sqs-mcp-server/run_tests.sh",
+        "sha": "930b66bb845db51091de937639a2e73df7def370"
+      },
+      {
+        "path": "src/amazon-sns-sqs-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/amazon-translate-mcp-server/CHANGELOG.md",
+        "sha": "2c57d642f30d67d3887884891df20274f2a83d4b"
+      },
+      {
+        "path": "src/amazon-translate-mcp-server/docker-healthcheck.sh",
+        "sha": "4d028cf7c170e2437ed0ab0613051067737147c5"
+      },
+      {
+        "path": "src/amazon-translate-mcp-server/README.md",
+        "sha": "1f0de5db9c4b02a41a116aaad19620b1391876b4"
+      },
+      {
+        "path": "src/amazon-translate-mcp-server/start-server.sh",
+        "sha": "0d08213e7ca08b2af5612c56f4abf5f6bdc6ca77"
+      },
+      {
+        "path": "src/amazon-translate-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/amazon-translate-mcp-server/WORKFLOW_FEATURES.md",
+        "sha": "00f10c9f88f483d562c8d10acfc7b61ca09329c2"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/.pre-commit-config.yaml",
+        "sha": "8c35890b311730d27f080f456033b74bbaced1a8"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/CHANGELOG.md",
+        "sha": "fbbf94ab801f74cfb18b80ad1e120c3ce3de6a15"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/docker-healthcheck.sh",
+        "sha": "6b5559ed09ed2145359ad7e2b1c481f18535be9c"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/README.md",
+        "sha": "14200077718d26fefedd70ab76880fbef5f6f61f"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/test_tools.md",
+        "sha": "0c33939795de636e3be39daefea61ede0d1d97df"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-api-mcp-server/CHANGELOG.md",
+        "sha": "5fe79a433ad34c41ab97c759f84fe0b55702d540"
+      },
+      {
+        "path": "src/aws-api-mcp-server/CONTRIBUTING.md",
+        "sha": "d43f85313528eb479c9df9f4eacbc768a5650ff3"
+      },
+      {
+        "path": "src/aws-api-mcp-server/DEPLOYMENT.md",
+        "sha": "2b2520cf33bb1fe85e34f5a087af74a7b3c2316a"
+      },
+      {
+        "path": "src/aws-api-mcp-server/docker-healthcheck.sh",
+        "sha": "63c5a981fdbc24cac549e4ba2c5a14a9aaea5c64"
+      },
+      {
+        "path": "src/aws-api-mcp-server/MIGRATION.md",
+        "sha": "f5bb4cb9af353c64f10f6d56bd63de45aa14cb49"
+      },
+      {
+        "path": "src/aws-api-mcp-server/README.md",
+        "sha": "f7422d00b74c30ad2f416f0f6ed5f3d33b908517"
+      },
+      {
+        "path": "src/aws-api-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-appsync-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/aws-appsync-mcp-server/docker-healthcheck.sh",
+        "sha": "963ba3f69c7ce318292af26ccdfa3ea34df2309f"
+      },
+      {
+        "path": "src/aws-appsync-mcp-server/README.md",
+        "sha": "d9a609b02c5da785b4b4a56c6fed6417d0ff4760"
+      },
+      {
+        "path": "src/aws-appsync-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-bedrock-custom-model-import-mcp-server/CHANGELOG.md",
+        "sha": "9b15416cfc4825d66577ace7f803338463d7de93"
+      },
+      {
+        "path": "src/aws-bedrock-custom-model-import-mcp-server/docker-healthcheck.sh",
+        "sha": "93b524506c857df39ee8dce813ea4e7ea79d1b07"
+      },
+      {
+        "path": "src/aws-bedrock-custom-model-import-mcp-server/README.md",
+        "sha": "08df9a11c2cf284089e6a0f87bad28d0d2e70840"
+      },
+      {
+        "path": "src/aws-bedrock-custom-model-import-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-dataprocessing-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/aws-dataprocessing-mcp-server/docker-healthcheck.sh",
+        "sha": "82e6de656b6225c850e4558dffef4f2493dc9a1d"
+      },
+      {
+        "path": "src/aws-dataprocessing-mcp-server/README.md",
+        "sha": "d95301da13b11b3016cc8ee6fa2375fe5fcacc68"
+      },
+      {
+        "path": "src/aws-dataprocessing-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-documentation-mcp-server/CHANGELOG.md",
+        "sha": "b425685a071232d2cb058038498e5532540fb62b"
+      },
+      {
+        "path": "src/aws-documentation-mcp-server/docker-healthcheck.sh",
+        "sha": "eea74a84f9bfcd9c1926481749615d61a39ec353"
+      },
+      {
+        "path": "src/aws-documentation-mcp-server/README.md",
+        "sha": "676f436f0a5de127d78a040f903062a2075e2d02"
+      },
+      {
+        "path": "src/aws-documentation-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-for-sap-management-mcp-server/awslabs/aws_for_sap_management_mcp_server/ssm_sap_applications/tools.py",
+        "sha": "bdb05cb0b2a033572bbc0b1dd7cf14ffc44c3d50"
+      },
+      {
+        "path": "src/aws-for-sap-management-mcp-server/awslabs/aws_for_sap_management_mcp_server/ssm_sap_config_checks/tools.py",
+        "sha": "4d59d2bbe74fc42490fbdd1b02f1a8ce6e856055"
+      },
+      {
+        "path": "src/aws-for-sap-management-mcp-server/awslabs/aws_for_sap_management_mcp_server/ssm_sap_health/tools.py",
+        "sha": "ec9fa40dc6e77960a468c73861f9d02c66dffef9"
+      },
+      {
+        "path": "src/aws-for-sap-management-mcp-server/awslabs/aws_for_sap_management_mcp_server/ssm_sap_scheduling/tools.py",
+        "sha": "4f73165b736f4f0d73aac117637302bc564ba844"
+      },
+      {
+        "path": "src/aws-for-sap-management-mcp-server/CHANGELOG.md",
+        "sha": "907a6f6cf348c3ce9953e99e78a2b5d5683a77ac"
+      },
+      {
+        "path": "src/aws-for-sap-management-mcp-server/docker-healthcheck.sh",
+        "sha": "e1d09240ac261973c6311972c75181ebff3015a0"
+      },
+      {
+        "path": "src/aws-for-sap-management-mcp-server/README.md",
+        "sha": "c18e0de299deba17a70b3c273030e0edf14ca7f5"
+      },
+      {
+        "path": "src/aws-for-sap-management-mcp-server/uv-requirements.txt",
+        "sha": "5e1c51179999432aa1cb61500b128ae71b4839d6"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/CHANGELOG.md",
+        "sha": "4e1ba6ddff41bf665e34ba6912bc8b8520f2f51b"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/docker-healthcheck.sh",
+        "sha": "2e76e8899ee8915fb4421064483fb9c40d4df78c"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/MCP_INSPECTOR_SETUP.md",
+        "sha": "57b06171a728c79d0cce44e76843fba8bc920045"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/README.md",
+        "sha": "ab0b0b889e3aeabc2fdc8f52a7ff1e73f6826b34"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-iac-mcp-server/CHANGELOG.md",
+        "sha": "ca4a9b50f0941e01101a8be5049ab07a8a7ea430"
+      },
+      {
+        "path": "src/aws-iac-mcp-server/docker-healthcheck.sh",
+        "sha": "22feede5824350fa53cf8fc685ac80627f3cef03"
+      },
+      {
+        "path": "src/aws-iac-mcp-server/README.md",
+        "sha": "3dd6a4e72657bece0d6555bbadac34ae03f42779"
+      },
+      {
+        "path": "src/aws-iac-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-iot-sitewise-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/aws-iot-sitewise-mcp-server/DEVELOPMENT.md",
+        "sha": "39351a9d0718b23bed12c48763270e10386c1cf9"
+      },
+      {
+        "path": "src/aws-iot-sitewise-mcp-server/docker-healthcheck.sh",
+        "sha": "036416386ac300b74db2a21f1760a344151eccee"
+      },
+      {
+        "path": "src/aws-iot-sitewise-mcp-server/README.md",
+        "sha": "875fdce71500c22001d836a9fe67a6bf015a84d1"
+      },
+      {
+        "path": "src/aws-iot-sitewise-mcp-server/run_server.py",
+        "sha": "a6c4f3ffd06356cdcc88c97a926275bec6519a1c"
+      },
+      {
+        "path": "src/aws-iot-sitewise-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-knowledge-mcp-server/README.md",
+        "sha": "b84c9a541baf1eda1dcf60fa5ab780a4276beacf"
+      },
+      {
+        "path": "src/aws-location-mcp-server/CHANGELOG.md",
+        "sha": "67f4e4be6696d11efaa10f0ae94961bfe19e0196"
+      },
+      {
+        "path": "src/aws-location-mcp-server/docker-healthcheck.sh",
+        "sha": "1cd5d622d1e79be107f284774935c960ed23bc59"
+      },
+      {
+        "path": "src/aws-location-mcp-server/README.md",
+        "sha": "a53ba95ffceb360b8a8aa127f45854600dbc64e9"
+      },
+      {
+        "path": "src/aws-location-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-network-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/aws-network-mcp-server/docker-healthcheck.sh",
+        "sha": "93b524506c857df39ee8dce813ea4e7ea79d1b07"
+      },
+      {
+        "path": "src/aws-network-mcp-server/README.md",
+        "sha": "bbdeceb0d6e85d402575d37312633a3d6841786c"
+      },
+      {
+        "path": "src/aws-network-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-pricing-mcp-server/CHANGELOG.md",
+        "sha": "872299ec3ccfc63c7585dbdbf7ca020a25bac6ed"
+      },
+      {
+        "path": "src/aws-pricing-mcp-server/docker-healthcheck.sh",
+        "sha": "913a27b80f75baa031fb3d8ef5fc127836fbc7a6"
+      },
+      {
+        "path": "src/aws-pricing-mcp-server/README.md",
+        "sha": "3a83ad72bc0b4bce3fc0db03c81b8051f49e06ad"
+      },
+      {
+        "path": "src/aws-pricing-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/aws-serverless-mcp-server/.pre-commit.config.yaml",
+        "sha": "b52823cbdb1fec3b9dac734faf626de0097bf186"
+      },
+      {
+        "path": "src/aws-serverless-mcp-server/README.md",
+        "sha": "8ad8e4ef016d5724573db45fac24a8e34a15a2cf"
+      },
+      {
+        "path": "src/aws-support-mcp-server/README.md",
+        "sha": "bd78a79cf8bf34e1bf4047260bd1d523b95fc647"
+      },
+      {
+        "path": "src/aws-transform-mcp-server/CHANGELOG.md",
+        "sha": "9cee59f69800c8fe05fa1bfd044ef9961c681931"
+      },
+      {
+        "path": "src/aws-transform-mcp-server/README.md",
+        "sha": "9725a6a0befca04ab019214f8406193106309f08"
+      },
+      {
+        "path": "src/aws-transform-mcp-server/TROUBLESHOOTING.md",
+        "sha": "f4abfa04de47b6aebbc6327953af8ffb5044cfca"
+      },
+      {
+        "path": "src/bedrock-kb-retrieval-mcp-server/CHANGELOG.md",
+        "sha": "872299ec3ccfc63c7585dbdbf7ca020a25bac6ed"
+      },
+      {
+        "path": "src/bedrock-kb-retrieval-mcp-server/docker-healthcheck.sh",
+        "sha": "f23dc853deba6c3bed9b46328e1f63404b7f3809"
+      },
+      {
+        "path": "src/bedrock-kb-retrieval-mcp-server/README.md",
+        "sha": "627002abfecfd3d47b006f704a87f9679ab1234f"
+      },
+      {
+        "path": "src/bedrock-kb-retrieval-mcp-server/run_tests.sh",
+        "sha": "d9dfd715ff9ff6200bb9c7bd71269ee9696fb1ec"
+      },
+      {
+        "path": "src/bedrock-kb-retrieval-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/billing-cost-management-mcp-server/__init__.py",
+        "sha": "b8eecd573e3c613bb63557f6f117f9f875bd7af5"
+      },
+      {
+        "path": "src/billing-cost-management-mcp-server/CHANGELOG.md",
+        "sha": "eda17e4aed7493cb0c679b3ef23199aa42b9f4a3"
+      },
+      {
+        "path": "src/billing-cost-management-mcp-server/docker-healthcheck.sh",
+        "sha": "5837656c0cf09da0774a14ffac535ec764646975"
+      },
+      {
+        "path": "src/billing-cost-management-mcp-server/README.md",
+        "sha": "551e7591877981085ccd777de1e365ce2b298014"
+      },
+      {
+        "path": "src/billing-cost-management-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/ccapi-mcp-server/CHANGELOG.md",
+        "sha": "5a41cde7f61c8d0e43b762fa9357881e4eb7001d"
+      },
+      {
+        "path": "src/ccapi-mcp-server/docker-healthcheck.sh",
+        "sha": "23e903810d009f0c8a8a54d2e8577e5fe5cccb21"
+      },
+      {
+        "path": "src/ccapi-mcp-server/README.md",
+        "sha": "587b961cae115d590074579b093494afaa6bed6c"
+      },
+      {
+        "path": "src/ccapi-mcp-server/run_tests.sh",
+        "sha": "86c1d25beb3498d2796a9457618bd1cb6d7d5b90"
+      },
+      {
+        "path": "src/ccapi-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/cloudtrail-mcp-server/CHANGELOG.md",
+        "sha": "7a7db2f9e19b9476cb1dd0c6918569af02807dfb"
+      },
+      {
+        "path": "src/cloudtrail-mcp-server/docker-healthcheck.sh",
+        "sha": "e74eb278a613873d3ad04e5229e4c81471316a53"
+      },
+      {
+        "path": "src/cloudtrail-mcp-server/README.md",
+        "sha": "40759b609d756c74515c172c2d399e52ae995b62"
+      },
+      {
+        "path": "src/cloudtrail-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/awslabs/cloudwatch_applicationsignals_mcp_server/service_events/tools.py",
+        "sha": "a786077872841ced73deb6aa52e9ca2340a5557b"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/CHANGELOG.md",
+        "sha": "a38b3982f349c680a9aa74c2712ffd541e45e183"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/docker-healthcheck.sh",
+        "sha": "7b51b84872b0f81059191a4366aaaff06923a5bb"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/README.md",
+        "sha": "324fb7c8c33faf796f884f36550a3f61e02300b8"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/awslabs/cloudwatch_mcp_server/cloudwatch_alarms/tools.py",
+        "sha": "d7b735f0ee6eb024ad58bed2a1547f53d027eb10"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/awslabs/cloudwatch_mcp_server/cloudwatch_logs/tools.py",
+        "sha": "a6fe13fa51d8e00674e27a152a49f05a90fa262e"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/awslabs/cloudwatch_mcp_server/cloudwatch_metrics/tools.py",
+        "sha": "31f1ce5bccc96d43b4e5c06ab39a38315dd2bbf4"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/CHANGELOG.md",
+        "sha": "958e319c568d629ffd8c2900c6bc7d27b6cf885d"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/docker-healthcheck.sh",
+        "sha": "a0ae24cf762b2353c60be8a8c24b72379b787f81"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/README.md",
+        "sha": "cf168838a3bf69c993010d1a5157c96782019fe3"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/db2-mcp-server/CHANGELOG.md",
+        "sha": "3149c7d1fb92f112a8331964233ce90c2701a43e"
+      },
+      {
+        "path": "src/db2-mcp-server/README.md",
+        "sha": "13e8c1b4779f91a7ea3dbf69dcde410d5e2fc716"
+      },
+      {
+        "path": "src/document-loader-mcp-server/CHANGELOG.md",
+        "sha": "d39d60c053bc5bfeb5264ccd4c91a435d3966a63"
+      },
+      {
+        "path": "src/document-loader-mcp-server/docker-healthcheck.sh",
+        "sha": "e41e08a031d3ec03fac4f2627749ccfc9f9911bd"
+      },
+      {
+        "path": "src/document-loader-mcp-server/README.md",
+        "sha": "145308418810bd0653c7175016a0f7f3e325c2de"
+      },
+      {
+        "path": "src/document-loader-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/documentdb-mcp-server/CHANGELOG.md",
+        "sha": "1d1947360bf9017ff2b88e01500820d051411d82"
+      },
+      {
+        "path": "src/documentdb-mcp-server/README.md",
+        "sha": "83f8973f25b6f8df7d095579185862a7476aa199"
+      },
+      {
+        "path": "src/dynamodb-mcp-server/AGENTS.md",
+        "sha": "32213d30fc2889178b6217b9395d2c541b863f73"
+      },
+      {
+        "path": "src/dynamodb-mcp-server/CHANGELOG.md",
+        "sha": "36b3a734c05cde4175f37bd37ace4918879b2c45"
+      },
+      {
+        "path": "src/dynamodb-mcp-server/docker-healthcheck.sh",
+        "sha": "7cd6becda27a033921a3a23e6f7646b699abc218"
+      },
+      {
+        "path": "src/dynamodb-mcp-server/README.md",
+        "sha": "7051629a6afc4c51aac4715e2aeebed2b471d80f"
+      },
+      {
+        "path": "src/dynamodb-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/ecs-mcp-server/DEVELOPMENT.md",
+        "sha": "a8e128575a2f7ab5f23ce1c41acfc5712f8da35c"
+      },
+      {
+        "path": "src/ecs-mcp-server/pyrightconfig.json",
+        "sha": "f37b353a6ab543d688427e80b7a5723371fd753f"
+      },
+      {
+        "path": "src/ecs-mcp-server/README.md",
+        "sha": "e2b03af446cf9b3c905f7ac6d647c5480455f9ca"
+      },
+      {
+        "path": "src/eks-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/eks-mcp-server/docker-healthcheck.sh",
+        "sha": "bf2e91d3398f470a5085125c99a073accf81cfd0"
+      },
+      {
+        "path": "src/eks-mcp-server/README.md",
+        "sha": "0fce183e8d371875e4835b82b21515c4a5a1d46c"
+      },
+      {
+        "path": "src/eks-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/elasticache-mcp-server/awslabs/elasticache_mcp_server/common/server.py",
+        "sha": "87487c0da93c283846bbe772cfc24568254862ba"
+      },
+      {
+        "path": "src/elasticache-mcp-server/CHANGELOG.md",
+        "sha": "0e5300e4efc118cfe6a14831973af7c5c5860017"
+      },
+      {
+        "path": "src/elasticache-mcp-server/docker-healthcheck.sh",
+        "sha": "73e2757e06d04e50022f6bbd5ce65bf3fb8e1fb2"
+      },
+      {
+        "path": "src/elasticache-mcp-server/README.md",
+        "sha": "334a5a5aaeb50b95786eb56252104323bbda637c"
+      },
+      {
+        "path": "src/elasticache-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/finch-mcp-server/CHANGELOG.md",
+        "sha": "e6c82d3329f749fe156bcc62356fd34d6a615e35"
+      },
+      {
+        "path": "src/finch-mcp-server/README.md",
+        "sha": "185cc38faa0832a51c4ac7ff21b710bed6bdff11"
+      },
+      {
+        "path": "src/healthimaging-mcp-server/CHANGELOG.md",
+        "sha": "80968521009dd8f4a41c78cb4138a4cbbcc8de34"
+      },
+      {
+        "path": "src/healthimaging-mcp-server/docker-healthcheck.sh",
+        "sha": "1559b7f85dccb0f4f84a66d7e64d02ff76941bee"
+      },
+      {
+        "path": "src/healthimaging-mcp-server/README.md",
+        "sha": "a3fe2e142d293605498f9ddae750ba79523de61e"
+      },
+      {
+        "path": "src/healthimaging-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/healthlake-mcp-server/CHANGELOG.md",
+        "sha": "7a6d8ca808a26f33b4dad0fe58e7ee467576200c"
+      },
+      {
+        "path": "src/healthlake-mcp-server/CONTRIBUTING.md",
+        "sha": "9be46547e636083aa3f66c57973533456514ca51"
+      },
+      {
+        "path": "src/healthlake-mcp-server/docker-healthcheck.sh",
+        "sha": "29e976deb0cc4caa300d15e0b9b6f12633325ab5"
+      },
+      {
+        "path": "src/healthlake-mcp-server/README.md",
+        "sha": "af70e16693101dee105476ecc5b9238b3cf773b2"
+      },
+      {
+        "path": "src/healthlake-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/iam-mcp-server/CHANGELOG.md",
+        "sha": "853134d6821a777556bf44186f26c82c3507fb6f"
+      },
+      {
+        "path": "src/iam-mcp-server/DESIGN_COMPLIANCE.md",
+        "sha": "ef24bd5581cf9218882fa7bd5be3cd043cf8c6a5"
+      },
+      {
+        "path": "src/iam-mcp-server/docker-healthcheck.sh",
+        "sha": "8fee038d4f6fabfe6471de9d2c9fe7e259d95097"
+      },
+      {
+        "path": "src/iam-mcp-server/README.md",
+        "sha": "0e6e6a5f9893207917e66d126a8201aaf1ace5d0"
+      },
+      {
+        "path": "src/iam-mcp-server/run_tests.sh",
+        "sha": "97e5ca2626e6be463b966dc640b079ba8e2dce54"
+      },
+      {
+        "path": "src/iam-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/lambda-tool-mcp-server/CHANGELOG.md",
+        "sha": "872299ec3ccfc63c7585dbdbf7ca020a25bac6ed"
+      },
+      {
+        "path": "src/lambda-tool-mcp-server/docker-healthcheck.sh",
+        "sha": "936d1c87337bc53fa814c71f6f28f809fea906af"
+      },
+      {
+        "path": "src/lambda-tool-mcp-server/README.md",
+        "sha": "d4fb82487bd6831cd568f3dc51ebdbd8a5df5abc"
+      },
+      {
+        "path": "src/lambda-tool-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/mcp-lambda-handler/README.md",
+        "sha": "963a957391d21511be8eb865fd863bd318fb9917"
+      },
+      {
+        "path": "src/memcached-mcp-server/awslabs/memcached_mcp_server/common/server.py",
+        "sha": "0fd79c149095e4374b06d4ab445a364dfbaedb8f"
+      },
+      {
+        "path": "src/memcached-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/memcached-mcp-server/docker-healthcheck.sh",
+        "sha": "cb23e7e852190b7fa2f5f5cf942043124b097e0e"
+      },
+      {
+        "path": "src/memcached-mcp-server/ELASTICACHECONNECT.md",
+        "sha": "802809d7f03590aa85a323fab128bf289b991389"
+      },
+      {
+        "path": "src/memcached-mcp-server/README.md",
+        "sha": "c4010e302e20d174b41104ed74c44c7ad29a60df"
+      },
+      {
+        "path": "src/memcached-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/mssql-mcp-server/CHANGELOG.md",
+        "sha": "dda2edf416cfc3ef60bacbf04ff17c5a50297464"
+      },
+      {
+        "path": "src/mssql-mcp-server/docker-healthcheck.sh",
+        "sha": "f806f212f9d86eb4e4f940e92f6e9c22693e8c68"
+      },
+      {
+        "path": "src/mssql-mcp-server/README.md",
+        "sha": "e6dccfd8a27fde846618d9862e481c17e76aea12"
+      },
+      {
+        "path": "src/mssql-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/mysql-mcp-server/CHANGELOG.md",
+        "sha": "fa9ed9ca35f0cbb118fb241212c41b06cd21b938"
+      },
+      {
+        "path": "src/mysql-mcp-server/docker-healthcheck.sh",
+        "sha": "f7b4f4a116a7d23b951883788d53531979b80dc0"
+      },
+      {
+        "path": "src/mysql-mcp-server/hatch_build.py",
+        "sha": "de359b382856f28badcf0b6ee15f0745bf8ed262"
+      },
+      {
+        "path": "src/mysql-mcp-server/README.md",
+        "sha": "68d43b41bf849f55ef075aa98d3ccac74d7ba4d6"
+      },
+      {
+        "path": "src/mysql-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/openapi-mcp-server/AUTHENTICATION.md",
+        "sha": "2abbf5ee54bb569a4a9771c1c8b06072d6b4dafa"
+      },
+      {
+        "path": "src/openapi-mcp-server/AWS_BEST_PRACTICES.md",
+        "sha": "d475adc52f8a0baf7807bda06d9043a9a5ffbcf3"
+      },
+      {
+        "path": "src/openapi-mcp-server/CHANGELOG.md",
+        "sha": "1635d7470d8cf7d14809b7b6a2c702787f53bd7f"
+      },
+      {
+        "path": "src/openapi-mcp-server/DEPLOYMENT.md",
+        "sha": "6ccfd87662fdc3fa1ff7f5c9fef4e5292b5d15cb"
+      },
+      {
+        "path": "src/openapi-mcp-server/docker-healthcheck.sh",
+        "sha": "7f4a00bc46b3105f1d14291c57c1dd4cedf5804c"
+      },
+      {
+        "path": "src/openapi-mcp-server/MIGRATION.md",
+        "sha": "916d415bff2a1015246170dd07764436130a9e75"
+      },
+      {
+        "path": "src/openapi-mcp-server/OBSERVABILITY.md",
+        "sha": "cf7dadac0858fc376690ab1af00b3537bdf6418a"
+      },
+      {
+        "path": "src/openapi-mcp-server/README.md",
+        "sha": "5f51384a14aaf107eed85f856a4ec04013350dee"
+      },
+      {
+        "path": "src/openapi-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/oracle-mcp-server/CHANGELOG.md",
+        "sha": "73097e78a942fcbde3fe01b9359d59b9912bd782"
+      },
+      {
+        "path": "src/oracle-mcp-server/docker-healthcheck.sh",
+        "sha": "c91d9ae0304e4a1b46177cecff31340410603674"
+      },
+      {
+        "path": "src/oracle-mcp-server/README.md",
+        "sha": "6a95eafa32e893267ff7b6956c1b884e39934fe3"
+      },
+      {
+        "path": "src/oracle-mcp-server/uv-requirements.txt",
+        "sha": "04a8fb078bd9040c4da60d8d2dfc76203a1066af"
+      },
+      {
+        "path": "src/postgres-mcp-server/CHANGELOG.md",
+        "sha": "bb3410a16e888e2df8f91a5b89036ec8666a328c"
+      },
+      {
+        "path": "src/postgres-mcp-server/docker-healthcheck.sh",
+        "sha": "1b37786a92a90d452d4cf0e7ecb3f67926497ae8"
+      },
+      {
+        "path": "src/postgres-mcp-server/hatch_build.py",
+        "sha": "4abd90b0d9511c4176eb95e65244939ca8d536ba"
+      },
+      {
+        "path": "src/postgres-mcp-server/README.md",
+        "sha": "9e80fc9ed43dafb584787f1db3c372adc6e343db"
+      },
+      {
+        "path": "src/postgres-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/prometheus-mcp-server/CHANGELOG.md",
+        "sha": "2cece6d320bf408a54e3d999f4cc6227e95f6402"
+      },
+      {
+        "path": "src/prometheus-mcp-server/docker-healthcheck.sh",
+        "sha": "1dd4e1772215771c56d033a3e816e77db1fdeaf6"
+      },
+      {
+        "path": "src/prometheus-mcp-server/README.md",
+        "sha": "932f2f7a37d9314d4b41a01988942333208dfd5e"
+      },
+      {
+        "path": "src/prometheus-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/redshift-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/redshift-mcp-server/docker-healthcheck.sh",
+        "sha": "704b1f85255542c6eed73b31f87fe49b4511b590"
+      },
+      {
+        "path": "src/redshift-mcp-server/README.md",
+        "sha": "53aeacd6dbff0f296ae907ded147d62d1518b291"
+      },
+      {
+        "path": "src/redshift-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/roda-mcp-server/NOTICE.md",
+        "sha": "64f99c85f4c227b1509d6a422b34d64917f0dea6"
+      },
+      {
+        "path": "src/roda-mcp-server/README.md",
+        "sha": "defa7b137cde11cce15559485f232cf896efedf9"
+      },
+      {
+        "path": "src/roda-mcp-server/SECURITY.md",
+        "sha": "ae82caf50a09cd621e91d13f7887b2b8960617c3"
+      },
+      {
+        "path": "src/s3-tables-mcp-server/CHANGELOG.md",
+        "sha": "6082723ea180699c5613b3890942448c671c9e7a"
+      },
+      {
+        "path": "src/s3-tables-mcp-server/CONTEXT.md",
+        "sha": "1d17d985979b3da2bf3a9b685394076f22fb4ab8"
+      },
+      {
+        "path": "src/s3-tables-mcp-server/docker-healthcheck.sh",
+        "sha": "9c7565f35b9bc2e49bdba8c13dd8e9d2e7f6bcac"
+      },
+      {
+        "path": "src/s3-tables-mcp-server/README.md",
+        "sha": "13ce5cf9a6a81c443b316659a279bead3c408e9f"
+      },
+      {
+        "path": "src/s3-tables-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/sagemaker-ai-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/sagemaker-ai-mcp-server/README.md",
+        "sha": "eb1077695a00410e95df698ab527a4e490b34465"
+      },
+      {
+        "path": "src/sagemaker-ai-mcp-server/uv-requirements.txt",
+        "sha": "58fd7a66923a5b9210900afccde1c8103a8b062e"
+      },
+      {
+        "path": "src/sagemaker-unified-studio-spark-troubleshooting-mcp-server/README.md",
+        "sha": "a0157fc68936a4609cb84547f41da479317b31bc"
+      },
+      {
+        "path": "src/sagemaker-unified-studio-spark-upgrade-mcp-server/README.md",
+        "sha": "7bd0d03071d3a8a01097e8ea93677199fd1e530e"
+      },
+      {
+        "path": "src/security-agent-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/security-agent-mcp-server/docker-healthcheck.sh",
+        "sha": "83aa7fa5930b507b544ac3e00547dcaea61807a8"
+      },
+      {
+        "path": "src/security-agent-mcp-server/README.md",
+        "sha": "812b5f9fa66b090a7443cb7d18474cf4d27bdf51"
+      },
+      {
+        "path": "src/security-agent-mcp-server/uv-requirements.txt",
+        "sha": "8bc403735d99f8f3fd4cba9c0a418bf12f9a9758"
+      },
+      {
+        "path": "src/stepfunctions-tool-mcp-server/CHANGELOG.md",
+        "sha": "92b0342e5fc5a041fd8fc4f4f6f546da1a1792d3"
+      },
+      {
+        "path": "src/stepfunctions-tool-mcp-server/docker-healthcheck.sh",
+        "sha": "4f3b76cebdb74606d1c264dbf08cb01c8111d6b9"
+      },
+      {
+        "path": "src/stepfunctions-tool-mcp-server/README.md",
+        "sha": "fca96b3e6df45541575fe4a5088fb282485d1888"
+      },
+      {
+        "path": "src/stepfunctions-tool-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/timestream-for-influxdb-mcp-server/CHANGELOG.md",
+        "sha": "1860f7897af0196cb617645d3da3f67a890ea55e"
+      },
+      {
+        "path": "src/timestream-for-influxdb-mcp-server/docker-healthcheck.sh",
+        "sha": "726c73f2852c1c9b309b882c330b770a43dd9ebb"
+      },
+      {
+        "path": "src/timestream-for-influxdb-mcp-server/README.md",
+        "sha": "0a91498d42cf29a22738207420e068370d404b36"
+      },
+      {
+        "path": "src/timestream-for-influxdb-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/valkey-mcp-server/awslabs/valkey_mcp_server/common/server.py",
+        "sha": "4af825cb32b4c8c30439d1a480879653605954ff"
+      },
+      {
+        "path": "src/valkey-mcp-server/CHANGELOG.md",
+        "sha": "df6ddb55873b115cc404f1a55e41baca965cd095"
+      },
+      {
+        "path": "src/valkey-mcp-server/docker-healthcheck.sh",
+        "sha": "53e1b041f2eb5160d48b7a7609d6601b844f55dc"
+      },
+      {
+        "path": "src/valkey-mcp-server/ELASTICACHECONNECT.md",
+        "sha": "228d78014435e50eb6883d1674090a568fae5ae5"
+      },
+      {
+        "path": "src/valkey-mcp-server/README.md",
+        "sha": "e4df14da59ba378ef3429c8672d0c0da07953384"
+      },
+      {
+        "path": "src/valkey-mcp-server/uv-requirements.txt",
+        "sha": "832f392be41a90e325de1ada7c9318ef5236050d"
+      },
+      {
+        "path": "src/well-architected-security-mcp-server/PROMPT_TEMPLATE.md",
+        "sha": "d55c4329d5336fc68e245a702f605ece05c0afd1"
+      },
+      {
+        "path": "src/well-architected-security-mcp-server/README.md",
+        "sha": "a0a679df06de07bf94bc7dfe8cf1108c176ff340"
+      },
+      {
+        "path": "trivy.yaml",
+        "sha": "cc4b06957fdb5448db71499243869751d05a05fd"
+      },
+      {
+        "path": "VIBE_CODING_TIPS_TRICKS.md",
+        "sha": "3338aa4a3c050dc52b81c5d96de8a85c389e6213"
+      },
+      {
+        "path": ".vex/CVE-2023-45853.openvex.json",
+        "sha": "f7d1562c65d756b84a2f58a82a7d1c0e569a0d70"
+      },
+      {
+        "path": "docusaurus/docusaurus.config.ts",
+        "sha": "8f23b946da9e5b8c8ef96ca5059595094d90248e"
+      },
+      {
+        "path": "docusaurus/README.md",
+        "sha": "e731dc47dd662f5fd37450d48d6315d6c89ffe6c"
+      },
+      {
+        "path": "docusaurus/sidebars.ts",
+        "sha": "7b041ff7c4b9c5c4a33d27e029b6a105903c2431"
+      },
+      {
+        "path": "docusaurus/src/components/ServerCards/index.tsx",
+        "sha": "752439fcde6b323d510e5cc31883ca2fdf92a3be"
+      },
+      {
+        "path": "docusaurus/tsconfig.json",
+        "sha": "28dd421c9d0b1d41dd45ddbefb3b6bbc8466f9b4"
+      },
+      {
+        "path": "src/amazon-bedrock-agentcore-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/amazon-kendra-index-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/amazon-keyspaces-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/amazon-mq-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/amazon-neptune-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/amazon-qbusiness-anonymous-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/amazon-qindex-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/amazon-sns-sqs-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/amazon-translate-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/kiro_power/mcp.json",
+        "sha": "23cbc09de97ac51a0266534d76b40dbfd44a9d4e"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/kiro_power/POWER.md",
+        "sha": "1f4a53c9debcea1db814c7f88072654974236160"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/claude_skill_setup.md",
+        "sha": "824ef3bcd705964f79d2d159d0307cf6380d86e5"
+      },
+      {
+        "path": "src/aurora-dsql-mcp-server/skills/README.md",
+        "sha": "e417d0da2fb7901ca53b3defaf952939fef263f8"
+      },
+      {
+        "path": "src/aws-api-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-appsync-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-bedrock-custom-model-import-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-dataprocessing-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-documentation-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-for-sap-management-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/integration/__init__.py",
+        "sha": "5fc729e6682f4653ece3edac81c50aaacf89c14b"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/integration/conftest.py",
+        "sha": "1226c9db1039fb503ca3196713e1b5c20d71ccfe"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/integration/README.md",
+        "sha": "e32d663219a6e98026c150732cb59dfbd5e2f421"
+      },
+      {
+        "path": "src/aws-healthomics-mcp-server/scripts/changelog_release.py",
+        "sha": "5ba85052cbca25a569c3ac9d3a877ed6d3867535"
+      },
+      {
+        "path": "src/aws-iac-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-iot-sitewise-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-location-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-network-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-pricing-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-serverless-mcp-server/awslabs/__init__.py",
+        "sha": "a2b9b33b873e1fc1290311e7f6c882e1123cf0aa"
+      },
+      {
+        "path": "src/aws-support-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-transform-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/aws-transform-mcp-server/awslabs/RFC.md",
+        "sha": "a0696fa393c9cd20bb6be55afa19362d9616f553"
+      },
+      {
+        "path": "src/bedrock-kb-retrieval-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/billing-cost-management-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/ccapi-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/cloudtrail-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/evals/__init__.py",
+        "sha": "7d1cd625d8fd7958a4d3fb2b347f9843128a3c95"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/evals/__main__.py",
+        "sha": "cf8373cdf5b3042284bf7641488b0863fefe78b6"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/evals/README.md",
+        "sha": "5b662ccc880cdf2aaeb28e243ae246211111925d"
+      },
+      {
+        "path": "src/cloudwatch-applicationsignals-mcp-server/evals/requirements.txt",
+        "sha": "fb0cf9e39da48c7aa49b85ccb00b7d541c292f0f"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/cloudwatch-mcp-server/skills/README.md",
+        "sha": "5332489773c57d8fd8bb56b8348f8d59f11de32d"
+      },
+      {
+        "path": "src/db2-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      },
+      {
+        "path": "src/document-loader-mcp-server/awslabs/__init__.py",
+        "sha": "9561be357a1d307591f5bc810d3f36555109bead"
+      }
+    ],
+    "repo_pushed_at": "2026-11-02T15:17:41Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 93,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 70,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/aurora-dsql-mcp-server/awslabs/aurora_dsql_mcp_server/server.py",
+      "line": 83,
+      "snippet": "knowledge_server = 'https://d38p8g9d7yc7ms.cloudfront.net'",
+      "host": "d38p8g9d7yc7ms.cloudfront.net",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/aws-serverless-mcp-server/awslabs/aws_serverless_mcp_server/server.py",
+      "line": 117,
+      "snippet": "- Provides sample SAM templates for different serverless application types from [Serverless Land](https://serverlessland.com/)",
+      "host": "serverlessland.com",
+      "deduction": 15
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/roda-mcp-server/awslabs/roda_mcp_server/server.py",
+      "line": 41,
+      "snippet": "REGISTRY_NDJSON_URL = 'https://registry.opendata.aws/index.ndjson'",
+      "host": "registry.opendata.aws",
+      "deduction": 0
+    },
+    {
+      "dim": "egress",
+      "rule": "undeclared-host",
+      "file": "src/postgres-mcp-server/hatch_build.py",
+      "line": 87,
+      "snippet": "'https://www.amazontrust.com/repository/AmazonRootCA1.pem',",
+      "host": "www.amazontrust.com",
+      "deduction": 0
+    }
+  ],
+  "evidence": {
+    "files_scanned": 400,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [
+      "d38p8g9d7yc7ms.cloudfront.net",
+      "serverlessland.com",
+      "registry.opendata.aws",
+      "www.amazontrust.com"
+    ],
+    "declared_hosts": 4,
+    "install_detected": true,
+    "age_days": 0
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 2370
+  },
+  "duration_ms": 2598
+}

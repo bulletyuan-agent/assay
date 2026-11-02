@@ -1,0 +1,278 @@
+{
+  "schema": 1,
+  "run_id": "run-20261102T153400Z",
+  "target": {
+    "source": "github",
+    "id": "lovell/sharp",
+    "url": "https://github.com/lovell/sharp",
+    "name": "sharp"
+  },
+  "type": "unknown",
+  "evaluated_at": "2026-11-02T15:34:04.253Z",
+  "method_version": "0.4.1",
+  "tool": {
+    "assay_commit": "8b9e34983f0308969cbf677aeb06835fe0b43176",
+    "dirty": true,
+    "node": "v22.21.1",
+    "method_version": "0.4.1"
+  },
+  "scope": "static screening only; nothing was executed; not a trust rating; no grade",
+  "input_fingerprint": {
+    "tree_sha": "1ea0375ef20c94e0dc94f790bf1375bb8872642f",
+    "files_scanned": 52,
+    "candidates": 52,
+    "excluded_non_shipped": 212,
+    "coverage": 1,
+    "truncated": false,
+    "scanned_paths": [
+      {
+        "path": "lib/index.mjs",
+        "sha": "c61f176b20727b4c9468144a69b3e74eb124ae50"
+      },
+      {
+        "path": "package.json",
+        "sha": "0063e649934fb1782133fb8b5b3f9a6ff0b84822"
+      },
+      {
+        "path": "lib/channel.mjs",
+        "sha": "e4226ad258ed0695c90b0d37c809c5b099e1081d"
+      },
+      {
+        "path": "lib/colour.mjs",
+        "sha": "cf32a04fa39b39e3f8acac6cb2fce683b29b462d"
+      },
+      {
+        "path": "lib/composite.mjs",
+        "sha": "3c49f289b99718826bbf41cbe8eafded2515dbae"
+      },
+      {
+        "path": "lib/constructor.mjs",
+        "sha": "5c386e440046fe660067f457490ed33ab48f36f2"
+      },
+      {
+        "path": "lib/index.d.ts",
+        "sha": "072b48d864fb0af72b3d3cabba700f222500c231"
+      },
+      {
+        "path": "lib/input.mjs",
+        "sha": "baf39eb173f5093a77fab30359c7134c1133112f"
+      },
+      {
+        "path": "lib/is.mjs",
+        "sha": "6ea74592a4371ffe79ff5f0aade8976acc5675eb"
+      },
+      {
+        "path": "lib/libvips.mjs",
+        "sha": "d6b3978fe65d149ede883ad79b5ade9bdafa95ac"
+      },
+      {
+        "path": "lib/operation.mjs",
+        "sha": "4dc07fbc85e081ab6a9f47c2f032dbe7e3a283c6"
+      },
+      {
+        "path": "lib/output.mjs",
+        "sha": "739a54261e464279b2123a85a70d7e85d31dc8d3"
+      },
+      {
+        "path": "lib/resize.mjs",
+        "sha": "f063bfad400b24ecc37fccc3dadb1dbde8859189"
+      },
+      {
+        "path": "lib/sharp.mjs",
+        "sha": "0439b99ef5aca555889985e95491fa5acea7e3c0"
+      },
+      {
+        "path": "lib/utility.mjs",
+        "sha": "6a730f9804b8ae011d8ed2174a936540d5de96bd"
+      },
+      {
+        "path": "scripts/build.mjs",
+        "sha": "5aec3e9b816343b3c96cb6f54af4b46bb73b0198"
+      },
+      {
+        "path": "npm/package.json",
+        "sha": "555ff85b48f428d3ffc8ccf25e9990c5f6d53413"
+      },
+      {
+        "path": "biome.json",
+        "sha": "cef0d52b9eae34dc3ebbf63f3e4641bfd85005ce"
+      },
+      {
+        "path": "README.md",
+        "sha": "7db7edda0c1c3ef47956a1c77a92994b0664f102"
+      },
+      {
+        "path": "src/emscripten/pre.js",
+        "sha": "d2df1d0d729e37bb64d4cdebb492c2c242474e01"
+      },
+      {
+        "path": "npm/darwin-arm64/package.json",
+        "sha": "1529f0e58410e98066e958f97e5ee68f0a1a9169"
+      },
+      {
+        "path": "npm/darwin-x64/package.json",
+        "sha": "6944a193c61406f6e5145ddd3929ebec461a3a79"
+      },
+      {
+        "path": "npm/freebsd-wasm32/package.json",
+        "sha": "7e79dbf8a44653b855f4546d045c3f97b7223eb5"
+      },
+      {
+        "path": "npm/linux-arm/package.json",
+        "sha": "c53a15270c8c19ea7c1c9cb3ca4631443145150d"
+      },
+      {
+        "path": "npm/linux-arm64/package.json",
+        "sha": "58743d6496455b1e4905b74a673807b4c5892186"
+      },
+      {
+        "path": "npm/linux-ppc64/package.json",
+        "sha": "a94c8ef4aad9930be31822300a5704fb034113ab"
+      },
+      {
+        "path": "npm/linux-riscv64/package.json",
+        "sha": "f93283728cf1e67347c8d126ba82987ae995e2b5"
+      },
+      {
+        "path": "npm/linux-s390x/package.json",
+        "sha": "bb00781fb207d66a9089a32cf3c1e28daa0411d1"
+      },
+      {
+        "path": "npm/linux-x64/package.json",
+        "sha": "225bc14883eace52e560e6323c114baef9656d46"
+      },
+      {
+        "path": "npm/linuxmusl-arm64/package.json",
+        "sha": "bb7bf3f55e9466019fc0fbb6c85fcde5324b1443"
+      },
+      {
+        "path": "npm/linuxmusl-x64/package.json",
+        "sha": "6e2b9c9d0dfe3cc29c5c2c6d16b8a6b91be5169a"
+      },
+      {
+        "path": "npm/wasm32/package.json",
+        "sha": "7771527907aa9d3453b51f2e44944aec473a3a3a"
+      },
+      {
+        "path": "npm/webcontainers-wasm32/package.json",
+        "sha": "fee50fc87bab5894cd32cb2195126f0eebde3671"
+      },
+      {
+        "path": "npm/win32-arm64/package.json",
+        "sha": "74e8b11e8138f3244ad75dcc7e6a7a7296edeabb"
+      },
+      {
+        "path": "npm/win32-ia32/package.json",
+        "sha": "08ee7cc573feebea484bdb91a532854d9b81c921"
+      },
+      {
+        "path": "npm/win32-x64/package.json",
+        "sha": "6091df3ad7a9e08162c7c60ca5c36094dc8f9855"
+      },
+      {
+        "path": "install/build.js",
+        "sha": "c0ec3f3acb914532a5e1515433fa4cd2d4920a99"
+      },
+      {
+        "path": "npm/from-local-build.js",
+        "sha": "107f23b6a9bbfbc26b4ed23e4caa893423521d56"
+      },
+      {
+        "path": "npm/release-notes.js",
+        "sha": "f5e1aca2357e6752bcfc1dfbb4692d7582cf441f"
+      },
+      {
+        "path": "npm/wasm-wrappers.js",
+        "sha": "e672aee038c522bcc73fb63f1f4f4f3d2f24d1f3"
+      },
+      {
+        "path": "npm/freebsd-wasm32/export/package.cjs",
+        "sha": "b38ccf096b071379d29ae7241150baad5e0090ef"
+      },
+      {
+        "path": "npm/freebsd-wasm32/export/package.mjs",
+        "sha": "d561aa57f9495412b7244e7e2beb5bc5883a6724"
+      },
+      {
+        "path": "npm/freebsd-wasm32/export/sharp.node.cjs",
+        "sha": "b916a35dadcb9891ac05101e2911cb1a0a012474"
+      },
+      {
+        "path": "npm/freebsd-wasm32/export/sharp.node.mjs",
+        "sha": "0069862823f8784c2b577b0f7d154537e49fdbd5"
+      },
+      {
+        "path": "npm/freebsd-wasm32/export/versions.cjs",
+        "sha": "79ec7839efb48afc434319a2d43935897b4b80e1"
+      },
+      {
+        "path": "npm/freebsd-wasm32/export/versions.mjs",
+        "sha": "b53d546690d85021991afdf9b6f6e1f4b4a16694"
+      },
+      {
+        "path": "npm/webcontainers-wasm32/export/package.cjs",
+        "sha": "b38ccf096b071379d29ae7241150baad5e0090ef"
+      },
+      {
+        "path": "npm/webcontainers-wasm32/export/package.mjs",
+        "sha": "d561aa57f9495412b7244e7e2beb5bc5883a6724"
+      },
+      {
+        "path": "npm/webcontainers-wasm32/export/sharp.node.cjs",
+        "sha": "b916a35dadcb9891ac05101e2911cb1a0a012474"
+      },
+      {
+        "path": "npm/webcontainers-wasm32/export/sharp.node.mjs",
+        "sha": "0069862823f8784c2b577b0f7d154537e49fdbd5"
+      },
+      {
+        "path": "npm/webcontainers-wasm32/export/versions.cjs",
+        "sha": "79ec7839efb48afc434319a2d43935897b4b80e1"
+      },
+      {
+        "path": "npm/webcontainers-wasm32/export/versions.mjs",
+        "sha": "b53d546690d85021991afdf9b6f6e1f4b4a16694"
+      }
+    ],
+    "repo_pushed_at": "2026-10-29T17:08:50Z",
+    "license": "Apache-2.0"
+  },
+  "gates_without_consent": {
+    "public": true,
+    "license": true,
+    "fresh": true,
+    "install": true,
+    "consent": true,
+    "passed": true
+  },
+  "result": {
+    "screening_score": 100,
+    "dims": {
+      "maintenance": 100,
+      "install_docs": 100,
+      "dangerous_patterns": 100,
+      "egress": 100,
+      "instruction_hygiene": 100
+    },
+    "red_flags": [],
+    "weight_coverage": 1
+  },
+  "findings": [],
+  "evidence": {
+    "files_scanned": 52,
+    "files_excluded": 0,
+    "danger_hits": 0,
+    "severe_hits": 0,
+    "injection_hits": 0,
+    "undeclared_hosts": [],
+    "declared_hosts": 0,
+    "install_detected": true,
+    "age_days": 4
+  },
+  "network": {
+    "calls": 3,
+    "failed": 0,
+    "ms": 1262
+  },
+  "duration_ms": 1324
+}

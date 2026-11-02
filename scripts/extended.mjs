@@ -65,7 +65,7 @@ const MODEL_DIRECTIVE = /\b(recipient|bcc|forward|redirect|always|you must|inste
 const SHOW_CONCEAL = /\b(do not|don't|never)\s+(show|display|print|echo|log)\s+(the|this|that|it|these)\s+(file|config|configuration|change|edit|output|command)/i;
 
 // Files executed at install time: package.json preinstall/install/postinstall -> local scripts.
-function installTimeFiles(shipped) {
+export function installTimeFiles(shipped) {
   const set = new Set();
   for (const f of shipped) {
     if (!/(^|\/)package\.json$/.test(f.path)) continue;
@@ -114,6 +114,7 @@ const hostAllowed = (h, list) => list.some((a) => h === a || h.endsWith(`.${a}`)
 export function extendedScan(shipped, ctx) {
   const out = [];
   const installSet = installTimeFiles(shipped);
+  for (const k of (ctx.autorun || new Map()).keys()) installSet.add(k);
   const add = (dim, rule, severe, f, loc, deduction) => out.push({ dim, rule, severe, file: f.path, line: loc?.line, snippet: loc?.snippet ?? '', deduction });
   const readme = ctx.readmeLower || '';
   const declared = (h) => !!h && (readme.includes(h) || readme.includes(h.split('.').slice(-2).join('.')));
@@ -128,7 +129,7 @@ export function extendedScan(shipped, ctx) {
     const hasNet = isCode && ctx.NETWORK_PRIMITIVE.test(clean);
 
     // 1. Execution patterns in text surfaces (docs, SKILL.md, shell scripts, package.json). Code files are covered by DANGER.
-    if (!isCode || SHELL.test(f.path) || isPkg) {
+    if ((!isCode || SHELL.test(f.path) || isPkg) && !/(^|\/)\.github\//.test(f.path)) {
       for (const [rule, re, mode] of EXEC_TEXT) {
         if (mode === 'doc-only' && !isDoc) continue;
         const loc = find(clean, re, f.text);

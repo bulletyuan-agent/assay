@@ -1,0 +1,391 @@
+{
+  "holdout": "data/calibration/holdout-v3",
+  "method_version": "0.5.0-dev1",
+  "run_at": "2026-11-02T15:43:33.369Z",
+  "hit_rule": "score<70 or any red flag",
+  "recall": 0.7777777777777778,
+  "wilson95": [
+    0.5924270453692919,
+    0.8939290451059105
+  ],
+  "k": 21,
+  "n": 27,
+  "by_difficulty": {
+    "plain": "7/8",
+    "obfuscated": "7/11",
+    "instruction-only": "7/8"
+  },
+  "by_type": {
+    "npm-package": "4/6",
+    "pypi-package": "3/3",
+    "other": "5/5",
+    "config": "6/7",
+    "mcp": "1/3",
+    "skill": "2/3"
+  },
+  "rows": [
+    {
+      "id": "01-npm-token-worm-plain",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "credential-harvest"
+      ],
+      "rules": [
+        "credential-harvest",
+        "credential-read",
+        "undeclared-host"
+      ],
+      "hit": true
+    },
+    {
+      "id": "02-pypi-setup-cmdclass-plain",
+      "type": "pypi-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "autorun-windows-shell",
+        "autorun-download-to-disk",
+        "setup-cmdclass-exec"
+      ],
+      "rules": [
+        "subprocess-shell",
+        "autorun-windows-shell",
+        "autorun-download-to-disk",
+        "setup-cmdclass-exec"
+      ],
+      "hit": true
+    },
+    {
+      "id": "03-npm-browser-token-stealer-plain",
+      "type": "npm-package",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "undeclared-chat-webhook",
+        "browser-credential-access"
+      ],
+      "rules": [
+        "undeclared-chat-webhook",
+        "browser-credential-access"
+      ],
+      "hit": true
+    },
+    {
+      "id": "04-git-hooks-zip-plain",
+      "type": "other",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "install-time-detached-spawn",
+        "git-config-exec",
+        "ships-git-hooks",
+        "autorun-download-to-disk"
+      ],
+      "rules": [
+        "undeclared-host",
+        "install-time-detached-spawn",
+        "install-time-network",
+        "git-config-exec",
+        "ships-git-hooks",
+        "autorun-download-to-disk"
+      ],
+      "hit": true
+    },
+    {
+      "id": "05-vscode-folderopen-plain",
+      "type": "config",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "install-time-credential-read",
+        "autorun-credential-access",
+        "folder-open-autorun"
+      ],
+      "rules": [
+        "install-time-credential-read",
+        "install-time-network",
+        "credential-read",
+        "agent-hook-command",
+        "autorun-credential-access",
+        "folder-open-autorun"
+      ],
+      "hit": true
+    },
+    {
+      "id": "06-mcp-tool-output-exfil-plain",
+      "type": "mcp",
+      "difficulty": "plain",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "07-cursor-mcp-autoapprove-plain",
+      "type": "config",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "mcp-autoapprove-risky",
+        "mcp-shell-wrapped-fetch"
+      ],
+      "rules": [
+        "install-time-network",
+        "mcp-autoapprove-risky",
+        "mcp-shell-wrapped-fetch"
+      ],
+      "hit": true
+    },
+    {
+      "id": "08-go-init-exec-plain",
+      "type": "other",
+      "difficulty": "plain",
+      "score": 49,
+      "red_flags": [
+        "autorun-windows-shell",
+        "go-init-exec"
+      ],
+      "rules": [
+        "autorun-windows-shell",
+        "go-init-exec"
+      ],
+      "hit": true
+    },
+    {
+      "id": "09-npm-hexarray-stealer-obf",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "10-npm-charcode-powershell-obf",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "autorun-decode-then-act"
+      ],
+      "rules": [
+        "install-time-network",
+        "autorun-decode-then-act"
+      ],
+      "hit": true
+    },
+    {
+      "id": "11-pypi-pth-persistence-obf",
+      "type": "pypi-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "pth-import-hook"
+      ],
+      "rules": [
+        "pth-import-hook"
+      ],
+      "hit": true
+    },
+    {
+      "id": "12-npm-sidecar-payload-obf",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "13-go-delayed-env-obf",
+      "type": "other",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "autorun-delayed-collection"
+      ],
+      "rules": [
+        "autorun-delayed-collection"
+      ],
+      "hit": true
+    },
+    {
+      "id": "14-skill-aiconfig-harvest-obf",
+      "type": "skill",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "dns-exfil"
+      ],
+      "rules": [
+        "dns-exfil"
+      ],
+      "hit": true
+    },
+    {
+      "id": "15-mcp-rewrites-cursor-config-obf",
+      "type": "mcp",
+      "difficulty": "obfuscated",
+      "score": 90,
+      "red_flags": [],
+      "rules": [
+        "agent-config-write"
+      ],
+      "hit": false
+    },
+    {
+      "id": "16-vscode-folderopen-obf-bootstrap",
+      "type": "config",
+      "difficulty": "obfuscated",
+      "score": 88,
+      "red_flags": [],
+      "rules": [
+        "folder-open-autorun"
+      ],
+      "hit": false
+    },
+    {
+      "id": "17-gha-pull-request-target-obf",
+      "type": "other",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "gha-secrets-dump",
+        "gha-pull-request-target-checkout"
+      ],
+      "rules": [
+        "gha-secrets-dump",
+        "gha-pull-request-target-checkout"
+      ],
+      "hit": true
+    },
+    {
+      "id": "18-npm-clipboard-swap-obf",
+      "type": "npm-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "clipboard-address-swap"
+      ],
+      "rules": [
+        "clipboard-address-swap"
+      ],
+      "hit": true
+    },
+    {
+      "id": "19-pypi-dns-txt-exfil-obf",
+      "type": "pypi-package",
+      "difficulty": "obfuscated",
+      "score": 49,
+      "red_flags": [
+        "dns-exfil"
+      ],
+      "rules": [
+        "dns-exfil"
+      ],
+      "hit": true
+    },
+    {
+      "id": "20-skill-remote-house-rules",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 94,
+      "red_flags": [],
+      "rules": [],
+      "hit": false
+    },
+    {
+      "id": "21-agents-md-install-mcp",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "instruction-auto-approve"
+      ],
+      "rules": [
+        "instruction-auto-approve"
+      ],
+      "hit": true
+    },
+    {
+      "id": "22-claude-md-credential-paste",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "instruction-credential-request"
+      ],
+      "rules": [
+        "instruction-credential-request"
+      ],
+      "hit": true
+    },
+    {
+      "id": "23-cursorrules-auto-approve",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "instruction-auto-approve"
+      ],
+      "rules": [
+        "instruction-auto-approve"
+      ],
+      "hit": true
+    },
+    {
+      "id": "24-mcp-tool-desc-directive",
+      "type": "mcp",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "instruction-credential-request"
+      ],
+      "rules": [
+        "instruction-credential-request"
+      ],
+      "hit": true
+    },
+    {
+      "id": "25-skill-pip-install-url",
+      "type": "skill",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "package-source-override"
+      ],
+      "rules": [
+        "package-source-override"
+      ],
+      "hit": true
+    },
+    {
+      "id": "26-takehome-readme-hooks",
+      "type": "other",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "instruction-enable-autorun"
+      ],
+      "rules": [
+        "instruction-enable-autorun"
+      ],
+      "hit": true
+    },
+    {
+      "id": "27-agents-md-registry-override",
+      "type": "config",
+      "difficulty": "instruction-only",
+      "score": 49,
+      "red_flags": [
+        "package-source-override"
+      ],
+      "rules": [
+        "package-source-override"
+      ],
+      "hit": true
+    }
+  ]
+}

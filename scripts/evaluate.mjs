@@ -3,7 +3,8 @@ import { fileURLToPath } from 'node:url';
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath as _fu } from 'node:url';
-import { extendedScan } from './extended.mjs';
+import { extendedScan, installTimeFiles } from './extended.mjs';
+import { behaviorScan, autorunMap, CONFIG_RE } from './behavior.mjs';
 import { foldStrings } from './fold.mjs';
 import { http, ghHeaders, fetchMeta, parseTarget, daysSince, INSTALL_RE, WINDOW_DAYS, F } from './lib.mjs';
 
@@ -71,6 +72,7 @@ export async function githubFiles(t, branch = 'HEAD') {
   const rank = (p) => {
     let r = -2 * p.split('/').length;
     if (/(^|\/)(pre|post)?install[^/]*$/i.test(p)) r += 12;
+    if (CONFIG_RE.test(p) || /(^|\/)(setup\.py|extconf\.rb)$/.test(p)) r += 14;
     if (/(^|\/)(index|main|server|cli|app|handler|tools?)\.[a-z]+$/i.test(p)) r += 6;
     if (/^(src|lib|bin|scripts)\//.test(p)) r += 4;
     if (/(^|\/)SKILL\.md$/.test(p)) r += 10;
@@ -78,7 +80,7 @@ export async function githubFiles(t, branch = 'HEAD') {
     return r;
   };
   const candidates = tree.data.tree
-    .filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path)) && !NON_SHIPPED.test(x.path))
+    .filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path) || CONFIG_RE.test(x.path)) && (!NON_SHIPPED.test(x.path) || CONFIG_RE.test(x.path) || /(^|\/)\.(vscode|claude|githooks|cursor|husky)\//.test(x.path)))
     .sort((a, b) => rank(b.path) - rank(a.path) || a.path.localeCompare(b.path));
   const picked = candidates.slice(0, BUDGET);
   const excludedNonShipped = tree.data.tree.filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path)) && NON_SHIPPED.test(x.path)).length;
@@ -117,7 +119,8 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   const install_docs = clamp((installDetected ? 60 : 0) + (readme.length >= 500 ? 40 : 0));
 
   const hasFiles = Array.isArray(files);
-  const shipped = hasFiles ? files.filter((f) => !NON_SHIPPED.test(f.path)) : [];
+  const autorun = hasFiles ? autorunMap(files, installTimeFiles(files.filter((f) => !NON_SHIPPED.test(f.path)))) : new Map();
+  const shipped = hasFiles ? files.filter((f) => !NON_SHIPPED.test(f.path) || CONFIG_RE.test(f.path) || autorun.has(f.path)) : [];
   const code = shipped.filter((f) => CODE_RE.test(f.path));
   let danger = 0;
   let severe = 0;
@@ -184,7 +187,10 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
     }
   }
   // Extended detectors (method 0.3.0). Every dimension is now exactly 100 minus the deductions of its findings.
-  if (hasFiles) findings.push(...extendedScan(shipped, { stripComments, NETWORK_PRIMITIVE, PLACEHOLDER_HOST, readmeLower }));
+  if (hasFiles) {
+    findings.push(...extendedScan(shipped, { stripComments, NETWORK_PRIMITIVE, PLACEHOLDER_HOST, readmeLower, autorun }));
+    findings.push(...behaviorScan(shipped, { stripComments, readmeLower }, autorun));
+  }
   // Weak (non-severe) findings are capped at 30 points per dimension in total, so they can never sink a project on their own.
   for (const dim of ['dangerous_patterns', 'egress', 'instruction_hygiene']) {
     let weak = 0;

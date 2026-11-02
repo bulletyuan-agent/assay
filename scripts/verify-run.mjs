@@ -10,6 +10,8 @@ const REFETCH = args.includes('--refetch');
 const RERUN = args.includes('--rerun');
 const clamp = (v) => Math.max(0, Math.min(100, Math.round(v)));
 let failures = 0;
+let warnings = 0;
+const warn = (cond, msg) => { if (cond) { warnings++; console.log(`  WARN ${msg}`); } };
 const check = (ok, name, detail = '') => { if (!ok) failures++; console.log(`  ${ok ? 'PASS' : 'FAIL'} ${name}${detail ? ' · ' + detail : ''}`); };
 
 for (const file of files) {
@@ -34,6 +36,10 @@ for (const file of files) {
   // 4. Scope honesty.
   check(/not a trust rating/.test(r.scope) && !('grade' in r.result), 'result is labelled static screening, no grade');
   check(r.input_fingerprint.truncated === false || r.input_fingerprint.truncated === true, 'truncation disclosed', `scanned ${r.input_fingerprint.files_scanned}/${r.input_fingerprint.candidates}${r.input_fingerprint.truncated ? ' (TRUNCATED)' : ''}`);
+  const fp = r.input_fingerprint;
+  check(Array.isArray(fp.scanned_paths) && fp.scanned_paths.length === fp.files_scanned, 'scanned path list is stored and complete', `${fp.scanned_paths?.length ?? 0} paths`);
+  check(r.findings.every((f) => (fp.scanned_paths || []).some((p) => p.path === f.file)), 'every finding points to a scanned file');
+  warn(fp.coverage !== null && fp.coverage < 0.5, `low coverage ${fp.coverage}: ${fp.files_scanned} of ${fp.candidates} shipped files scanned; a high score is weak evidence`);
   check(r.tool.dirty === false, 'tool code was committed (not dirty)', `commit ${String(r.tool.assay_commit).slice(0, 7)}`);
 
   const t = parseTarget(r.target.url);
@@ -53,5 +59,6 @@ for (const file of files) {
     check(ev.composite === r.result.screening_score && JSON.stringify(ev.dims) === JSON.stringify(r.result.dims), 'rerun reproduces score and dimensions', `${ev.composite} vs ${r.result.screening_score}`);
   }
 }
+console.log(`${warnings} warning(s)`);
 console.log(failures ? `\n${failures} check(s) FAILED` : '\nall checks passed');
 process.exit(failures ? 1 : 0);

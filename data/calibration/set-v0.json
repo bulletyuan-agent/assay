@@ -111,16 +111,18 @@
       "url": "https://github.com/anthropics/skills"
     },
     {
-      "id": "blind-postmark-reconstructed",
+      "id": "dev-postmark-reconstructed",
       "label": "bad",
       "kind": "reconstructed",
-      "blind": true,
+      "blind": false,
       "type": "mcp",
       "path": "fixtures/blind-postmark-reconstructed",
       "source": "https://snyk.io/blog/malicious-mcp-server-on-npm-postmark-mcp-harvests-emails/",
       "plants": "hidden Bcc exfiltration to a hard-coded email address (real incident, reconstructed from the public diff)",
-      "note": "BLIND: not used to tune any rule. Reported separately."
+      "note": "Development item: the hardcoded-recipient rule (method 0.2.0) was designed from this incident. It was a miss at method 0.1.2 (score 100). No longer blind.",
+      "role": "development"
     }
   ],
-  "todo_real_bad": "No verified real-world bad items yet. Collect public incidents (malicious packages, advisories) with source URLs before counting them."
+  "todo_real_bad": "No verified real-world bad items yet. Collect public incidents (malicious packages, advisories) with source URLs before counting them.",
+  "holdout_protocol": "Holdout items (role=holdout) are built from independent research and frozen BEFORE their scores are seen. They are run once per method version, reported as hit or miss, and never used to tune rules."
 }

@@ -1,12 +1,12 @@
 {
-  "at": "2026-11-02T14:22:46.136Z",
+  "at": "2026-11-02T14:26:29.059Z",
   "summary": {
     "all": {
-      "n_good": 9,
+      "n_good": 2,
       "n_bad": 6,
-      "mean_good": 96,
-      "mean_bad": 58,
-      "auc": 0.8611111111111112
+      "mean_good": 94,
+      "mean_bad": 49,
+      "auc": 1
     },
     "synthetic": {
       "n_good": 2,
@@ -16,9 +16,9 @@
       "auc": 1
     },
     "real": {
-      "n_good": 7,
+      "n_good": 0,
       "n_bad": 0,
-      "mean_good": 96,
+      "mean_good": null,
       "mean_bad": null,
       "auc": null
     }
@@ -39,6 +39,16 @@
       "evidence": {
         "files_scanned": 2,
         "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "index.js",
+            "sha": null
+          }
+        ],
         "danger_hits": 0,
         "severe_hits": 0,
         "injection_hits": 0,
@@ -63,6 +73,16 @@
       "evidence": {
         "files_scanned": 2,
         "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "SKILL.md",
+            "sha": null
+          }
+        ],
         "danger_hits": 0,
         "severe_hits": 0,
         "injection_hits": 0,
@@ -81,18 +101,26 @@
         "maintenance": 100,
         "install_docs": 60,
         "dangerous_patterns": 50,
-        "egress": 85,
+        "egress": 100,
         "instruction_hygiene": 100
       },
       "evidence": {
         "files_scanned": 2,
         "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "postinstall.sh",
+            "sha": null
+          }
+        ],
         "danger_hits": 2,
         "severe_hits": 2,
         "injection_hits": 0,
-        "undeclared_hosts": [
-          "cdn.sketchy-host.example"
-        ],
+        "undeclared_hosts": [],
         "declared_hosts": 0,
         "install_detected": true,
         "age_days": 0
@@ -107,18 +135,26 @@
         "maintenance": 100,
         "install_docs": 60,
         "dangerous_patterns": 50,
-        "egress": 85,
+        "egress": 100,
         "instruction_hygiene": 100
       },
       "evidence": {
         "files_scanned": 2,
         "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "index.js",
+            "sha": null
+          }
+        ],
         "danger_hits": 2,
         "severe_hits": 1,
         "injection_hits": 0,
-        "undeclared_hosts": [
-          "collect.tracker-host.example"
-        ],
+        "undeclared_hosts": [],
         "declared_hosts": 0,
         "install_detected": true,
         "age_days": 0
@@ -139,16 +175,26 @@
       "evidence": {
         "files_scanned": 2,
         "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "index.js",
+            "sha": null
+          }
+        ],
         "danger_hits": 0,
         "severe_hits": 0,
         "injection_hits": 0,
         "undeclared_hosts": [
-          "a.analytics-one.example",
-          "b.analytics-two.example",
-          "c.telemetry-three.example",
-          "d.beacon-four.example",
-          "e.pixel-five.example",
-          "f.stats-six.example"
+          "a.analytics-one.net",
+          "b.analytics-two.net",
+          "c.telemetry-three.net",
+          "d.beacon-four.net",
+          "e.pixel-five.net",
+          "f.stats-six.net"
         ],
         "declared_hosts": 0,
         "install_detected": true,
@@ -170,6 +216,16 @@
       "evidence": {
         "files_scanned": 2,
         "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "SKILL.md",
+            "sha": null
+          }
+        ],
         "danger_hits": 0,
         "severe_hits": 0,
         "injection_hits": 8,
@@ -188,215 +244,56 @@
         "maintenance": 100,
         "install_docs": 60,
         "dangerous_patterns": 0,
-        "egress": 85,
+        "egress": 100,
         "instruction_hygiene": 100
       },
       "evidence": {
         "files_scanned": 2,
         "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "index.py",
+            "sha": null
+          }
+        ],
         "danger_hits": 4,
         "severe_hits": 2,
         "injection_hits": 0,
-        "undeclared_hosts": [
-          "x.example"
-        ],
-        "declared_hosts": 0,
-        "install_detected": true,
-        "age_days": 0
-      }
-    },
-    {
-      "id": "g-servers",
-      "label": "good",
-      "kind": "real",
-      "score": 100,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 100,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 62,
-        "files_excluded": 18,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
         "undeclared_hosts": [],
         "declared_hosts": 0,
         "install_detected": true,
-        "age_days": 4
-      }
-    },
-    {
-      "id": "g-github-mcp",
-      "label": "good",
-      "kind": "real",
-      "score": 100,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 100,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 48,
-        "files_excluded": 32,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [],
-        "declared_hosts": 2,
-        "install_detected": true,
         "age_days": 0
       }
     },
     {
-      "id": "g-chrome-devtools",
-      "label": "good",
-      "kind": "real",
-      "score": 93,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 70,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 70,
-        "files_excluded": 10,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [
-          "v8.dev",
-          "www.apache.org"
-        ],
-        "declared_hosts": 2,
-        "install_detected": true,
-        "age_days": 0
-      }
-    },
-    {
-      "id": "g-playwright",
-      "label": "good",
-      "kind": "real",
-      "score": 93,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 70,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 30,
-        "files_excluded": 7,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [
-          "www.apache.org",
-          "portal.microsofticm.com"
-        ],
-        "declared_hosts": 1,
-        "install_detected": true,
-        "age_days": 1
-      }
-    },
-    {
-      "id": "g-firecrawl",
-      "label": "good",
-      "kind": "real",
-      "score": 93,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 70,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 56,
-        "files_excluded": 24,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [
-          "client.example",
-          "status.example"
-        ],
-        "declared_hosts": 5,
-        "install_detected": true,
-        "age_days": 0
-      }
-    },
-    {
-      "id": "g-notion",
-      "label": "good",
-      "kind": "real",
-      "score": 93,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 75,
-        "egress": 100,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 27,
-        "files_excluded": 14,
-        "danger_hits": 1,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [],
-        "declared_hosts": 2,
-        "install_detected": true,
-        "age_days": 4
-      }
-    },
-    {
-      "id": "g-anthropic-skills",
-      "label": "good",
-      "kind": "real",
-      "score": 100,
-      "dims": {
-        "maintenance": 100,
-        "install_docs": 100,
-        "dangerous_patterns": 100,
-        "egress": 100,
-        "instruction_hygiene": 100
-      },
-      "evidence": {
-        "files_scanned": 80,
-        "files_excluded": 0,
-        "danger_hits": 0,
-        "severe_hits": 0,
-        "injection_hits": 0,
-        "undeclared_hosts": [],
-        "declared_hosts": 0,
-        "install_detected": true,
-        "age_days": 5
-      }
-    },
-    {
-      "id": "blind-postmark-reconstructed",
+      "id": "dev-postmark-reconstructed",
       "label": "bad",
       "kind": "reconstructed",
-      "score": 100,
+      "score": 49,
       "dims": {
         "maintenance": 100,
         "install_docs": 100,
         "dangerous_patterns": 100,
-        "egress": 100,
+        "egress": 70,
         "instruction_hygiene": 100
       },
       "evidence": {
         "files_scanned": 2,
         "files_excluded": 0,
+        "scanned_paths": [
+          {
+            "path": "README.md",
+            "sha": null
+          },
+          {
+            "path": "index.js",
+            "sha": null
+          }
+        ],
         "danger_hits": 0,
         "severe_hits": 0,
         "injection_hits": 0,

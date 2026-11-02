@@ -47,6 +47,7 @@ if (!type) {
   if (gates.passed) {
     const files = target.source === 'github' ? await githubFiles(target, meta.defaultBranch || 'HEAD') : null;
     ev = evaluateStatic(meta, files);
+    if (files?.truncated) ev.coverage_note = ` PARTIAL: only ${files.length} of ${files.candidates} shipped files were scanned, so a high score is weak evidence.`;
   }
 }
 
@@ -75,7 +76,8 @@ function renderComment() {
     for (const [k, v] of Object.entries(ev.dims)) lines.push(`| ${k} | ${v ?? 'n/a'} | ${WEIGHTS[k]} |`);
     lines.push('', `**Screening score ${ev.composite}/100** (no grade: grades are reserved for full evaluations) · coverage ${Math.round(ev.coverage * 100)}% · ${ev.static_scan ? 'code scanned' : 'code scan skipped (not GitHub in phase 1)'}`);
     if (ev.red_flags?.length) lines.push('', `🚩 **Red flags: ${ev.red_flags.join(', ')}**. Score capped at 49.`);
-    lines.push('', `Evidence: \`${JSON.stringify(ev.evidence)}\``);
+    lines.push('', `Coverage: ${ev.evidence.files_scanned} shipped files scanned${ev.evidence.files_excluded ? `, ${ev.evidence.files_excluded} non-shipped excluded` : ''}.${ev.coverage_note || ''}`);
+    lines.push('', `Evidence: \`${JSON.stringify({ ...ev.evidence, scanned_paths: undefined })}\``);
     lines.push('', '> A high screening score does **not** mean the target is safe. Nothing was executed. Dynamic tests (task success, uplift over baseline, cross-model stability) have not run yet. They will be published as a separate report with model, version and date.');
   }
   lines.push('', '<sub>Re-run: Actions → triage-issue → Run workflow with this issue number.</sub>');

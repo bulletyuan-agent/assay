@@ -21,11 +21,11 @@ const DANGER = [
 const SEVERE = new Set([0, 1, 2, 8, 9]);
 export const DANGER_NAMES = ['rm-rf', 'curl-pipe-sh', 'wget-pipe-sh', 'eval', 'new-Function', 'child_process-shell', 'os.system', 'subprocess-shell', 'base64-pipe-sh', 'env-dump-to-network'];
 // Locate the first match of a regex: file line and a short snippet, so every deduction can be traced.
-function locate(text, re) {
+function locate(text, re, original = text) {
   const m = re.exec(text);
   if (!m) return null;
   const line = text.slice(0, m.index).split('\n').length;
-  return { line, snippet: (text.split('\n')[line - 1] || '').trim().slice(0, 160) };
+  return { line, snippet: (original.split('\n')[line - 1] || '').trim().slice(0, 160) };
 }
 // Tests, examples and docs routinely contain eval, rm -rf and foreign URLs. They are not shipped behaviour.
 export const NON_SHIPPED = /(^|\/)(tests?|__tests__|spec|examples?|fixtures?|docs?|samples?|benchmarks?|e2e)\/|\.(test|spec)\.[a-z]+$/i;
@@ -35,9 +35,21 @@ const INJECTION = [
   /忽略(之前|以上|所有|前面)的?指令/,
   /不要(告诉|告知)用户/,
 ];
+// Replace comments with spaces, keeping every newline, so line numbers still match the original file.
+export function stripComments(text, path) {
+  const blank = (m) => m.replace(/[^\n]/g, ' ');
+  if (/\.(py|sh|rb)$/i.test(path)) {
+    return text.replace(/(^|[ \t])#(?!!).*$/gm, (m, pre) => pre + ' '.repeat(m.length - pre.length));
+  }
+  return text
+    .replace(/\/\*[\s\S]*?\*\//g, blank)
+    .replace(/(^|[^:\\'"`])\/\/.*$/gm, (m, pre) => pre + ' '.repeat(m.length - pre.length));
+}
+// Reserved or documentation-only hosts and domains are placeholders, never real egress.
+const PLACEHOLDER_HOST = /(^|\.)(example\.(com|org|net)|invalid|test|localhost|local)$|\.example$|^example$/i;
 const CODE_RE = /\.(m?[jt]sx?|py|sh|rb|go)$/i;
 const TEXT_RE = /(\.(md|json|ya?ml|txt)|SKILL\.md)$/i;
-const ALLOW_HOSTS = ['localhost', '127.0.0.1', 'github.com', 'api.github.com', 'raw.githubusercontent.com',
+const ALLOW_HOSTS = ['apache.org', 'opensource.org', 'creativecommons.org', 'gnu.org', 'localhost', '127.0.0.1', 'github.com', 'api.github.com', 'raw.githubusercontent.com',
   'npmjs.org', 'npmjs.com', 'pypi.org', 'gitlab.com', 'w3.org', 'json-schema.org', 'schemastore.org',
   'example.com', 'modelcontextprotocol.io', 'anthropic.com', 'shields.io'];
 
@@ -46,17 +58,31 @@ const clamp = (v) => Math.max(0, Math.min(100, Math.round(v)));
 export async function githubFiles(t, branch = 'HEAD') {
   const tree = await http(`https://api.github.com/repos/${t.id}/git/trees/${branch}?recursive=1`, { headers: ghHeaders() });
   if (!tree.ok) return null;
+  // Budget is spent only on files that ship behaviour, ordered by how much they matter:
+  // install hooks and entry points first, shallow paths before deep ones, alphabetical only as a tiebreak.
+  const rank = (p) => {
+    let r = -2 * p.split('/').length;
+    if (/(^|\/)(pre|post)?install[^/]*$/i.test(p)) r += 12;
+    if (/(^|\/)(index|main|server|cli|app|handler|tools?)\.[a-z]+$/i.test(p)) r += 6;
+    if (/^(src|lib|bin|scripts)\//.test(p)) r += 4;
+    if (/(^|\/)SKILL\.md$/.test(p)) r += 10;
+    if (/(^|\/)package\.json$/.test(p)) r += 3;
+    return r;
+  };
   const candidates = tree.data.tree
-    .filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path)));
+    .filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path)) && !NON_SHIPPED.test(x.path))
+    .sort((a, b) => rank(b.path) - rank(a.path) || a.path.localeCompare(b.path));
   const picked = candidates.slice(0, 80);
+  const excludedNonShipped = tree.data.tree.filter((x) => x.type === 'blob' && x.size < 150000 && (CODE_RE.test(x.path) || TEXT_RE.test(x.path)) && NON_SHIPPED.test(x.path)).length;
   const out = [];
   for (const f of picked) {
     const r = await http(`https://raw.githubusercontent.com/${t.id}/${branch}/${f.path}`, { json: false });
-    if (r.ok) out.push({ path: f.path, text: r.data });
+    if (r.ok) out.push({ path: f.path, sha: f.sha, text: r.data });
   }
   // Fingerprint of exactly what was scanned. Same tree sha + same method version must give the same score.
   out.treeSha = tree.data.sha;
   out.candidates = candidates.length;
+  out.excludedNonShipped = excludedNonShipped;
   out.truncated = candidates.length > picked.length || !!tree.data.truncated;
   return out;
 }
@@ -75,8 +101,9 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   let severe = 0;
   const findings = [];
   for (const f of code) {
+    const clean = stripComments(f.text, f.path);
     DANGER.forEach((re, i) => {
-      const loc = locate(f.text, re);
+      const loc = locate(clean, re, f.text);
       if (loc) { danger++; if (SEVERE.has(i)) severe++; findings.push({ dim: 'dangerous_patterns', rule: DANGER_NAMES[i], severe: SEVERE.has(i), file: f.path, ...loc, deduction: 25 }); }
     });
   }
@@ -88,19 +115,31 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   const hosts = new Set();
   const declared = new Set();
   for (const f of code) {
-    for (const m of f.text.matchAll(/https?:\/\/([a-z0-9.-]+)/gi)) {
+    const clean = stripComments(f.text, f.path);
+    for (const m of clean.matchAll(/https?:\/\/([a-z0-9.-]+)/gi)) {
       const h = m[1].toLowerCase();
-      if (h !== ownHost && !ALLOW_HOSTS.some((a) => h === a || h.endsWith(`.${a}`))) {
+      if (h !== ownHost && !PLACEHOLDER_HOST.test(h) && !ALLOW_HOSTS.some((a) => h === a || h.endsWith(`.${a}`))) {
         if (readmeLower.includes(h) || readmeLower.includes(reg(h))) declared.add(h);
         else if (!hosts.has(h)) {
           hosts.add(h);
-          const loc = locate(f.text, new RegExp(h.replace(/\./g, '\\.')));
+          const loc = locate(clean, new RegExp(h.replace(/\./g, '\\.')), f.text);
           findings.push({ dim: 'egress', rule: 'undeclared-host', file: f.path, ...(loc || {}), host: h, deduction: hosts.size <= 6 ? 15 : 0 });
         }
       }
     }
   }
-  const egress = hasFiles ? clamp(100 - 15 * Math.min(hosts.size, 6)) : null;
+  // Hard-coded copy/forward recipient: an address baked into code that silently receives data. Declared addresses are fine.
+  const RECIPIENT = /\b(bcc|cc|forward_?to|copy_?to|auto_?forward|blind_?copy)['"]?\s*[:=]\s*\[?\s*['"]([^'"@\s]+@([^'"@\s]+\.[a-z]{2,}))['"]/i;
+  let recipients = 0;
+  for (const f of code) {
+    const clean = stripComments(f.text, f.path);
+    const m = RECIPIENT.exec(clean);
+    if (m && !PLACEHOLDER_HOST.test(m[3]) && !readmeLower.includes(m[2].toLowerCase()) && !readmeLower.includes(m[3].toLowerCase())) {
+      recipients++;
+      findings.push({ dim: 'egress', rule: 'hardcoded-recipient', severe: true, file: f.path, ...locate(clean, RECIPIENT, f.text), deduction: 30 });
+    }
+  }
+  const egress = hasFiles ? clamp(100 - 15 * Math.min(hosts.size, 6) - 30 * recipients) : null;
 
   let inj = 0;
   for (const f of shipped) {
@@ -124,13 +163,15 @@ export function evaluateStatic(meta, files, { ownHost } = {}) {
   const red_flags = [];
   if (severe > 0) red_flags.push('severe-code-pattern');
   if (inj > 0) red_flags.push('prompt-injection');
+  if (recipients > 0) red_flags.push('hardcoded-recipient');
   if (hosts.size >= 4) red_flags.push('undeclared-egress'); // provisional threshold, to be calibrated
   if (composite !== null && red_flags.length) composite = Math.min(composite, 49);
   const grade = composite === null ? null : composite >= 85 ? 'A' : composite >= 70 ? 'B' : composite >= 50 ? 'C' : 'D';
   return {
     dims, composite, grade, red_flags, findings, coverage: Number(den.toFixed(2)), static_scan: hasFiles,
     evidence: {
-      files_scanned: hasFiles ? shipped.length : 0, files_excluded: hasFiles ? files.length - shipped.length : 0, danger_hits: danger, severe_hits: severe, injection_hits: inj,
+      files_scanned: hasFiles ? shipped.length : 0, files_excluded: hasFiles ? files.length - shipped.length : 0,
+      scanned_paths: hasFiles ? shipped.map((f) => ({ path: f.path, sha: f.sha || null })) : [], danger_hits: danger, severe_hits: severe, injection_hits: inj,
       undeclared_hosts: [...hosts].slice(0, 10), declared_hosts: declared.size, install_detected: installDetected, age_days: Math.round(age),
     },
   };

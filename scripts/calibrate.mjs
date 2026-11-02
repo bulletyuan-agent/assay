@@ -20,7 +20,7 @@ function walk(dir, base = dir, out = []) {
 }
 
 const rows = [];
-const blind = () => rows.filter((r) => set.items.find((i) => i.id === r.id)?.blind);
+const blind = () => rows.filter((r) => set.items.find((i) => i.id === r.id)?.role === 'holdout');
 for (const it of set.items) {
   let ev;
   if (it.kind === 'synthetic' || it.kind === 'reconstructed') {
@@ -61,7 +61,7 @@ for (const [name, sub] of [['all', rows], ['synthetic', rows.filter((r) => r.kin
     auc: auc(sub),
   };
 }
-console.log('\nBLIND items (never used for tuning):', JSON.stringify(blind().map((r) => ({ id: r.id, score: r.score, red_flags: r.red_flags }))));
+console.log('\nHOLDOUT items (never used for tuning):', JSON.stringify(blind().map((r) => ({ id: r.id, score: r.score, red_flags: r.red_flags }))));
 console.log('\nsummary', JSON.stringify(summary, null, 2));
 console.log('\nNOTE: real-world AUC is undefined until verified real bad items exist (todo_real_bad).');
 writeFileSync(join(ROOT, 'results-latest.json'), JSON.stringify({ at: new Date().toISOString(), summary, rows }, null, 2) + '\n');

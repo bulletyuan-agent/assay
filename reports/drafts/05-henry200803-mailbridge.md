@@ -18,7 +18,8 @@
 - **工具:** 14 个,包括 `mail_search`(259)、`mail_get_message`(329)、`mail_draft`(643)、`mail_send`(713)、`mail_delete`(827)等。【代码】`server/server.py`。
 
 ## 我们的测试(目前)
-- **未测。**
+- **已测(离线,未联网、未发信):** 调用 `mail_send(confirm=False)`,服务在 `server/server.py:726` 抛出 `ToolError: Refusing to send with confirm=false`,发送在联网前就被拒绝。测试方法:导入 `server.py`,`MAILBRIDGE_HOME` 指向临时目录。
+- **未测:** 在真实或测试邮箱上确认带 `confirm=true` 时的发送行为。
 - 下一步可以测:在测试邮箱上确认没有 `confirm=true` 时发送确实失败;确认导出功能写到哪个目录、能否被 AI 指定为任意路径。
 
 ## 结论(草稿)

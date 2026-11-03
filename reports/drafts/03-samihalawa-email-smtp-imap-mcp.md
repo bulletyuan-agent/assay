@@ -21,3 +21,6 @@
 
 ## 结论(草稿)
 功能覆盖日常整理,发件人限制是可选的、需要主动开启。装之前务必配置 `sender_emails`。
+
+## 补充核实(2026-11-03,读代码)
+- **`raw.githubusercontent.com` 出处已查明:**仅在 `scripts/license-compliance.py:40、113`,用于许可证合规脚本拉取 URI.js 的 LICENSE(固定到某提交),**不在运行时代码路径**。此前的待查项关闭。

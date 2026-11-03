@@ -24,3 +24,8 @@
 
 ## 结论(草稿)
 适合希望统一管理多个邮箱、并愿意把邮件内容交给本地服务进程的用户。不要把"sender_allowlist"当作外发限制。装之前先确认:是否需要 OAuth 以外的凭据、缓存目录放在哪里。
+
+## 补充核实(2026-11-03,读代码)
+- **`read_only` 存在且默认关闭。**【代码】`src/config/schema.ts:280` 默认 `false`;`loader.ts:570` 注释说明开启后禁用"mailbox-write tools";环境变量 `MCP_EMAIL_READ_ONLY=true`。**默认情况下写工具可用。**未核实它是否也禁用发信。
+- **HTTP 模式有 Bearer 鉴权,但可为空。**【代码】`src/cli/http.ts:7、121` 常量时间比较;`loader.ts:612` 注释:空 token = 无鉴权(仅限回环)。
+- **`update` 命令会联网。**【代码】`src/cli/update.ts:29` 请求 GitHub releases/latest;README 称下载后做 sha256 校验,**校验逻辑未读**。
